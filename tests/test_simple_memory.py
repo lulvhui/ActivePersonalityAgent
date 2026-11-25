@@ -48,6 +48,37 @@ class SimpleMemoryTests(unittest.TestCase):
         self.assertEqual(len(memory['observations']),2)
         self.assertEqual(memory['observations'][0]['content'],memory['observations'][1]['content'])
 
+    def test_final_view_marks_overlapping_reads_without_merging_behavior(self):
+        sources={};memory=empty_memory()
+        for index,(window,finding) in enumerate([
+            ([41.,43.],'A sustained hesitation.'),
+            ([42.6,43.],'The same hesitation is clearer.'),
+            ([41.,43.],'Describes asking a colleague for help.'),
+            ([80.,83.],'Describes asking a different colleague for help.')]):
+            obs=dict(OBS,time=window,media_id='one-interview')
+            obs_id=f'active_{index}';sources[obs_id]=obs
+            memory,_=save_observation(memory,json.dumps(dict(observations=[finding],candidates=[])),obs,obs_id)
+        original=copy.deepcopy(memory)
+        view=memory_view(memory,observations=sources)['observations']
+        self.assertEqual(view[1]['overlapping_media_reads'],['M1'])
+        self.assertEqual(view[2]['overlapping_media_reads'],['M1','M2'])
+        self.assertNotIn('overlapping_media_reads',view[3])
+        self.assertEqual(len(view),4)
+        self.assertIn('asking a colleague',view[2]['content'])
+        self.assertEqual(memory,original)
+        self.assertFalse(any('overlapping_media_reads' in r for r in memory_view(memory)['observations']))
+
+    def test_overlap_navigation_does_not_link_other_media_or_unaligned_text(self):
+        memory=empty_memory();sources={}
+        for index,(media_id,modality) in enumerate([('one','audio'),('two','video'),('one','text'),(None,'video')]):
+            obs=dict(OBS,time=[41.,43.],modality=modality)
+            if media_id is not None:obs['media_id']=media_id
+            else:obs.pop('media_id',None)
+            obs_id=f'active_{index}';sources[obs_id]=obs
+            memory,_=save_observation(memory,'{"observations":["A finding."],"candidates":[]}',obs,obs_id)
+        view=memory_view(memory,observations=sources)['observations']
+        self.assertFalse(any('overlapping_media_reads' in r for r in view))
+
     def test_view_keeps_every_finding_and_excludes_future_plans(self):
         findings=['A concrete finding.']*30
         raw=json.dumps(dict(observations=findings,candidates=[dict(local_time=[1,3],modality='video',hint='A clue',goal='UNOBSERVED_PLAN')]))
@@ -71,6 +102,8 @@ class SimpleMemoryTests(unittest.TestCase):
         t=ActiveAgent(NoSelect(),OfflineTraitScorer(),SyntheticMedia(),dict(CFG,selection_policy='queue',max_steps=1)).run(ROW)
         self.assertEqual(len(t['steps']),1);self.assertEqual(t['stop_reason'],'candidate_pool_exhausted')
         self.assertEqual(t['decisions'][-1]['kind'],'final');self.assertEqual(t['final_status'],'generated')
+        final_messages=t['decisions'][-1]['messages']
+        self.assertIn('M IDs identify reads, not independent behaviors',final_messages[-1]['content'][0]['text'])
 
     def test_no_coarse_candidate_is_not_filled_even_with_large_budget(self):
         class Empty(Reader):
