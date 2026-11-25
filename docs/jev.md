@@ -18,6 +18,8 @@ Stage 1 只发现候选，不写入 Memory。每次 Observe 保存一条完整�
 
 空发现不发起真实请求；读取内容无变化时复用评分。结果保存五个 Trait 的 level、五档概率、confidence、版本、原始响应、缓存状态、usage 和费用信息。五档索引按 very_low / low / medium / high / very_high 映射；未知等级允许 null。概率详情保留在独立 score 和 scoring_history 中。
 
+评分指令要求按不同的行为及情境使用支持，重复或互补读取不能增加独立行为支持次数。输入仍保留所有实际发现，不由 Python 根据文本相似度合并事件；该指令是否被真实 Jev 正确执行仍需 Dev 集验证。
+
 未知实际费用保留 null，不将 token 用量当作真实账单。缓存和有限 SDK 请求重试由现有 Scorer 管理，鉴权失败不会静默切换成离线预测。
 
 ## 训练边界
