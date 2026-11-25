@@ -73,6 +73,8 @@ def main():
                              allow_external=args.allow_external)
     agent = ActiveAgent(backend, OfflineTraitScorer(), media, cfg)
     trajectories, errors = [], []
+    plan['status']='running'
+    write_json(output/'summary.json',plan)
     try:
         trajectory = agent.run(row)
         trajectory.update(teacher_accepted=False, teacher_status='pending_source_and_semantic_review')
