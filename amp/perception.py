@@ -161,12 +161,28 @@ def add_candidate_proposals(pool, proposals, scope, source_observation_id, paren
     return added
 
 
-def memory_view(memory):
+READ_SUPPORT_RULE = ('M IDs identify reads, not independent behaviors. Assess support from distinct behaviors in context; '
+    'repeated or complementary reads clarify a behavior rather than multiply independent support. '
+    'overlapping_media_reads marks shared recording regions only: different behaviors may share a window, '
+    'and disjoint reads may describe the same event. Keep uncertain event relations unconfirmed and cite the reads used.')
+
+
+def memory_view(memory, observations=None):
     records=[]
+    located=[]
     for record in memory_records(memory).values():
         decoded=decode_observation(record['content'])
         view={k:record[k] for k in ('id','observation_id','modality','retrieval_window','questions') if k in record}
         view.update(content=decoded['observations'],content_status=decoded['status'])
+        source=(observations or {}).get(record.get('observation_id'),{})
+        window=record.get('retrieval_window')
+        if (record.get('modality') in ('audio','video','audio_video') and source.get('media_id')
+                and source.get('time')==window and source.get('modality')==record.get('modality')
+                and isinstance(window,list) and len(window)==2):
+            overlaps=[key for key,media_id,previous in located if media_id==source['media_id']
+                      and max(previous[0],window[0])<min(previous[1],window[1])]
+            if overlaps:view['overlapping_media_reads']=overlaps
+            located.append((record['id'],source['media_id'],window))
         records.append(view)
     return dict(observations=records)
 
