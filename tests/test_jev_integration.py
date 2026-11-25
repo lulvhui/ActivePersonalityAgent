@@ -47,6 +47,7 @@ class JevIntegrationTests(unittest.TestCase):
             self.assertEqual(payload['model'],'jev-1.14.0')
             self.assertEqual(set(payload['questions']),set(TRAITS))
             self.assertTrue(all(q['type']=='score' and len(q['criteria'])==5 for q in payload['questions'].values()))
+            self.assertTrue(all('distinct behaviors' in q['instructions'] and 'additional reads' in q['instructions'] for q in payload['questions'].values()))
             self.assertNotIn('level',str(payload['state']))
             return httpx2.Response(200,json=raw_score())
         with tempfile.TemporaryDirectory() as tmp,self.client(handler) as client:
