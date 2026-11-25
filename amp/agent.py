@@ -5,7 +5,7 @@ from .common import TRAITS, LEVELS, digest, parse_json
 from .state import CandidatePool, memory_changes, normalize_final, save_observation, contextual_final
 from .provenance import index_transcript
 from .scoring import prediction_feedback, minimize_state
-from .perception import admit_candidates,memory_view,SOURCE_FOCUS,decode_observation,generation_schema
+from .perception import admit_candidates,memory_view,SOURCE_FOCUS,decode_observation,generation_schema,READ_SUPPORT_RULE
 
 def dist(score):
     return {t:(score['traits'][t]['probabilities'] if score['traits'][t].get('predictive',True) else [.2]*5) for t in TRAITS}
@@ -385,7 +385,8 @@ class ActiveAgent:
             item['next_action_decision_index']=later[0] if later else None
         final_payload=dict(task='Observation is finished. Return one JSON object, putting O,C,E,A,N class strings or null first, then concise reasoning and contextual expressions. State each conclusion once and finish the JSON. Each contextual item has trait, context_type (reported/observed/unknown), context, expression and citations (saved M IDs). Explain supported situation differences and their relation to the overall judgment, without averaging context directions or claiming personality changed over time. Proposed candidates and goals are plans, not observed facts.',
             perception_end=dict(reason=stop_reason,observations=len(steps),pending_candidates=sum(x['status']=='pending' for x in pool.items.values())),
-            question=question,traits=TRAITS,levels=LEVELS,memory=memory_view(memory))
+            question=question,traits=TRAITS,levels=LEVELS,memory=memory_view(memory,observations=observations))
+        final_payload['task']+=' '+READ_SUPPORT_RULE
         feedback=prediction_feedback(score)
         if feedback is not None:final_payload['scoring_feedback']=feedback
         final_status='generated';final_error=None
