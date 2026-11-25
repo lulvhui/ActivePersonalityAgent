@@ -1,0 +1,10 @@
+__pycache__/
+*.egg-info/
+.env
+.env.*
+!.env.example
+runs/
+cache/
+data/
+models/
+checkpoints/
