@@ -126,6 +126,7 @@ class JevTraitScorer(TraitScorer):
         questions={t:dict(type="score",instructions=(
             f"Assess {name} using only actually observed contextual behavior in state. "
             "State entries are observed cue summaries, not personality labels. Distinguish situational behavior from stable tendencies. "
+            "Entries may be repeated or complementary reads of the same behavior. Base support on distinct behaviors in context; additional reads refine a report rather than multiply independent support. "
             "Missing information is unknown; do not infer from identity, accent, appearance or demographic stereotypes."),
             criteria=BEHAVIORS[t]) for t,name in TRAITS.items()}
         key=digest(dict(schema_version=4,state=state,questions=questions,model=self.model))
