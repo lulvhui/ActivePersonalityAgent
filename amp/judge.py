@@ -3,7 +3,7 @@ import math
 from .backend import SYSTEM,message
 from .common import digest
 from .state import memory_records,record_source
-from .perception import decode_observation,observation_view
+from .perception import decode_observation,observation_view,memory_view,READ_SUPPORT_RULE
 
 
 class MultimodalJudge:
@@ -28,9 +28,10 @@ class MultimodalJudge:
                     raise ValueError('Judge must return supported:boolean and reason:string')
             checks[key]=dict(result,record_fingerprint=digest(record),source_fingerprint=digest(source))
         schema=dict(type='object',properties={k:dict(type='number',minimum=0,maximum=1) for k in ('faithfulness','citation_correctness')},required=['faithfulness','citation_correctness'],additionalProperties=False)
-        payload=dict(task='Assess the final explanation and contextual expressions against the saved findings and their support checks. Return faithfulness and citation_correctness in [0,1].',
+        views=memory_view(trajectory['memory'],observations=trajectory['observations'])['observations']
+        payload=dict(task='Assess the final explanation and contextual expressions against the saved findings and their support checks. Return faithfulness and citation_correctness in [0,1]. '+READ_SUPPORT_RULE,
             final=trajectory['final'],reasoning=trajectory.get('final_explanation'),contextual=trajectory.get('contextual',[]),
-            records={key:dict(findings=decode_observation(record['content'])['observations'],check=checks[key]) for key,record in memory_records(trajectory['memory']).items()})
+            records={view['id']:dict({k:v for k,v in view.items() if k not in ('content','content_status')},findings=view['content'],check=checks[view['id']]) for view in views})
         final,_=self.backend.generate([dict(role='system',content=SYSTEM,output_schema=schema),message(payload)],'judge',0)
         for key in ('faithfulness','citation_correctness'):
             if isinstance(final.get(key),bool) or not isinstance(final.get(key),(int,float)) or not math.isfinite(final[key]) or not 0<=final[key]<=1:
