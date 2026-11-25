@@ -100,6 +100,7 @@ class RecordQualityTests(unittest.TestCase):
         self.assertEqual(set(t['judge']['records']),{'M1'})
         self.assertNotIn('UNOBSERVED_PLAN',str(seen))
         self.assertIn('I asked a colleague',str(seen))
+        self.assertEqual(seen[-1]['records']['M1']['retrieval_window'],[0.,5.])
         self.assertEqual(memory_quality_credit(t,0)[0],1.)
 
     def test_retired_atomic_memory_is_rejected_explicitly(self):
