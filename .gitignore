@@ -1,7 +1,10 @@
 __pycache__/
 *.egg-info/
 .venv/
-runs/
+/runs/*
+!/runs/performance_cleanup/
+/runs/performance_cleanup/*
+!/runs/performance_cleanup/report.json
 cache/
 .env
 .env.*

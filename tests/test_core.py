@@ -117,7 +117,9 @@ class FlowTests(unittest.TestCase):
         from amp.media import MediaTools
         with tempfile.TemporaryDirectory() as tmp:
             tools=MediaTools(tmp)
-            info=dict(source_key='source',start_pts=10.,duration=2.)
+            import numpy as np,soundfile as sf
+            sf.write(Path(tmp)/'source.full.wav',np.zeros(32000,dtype='int16'),16000,subtype='PCM_16')
+            info=dict(source_key='source',start_pts=10.,duration=2.,raw=dict(streams=[dict(codec_type='audio',start_time=10.)]))
             with patch.object(tools,'probe',return_value=info),patch('amp.media.run',return_value=''):
                 obs=tools.observe(dict(video='fixture.mp4',segments=[]),dict(time=[.8,1.2],modality='audio'))
             self.assertEqual(obs['time'],[.8,1.2])

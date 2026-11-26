@@ -213,7 +213,7 @@ def main():
     if args.command == "rl":
         cfg["temperature"] = 1.0  # On-policy sampling for raw-logit GRPO likelihoods.
     backend = QwenBackend(cfg["model"], cfg["max_new_tokens"], cfg["temperature"], train=args.command == "rl", adapter=args.adapter,
-                          generation_log_dir=cfg.get("generation_log_dir"))
+                          generation_log_dir=cfg.get("generation_log_dir"),profiling=cfg.get('profiling',False))
     backend.torch.manual_seed(cfg["seed"])
     agent = ActiveAgent(backend, scorer, media, cfg)
     judge = MultimodalJudge(QwenBackend(args.judge_model, cfg["max_new_tokens"], 0)) if args.judge_model else None

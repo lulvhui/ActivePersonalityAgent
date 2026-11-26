@@ -68,19 +68,25 @@ def sft(backend, path, output, cfg, epochs=1):
         raise ValueError("SFT needs genuine train-only tokenized actor segments")
     if any(r.get('tools') or r.get('tool_calls') or not isinstance(parse_json(r['text']),dict) for r in rows):
         raise ValueError('SFT targets must use the current actor JSON protocol')
+    accumulation=cfg.get('grad_accum_steps',1)
+    if isinstance(accumulation,bool) or not isinstance(accumulation,int) or accumulation<1:
+        raise ValueError('grad_accum_steps must be a positive integer')
     optimizer = torch.optim.AdamW([p for p in backend.policy.parameters() if p.requires_grad], lr=cfg["learning_rate"])
     backend.policy.train()  # Enable the checkpointing configured by the trainable backend.
     rng, log = random.Random(cfg["seed"]), []
     for epoch in range(epochs):
         rng.shuffle(rows)
-        for decision in rows:
+        for start in range(0,len(rows),accumulation):
+            group=rows[start:start+accumulation]
             optimizer.zero_grad(set_to_none=True)
-            logp, _ = backend.token_stats(decision)
-            loss = -logp.mean()
-            loss.backward()
+            with backend.prepared_group():
+                for decision in group:
+                    logp, _ = backend.token_stats(decision,need_entropy=False)
+                    loss = -logp.mean()
+                    (loss/len(group)).backward()
+                    log.append(dict(epoch=epoch, loss=float(loss.detach()), kind=decision["kind"]))
             torch.nn.utils.clip_grad_norm_(backend.policy.parameters(), 1.)
             optimizer.step()
-            log.append(dict(epoch=epoch, loss=float(loss.detach()), kind=decision["kind"]))
         backend.save(str(Path(output)/f"epoch_{epoch+1}"))
     write_json(Path(output)/"training_log.json", log)
 
@@ -128,39 +134,40 @@ def rl(backend, agent, judge, rows, output, cfg, adapter_path, group_size=4,
                 raise ValueError('RL cannot optimize a rollout with rejected source operations')
             trajectory["judge"] = judge.assess(trajectory)
             trajectories.append(trajectory)
-        # Snapshot old log probabilities and entropy before ANY optimizer update.
-        for trajectory in trajectories:
-            for d in trajectory["decisions"]:
-                with torch.no_grad():
-                    logp, h = backend.token_stats(d)
-                    d["old_logp"] = logp.cpu().tolist()
-                    if d["kind"] == "action":
-                        mask = torch.tensor(action_token_mask(backend.processor.tokenizer, d), device=h.device)
-                        d["action_entropy"] = float(h[mask].mean())
-                    backend.policy.set_adapter("reference")
-                    ref, _ = backend.token_stats(d)
-                    d["ref_logp"] = ref.cpu().tolist()
-                    backend.policy.set_adapter("default")
-                    for name, param in backend.policy.named_parameters():
-                        if ".reference." in name:
-                            param.requires_grad_(False)
-        for trajectory in trajectories:
-            trajectory['memory_outcomes']=memory_outcomes(trajectory,row['labels'],cfg)
-        credit = advantages(trajectories, row["labels"], cfg, variant, enable_trait)
-        optimizer.zero_grad(set_to_none=True)
-        total_decisions = sum(len(t["decisions"]) for t in trajectories)
-        backend.policy.train()
-        total_loss = 0.
-        for trajectory, values in zip(trajectories, credit):
-            for decision, value in zip(trajectory["decisions"], values):
-                logp, _ = backend.token_stats(decision)
-                old = torch.tensor(decision["old_logp"], device=logp.device)
-                ref = torch.tensor(decision["ref_logp"], device=logp.device)
-                loss = clipped_grpo(logp, old, ref, value, cfg["clip_epsilon"], cfg["kl_beta"])/total_decisions
-                loss.backward()
-                total_loss += float(loss.detach())
-        torch.nn.utils.clip_grad_norm_(backend.policy.parameters(), 1.)
-        optimizer.step()
+        with backend.prepared_group():
+            # Snapshot old log probabilities and entropy before ANY optimizer update.
+            for trajectory in trajectories:
+                for d in trajectory["decisions"]:
+                    with torch.no_grad():
+                        logp, h = backend.token_stats(d,need_entropy=d['kind']=='action')
+                        d["old_logp"] = logp.cpu().tolist()
+                        if d["kind"] == "action":
+                            mask = torch.tensor(action_token_mask(backend.processor.tokenizer, d), device=h.device)
+                            d["action_entropy"] = float(h[mask].mean())
+                        backend.policy.set_adapter("reference")
+                        ref, _ = backend.token_stats(d,need_entropy=False)
+                        d["ref_logp"] = ref.cpu().tolist()
+                        backend.policy.set_adapter("default")
+                        for name, param in backend.policy.named_parameters():
+                            if ".reference." in name:
+                                param.requires_grad_(False)
+            for trajectory in trajectories:
+                trajectory['memory_outcomes']=memory_outcomes(trajectory,row['labels'],cfg)
+            credit = advantages(trajectories, row["labels"], cfg, variant, enable_trait)
+            optimizer.zero_grad(set_to_none=True)
+            total_decisions = sum(len(t["decisions"]) for t in trajectories)
+            backend.policy.train()
+            total_loss = 0.
+            for trajectory, values in zip(trajectories, credit):
+                for decision, value in zip(trajectory["decisions"], values):
+                    logp, _ = backend.token_stats(decision,need_entropy=False)
+                    old = torch.tensor(decision["old_logp"], device=logp.device)
+                    ref = torch.tensor(decision["ref_logp"], device=logp.device)
+                    loss = clipped_grpo(logp, old, ref, value, cfg["clip_epsilon"], cfg["kl_beta"])/total_decisions
+                    loss.backward()
+                    total_loss += float(loss.detach())
+            torch.nn.utils.clip_grad_norm_(backend.policy.parameters(), 1.)
+            optimizer.step()
         backend.policy.eval()
         write_json(output/f"rollouts/update_{iteration:05d}.json", trajectories)
         logs.append(dict(iteration=iteration, loss=total_loss, variant=variant, trait_reward=enable_trait,

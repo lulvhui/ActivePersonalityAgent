@@ -32,6 +32,20 @@ class NativeProcessorTests(unittest.TestCase):
         self.assertGreater(inputs['input_ids'].shape[1],0)
         self.assertIsInstance(messages[0]['content'],str)
 
+    def test_incremental_json_masks_match_full_prefix_for_real_qwen_tokens(self):
+        import json,torch
+        from amp.perception import generation_schema
+        b=self.backend;schema=generation_schema('memory')
+        text=json.dumps(dict(observations=['我主动邀请同事讨论。','He said "let us work together".'],candidates=[]),ensure_ascii=False)
+        tokens=b.processor.tokenizer.encode(text,add_special_tokens=False)+[b.processor.tokenizer.eos_token_id]
+        full=b.format_constraint(schema);incremental=b.format_constraint(schema).token_enforcer.iter_allowed(tokens)
+        prefix=[1]
+        for token in tokens:
+            allowed=next(incremental)
+            self.assertEqual(set(allowed),set(full(0,torch.tensor(prefix))))
+            self.assertIn(token,allowed)
+            prefix.append(token)
+
     def test_real_audio_video_sampling_rate_reaches_processor(self):
         ffmpeg=shutil.which('ffmpeg') or str(ROOT/'.local-tools/ffmpeg/bin/ffmpeg')
         if not Path(ffmpeg).is_file():self.skipTest('FFmpeg not available')

@@ -69,17 +69,32 @@ class MediaTools:
                       media_id=info["source_key"], question=row.get("question", ""))
         output['questions']=self.questions_in_window(row,start,end)
         output['event_segments']=[s for s in indexed if s['timing']=='media_aligned' and start<=s['media_time'][0]<s['media_time'][1]<=end+1e-6]
-        key = digest([info["source_key"], start, end, modality, coarse, sample_fps])
+        key = digest(['seek_v3',info["source_key"], start, end, modality, coarse, sample_fps])
         if modality in ["audio", "audio_video"]:
+            import numpy as np
+            import soundfile as sf
+            full=self.cache/f"{info['source_key']}.full.wav"
+            if not full.exists():
+                run(['ffmpeg','-v','error','-i',row['video'],'-vn','-ac','1','-ar','16000','-y',str(full)])
+            stream=next(s for s in info['raw']['streams'] if s['codec_type']=='audio')
+            offset=max(0.,float(stream.get('start_time',0))-info['start_pts'])
             audio = self.cache / f"{key}.wav"
-            if not audio.exists():
-                run(["ffmpeg", "-v", "error", "-i", row["video"], "-ss", str(start), "-t", str(end-start),
-                     "-vn", "-ac", "1", "-ar", "16000", "-y", str(audio)])
+            with sf.SoundFile(full) as source:
+                rate=source.samplerate
+                left,right=round((start-offset)*rate),round((end-offset)*rate)
+                first,last=max(0,min(len(source),left)),max(0,min(len(source),right))
+                leading=min(right-left,max(0,-left));trailing=right-left-leading-(last-first)
+                if not audio.exists():
+                    source.seek(first)
+                    samples=source.read(last-first,dtype='int16')
+                    sf.write(audio,np.pad(samples,(leading,trailing)),rate,subtype='PCM_16')
+            output.update(source_samples=[first,last],audio_sample_rate=rate,audio_offset=offset,
+                audio_padding_samples=[leading,trailing],audio_content_source_pts=[info['start_pts']+offset+first/rate,info['start_pts']+offset+last/rate])
             output["media"].append(dict(type="audio", audio=str(audio)))
         if modality in ["video", "audio_video"] and (end-start)*sample_fps<2:
             image = self.cache/f"{key}.png"
             if not image.exists():
-                run(['ffmpeg','-v','error','-i',row['video'],'-ss',str(start),'-frames:v','1',
+                run(['ffmpeg','-v','error','-ss',str(start),'-i',row['video'],'-frames:v','1',
                      '-vf',f'scale={320 if coarse else 480}:-2','-y',str(image)])
             output['media'].append(dict(type='image',image=str(image),sampled_frames=1))
             output['visual_representation']='one sampled frame; no motion observed'
@@ -87,8 +102,10 @@ class MediaTools:
         if modality in ["video", "audio_video"]:
             video = self.cache / f"{key}.mp4"
             if not video.exists():
-                run(["ffmpeg", "-v", "error", "-i", row["video"], "-ss", str(start), "-t", str(end-start),
-                     "-an", "-vf", f"fps={sample_fps},scale={320 if coarse else 480}:-2", "-c:v", "libx264", "-y", str(video)])
+                # Keep the original global FPS grid and encoder timestamp
+                # rounding; a plain input seek changes fractional-window frames.
+                run(["ffmpeg", "-v", "error", "-ss", str(start), "-i", row["video"], "-t", str(end-start),
+                     "-an", "-vf", f"setpts=PTS+round({start}/TB),fps={sample_fps},trim=start={start}:end={end},setpts=round(PTS-{start}/TB),scale={320 if coarse else 480}:-2", "-c:v", "libx264", "-y", str(video)])
             sampled = self.probe(str(video))
             stream = next(x for x in sampled["raw"]["streams"] if x["codec_type"]=="video")
             output["media"].append(dict(type="video", video=str(video), fps=sample_fps, sampled_frames=int(stream.get("nb_frames",0))))

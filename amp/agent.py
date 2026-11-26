@@ -1,6 +1,6 @@
 from copy import deepcopy
 import math
-from .backend import SYSTEM, message
+from .backend import SYSTEM, message,stage_timing
 from .common import TRAITS, LEVELS, digest, parse_json
 from .state import CandidatePool, memory_changes, normalize_final, save_observation, contextual_final
 from .provenance import index_transcript
@@ -69,7 +69,10 @@ class ActiveAgent:
             input_modalities=['audio','video'] if observation['modality']=='audio_video' else [observation['modality']],
             source_window=observation['time'],visual_representation=observation.get('visual_representation'),
             existing_candidates=[dict(modality=x['action']['modality'],time=x['action']['time'],goal=x['action']['goal'],
-                hints=[l['hint'] for l in x['leads']]) for x in pool.snapshot()],
+                hints=[l['hint'] for l in x['leads']]) for x in pool.snapshot()
+                if self.config.get('coarse_context_mode','full')=='full' or (
+                    x['action']['time'][0]<observation['time'][1]+self.config.get('refinement_context_seconds',5.)
+                    and x['action']['time'][1]>observation['time'][0]-self.config.get('refinement_context_seconds',5.))],
             allowed_modalities=pool.available_modalities,
             source_binding='Python binds candidates to this source window and modality. Finer windows and modality changes belong to Observe.',
             observation=dict(modality=observation['modality'],time=observation['time'],
@@ -413,7 +416,7 @@ class ActiveAgent:
                     score=score, scoring_history=scoring_history, decisions=decisions, pool=pool.snapshot(), stopped=stopped, stop_reason=stop_reason,
                     evidence_status="recorded_unreviewed" if memory.get("observations") else "insufficient",
                     memory_protocol='observation_text',
-                    cost=dict(active_seconds=active_spent, active_budget_seconds=self.config.get("max_seconds"), coarse_audio_seconds=spent, coarse_frames=scan.get("sampled_frames",0),
+                    cost=dict(stage_timing=stage_timing(decisions),active_seconds=active_spent, active_budget_seconds=self.config.get("max_seconds"), coarse_audio_seconds=spent, coarse_frames=scan.get("sampled_frames",0),
                               jev_api_calls=sum(s['metadata'].get('api_calls',0) for s in scoring_history),
                               jev_estimated_cost=(sum(s['metadata'].get('billed_cost',0) for s in scoring_history) if all(s['metadata'].get('billed_cost',0) is not None for s in scoring_history) else None),
                               coarse_video_segments=len(scan.get("video",[])),coarse_video_fps=scan.get("sampling_fps"),

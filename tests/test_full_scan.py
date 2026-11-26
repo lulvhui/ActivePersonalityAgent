@@ -56,7 +56,9 @@ class FullScanTests(unittest.TestCase):
         with self.assertRaises(ValueError):pool.validate(dict(time=[0,332],modality='video',goal='Inspect high-resolution movement'))
         with tempfile.TemporaryDirectory() as tmp:
             tools=MediaTools(tmp,max_clip=30)
-            with patch.object(tools,'probe',return_value=dict(duration=600,start_pts=0,source_key='m')),patch('amp.media.run',return_value=''):
+            import numpy as np,soundfile as sf
+            sf.write(Path(tmp)/'m.full.wav',np.zeros(332*16000,dtype='int16'),16000,subtype='PCM_16')
+            with patch.object(tools,'probe',return_value=dict(duration=600,start_pts=0,source_key='m',raw=dict(streams=[dict(codec_type='audio',start_time=0)]))),patch('amp.media.run',return_value=''):
                 observation=tools.observe(dict(video='fixture.mp4',segments=[]),dict(time=[0,332],modality='audio'))
             self.assertEqual(observation['time'],[0.,332.])
 

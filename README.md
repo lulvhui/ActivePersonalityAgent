@@ -83,6 +83,14 @@ Jev 的可替换接口、概率、缓存、费用和原始响应保留。仅显�
 
 ## 验证与结果
 
+本地原生推理在每条 decision 中记录 `timing`、实际 `completion_tokens` 和 `device_map`，在 `cost.stage_timing` 汇总粗扫、Observe、修正和 Final；失败尝试也计入。`constraint_seconds` 是约束回调的墙钟耗时，包含其中的设备传输或等待，不等同于纯解析器 CPU 耗时，且已经包含在生成耗时中。配置 `profiling=true` 可额外记录同步后的首个前向（prefill）、后续前向（decode）耗时和 GPU 峰值 allocated memory；默认关闭，不在常态推理中增加 CUDA 同步。
+
+媒体切片使用版本化 `seek_v3` 缓存。主动音频复用粗扫的 `full.wav`，按同一音频流偏移换算采样位置；窗口超出音频流的部分显式记录补零数量。视频快速 seek 保留原有全局 FPS 网格及编码时间舍入，避免分数秒窗口改变帧数。`coarse_context_mode=nearby` 可只携带当前来源附近或重叠候选的 hint/goal，保留互补模态，不设置数量上限；默认仍为 `full`。两条本地对照中 nearby 降低了粗扫输入，但其中一条主动观察从 27 次增至 54 次，因此未将它作为默认提速方案。
+
+训练的 `token_stats` 按序列分块处理 FP32 概率和约束掩码，梯度模式下重算块内中间量；模型产生的原始 logits 仍然存在。训练仅在旧策略动作熵需要时计算熵；processor 输入缓存于 CPU，生命周期限于当前训练组，不缓存模型编码器输出。SFT 的 `grad_accum_steps` 默认 1，尾组按实际样本数归一化。old/reference/current 三次前向及原有奖励公式保留。
+
+性能验证的[完整报告](runs/performance_cleanup/report.json)随仓库保存：分别记录 P1 的真实 Token 一致性、nearby 的真实完整轨迹、当前默认 full 的输入回放，以及 CPU/GPU 概率数值验证。回放复用历史模型输出，不视作新推理；IELTS 旧输出端音频 seek 与 full.wav 采样时钟存在最多 0.25 ms 的舍入差异，已单独记录。
+
 ```bash
 python -m unittest discover -s tests
 bash runs/record_protocol_cleanup/run_local.sh
