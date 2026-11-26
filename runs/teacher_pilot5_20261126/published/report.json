@@ -1,0 +1,171 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "split": "train",
+  "sample_count": 5,
+  "currently_running_samples": 0,
+  "main_prompts_or_algorithm_changed": false,
+  "formal_training": false,
+  "jev_api_calls": 0,
+  "teacher_approved_trajectories": 0,
+  "first_attempt_status": {
+    "IELTS_138": "complete",
+    "IELTS_106": "failed",
+    "IELTS_193": "partial",
+    "IELTS_183": "partial",
+    "IELTS_176": "failed"
+  },
+  "manual_continuation": {
+    "sample_id": "IELTS:176",
+    "original_status": "failed_timeout",
+    "status": "complete",
+    "replayed_calls": 62,
+    "new_api_calls": 13,
+    "not_an_automatic_recovery_feature": true
+  },
+  "outcomes": [
+    {
+      "sample_id": "IELTS:138",
+      "status": "complete",
+      "observations": 64,
+      "stop_reason": "max_steps",
+      "pending_candidates": 4,
+      "api_calls": 77,
+      "manual_continuation": false
+    },
+    {
+      "sample_id": "IELTS:106",
+      "status": "failed",
+      "observations": 32,
+      "stop_reason": null,
+      "pending_candidates": null,
+      "api_calls": 48,
+      "manual_continuation": false
+    },
+    {
+      "sample_id": "IELTS:193",
+      "status": "partial",
+      "observations": 64,
+      "stop_reason": "max_steps",
+      "pending_candidates": 4,
+      "api_calls": 81,
+      "manual_continuation": false
+    },
+    {
+      "sample_id": "IELTS:183",
+      "status": "partial",
+      "observations": 52,
+      "stop_reason": "candidate_pool_exhausted",
+      "pending_candidates": 0,
+      "api_calls": 67,
+      "manual_continuation": false
+    },
+    {
+      "sample_id": "IELTS:176",
+      "status": "complete",
+      "observations": 63,
+      "stop_reason": "candidate_pool_exhausted",
+      "pending_candidates": 0,
+      "api_calls": 76,
+      "manual_continuation": true
+    }
+  ],
+  "api_calls_total": 349,
+  "known_prompt_tokens": 1701183,
+  "known_completion_tokens": 992799,
+  "usage_complete": false,
+  "billing": "Not verified; timed-out request usage unknown",
+  "final_outputs": 4,
+  "offline_label_diagnostic": {
+    "exact_dimensions": 3,
+    "predicted_dimensions": 20,
+    "ordinal_mae": 1.3,
+    "scope": "Four completed Final outputs from Train persons. Not a held-out accuracy estimate. Label agreement does not prove source fidelity."
+  },
+  "student_context": {
+    "configured_max_position_embeddings": 32768,
+    "final_text_lengths": {
+      "IELTS:138": 51833,
+      "IELTS:193": 50652,
+      "IELTS:183": 33306,
+      "IELTS:176": 45195
+    },
+    "all_four_final_sequences_exceed_configured_context": true,
+    "student_tokenizer_roundtrip_passed": true,
+    "sft_export": false,
+    "actual_optimizer_update": false,
+    "scope": "Final is text-only; expanded media positions and actual training memory not tested"
+  },
+  "decision": "Keep main architecture; not ready for direct full-trajectory SFT. Fix API transport/output contracts and teacher task grounding/verbosity before scaling; curate a small SFT pilot after review. No new research module or RL yet.",
+  "blockers": [
+    {
+      "type": "transport",
+      "sample": "IELTS:106",
+      "confirmed": true,
+      "detail": "Valid full-span audio action [0,268.678005] exceeded the adapter Base64 limit of 10,000,000 bytes before sending. 32 prior observations retained; no Final. Do not silently truncate audio."
+    },
+    {
+      "type": "network",
+      "sample": "IELTS:176",
+      "confirmed": true,
+      "detail": "180-second timeout at memory step 51. Exact-history replay plus 13 new API calls completed the same sample; original failure retained."
+    },
+    {
+      "type": "api_output_contract",
+      "sample": "IELTS:183",
+      "confirmed": true,
+      "detail": "Coarse step 2 added modality to a hint/goal-only candidate; source candidate rejected and run marked partial."
+    },
+    {
+      "type": "api_output_contract",
+      "sample": "IELTS:193",
+      "confirmed": true,
+      "detail": "Coarse step 10 returned the JSON Schema itself rather than a summary/candidates instance. Current API json_object mode does not enforce the schema as local constrained decoding does."
+    },
+    {
+      "type": "student_context",
+      "confirmed": true,
+      "detail": "Final sequences are 33,306 to 51,833 student tokens, above configured 32,768. Do not solve by blindly truncating valid evidence or target output."
+    },
+    {
+      "type": "teacher_semantics",
+      "sample": "IELTS:193",
+      "confirmed": true,
+      "detail": "Final contextual expression claims a 1-1.5 semitone F0 excursion and a 2-semitone genuine-affect threshold; no acoustic measurement or threshold validation exists in this pipeline."
+    },
+    {
+      "type": "source_attribution",
+      "sample": "IELTS:193",
+      "confirmed": true,
+      "detail": "M20 is video-only [70.5,73.5] yet claims no lexical stress/filler in the audible track. Historical audio and current visual findings are not clearly separated."
+    },
+    {
+      "type": "trait_inference",
+      "sample": "IELTS:176",
+      "detail": "C=high relies heavily on rigid posture, formulaic courtesy and procedural compliance; E/N judgments rely on silence and absence of overt arousal. These are uncertain trait mappings, not validated semantic targets."
+    },
+    {
+      "type": "observation_efficiency",
+      "detail": "138 and 193 reached 64 observations with four pending candidates each. Repeated micro-prosody/gesture goals and requests for unsupported measurement capabilities remain; more reads are not independent evidence."
+    }
+  ],
+  "positives": [
+    "All five used full Part1 inputs and train-person-disjoint sampling; labels excluded from policy inputs",
+    "Four genuine Final outputs with structurally valid contextual citations",
+    "Teacher supplies concrete self-reports, local descriptions, modality switches, empty findings/followups and some explicit visibility limits",
+    "No output truncation detected among completed saved decisions; main runtime Python sources unchanged"
+  ],
+  "review_scope": {
+    "all_saved_records_checked_for_structure_and_source_metadata": true,
+    "final_texts_reviewed": 4,
+    "visual_spot_checks": 5,
+    "complete_human_audio_audit": false,
+    "independent_teacher_semantic_approval": false
+  },
+  "next_steps": [
+    "Support long-audio transport without changing its content/time range",
+    "Align API structured output contract with the local contract, preserving rejected raw outputs",
+    "Clarify concise current-source findings, historical context attribution and feasible personality-relevant follow-up goals in existing prompts",
+    "Review/fix candidate targets and Final claims, then check student context again and train only approved train-person data",
+    "Keep label supervision and evidence fidelity separate; never rewrite true opposing behavior to fit labels"
+  ]
+}

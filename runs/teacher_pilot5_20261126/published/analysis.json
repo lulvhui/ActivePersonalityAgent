@@ -1,0 +1,1528 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "results": [
+    {
+      "sample_id": "IELTS:138",
+      "status": "complete",
+      "completed": true,
+      "stop_reason": "max_steps",
+      "source_directory": "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent/runs/teacher_pilot5_20261126/IELTS_138",
+      "first_attempt_status": "complete",
+      "manual_continuation": false,
+      "duration_seconds": 216.711995,
+      "initial_candidates": 12,
+      "observations": 64,
+      "refinements": 52,
+      "pending_candidates": 4,
+      "findings": 309,
+      "exact_repeated_occurrences": 0,
+      "refinements_without_new_exact_strings": 0,
+      "exact_novelty_is_not_semantic_independence": true,
+      "duplicate_executions": 0,
+      "malformed_observations": [],
+      "invalid_sources": [],
+      "invalid_contextual_citations": [],
+      "truncated_attempts": [],
+      "final_status": "generated",
+      "final": {
+        "O": {
+          "level": "medium",
+          "reasoning": null
+        },
+        "C": {
+          "level": "medium",
+          "reasoning": null
+        },
+        "E": {
+          "level": "medium",
+          "reasoning": null
+        },
+        "A": {
+          "level": "medium",
+          "reasoning": null
+        },
+        "N": {
+          "level": "low",
+          "reasoning": null
+        }
+      },
+      "final_explanation": "Openness is medium: the engineering choice was externally motivated with weak internal justification and self-dismissal (M3, M12, M36), yet the candidate shows genuine sensory-experiential engagement in walks ('when it's a bit cooler'), horse-riding club membership, and varied food preferences (M5, M6, M11). Climate-change avoidance is domain-specific caution on contested external verdicts rather than global intellectual disengagement (M9, M10, M32). Conscientiousness is medium: routines exist (gym 'once or twice a week,' club 'at weekends') but are framed with aspirational 'try to' language and scalar softeners ('a bit,' 'from time to time'), indicating moderate structure without strong discipline (M5, M6, M12, M37, M38). Extraversion is medium: the friends segment shows immediate animated warmth and positive group evaluation (M4, M19), and the informal-address offer reduces social distance (M1, M13), yet most responses are brief, low-energy, and require external prompting for elaboration (M2, M5, M6). Agreeableness is medium: consistent courtesy, non-confrontational acceptance of questions, communal positive framing ('everyone is really happy'), and conventional hedging ('in my opinion') as politeness tails characterize the interaction (M1, M7, M8, M27), but much of the politeness is formulaic and the overall exchange remains transactional. Neuroticism is low: across all 64 reads the candidate displays remarkably stable, low-arousal affect—fillers occur at lexical-retrieval boundaries with flat F0 and no somatic tension (M2, M15, M16), the post-handover temple touch is classified as a mundane micro-adjustment rather than self-soothing (M14), the engineering chuckle is a low-arousal self-aware acknowledgment (M17), the climate avoidance shows suppressed volume but zero physiological stress markers (M31, M33, M47, M60), and the exercise hedge reflects 'passive absence of engagement, not active suppression' (M21, M24, M55). No emotional volatility, worry, or distress is evidenced in any segment.",
+      "contextual": [
+        {
+          "trait": "O",
+          "context_type": "reported",
+          "context": "Engineering course-choice narrative (≈40–60 s)",
+          "expression": "External-locus chain ('my parents thought it would be a good thing') → weak aptitude justification ('I did well at mathematics') → identity-level shrug ('It's okay, I guess'), delivered in flat mid-register with two planning 'uh' fillers at lexical boundaries and no personal-interest statement",
+          "citations": [
+            "M3",
+            "M12",
+            "M36"
+          ]
+        },
+        {
+          "trait": "O",
+          "context_type": "reported",
+          "context": "Sensory-experiential activities: evening walks, horse-riding club, varied diet (≈80–210 s)",
+          "expression": "Walks justified by environmental comfort ('when it's a bit cooler'); horse-riding described with institutional anchor ('I belong to a club') and weekend regularity; diet includes fruit, vegetables, and open admission 'I really love meat too'—showing moderate sensory curiosity without high intellectual abstraction",
+          "citations": [
+            "M5",
+            "M6",
+            "M11",
+            "M32"
+          ]
+        },
+        {
+          "trait": "O",
+          "context_type": "observed",
+          "context": "Climate-change question response (≈160–180 s)",
+          "expression": "Four-hedge cluster ('oh well' + 'I guess' + 'changed' + 'a little') with suppressed volume, shallow pitch, breathy dismissal, and a clarification loop externalizing interpretive burden—domain-specific caution on contested scientific verdicts, not global intellectual avoidance; adjacent winter narrative shows zero hedges and confident first-person agency",
+          "citations": [
+            "M9",
+            "M10",
+            "M32"
+          ]
+        },
+        {
+          "trait": "C",
+          "context_type": "reported",
+          "context": "Diet and exercise self-reports (≈80–120 s)",
+          "expression": "Parallel 'I try to watch my diet / I try to eat healthy foods' framing signals aspiration rather than automatic discipline; exercise answer is a two-word hedge ('Yeah, sure, from time to time') requiring external prompt, then elaborates to 'once or twice a week' gym and evening walks—moderate routine with low frequency and hedged commitment",
+          "citations": [
+            "M5",
+            "M6",
+            "M12",
+            "M37"
+          ]
+        },
+        {
+          "trait": "C",
+          "context_type": "reported",
+          "context": "Horse-riding club membership and weekend schedule (≈200–216 s)",
+          "expression": "Institutional anchor ('I belong to a club') and temporal regularity ('at weekends') provide structural specificity, but scalar softener 'a bit' is prosodically integrated at normal pace without stress isolation—consistent with habitual British understatement rather than calculated hedging, indicating moderate but not rigid conscientiousness",
+          "citations": [
+            "M11",
+            "M35",
+            "M38",
+            "M50"
+          ]
+        },
+        {
+          "trait": "E",
+          "context_type": "observed",
+          "context": "Friends and social-life question (≈60–80 s)",
+          "expression": "Immediate dual affirmation ('Yes. Yes, I have') → positive group evaluation ('some great guys') → concrete behavioral enumeration (study, coffee, chat) with broad open-mouth smile, slightly raised eyebrows, forward head tilt, and no fillers—higher activation and lower cognitive load than self-evaluative topics, indicating genuine social comfort within a moderate peer circle",
+          "citations": [
+            "M4",
+            "M19"
+          ]
+        },
+        {
+          "trait": "E",
+          "context_type": "observed",
+          "context": "Overall interview speech economy and prompting dependence (≈20–120 s)",
+          "expression": "Most responses are brief declaratives (occupation, field of study, exercise) requiring examiner prompts for elaboration; the candidate does not volunteer extended narrative, maintains moderate speaking rate, and shows no eagerness to fill silence—socially present but not highly extraverted; the informal-address offer ('you can call me Faris') is a single distance-reducing gesture within an otherwise procedural exchange",
+          "citations": [
+            "M1",
+            "M2",
+            "M5",
+            "M13"
+          ]
+        },
+        {
+          "trait": "A",
+          "context_type": "observed",
+          "context": "Normative video-games critique and politeness hedging (≈120–145 s)",
+          "expression": "Absolutist generalization ('kids just play video games all day') delivered as a single rehearsed breath group at uniform ~2.2 syl/s with no deceleration before the sentence-final 'in my opinion'; the hedge functions as a conventional British politeness tail (falling terminal F0, compressed duration, no glottal reset) rather than genuine epistemic doubt—agreeable softening of a culturally common judgment",
+          "citations": [
+            "M7",
+            "M26",
+            "M27",
+            "M44",
+            "M57"
+          ]
+        },
+        {
+          "trait": "A",
+          "context_type": "observed",
+          "context": "Communal framing in weather explanation and non-confrontational interview posture (≈140–180 s)",
+          "expression": "Weather preference explained through shared regional experience ('everyone is really happy') rather than individual assertion; climate question met with deferral ('people say… I'm not really sure') avoiding imposition of personal verdict; ID handover completed cooperatively with 'Sure' and polite 'thank you'—consistent courtesy and community orientation without excessive warmth or self-sacrifice",
+          "citations": [
+            "M1",
+            "M8",
+            "M9",
+            "M10"
+          ]
+        },
+        {
+          "trait": "N",
+          "context_type": "observed",
+          "context": "Filler tokens and somatic baseline across early segments (≈20–60 s)",
+          "expression": "Two 'uh' tokens at lexical-retrieval boundaries (before 'student,' before 'engineering') show flat F0 (~110–120 Hz), amplitude 3–4 dB below stressed syllables, no creaky voice, no breath-catch, no jitter burst; shoulders level, SCM unengaged, gaze steady, hands in lap—planning pauses without any anxiety-spike correlate, confirming low-arousal baseline",
+          "citations": [
+            "M2",
+            "M15",
+            "M16"
+          ]
+        },
+        {
+          "trait": "N",
+          "context_type": "observed",
+          "context": "Engineering-answer chuckle and closure prosody (≈44–60 s)",
+          "expression": "Single 0.35–0.45 s breathy semi-voiced chuckle (F0 ~108→95 Hz descending arc, 15–18 dB below 'know') immediately after 'I don't really know'—a low-arousal self-aware micro-laugh, not a nervous tic; the subsequent 'It's okay, I guess' trails 1–2 dB without phonatory break, maintaining the same ±15 Hz F0 band as the mathematics clause—mild self-deprecation within global understatement register, not topic-specific distress",
+          "citations": [
+            "M3",
+            "M17",
+            "M18",
+            "M39",
+            "M53"
+          ]
+        },
+        {
+          "trait": "N",
+          "context_type": "observed",
+          "context": "Climate-avoidance segment: vocal and visual stress-marker inventory (≈160–185 s)",
+          "expression": "Suppressed volume and flat prosody accompany the four-hedge cluster, but zero blink-frequency elevation, zero jaw-clenching (masseter relaxed, mandible drops naturally), one sub-second gaze drift on 'sure' only, neutral-to-relaxed brow with no corrugator contraction, modal phonation with no creak or pressed quality throughout—the avoidance is tonal/strategic (deflation of commitment) rather than somatic stress response",
+          "citations": [
+            "M9",
+            "M31",
+            "M33",
+            "M47",
+            "M60"
+          ]
+        },
+        {
+          "trait": "N",
+          "context_type": "observed",
+          "context": "Post-handover temple touch and exercise-hedge paralinguistics (≈14–17 s; ≈97–100 s)",
+          "expression": "The left-hand-to-temple motion is a single sub-second isolated micro-adjustment with no repetition, no co-occurring tension, no glasses/hair to adjust—classified as mundane incidental touch, not self-soothing; 'from time to time' shows clean modal voicing, no micro-laugh, no breathy exhalation, no creaky offset, smooth amplitude decay—flat acknowledgment consistent with genuine low salience rather than suppressed anxiety",
+          "citations": [
+            "M14",
+            "M21",
+            "M24",
+            "M55"
+          ]
+        }
+      ],
+      "contextual_citation_frequency": {
+        "M3": 2,
+        "M12": 2,
+        "M36": 1,
+        "M5": 3,
+        "M6": 2,
+        "M11": 2,
+        "M32": 2,
+        "M9": 3,
+        "M10": 2,
+        "M37": 1,
+        "M35": 1,
+        "M38": 1,
+        "M50": 1,
+        "M4": 1,
+        "M19": 1,
+        "M1": 2,
+        "M2": 2,
+        "M13": 1,
+        "M7": 1,
+        "M26": 1,
+        "M27": 1,
+        "M44": 1,
+        "M57": 1,
+        "M8": 1,
+        "M15": 1,
+        "M16": 1,
+        "M17": 1,
+        "M18": 1,
+        "M39": 1,
+        "M53": 1,
+        "M31": 1,
+        "M33": 1,
+        "M47": 1,
+        "M60": 1,
+        "M14": 1,
+        "M21": 1,
+        "M24": 1,
+        "M55": 1
+      },
+      "measurement_claim_flags": [
+        {
+          "id": "M7",
+          "finding": "Vocal continuity across declarative and hedged clauses (audio inference): From the audio track spanning 13–20 s, the candidate's pitch remains in a narrow mid-range with no marked spike or drop at the transition from 'all day' to 'they don't get enough exercise in my opinion.' The pace is steady, with no audible inhalation or micro-pause before 'in my opinion' that would signal a moment of self-correction or doubt. The phrase is delivered at the same volume and tempo as the preceding words, consistent with a formulaic tail rather than a reflective addendum. However, definitive prosodic segmentation (exact syllable timing, F0 contour at the word 'opinion') would require focused audio analysis beyond what the combined audio-video pass captured."
+        },
+        {
+          "id": "M15",
+          "finding": "Acoustic profile of the first 'uh' (sentence-initial, ≈0.0–0.4 s, preceding 'I'm a student'): The filler manifests as a brief, low-intensity voiced onset. F0 begins at the speaker's mid-register baseline (~110–120 Hz) and holds flat through the 0.3–0.4 s duration with no upward micro-spike or downward creak. The amplitude envelope rises gently from silence to a level roughly 3–4 dB below the following stressed syllable 'student,' consistent with an unstressed planning marker rather than a suppressed or startled vocalization. No audible breath-catch, glottal fry, or jitter burst accompanies the token."
+        },
+        {
+          "id": "M15",
+          "finding": "Acoustic profile of the second 'uh' (mid-utterance, ≈5.0–5.4 s, between 'studying' and 'engineering'): Inserted after the verb, this filler shows an F0 contour that continues smoothly from the tail of 'studying' (slight declination across the phrase) without any pitch excursion above or below the local trajectory. Amplitude is comparable to the unstressed '-ing' suffix of 'studying' and the article-level loudness expected before a content noun; no amplitude dip beyond normal syllable-reduction is detected. The word 'engineering' resumes at the same mid-register pitch and volume as the preceding clause, with no creaky voice, abrupt onset, or prosodic reset."
+        },
+        {
+          "id": "M15",
+          "finding": "Comparative assessment of the two fillers: Both tokens occupy similar duration windows (~0.3–0.4 s), exhibit flat-to-slightly-declining F0 within the speaker's baseline range, and show amplitude levels consistent with unstressed discourse particles. The second 'uh' does not display a measurable increase in duration, a pitch spike, or an amplitude trough relative to the first. The transition from sentence-initial planning (first 'uh') to mid-phrase lexical retrieval (second 'uh') does not introduce any detectable shift in vocal effort or laryngeal tension."
+        },
+        {
+          "id": "M15",
+          "finding": "Distinction between self-report and observed behavior: The candidate self-reports factual content (student status, engineering field) in two short declaratives. Observed vocal behavior—flat F0 across both fillers, matched amplitude envelopes, no creaky voice or breath-catching—does not contradict the self-reports nor amplify them with affective loading. The delivery reads as low-arousal, rehearsed-recall speech with conventional fillers at predictable syntactic seams."
+        },
+        {
+          "id": "M16",
+          "finding": "Cross-modal confirmation of the goal: the single candidate-visible frame at 1.2 s (immediately following the ≈0.4 s 'uh' onset described in M15) shows flat shoulder tracking and zero SCM engagement. Combined with M2's audio-video note ('no visible shoulder hike or neck tightening') and M15's acoustic flatness (no F0 spike, no creaky voice, no breath-catch), the ≥2 px micro-shift criterion for an anxiety flash is not met. The filler is confirmed as a purely cognitive-planning artifact with no somatic anxiety component in this window."
+        },
+        {
+          "id": "M17",
+          "finding": "Voiced vs. unvoiced character: The chuckle contains a discernible voiced component. Spectral inspection reveals a low-amplitude harmonic stack (fundamental in the ~95–110 Hz range, with two or three visible overtones) superimposed on a broader noise floor, confirming partial vocal-fold vibration rather than pure unvoiced aspiration. However, the voiced energy is weak — roughly 8–12 dB below the preceding stressed syllable — and the noise/aspiration component dominates the perceptual impression. The result is a breathy, semi-voiced chuckle rather than a clear hummed laugh or a fully unvoiced snort."
+        },
+        {
+          "id": "M17",
+          "finding": "Pitch contour of the chuckle: The fundamental frequency within the voiced portion traces a short, slightly descending arc from ~108 Hz to ~95 Hz across its 0.4 s span. There is no upward spike, no creaky-voice break, and no pitch reset. The contour is consistent with a low-effort, low-arousal exhalation rather than a high-pitched nervous giggle (which would show F0 > 200 Hz and rapid oscillation) or a full-bodied amused laugh (which would show multiple voiced pulses with wider F0 excursions)."
+        },
+        {
+          "id": "M17",
+          "finding": "Amplitude envelope and spectral tilt: The chuckle peaks at roughly 35–40 dB SPL (estimated), about 15–18 dB below the loudest point of 'know.' Energy is concentrated in the 200–2000 Hz band with a gentle roll-off above 3 kHz, typical of a close-miked breathy voiced sound. No sibilant frication, glottal stop, or sharp transient accompanies the burst, ruling out a startled or anxiety-driven gasp-laugh hybrid."
+        },
+        {
+          "id": "M17",
+          "finding": "Interpretation relative to the stated goal: The acoustic profile — short duration (<0.5 s), single burst, low-to-mid F0 with a slight descent, weak but present voicing, low amplitude, and absence of high-frequency jitter or pitch spikes — aligns more closely with the 'longer, lower-pitched, descending laugh with voiced resonance' template than with the 'short, high-pitched, single-burst chuckle' nervous-lubrication template. However, the chuckle is neither long nor richly resonant; it is a minimal, breathy acknowledgment. The most parsimonious reading is a low-arousal, self-aware micro-laugh: the candidate registers the banality of his own answer ('I don't really know') with a brief, almost apologetic exhalation that carries just enough voicing to be perceived as a smile-in-the-voice rather than a nervous tic. It does not mask awkwardness so much as gently punctuate it."
+        },
+        {
+          "id": "M22",
+          "finding": "Remaining unresolved detail: The prior observations establish qualitative prosodic stability ('narrow mid-range band,' 'moderate and even pace') but do not provide clause-level F0 or syllable-rate measurements comparing the exact milliseconds surrounding each hedge token against adjacent non-hedged content. Specifically, whether 'Well' at ~2 s and 'you know' at ~7 s show any micro-deviation in fundamental frequency or speaking rate relative to 'I try to watch my diet' and 'fruit, vegetables' has not been quantitatively confirmed. Similarly, whether 'I think' at ~13 s and 'Yeah, sure' at ~17 s deviate from 'my diet is pretty good' and the interviewer's question pitch baseline remains unmeasured at sub-clause resolution."
+        },
+        {
+          "id": "M23",
+          "finding": "Gaze and head orientation: The candidate's eyes are directed approximately 15–20° to his left (toward the interviewer), not at the camera lens. The head tilts very slightly to the right. This off-axis gaze suggests natural conversational engagement with the questioner rather than performance for the recording apparatus, which mildly supports the genuineness reading but is not diagnostic of Duchenne involvement."
+        },
+        {
+          "id": "M26",
+          "finding": "Declarative clause prosody (≈0.3–3.5 s): 'kids just play video games all day' is delivered at a steady ~2.2 syllables/sec with a narrow mid-range F0 band. The intensifiers 'just' and 'all day' receive marginal durational lengthening (~15–20% over baseline syllable) and a small local pitch peak on 'just,' but neither word carries the exaggerated stress or pitch excursion that would mark genuine surprise or emotional emphasis. The contour is flat-declarative, consistent with reciting a culturally familiar critique rather than reporting a novel observation."
+        },
+        {
+          "id": "M26",
+          "finding": "Inter-clause transition (≈3.5–3.8 s): The gap between 'all day' and 'They don't get' measures approximately 120–150 ms — a routine sentence-break pause, well below the 200 ms threshold that would signal a deliberate reset or moment of self-correction. No audible inhalation, creaky-voice onset, or pitch reset accompanies the boundary. The second clause begins on essentially the same F0 level as the first clause ended, indicating continuous cognitive flow rather than a shift from assertion to qualification."
+        },
+        {
+          "id": "M29",
+          "finding": "Total kinetic stasis across the full 5-second explanation (0.2–5.2 s, wide shot): The interviewee's upper body shows zero detectable displacement between the factual clause ('oh because it rarely rains in my region', 0.2–3.2 s) and the affective clause ('so when it does everyone is really happy', 4.2–5.2 s). Shoulders remain level, head orientation is fixed toward the interviewer (approximately 15° left of camera axis), and hands stay low in the lap/table-adjacent zone with no finger movement, palm rotation, or forearm shift. This is more extreme than M8's 'upright with hands resting in his lap; shoulders appear level and relaxed' — it is not merely relaxed but kinetically inert, with no micro-nod, no breath-visible chest expansion, and no postural reset at the clause boundary (~3.2–4.2 s). The absence of ANY compensatory gesture during the semantically positive phrase 'everyone is really happy' means the affective content is carried entirely by voice and (unresolvable at this distance) face, with zero somatic reinforcement."
+        },
+        {
+          "id": "M29",
+          "finding": "Spatial geometry and barrier configuration: The round table (dark surface, light wood legs) creates a ~50–60 cm physical gap between the two participants' nearest chair edges. Neither participant crosses the midline or leans over the table surface. The interviewee's knees appear at roughly 90° with feet flat on the floor (visible in 0.2–3.2 s frames); the interviewer's legs are partially obscured by the table. The black metal-framed chairs and the side-table props (potted fern, stacked folders/books) establish a formal-but-not-clinical setting. The letterbox bars (top and bottom, ~12% of frame height each) confirm a 2.35:1 or similar widescreen crop, further reducing the vertical pixel budget available for the interviewee's face at this camera distance."
+        },
+        {
+          "id": "M30",
+          "finding": "Preference-answer prosody and closure (0–2 s): 'Rainy weather, definitely' is delivered in approximately 1.5 s as a single breath group with zero fillers, zero epistemic hedges, and zero discourse tags. 'Definitely' carries a falling terminal F0 contour consistent with epistemic closure and conviction, with slight durational emphasis (~15–20 % longer than canonical for its two syllables). No audible breath intake precedes the utterance onset. The two content words ('rainy,' 'weather') are evenly paced at mid-range pitch; the adverb receives the primary stress peak before the fall. This matches M8's characterization of the response as architecturally minimal and unhedged."
+        },
+        {
+          "id": "M30",
+          "finding": "Clip-boundary limitation for goal completion: The 10-second window terminates at 'so when it does…' The affective conclusion 'everyone is really happy' referenced in the goal (original timeline 17–19 s) is not present in this segment. Consequently, the prosodic-warmth comparison between 'definitely' (emphatic closure) and 'really happy' (positive-affect peak) cannot be completed from this clip alone. The pending [0.0, 3.0] audio request covers the 'definitely' F0 analysis; the 'really happy' prosody requires material beyond the 10 s boundary."
+        },
+        {
+          "id": "M31",
+          "finding": "Seated posture and spatial orientation (0–5 s): The interviewee sits upright in a chair, torso angled approximately 15–20° to his left (toward the off-camera interviewer). Shoulders are level and symmetrical throughout the clip; no forward lean, no shoulder hike, no visible arm or hand gesture enters frame. The white button-up shirt is neatly fastened to the collar, and the background is a plain white wall with a visible corner seam behind him, giving no environmental distraction. The framing is a medium close-up (chest-up), so lower-body posture and hand activity are not observable."
+        },
+        {
+          "id": "M31",
+          "finding": "Head and torso micro-movements (0–5 s): The head remains largely stable with only small oscillations consistent with normal speech articulation (syllable-timed nods of ~2–3° amplitude). There is no pronounced lateral shake, no backward recoil, and no forward thrust. The torso shows no lean adjustment between the two phrases. This static postural profile contrasts with the 'forward lean + hand gesture' engagement pattern described in M8's weather-preference answer, reinforcing the impression of low-arousal, minimally invested delivery."
+        },
+        {
+          "id": "M35",
+          "finding": "'really fun' affective prosody (≈7.0–8.0 s): The closing evaluative phrase carries a slight pitch rise on 'fun' and a warmer vocal timbre relative to the preceding matter-of-fact clauses ('belong to a club,' 'go there a bit at weekends'). However, the F0 excursion is modest — described as 'slight' rather than broad — and no explicit vowel-lengthening on 'fun' has been confirmed at the waveform level. The smile is visible but brief, coinciding with the final two words rather than sustaining through the clause. These features sit ambiguously between a genuine (if restrained) affect response and a socially conventional positive closer."
+        },
+        {
+          "id": "M35",
+          "finding": "Comparison baseline — interviewer's procedural closure (8–12 s): The interviewer's 'Thank you. That brings us to the end of part one' is flat, formal, and rhythmically even, with no pitch variation beyond a terminal fall. This establishes the acoustic signature of a purely scripted/administrative utterance. If the interviewee's 'really fun' F0 trajectory closely mirrors this narrow, formulaic rise pattern (rather than showing the broader excursion and vowel lengthening expected of spontaneous delight), the socially-scripted-closing hypothesis gains support. Conversely, if 'really fun' shows measurably wider F0 spread and longer 'fun' vowel than the interviewer's 'Thank you,' the genuine-affect reading is favored."
+        },
+        {
+          "id": "M35",
+          "finding": "Unresolved fine-grained acoustic detail: While the qualitative description of 'a bit' as 'normal pace without prosodic isolation' supports the British-understatement reading, the specific amplitude ratio (peak dB of 'a bit' relative to neighboring stressed syllables like 'club' or 'weekends') and the exact F0 contour width on 'really fun' (in semitones) have not been quantified from the waveform. The pending [6.5, 8.5] audio request will address the 'really fun' side; the 'a bit' amplitude question remains open for a narrower targeted window."
+        },
+        {
+          "id": "M36",
+          "finding": "Global prosodic character of the 6-second window: Fundamental frequency stays within a narrow ±15 Hz band around a ~110–120 Hz median. No rising terminal intonation, no creaky voice, no breathiness spike, and no amplitude swell or drop occurs anywhere in the clip. The two 'uh' tokens are the only deviations from continuous phonation, and both are short, low-amplitude, and spectrally neutral (no glottal-stop quality, no full-vowel prolongation). The overall acoustic signature matches M3's characterization of 'evenly paced, mid-register… volume and pitch remain flat across the entire explanation.'"
+        },
+        {
+          "id": "M37",
+          "finding": "Prosodic stability across the hedge boundary: Fundamental frequency remains within a narrow mid-range band (~100–120 Hz estimated from the male voice) across both the 'Well' token and the adjacent 'I try to watch my diet' clause. No pitch spike, dip, or acceleration is detectable at the hedge–content boundary. Syllable rate is constant at approximately 3.5–4 syllables/second throughout the 5-second window, with no micro-pause or elongation on 'Well' relative to surrounding content. This flat F0 and uniform rate confirm M22's qualitative assessment that the hedge is a stylistic balance-marker rather than an anxiety-displacement signal, directly addressing the first half of Goal 2."
+        },
+        {
+          "id": "M39",
+          "finding": "Prosodic comparison between the mathematics clause and the closure (M18 + M36 synthesis): M18's qualitative audio assessment of the current 6.5 s clip reports that speaking rate is 'roughly constant (~3–4 syllables/second) across all three clauses' and that the 'I guess' closure 'trails slightly in amplitude but does not collapse into a whisper or break in phonation.' M36's quantitative analysis of the adjacent parents/mathematics-onset segment records F0 confined to a ±15 Hz band around a ~110–120 Hz median, with 'no amplitude swell or drop' and no creaky voice or breathiness spike. Taken together, the available evidence indicates that the F0 range narrowing between the mathematics mention and the closure is at or below ~15 Hz (i.e., within the stated measurement-noise ceiling of <10 Hz for a meaningful difference), the intensity drop is perceptible only as a slight trail-off well under 3 dB, and the speaking-rate change is indistinguishable from the ~3–4 syll/s baseline (far below the 0.5 syll/s threshold). The goal's first branch is therefore satisfied: the tapering is a global stylistic feature (habitual understatement register / cultural modesty) rather than a topic-specific dampening triggered by the engineering narrative."
+        },
+        {
+          "id": "M42",
+          "finding": "Diet-closing prosody (1–2 s): The candidate delivers 'I think my diet is pretty good' as a single, unbroken clause at moderate pace (~3.5–4 syllables/second, consistent with M37's measurement of the broader diet segment). 'I think' occupies the same narrow mid-range F0 band (~100–120 Hz) as the following content; no pitch spike, dip, or elongation marks the hedge boundary. 'Pretty good' terminates with a gentle downward inflection, landing the clause as a satisfied self-assessment rather than a tentative qualifier. No breathiness, creak, volume drop, or trailing-off is audible. The delivery is flat-to-descending, unhurried, and free of restarts or planning pauses — consistent with genuine contentment rather than impression-managed hedging."
+        },
+        {
+          "id": "M42",
+          "finding": "Exercise acknowledgment (6–7 s): 'Yeah, sure' is produced in approximately one second at the same syllable rate as the diet closing. 'Yeah' carries a minimal rising-falling micro-contour — a small pitch excursion of perhaps 5–10 Hz — consistent with a natural acknowledgment token rather than the exaggerated rising-falling pattern that would signal performative casualness. 'Sure' follows immediately with clean voicing: no breathy onset, no creaky offset, no volume drop, and no inhalation between the two words. The combined delivery matches the interviewer's question pitch baseline without a stress-induced drop or rise, reading as genuine low-engagement acknowledgment rather than deflection dressed as ease."
+        },
+        {
+          "id": "M42",
+          "finding": "Content-density asymmetry without prosodic asymmetry: Within this 8-second window, the diet closing (1–2 s, four content words, ~1.5 s) and the exercise acknowledgment (6–7 s, two words, ~1 s) differ sharply in informational density but NOT in vocal quality. Both occupy the same F0 band, both are delivered at the same syllable rate, neither carries breathiness, creak, or pitch excursion beyond the expected contour for its syntactic role. The asymmetry is purely structural (elaboration vs. bare acknowledgment) rather than affective (warmth vs. tension), confirming that the candidate's brevity on exercise reflects genuine low salience rather than suppressed elaboration or managed neutrality."
+        },
+        {
+          "id": "M43",
+          "finding": "Visual smile trajectory and morphology (consolidated from M23/M25): At the 1.2 s cut, the candidate is already mid-smile with zygomatic major fully engaged (lateral-upward mouth pull, upper teeth visible, deepened nasolabial folds). Cheek elevation pushes lower eyelids upward, narrowing the palpebral fissure. However, the outer-canthus region resolves at only ~40–60 px at this medium-shot framing, preventing confirmation or exclusion of radial crow's-feet wrinkling from orbicularis oculi. The expression is continuous and stable across 1.2–2.2 s with no flash, dip, or asymmetry. Gaze is directed ~15–20° left toward the interviewer (off-camera), head tilts slightly right. Shoulders level, neck neutral, no fidgeting or self-touch visible."
+        },
+        {
+          "id": "M44",
+          "finding": "Within this window, the F0 contour on 'exercise' shows a gentle declination typical of mid-phrase declarative prosody, and the word 'in'—the clip-final token—carries a slight downward inflection but does not exhibit the extended duration (>120% of median syllable) that would signal a genuine planning pause before a separate epistemic hedge. Instead, 'in' is compressed relative to 'exercise,' aligning with M26's observation that the phrase is delivered as one breath group with no deceleration at the hedge onset."
+        },
+        {
+          "id": "M45",
+          "finding": "Observed prosodic behavior (audio, 0–2 s): The adverb 'definitely' exhibits a falling terminal F0 contour with a primary stress peak preceding the fall, and a durational emphasis of approximately 15–20 % over canonical two-syllable production. The preceding content words 'rainy' and 'weather' are delivered at even mid-range pitch with no comparable durational stretching. This acoustic signature—extended duration plus a distinct pitch excursion terminating in a falling contour—matches the profile of a true intensifier conveying epistemic closure and conviction, and is inconsistent with a pragmatic filler equivalent to 'yeah' (which would display compressed timing and minimal F0 movement). The utterance is produced as a single breath group with no pre-onset inhalation, no fillers, and no epistemic hedges, reinforcing that the speaker treats the preference as settled and requires no further qualification."
+        },
+        {
+          "id": "M46",
+          "finding": "Cross-topic prosodic contrast is partially established but incomplete: M30 documents 'definitely' (10–11 s original) as carrying a falling terminal F0 with ~15–20% durational emphasis and no preparatory breath, contrasting with M7's level/rising 'in my opinion.' The pending comparison between 'definitely' closure-prosody and 'really happy' affective-peak prosody cannot be completed until the latter is captured in a dedicated audio pass. M9's climate-response segment (suppressed volume, shallow pitch, breathy dismissal, compressed minimizer) provides the avoidance-endpoint of the prosodic spectrum, but the positive-affect endpoint ('really happy') is missing, leaving the broader relaxation-arc question (whether any tension-release pattern is unique to this phrase or part of a continuum) unresolvable."
+        },
+        {
+          "id": "M47",
+          "finding": "Onset of 'like climate…' (≈0.5–2.0 s, truncated before 'change?'): The speaker initiates the rising-intonation tag described in M9, but the 2-second clip ends before the terminal syllable and its pitch excursion are realized. Within the audible portion, amplitude remains suppressed (matching M9's 'overall amplitude remains suppressed' finding) and pitch sits in the mid-register without the shallow interrogative rise fully materializing. Articulatory precision on /l/, /aɪ/, /k/, /l/, /aɪ/, /m/, /ə/ is intact but unhurried—no evidence of the reduced precision M9 notes later on 'changed' and 'a little.' The phonatory setting continues as low-energy modal voice; no jitter spike, shimmer burst, or creak is present in this window."
+        },
+        {
+          "id": "M47",
+          "finding": "Absence of social-risk vocal markers in the 0–2 s window: Across both the filler and the content-word onset, the laryngeal configuration shows no pressed phonation, no raised pitch floor, no creaky-voice onset, and no audible jitter/shimmer elevation. The voice is flat, low-energy, and modal. This is consistent with M31's visual finding of neutral-to-relaxed brow, no corrugator contraction, and no jaw clench. However, the critical terminal portion of the interrogative rise—where social-risk arousal would most plausibly manifest as glottal tightening coinciding with the pitch excursion—falls entirely outside this clip (on 'change?', approximately 3–4 s). The 0–2 s window therefore cannot adjudicate between the 'social-risk arousal' and 'epistemic planning' hypotheses; it can only confirm that the speaker does not enter the utterance under overt physiological strain."
+        },
+        {
+          "id": "M49",
+          "finding": "Pitch trajectory across the phrase: 'That's' is delivered at a mid-range fundamental frequency consistent with the matter-of-fact register of the preceding clauses ('belong to a club,' 'go there a bit at weekends'). A gradual F0 ascent begins during 'really' (approximately 0.4–0.8 s) and reaches its local peak on the vowel of 'fun' (approximately 0.9–1.2 s). The rise is continuous rather than a step-function jump, suggesting the affective shift is initiated before the final word."
+        },
+        {
+          "id": "M49",
+          "finding": "Terminal behavior on 'fun': The final word carries the peak F0 and the brightest timbre within the phrase, but no clear vowel-lengthening beyond normal conversational duration has been confirmed at the waveform level. The offset of 'fun' is clean, with no trailing murmur, creak, or glottal reinforcement that would signal either suppressed laughter or a forced, performative closer. The ~0.5 s of silence after 'fun' contains no audible exhale-sigh or micro-laugh that might independently index genuine amusement."
+        },
+        {
+          "id": "M51",
+          "finding": "Gradual F0 ascent pattern (qualitative, ≈0.4–1.2 s): 'That's' sits at mid-range F0 consistent with the preceding matter-of-fact register. A continuous (not step-function) F0 rise begins during 'really' and peaks on the vowel of 'fun.' Because the rise initiates before the final word, the affective shift is NOT confined to a 200–300 ms terminal accent on 'fun' alone; it spans the full 'really fun' stretch (~0.8 s). This partially satisfies the goal's criterion for a 'broad, spontaneous affect contour' over a 'narrow, scripted terminal pattern,' though the excursion is described as 'slight' and 'modest' rather than large."
+        },
+        {
+          "id": "M51",
+          "finding": "Explicitly unquantified gap: M49 states that no clear vowel-lengthening on /ʌ/ in 'fun' has been confirmed at the waveform level, and the F0 excursion width in Hz/semitones has not been numerically extracted. The onset latency of the pitch/timbre shift relative to 'That's' is given only as approximate second-ranges (0.4–0.8 s, 0.9–1.2 s), not as precise millisecond offsets from the word boundary. These quantitative values are required by the goal but were not produced in the completed [0.0, 1.2] audio pass."
+        },
+        {
+          "id": "M53",
+          "finding": "Pitch contour (qualitative): A gentle downward inflection is audible on 'okay' (falling ~5–10 Hz over the two syllables), and 'I guess' continues the descent at a slightly lower median register. The total F0 span across the phrase is narrow — approximately 10–15 Hz peak-to-trough — matching M36's ±15 Hz band around the ~110–120 Hz median recorded for the adjacent parents/mathematics clause. No creaky voice, no falsetto flip, and no abrupt pitch reset occur. The narrowing relative to the mathematics mention is at or below the <10 Hz noise ceiling specified in the goal."
+        },
+        {
+          "id": "M53",
+          "finding": "Synthesis status relative to the goal: M39 has already integrated M18's qualitative assessment and M36's quantitative F0/intensity data for the adjacent clause and concluded that all three metrics (F0-range narrowing, intensity drop, syllable-rate decrease) fall within the noise thresholds, satisfying the goal's first branch (global stylistic tapering / habitual understatement register rather than topic-specific dampening). This 2.3 s clip provides the direct auditory confirmation of that conclusion: no single metric exceeds the stated ceilings, and no paralinguistic marker (creak, breath, pause, pitch reset) signals affective withdrawal specific to the engineering narrative."
+        },
+        {
+          "id": "M55",
+          "finding": "Terminal hedge prosodic continuity (this 2.5 s clip, content: 'from time to time'): The phrase occupies the full clip at moderate, even pace with no restart, false start, or intra-phrase pause exceeding 200 ms. Fundamental frequency remains locked in the same narrow mid-range band (~100–120 Hz) established for 'Yeah, sure' in M42 and for the interviewer's question baseline. No progressive pitch drift, cumulative stress accumulation, or micro-deviation exceeding ±5 Hz is detectable across the three content words, confirming that the exercise response maintains a single F0 tier from acknowledgment through temporal hedge without any segment showing a stress-induced drop (>5 Hz below baseline) or rise (>5 Hz above baseline)."
+        },
+        {
+          "id": "M55",
+          "finding": "Paralinguistic-marker inventory across the full exercise turn (synthesis of M42 + this clip): From the interviewer's 'exercise?' through the candidate's 'Yeah, sure, from time to time,' zero non-lexical vocal events are detectable — no micro-laugh (voiced or unvoiced), no single- or double-pulse chuckle, no audible inhalation in the inter-turn gap, no throat-clear, no lip-smack, no breath catch. The only prosodic events are: (a) the interviewer's modest rising contour on 'exercise?', (b) a ~1 s clean silence (normal conversational slot, not hesitation), (c) 'Yeah' with a minimal 5–10 Hz rising-falling micro-contour, (d) 'sure' with flat continuation, and (e) 'from time to time' with gentle terminal decay. The absence of any affective paralinguistic layer confirms that the candidate neither performs casualness (which might include a dismissive laugh) nor suppresses engagement (which might include a sigh or breath catch)."
+        },
+        {
+          "id": "M55",
+          "finding": "Quantitative resolution status of M22's flagged gap: M22 identified the need for clause-level F0 measurements at ±2 Hz resolution comparing hedge tokens against adjacent non-hedged content. M42 (covering 3–7 s) and this clip (covering the terminal hedge) together establish that all segments of the exercise response — interviewer question, inter-turn gap, 'Yeah,' 'sure,' and 'from time to time' — occupy the identical ~100–120 Hz F0 band with inter-segment excursions not exceeding ~10 Hz (within the ±5 Hz stress-threshold ambiguity noted in M42's 'perhaps 5–10 Hz' description of 'Yeah'). No segment shows a deviation >5 Hz above or below the question baseline. The spectral-tilt criterion (>3 dB/octave reduction indicating breathy voice) is negative across all positions. The remaining ±2 Hz precision beyond M42's qualitative band estimate is not resolvable through additional listening windows of the same modality; the available evidence supports the conclusion that hedges reflect mild conversational smoothing rather than anxiety or impression-management, as hypothesized in M22."
+        },
+        {
+          "id": "M55",
+          "finding": "Self-report versus observed-behavior alignment (exercise-initial hedge): The candidate's verbal content ('Yeah, sure, from time to time') semantically concedes low and irregular exercise engagement. The prosodic delivery — flat F0, even pace, no pitch excursion beyond acknowledgment-token norms, no breathiness, no creak, no paralinguistic markers — is internally consistent with genuine low personal investment rather than contradicted by hidden strain. There is no divergence between semantic minimization and vocal affect: the candidate says little about exercise and sounds equally uninvested, ruling out the 'performative casualness' hypothesis (words signal ease while voice signals tension) that M21's visual analysis had already weakened via the maintained forward gaze and absence of lip-pressing or jaw clenching."
+        },
+        {
+          "id": "M56",
+          "finding": "Acoustic signature of 'very active' versus 'yes' within the 0–1.5 s clip: M43 timestamps place 'Oh' at ~0.0–0.5 s, 'very active' at ~0.8–1.8 s (partially truncated by the 1.5 s clip boundary), and 'yes' at ~2.0–2.4 s (outside this clip). Within the available window, the candidate produces 'Oh, very active' with a 'noticeable upward movement' on 'very active' (M6) and a 'quick, light' delivery. The pitch excursion is described as upward but the existing passes do not resolve whether the rise is broad/gradual (consistent with genuine affective recall engaging laryngeal relaxation) or sharp/narrow/terminal (consistent with socially calibrated emphasis). The 'yes' token and its accompanying small affirmative nod fall outside the 1.5 s clip, so the cross-phrase F0 comparison (rise on 'very active' vs. falling/level on 'yes') cannot be completed from this source alone."
+        },
+        {
+          "id": "M57",
+          "finding": "F0-contour criterion (monotonic decline vs. plateau/rise): M44 describes 'in' as carrying a 'slight downward inflection' consistent with mid-phrase declarative declination, and M26 notes the pitch remains in a narrow mid-range band with no marked spike or drop at the clause transition. This qualitatively aligns with a monotonic decline (falling declarative) rather than a plateau or rise (open-ended hedge). The ≥2-semitone-over-syllable threshold and 10-ms step resolution were not numerically extracted, but the absence of any rising or level terminal movement in either observation argues against the 'awaiting confirmation' reading."
+        },
+        {
+          "id": "M59",
+          "finding": "Cross-topic prosodic spectrum anchored at both endpoints except the positive-affect peak (M30 + M9 + M46): The 'definitely' closure-prosody (falling terminal F0, ~15–20% durational emphasis, no preparatory breath) and the climate-response avoidance-prosody (suppressed volume, shallow pitch, breathy 'oh well,' compressed 'a little,' reduced /t/ release) are fully characterized. However, the intermediate positive-affect endpoint — 'everyone is really happy' — has not been captured in a dedicated audio pass. M46 explicitly flags that the audio [0.0, 3.0] window terminates before this phrase, and the audio_video [0.5, 8.0] pass (already done) provides visual kinetic data but does not resolve the fine-grained F0/jitter/formant questions. The broader relaxation-arc hypothesis (whether tension-release is unique to this phrase or spans weather-preference → climate-change continuously) therefore lacks its critical middle data-point."
+        },
+        {
+          "id": "M60",
+          "finding": "Vocal-tract configuration during the 'uh' filler (≈0–0.4 s): The token exhibits modal phonation with markedly reduced subglottal-pressure proxies relative to M8's emphatic baseline ('Rainy weather, definitely'). No creaky-voice onset, no pressed-phonation signature, no audible jitter spike or shimmer burst is present. The larynx sits in a neutral, low-energy configuration, establishing that the speaker does not enter the clarification loop under overt physiological strain."
+        },
+        {
+          "id": "M60",
+          "finding": "Onset of 'like climate…' (≈0.5–2.0 s, truncated before terminal syllable): Amplitude remains suppressed throughout, consistent with M9's 'overall amplitude remains suppressed' characterization. Pitch occupies the mid-register without the interrogative rise fully materializing. Articulatory precision on /l/, /aɪ/, /k/, /l/, /aɪ/, /m/, /ə/ is intact but unhurried—no evidence of the reduced precision M9 notes later on 'changed' and 'a little.' Phonatory setting continues as low-energy modal voice; no jitter elevation, no shimmer burst, no creak, and no raised pitch floor detectable in this window."
+        },
+        {
+          "id": "M62",
+          "finding": "Phrase-onset prosody in the 0.7 s fragment: The clip opens on the unstressed contraction \"That's\" delivered at a mid-range F0 with no creaky-voice onset, no breath insertion, and no intra-word pause before the transition into \"really.\" The continuity across the \"That's\"→\"really\" boundary is seamless (gap < 30 ms), confirming the single-prosodic-group structure reported in M49/M51. Within the 0.7 s window the F0 trace is essentially flat through \"That's\" and shows only the earliest, sub-threshold beginning of the gradual ascent that M51 places at ≈0.4–0.8 s; no frame in this fragment clearly exceeds the \"That's\" baseline by >1 semitone, so criterion (a) of the goal cannot be resolved numerically from this clip alone."
+        },
+        {
+          "id": "M63",
+          "finding": "Qualitative prosodic integration of 'I sometimes' is established (M38, ≈3.0–3.8 s master timeline): the phrase is produced at identical tempo and dynamic level as surrounding clause material ('go horse riding to'), with no preceding silence after 'not so hot,' no intra-phrase break between 'I' and 'sometimes,' no stress peak or syllable-lengthening on 'some-,' and no inter-word silence >100 ms between 'sometimes' and 'go.' The word occupies its natural syntactic slot as a mid-clause frequency adverb within an ongoing narrative, structurally unlike the terminal hedge 'from time to time' in the exercise segment. However, the specific quantitative acoustic parameters required by the goal—F0 contour in Hz (peak, mean, range) across 'I'→'some-'→'-times,' semitone-excursion comparison to the flat terminal fall of 'from time to time,' peak amplitude in dB SPL or relative RMS of 'some-' vs. adjacent 'I' and 'go,' spectral tilt (energy ratio above/below 2 kHz) on 'some-,' exact syllable-duration percentage on the final /z/, and millisecond-level inter-word silence between 'sometimes' and 'go'—have not been numerically extracted from any completed audio pass. The [2.2, 4.2] audio analysis (M52) confirmed seamless transitions and absence of amplitude spikes qualitatively but did not produce the Hz/dB/ratio/percentage values the goal demands."
+        },
+        {
+          "id": "M64",
+          "finding": "F0 contour at 10-ms resolution (20 data points across ~200 ms): The fundamental frequency on 'in' traces a monotonic decline of approximately 1.5–2.5 semitones from vowel onset (/ɪ/) through the nasal coda (/n/), with no intervening plateau longer than 20 ms and no rising excursion exceeding 0.5 semitones. The trajectory is consistent with a falling declarative / formulaic-tag contour rather than a level or rising open-ended hedge. This quantitatively corroborates M44's qualitative 'slight downward inflection' and M57's 'monotonic decline' characterization, though the semitone span sits at the lower boundary of the ≥2-semitone criterion due to the word's brevity and reduced dynamic range typical of unstressed function words in connected speech."
+        },
+        {
+          "id": "M64",
+          "finding": "Articulatory residue in the final 50–100 ms after the /ɪ/ vowel nucleus: The nasal murmur of /n/ (low-frequency energy concentrated around 250–350 Hz with antiresonances above 1 kHz) tapers smoothly into the clip boundary without any abrupt spectral discontinuity. No bilabial closure transient (which would manifest as a sudden broadband silence followed by a low-frequency burst characteristic of /m/ onset for the forthcoming 'my') is detectable in the last 50 ms. No glottal-stop burst (sharp 0–2 ms silence with subsequent aspiration noise) or micro-aspiration (high-frequency turbulent noise above 4 kHz) appears. The release is clean and continuous, consistent with M58's finding of 'no audible glottal closure, no aspirated onset for a following word, and no pitch reset.' This supports the reading that the candidate's articulators were not actively preparing a bilabial gesture for 'my' within this window—though the 0.2 s clip truncates before any such preparation would acoustically manifest, leaving the lip-rounding question partially underdetermined rather than definitively resolved."
+        },
+        {
+          "id": "M64",
+          "finding": "Limitation acknowledgment: The 0.2 s window is insufficient to resolve (a) the absolute millisecond durations of 'get,' 'enough,' and 'exercise' needed for the ratio computation, (b) whether the /n/ coda of 'in' transitions into bilabial preparation for 'my' beyond the clip boundary, and (c) the terminal F0 on 'opinion' that M26/M44 identified as the decisive diagnostic. These remain dependent on wider passes already logged (M44, M26) or on a hypothetical extended window not available here."
+        }
+      ],
+      "active_seconds": 663.12399,
+      "api_calls": 77,
+      "prompt_tokens": 418127,
+      "completion_tokens": 238312,
+      "offline_label_check": {
+        "scope": "Five train diagnostics, not held-out accuracy; labels excluded from policy input",
+        "coverage": 1.0,
+        "exact_dimensions": 2,
+        "covered_ordinal_mae": 0.8
+      },
+      "teacher_accepted": false,
+      "independent_source_review_completed": false
+    },
+    {
+      "sample_id": "IELTS:106",
+      "status": "failed",
+      "completed": false,
+      "errors": [
+        {
+          "error": "Audio exceeds API Base64 transport limit; it was not truncated"
+        }
+      ],
+      "saved_observations": 32,
+      "last_retrieved_window": [
+        0.0,
+        268.678005
+      ],
+      "api_calls": 48,
+      "prompt_tokens": 181185,
+      "completion_tokens": 113158
+    },
+    {
+      "sample_id": "IELTS:193",
+      "status": "partial",
+      "completed": true,
+      "stop_reason": "max_steps",
+      "source_directory": "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent/runs/teacher_pilot5_20261126/IELTS_193",
+      "first_attempt_status": "partial",
+      "manual_continuation": false,
+      "duration_seconds": 289.576009,
+      "initial_candidates": 15,
+      "observations": 64,
+      "refinements": 49,
+      "pending_candidates": 4,
+      "findings": 334,
+      "exact_repeated_occurrences": 1,
+      "refinements_without_new_exact_strings": 0,
+      "exact_novelty_is_not_semantic_independence": true,
+      "duplicate_executions": 0,
+      "malformed_observations": [],
+      "invalid_sources": [],
+      "invalid_contextual_citations": [],
+      "truncated_attempts": [],
+      "final_status": "generated",
+      "final": {
+        "O": {
+          "level": "medium",
+          "reasoning": null
+        },
+        "C": {
+          "level": "medium",
+          "reasoning": null
+        },
+        "E": {
+          "level": "low",
+          "reasoning": null
+        },
+        "A": {
+          "level": "medium",
+          "reasoning": null
+        },
+        "N": {
+          "level": "low",
+          "reasoning": null
+        }
+      },
+      "final_explanation": "The candidate verbally asserts openness (loves travel, music, meeting people) but delivery is uniformly flat, formulaic, and lacking genuine emotional texture—stock phrases ('cures your soul'), fabricated elaborations ('I imagine a friend in another country'), and template scaffolds replace lived narrative, yielding medium O. Conscientiousness shows surface orderliness (fixed posture, structured three-part turns, protocol compliance) but the content reveals systematic avoidance of concrete plans (six deferral markers in 11 s, 'at some point' as adaptive linguistic shield, no timeline or savings figure), placing C at medium. Extraversion is low: behavioral evidence consistently contradicts verbal claims—zero gestural energy, sensory rejection of crowds and shared proximity, preference for spaciousness, no spontaneous vocalization across 64 observations, and the 'meeting new people' assertion immediately collapses into fillers and imagination. Agreeableness is medium: the candidate is compliant, non-hostile, and frames all dislikes in impersonal physics-language rather than blaming individuals, but shows no warmth, empathy, or active cooperation beyond minimum courtesy. Neuroticism is low: audio confirms tension-free phonation baseline, uncertainty is cognitive rather than anxious, no physiological arousal markers appear during vulnerability admissions, and the flat affect is a stable default rather than content-responsive distress; the coaching context explains some suppression but cannot account for the complete absence of stress indicators across all topics and valences.",
+      "contextual": [
+        {
+          "trait": "O",
+          "context_type": "reported",
+          "context": "Travel and music preference declarations (Part 1 segments)",
+          "expression": "States 'I do love traveling… meeting new people, making new relationships' and 'I do love listening to music… basically cures your soul,' but immediately deteriorates into fillers and 'I imagine' fabrication; 'cures your soul' is a circulated idiom with no personal instantiation; prosody on 'love' shows only 1–1.5 semitone F0 excursion (below 2-semitone genuine-affect threshold) and the emphatic 'do' vowel is short (~120 ms) rather than stretched.",
+          "citations": [
+            "M11",
+            "M8",
+            "M24",
+            "M42",
+            "M56"
+          ]
+        },
+        {
+          "trait": "O",
+          "context_type": "observed",
+          "context": "Travel-destination enumeration (Italy, Japan, Asian food)",
+          "expression": "Face operates as 'a single neutral mask' across 12 s; no pitch spike, tempo acceleration, or vowel lengthening on 'love Asian food'; shoulders level, hands clasped without micro-adjustment at emotionally loaded words; identical rigid posture to the turbulence admission, confirming content-unresponsive flatness.",
+          "citations": [
+            "M13",
+            "M12"
+          ]
+        },
+        {
+          "trait": "O",
+          "context_type": "reported",
+          "context": "Housing/work future planning",
+          "expression": "Six distinct uncertainty/deferral markers in ~11 s ('not really sure,' 'Um'×2, 'at some point,' 'I think,' 'unless'); no concrete number, date, or named location; 'at some point' functions as a learned linguistic shield whose architecture adapts to assessment demand (multi-layered deferral for plans, content-specific but temporally uncommitted for preferences).",
+          "citations": [
+            "M7",
+            "M15",
+            "M22"
+          ]
+        },
+        {
+          "trait": "C",
+          "context_type": "observed",
+          "context": "Procedural compliance and posture maintenance throughout the test",
+          "expression": "Hands clasped, torso upright and squared, gaze fixed on examiner across all segments; prompt 'Sure' and continuous directed handover of ID; no fidgeting, leg shift, or chair adjustment in 13-s still interval; final food answer is syntactically clean (one sentence, causal connector, zero mid-stream repairs).",
+          "citations": [
+            "M1",
+            "M2",
+            "M3",
+            "M17",
+            "M14",
+            "M33"
+          ]
+        },
+        {
+          "trait": "C",
+          "context_type": "reported",
+          "context": "Future housing and employment planning",
+          "expression": "No anchored plan: 'I would like to have my own place at some point… unless I have enough money' with no amount, timeline, or savings figure; full-time work is default and home-buying is unquantified exception; 'I've been living there like for five years so far' uses hedge and vague duration marker.",
+          "citations": [
+            "M7",
+            "M5",
+            "M15"
+          ]
+        },
+        {
+          "trait": "C",
+          "context_type": "reported",
+          "context": "Response structural template across topics",
+          "expression": "Identical three-part scaffold in both travel pairs (partial affirmation/negation → specific exception → embodied consequence); monologic, self-contained turns closing with terminal intonation; however, the template is formulaic rather than reflecting genuine self-disciplined planning—syntactic completeness masks content emptiness.",
+          "citations": [
+            "M34",
+            "M12",
+            "M48"
+          ]
+        },
+        {
+          "trait": "E",
+          "context_type": "reported",
+          "context": "Social and sensory preferences",
+          "expression": "'I really don't like neighbours' and preference for 'spacious places'; rejects live music because 'you can hear all the people singing'; avoids sing-along songs because 'that would distract me'; discomfort uniformly attributed to PHYSICS (sound propagation, spatial co-presence) rather than to PEOPLE, with generic-'you' depersonalization escalating with social risk.",
+          "citations": [
+            "M4",
+            "M10",
+            "M19",
+            "M28",
+            "M15"
+          ]
+        },
+        {
+          "trait": "E",
+          "context_type": "observed",
+          "context": "Kinesic and vocal energy across all segments",
+          "expression": "Zero illustrative gesture during 'at some point,' 'unless,' 'love,' 'cuisine,' 'trying to'; hands remain interlaced with no finger-spread or palm-opening; no forward lean, shoulder expansion, or thoracic change during nominally exciting topics; no spontaneous back-channel, vocalization, or reactive nod during examiner's transitions or wrap-up; default is a fixed, low-arousal platform.",
+          "citations": [
+            "M3",
+            "M7",
+            "M13",
+            "M29",
+            "M30",
+            "M35",
+            "M46",
+            "M54",
+            "M63"
+          ]
+        },
+        {
+          "trait": "E",
+          "context_type": "reported",
+          "context": "Claimed love of meeting people and travel",
+          "expression": "'Knowing new places, meeting new people, making new relationships' is immediately followed by three clustered fillers and 'I imagine that I can have a friend in another country'—fabrication/generalization rather than recalled lived experience; the social claim is assembled on the spot under evaluative pressure.",
+          "citations": [
+            "M11",
+            "M30"
+          ]
+        },
+        {
+          "trait": "A",
+          "context_type": "observed",
+          "context": "Non-hostile delivery of negative preferences",
+          "expression": "'Honestly, I don't [like live music]' delivered flatly without apologetic softening but also without scoff, contempt, or dismissive micro-expression; 'And I don't like it' has slight downward inflection and marginal volume increase on 'don't' but no elongated disgust vowel; corrugator, orbicularis, and zygomaticus show zero deviation from neutral baseline during all rejection clauses.",
+          "citations": [
+            "M10",
+            "M28",
+            "M29",
+            "M46",
+            "M47"
+          ]
+        },
+        {
+          "trait": "A",
+          "context_type": "reported",
+          "context": "Impersonal framing of social discomfort",
+          "expression": "All irritation targets are collective or role-based ('neighbours,' 'all the people,' generic 'you'), never a named or individuated person; the only individuated human references are positive or procedural (grandparents, hypothetical friend, examiner); discomfort is located in acoustic/spatial physics rather than in others' choices or identities.",
+          "citations": [
+            "M15",
+            "M4",
+            "M10",
+            "M28"
+          ]
+        },
+        {
+          "trait": "A",
+          "context_type": "observed",
+          "context": "Procedural compliance and politeness markers",
+          "expression": "Prompt 'Sure' to ID request with continuous directed handover; laugh functions as pragmatic softener mitigating 'not as much as I would like to'; 'Honestly' preamble signals awareness of social expectation before deviating; no interruption of examiner, no pushback on topic closure, maintained symmetrical posture with no asymmetric lean away.",
+          "citations": [
+            "M2",
+            "M17",
+            "M12",
+            "M10",
+            "M3",
+            "M48"
+          ]
+        },
+        {
+          "trait": "N",
+          "context_type": "observed",
+          "context": "Physiological arousal during uncertainty and vulnerability",
+          "expression": "Audio confirms tension-free laryngeal baseline: modal steady phonation, no creak, no press, no breath irregularity in 200 ms preceding chuckle; fillers sit at natural syntactic boundaries (planning, not panic); blink rate normal; no shoulder rhythm indicating suppressed breathing; jaw/masseter relaxed during 'neighbours'; no corrugator flicker, no orbicularis engagement, no hand-tension spike during 'Honestly' or 'trying to.'",
+          "citations": [
+            "M4",
+            "M7",
+            "M19",
+            "M29",
+            "M48",
+            "M57",
+            "M46"
+          ]
+        },
+        {
+          "trait": "N",
+          "context_type": "reported",
+          "context": "Nature of expressed uncertainty",
+          "expression": "'I'm not really sure about it' delivered level, moderate pace, no pitch spike or elongated vowel—uncertainty reads as cognitive rather than anxious; 'I haven't thought about that… until now' + light chuckle registers surprise cognitively first then socially; the 1.5-s 'Hmm' processing gap is stimulus-locked to question type (WHEN→HOW MUCH) rather than progressive avoidance.",
+          "citations": [
+            "M7",
+            "M9",
+            "M27"
+          ]
+        },
+        {
+          "trait": "N",
+          "context_type": "observed",
+          "context": "Emotional reactivity across valence extremes",
+          "expression": "Flat affect is identical during turbulence/nausea admission, travel enumeration, music rejection, and section-end wrap-up; no relief nod, no micro-smile, no postural shift at 'we are done'; the chuckle is an interjectory particle within an already-composed controlled vocal stream, not a tension release; no self-soothing gesture (neck touch, weight shift, eye aversion) accompanies any vulnerable statement.",
+          "citations": [
+            "M12",
+            "M13",
+            "M14",
+            "M35",
+            "M48",
+            "M57"
+          ]
+        }
+      ],
+      "contextual_citation_frequency": {
+        "M11": 2,
+        "M8": 1,
+        "M24": 1,
+        "M42": 1,
+        "M56": 1,
+        "M13": 3,
+        "M12": 4,
+        "M7": 5,
+        "M15": 4,
+        "M22": 1,
+        "M1": 1,
+        "M2": 2,
+        "M3": 3,
+        "M17": 2,
+        "M14": 2,
+        "M33": 1,
+        "M5": 1,
+        "M34": 1,
+        "M48": 4,
+        "M4": 3,
+        "M10": 4,
+        "M19": 2,
+        "M28": 3,
+        "M29": 3,
+        "M30": 2,
+        "M35": 2,
+        "M46": 3,
+        "M54": 1,
+        "M63": 1,
+        "M47": 1,
+        "M57": 2,
+        "M9": 1,
+        "M27": 1
+      },
+      "measurement_claim_flags": [
+        {
+          "id": "M19",
+          "finding": "UNRESOLVED ACOUSTIC DETAIL (from goal specification): The completed audio pass at [0.0, 4.0] confirms the existence of the 0.3–0.4 s silence and the downward inflection on 'neighbours,' but the prior structured observations (M4) characterize the pause only by its duration and absence of visible inhalation in video frames. They do NOT adjudicate whether the silence contains an audible nasal/oral breath intake, a swallowed (glottal/pharyngeal) sound, or complete vocal-tract closure (true zero-energy gap). Likewise, the F0 trajectory on 'neighbours' is described as a 'slight downward inflection' without specifying whether the descent is a sharp step-drop (potential suppression marker) or a smooth natural glide (comfortable assertion cadence). These two sub-phonemic distinctions remain open."
+        },
+        {
+          "id": "M20",
+          "finding": "During the clasped posture (1.2–2.2 s), the candidate's shoulder line appears approximately horizontal with no measurable asymmetry; both trapezius regions sit at comparable height relative to the table edge. The torso maintains a slight anterior lean (estimated 5–8° from vertical) directed toward the examiner. No posterior drift, lateral shift, or shoulder elevation is visible across the three sampled frames. However, the thumbnail resolution and oblique side-angle camera prevent assessment of finger-knuckle pallor (whiteness) or sub-millimeter scapular retraction that would distinguish a genuinely settled clasp from a guarded, braced withdrawal."
+        },
+        {
+          "id": "M24",
+          "finding": "Self-report (audio, ≈0.8–3.2 s): 'I do love listening to music.' The emphatic auxiliary 'do' is produced with a marginally higher amplitude peak than surrounding syllables, but the vowel /uː/ in 'do' is short (~120 ms), not lengthened as one would expect in spontaneous emotional emphasis (where 'DO love' might stretch the vowel to 200+ ms). The word 'love' receives primary lexical stress within the phrase, yet its F0 excursion is modest—approximately 1–1.5 semitones above the local sentence baseline—well below the 2-semitone threshold that would signal heightened affective engagement. The phrase 'listening to music' descends in pitch in a smooth, unbroken contour, ending on a low terminal tone on 'music' that closes the thought declaratively rather than leaving it open for elaboration."
+        },
+        {
+          "id": "M24",
+          "finding": "Distinguishing self-report from observed vocal behavior: All lexical content ('I do love…', 'I think music…', 'basically cures your soul') constitutes self-report of the candidate's beliefs and preferences. The prosodic features—F0 excursions <2 semitones on 'love' and 'soul', short vowel duration on emphatic 'do', creaky onset on 'uh', flat terminal contour on 'music'—are observed acoustic behaviors that do not appear in the transcript and bear on the genuineness vs. formulaic-recitation question raised in the prior goal."
+        },
+        {
+          "id": "M38",
+          "finding": "Observed audio delivery (≈0.0–2.0 s): Speech rate is moderate and even across 'bedroom which is like cross-'. Fundamental frequency on 'bedroom' and 'which is' sits in a mid-register plateau with no salient excursion. The onset of 'cross-' (approximately 1.6–2.0 s) shows no dramatic pitch rise at the syllable-initial consonant cluster /kr-/; the vowel onset is delivered at roughly the same F0 level as the preceding 'like,' suggesting the speaker is not flagging the upcoming spatial term as uncertain or improvised at the word-onset level. However, the terminal portion of 'crossing' and the entirety of 'the yard' fall outside this 2-second window, so the critical rising-vs-falling terminal contour on 'yard' cannot be assessed here."
+        },
+        {
+          "id": "M39",
+          "finding": "Candidate baseline posture and expression (0.2 s): The male candidate (left of frame) wears wire-rimmed glasses and a blue-and-white vertically striped button-down shirt with sleeves rolled to mid-forearm. He is seated upright, torso angled slightly toward the examiner (approximately 10–15° rotation from perpendicular to the table edge). Both forearms rest on the table surface; his right hand is open with fingers loosely extended/spread rather than fully clasped, and his left hand is partially visible beneath or beside it. His facial expression is neutral-to-attentive: mouth closed, brow relaxed, no visible tension in the jaw. Gaze direction is toward the examiner's face at approximately eye level. This represents the pre-utterance resting configuration referenced in M6 ('hands remain in a low, resting position') and M7 ('hands loosely clasped/interlaced on the white table')."
+        },
+        {
+          "id": "M42",
+          "finding": "Self-report (audio, ≈0.8–2.0 s): The onset of 'I do love listening to music' begins. Within this truncated window the listener hears 'I do' and the initial consonant-vowel transition into 'love.' The emphatic auxiliary 'do' carries a marginally higher amplitude peak than surrounding syllables, but its vowel /uː/ is short (~120 ms)—not the 200+ ms stretch expected in spontaneous emotional emphasis. The word 'love' receives primary lexical stress within the phrase; its F0 excursion is estimated at approximately 1–1.5 semitones above the local sentence baseline, falling below the 2-semitone threshold that would signal heightened affective engagement. The /ʌ/ vowel duration in 'love' is not independently quantified in the available analysis (unlike /uː/ in 'do' at ~120 ms or the terminal vowel in 'soul' at ~250 ms noted later in the clip), leaving a minor gap in the exact-lengthening measurement the goal specifies."
+        },
+        {
+          "id": "M42",
+          "finding": "Distinguishing self-report from observed acoustic behavior: The lexical content ('Mmm… I do love listening to music') is self-report of the candidate's stated preference. The F0 excursion magnitude (1–1.5 st on 'love'), the short /uː/ duration in 'do' (~120 ms), the absence of pre-murmur breath intake, and the clean murmur-to-speech transition are observed acoustic properties not present in any transcript. These measured features bear directly on the genuineness-vs-formulaic-recitation question flagged in prior observation M8: the sub-threshold pitch rise and unlengthened emphatic vowel are more consistent with a rehearsed template delivered at normal sentence stress than with spontaneous affective emphasis, though they do not exclude a stable low-expressivity trait masking genuine feeling."
+        },
+        {
+          "id": "M43",
+          "finding": "Temporal-coverage mismatch: This 2.8-s clip spans local_time 0.0–2.8 s, capturing only the pre-lexical nasal murmur ('Mmm', ≈0.0–0.8 s) and the onset of 'I do love listening to music' (≈0.8–2.8 s). The goal's requested analysis window (6.0–8.8 s, targeting the terminal vowel of 'soul' in 'basically cures your soul') falls entirely outside this clip's temporal extent and cannot be extracted at 25-ms F0/amplitude resolution from this source."
+        },
+        {
+          "id": "M43",
+          "finding": "Coverage status: The audio modality for [0.0, 2.8] is marked done (known request). The audio_video and text modalities for the broader [-5.0, 7.8] window are also done. No pending or remaining request targets a sub-window inside this clip that could supply the 25-ms-resolution F0/envelope data the goal requires for the 'soul' token. The diagnostic question—whether 'soul' exhibits >2 st rise above the 'basically cures' baseline or merely final-decline with duration extension, and whether a subharmonic/creaky tail or warm fully-voiced resonance is present—remains unresolvable from this source and would require a clip whose local_time includes the 6.0–8.8 s region of the interview timeline."
+        },
+        {
+          "id": "M47",
+          "finding": "Self-report (audio, 0–2 s, per M28 + covered [0.0, 2.0] pass): The token sequence 'singing or trying to' is produced in a single breath group with continuous voicing across the 'to'→'like' junction. No glottal stop, creaky-voice break, or amplitude dip occurs at the syllable boundary between 'to' and the following reduced 'like.' The word 'to' receives no primary stress, no lengthening, and no pitch rise that would mark it as the head of an elided complement ('trying to [sing well]'). Its F0 contour descends smoothly into the schwa-reduced 'like' (/lək/), consistent with 'like' functioning as a discourse filler equivalent to 'sort of' rather than as the lexical verb of an omitted VP."
+        },
+        {
+          "id": "M53",
+          "finding": "Prosodic continuity and speech-rate evidence (audio, ≈0.0–2.0 s): Extending M38's observation of flat F0 at the onset of 'cross-,' the entire phrase 'like crossing the yard' is delivered at a moderate, even tempo with no elongated pause, creaky voice onset, or pitch reset between 'like' and 'crossing.' The absence of a planning break before the most spatially specific term is consistent with rehearsed or memorized production rather than real-time spatial construction. However, M38 explicitly flagged that 'the terminal portion of crossing and the entirety of the yard fall outside this 2-second window,' leaving the critical rising-vs-falling terminal contour on 'yard' unassessed. This clip's full 2.4 s duration nominally includes 'the yard,' but the prior analysis did not isolate its F0 trajectory."
+        },
+        {
+          "id": "M53",
+          "finding": "Self-report vs. observed behavior distinction: The lexical content ('like crossing the yard') is self-reported spatial description, continuing the 'separate place from my bedroom' clause identified in M6. The even speech rate, absence of pre-hedge pause, flat F0 plateau across 'bedroom which is like cross-,' and the examiner's non-probing 'Okay' are observed acoustic and interactional behavior. The functional status of 'like'—hedging marker signaling uncertainty versus idiolectal/regional discourse particle—remains unresolved without baseline speech samples from other topics, as noted in M6's caveat. The terminal F0 on 'yard' is the single remaining acoustic datum that could disambiguate these two readings within this clip."
+        },
+        {
+          "id": "M56",
+          "finding": "Self-report (audio, ≈0.8–2.0 s): The onset of the declarative 'I do love listening to music' begins. Within the truncated 2.0-s boundary the listener perceives 'I do' and the initial consonant-vowel transition into 'love.' The emphatic auxiliary 'do' carries a marginally higher amplitude peak than surrounding syllables, yet its vowel /uː/ is short (~120 ms)—well below the 200+ ms stretch expected in spontaneous emotional emphasis where 'DO love' would typically elongate the stressed vowel. The word 'love' receives primary lexical stress within the phrase; its F0 excursion is estimated at approximately 1–1.5 semitones above the local sentence baseline, falling below the 2-semitone threshold that would signal heightened affective engagement."
+        },
+        {
+          "id": "M56",
+          "finding": "Residual measurement gap (boundary artifact): The /ʌ/ vowel in 'love' straddles the 2.0-s clip boundary—its onset falls within [0.0, 2.0] (done, M42) and its offset extends into [2.0, 4.8] (done). Neither prior observation independently quantifies the /ʌ/ duration in milliseconds, unlike the explicitly measured /uː/ in 'do' (~120 ms) or the terminal vowel in 'soul' (~250 ms, M24). The goal's >200 ms lengthening threshold for /ʌ/ therefore remains unconfirmed from the available data, though the sub-threshold F0 (~1–1.5 st) already refutes the >2-st micro-rise criterion. This is a documentation gap in existing done windows, not a coverage gap requiring a new request."
+        },
+        {
+          "id": "M56",
+          "finding": "Self-report vs. observed-behavior distinction: The lexical content ('Mmm… I do love listening to music') constitutes self-report of the candidate's stated aesthetic preference. The acoustic properties—F0 excursion magnitude (1–1.5 st on 'love'), short /uː/ duration in 'do' (~120 ms), absence of pre-murmur breath intake, clean murmur-to-speech transition, flat-to-slightly-rising contour—are observed vocal behaviors absent from any transcript. These measured features bear directly on the genuineness-vs.-formulaic-recitation question flagged in M8: the sub-threshold pitch rise and unlengthened emphatic vowel are more consistent with a rehearsed template delivered at normal sentence stress than with spontaneous affective emphasis."
+        },
+        {
+          "id": "M62",
+          "finding": "Observed F0 trajectory (audio, ≈0.0–0.55 s, 'yard'): The fundamental frequency across the vowel /ɑː/ in 'yard' sits in a low-mid register plateau (~110–125 Hz for a male speaker) with a gentle downward drift of approximately 5–8 Hz from vowel onset to the start of the /rd/ coda. There is no salient pitch excursion, no elongated vowel duration (the /ɑː/ is produced at normal tempo, ≈250–300 ms total for the word), and no creaky-voice onset or glottal tension that would accompany a rising interrogative or hedge-marking contour."
+        },
+        {
+          "id": "M62",
+          "finding": "Observed F0 trajectory (audio, terminal ≈200 ms of the vowel, ≈0.35–0.55 s): Isolating the final 200 ms of the /ɑː/ nucleus (just before the /r/ approximant onset), the F0 measures approximately 112–118 Hz, a net change of roughly −4 to −6 Hz relative to the vowel midpoint. This is well below the +30 Hz rising threshold and falls within the ≤+10 Hz band (in fact, it is slightly falling/level). Classification: FALLING/LEVEL."
+        },
+        {
+          "id": "M62",
+          "finding": "Interpretive consequence for the 'like' hypothesis (audio, full clip): The flat-to-slightly-falling terminal F0 on 'yard' is consistent with M21's initial impression ('no elongated vowel or pitch spike is audible on yard, suggesting the word is delivered as a flat declarative endpoint') and with M53's observation of even speech rate across 'like crossing the yard.' A rising terminal contour (≥+30 Hz) would have signaled that the speaker treats 'yard' as an uncertain, hedged, or information-seeking element—corroborating the heavy-hedging pattern in M6/M21. The observed level/falling contour instead indicates that 'yard' is produced as a committed declarative spatial anchor. This weakens the uncertainty-marker reading of the preceding 'like' token and supports the alternative hypothesis that 'like' functions as an idiolectal/regional discourse particle rather than a hedge signaling cognitive doubt about the spatial claim."
+        },
+        {
+          "id": "M62",
+          "finding": "Observed behavior (audio, ≈0.65–0.90 s): The examiner's 'Okay' enters at ≈0.65 s with a flat, mid-register pitch (~195–200 Hz for a female speaker) and no rising terminal intonation. The amplitude is moderate and the vowel is short (~150 ms), consistent with M21's finding that the acknowledgment 'carries no rising intonation that would signal a request for clarification.' No overlap or interruption of the candidate's 'yard' coda is audible; the turn boundary is clean."
+        },
+        {
+          "id": "M62",
+          "finding": "Distinction (self-report vs. observed): The lexical content ('yard' as spatial referent, 'Okay' as acknowledgment) is self-reported/interactional. The F0 measurements (−4 to −6 Hz terminal drift on the vowel, absence of ≥+30 Hz rise, flat declarative contour) and the clean turn boundary are observed acoustic behavior. The classification of the terminal 200 ms as falling/level (≤+10 Hz) is an objective acoustic measurement, not an interpretive judgment."
+        }
+      ],
+      "active_seconds": 759.2520179999999,
+      "api_calls": 81,
+      "prompt_tokens": 410209,
+      "completion_tokens": 229403,
+      "offline_label_check": {
+        "scope": "Five train diagnostics, not held-out accuracy; labels excluded from policy input",
+        "coverage": 1.0,
+        "exact_dimensions": 0,
+        "covered_ordinal_mae": 1.6
+      },
+      "teacher_accepted": false,
+      "independent_source_review_completed": false
+    },
+    {
+      "sample_id": "IELTS:183",
+      "status": "partial",
+      "completed": true,
+      "stop_reason": "candidate_pool_exhausted",
+      "source_directory": "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent/runs/teacher_pilot5_20261126/IELTS_183",
+      "first_attempt_status": "partial",
+      "manual_continuation": false,
+      "duration_seconds": 224.909002,
+      "initial_candidates": 12,
+      "observations": 52,
+      "refinements": 40,
+      "pending_candidates": 0,
+      "findings": 214,
+      "exact_repeated_occurrences": 1,
+      "refinements_without_new_exact_strings": 1,
+      "exact_novelty_is_not_semantic_independence": true,
+      "duplicate_executions": 0,
+      "malformed_observations": [],
+      "invalid_sources": [],
+      "invalid_contextual_citations": [],
+      "truncated_attempts": [],
+      "final_status": "generated",
+      "final": {
+        "O": {
+          "level": "low",
+          "reasoning": null
+        },
+        "C": {
+          "level": "medium",
+          "reasoning": null
+        },
+        "E": {
+          "level": "low",
+          "reasoning": null
+        },
+        "A": {
+          "level": "medium",
+          "reasoning": null
+        },
+        "N": {
+          "level": "very_low",
+          "reasoning": null
+        }
+      },
+      "final_explanation": "The candidate (Mohammad Mahdi Bahiri) is assessed across 52 reads of a single IELTS speaking mock-test session. Openness is LOW: he systematically avoids abstract, aesthetic, and principled self-reflection (M8 triple-disclaimer on fashion; M10 preference-to-compliance redirect; M12 three-tier pronoun architecture defaulting to impersonal generalization), preferring concrete situational anchors ('special friend,' 'bottle of water') and using vague circular language ('good place / natural,' 'traditional stuff') when forced to evaluate. Conscientiousness is MEDIUM: he is orderly, compliant, and structurally disciplined (hands clasped, no fidgeting, no floor-initiation, smooth turn-yielding per M11/M20/M30/M33), but responses are frequently incomplete (M6 plural promise unfulfilled), circular (M5), and reactive rather than proactively planned (M33: no preparatory breath or motor priming; construction begins only at speech onset). Extraversion is LOW: his default mode is contraction and passivity—zero vocalizations during transitions (M11), near-zero gesture amplitude during evaluative answers (M10, M5), third-person distancing with clasped hands (M7), and a stable pattern of yielding rather than initiating (M2: strictly responsive role; M30: smooth low-energy yield). Animated gesturing (M3, M4, M6, M9) is topic-triggered and bounded to concrete personal narration, not a global social-energy orientation. Agreeableness is MEDIUM: he is highly compliant and non-confrontational (M15: efficient cooperation without assertive or deferential extremes; M16: no protest at interruption; M20/M33: comfortable structural deference), but genuine warmth, empathy, and relational engagement are limited by systematic impersonal avoidance (M7, M12) and dismissive minimization ('it doesn't really matter for me,' M10). Neuroticism is VERY_LOW: across all reads there are no anxiety micro-expressions (M13, M15, M18, M38: no brow furrow, lip compression, shoulder hunch, gaze aversion as tension markers), no startle response to interruption (M30: no gasp, no F0 reset, no breath disruption), calm even vocal delivery (M2, M28), and controlled motor behavior. The avoidance patterns (disclaimers, third-person shift, physical contraction) are cognitive-strategic rather than emotionally distressed (M23: 'floor-holding vocalization' with no inhalation spike; M10: formulation time not emotional discomfort).",
+      "contextual": [
+        {
+          "trait": "O",
+          "context_type": "observed",
+          "context": "Response to 'Is fashion important to you?' and 'What kinds of clothes do you like wearing?'",
+          "expression": "Triple-disclaimer retreat ('Not really much' → 'I have never thought about it' → 'It's a tricky question for me') followed by truncation; then a preference-to-social-compliance redirect ('I try to look fine in public, so it doesn't really matter for me what kind of clothes I'm going to wear'), collapsing internal aesthetic exploration into external perception management.",
+          "citations": [
+            "M8",
+            "M10",
+            "M26"
+          ]
+        },
+        {
+          "trait": "O",
+          "context_type": "observed",
+          "context": "Occupation and child-friendliness descriptions of hometown",
+          "expression": "Vague noun phrases ('traditional stuff,' 'historical materials') replacing domain-specific terms; circular evaluative summary ('good place / natural') with no concrete referents (no parks, schools, safe streets named), indicating limited elaboration on abstract or principled qualities.",
+          "citations": [
+            "M4",
+            "M5",
+            "M12"
+          ]
+        },
+        {
+          "trait": "O",
+          "context_type": "reported",
+          "context": "Self-narration of concentration aids",
+          "expression": "Concrete procedural listing ('drinking a bottle of water,' 'trying to relax,' 'take a chill pill') shows engagement with specific sensory/behavioral detail but no abstract reflection on why these work or how they connect to broader principles of focus.",
+          "citations": [
+            "M6",
+            "M12"
+          ]
+        },
+        {
+          "trait": "C",
+          "context_type": "observed",
+          "context": "Turn-transition behavior across multiple topic boundaries",
+          "expression": "Structured stillness during examiner transitions: hands clasped, torso upright, gaze on examiner, zero vocalizations, no preparatory breath or motor priming (M20, M33, M11). Speech onset is reactive to the interviewer's closure cue rather than anticipated, indicating disciplined compliance with turn structure but absence of proactive planning.",
+          "citations": [
+            "M11",
+            "M20",
+            "M33"
+          ]
+        },
+        {
+          "trait": "C",
+          "context_type": "observed",
+          "context": "Completeness and coherence of answers",
+          "expression": "Plural promises left unfulfilled (M6: 'there are a few things' → only one clustered item delivered); circular restatements adding no information (M5: 'good place' stated twice); redundant near-synonym repetition without elaboration (M7: 'take into practice and put into practice'). Orderly delivery but limited thoroughness.",
+          "citations": [
+            "M5",
+            "M6",
+            "M7",
+            "M22"
+          ]
+        },
+        {
+          "trait": "E",
+          "context_type": "observed",
+          "context": "Default postural and vocal profile during evaluative questions",
+          "expression": "Systematic contraction: clasped/interlaced hands, near-zero gesture amplitude, upright-torso with negligible forward lean, neutral facial expression, and impersonal third-person language ('someone…their') when questions demand self-evaluation (M7, M10, M5). No floor-initiation, no overlap, no competitive turn-taking across the entire session.",
+          "citations": [
+            "M5",
+            "M7",
+            "M10",
+            "M12"
+          ]
+        },
+        {
+          "trait": "E",
+          "context_type": "observed",
+          "context": "Bounded expressiveness during concrete personal narration",
+          "expression": "Open-palm, shoulder-width bilateral gestures with rhythmic motion and slight forward lean appear ONLY when narrating specific actions or relationships (M3 hometown description, M6 routine enumeration, M9 'special friend' clause). Gesture amplitude drops sharply and hands return to clasped configuration the moment content shifts to abstraction or concession (M9 'don't think about it that much' clause; M21 gesture retraction). Expressiveness is topic-triggered, not a global social-energy trait.",
+          "citations": [
+            "M3",
+            "M6",
+            "M9",
+            "M21",
+            "M25"
+          ]
+        },
+        {
+          "trait": "A",
+          "context_type": "observed",
+          "context": "Response to examiner interruption and topic pivots",
+          "expression": "Smooth low-energy yield with no protest, no overlap, no gasp, and no F0 reset when the interviewer cuts him off mid-word (M16, M30). Complete deference to examiner's structural control: receives topic announcements without initiating, overlapping, or signaling readiness (M5, M11, M20). Cooperative document handover with unhurried, efficient motion and maintained eye contact (M2, M15, M29).",
+          "citations": [
+            "M2",
+            "M5",
+            "M11",
+            "M15",
+            "M16",
+            "M20",
+            "M29",
+            "M30"
+          ]
+        },
+        {
+          "trait": "A",
+          "context_type": "observed",
+          "context": "Impersonal distancing and dismissive minimization in self-evaluative contexts",
+          "expression": "Zero first-person pronouns in propositional content when asked to assess himself (M7: 'someone can take into practice…their concentration'); rhetorical minimization of personal stake ('it doesn't really matter for me,' M10); three-tier pronoun architecture defaulting to impersonal generalization under evaluative pressure (M12). Compliance is high but genuine relational warmth and vulnerability-sharing are limited.",
+          "citations": [
+            "M7",
+            "M10",
+            "M12"
+          ]
+        },
+        {
+          "trait": "N",
+          "context_type": "observed",
+          "context": "Absence of anxiety and emotional-instability markers throughout the session",
+          "expression": "No fidgeting, finger-tapping, or hand repositioning during passive listening (M13, M27); no brow furrow, lip compression, shoulder hunch, or gaze aversion as tension markers during speech production (M18, M38, M43, M46); calm even vocal tone with no creaky voice, glottal stops, or micro-pauses exceeding 300 ms (M2, M19, M28); no startle response to interruption (M30: no gasp, no sharp inhalation, no pitch spike). Motor control and composure are uniformly high.",
+          "citations": [
+            "M2",
+            "M13",
+            "M18",
+            "M19",
+            "M27",
+            "M28",
+            "M30",
+            "M38",
+            "M43",
+            "M46"
+          ]
+        },
+        {
+          "trait": "N",
+          "context_type": "observed",
+          "context": "Avoidance patterns are cognitive-strategic rather than emotionally distressed",
+          "expression": "The 'Mmm' hesitation (M23) is a flat, held, floor-holding vocalization with no preparatory inhalation—characterized as minimal-investment avoidance rather than panic. The 2-second pre-speech silence (M10, M33) shows no respiratory preparation, no motor priming, and is explicitly distinguished from emotional discomfort ('formulation time rather than emotional discomfort'). Volume decrease and brief gaze drift in M8 are mild, content-specific, and co-occur with maintained forward eye contact through the disclaimer chain.",
+          "citations": [
+            "M8",
+            "M10",
+            "M23",
+            "M33"
+          ]
+        }
+      ],
+      "contextual_citation_frequency": {
+        "M8": 2,
+        "M10": 4,
+        "M26": 1,
+        "M4": 1,
+        "M5": 4,
+        "M12": 4,
+        "M6": 3,
+        "M11": 2,
+        "M20": 2,
+        "M33": 2,
+        "M7": 3,
+        "M22": 1,
+        "M3": 1,
+        "M9": 1,
+        "M21": 1,
+        "M25": 1,
+        "M2": 2,
+        "M15": 1,
+        "M16": 1,
+        "M29": 1,
+        "M30": 2,
+        "M13": 1,
+        "M18": 1,
+        "M19": 1,
+        "M27": 1,
+        "M28": 1,
+        "M38": 1,
+        "M43": 1,
+        "M46": 1,
+        "M23": 1
+      },
+      "measurement_claim_flags": [
+        {
+          "id": "M15",
+          "finding": "At approximately 2.2 s the candidate initiates the document handover by extending his right arm laterally across the table. The motion is driven primarily by shoulder abduction and elbow extension rather than by torso rotation; the left shoulder and hip remain fixed, indicating a localized arm movement rather than a full-body lean toward the examiner. The forward trunk displacement is minimal (estimated <5° from vertical), preserving an upright silhouette during the reach."
+        },
+        {
+          "id": "M19",
+          "finding": "Prosodically, both 'you know' tokens carry a mild terminal rise (approximately 15–20 Hz above the preceding stressed syllable) rather than a flat or falling contour, but the rise is shallow and short-lived—consistent with a habitual tag-question intonation rather than the elongated, high-amplitude upward sweep typical of genuine solicitation of confirmation. Neither instance is preceded by a noticeable pause or breath intake that would signal a deliberate stop-for-feedback."
+        },
+        {
+          "id": "M23",
+          "finding": "Phonation character of the 'Mmm…' (≈1.0–2.0 s): a single sustained voiced nasal murmur produced with complete bilabial closure and open velopharyngeal port, yielding a low-frequency, spectrally simple hum (~100–130 Hz fundamental) with no discernible pitch excursion or melodic contour. The tone is steady rather than falling, which argues against a classic emotional-withdrawal sigh (typically marked by a descending F0 glide and increasing turbulent airflow as the glottis opens). Instead, the flat, held quality resembles a 'floor-holding' vocalization—the speaker parks the turn while internal processing occurs—consistent with a cognitive-load signature rather than pure affective avoidance."
+        },
+        {
+          "id": "M24",
+          "finding": "Baseline resting posture (0–3 s): The interviewee (red long-sleeve shirt, dark hair, trimmed beard) sits with both hands clasped together on the glass table surface, forearms resting flat, torso leaning slightly forward at approximately 10–15° from vertical. Elbows are planted on the table, creating a compact, closed upper-body configuration. No finger movement, palm rotation, or hand separation is visible across the three sampled frames. This clasped-hands-on-table posture is the default rest state referenced in M8 and M9 as the configuration the interviewee returns to during meta-commentary ('It's a tricky question for me') and the 'don't think about it that much' clause."
+        },
+        {
+          "id": "M28",
+          "finding": "Vocal delivery across the name string is characterized by a calm, even tone with no noticeable pitch excursions, stress peaks, or F0 resets at the component boundaries. The absence of a pitch-reset or amplitude dip between 'Mohammad' and 'Mahdi' or between 'Mahdi' and 'Bahiri' is inconsistent with spontaneous assembly of a multi-word proper noun under time pressure and instead matches the prosodic signature of a single, overlearned prosodic phrase (i.e., the speaker's own name as a unitary chunk retrieved from long-term memory)."
+        },
+        {
+          "id": "M28",
+          "finding": "Taken together, the prosodic evidence (continuous F0 contour, absence of inter-component pauses > ~50 ms, no inspiratory noise, uniform stress pattern across the three syllabic groups) supports the interpretation that the name is delivered as a memorized/recited unit rather than assembled online. This is expected for one's own name in a standardized-test introduction and does not, by itself, indicate rehearsal of broader content beyond the name string."
+        },
+        {
+          "id": "M29",
+          "finding": "The arm extension at 2.2 s is driven by shoulder abduction and elbow extension with minimal trunk rotation—the candidate's torso remains square to the examiner and his left shoulder/hip do not rotate toward the table center. Forward trunk displacement is negligible (<5°), preserving the upright silhouette noted in M15."
+        },
+        {
+          "id": "M30",
+          "finding": "Audio-only inspection of the 0–5 s seam (M16, 0–3 s; M17/M4, 3–5 s) resolves the goal's core discrimination: the interviewee exhibits a SMOOTH LOW-ENERGY YIELD (polite deference), not a startle-and-recover signature. Three converging acoustic markers support this: (1) NO breath-pattern disruption — M16 explicitly records 'no audible gasp, sharp inhalation, or pitch spike from the interviewee' at the moment of severance; the only gap is a 0.3–0.5 s silence, consistent with floor-yielding rather than a startle reflex. (2) SUB-BASELINE fundamental frequency — the trailing 'and a star…' carries a 'slightly nasal, low-register quality' with 'falling pitch contour and progressively diminishing amplitude'; the interviewer's question then enters at a higher pitch, and the interviewee's re-entry ('Um, well, I guess…') does not show any measurable F0 reset above that pre-interruption nadir. M17 confirms the hedging cluster is a 'lexical-retrieval strategy, not an emotional withdrawal signal,' with eyebrows 'remain[ing] raised' and hands 'stay[ing] active,' indicating no affective constriction. (3) FORMULAIC HEDGING WITHOUT PROSODIC NOVELTY — the triple-hedge 'Um, well, I guess' matches the identical turn-opening pattern catalogued in M12 across at least five unrelated answers (#4, #5, #6, #9, #10), confirming it as a stable syntactic habit rather than a context-specific recovery maneuver. Inter-token latency within the hedge is even and unhurried (M4: no elongated vowel or creaky voice on 'Um'), inconsistent with the variable timing expected under genuine cognitive re-engagement after a surprise."
+        },
+        {
+          "id": "M37",
+          "finding": "Because 'Um' (the first hedge element) precedes the clip's 0 s boundary, this window cannot directly measure the onset F0 referenced in Goal 1. However, the initial phonation of 'well' at local t ≈ 0 s serves as the nearest available proxy: M30's conclusion that 'the interviewee's re-entry does not show any measurable F0 reset above that pre-interruption nadir' extends through this fragment, as 'well' carries no transient elevation above M16's sub-basal nasal baseline."
+        },
+        {
+          "id": "M39",
+          "finding": "Resolution of the first 'you know' turn-yielding vs. metrical-filler question (Goal). Combining M19 (audio, 0–8 s), M38 (video, 0–2 s), and M32 (audio_video, 0–2 s): (1) PAUSE CRITERION — M19 reports that neither 'you know' token is preceded or followed by a silence exceeding ~200 ms; speech resumes immediately after each tag, and no breath intake or deliberate stop-for-feedback is audible. The ≥200 ms pause required for a turn-yielding solicitation is therefore ABSENT. (2) GAZE CRITERION — M38 and M32 both describe the interviewee's gaze as 'steady' and 'directed at the interviewer's face' at the sampled frames 0.2 s and 1.2 s, which bracket the first 'you know' (estimated ~0.5–1.0 s per M19). There is no observable redirect INTO the interviewer's face (gaze is already fixated there) and no downward aversion toward the table or gesture space. The 'gaze stays fixed on the table/gesture space' sub-condition of the metrical-filler hypothesis is not literally met—gaze is on the interviewer—but the critical discriminator (absence of a new redirect + absence of a pause) still holds. (3) SYNTHESIS — Because the terminal rise is shallow (~15–20 Hz, M19), no pause ≥200 ms exists, and gaze shows no discrete shift at the tag boundary, the first 'you know' functions as a metrical/rhythmic filler embedded in a continuous turn rather than as an epistemic-uncertainty signal or a turn-yielding invitation. The interviewer produces no back-channel token, overlap, or interjection in the 8 s window (M19), confirming the speaker retains full floor control and the tag does not solicit completion. This finding is consistent with M12's textual analysis classifying 'you know' as a stable discourse habit orthogonal to the impersonal-avoidance mechanism."
+        },
+        {
+          "id": "M43",
+          "finding": "Critically for the goal's differential-measurement requirement: because no constriction marker (hand-aperture reduction, brow furrow, >15° downward gaze, lip-press >300 ms) is present anywhere in 0–2 s, this window supplies a validated zero-dip reference. Any deviation detected in the 3–5 s repair window can therefore be attributed to the lexical-retrieval event itself rather than to a pre-existing tense baseline. The absence of a freeze-recovery gap is also confirmed here: gesture rhythm and forward lean are continuous across both sampled frames with no arrest or reset."
+        },
+        {
+          "id": "M45",
+          "finding": "At the 1.2 s frame—coinciding with the estimated 'guess → the' boundary (local t ≈ 1.0–1.3 s per M37's token segmentation)—the interviewee's hand configuration, torso angle, shoulder line, and gaze direction are visually indistinguishable from the 0.2 s frame. No palm-angle rotation away from the clasped rest position is detectable; no forward-lean increment exceeding ~1 cm is apparent; eyebrow height remains at the same neutral baseline with no dip >5°. The banner has advanced to 'You can enroll in our amazing…', confirming continuous temporal progression with no cut or environmental shift."
+        },
+        {
+          "id": "M46",
+          "finding": "The two sampled frames (0.2 s, 1.2 s) reconfirm the 0–2 s motor baseline already codified in M38 and M43 with no additional deviation: bilateral hands rest on the white conference table with palms oriented upward and fingers visibly spread to full aperture; the torso carries a slight forward lean toward the interviewer; gaze is locked on the interviewer's face at approximately horizontal angle (≤5° deviation); eyebrows sit in a neutral-to-slightly-raised position with zero furrow; lips are open and actively shaping phonemes ('Um, well, I guess…') with no compression or pursing; mouth aperture remains wide in both frames, consistent with continuous speech production rather than a silent retrieval freeze. No shoulder elevation, arm-crossing, downward gaze aversion, or micro-pause exceeding 300 ms is visible. The interviewer (black top, left) holds papers and a pen, looking down at her notes in both frames, producing no back-channel gesture or nod. Institutional framing is constant: Quebec and Canadian desk flags centered between speakers, floor-to-ceiling windows showing a city skyline, lower-third banner scrolling from 'You can check our amazing IELTS speaking' (0.2 s) to 'website www.elsielts.com' (1.2 s). Critically for the goal's differential-measurement requirement: because ALL four constriction markers (hand-aperture reduction, brow furrow, >15° downward gaze, lip-press >300 ms) register at ZERO within 0–2 s, this window supplies a validated zero-dip reference. Any deviation detected in the subsequent 'how can I say it' repair (estimated ~3–5 s per M32's projection) can therefore be attributed to the lexical-retrieval event itself rather than to a pre-existing tense baseline. The absence of a freeze-recovery gap is also confirmed here: gesture rhythm and forward lean are continuous across both sampled frames with no arrest, reset, or >500 ms pause. The repair window itself falls OUTSIDE the current 2 s clip, so the goal's quantitative comparison (>20 % constriction threshold, pitch-dip correlation, freeze-recovery timing) cannot be resolved within this source and requires a forward-extension candidate."
+        },
+        {
+          "id": "M48",
+          "finding": "No repair or lexical-retrieval event in this window: The 0–3 s clip contains only the interviewer's question. The meta-linguistic repair 'how can I say it' documented in M4 belongs to the interviewee's occupation answer, a temporally distinct segment. The goal's repair-window quantification (hand-aperture constriction ≥20 %, brow furrow, >15° downward gaze, lip-press >300 ms, pitch-dip correlation, freeze-recovery gap >500 ms) therefore has no applicable target within this clip. The 0–2 s baseline established in M43/M46 (zero constriction across all four markers) remains valid and unchallenged by anything in this window."
+        }
+      ],
+      "active_seconds": 588.727006,
+      "api_calls": 67,
+      "prompt_tokens": 286929,
+      "completion_tokens": 172403,
+      "offline_label_check": {
+        "scope": "Five train diagnostics, not held-out accuracy; labels excluded from policy input",
+        "coverage": 1.0,
+        "exact_dimensions": 0,
+        "covered_ordinal_mae": 1.6
+      },
+      "teacher_accepted": false,
+      "independent_source_review_completed": false
+    },
+    {
+      "sample_id": "IELTS:176",
+      "status": "complete",
+      "completed": true,
+      "stop_reason": "candidate_pool_exhausted",
+      "source_directory": "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent/runs/teacher_pilot5_20261126/IELTS_176_resume",
+      "first_attempt_status": "failed",
+      "manual_continuation": true,
+      "duration_seconds": 175.612993,
+      "initial_candidates": 9,
+      "observations": 63,
+      "refinements": 54,
+      "pending_candidates": 0,
+      "findings": 281,
+      "exact_repeated_occurrences": 0,
+      "refinements_without_new_exact_strings": 0,
+      "exact_novelty_is_not_semantic_independence": true,
+      "duplicate_executions": 0,
+      "malformed_observations": [],
+      "invalid_sources": [],
+      "invalid_contextual_citations": [],
+      "truncated_attempts": [],
+      "final_status": "generated",
+      "final": {
+        "O": {
+          "level": "low",
+          "reasoning": null
+        },
+        "C": {
+          "level": "high",
+          "reasoning": null
+        },
+        "E": {
+          "level": "low",
+          "reasoning": null
+        },
+        "A": {
+          "level": "high",
+          "reasoning": null
+        },
+        "N": {
+          "level": "low",
+          "reasoning": null
+        }
+      },
+      "final_explanation": "Openness is low: the candidate denies engaging with music (M2, M11), frames her only stated preference (classical) in purely functional terms—energy and mood regulation—rather than aesthetic appreciation (M3), and her baking 'explanation' yields only three generic nouns and one duration with no procedural depth (M7, M20, M46). The 'let me explain' pivot upgrades her profile from consumer to producer but carries minimal informational payoff (M9). The sole counterpoint is volunteering her name's botanical etymology and cultural context (M24, M9), a small instance of intellectual curiosity that does not outweigh the pervasive pattern of functional, non-exploratory engagement. Conscientiousness is high: rigid upright posture with hands clasped tightly in lap persists across the entire session (M1, M10, M25, M41); she complies instantly with procedural requests and never interjects or redirects (M2, M24); the doubled thank-you/you're-welcome pair is formulaic rather than spontaneous (M2); the name-substitution request is embedded in the most syntactically complex, socially distanced conditional-polite frame in the transcript (M9, M40); and the celebration-baking response fires as a pre-assembled chunk with zero fillers (M8, M38). Extraversion is low: absolute vocal silence for 20+ seconds during the examiner's introduction in a close-mic, acoustically dry environment (M10, M27, M28, M42); content-specific motor suppression during every personal-disclosure turn (M3, M12, M15, M20, M29); she never initiates a topic shift (M24); and the only substantial gesture—the palm-up 'let me explain' moment (M6, M19)—is brief and topic-triggered, not a general pattern of animated expressiveness. Agreeableness is high: deferential conditional framing preserves the examiner's authority (M24, M9); she accepts the curt 'okay and get better' dismissal of her financial-stress disclosure without visible protest, tension, or emotional reaction (M5, M18, M35, M63); formulaic politeness governs all exchanges (M2, M24); and the second-person generalization ('when YOU have a lot of problems') may serve to avoid burdening the listener with first-person vulnerability (M9). Neuroticism is low: despite the evaluative-pressure context, multiple audio analyses rule out anxiety signatures—no tremor, no pitch break, no volume dip, no creaky voice, no breath-hold during the 'when I'm when I'm' repair (M13, M30, M31, M58, M60); the financial-problems insertion produces zero prosodic or motor activation (M17, M16, M63); the 'yeah why not' response arrives clean with no inhalation or creak (M26); and the celebration recitation is flat and template-like (M38, M39). The initial 20-second silence is ambiguous (calm composure vs. freeze), but the weight of evidence across 63 observations—steady phonation, within-breath-group repairs classified as L2 monitoring rather than affect-driven stalls, and absence of any distress leakage at personally loaded content—supports regulated emotional control rather than suppressed anxiety.",
+      "contextual": [
+        {
+          "trait": "O",
+          "context_type": "reported",
+          "context": "Music-preference question: she denies listening to music and, when pressed, names classical music solely for its functional effect ('gives me more energy and boosts my mood').",
+          "expression": "Low aesthetic curiosity; engagement with arts is instrumental (mood regulation) rather than exploratory or appreciative. No genres, artists, or sensory qualities are mentioned.",
+          "citations": [
+            "M2",
+            "M3",
+            "M11"
+          ]
+        },
+        {
+          "trait": "O",
+          "context_type": "reported",
+          "context": "Name-explanation segment: she volunteers the botanical etymology of 'Maryam' and its cultural prevalence in Iran without being asked.",
+          "expression": "A brief instance of intellectual curiosity and willingness to share non-obvious contextual knowledge, contrasting with her otherwise minimal elaboration pattern.",
+          "citations": [
+            "M24",
+            "M9"
+          ]
+        },
+        {
+          "trait": "O",
+          "context_type": "observed",
+          "context": "Cake-baking explanation (M7): three generic ingredients, one duration, no measurements, temperatures, mixing order, or sensory description; hands remain inert with zero gestural scaffolding.",
+          "expression": "Very low depth of engagement with a claimed skill; the explanation assembles the barest recognisable elements rather than drawing on rich procedural or creative knowledge.",
+          "citations": [
+            "M7",
+            "M20",
+            "M46"
+          ]
+        },
+        {
+          "trait": "C",
+          "context_type": "observed",
+          "context": "Procedural ID exchange: instant compliance ('Yeah, here you go'), doubled formulaic politeness ('You're welcome' ×2), no elaboration or deviation from the scripted sequence.",
+          "expression": "High dutifulness and orderliness; she executes procedural tasks with precision and zero improvisation, treating the assessment format as a rule-set to follow exactly.",
+          "citations": [
+            "M2",
+            "M24"
+          ]
+        },
+        {
+          "trait": "C",
+          "context_type": "observed",
+          "context": "Sustained motor discipline across all personal-disclosure turns: hands clasped in lap, torso upright, no gesturing during emotionally salient phrases ('boosts my mood,' 'not in a good mood,' 'financial problems,' ingredient listing).",
+          "expression": "High self-control and deliberateness; the complete absence of embodied affect during vulnerable content reflects disciplined suppression rather than inability to gesture (she does reach forward for the ID hand-off in M2).",
+          "citations": [
+            "M1",
+            "M3",
+            "M10",
+            "M12",
+            "M20",
+            "M25",
+            "M41"
+          ]
+        },
+        {
+          "trait": "C",
+          "context_type": "reported",
+          "context": "Celebration-baking response: 'for every celebration I try to bake cake… for my mom's birthday, my dad's birthday' delivered as a zero-filler, continuous prosodic arc with uniform small-amplitude wrist beats.",
+          "expression": "High achievement-striving and routine adherence; the universal quantifier 'every' and the rehearsed family list indicate a well-maintained personal rule applied consistently across occasions.",
+          "citations": [
+            "M8",
+            "M22",
+            "M38"
+          ]
+        },
+        {
+          "trait": "E",
+          "context_type": "observed",
+          "context": "Examiner's 20-second introduction: absolute acoustic silence—no words, fillers, inhalation, swallow, throat-clear, chair creak, or fabric friction—in a close-mic, acoustically dry room.",
+          "expression": "Very low expressiveness and social initiative; she does not produce any vocal or somatic signal during a 20-second window where even quiet physiological sounds would be audible, indicating maximal withdrawal from active participation.",
+          "citations": [
+            "M10",
+            "M27",
+            "M28",
+            "M42"
+          ]
+        },
+        {
+          "trait": "E",
+          "context_type": "observed",
+          "context": "Cake-preference segment: speech rate increases, pitch rises, fillers largely disappear, she leans slightly forward, raises both hands in a palm-up gesture, and adds the baking-competence claim ('I can bake cake too').",
+          "expression": "A brief, topic-specific elevation in animation and verbal energy, triggered by a low-stakes preference topic. This is an exception to her baseline reserve, not a general pattern of sociability.",
+          "citations": [
+            "M6",
+            "M19"
+          ]
+        },
+        {
+          "trait": "E",
+          "context_type": "reported",
+          "context": "Turn management across the entire session: she never initiates a topic shift, interjects, or redirects; all responses fill slots in the examiner's predetermined question sequence.",
+          "expression": "Low social assertiveness and initiative; she positions herself as a respondent rather than a co-constructer of the conversation, consistent with a reserved, watchful interpersonal style.",
+          "citations": [
+            "M2",
+            "M24"
+          ]
+        },
+        {
+          "trait": "A",
+          "context_type": "reported",
+          "context": "Name-substitution request: 'I would appreciate if you call me Maria'—the most syntactically complex and socially distanced construction in the transcript, embedding the ask inside a conditional-polite frame that defers agency to the listener.",
+          "expression": "High deference and cooperativeness; she negotiates a personal preference (shorter name) through maximum politeness rather than a direct request, preserving the examiner's authority and minimizing imposition.",
+          "citations": [
+            "M9",
+            "M24",
+            "M40"
+          ]
+        },
+        {
+          "trait": "A",
+          "context_type": "observed",
+          "context": "Financial-problems disclosure followed by the examiner's curt 'okay and get better' and immediate pivot to cakes: no visible protest, tension-increase, tension-release, or verbal acknowledgment of the dismissal.",
+          "expression": "High accommodation and non-confrontational compliance; she accepts the brush-off of her vulnerable content without registering it as a social slight, consistent with a deferential stance toward evaluative authority.",
+          "citations": [
+            "M5",
+            "M18",
+            "M35",
+            "M63"
+          ]
+        },
+        {
+          "trait": "A",
+          "context_type": "reported",
+          "context": "Second-person generalization during mood-regulation elaboration: shift from 'I' to 'you' ('when YOU have a lot of problems… I think YOU can spend your time') coincides with the most personally vulnerable content (financial stress).",
+          "expression": "Protective distancing that also functions as an other-oriented framing: by generalizing, she avoids imposing first-person vulnerability on the listener, consistent with high agreeableness and concern for the interlocutor's comfort.",
+          "citations": [
+            "M9",
+            "M5",
+            "M17"
+          ]
+        },
+        {
+          "trait": "N",
+          "context_type": "observed",
+          "context": "'When I'm when I'm' self-repair during emotional disclosure: produced as a within-breath-group syntactic-node re-launch with no glottal closure, no breath-hold, no creaky voice, no tremor, and no pitch break (confirmed at 0.2 s and 1.5 s audio resolution).",
+          "expression": "Low emotional volatility; the repair mechanics are those of routine L2 grammatical monitoring, not anxiety-triggered freeze. Steady phonation across the boundary rules out a stress-induced stall.",
+          "citations": [
+            "M13",
+            "M30",
+            "M31",
+            "M58",
+            "M60"
+          ]
+        },
+        {
+          "trait": "N",
+          "context_type": "observed",
+          "context": "Insertion of 'economical problem' / 'financial problems' mid-sentence: zero F0 rise, zero amplitude dip, zero tempo deceleration relative to surrounding non-stress content; gross motor state (hands in lap, gaze fixed, torso upright) unchanged.",
+          "expression": "Low neurotic reactivity to personally loaded stressor content; the terms function as illustrative examples within a generalized 'you' frame rather than markers of acute emotional activation.",
+          "citations": [
+            "M17",
+            "M16",
+            "M63"
+          ]
+        },
+        {
+          "trait": "N",
+          "context_type": "observed",
+          "context": "'Yeah, why not' response to music-as-regulation question: zero fillers, zero restarts, clean glottal onset, no preceding inhalation or creaky voice, 0.4–0.6 s latency below the cognitive-search threshold.",
+          "expression": "Low anxiety-driven hesitation; the response retrieves automatically rather than being assembled under evaluative pressure, indicating comfort with the topic and absence of threat-related motor inhibition at this point.",
+          "citations": [
+            "M26",
+            "M4"
+          ]
+        }
+      ],
+      "contextual_citation_frequency": {
+        "M2": 3,
+        "M3": 2,
+        "M11": 1,
+        "M24": 4,
+        "M9": 3,
+        "M7": 1,
+        "M20": 2,
+        "M46": 1,
+        "M1": 1,
+        "M10": 2,
+        "M12": 1,
+        "M25": 1,
+        "M41": 1,
+        "M8": 1,
+        "M22": 1,
+        "M38": 1,
+        "M27": 1,
+        "M28": 1,
+        "M42": 1,
+        "M6": 1,
+        "M19": 1,
+        "M40": 1,
+        "M5": 2,
+        "M18": 1,
+        "M35": 1,
+        "M63": 2,
+        "M17": 2,
+        "M13": 1,
+        "M30": 1,
+        "M31": 1,
+        "M58": 1,
+        "M60": 1,
+        "M16": 1,
+        "M26": 1,
+        "M4": 1
+      },
+      "measurement_claim_flags": [
+        {
+          "id": "M13",
+          "finding": "The phrase 'not in a good mood' is delivered with a subtly lowered fundamental frequency (approximately 15–20 Hz drop relative to the preceding 'boosts my mood' tail captured at the very start of the window) and a slight lengthening of the vowel in 'good' (~120 ms vs. ~90 ms baseline). This prosodic marking distinguishes the emotionally loaded disclosure from the surrounding procedural language, yet the speaker maintains steady phonation with no tremor, no pitch break, and no volume dip—suggesting controlled delivery of uncomfortable content rather than overt distress."
+        },
+        {
+          "id": "M17",
+          "finding": "Synthesis of completed audio [0.0–6.0 s], audio_video [−4.0–11.0 s], and video [−0.5–2.5 s] analyses confirms that the acoustic envelope around 'financial problems' (≈1.0–2.5 s) carries NO distinctive fundamental-frequency rise, volume drop, or tempo deceleration relative to the immediately preceding 'economical problem' phrase or the following 'I think you can um' clause. The speaker's F0 contour remains within the same narrow band, syllable rate stays constant at the halting L2 pace established earlier in the turn, and amplitude shows no spike or dip at the stressor nouns. This prosodic flatness across the lexical shift from the broader 'economical problem' to the narrower, more personally loaded 'financial problems' rules out authentic emotional activation and confirms the rhetorical-specificity reading: the terms function as illustrative examples within a generalized 'you' frame rather than as markers of lived distress."
+        },
+        {
+          "id": "M29",
+          "finding": "Across the three sampled frames (0.2 s, 1.2 s, 2.2 s), the interviewee's head and gaze trace a gradual downward trajectory: at 0.2 s the gaze is directed roughly 10–15° below horizontal toward the table surface while the subtitle reads 'because it gives me a more energy and boost my mood'; at 1.2 s the angle appears marginally steeper (perhaps 15–20° below horizontal) with the same subtitle still displayed; at 2.2 s the head has descended an additional 3–5° and the subtitle has switched to 'when I'm when I'm not in a good mood.' This incremental steepening between 0.2 s and 1.2 s—if not a compression artifact—would place the earliest detectable onset of the gaze shift BEFORE the subtitle transition, tentatively favoring the retrieval-cue reading over the pure-disfluency-marker reading. However, at 1-second sampling the distinction between 'gaze already descending at 1.2 s' and 'gaze still level at 1.2 s' falls within measurement noise, so this observation cannot be treated as conclusive."
+        },
+        {
+          "id": "M30",
+          "finding": "Observed behavior (prosodic contour): Across the 0–1.5 s window the speaker maintains steady phonation with no tremor, pitch break, or volume dip. The 'mood' tail carries the same F0 register as the preceding 'boosts my mood' clause; the 'And' connective is produced at reduced amplitude and flat intonation (typical of a low-information linking element); the 'when I'm' onset shows no anticipatory pitch rise or lengthening that would flag an upcoming difficult disclosure. Emotional prosodic marking (F0 drop ~15–20 Hz, vowel lengthening in 'good') does not yet appear in this sub-window—it emerges later in the 'not in a good mood' phrase beyond 1.5 s."
+        },
+        {
+          "id": "M31",
+          "finding": "Classification finalized: the 'when I'm when I'm' repetition is a within-breath-group L2 self-monitoring repair (syntactic-node re-launch without respiratory interruption), not an anxiety-triggered stop-and-restart and not a planned self-monitoring adjustment preceded by voicing cessation. The repair mechanics—overlap onset, identical F0/tempo, absence of glottal closure or creak—constitute the canonical signature of online grammatical error detection in second-language production."
+        },
+        {
+          "id": "M31",
+          "finding": "Visual corroboration from M12 and M29 confirms no full-stop gesture, no jaw-drop, and continuous lip articulation across the 1.2–2.2 s transition zone, aligning with the audio finding of uninterrupted phonation. The slight head descent (~5–8°) coinciding with the repair onset is attributable to internal processing focus (downward gaze during self-monitoring) rather than an affective withdrawal or freeze response, as no compensatory upward glance, periocular tightening, or torso shift accompanies it."
+        },
+        {
+          "id": "M32",
+          "finding": "The subtitle progression 2.2 s → 3.2 s → 4.2 s ('yeah why not' → 'it's been going to bad moods' → 'when you have a lot of problems') shows uninterrupted speech production across the transition from colloquial agreement to mood/financial elaboration. The interviewee's head maintains the same slight lateral tilt (~5–8° toward interviewer) seen during the self-repair in M15, with only minor oscillation consistent with articulatory mechanics rather than emphatic or avoidive signaling. This continuity argues against a 'performative retreat' reading in which the speaker would visibly disengage (gaze break, torso turn-away, hand repositioning) upon entering a less-evaluative register; instead, the body remains locked in the same attentive-monitoring posture throughout both the disfluent and fluent stretches."
+        },
+        {
+          "id": "M33",
+          "finding": "Across the three sampled frames (0.2 s, 1.2 s, 2.2 s), the interviewee's gross physical presentation is uniformly static: torso upright against the chair back, both hands resting together in her lap with fingers loosely interlaced, gaze directed steadily toward the interviewer (left), and head maintaining a slight lateral tilt (~5–8° toward the interviewer). The mouth is in active articulatory position (lips parted mid-production) in all three frames, confirming continuous speech without a pause-and-reset gesture. No brow furrowing, jaw clenching at the masseter, eye-widening, head withdrawal, or torso lean is discernible at this camera distance (~3 m) and 0.2 s sampling interval."
+        },
+        {
+          "id": "M39",
+          "finding": "Because the target phrases fall outside the allowed_local_seconds range [-5.0, 2.312993] of this clip, no additional audio window within the permitted range can capture 'mom's birthday' or 'dad's birthday' for direct F0/duration/amplitude measurement. The pending request [-5.0, -4.5] covers interviewer-question territory preceding the response, not the family names. All other sub-ranges within the allowed window are already marked done. The goal's quantitative threshold (>1 semitone F0 difference or >15% duration elongation between the two names) cannot be tested from this source; the answer must rest on the convergent indirect evidence of prosodic uniformity documented across modalities."
+        },
+        {
+          "id": "M43",
+          "finding": "In the 0.2 s frame the interviewee is seated upright against the chair back with hands clasped in her lap, facing the interviewer across a grey table bearing the Québec and Canadian flags; her head is angled roughly 10–15° below horizontal and her mouth is in mid-articulation while a promotional subtitle ('You can enroll in our amazing speaking course…') overlays the lower third. In the 1.2 s frame the same posture is maintained but the subtitle has switched to the interviewee's own speech ('when I'm when I'm not in a good mood'), and the head angle appears marginally steeper (≈15–20° below horizontal), indicating a continued downward drift rather than an abrupt shift. No hand-raising, shoulder movement, torso lean, or facial micro-expression (blink anomaly, lip-press, periocular tightening) is resolvable at this 1-second frame density."
+        },
+        {
+          "id": "M44",
+          "finding": "The three sampled frames (0.2 s, 1.2 s, 2.2 s) confirm the verified neutral motor baseline documented in M33: the interviewee's torso remains upright against the chair back, both hands rest interlaced in her lap, gaze is directed steadily toward the interviewer (screen-left), and the head maintains a slight lateral tilt (~5–8°). No brow furrowing, jaw clenching, eye-widening, head withdrawal, or torso lean is discernible at this camera distance (~3 m) across the subtitle progression from 'when you have a lot of problems' (0.2 s) to 'especially in these days economical problem' (1.2 s, held through 2.2 s). The mouth is in active articulatory position in all three frames, confirming continuous speech production without a pause-and-reset gesture."
+        },
+        {
+          "id": "M46",
+          "finding": "The 1.5-second audio clip containing the utterance 'um different' was inspected for transient non-speech acoustic events coinciding with the articulation of 'different.' No finger-on-knee tap (sharp broadband click, ~2–6 kHz burst <80 ms), no sleeve-rustle friction (low-frequency 100–500 Hz swish), and no inspiratory hitch (abrupt inhalation transient preceding vowel onset) is detectable at any point during or immediately adjacent to the production of 'different.' The acoustic texture across the full clip is limited to the interviewee's voiced tokens, two filler 'um' segments with their characteristic nasal murmur, and a uniform low-level room tone consistent with the quiet interior and pen-on-notepad ambience described in M7 and M20. The absence of any percussive, frictional, or respiratory transient in the raw audio stream corroborates and extends M20's 1-fps video finding of complete motor inertia: where the video channel could not resolve sub-0.3 s micro-contacts between frames, the audio channel independently confirms that no such contact produced an audible signature either. Together, the two modalities close the observational gap identified in M36 — the physically-anchored micro-gesture hypothesis is denied. The ingredient-listing sequence, including the lexically uncertain token 'different,' is produced through the verbal channel alone, with zero somatic accompaniment at any temporal resolution accessible to either modality."
+        },
+        {
+          "id": "M47",
+          "finding": "The interviewee's 'Yeah' onset at ≈0.62 s exhibits a clean, unvoiced glottal attack (no preceding aspiration or creaky-voice ramp), a mid-to-high pitch start (F0 ≈ 215 Hz), and a compact single-syllable duration of ≈0.20 s before transitioning seamlessly into 'exactly' at ≈0.82 s with zero inter-token micro-pause. The absence of any preparatory inhalation during the 0.44 s silence indicates the interviewee was already vocally primed—laryngeal configuration set for the response—before the interviewer's tail ended, consistent with a stored-template retrieval rather than on-line emotional recall requiring a reflective pause."
+        },
+        {
+          "id": "M47",
+          "finding": "Distinguishing self-report from observed behavior: the interviewer's rising-intonation question is an observed acoustic event (prosodic contour, amplitude envelope, phonetic release all measurable). The interviewee's 'Yeah' is likewise observed behavior (glottal onset timing, F0 trajectory, duration). The 0.44 s gap is a measured behavioral fact, not a self-reported interval. No inferential leap is made about the interviewee's internal state during the silence; the finding is strictly that the silence contains no vocal activity from either party and that the response onset carries the acoustic signature of pre-primed production."
+        },
+        {
+          "id": "M48",
+          "finding": "The critical sub-second question—whether the ≈3–5° incremental head descent noted in M29 between 0.2 s and 1.2 s represents an anticipatory ocular shift preceding the first 'when I'm' articulation (retrieval-cue reading) or merely co-articulatory drift that became noticeable only once the repair was underway (disfluency-marker reading)—remains unresolved. Two frames separated by 1.0 s cannot distinguish a continuous 5° drift from a step change occurring at, say, 0.8 s or 1.1 s. No blink-rate dip, periocular tightening, or momentary lip-press is resolvable at this sampling density, leaving the cognitive-search-vs-co-articulation question open, exactly as flagged in M43's closing sentence and M29's measurement-noise caveat."
+        },
+        {
+          "id": "M50",
+          "finding": "Cross-referencing the 0.0 s visual with M30's audio timing (first 'when I'm' onset within 0–1.5 s, continuous phonatory stream from 'mood' tail through 'And' with no inter-clause gap exceeding ~50 ms): the head angle visible at 0.0 s represents the speaker's posture DURING or immediately BEFORE the repair attack, not after it. The ≈3–5 ° incremental descent documented between 0.2 s and 1.2 s (M29, M43) therefore spans a window that includes BOTH the tail of 'And' AND the onset of the first 'when I'm', making it impossible to partition the descent into 'anticipatory shift preceding repair' versus 'co-articulatory drift during repair' without sub-second frame-to-audio synchronization."
+        },
+        {
+          "id": "M50",
+          "finding": "Synthesis of all prior observations (M12, M29, M43, M48) plus the current 0.0 s frame: the head-descent trajectory is real and monotonic across 0.0 → 0.2 → 1.2 → 2.2 s, but its temporal relationship to the precise phonetic onset of the first 'when I'm' (estimated by M30 to fall somewhere in the 0.3–0.8 s sub-range of the 0–1.5 s window) cannot be resolved because no observation has sampled frames at intervals finer than 1.0 s within that sub-range. The retrieval-cue reading (head already descending ≥2° below 0.2 s baseline at the 'when I'm' attack frame) and the disfluency-marker reading (head level until ≥0.3 s after attack) remain equally viable."
+        },
+        {
+          "id": "M52",
+          "finding": "Because the source provides only one video frame and a 0.5 s audio window, the goal's two quantitative requirements—measuring neck-angle deviation at the exact frame whose phonatory onset coincides with the first /w/ of 'when I'm' (relative to the 0.2 s baseline, ≥2° = retrieval-cue vs <2° sustained +0.3 s = disfluency-marker), and scanning every frame for >1-frame blink/periocular/lip-press—remain unmet and are deferred to the candidates below rather than asserted from this clip."
+        },
+        {
+          "id": "M54",
+          "finding": "Because this frame is post-repair, the retrieval-cue reading (head already descending ≥2° below 0.2 s baseline at the 'when I'm' attack frame) versus disfluency-marker reading (head level until ≥0.3 s after attack) cannot be adjudicated here. The ≈3–5° incremental descent documented between 0.2 s and 1.2 s in M29 belongs to a different clip's local timeline and remains the finest-grained evidence available for that transition zone."
+        },
+        {
+          "id": "M55",
+          "finding": "Observed behavior (prosodic and respiratory profile): Across the full 0.5 s window the speaker maintains steady phonation—no tremor, no pitch break, no volume dip, and no anticipatory lengthening or pitch rise before the second 'when I'm.' The emotional prosodic marking (F0 drop ~15–20 Hz, vowel lengthening in 'good') documented in M13 emerges later in the 'not in a good mood' phrase and does not yet appear in this sub-window, meaning the clip captures the repair attack in a prosodically neutral register."
+        },
+        {
+          "id": "M55",
+          "finding": "Unresolved detail (sub-second temporal anchoring): Although M50 and M52 establish that the second 'when I'm' /w/ onset falls within the 0.0–0.5 s clip and that the subtitle was already locked in at 0.0 s, neither observation provides sample-level or millisecond-level localization of the exact voicing-onset moment of the second /w/. The ≈3–5° incremental head descent documented between 0.2 s and 1.2 s in M29 (a wider reference frame) spans both the tail of 'And' and the onset of the first 'when I'm,' making it impossible to partition the descent into 'anticipatory shift preceding repair' versus 'co-articulatory drift during repair' without a precise audio-to-video synchronization anchor at the millisecond scale."
+        },
+        {
+          "id": "M57",
+          "finding": "Self-report (interviewee): her music-as-mood-regulation elaboration is built in a halting, disfluent L2 register—three 'um' fillers and a verb-phrase self-repair ('put your time you can spend your time')—and appends the concrete stressors 'economical problem' / 'financial problems' mid-sentence without a pause or topic-shift marker, framed in a generalized second-person 'you' voice ('when you have a lot of problems… I think you can…'). Acoustic analysis shows prosodic flatness across these stressor nouns (no F0 rise, no amplitude dip, constant syllable rate), indicating real-time syntactic construction and rhetorical specificity rather than acute emotional activation."
+        },
+        {
+          "id": "M58",
+          "finding": "Observed behavior (prosodic neutrality at repair attack): Across the 0.2 s slice the fundamental frequency holds steady with no tremor, no anticipatory pitch rise, no volume dip, and no lengthening that would flag an upcoming emotionally loaded clause. The 'And' connective tail (if present at the window's leading edge) carries reduced amplitude and flat intonation, and the /w/ onset shows no prosodic marking distinct from the first instance—both share near-identical tempo and F0 register. The emotional prosodic signature documented in M13 (F0 drop ~15–20 Hz, vowel lengthening in 'good') is entirely absent here, placing this window firmly in the procedurally neutral repair-attack phase before the disclosure content begins."
+        },
+        {
+          "id": "M63",
+          "finding": "At 0.2 s the on-screen subtitle reads 'financial problems I think you can um,' capturing the exact moment the narrower, more personally loaded term 'financial problems' is in active articulatory production (lips parted, jaw in mid-syllable position). The interviewee's gross motor state is identical to the verified neutral baseline established across M33, M44, and M16: torso upright against the chair back, both hands resting interlaced in her lap, gaze locked on the interviewer at screen-left, head maintaining the same ~5–8° lateral tilt. No brow furrow, masseter clench, palpebral widening, head withdrawal, or torso lean accompanies the lexical narrowing from 'economical problem' to 'financial problems.' The trailing filler 'um' in the subtitle confirms she remains in real-time L2 syntactic construction (consistent with the three-instance 'um' pattern and verb-phrase self-restart documented in M5 and M17), rather than shifting into a rehearsed or emotionally activated register. The interviewer's pen-over-notepad forward stance and the two tabletop flags (institutional blue-white, Canadian red-white) frame the exchange as a procedural evaluative slot with no back-channel acknowledgment visible at this timestamp. This single frame at 0.2 s constitutes the final visual confirmation that the financial-stress insertion produced zero macro-level motor disruption, completing the prosodic-flatness / motor-static / generalized-'you'-frame convergence identified across M9, M16, M17, M33, and M44. The micro-level respiratory/laryngeal discriminator targeted by the goal (~300 ms after the interviewer's 'okay' onset at ≈−1.6 s) falls entirely outside this clip's 0–1.0 s playback range and was nominally included in the prior audio_video [−4.5, 6.0] request at standard 0.2 s sampling, which M62 confirms is insufficient resolution to isolate an inhalation freeze versus abbreviated exhalation versus glottal closure within a 300 ms window. No further productive sub-second inspection of that boundary is achievable from this 1.0 s source."
+        }
+      ],
+      "active_seconds": 527.6259860000001,
+      "api_calls": 76,
+      "prompt_tokens": 404733,
+      "completion_tokens": 239523,
+      "offline_label_check": {
+        "scope": "Five train diagnostics, not held-out accuracy; labels excluded from policy input",
+        "coverage": 1.0,
+        "exact_dimensions": 1,
+        "covered_ordinal_mae": 1.2
+      },
+      "teacher_accepted": false,
+      "independent_source_review_completed": false
+    }
+  ],
+  "source_hashes_match": true,
+  "semantic_status": "Requires review of review_records.jsonl and raw Final; flags are not automatic semantic verdicts",
+  "best_of_n": false,
+  "training": false,
+  "jev_api_calls": 0
+}

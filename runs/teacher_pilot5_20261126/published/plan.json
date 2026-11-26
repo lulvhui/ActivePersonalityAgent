@@ -1,0 +1,21 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "selection_seed": 42,
+  "sample_ids": [
+    "IELTS:138",
+    "IELTS:106",
+    "IELTS:193",
+    "IELTS:183",
+    "IELTS:176"
+  ],
+  "split": "train",
+  "max_steps": 64,
+  "max_new_tokens": 8192,
+  "reasoning_effort": "medium",
+  "trajectories_per_sample": 1,
+  "best_of_n": false,
+  "policy_prompts_changed": false,
+  "labels_in_api_inputs": false,
+  "training": false,
+  "purpose": "Assess current main pipeline and teacher data readiness; no automatic teacher approval"
+}

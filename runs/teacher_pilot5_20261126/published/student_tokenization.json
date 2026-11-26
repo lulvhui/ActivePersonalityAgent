@@ -1,0 +1,2483 @@
+{
+  "model": "/mnt/r6_hdd4t/lhlu/models/Qwen2.5-Omni-3B",
+  "configured_max_position_embeddings": 32768,
+  "results": [
+    {
+      "sample_id": "IELTS:138",
+      "segments": 77,
+      "spans": [
+        {
+          "kind": "candidate_scan",
+          "step": 0,
+          "target_tokens": 357,
+          "prompt_text_tokens": 333,
+          "combined_text_tokens": 690,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 1,
+          "target_tokens": 301,
+          "prompt_text_tokens": 476,
+          "combined_text_tokens": 777,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 2,
+          "target_tokens": 469,
+          "prompt_text_tokens": 644,
+          "combined_text_tokens": 1113,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 3,
+          "target_tokens": 537,
+          "prompt_text_tokens": 878,
+          "combined_text_tokens": 1415,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 4,
+          "target_tokens": 493,
+          "prompt_text_tokens": 1156,
+          "combined_text_tokens": 1649,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 5,
+          "target_tokens": 567,
+          "prompt_text_tokens": 1403,
+          "combined_text_tokens": 1970,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 6,
+          "target_tokens": 393,
+          "prompt_text_tokens": 1667,
+          "combined_text_tokens": 2060,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 7,
+          "target_tokens": 696,
+          "prompt_text_tokens": 1900,
+          "combined_text_tokens": 2596,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 8,
+          "target_tokens": 463,
+          "prompt_text_tokens": 2219,
+          "combined_text_tokens": 2682,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 9,
+          "target_tokens": 474,
+          "prompt_text_tokens": 2482,
+          "combined_text_tokens": 2956,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 10,
+          "target_tokens": 682,
+          "prompt_text_tokens": 2775,
+          "combined_text_tokens": 3457,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 11,
+          "target_tokens": 1118,
+          "prompt_text_tokens": 3736,
+          "combined_text_tokens": 4854,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 0,
+          "target_tokens": 878,
+          "prompt_text_tokens": 683,
+          "combined_text_tokens": 1561,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 1,
+          "target_tokens": 984,
+          "prompt_text_tokens": 1294,
+          "combined_text_tokens": 2278,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 2,
+          "target_tokens": 1142,
+          "prompt_text_tokens": 1472,
+          "combined_text_tokens": 2614,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 3,
+          "target_tokens": 1073,
+          "prompt_text_tokens": 1627,
+          "combined_text_tokens": 2700,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 4,
+          "target_tokens": 1398,
+          "prompt_text_tokens": 1652,
+          "combined_text_tokens": 3050,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 5,
+          "target_tokens": 1164,
+          "prompt_text_tokens": 1874,
+          "combined_text_tokens": 3038,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 6,
+          "target_tokens": 1445,
+          "prompt_text_tokens": 1583,
+          "combined_text_tokens": 3028,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 7,
+          "target_tokens": 1942,
+          "prompt_text_tokens": 2029,
+          "combined_text_tokens": 3971,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 8,
+          "target_tokens": 2131,
+          "prompt_text_tokens": 2108,
+          "combined_text_tokens": 4239,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 9,
+          "target_tokens": 1004,
+          "prompt_text_tokens": 2469,
+          "combined_text_tokens": 3473,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 10,
+          "target_tokens": 1276,
+          "prompt_text_tokens": 1644,
+          "combined_text_tokens": 2920,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 11,
+          "target_tokens": 1613,
+          "prompt_text_tokens": 13112,
+          "combined_text_tokens": 14725,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 12,
+          "target_tokens": 492,
+          "prompt_text_tokens": 2222,
+          "combined_text_tokens": 2714,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 13,
+          "target_tokens": 784,
+          "prompt_text_tokens": 3421,
+          "combined_text_tokens": 4205,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 14,
+          "target_tokens": 734,
+          "prompt_text_tokens": 3200,
+          "combined_text_tokens": 3934,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 15,
+          "target_tokens": 404,
+          "prompt_text_tokens": 3088,
+          "combined_text_tokens": 3492,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 16,
+          "target_tokens": 1056,
+          "prompt_text_tokens": 3939,
+          "combined_text_tokens": 4995,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 17,
+          "target_tokens": 849,
+          "prompt_text_tokens": 3374,
+          "combined_text_tokens": 4223,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 18,
+          "target_tokens": 645,
+          "prompt_text_tokens": 2498,
+          "combined_text_tokens": 3143,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 19,
+          "target_tokens": 819,
+          "prompt_text_tokens": 4092,
+          "combined_text_tokens": 4911,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 20,
+          "target_tokens": 802,
+          "prompt_text_tokens": 3573,
+          "combined_text_tokens": 4375,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 21,
+          "target_tokens": 1039,
+          "prompt_text_tokens": 5726,
+          "combined_text_tokens": 6765,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 22,
+          "target_tokens": 931,
+          "prompt_text_tokens": 3587,
+          "combined_text_tokens": 4518,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 23,
+          "target_tokens": 473,
+          "prompt_text_tokens": 4847,
+          "combined_text_tokens": 5320,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 24,
+          "target_tokens": 707,
+          "prompt_text_tokens": 4360,
+          "combined_text_tokens": 5067,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 25,
+          "target_tokens": 1097,
+          "prompt_text_tokens": 4144,
+          "combined_text_tokens": 5241,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 26,
+          "target_tokens": 977,
+          "prompt_text_tokens": 7565,
+          "combined_text_tokens": 8542,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 27,
+          "target_tokens": 632,
+          "prompt_text_tokens": 3848,
+          "combined_text_tokens": 4480,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 28,
+          "target_tokens": 1268,
+          "prompt_text_tokens": 5245,
+          "combined_text_tokens": 6513,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 29,
+          "target_tokens": 876,
+          "prompt_text_tokens": 7066,
+          "combined_text_tokens": 7942,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 30,
+          "target_tokens": 948,
+          "prompt_text_tokens": 3366,
+          "combined_text_tokens": 4314,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 31,
+          "target_tokens": 628,
+          "prompt_text_tokens": 3381,
+          "combined_text_tokens": 4009,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 32,
+          "target_tokens": 759,
+          "prompt_text_tokens": 4097,
+          "combined_text_tokens": 4856,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 33,
+          "target_tokens": 697,
+          "prompt_text_tokens": 3274,
+          "combined_text_tokens": 3971,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 34,
+          "target_tokens": 957,
+          "prompt_text_tokens": 4600,
+          "combined_text_tokens": 5557,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 35,
+          "target_tokens": 724,
+          "prompt_text_tokens": 4265,
+          "combined_text_tokens": 4989,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 36,
+          "target_tokens": 618,
+          "prompt_text_tokens": 5703,
+          "combined_text_tokens": 6321,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 37,
+          "target_tokens": 953,
+          "prompt_text_tokens": 5348,
+          "combined_text_tokens": 6301,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 38,
+          "target_tokens": 905,
+          "prompt_text_tokens": 4720,
+          "combined_text_tokens": 5625,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 39,
+          "target_tokens": 547,
+          "prompt_text_tokens": 4645,
+          "combined_text_tokens": 5192,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 40,
+          "target_tokens": 518,
+          "prompt_text_tokens": 6582,
+          "combined_text_tokens": 7100,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 41,
+          "target_tokens": 1084,
+          "prompt_text_tokens": 6139,
+          "combined_text_tokens": 7223,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 42,
+          "target_tokens": 1146,
+          "prompt_text_tokens": 5904,
+          "combined_text_tokens": 7050,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 43,
+          "target_tokens": 979,
+          "prompt_text_tokens": 5983,
+          "combined_text_tokens": 6962,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 44,
+          "target_tokens": 336,
+          "prompt_text_tokens": 6193,
+          "combined_text_tokens": 6529,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 45,
+          "target_tokens": 1039,
+          "prompt_text_tokens": 6680,
+          "combined_text_tokens": 7719,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 46,
+          "target_tokens": 969,
+          "prompt_text_tokens": 4148,
+          "combined_text_tokens": 5117,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 47,
+          "target_tokens": 461,
+          "prompt_text_tokens": 2957,
+          "combined_text_tokens": 3418,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 48,
+          "target_tokens": 894,
+          "prompt_text_tokens": 5362,
+          "combined_text_tokens": 6256,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 49,
+          "target_tokens": 550,
+          "prompt_text_tokens": 6696,
+          "combined_text_tokens": 7246,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 50,
+          "target_tokens": 1116,
+          "prompt_text_tokens": 6500,
+          "combined_text_tokens": 7616,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 51,
+          "target_tokens": 894,
+          "prompt_text_tokens": 5894,
+          "combined_text_tokens": 6788,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 52,
+          "target_tokens": 803,
+          "prompt_text_tokens": 5442,
+          "combined_text_tokens": 6245,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 53,
+          "target_tokens": 448,
+          "prompt_text_tokens": 6501,
+          "combined_text_tokens": 6949,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 54,
+          "target_tokens": 980,
+          "prompt_text_tokens": 6312,
+          "combined_text_tokens": 7292,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 55,
+          "target_tokens": 1161,
+          "prompt_text_tokens": 6889,
+          "combined_text_tokens": 8050,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 56,
+          "target_tokens": 668,
+          "prompt_text_tokens": 6563,
+          "combined_text_tokens": 7231,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 57,
+          "target_tokens": 917,
+          "prompt_text_tokens": 7013,
+          "combined_text_tokens": 7930,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 58,
+          "target_tokens": 1337,
+          "prompt_text_tokens": 7321,
+          "combined_text_tokens": 8658,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 59,
+          "target_tokens": 610,
+          "prompt_text_tokens": 6198,
+          "combined_text_tokens": 6808,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 60,
+          "target_tokens": 611,
+          "prompt_text_tokens": 6325,
+          "combined_text_tokens": 6936,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 61,
+          "target_tokens": 688,
+          "prompt_text_tokens": 6787,
+          "combined_text_tokens": 7475,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 62,
+          "target_tokens": 500,
+          "prompt_text_tokens": 8917,
+          "combined_text_tokens": 9417,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 63,
+          "target_tokens": 890,
+          "prompt_text_tokens": 7923,
+          "combined_text_tokens": 8813,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "final",
+          "step": 64,
+          "target_tokens": 2525,
+          "prompt_text_tokens": 49308,
+          "combined_text_tokens": 51833,
+          "exceeds_configured_text_positions": true
+        }
+      ],
+      "max_target_tokens": 2525,
+      "max_combined_text_tokens": 51833,
+      "text_over_limit": [
+        {
+          "kind": "final",
+          "step": 64,
+          "target_tokens": 2525,
+          "prompt_text_tokens": 49308,
+          "combined_text_tokens": 51833,
+          "exceeds_configured_text_positions": true
+        }
+      ]
+    },
+    {
+      "sample_id": "IELTS:193",
+      "segments": 81,
+      "spans": [
+        {
+          "kind": "candidate_scan",
+          "step": 0,
+          "target_tokens": 224,
+          "prompt_text_tokens": 333,
+          "combined_text_tokens": 557,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 1,
+          "target_tokens": 158,
+          "prompt_text_tokens": 431,
+          "combined_text_tokens": 589,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 2,
+          "target_tokens": 237,
+          "prompt_text_tokens": 533,
+          "combined_text_tokens": 770,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 3,
+          "target_tokens": 499,
+          "prompt_text_tokens": 665,
+          "combined_text_tokens": 1164,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 4,
+          "target_tokens": 317,
+          "prompt_text_tokens": 894,
+          "combined_text_tokens": 1211,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 5,
+          "target_tokens": 318,
+          "prompt_text_tokens": 1060,
+          "combined_text_tokens": 1378,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 6,
+          "target_tokens": 366,
+          "prompt_text_tokens": 1239,
+          "combined_text_tokens": 1605,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 7,
+          "target_tokens": 534,
+          "prompt_text_tokens": 1440,
+          "combined_text_tokens": 1974,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 8,
+          "target_tokens": 604,
+          "prompt_text_tokens": 1660,
+          "combined_text_tokens": 2264,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 9,
+          "target_tokens": 543,
+          "prompt_text_tokens": 1935,
+          "combined_text_tokens": 2478,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 10,
+          "target_tokens": 169,
+          "prompt_text_tokens": 2215,
+          "combined_text_tokens": 2384,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 11,
+          "target_tokens": 389,
+          "prompt_text_tokens": 2215,
+          "combined_text_tokens": 2604,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 12,
+          "target_tokens": 401,
+          "prompt_text_tokens": 2435,
+          "combined_text_tokens": 2836,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 13,
+          "target_tokens": 418,
+          "prompt_text_tokens": 2667,
+          "combined_text_tokens": 3085,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 14,
+          "target_tokens": 398,
+          "prompt_text_tokens": 2922,
+          "combined_text_tokens": 3320,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 15,
+          "target_tokens": 964,
+          "prompt_text_tokens": 3905,
+          "combined_text_tokens": 4869,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 0,
+          "target_tokens": 255,
+          "prompt_text_tokens": 648,
+          "combined_text_tokens": 903,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 1,
+          "target_tokens": 312,
+          "prompt_text_tokens": 848,
+          "combined_text_tokens": 1160,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 2,
+          "target_tokens": 546,
+          "prompt_text_tokens": 921,
+          "combined_text_tokens": 1467,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 3,
+          "target_tokens": 918,
+          "prompt_text_tokens": 1226,
+          "combined_text_tokens": 2144,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 4,
+          "target_tokens": 920,
+          "prompt_text_tokens": 1366,
+          "combined_text_tokens": 2286,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 5,
+          "target_tokens": 1015,
+          "prompt_text_tokens": 1658,
+          "combined_text_tokens": 2673,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 6,
+          "target_tokens": 1362,
+          "prompt_text_tokens": 1523,
+          "combined_text_tokens": 2885,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 7,
+          "target_tokens": 1158,
+          "prompt_text_tokens": 1826,
+          "combined_text_tokens": 2984,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 8,
+          "target_tokens": 1259,
+          "prompt_text_tokens": 1657,
+          "combined_text_tokens": 2916,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 9,
+          "target_tokens": 1316,
+          "prompt_text_tokens": 1665,
+          "combined_text_tokens": 2981,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 10,
+          "target_tokens": 627,
+          "prompt_text_tokens": 695,
+          "combined_text_tokens": 1322,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 11,
+          "target_tokens": 910,
+          "prompt_text_tokens": 1278,
+          "combined_text_tokens": 2188,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 12,
+          "target_tokens": 1000,
+          "prompt_text_tokens": 1397,
+          "combined_text_tokens": 2397,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 13,
+          "target_tokens": 1174,
+          "prompt_text_tokens": 1507,
+          "combined_text_tokens": 2681,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 14,
+          "target_tokens": 1821,
+          "prompt_text_tokens": 12540,
+          "combined_text_tokens": 14361,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 15,
+          "target_tokens": 467,
+          "prompt_text_tokens": 2860,
+          "combined_text_tokens": 3327,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 16,
+          "target_tokens": 469,
+          "prompt_text_tokens": 3128,
+          "combined_text_tokens": 3597,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 17,
+          "target_tokens": 692,
+          "prompt_text_tokens": 3605,
+          "combined_text_tokens": 4297,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 18,
+          "target_tokens": 689,
+          "prompt_text_tokens": 3163,
+          "combined_text_tokens": 3852,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 19,
+          "target_tokens": 758,
+          "prompt_text_tokens": 3846,
+          "combined_text_tokens": 4604,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 20,
+          "target_tokens": 854,
+          "prompt_text_tokens": 4397,
+          "combined_text_tokens": 5251,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 21,
+          "target_tokens": 748,
+          "prompt_text_tokens": 4355,
+          "combined_text_tokens": 5103,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 22,
+          "target_tokens": 898,
+          "prompt_text_tokens": 4153,
+          "combined_text_tokens": 5051,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 23,
+          "target_tokens": 1530,
+          "prompt_text_tokens": 4398,
+          "combined_text_tokens": 5928,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 24,
+          "target_tokens": 868,
+          "prompt_text_tokens": 5417,
+          "combined_text_tokens": 6285,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 25,
+          "target_tokens": 733,
+          "prompt_text_tokens": 4206,
+          "combined_text_tokens": 4939,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 26,
+          "target_tokens": 1175,
+          "prompt_text_tokens": 4880,
+          "combined_text_tokens": 6055,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 27,
+          "target_tokens": 1613,
+          "prompt_text_tokens": 3454,
+          "combined_text_tokens": 5067,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 28,
+          "target_tokens": 963,
+          "prompt_text_tokens": 4711,
+          "combined_text_tokens": 5674,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 29,
+          "target_tokens": 690,
+          "prompt_text_tokens": 3604,
+          "combined_text_tokens": 4294,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 30,
+          "target_tokens": 711,
+          "prompt_text_tokens": 3120,
+          "combined_text_tokens": 3831,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 31,
+          "target_tokens": 738,
+          "prompt_text_tokens": 4495,
+          "combined_text_tokens": 5233,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 32,
+          "target_tokens": 917,
+          "prompt_text_tokens": 4336,
+          "combined_text_tokens": 5253,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 33,
+          "target_tokens": 844,
+          "prompt_text_tokens": 7362,
+          "combined_text_tokens": 8206,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 34,
+          "target_tokens": 1147,
+          "prompt_text_tokens": 6107,
+          "combined_text_tokens": 7254,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 35,
+          "target_tokens": 729,
+          "prompt_text_tokens": 3555,
+          "combined_text_tokens": 4284,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 36,
+          "target_tokens": 678,
+          "prompt_text_tokens": 4214,
+          "combined_text_tokens": 4892,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 37,
+          "target_tokens": 679,
+          "prompt_text_tokens": 4880,
+          "combined_text_tokens": 5559,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 38,
+          "target_tokens": 730,
+          "prompt_text_tokens": 5366,
+          "combined_text_tokens": 6096,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 39,
+          "target_tokens": 743,
+          "prompt_text_tokens": 4797,
+          "combined_text_tokens": 5540,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 40,
+          "target_tokens": 671,
+          "prompt_text_tokens": 4237,
+          "combined_text_tokens": 4908,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 41,
+          "target_tokens": 1003,
+          "prompt_text_tokens": 5164,
+          "combined_text_tokens": 6167,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 42,
+          "target_tokens": 504,
+          "prompt_text_tokens": 6009,
+          "combined_text_tokens": 6513,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 43,
+          "target_tokens": 727,
+          "prompt_text_tokens": 5419,
+          "combined_text_tokens": 6146,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 44,
+          "target_tokens": 993,
+          "prompt_text_tokens": 5850,
+          "combined_text_tokens": 6843,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 45,
+          "target_tokens": 773,
+          "prompt_text_tokens": 4698,
+          "combined_text_tokens": 5471,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 46,
+          "target_tokens": 768,
+          "prompt_text_tokens": 6510,
+          "combined_text_tokens": 7278,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 47,
+          "target_tokens": 1009,
+          "prompt_text_tokens": 5215,
+          "combined_text_tokens": 6224,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 48,
+          "target_tokens": 643,
+          "prompt_text_tokens": 5337,
+          "combined_text_tokens": 5980,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 49,
+          "target_tokens": 654,
+          "prompt_text_tokens": 3960,
+          "combined_text_tokens": 4614,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 50,
+          "target_tokens": 648,
+          "prompt_text_tokens": 4478,
+          "combined_text_tokens": 5126,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 51,
+          "target_tokens": 590,
+          "prompt_text_tokens": 4760,
+          "combined_text_tokens": 5350,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 52,
+          "target_tokens": 740,
+          "prompt_text_tokens": 6130,
+          "combined_text_tokens": 6870,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 53,
+          "target_tokens": 724,
+          "prompt_text_tokens": 5920,
+          "combined_text_tokens": 6644,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 54,
+          "target_tokens": 899,
+          "prompt_text_tokens": 5556,
+          "combined_text_tokens": 6455,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 55,
+          "target_tokens": 1373,
+          "prompt_text_tokens": 6514,
+          "combined_text_tokens": 7887,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 56,
+          "target_tokens": 544,
+          "prompt_text_tokens": 6076,
+          "combined_text_tokens": 6620,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 57,
+          "target_tokens": 928,
+          "prompt_text_tokens": 5522,
+          "combined_text_tokens": 6450,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 58,
+          "target_tokens": 570,
+          "prompt_text_tokens": 5629,
+          "combined_text_tokens": 6199,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 59,
+          "target_tokens": 570,
+          "prompt_text_tokens": 6781,
+          "combined_text_tokens": 7351,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 60,
+          "target_tokens": 796,
+          "prompt_text_tokens": 5179,
+          "combined_text_tokens": 5975,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 61,
+          "target_tokens": 848,
+          "prompt_text_tokens": 6658,
+          "combined_text_tokens": 7506,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 62,
+          "target_tokens": 670,
+          "prompt_text_tokens": 7153,
+          "combined_text_tokens": 7823,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 63,
+          "target_tokens": 654,
+          "prompt_text_tokens": 6777,
+          "combined_text_tokens": 7431,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "final",
+          "step": 64,
+          "target_tokens": 2121,
+          "prompt_text_tokens": 48531,
+          "combined_text_tokens": 50652,
+          "exceeds_configured_text_positions": true
+        }
+      ],
+      "max_target_tokens": 2121,
+      "max_combined_text_tokens": 50652,
+      "text_over_limit": [
+        {
+          "kind": "final",
+          "step": 64,
+          "target_tokens": 2121,
+          "prompt_text_tokens": 48531,
+          "combined_text_tokens": 50652,
+          "exceeds_configured_text_positions": true
+        }
+      ]
+    },
+    {
+      "sample_id": "IELTS:183",
+      "segments": 67,
+      "spans": [
+        {
+          "kind": "candidate_scan",
+          "step": 0,
+          "target_tokens": 217,
+          "prompt_text_tokens": 333,
+          "combined_text_tokens": 550,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 1,
+          "target_tokens": 315,
+          "prompt_text_tokens": 424,
+          "combined_text_tokens": 739,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 2,
+          "target_tokens": 265,
+          "prompt_text_tokens": 587,
+          "combined_text_tokens": 852,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 3,
+          "target_tokens": 342,
+          "prompt_text_tokens": 587,
+          "combined_text_tokens": 929,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 4,
+          "target_tokens": 454,
+          "prompt_text_tokens": 747,
+          "combined_text_tokens": 1201,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 5,
+          "target_tokens": 448,
+          "prompt_text_tokens": 977,
+          "combined_text_tokens": 1425,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 6,
+          "target_tokens": 320,
+          "prompt_text_tokens": 1220,
+          "combined_text_tokens": 1540,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 7,
+          "target_tokens": 372,
+          "prompt_text_tokens": 1414,
+          "combined_text_tokens": 1786,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 8,
+          "target_tokens": 379,
+          "prompt_text_tokens": 1616,
+          "combined_text_tokens": 1995,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 9,
+          "target_tokens": 450,
+          "prompt_text_tokens": 1854,
+          "combined_text_tokens": 2304,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 10,
+          "target_tokens": 712,
+          "prompt_text_tokens": 2152,
+          "combined_text_tokens": 2864,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 11,
+          "target_tokens": 334,
+          "prompt_text_tokens": 2463,
+          "combined_text_tokens": 2797,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 12,
+          "target_tokens": 564,
+          "prompt_text_tokens": 3225,
+          "combined_text_tokens": 3789,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 0,
+          "target_tokens": 187,
+          "prompt_text_tokens": 633,
+          "combined_text_tokens": 820,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 1,
+          "target_tokens": 770,
+          "prompt_text_tokens": 815,
+          "combined_text_tokens": 1585,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 2,
+          "target_tokens": 671,
+          "prompt_text_tokens": 686,
+          "combined_text_tokens": 1357,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 3,
+          "target_tokens": 860,
+          "prompt_text_tokens": 1231,
+          "combined_text_tokens": 2091,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 4,
+          "target_tokens": 890,
+          "prompt_text_tokens": 1355,
+          "combined_text_tokens": 2245,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 5,
+          "target_tokens": 913,
+          "prompt_text_tokens": 1450,
+          "combined_text_tokens": 2363,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 6,
+          "target_tokens": 895,
+          "prompt_text_tokens": 1403,
+          "combined_text_tokens": 2298,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 7,
+          "target_tokens": 1009,
+          "prompt_text_tokens": 1541,
+          "combined_text_tokens": 2550,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 8,
+          "target_tokens": 788,
+          "prompt_text_tokens": 1645,
+          "combined_text_tokens": 2433,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 9,
+          "target_tokens": 856,
+          "prompt_text_tokens": 1535,
+          "combined_text_tokens": 2391,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 10,
+          "target_tokens": 821,
+          "prompt_text_tokens": 1414,
+          "combined_text_tokens": 2235,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 11,
+          "target_tokens": 1282,
+          "prompt_text_tokens": 8641,
+          "combined_text_tokens": 9923,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 12,
+          "target_tokens": 493,
+          "prompt_text_tokens": 2506,
+          "combined_text_tokens": 2999,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 13,
+          "target_tokens": 526,
+          "prompt_text_tokens": 2432,
+          "combined_text_tokens": 2958,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 14,
+          "target_tokens": 649,
+          "prompt_text_tokens": 2833,
+          "combined_text_tokens": 3482,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 15,
+          "target_tokens": 614,
+          "prompt_text_tokens": 2885,
+          "combined_text_tokens": 3499,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 16,
+          "target_tokens": 502,
+          "prompt_text_tokens": 3367,
+          "combined_text_tokens": 3869,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 17,
+          "target_tokens": 692,
+          "prompt_text_tokens": 2927,
+          "combined_text_tokens": 3619,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 18,
+          "target_tokens": 674,
+          "prompt_text_tokens": 3790,
+          "combined_text_tokens": 4464,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 19,
+          "target_tokens": 779,
+          "prompt_text_tokens": 3367,
+          "combined_text_tokens": 4146,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 20,
+          "target_tokens": 535,
+          "prompt_text_tokens": 3342,
+          "combined_text_tokens": 3877,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 21,
+          "target_tokens": 765,
+          "prompt_text_tokens": 3947,
+          "combined_text_tokens": 4712,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 22,
+          "target_tokens": 722,
+          "prompt_text_tokens": 3564,
+          "combined_text_tokens": 4286,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 23,
+          "target_tokens": 1139,
+          "prompt_text_tokens": 3459,
+          "combined_text_tokens": 4598,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 23,
+          "target_tokens": 6,
+          "prompt_text_tokens": 1589,
+          "combined_text_tokens": 1595,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 24,
+          "target_tokens": 952,
+          "prompt_text_tokens": 4158,
+          "combined_text_tokens": 5110,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 25,
+          "target_tokens": 612,
+          "prompt_text_tokens": 4106,
+          "combined_text_tokens": 4718,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 26,
+          "target_tokens": 511,
+          "prompt_text_tokens": 2935,
+          "combined_text_tokens": 3446,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 27,
+          "target_tokens": 421,
+          "prompt_text_tokens": 3324,
+          "combined_text_tokens": 3745,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 28,
+          "target_tokens": 741,
+          "prompt_text_tokens": 3341,
+          "combined_text_tokens": 4082,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 29,
+          "target_tokens": 937,
+          "prompt_text_tokens": 4297,
+          "combined_text_tokens": 5234,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 30,
+          "target_tokens": 933,
+          "prompt_text_tokens": 4784,
+          "combined_text_tokens": 5717,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 31,
+          "target_tokens": 641,
+          "prompt_text_tokens": 4283,
+          "combined_text_tokens": 4924,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 32,
+          "target_tokens": 923,
+          "prompt_text_tokens": 4757,
+          "combined_text_tokens": 5680,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 33,
+          "target_tokens": 707,
+          "prompt_text_tokens": 3302,
+          "combined_text_tokens": 4009,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 34,
+          "target_tokens": 385,
+          "prompt_text_tokens": 3311,
+          "combined_text_tokens": 3696,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 35,
+          "target_tokens": 493,
+          "prompt_text_tokens": 3549,
+          "combined_text_tokens": 4042,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 36,
+          "target_tokens": 787,
+          "prompt_text_tokens": 5670,
+          "combined_text_tokens": 6457,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 37,
+          "target_tokens": 672,
+          "prompt_text_tokens": 4463,
+          "combined_text_tokens": 5135,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 38,
+          "target_tokens": 457,
+          "prompt_text_tokens": 5092,
+          "combined_text_tokens": 5549,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 39,
+          "target_tokens": 276,
+          "prompt_text_tokens": 4472,
+          "combined_text_tokens": 4748,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 40,
+          "target_tokens": 417,
+          "prompt_text_tokens": 3879,
+          "combined_text_tokens": 4296,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 41,
+          "target_tokens": 744,
+          "prompt_text_tokens": 6164,
+          "combined_text_tokens": 6908,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 42,
+          "target_tokens": 731,
+          "prompt_text_tokens": 5687,
+          "combined_text_tokens": 6418,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 43,
+          "target_tokens": 722,
+          "prompt_text_tokens": 4526,
+          "combined_text_tokens": 5248,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 44,
+          "target_tokens": 571,
+          "prompt_text_tokens": 6678,
+          "combined_text_tokens": 7249,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 45,
+          "target_tokens": 817,
+          "prompt_text_tokens": 5357,
+          "combined_text_tokens": 6174,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 46,
+          "target_tokens": 857,
+          "prompt_text_tokens": 4494,
+          "combined_text_tokens": 5351,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 47,
+          "target_tokens": 657,
+          "prompt_text_tokens": 5433,
+          "combined_text_tokens": 6090,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 48,
+          "target_tokens": 683,
+          "prompt_text_tokens": 4928,
+          "combined_text_tokens": 5611,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 49,
+          "target_tokens": 689,
+          "prompt_text_tokens": 4963,
+          "combined_text_tokens": 5652,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 50,
+          "target_tokens": 552,
+          "prompt_text_tokens": 5512,
+          "combined_text_tokens": 6064,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 51,
+          "target_tokens": 586,
+          "prompt_text_tokens": 5308,
+          "combined_text_tokens": 5894,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "final",
+          "step": 52,
+          "target_tokens": 2277,
+          "prompt_text_tokens": 31029,
+          "combined_text_tokens": 33306,
+          "exceeds_configured_text_positions": true
+        }
+      ],
+      "max_target_tokens": 2277,
+      "max_combined_text_tokens": 33306,
+      "text_over_limit": [
+        {
+          "kind": "final",
+          "step": 52,
+          "target_tokens": 2277,
+          "prompt_text_tokens": 31029,
+          "combined_text_tokens": 33306,
+          "exceeds_configured_text_positions": true
+        }
+      ]
+    },
+    {
+      "sample_id": "IELTS:176",
+      "segments": 75,
+      "spans": [
+        {
+          "kind": "candidate_scan",
+          "step": 0,
+          "target_tokens": 310,
+          "prompt_text_tokens": 333,
+          "combined_text_tokens": 643,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 1,
+          "target_tokens": 88,
+          "prompt_text_tokens": 501,
+          "combined_text_tokens": 589,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 2,
+          "target_tokens": 407,
+          "prompt_text_tokens": 501,
+          "combined_text_tokens": 908,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 3,
+          "target_tokens": 668,
+          "prompt_text_tokens": 743,
+          "combined_text_tokens": 1411,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 4,
+          "target_tokens": 643,
+          "prompt_text_tokens": 1094,
+          "combined_text_tokens": 1737,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 5,
+          "target_tokens": 485,
+          "prompt_text_tokens": 1422,
+          "combined_text_tokens": 1907,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 6,
+          "target_tokens": 450,
+          "prompt_text_tokens": 1719,
+          "combined_text_tokens": 2169,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 7,
+          "target_tokens": 479,
+          "prompt_text_tokens": 2002,
+          "combined_text_tokens": 2481,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 8,
+          "target_tokens": 626,
+          "prompt_text_tokens": 2333,
+          "combined_text_tokens": 2959,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "candidate_scan",
+          "step": 9,
+          "target_tokens": 826,
+          "prompt_text_tokens": 3076,
+          "combined_text_tokens": 3902,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 0,
+          "target_tokens": 287,
+          "prompt_text_tokens": 644,
+          "combined_text_tokens": 931,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 1,
+          "target_tokens": 549,
+          "prompt_text_tokens": 703,
+          "combined_text_tokens": 1252,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 2,
+          "target_tokens": 1002,
+          "prompt_text_tokens": 1295,
+          "combined_text_tokens": 2297,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 3,
+          "target_tokens": 886,
+          "prompt_text_tokens": 1495,
+          "combined_text_tokens": 2381,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 4,
+          "target_tokens": 1085,
+          "prompt_text_tokens": 1348,
+          "combined_text_tokens": 2433,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 5,
+          "target_tokens": 1106,
+          "prompt_text_tokens": 1430,
+          "combined_text_tokens": 2536,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 6,
+          "target_tokens": 1002,
+          "prompt_text_tokens": 1742,
+          "combined_text_tokens": 2744,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 7,
+          "target_tokens": 1250,
+          "prompt_text_tokens": 1704,
+          "combined_text_tokens": 2954,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 8,
+          "target_tokens": 1777,
+          "prompt_text_tokens": 7090,
+          "combined_text_tokens": 8867,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 9,
+          "target_tokens": 704,
+          "prompt_text_tokens": 2175,
+          "combined_text_tokens": 2879,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 10,
+          "target_tokens": 519,
+          "prompt_text_tokens": 3022,
+          "combined_text_tokens": 3541,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 11,
+          "target_tokens": 644,
+          "prompt_text_tokens": 3190,
+          "combined_text_tokens": 3834,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 12,
+          "target_tokens": 1014,
+          "prompt_text_tokens": 3648,
+          "combined_text_tokens": 4662,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 13,
+          "target_tokens": 388,
+          "prompt_text_tokens": 2550,
+          "combined_text_tokens": 2938,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 14,
+          "target_tokens": 901,
+          "prompt_text_tokens": 3607,
+          "combined_text_tokens": 4508,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 15,
+          "target_tokens": 756,
+          "prompt_text_tokens": 3224,
+          "combined_text_tokens": 3980,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 16,
+          "target_tokens": 590,
+          "prompt_text_tokens": 3745,
+          "combined_text_tokens": 4335,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 17,
+          "target_tokens": 1145,
+          "prompt_text_tokens": 3572,
+          "combined_text_tokens": 4717,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 18,
+          "target_tokens": 637,
+          "prompt_text_tokens": 3866,
+          "combined_text_tokens": 4503,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 19,
+          "target_tokens": 677,
+          "prompt_text_tokens": 2845,
+          "combined_text_tokens": 3522,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 20,
+          "target_tokens": 939,
+          "prompt_text_tokens": 2922,
+          "combined_text_tokens": 3861,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 21,
+          "target_tokens": 836,
+          "prompt_text_tokens": 3615,
+          "combined_text_tokens": 4451,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 22,
+          "target_tokens": 712,
+          "prompt_text_tokens": 4344,
+          "combined_text_tokens": 5056,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 23,
+          "target_tokens": 908,
+          "prompt_text_tokens": 3726,
+          "combined_text_tokens": 4634,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 24,
+          "target_tokens": 494,
+          "prompt_text_tokens": 2747,
+          "combined_text_tokens": 3241,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 25,
+          "target_tokens": 852,
+          "prompt_text_tokens": 4848,
+          "combined_text_tokens": 5700,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 26,
+          "target_tokens": 762,
+          "prompt_text_tokens": 3506,
+          "combined_text_tokens": 4268,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 27,
+          "target_tokens": 405,
+          "prompt_text_tokens": 3077,
+          "combined_text_tokens": 3482,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 28,
+          "target_tokens": 1126,
+          "prompt_text_tokens": 3776,
+          "combined_text_tokens": 4902,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 29,
+          "target_tokens": 664,
+          "prompt_text_tokens": 4588,
+          "combined_text_tokens": 5252,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 30,
+          "target_tokens": 605,
+          "prompt_text_tokens": 5686,
+          "combined_text_tokens": 6291,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 31,
+          "target_tokens": 989,
+          "prompt_text_tokens": 5887,
+          "combined_text_tokens": 6876,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 32,
+          "target_tokens": 944,
+          "prompt_text_tokens": 6872,
+          "combined_text_tokens": 7816,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 33,
+          "target_tokens": 387,
+          "prompt_text_tokens": 4444,
+          "combined_text_tokens": 4831,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 34,
+          "target_tokens": 639,
+          "prompt_text_tokens": 4845,
+          "combined_text_tokens": 5484,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 35,
+          "target_tokens": 650,
+          "prompt_text_tokens": 3358,
+          "combined_text_tokens": 4008,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 36,
+          "target_tokens": 631,
+          "prompt_text_tokens": 5923,
+          "combined_text_tokens": 6554,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 37,
+          "target_tokens": 745,
+          "prompt_text_tokens": 5537,
+          "combined_text_tokens": 6282,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 38,
+          "target_tokens": 865,
+          "prompt_text_tokens": 6324,
+          "combined_text_tokens": 7189,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 39,
+          "target_tokens": 566,
+          "prompt_text_tokens": 3153,
+          "combined_text_tokens": 3719,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 40,
+          "target_tokens": 512,
+          "prompt_text_tokens": 3760,
+          "combined_text_tokens": 4272,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 40,
+          "target_tokens": 6,
+          "prompt_text_tokens": 1037,
+          "combined_text_tokens": 1043,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 41,
+          "target_tokens": 534,
+          "prompt_text_tokens": 4537,
+          "combined_text_tokens": 5071,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 42,
+          "target_tokens": 802,
+          "prompt_text_tokens": 5844,
+          "combined_text_tokens": 6646,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 43,
+          "target_tokens": 816,
+          "prompt_text_tokens": 6927,
+          "combined_text_tokens": 7743,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 44,
+          "target_tokens": 1005,
+          "prompt_text_tokens": 5390,
+          "combined_text_tokens": 6395,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 45,
+          "target_tokens": 479,
+          "prompt_text_tokens": 3881,
+          "combined_text_tokens": 4360,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 46,
+          "target_tokens": 636,
+          "prompt_text_tokens": 7197,
+          "combined_text_tokens": 7833,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 47,
+          "target_tokens": 886,
+          "prompt_text_tokens": 6933,
+          "combined_text_tokens": 7819,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 48,
+          "target_tokens": 591,
+          "prompt_text_tokens": 6241,
+          "combined_text_tokens": 6832,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 49,
+          "target_tokens": 1265,
+          "prompt_text_tokens": 7642,
+          "combined_text_tokens": 8907,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 50,
+          "target_tokens": 570,
+          "prompt_text_tokens": 6537,
+          "combined_text_tokens": 7107,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 51,
+          "target_tokens": 1165,
+          "prompt_text_tokens": 8562,
+          "combined_text_tokens": 9727,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 52,
+          "target_tokens": 683,
+          "prompt_text_tokens": 6597,
+          "combined_text_tokens": 7280,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 53,
+          "target_tokens": 821,
+          "prompt_text_tokens": 9242,
+          "combined_text_tokens": 10063,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 54,
+          "target_tokens": 1034,
+          "prompt_text_tokens": 9868,
+          "combined_text_tokens": 10902,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 55,
+          "target_tokens": 887,
+          "prompt_text_tokens": 10843,
+          "combined_text_tokens": 11730,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 56,
+          "target_tokens": 666,
+          "prompt_text_tokens": 5794,
+          "combined_text_tokens": 6460,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 57,
+          "target_tokens": 943,
+          "prompt_text_tokens": 11410,
+          "combined_text_tokens": 12353,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 58,
+          "target_tokens": 588,
+          "prompt_text_tokens": 6040,
+          "combined_text_tokens": 6628,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 59,
+          "target_tokens": 752,
+          "prompt_text_tokens": 12200,
+          "combined_text_tokens": 12952,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 60,
+          "target_tokens": 511,
+          "prompt_text_tokens": 6060,
+          "combined_text_tokens": 6571,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 61,
+          "target_tokens": 721,
+          "prompt_text_tokens": 7681,
+          "combined_text_tokens": 8402,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "memory",
+          "step": 62,
+          "target_tokens": 466,
+          "prompt_text_tokens": 8262,
+          "combined_text_tokens": 8728,
+          "exceeds_configured_text_positions": false
+        },
+        {
+          "kind": "final",
+          "step": 63,
+          "target_tokens": 2733,
+          "prompt_text_tokens": 42462,
+          "combined_text_tokens": 45195,
+          "exceeds_configured_text_positions": true
+        }
+      ],
+      "max_target_tokens": 2733,
+      "max_combined_text_tokens": 45195,
+      "text_over_limit": [
+        {
+          "kind": "final",
+          "step": 63,
+          "target_tokens": 2733,
+          "prompt_text_tokens": 42462,
+          "combined_text_tokens": 45195,
+          "exceeds_configured_text_positions": true
+        }
+      ]
+    }
+  ],
+  "roundtrip_passed": true,
+  "teacher_approval": false,
+  "sft_export_performed": false,
+  "training": false,
+  "scope": "Actual student tokenizer/chat template; text plus media placeholders only. Expanded media tokens, GPU training memory and optimizer update not tested."
+}

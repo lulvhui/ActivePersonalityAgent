@@ -5,6 +5,9 @@ __pycache__/
 !/runs/performance_cleanup/
 /runs/performance_cleanup/*
 !/runs/performance_cleanup/report.json
+!/runs/teacher_pilot5_20261126/
+/runs/teacher_pilot5_20261126/*
+!/runs/teacher_pilot5_20261126/published/
 cache/
 .env
 .env.*
