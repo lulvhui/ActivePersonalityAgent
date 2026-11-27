@@ -78,9 +78,11 @@ class ActiveAgent:
                     x['action']['time'][0]<observation['time'][1]+self.config.get('refinement_context_seconds',5.)
                     and x['action']['time'][1]>observation['time'][0]-self.config.get('refinement_context_seconds',5.))],
             allowed_modalities=pool.available_modalities,
-            time_rule='local_time starts at 0 at source_window_recording_seconds[0].',
+            time_rule='local_time starts at 0 at source_window_recording_seconds[0]. Transcript segments give their local_time; unverified_asr times locate text retrieval only.',
             observation=dict(modality=observation['modality'],time=observation['time'],
-                segments=[dict(text=v['text'],question=v.get('question','')) for v in observation.get('segments',[])]))
+                segments=[dict(text=v['text'],question=v.get('question',''),timing=v.get('timing','unlocalized'),
+                    **({'local_time':[round(t-start,6) for t in (v.get('media_time') or v['source_time'])]} if v.get('media_time') or v.get('source_time') else {}))
+                    for v in observation.get('segments',[])]))
         messages=[dict(role='system',content='Use the supplied interview source to perform the current task.',
             output_schema=generation_schema('candidate_scan',modalities=pool.available_modalities)),
             message(payload,observation.get('media',[]))]
@@ -416,7 +418,7 @@ class ActiveAgent:
             question=question,traits=TRAITS,levels=LEVELS,memory=memory_view(memory,observations=observations))
         final_payload['task']+=' '+READ_SUPPORT_RULE+(' The interview setting and a second language shape behavior: conduct the setting requires, '
             'brevity or plain wording, and the absence of a behavior are weak trait evidence. Weigh what the person chose to say or do, '
-            'keep opposing evidence, and return null for a trait the observations do not support.')
+            'speech cut off at the edge of a read is not behavior; keep opposing evidence, and return null for a trait the observations do not support.')
         feedback=prediction_feedback(score)
         if feedback is not None:final_payload['scoring_feedback']=feedback
         final_status='generated';final_error=None

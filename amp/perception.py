@@ -72,15 +72,31 @@ def response_items(obj,field):
     raise ValueError(f'Return a JSON object with a {field} array')
 
 
+# Requests may round past an end by up to this much; they are cut to the end and the cut is recorded.
+BOUNDARY_TOLERANCE_SECONDS = .5
+
+
+def clamp_end(left, right, low, high):
+    """Clamp a window to [low, high] when it overshoots by at most the tolerance; return (left, right, cut seconds)."""
+    if left < low-BOUNDARY_TOLERANCE_SECONDS or right > high+BOUNDARY_TOLERANCE_SECONDS:
+        return None
+    cut = max(0., low-left)+max(0., right-high)
+    return max(low, left), min(high, right), cut
+
+
 def bind_candidate(candidate,observation,duration):
     """Observe proposals use seconds on the current clip's playback clock and may point anywhere in the recording."""
     if not isinstance(candidate,dict) or set(candidate)!={'local_time','modality','hint','goal'}:
         raise ValueError('A follow-up requires local_time, modality, hint and goal')
     left,right=time_pair(candidate['local_time']);start=observation['time'][0]
-    if left < -start-1e-6 or right > duration-start+1e-6:
+    window=clamp_end(left,right,-start,duration-start)
+    if window is None:
         raise ValueError(f'local_time must stay within {-start:.6g} to {duration-start:.6g} seconds from clip start (the recording)')
-    return dict(candidate,time=[start+left,start+right],source_fragment_time=list(observation['time']),
-                retrieval_timing=observation.get('timing','unverified_asr' if observation['modality']=='text' else 'media_relative'))
+    left,right,cut=window
+    bound=dict(candidate,time=[start+left,start+right],source_fragment_time=list(observation['time']),
+               retrieval_timing=observation.get('timing','unverified_asr' if observation['modality']=='text' else 'media_relative'))
+    if cut:bound['boundary_cut_seconds']=round(cut,6)
+    return bound
 
 
 def admit_candidates(pool,obj,observation,observation_id,parent_id=None,origin='coarse'):
@@ -90,9 +106,11 @@ def admit_candidates(pool,obj,observation,observation_id,parent_id=None,origin='
             bound=bind_candidate(candidate,observation,pool.duration)
             if origin=='coarse':
                 start,end=observation['time']
-                if bound['time'][0]<start-1e-6 or bound['time'][1]>end+1e-6:
+                window=clamp_end(*bound['time'],start,end)
+                if window is None:
                     raise ValueError(f'A coarse candidate marks a moment inside this source: local_time within 0 to {end-start:.6g}')
-            bound['time']=[max(0.,bound['time'][0]),min(pool.duration,bound['time'][1])]
+                bound['time']=list(window[:2])
+                if window[2]:bound['boundary_cut_seconds']=round(bound.get('boundary_cut_seconds',0.)+window[2],6)
             if not isinstance(bound['hint'],str) or not bound['hint'].strip() or not isinstance(bound['goal'],str) or not bound['goal'].strip():
                 raise ValueError('Candidate hint and goal must describe the clue and inspection goal')
             ids.extend(add_candidate_proposals(pool,[bound],observation_id,parent_id,origin,observation['modality']))
@@ -118,7 +136,7 @@ def add_candidate_proposals(pool, proposals, source_observation_id, parent_id=No
             continue
         candidate_id = pool.add(action, candidate.get("priority", 0), parent_id=parent_id,
                                 source_observation_id=source_observation_id, origin=origin,hint=hint,source_modality=source_modality,
-                                source_fragment={k:candidate[k] for k in ('segment_id','segment_ids','quote','source_fragment_time','retrieval_timing') if k in candidate})
+                                source_fragment={k:candidate[k] for k in ('segment_id','segment_ids','quote','source_fragment_time','retrieval_timing','boundary_cut_seconds') if k in candidate})
         if candidate_id:
             added.append(candidate_id)
     return added

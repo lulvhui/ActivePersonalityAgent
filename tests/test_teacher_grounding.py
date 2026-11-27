@@ -33,6 +33,31 @@ class CoarseTargetTests(unittest.TestCase):
         self.assertGreater(CFG['coarse_chunk_seconds'], CFG['max_clip_seconds'])
 
 
+class BoundaryAndTranscriptTests(unittest.TestCase):
+    def test_tail_rounding_is_cut_to_the_end_and_recorded(self):
+        # IELTS:183: last coarse source [180, 224.909002]; the model wrote local_time [41, 45].
+        pool = CandidatePool(224.909002, 30., ALL)
+        source = dict(time=[180., 224.909002], modality='audio_video')
+        ids, errors = admit_candidates(pool, dict(candidates=[coarse([41, 45]), coarse([41, 46])]), source, 'global_audio_video_3')
+        self.assertEqual(pool.items[ids[0]]['action']['time'], [221., 224.909002])
+        self.assertAlmostEqual(pool.items[ids[0]]['leads'][0]['boundary_cut_seconds'], .090998)
+        self.assertEqual(len(errors), 1)  # a full second past the end is still rejected
+
+    def test_coarse_transcript_segments_carry_their_retrieval_times(self):
+        from amp.provenance import index_transcript
+        from test_simple_memory import ROW
+        class Media:
+            def coarse(self, row, fps, chunk):
+                segs = [dict(start=103.4, end=110.2, text='Drinking water helps me focus.')]
+                return dict(duration=150., audio=[], transcript=segs, available_modalities=ALL)
+        reader = Reader()
+        ActiveAgent(reader, OfflineTraitScorer(), Media(), dict(CFG, selection_policy='queue', max_steps=0)).run(ROW)
+        scan = next(m for k, _, m in reader.seen if k == 'candidate_scan')
+        segment = json.loads(scan[-1]['content'][-1]['text'])['observation']['segments'][0]
+        self.assertEqual(segment['local_time'], [103.4, 110.2])
+        self.assertEqual(segment['timing'], 'unverified_asr')
+
+
 class ObserveClockTests(unittest.TestCase):
     def observe(self, obs, memory=None, goal=None):
         reader = Reader()
@@ -86,7 +111,7 @@ class FinalRuleTests(unittest.TestCase):
         t = ActiveAgent(reader, OfflineTraitScorer(), SyntheticMedia(), dict(CFG, selection_policy='queue', max_steps=1)).run(
             dict(id='S', dataset='SYNTHETIC', split='train', person_id='p', segments=[]))
         task = t['decisions'][-1]['messages'][-1]['content'][0]['text']
-        for phrase in ('second language', 'conduct the setting requires', 'keep opposing evidence', 'return null'):
+        for phrase in ('second language', 'conduct the setting requires', 'speech cut off at the edge of a read is not behavior', 'keep opposing evidence', 'return null'):
             self.assertIn(phrase, task)
 
 
