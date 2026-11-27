@@ -26,7 +26,7 @@ class NoveltyMathTests(unittest.TestCase):
     def test_frames_follow_global_grid_and_short_windows_are_one_still(self):
         self.assertEqual(video_frames([1., 3.], 2.), {2, 3, 4, 5})
         self.assertEqual(video_frames([1.2, 2.8], 2.), {3, 4, 5})
-        self.assertEqual(video_frames([117.2, 117.7], 2.), {234})
+        self.assertEqual(video_frames([117.2, 117.7], 2.), set())  # a still, not a grid frame
 
     def test_new_seconds_per_channel(self):
         pool, _ = pool_with_read()
@@ -47,6 +47,7 @@ class AdmissionTests(unittest.TestCase):
         focus = dict(time=[115., 119.5], modality='video')
         self.assertTrue(pool.admit_refinement(focus, root, {}))
         child = pool.add(focus, parent_id=root, origin='observation')
+        pool.start(focus);pool.commit_refinement(child);pool.finish(child);pool.record_read(focus)
         self.assertFalse(pool.admit_refinement(dict(time=[118.5, 119.5], modality='video'), child, {}))
         self.assertEqual(pool.filtered[-1]['reason'], 'focus_used')
         # Another situation: unread content is accepted, read content is compared in Memory instead.
@@ -63,7 +64,10 @@ class AdmissionTests(unittest.TestCase):
 
     def test_transcript_rereads_are_gated_like_media(self):
         pool, root = pool_with_read('text', window=(0., 300.))
-        self.assertTrue(pool.admit_refinement(dict(time=[10., 20.], modality='text'), root, {}))
+        focus = dict(time=[10., 20.], modality='text')
+        self.assertTrue(pool.admit_refinement(focus, root, {}))
+        key = pool.add(focus, parent_id=root, origin='observation')
+        pool.start(focus);pool.commit_refinement(key);pool.finish(key)
         self.assertFalse(pool.admit_refinement(dict(time=[30., 40.], modality='text'), root, {}))
         self.assertTrue(pool.admit_refinement(dict(time=[30., 40.], modality='audio'), root, {}))
 
@@ -74,7 +78,7 @@ class AdmissionTests(unittest.TestCase):
     def test_read_count_bound_holds_for_any_proposals(self):
         import random
         rng = random.Random(0)
-        for trial in range(20):
+        for trial in range(30):
             pool = CandidatePool(120., 30., ALL);pool.configure_novelty(2., 5., 1)
             roots = []
             for start in (0., 20., 40., 60., 80.):  # 100-120 left unread
@@ -82,17 +86,61 @@ class AdmissionTests(unittest.TestCase):
                 pool.start(pool.items[key]['action']);pool.finish(key);pool.record_read(pool.items[key]['action'])
                 roots.append(key)
             unread = {c: sum(b-a for a, b in pool.unread_intervals(c)) for c in ('text', 'audio', 'video')}
-            admitted = 0
-            for _ in range(500):
-                a = rng.uniform(0, 119.);b = min(120., a+rng.uniform(.2, 20.))
-                action = dict(time=[a, b], modality=rng.choice(['text', 'audio', 'video', 'audio_video']))
-                parent = rng.choice(list(pool.items))
-                if pool.matching(action) is None and pool.admit_refinement(action, parent, {}):
-                    key = pool.add(action, parent_id=parent, origin='observation')
-                    pool.start(pool.items[key]['action']);pool.finish(key);pool.record_read(pool.items[key]['action'])
-                    admitted += 1
+            executed = 0
+            for _ in range(300):
+                # A burst of overlapping proposals, then the queue executes what survives pruning.
+                for _ in range(rng.randint(1, 6)):
+                    a = rng.uniform(0, 119.);b = min(120., a+rng.choice([rng.uniform(.1, .9), rng.uniform(1., 20.)]))
+                    action = pool.validate(dict(time=[a, b], modality=rng.choice(['text', 'audio', 'video', 'audio_video'])))
+                    parent = rng.choice([k for k, v in pool.items.items() if v['status'] == 'done'])
+                    if pool.matching(action) is None and pool.admit_refinement(action, parent, {}):
+                        pool.add(action, parent_id=parent, origin='observation')
+                pool.prune_refinements()
+                pending = [k for k, v in pool.items.items() if v['status'] == 'pending']
+                if not pending:
+                    continue
+                key = rng.choice(pending)
+                pool.start(pool.items[key]['action']);pool.commit_refinement(key)
+                pool.finish(key);pool.record_read(pool.items[key]['action'])
+                executed += 1
             bound = len(roots)*1+sum(math.ceil(v/5.) for v in unread.values())
-            self.assertLessEqual(admitted, bound)
+            self.assertLessEqual(executed, bound)
+
+    def test_overlapping_pending_refinements_are_rechecked_at_execution(self):
+        pool, root = pool_with_read(window=(0., 20.), duration=120.)
+        keys = []
+        for i in range(6):
+            action = dict(time=[40.+i, 46.+i], modality='audio')
+            self.assertTrue(pool.admit_refinement(action, root, {}))
+            keys.append(pool.add(action, parent_id=root, origin='observation'))
+        pool.prune_refinements()
+        pool.start(pool.items[keys[0]]['action']);pool.commit_refinement(keys[0])
+        pool.finish(keys[0]);pool.record_read(pool.items[keys[0]]['action'])
+        pool.prune_refinements()
+        # [45,51] still removes 5 s of unread audio ([46,51]); the others add 1-4 s.
+        self.assertEqual([pool.items[k]['status'] for k in keys], ['done']+['filtered']*4+['pending'])
+        self.assertEqual({f['stage'] for f in pool.filtered}, {'execution'})
+
+    def test_two_pending_focus_candidates_use_one_focus(self):
+        pool, root = pool_with_read()
+        keys = [pool.add(dict(time=t, modality='video'), parent_id=root, origin='observation') for t in ([105., 110.], [112., 118.])]
+        pool.prune_refinements()
+        self.assertEqual([pool.items[k]['status'] for k in keys], ['pending', 'pending'])
+        pool.start(pool.items[keys[0]]['action']);pool.commit_refinement(keys[0]);pool.finish(keys[0])
+        pool.prune_refinements()
+        self.assertEqual(pool.items[keys[1]]['status'], 'filtered')
+
+    def test_distinct_short_windows_are_distinct_raw_frames(self):
+        pool, root = pool_with_read()
+        first, second = dict(time=[117.2, 117.7], modality='video'), dict(time=[117.4, 117.9], modality='video')
+        self.assertTrue(pool.new_still(first));self.assertTrue(pool.new_still(second))
+        self.assertTrue(pool.admit_refinement(first, root, {}))  # executed as the region's focus
+        key = pool.add(first, parent_id=root, origin='observation')
+        pool.start(first);pool.commit_refinement(key);pool.finish(key);pool.record_read(first)
+        self.assertFalse(pool.new_still(first));self.assertTrue(pool.new_still(second))
+        self.assertFalse(pool.admit_refinement(second, key, {}))
+        self.assertTrue(pool.filtered[-1]['new_still'])  # a different frame, refused by the bound, not as a duplicate
+        self.assertEqual(pool.filtered[-1]['reason'], 'focus_used')
 
     def test_disabled_rule_admits_everything(self):
         pool, root = pool_with_read()

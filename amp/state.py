@@ -44,11 +44,16 @@ def save_observation(memory, content, observation, observation_id):
 CHANNELS = {'audio': ('audio',), 'video': ('video',), 'audio_video': ('audio', 'video'), 'text': ('text',)}
 
 
+def is_still(time, fps):
+    """MediaTools returns one raw frame taken at the window start when the window spans under two sampled frames."""
+    return (time[1]-time[0])*fps < 2
+
+
 def video_frames(time, fps):
-    """Frame indices on the global sampling grid; a window under two frames is one still image at its start."""
+    """Frame indices on the global sampling grid used for windows of at least two sampled frames."""
+    if is_still(time, fps):
+        return set()
     start, end = time
-    if (end-start)*fps < 2:
-        return {int(math.floor(start*fps+.5))}
     return set(range(int(math.ceil(start*fps-1e-9)), int(math.ceil(end*fps-1e-9))))
 
 
@@ -76,18 +81,20 @@ class CandidatePool:
         self.available_modalities = list(MODALITIES if available_modalities is None else available_modalities)
         self.items = {}
         self.novelty_rule = None
-        self.read_spans, self.read_frames = dict(audio=[], text=[]), set()
+        self.read_spans, self.read_frames, self.read_stills = dict(audio=[], text=[]), set(), set()
         self.focus_used, self.filtered = {}, []
 
     def configure_novelty(self, video_fps, min_new_seconds, max_focus):
         """Refinements must add recording content the model has not been given.
 
-        A same-channel re-read of read content returns a subset of the same frames and
-        samples, so by the data processing inequality it adds no information about the
-        person. Admission therefore requires at least min(min_new_seconds, unread) new
-        seconds in some channel; only `max_focus` closer looks inside each original
-        region are exempt. Every admitted read either removes min_new_seconds of unread
-        content or all of it, so reads are bounded by
+        A same-channel re-read of read content returns the same samples, transcript
+        or sampled frames, so by the data processing inequality it adds no
+        information about the person. A refinement is executed only if, at execution
+        time, it removes at least min(min_new_seconds, unread) seconds of unread
+        content from some channel, or it is one of `max_focus` closer looks inside
+        its original coarse region. A still (one raw frame at a short window's
+        start) is a different frame from the grid, but removes no unread grid time,
+        so it is executed only as a focus. Hence executed reads are bounded by
         roots * (1 + max_focus) + sum over channels of ceil(unread / min_new_seconds),
         whatever the model proposes.
         """
@@ -100,15 +107,18 @@ class CandidatePool:
         self.novelty_rule = dict(video_fps=video_fps, min_new_seconds=min_new_seconds, max_focus=max_focus)
 
     def record_read(self, action):
-        """Register the media content of a completed active read."""
+        """Register the content of a completed active read."""
         for channel in CHANNELS[action['modality']]:
             if channel in self.read_spans:
                 self.read_spans[channel] = merge_intervals(self.read_spans[channel]+[list(action['time'])])
         if 'video' in CHANNELS[action['modality']] and self.novelty_rule:
-            self.read_frames |= video_frames(action['time'], self.novelty_rule['video_fps'])
+            if is_still(action['time'], self.novelty_rule['video_fps']):
+                self.read_stills.add(round(action['time'][0], 6))
+            else:
+                self.read_frames |= video_frames(action['time'], self.novelty_rule['video_fps'])
 
     def new_seconds(self, action):
-        """Unread seconds this action would add per channel, and unread seconds left in the recording."""
+        """Per channel: unread seconds this action removes, and unread seconds left in the recording."""
         channels, result = CHANNELS[action['modality']], {}
         for channel in channels:
             if channel in self.read_spans:
@@ -121,8 +131,17 @@ class CandidatePool:
                                len(video_frames([0., self.duration], fps)-self.read_frames)/fps)
         return result
 
+    def new_still(self, action):
+        """True when a short video window returns a raw frame not given to the model before."""
+        fps = self.novelty_rule['video_fps']
+        if 'video' not in CHANNELS[action['modality']] or not is_still(action['time'], fps):
+            return False
+        start = round(action['time'][0], 6)
+        on_grid = abs(start*fps-round(start*fps)) < 1e-6 and int(round(start*fps)) in self.read_frames
+        return start not in self.read_stills and not on_grid
+
     def unread_intervals(self, modality):
-        """Unread spans of a channel in recording seconds; video spans follow frame times."""
+        """Unread spans of a channel in recording seconds; video spans follow sampled frame times."""
         if modality in self.read_spans:
             spans, cursor = [], 0.
             for a, b in self.read_spans[modality]:
@@ -145,23 +164,56 @@ class CandidatePool:
             key = self.items[key]['parent_id']
         return key
 
-    def admit_refinement(self, action, parent_id, record):
-        """Return True if a refinement may enter the pool; filtered proposals are logged, not errors."""
-        if self.novelty_rule is None:
-            return True
+    def refinement_check(self, action, parent_id):
+        """Pure check against completed reads: basis 'unread_content', 'focus' or None."""
         new = self.new_seconds(action)
+        detail = dict(new_seconds={c: round(v[0], 6) for c, v in new.items()}, new_still=self.new_still(action))
         if any(added > 1e-9 and added >= min(self.novelty_rule['min_new_seconds'], unread)-1e-9 for added, unread in new.values()):
-            return True
+            return 'unread_content', None, detail
         root = self.root(parent_id)
         left, right = self.items[root]['action']['time']
-        inside = left-1e-6 <= action['time'][0] and action['time'][1] <= right+1e-6
-        if inside and self.focus_used.get(root, 0) < self.novelty_rule['max_focus']:
-            self.focus_used[root] = self.focus_used.get(root, 0)+1
+        detail['region_root'] = root
+        if not (left-1e-6 <= action['time'][0] and action['time'][1] <= right+1e-6):
+            return None, 'no_unread_content_outside_region', detail
+        if self.focus_used.get(root, 0) >= self.novelty_rule['max_focus']:
+            return None, 'focus_used', detail
+        return 'focus', None, detail
+
+    def admit_refinement(self, action, parent_id, record):
+        """Proposal-time screen; it consumes no focus. Execution repeats the check (commit_refinement)."""
+        if self.novelty_rule is None:
             return True
-        self.filtered.append(dict(record, parent_id=parent_id, region_root=root, time=list(action['time']),
-                                  modality=action['modality'], new_seconds={c: round(v[0], 6) for c, v in new.items()},
-                                  reason='focus_used' if inside else 'no_unread_content_outside_region'))
-        return False
+        basis, reason, detail = self.refinement_check(action, parent_id)
+        if basis is None:
+            self.filtered.append(dict(record, stage='proposal', parent_id=parent_id, time=list(action['time']),
+                                      modality=action['modality'], reason=reason, **detail))
+        return basis is not None
+
+    def prune_refinements(self):
+        """Before each selection, retire pending refinements whose content has since been read."""
+        if self.novelty_rule is None:
+            return
+        for item in self.items.values():
+            if item['status'] != 'pending' or item['origin'] != 'observation' or item['parent_id'] is None:
+                continue
+            basis, reason, detail = self.refinement_check(item['action'], item['parent_id'])
+            if basis is None:
+                item['status'] = 'filtered'
+                self.filtered.append(dict(stage='execution', candidate_id=item['id'], parent_id=item['parent_id'],
+                                          time=list(item['action']['time']), modality=item['action']['modality'],
+                                          reason=reason, **detail))
+
+    def commit_refinement(self, key):
+        """Consume a focus when a pruned-valid refinement is executed as one."""
+        item = self.items.get(key)
+        if self.novelty_rule is None or not item or item['origin'] != 'observation' or item['parent_id'] is None:
+            return
+        basis, reason, _ = self.refinement_check(item['action'], item['parent_id'])
+        if basis is None:
+            raise ValueError(f'Refinement {key} no longer adds unread content: {reason}')
+        if basis == 'focus':
+            root = self.root(item['parent_id'])
+            self.focus_used[root] = self.focus_used.get(root, 0)+1
 
     def validate(self, action):
         start,end=time_pair(action['time'])

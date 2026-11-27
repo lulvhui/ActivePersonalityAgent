@@ -246,6 +246,7 @@ class ActiveAgent:
                 stop_reason = "budget_exhausted"
                 stopped = True
                 break
+            pool.prune_refinements()
             selectable=[]
             for item in pool.snapshot():
                 if item["status"] != "pending" or item["action"]["time"][1]-item["action"]["time"][0] > remaining+1e-6:
@@ -311,6 +312,7 @@ class ActiveAgent:
             if active_spent + cost > budget+1e-6:
                 raise ValueError("Agent exceeded observation budget")
             key = pool.start(action)
+            pool.commit_refinement(key)
             candidate_id = selected.get("id", key)
             selected_candidate = pool.items.get(candidate_id, pool.items.get(key, {}))
             try:
