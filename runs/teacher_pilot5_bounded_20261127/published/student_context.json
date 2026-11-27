@@ -1,0 +1,43 @@
+{
+  "model": "/mnt/r6_hdd4t/lhlu/models/Qwen2.5-Omni-3B",
+  "configured_context": 32768,
+  "results": [
+    {
+      "sample_id": "IELTS:138",
+      "prompt_text_tokens": 15986,
+      "target_tokens": 1910,
+      "combined_text_tokens": 17896,
+      "exceeds_configured_context": false
+    },
+    {
+      "sample_id": "IELTS:106",
+      "prompt_text_tokens": 12321,
+      "target_tokens": 1714,
+      "combined_text_tokens": 14035,
+      "exceeds_configured_context": false
+    },
+    {
+      "sample_id": "IELTS:193",
+      "prompt_text_tokens": 11381,
+      "target_tokens": 1754,
+      "combined_text_tokens": 13135,
+      "exceeds_configured_context": false
+    },
+    {
+      "sample_id": "IELTS:183",
+      "prompt_text_tokens": 12088,
+      "target_tokens": 2155,
+      "combined_text_tokens": 14243,
+      "exceeds_configured_context": false
+    },
+    {
+      "sample_id": "IELTS:176",
+      "prompt_text_tokens": 8414,
+      "target_tokens": 2203,
+      "combined_text_tokens": 10617,
+      "exceeds_configured_context": false
+    }
+  ],
+  "training": false,
+  "scope": "Completed text-only Final inputs and targets; no multimodal expansion or optimizer update tested"
+}

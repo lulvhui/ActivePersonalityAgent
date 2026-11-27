@@ -1,0 +1,1357 @@
+{
+  "sample_id": "IELTS:193",
+  "run_status": "complete",
+  "final_status": "generated",
+  "final": {
+    "O": {
+      "level": "low",
+      "reasoning": null
+    },
+    "C": {
+      "level": "low",
+      "reasoning": null
+    },
+    "E": {
+      "level": "very_low",
+      "reasoning": null
+    },
+    "A": {
+      "level": "low",
+      "reasoning": null
+    },
+    "N": {
+      "level": "low",
+      "reasoning": null
+    }
+  },
+  "final_explanation": "Across 18 observations spanning ~290 s of an IELTS Part 1 interview, the candidate (Fernando Alonso Lopez) presents a highly consistent profile. Extraversion is very_low: hands remain interlocked on the table with zero communicative gesture across every topic (spatial, financial, musical, travel, food), no backchanneling, no reciprocal social acknowledgment at examiner closures (M6, M14), and M18 confirms the stillness is self-generated rather than performance-inhibited. Neuroticism is low: despite heavy hedging and sawtooth fluency (M8, M9), the physical channel shows no tension, no fidgeting, no postural shift across affective polarities (M10), and the flat pitch/tempo across topics of differing emotional valence (M7, M12) indicates regulated affect rather than anxiety-driven instability; most disfluencies are better attributed to L2 formulation load than to trait vulnerability. Conscientiousness is low: although the candidate maintains formal register and disciplined posture, speech is persistently incomplete, spatially confused (M5), financially vague and externally contingent (M6), and lacks structured argumentation; the effortful-but-unsuccessful formulation pattern (M4, M5, M6) shows intent without organizational execution. Agreeableness is low: baseline politeness exists (M2 'You're welcome'), but there is no warmth, no reciprocal engagement, no acknowledgment of social rituals (M6, M14), and the syntactic withdrawal of self-agency in aversion clauses (M15) reflects a guarded, non-cooperative stance beneath surface compliance. Openness is low: aesthetic and intellectual interests are voiced (music 'cures your soul' M7, travel aspirations M11, cuisine M13) but remain abstract, conditional, and unembodied; the candidate assembles categories in real time rather than narrating lived experience, shows geometric conflation in spatial talk (M5), and produces no creative or divergent thinking—interests stay at the level of nominal preference without depth or vividness.",
+  "contextual": [
+    {
+      "trait": "E",
+      "context_type": "observed",
+      "context": "Examiner delivers section-closing social ritual ('Thank you very much. Great, now we are done with the first part')",
+      "expression": "Candidate produces no verbal response, no nod, no hand-unclasping, no smile, no gaze shift; posture frozen identically to the preceding content-answer frames",
+      "citations": [
+        "M14",
+        "M6"
+      ]
+    },
+    {
+      "trait": "E",
+      "context_type": "observed",
+      "context": "Candidate discusses emotionally positive topics (loves music, loves Asian food, loves traveling) alongside negative topics (dislikes neighbors, dislikes turbulence, dislikes live-music crowds)",
+      "expression": "Kinematic profile is byte-identical across affective polarities—hands interlocked, torso upright, zero gesture amplitude, no prosodic peak on 'I love' or 'I don't like'; M18 confirms stillness is self-generated, not audience-suppressed",
+      "citations": [
+        "M10",
+        "M7",
+        "M13",
+        "M18"
+      ]
+    },
+    {
+      "trait": "N",
+      "context_type": "observed",
+      "context": "Candidate admits lack of preparedness ('I haven't thought about that until now') and then constructs a frequency estimate in real time",
+      "expression": "A single involuntary short laugh/smile (7–8 s) is the only kinesic deviation in the window; subsequent triple-hedge stacking ('I guess… around like… two three hours') shows cognitive uncertainty but no autonomic distress, no posture shift, no vocal tremor",
+      "citations": [
+        "M8"
+      ]
+    },
+    {
+      "trait": "N",
+      "context_type": "observed",
+      "context": "Candidate reports vulnerability to turbulence ('that makes me feel…') and financial contingency ('unless I have enough money')",
+      "expression": "Speech decelerates and drops in amplitude/pitch at the emotional tail, but hands remain clasped, no shoulder elevation, no gaze aversion; the disclosure is verbal-only with zero somatic amplification, consistent with regulated affect rather than heightened neuroticism",
+      "citations": [
+        "M12",
+        "M6"
+      ]
+    },
+    {
+      "trait": "C",
+      "context_type": "observed",
+      "context": "Candidate describes his house layout and spatial relationships",
+      "expression": "Geometric conflation merges bedroom and outbuilding positions in a single clause; four 'like' placeholders in ~15 s replace concrete spatial terms; no pointing, sweeping, or mapping gesture accompanies the dimension-talk, indicating the mental representation is unstructured",
+      "citations": [
+        "M5",
+        "M4"
+      ]
+    },
+    {
+      "trait": "C",
+      "context_type": "observed",
+      "context": "Candidate discusses future living plans and financial goals",
+      "expression": "Opens with epistemic hedge ('I'm not really sure'), embeds external-resource gate ('unless I have enough money'), uses vague temporal frame ('at some point'); no forward lean, no open-palm gesture on aspirational content; the plan is deferred to circumstance rather than self-directed",
+      "citations": [
+        "M6"
+      ]
+    },
+    {
+      "trait": "A",
+      "context_type": "observed",
+      "context": "Examiner extends document; candidate receives it",
+      "expression": "Two-handed receipt and placement on table—a small cooperative gesture—but this is the only proactive physical interaction in the entire recording; all subsequent exchanges are examiner-driven with candidate in fixed receptive posture",
+      "citations": [
+        "M2"
+      ]
+    },
+    {
+      "trait": "A",
+      "context_type": "observed",
+      "context": "Examiner says 'Thank you very much' and 'Great. Thank you' at topic transition",
+      "expression": "Candidate replies 'You're welcome'—minimal, formulaic courtesy with no elaboration, no reciprocal inquiry, no warmth marker; this establishes a polite-but-transactional register maintained throughout",
+      "citations": [
+        "M2"
+      ]
+    },
+    {
+      "trait": "O",
+      "context_type": "observed",
+      "context": "Candidate discusses benefits of travel",
+      "expression": "Escalating tripartite abstract list ('knowing new places → meeting new people → making new relationships') with 'um' before each item; no named country, no recalled encounter, no sensory detail; the imagined scenario ('I imagine that I can have a friend in another country that…') truncates unresolved, indicating openness is aspirational and category-level rather than experiential",
+      "citations": [
+        "M11",
+        "M17"
+      ]
+    },
+    {
+      "trait": "O",
+      "context_type": "observed",
+      "context": "Candidate discusses music preferences",
+      "expression": "Philosophical claim ('music basically cures your soul') is delivered with the same flat tempo and clasped-hands posture as the mundane routine description ('after work and before I go to sleep'); no prosodic elevation on the abstract statement, no embodied resonance, keeping the aesthetic insight at verbal-intellectual register without depth of felt experience",
+      "citations": [
+        "M7",
+        "M10"
+      ]
+    },
+    {
+      "trait": "O",
+      "context_type": "observed",
+      "context": "Candidate names preferred countries and justifies with cuisine",
+      "expression": "Conditional-aspirational framing ('I would love to visit at some point') for both Italy and Japan; justification is circular (Japanese cuisine loved because Asian food is loved, available locally); no specific dish, restaurant, aroma, or texture described; 'love' operates as category label without sensory re-experiencing (M18 confirms zero kinematic differentiation between conditional and present-tense 'love')",
+      "citations": [
+        "M13",
+        "M18"
+      ]
+    }
+  ],
+  "contextual_errors": [],
+  "stop_reason": "candidate_pool_exhausted",
+  "global_scan": {
+    "coarse_summaries": [
+      {
+        "time": [
+          0.0,
+          20.0
+        ],
+        "modality": "audio_video",
+        "summary": "The source captures the formal commencement of an English speaking test at Rostioles Academy. The examiner, Maryam Shafi, introduces the test system, the candidate Fernando Alonso Lopez, and herself. Visually, the candidate sits across a table from the examiner, flanked by two small flags (one appearing to be the Canadian flag), maintaining a still posture with hands clasped while listening to the procedural introduction.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          20.0,
+          40.0
+        ],
+        "modality": "audio_video",
+        "summary": "The interviewee has just completed the action of handing over their identification to the examiner, who acknowledged it with a 'Thank you.' The provided source data for the 20-40 second window contains no further speech or distinct visual segments, suggesting this period likely involves the examiner reviewing the document while the candidate waits in silence.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          40.0,
+          60.0
+        ],
+        "modality": "audio_video",
+        "summary": "In this segment, the examiner transitions from pleasantries into the formal structure of the speaking test, announcing that the first part will involve personal questions and specifically introducing the topic of accommodation. She gestures with documents while explaining the format, and the candidate remains seated across the table in a listening posture. The setting is clearly a standardized testing environment, indicated by the small national flags on the desk and the structured script the examiner follows. The candidate's role here is purely receptive—he absorbs instructions without speaking—making his nonverbal attentiveness the primary observable behavior.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          60.0,
+          80.0
+        ],
+        "modality": "audio_video",
+        "summary": "When asked whether he prefers a house or a flat, the candidate clearly states a preference for a house, explaining that flats require living around people and that he 'really don't like neighbors.' He adds that he likes spacious places, which houses provide. His delivery includes several fillers ('um,' 'uh') and slight restarts, suggesting he is formulating his reasoning in real time rather than reciting a prepared answer. Physically, he remains seated with hands on the table, showing minimal gesturing, while the examiner listens attentively, nodding and producing verbal backchannels ('mm-hm') and writing notes.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          80.0,
+          100.0
+        ],
+        "modality": "audio_video",
+        "summary": "In this segment (80–100 s), the candidate expands on his housing preference with concrete sensory details: he likes having his own bathroom and describes his current house as 'pretty big.' He then states he has lived there for five years, prefacing the duration with 'like' and trailing off with 'Um, as I…' before the clip ends. Visually, he shows modest hand movement while articulating these points—more animation than the near-total stillness noted in earlier windows—while the examiner nods, takes notes, and asks a straightforward follow-up about length of residence. His tone remains conversational and unhurried, though the repeated use of 'like' as both a preference verb and a discourse hedge, plus the final filler 'Um,' introduces mild hesitancy into an otherwise confident description.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          100.0,
+          120.0
+        ],
+        "modality": "audio_video",
+        "summary": "In this segment, the candidate describes his grandfather's house with increasing spatial specificity: he mentions it is 'pretty big, spacious at the back,' has 'a big yard,' and includes 'a separate place from my bedroom which is like crossing the yard.' His delivery is peppered with fillers ('um,' 'like' used three times) and a brief self-correction at the start ('my grand—'), yet his hand gestures become more illustrative as he maps out the property layout, suggesting he is mentally walking through the space while speaking. The examiner acknowledges with 'Okay, great' and pivots to a forward-looking question: 'And do you plan to live there for a long time?'—shifting the frame from descriptive recall to commitment and future orientation.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          120.0,
+          140.0
+        ],
+        "modality": "audio_video",
+        "summary": "In this segment (120–140 s), the candidate addresses a question about his future plans with explicit uncertainty ('I'm not really sure about it'), then articulates a desire to own his own place, followed by a conditional plan to keep working until he has sufficient funds. His speech contains two 'um' fillers and a self-repair structure ('So, I think I will be working right now more time, um, unless…'), indicating he is formulating the answer in real time rather than reciting a prepared script. Visually, he remains seated with hands resting on the table, showing minimal postural change. The examiner then closes the topic with 'Thank you very much' and transitions to a new subject, while the candidate stays still and attentive without offering a closing acknowledgment or verbal backchannel. The overall delivery is measured, slightly halting, and honest in its admission of financial constraint, contrasting with the more emphatic housing-preference statements heard earlier.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          140.0,
+          160.0
+        ],
+        "modality": "audio_video",
+        "summary": "In this segment (140–160 s), the examiner asks whether the candidate likes listening to music. The candidate responds warmly and personally: \"I do love listening to music,\" then offers a somewhat philosophical justification—\"music basically cures your soul\"—before grounding the habit in specific routines (after work, before sleep) and a preference for \"catchy tunes.\" His delivery contains several fillers (\"Mm,\" \"Um,\" \"uh\") and a brief self-repair, yet the overall tone is noticeably more emotionally open and less guarded than his earlier answers about housing, neighbors, and finances. Visually, however, his posture is unchanged: hands remain clasped on the table, there is no gesturing, and his gaze stays directed toward the examiner. The examiner acknowledges with \"Mm-hm\" and begins transitioning to a follow-up (\"And how much…\") as the clip ends.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          160.0,
+          180.0
+        ],
+        "modality": "audio_video",
+        "summary": "In this segment (160–180s), the examiner asks how many hours per day the candidate listens to music. The candidate responds with a metacognitive admission—'I haven't thought about that until now'—then constructs an estimate in real time using layered hedges ('I guess,' 'around like') before settling on 'two, three hours.' He adds context ('especially when I'm working') but trails off mid-thought at 'but I try not to work with…' Visually, his posture remains unchanged from prior segments: hands clasped on the table, minimal movement, steady gaze toward the examiner. The verbal delivery is slower and more fragmented than his earlier emotionally expressive music description, with the fillers 'Mm' and 'uh' bracketing his self-correction. The overall impression is of genuine on-the-spot processing rather than a rehearsed answer, yet the physical stillness persists even as the content becomes more personal and uncertain.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          180.0,
+          200.0
+        ],
+        "modality": "audio_video",
+        "summary": "In this segment (180–200 s), the candidate elaborates on his music habits: he restricts himself to songs he can sing because anything else 'would distract me,' and when asked about live music he answers 'Honestly, I don't,' explaining that hearing other people sing or try to sing overwhelms him. His delivery opens with a clipped, emphatic refusal before dissolving into fillers ('um') and a trailing, unfinished clause ('you can hear all the people singing or trying to…'). Throughout, his hands remain firmly clasped on the table with no gesturing, mirroring the physical stillness catalogued in every prior turn. The sensory-avoidance rationale (distraction, uncontrollable crowd noise) echoes his earlier stated dislike of neighbors and preference for spacious quiet, suggesting a consistent thematic thread across topics.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          200.0,
+          220.0
+        ],
+        "modality": "audio_video",
+        "summary": "In this segment, the candidate discusses music preferences, stating he does not like 'encore' (likely encore performances or a specific music format) but loves when there is a band with a singer. His speech is heavily marked by fillers and hedges ('Uh,' 'um,' 'like' appearing three times), consistent with patterns observed across all prior topics. Notably, despite expressing positive affect with the word 'love,' his physical presentation remains static—hands clasped on the table, no visible gesturing—contrasting with the light hand movements he produced when describing his home in earlier segments. The examiner responds with 'Great. Perfect.' and begins transitioning to a new topic ('Now let's move on to talk about tra…') before the recording window closes. The overall interaction maintains the same formal, restrained dynamic established throughout the interview.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          220.0,
+          240.0
+        ],
+        "modality": "audio_video",
+        "summary": "The candidate answers a question about traveling with repeated positive declarations ('I do love traveling,' 'I love knowing new places, meeting new people, making new relationships'), yet his delivery is heavily punctuated by fillers ('um,' 'uh,' 'like'), and the turn trails off mid-sentence ('I imagine that I can have a friend in another country that…'). Physically, he remains as static as in prior segments—hands clasped on the table, no gesturing, fixed posture—despite the emotionally warm content. The examiner supplies a backchannel 'Mm-hm.' Notably, the candidate frames his travel enthusiasm in aspirational, hypothetical language ('I imagine') rather than recounting specific lived experiences, and the sentence is left incomplete, suggesting either the recording cuts him off or he is constructing the thought in real time. This pattern echoes the filler density and trailing-off behavior seen in the work-hours segment (160–180 s) and the stillness-during-positive-affect pattern observed in the band/music segment (200–220 s).",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          240.0,
+          260.0
+        ],
+        "modality": "audio_video",
+        "summary": "In this segment the interviewee completes the hypothetical friend scenario begun in the prior turn—'come on and spend your summer here'—grounding the earlier abstraction in a concrete, warm invitation. The examiner then pivots to air travel. The candidate self-repairs ('Not as I, not as much as I would like to') and emits a brief chuckle, signaling lighthearted self-awareness about the gap between desire and reality. He affirms 'I do like traveling by air' but immediately qualifies with 'However, I don't like turbulence because that makes me feel…'—the clause truncates mid-thought, leaving the emotional consequence unnamed. The tonal shift from amused acknowledgment (travel frequency) to abrupt silence (turbulence fear) marks a boundary between topics he can joke about and those that provoke unfinished articulation.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          260.0,
+          280.0
+        ],
+        "modality": "audio_video",
+        "summary": "The candidate briefly acknowledges feeling \"nauseous and sick sometimes\" (linking back to the prior turbulence discussion), then responds to the examiner's question about future travel destinations by naming two countries—Italy and Japan—with clear structural organization. His stated motivation for Japan is cuisine: \"I love Asian food here in my city.\" Despite the positive emotional vocabulary (\"would love to visit,\" \"I love\"), his delivery retains the session's characteristic markers: opening fillers (\"Um,\" \"Uh\"), a mid-phrase self-repair (\"here in my in my city\"), and the temporal hedge \"at some point.\" Visually, he remains seated with hands on the table, showing no gestural release analogous to the light hand movements he produced during the concrete home-description segment (80–120 s). The transition from the uncomfortable nausea topic to the enthusiastic travel topic occurs smoothly in content but not in physical expressiveness, maintaining the flat, still posture observed across all prior segments.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          280.0,
+          289.576009
+        ],
+        "modality": "audio_video",
+        "summary": "In this closing segment of the first exam part, the candidate delivers a notably concise food-preference statement—'Um, I like trying that kind of food, so I would like to try the original one'—with only a single initial filler and a clean cause-effect compound structure, contrasting sharply with the dense hedge-stacking and mid-clause self-repairs observed in his earlier housing, finance, and music responses. The examiner then formally announces the section boundary ('now we are done with the first part of the exam') while writing notes, and the candidate remains seated with hands on the table, producing no visible verbal or gestural acknowledgment of the transition, consistent with the zero-responsiveness pattern documented at the 120–140 s examiner cue.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          0,
+          289.576009
+        ],
+        "modality": "text",
+        "summary": "The text transcript records a structured personal interview with Fernando Alonso Lopez Velasco (\"Fer\") spanning accommodation, music, and travel topics. Across all domains, his responses follow a recurring semantic architecture: an emphatic preference or affective declaration (\"I really don't like neighbors,\" \"I do love music,\" \"I do love traveling\") is immediately qualified by hedging particles (\"like,\" \"um,\" \"at some point\"), grammatical self-repairs (\"to living in a house than a flat,\" \"I had thought about that until now\" for the intended present-perfect negation), or a conditional/caveat clause (\"unless I have enough money,\" \"but I try not to work with…\"). Thematically, every stated aversion centers on unpredictable human-generated sensory input—neighbors' presence, crowd singing and encores at live venues, turbulence-induced nausea—while every stated preference centers on controllable, bounded, spacious environments (own bathroom, big yard, separate area across the yard, a single singer in a band). Future-oriented plans are consistently expressed in hypothetical or deferred framing (\"I would like to have my own place at some point,\" \"I imagine that I can have a friend in another country that at some point…\"), never grounded in a concrete timeline or past experience. The interview opens with efficient ID exchange and closes with two section-transition cues to which the candidate produces no verbal or physical acknowledgment, simply awaiting the next prompt.",
+        "summary_status": "provided"
+      }
+    ],
+    "input_modalities": [
+      "text",
+      "audio",
+      "video"
+    ],
+    "observation_modes": [
+      "text",
+      "audio",
+      "video",
+      "audio_video"
+    ],
+    "sampling_fps": 1.0,
+    "full_audio_coverage": true,
+    "audio_coverage": [
+      [
+        0.0,
+        20.0
+      ],
+      [
+        20.0,
+        40.0
+      ],
+      [
+        40.0,
+        60.0
+      ],
+      [
+        60.0,
+        80.0
+      ],
+      [
+        80.0,
+        100.0
+      ],
+      [
+        100.0,
+        120.0
+      ],
+      [
+        120.0,
+        140.0
+      ],
+      [
+        140.0,
+        160.0
+      ],
+      [
+        160.0,
+        180.0
+      ],
+      [
+        180.0,
+        200.0
+      ],
+      [
+        200.0,
+        220.0
+      ],
+      [
+        220.0,
+        240.0
+      ],
+      [
+        240.0,
+        260.0
+      ],
+      [
+        260.0,
+        280.0
+      ],
+      [
+        280.0,
+        289.5754375
+      ]
+    ],
+    "video_coverage": [
+      [
+        0.0,
+        20.0
+      ],
+      [
+        20.0,
+        40.0
+      ],
+      [
+        40.0,
+        60.0
+      ],
+      [
+        60.0,
+        80.0
+      ],
+      [
+        80.0,
+        100.0
+      ],
+      [
+        100.0,
+        120.0
+      ],
+      [
+        120.0,
+        140.0
+      ],
+      [
+        140.0,
+        160.0
+      ],
+      [
+        160.0,
+        180.0
+      ],
+      [
+        180.0,
+        200.0
+      ],
+      [
+        200.0,
+        220.0
+      ],
+      [
+        220.0,
+        240.0
+      ],
+      [
+        240.0,
+        260.0
+      ],
+      [
+        260.0,
+        280.0
+      ],
+      [
+        280.0,
+        289.576009
+      ]
+    ],
+    "duration": 289.576009,
+    "sampled_frames": 290,
+    "audio_samples": 4633207,
+    "audio_sample_rate": 16000,
+    "chunk_seconds": 20.0,
+    "text_segmentation": "full_transcript",
+    "video_segmentation": "fixed_seconds",
+    "audio_segmentation": "decoded_samples"
+  },
+  "cost": {
+    "stage_timing": {
+      "coarse": {
+        "calls": 16,
+        "timed_calls": 0,
+        "prepare_seconds": 0.0,
+        "generation_seconds": 0.0,
+        "constraint_seconds": 0.0,
+        "total_seconds": 0.0,
+        "constraint_calls": 0,
+        "prompt_tokens": 37824,
+        "completion_tokens": 21762
+      },
+      "observe": {
+        "calls": 18,
+        "timed_calls": 0,
+        "prepare_seconds": 0.0,
+        "generation_seconds": 0.0,
+        "constraint_seconds": 0.0,
+        "total_seconds": 0.0,
+        "constraint_calls": 0,
+        "prompt_tokens": 78623,
+        "completion_tokens": 63226
+      },
+      "repair": {
+        "calls": 1,
+        "timed_calls": 0,
+        "prepare_seconds": 0.0,
+        "generation_seconds": 0.0,
+        "constraint_seconds": 0.0,
+        "total_seconds": 0.0,
+        "constraint_calls": 0,
+        "prompt_tokens": 10401,
+        "completion_tokens": 4345
+      },
+      "final": {
+        "calls": 1,
+        "timed_calls": 0,
+        "prepare_seconds": 0.0,
+        "generation_seconds": 0.0,
+        "constraint_seconds": 0.0,
+        "total_seconds": 0.0,
+        "constraint_calls": 0,
+        "prompt_tokens": 11365,
+        "completion_tokens": 4802
+      }
+    },
+    "active_seconds": 595.152018,
+    "active_budget_seconds": null,
+    "coarse_audio_seconds": 289.5754375,
+    "coarse_frames": 290,
+    "jev_api_calls": 0,
+    "jev_estimated_cost": 0.0,
+    "coarse_video_segments": 15,
+    "coarse_video_fps": 1.0,
+    "generated_tokens": 94135,
+    "input_tokens": 138213
+  },
+  "novelty_rule": {
+    "video_fps": 2.0,
+    "min_new_seconds": 5.0,
+    "max_focus": 1
+  },
+  "novelty_filtered": [
+    {
+      "stage": "execution",
+      "candidate_id": "C18",
+      "parent_id": "C4",
+      "time": [
+        105.0,
+        115.0
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0,
+        "video": 0.0
+      },
+      "new_still": false,
+      "region_root": "C4"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C20",
+      "parent_id": "C6",
+      "time": [
+        145.0,
+        160.0
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0,
+        "video": 0.0
+      },
+      "new_still": false,
+      "region_root": "C6"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C17",
+      "parent_id": "C3",
+      "time": [
+        140.0,
+        170.0
+      ],
+      "modality": "audio",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0
+      },
+      "new_still": false,
+      "region_root": "C3"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C23",
+      "parent_id": "C7",
+      "time": [
+        160.0,
+        170.0
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0,
+        "video": 0.0
+      },
+      "new_still": false,
+      "region_root": "C7"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C25",
+      "parent_id": "C9",
+      "time": [
+        200.0,
+        210.0
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0,
+        "video": 0.0
+      },
+      "new_still": false,
+      "region_root": "C9"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C26",
+      "parent_id": "C9",
+      "time": [
+        210.0,
+        230.0
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0,
+        "video": 0.0
+      },
+      "new_still": false,
+      "region_root": "C9"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C27",
+      "parent_id": "C10",
+      "time": [
+        225.0,
+        235.0
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0,
+        "video": 0.0
+      },
+      "new_still": false,
+      "region_root": "C10"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C28",
+      "parent_id": "C11",
+      "time": [
+        240.0,
+        255.0
+      ],
+      "modality": "audio",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0
+      },
+      "new_still": false,
+      "region_root": "C11"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C30",
+      "parent_id": "C12",
+      "time": [
+        260.0,
+        275.0
+      ],
+      "modality": "audio",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0
+      },
+      "new_still": false,
+      "region_root": "C12"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C19",
+      "parent_id": "C4",
+      "time": [
+        105.0,
+        125.0
+      ],
+      "modality": "text",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "text": 0.0
+      },
+      "new_still": false,
+      "region_root": "C4"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C31",
+      "parent_id": "C12",
+      "time": [
+        265.0,
+        289.576
+      ],
+      "modality": "text",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "text": 0.0
+      },
+      "new_still": false,
+      "region_root": "C12"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C33",
+      "parent_id": "C13",
+      "time": [
+        210.0,
+        235.0
+      ],
+      "modality": "text",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "text": 0.0
+      },
+      "new_still": false,
+      "region_root": "C13"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C21",
+      "parent_id": "C7",
+      "time": [
+        20.0,
+        40.0
+      ],
+      "modality": "audio",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0
+      },
+      "new_still": false,
+      "region_root": "C7"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C22",
+      "parent_id": "C7",
+      "time": [
+        20.0,
+        40.0
+      ],
+      "modality": "video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "video": 0.0
+      },
+      "new_still": false,
+      "region_root": "C7"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C24",
+      "parent_id": "C8",
+      "time": [
+        20.0,
+        40.0
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0,
+        "video": 0.0
+      },
+      "new_still": false,
+      "region_root": "C8"
+    },
+    {
+      "source_observation_id": "active_16",
+      "hint": "M11 places the 'I imagine' hypothetical clause at 16–20 s and a marginal hand adjustment at ≈17.2 s, but 2-fps sampling leaves ±0.25 s ambiguity about whether the micro-movement aligns with the word 'imagine' or with the preceding list-to-hypothetical transition breath. The earlier list items (2–12 s) show no comparable hand release.",
+      "goal": "Pinpoint the exact audio onset of 'I imagine' (syllable-level timing from the waveform) and the nearest video frame showing any interlock-release or finger-shift, to determine whether the motor event is phase-locked to the hypothetical keyword or to the transitional pause, thereby distinguishing affective resonance from a rehearsed-list postural reset.",
+      "stage": "proposal",
+      "parent_id": "C29",
+      "time": [
+        250.0,
+        256.0
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0,
+        "video": 0.0
+      },
+      "new_still": false,
+      "region_root": "C11"
+    }
+  ],
+  "memory": {
+    "observations": [
+      {
+        "id": "M1",
+        "observation_id": "active_0",
+        "modality": "audio_video",
+        "retrieval_window": [
+          0.0,
+          20.0
+        ],
+        "content": "The video captures the opening moments of an IELTS speaking test at Rossi IELTS Academy.\nThe examiner, a woman seated on the right, reads a formal introduction detailing the test, the candidate's name (Fernando Alonso Lopez), and candidate/examiner numbers.\nThe candidate, a man seated on the left wearing a striped shirt and glasses, remains completely silent and physically still throughout this segment.\nHis hands are clasped together on the table, and he maintains a fixed, attentive gaze toward the examiner, showing no fidgeting or shifting.\nThere are no self-reports from the candidate in this section; the audio consists solely of the examiner's procedural speech.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M2",
+        "observation_id": "active_1",
+        "modality": "audio_video",
+        "retrieval_window": [
+          40.0,
+          60.0
+        ],
+        "content": "The segment opens with a brief exchange of courtesies: the examiner says 'Thank you very much' and 'Great. Thank you,' to which the candidate replies 'You're welcome.' This establishes a polite, formal register before the exam content begins.\nThe examiner then explicitly frames the upcoming interaction as structured assessment: 'So we can now get started with the first part of the exam. In the first part, I will ask you some personal questions.' She introduces the first topic as 'accommodation' and poses the opening question: 'Do you like your house?'\nVisually, during the examiner's instructional speech (approximately 6–20 s), the candidate sits with hands clasped on the table, torso upright, gaze directed toward the examiner. He does not nod, lean forward, or produce any visible backchannel behavior. His stillness contrasts with the examiner's active pen-gesturing and paper-handling.\nThe physical setting includes two small national flags (Canadian and Israeli) on the table between the participants, and the examiner holds a pen and reference sheet throughout, indicating a standardized international testing environment (IELTS Speaking).\nAt roughly 3–5 s, the examiner extends a document toward the candidate, who receives it with both hands and places it on the table in front of him — a small cooperative gesture that precedes the otherwise passive listening phase.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M3",
+        "observation_id": "active_2",
+        "modality": "audio_video",
+        "retrieval_window": [
+          60.0,
+          80.0
+        ],
+        "content": "The video frames from 0–20 s visually corroborate the prior structural observation: the candidate (striped shirt, glasses) maintains a fixed, upright posture with hands clasped on the table throughout the examiner's instructional speech, showing no nodding, leaning, or facial animation. The examiner (black top, ponytail) actively manipulates a pen and reference sheet, occasionally touching her mouth/cheek area (~5–8 s) while reading, reinforcing her role as the dominant speaker in this phase.\nA small right-hand lift by the candidate is visible around 10–11 s, briefly breaking his otherwise static pose; however, he does not follow through with a full gesture or verbal backchannel, returning immediately to the clasped-hands position. This may represent a suppressed turn-taking signal or a momentary shift in attention rather than active engagement.\nThe physical environment confirms a standardized international testing context: a Canadian flag and an Israeli flag stand on the table between participants, and the examiner's notebook/pen setup is consistent with IELTS Speaking administration. A YouTube 'SUBSCRIBE' overlay appears from ~12 s onward, indicating this recording is publicly distributed as test-preparation material, which could influence the candidate's self-presentation toward a more 'model answer' register.\nThe candidate's audible response (captured in the audio track overlapping this window's tail) introduces the accommodation topic with multiple fillers ('Um…', 'uh…', 'like') and an emphatic personal declaration ('I really don't like neighbors'), delivered in a measured but halting rhythm. The contrast between his earlier visual stillness and this verbally active, filler-laden output marks the transition from passive listening to spontaneous production.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M4",
+        "observation_id": "active_3",
+        "modality": "audio_video",
+        "retrieval_window": [
+          80.0,
+          100.0
+        ],
+        "content": "Self-report content (0–20 s): The candidate describes his accommodation in uniformly positive terms—private bathroom, large house, general preference for houses—yet frames every claim with hedging fillers ('so…', 'like', 'Um') and an incomplete trailing clause ('as I said…'), producing a rhythm of careful, effortful formulation rather than relaxed enthusiasm.\nInteraction structure: The examiner's single-word acknowledgment ('Perfect') followed immediately by a duration question ('how long have you lived there') replicates the standard IELTS Part 1 prompt-and-follow-up sequence, keeping the candidate in a responsive rather than initiative-taking role throughout the window.\nObserved gesture behavior (video): The candidate's one small right-hand lift at approximately 10–11 s coincides with the examiner's transitional speech, not with any of his own utterances; he returns instantly to the clasped-hands baseline. No gesture accompanies his spoken lines at 0–9 s or 14–20 s, so the modest movement cannot be attributed to content emphasis.\nVocal delivery markers: The candidate's pitch and tempo remain flat across both speaking turns; the only prosodic variation is the lengthened 'Um' at ~18 s, which functions as a planning pause rather than an emotional cue. The examiner's voice carries a brighter, faster cadence, reinforcing her role as the interaction driver.\nEnvironmental framing: The Canadian and Israeli desk flags, the examiner's pen-and-notebook setup, and the YouTube 'SUBSCRIBE' overlay (visible from ~12 s) confirm a publicly distributed test-preparation recording, a context that may incentivize the candidate toward a rehearsed, low-risk register and suppress spontaneous gestural range.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M5",
+        "observation_id": "active_4",
+        "modality": "audio_video",
+        "retrieval_window": [
+          100.0,
+          120.0
+        ],
+        "content": "The candidate's spatial description contains a geometric conflation: he states the separate place is 'from my bedroom which is like crossing the yard,' merging the bedroom's position with the outbuilding's position in a single clause. The filler 'like' appears four times in roughly fifteen seconds of speech, functioning as a precision placeholder wherever a concrete spatial relation should be. This pattern suggests the mental map of the property is not yet articulated into distinct, ordered landmarks.\nDespite verbally asserting size ('pretty big, spacious at the back, it has like a big yard'), the candidate's body produces no corresponding expansive gesture. Hands remain clasped on the table throughout 0–9 s and 14–20 s. The sole right-hand lift at approximately 10–11 s aligns temporally with the examiner's transitional 'Mm-hmm,' not with any of the candidate's own spatial claims, so it cannot be read as content-emphasis. The absence of sweeping or pointing motions during dimension-talk weakens the hypothesis that the body 'knows' the space independently of the words.\nThe examiner's follow-up pivots from physical layout to temporal commitment ('do you plan to live there for a long time?'), creating a natural experiment: if the candidate's familiarity is genuine and embodied, duration/plans language should carry lower hedging density and more assured posture than the spatial description just delivered. The response window beginning at 20 s is therefore diagnostically important for the gesture-vs-hedge comparison.\nVocal delivery across both candidate turns (0–9 s, 14–20 s) is flat in pitch and tempo, with the only prosodic deviation being the lengthened 'Um' near 18 s that precedes the examiner's question. No rising intonation signals excitement or ownership; no falling cadence signals closure. The register is consistently that of careful, effortful formulation rather than relaxed narration of a known environment.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M6",
+        "observation_id": "active_5",
+        "modality": "audio_video",
+        "retrieval_window": [
+          120.0,
+          140.0
+        ],
+        "content": "The candidate's 0–16 s turn is organized around epistemic uncertainty and financial contingency rather than spatial layout: he opens with 'I'm not really sure about it,' inserts 'um' at approximately 3 s and 11 s, and closes the plan with the conditional 'unless I have enough money to buy my own place.' This is a structurally different hedge profile from the four 'like' placeholders M5 catalogued in the spatial-description turns—here the uncertainty markers are temporal/conditional ('at some point,' 'right now,' 'unless') and the fillers are classic discourse-level 'um' tokens, suggesting the speaker is negotiating a plan whose feasibility he does not control, rather than struggling to articulate a known physical arrangement.\nDespite the verbal content expressing desire ('I would like to have my own place') and intended action ('I will be working right now more time'), the candidate's body produces no corresponding gesture across frames 0–16 s. Hands remain clasped or resting on the table; shoulders do not shift; there is no forward lean on 'own place' or open-palm gesture on 'working more.' The kinesic channel stays in the same contained, still posture M5 documented during spatial talk, indicating that the stillness is not specific to layout uncertainty but is a baseline interview posture that persists even when the semantic content is aspirational.\nThe examiner's closing ritual is fully executed on her side: at approximately 17 s she lifts her gaze from her notebook (visible in the 17 s frame), says 'Thank you very much,' and at approximately 19 s begins the topic transition 'Now let's talk about…' while re-engaging eye contact with the candidate. The candidate, however, produces no audible or visible acknowledgment within the 0–20 s window—no nod, no 'thank you,' no lean-forward, no blink-pattern shift detectable at 2 fps sampling. His silence through her closure means the interactional handoff is entirely examiner-driven; the candidate neither ratifies the thanks nor signals readiness for the next topic, leaving the transition asymmetrical.\nVocal delivery across the 0–16 s candidate turn remains flat in pitch and tempo, consistent with M5's characterization of 'careful, effortful formulation rather than relaxed narration.' The two 'um' tokens do not carry the lengthened, rising quality of a thinking-aloud pause; they function as brief resets within an otherwise monotone stream. No prosodic peak marks 'own place' or 'enough money,' so the financially loaded content receives the same tonal weight as the connective tissue, flattening the emotional salience of the admission.\nThe examiner writes continuously during the candidate's entire 0–16 s speech (pen visible in motion in frames 0–16 s), only pausing at ~17 s to deliver the closing. The candidate is thus speaking his uncertainty and financial constraint into an active documentation process rather than a reciprocal conversational exchange. This sustained note-taking during a vulnerable self-report may partly explain the flat affect and absence of elaboration: the communicative frame is extraction, not dialogue, and the candidate's turn terminates precisely when the examiner signals closure rather than when he has exhausted his thought.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M7",
+        "observation_id": "active_6",
+        "modality": "audio_video",
+        "retrieval_window": [
+          140.0,
+          160.0
+        ],
+        "content": "The candidate's 0–16 s turn in this segment is organized around positive emotional self-disclosure rather than contingency or uncertainty: he affirms 'I do love listening to music,' elevates the claim to 'music basically cures your soul,' then grounds it in two concrete behavioral rituals ('after work and before I go to sleep') and an aesthetic qualifier ('especially to catchy tunes'). Structurally this is a coherent, elaborated four-beat answer (affirmation → philosophical claim → routine → preference), contrasting sharply with the hedged, conditional architecture M6 documented in the financial turn ('I'm not really sure… unless I have enough money'). The absence of epistemic hedges here suggests the topic carries low evaluative threat for the candidate.\nThree discourse fillers punctuate approximately 12 seconds of speech: 'um' at roughly 4 s (before 'I think music'), 'uh' at roughly 7 s (before 'basically cures your soul'), and 'um' at roughly 10 s (before 'I love listening to music after work'). Density is ≈1 filler per 4 s. Unlike the two 'um' tokens M6 catalogued in the financial segment—which functioned as brief resets within a monotone stream—these fillers appear at clause boundaries where the candidate is escalating from personal preference to a universal claim ('cures your soul') and then back to specifics, suggesting they mark conceptual transitions rather than retrieval difficulty.\nVisually, the candidate's body produces no gesture, no forward lean, and no shoulder shift across frames 0–16 s despite the emotionally warm content. Hands remain clasped or resting on the table in the same contained posture M5 and M6 documented during spatial-description and financial turns. The kinesic channel is invariant across topics of markedly different emotional valence (guarded financial uncertainty vs. enthusiastic musical devotion), reinforcing that the stillness is a baseline interview posture rather than a stress response being suppressed.\nThe examiner writes continuously in her notebook throughout the candidate's 0–16 s answer (pen visible in motion in frames 0–16 s), then lifts her gaze at approximately 17 s and initiates the next question 'And how much…' at approximately 19 s, which is cut off by the end of the clip. The candidate produces no visible acknowledgment of the transition—no nod, no lean, no gaze shift toward the examiner—maintaining the same asymmetrical interactional pattern M6 documented: the examiner drives all topic transitions while the candidate remains in a fixed receptive posture.\nThe candidate's vocal delivery, as inferable from the transcript's filler placement and sentence rhythm, does not exhibit the prosodic peaks one would expect on emotionally loaded phrases like 'cures your soul' or 'I do love.' The fillers sit at syntactic boundaries rather than mid-phrase, and the overall tempo appears even. Without dedicated audio analysis, pitch variation cannot be confirmed, but the textual pattern is consistent with the flat-affect characterization M6 assigned to the financial turn—raising the question of whether the candidate's vocal register is uniformly level regardless of topic sentiment.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M8",
+        "observation_id": "active_7",
+        "modality": "audio_video",
+        "retrieval_window": [
+          160.0,
+          180.0
+        ],
+        "content": "The candidate's metacognitive admission 'I haven't thought about that until now' is immediately followed by a short laugh (audible in the transcript at ~7 s, visible as a mouth-opening smile in video frames 7–8 s). This paralinguistic marker functions as a face-saving device: he acknowledges the gap in preparedness, then disarms potential judgment through humor before committing to a numerical estimate. M7 documented the static posture across 0–16 s, but the brief smile at 7–8 s is the single kinesic deviation in this window, suggesting the laugh is involuntary rather than a calculated performance.\nBetween 8 s and 15 s the candidate stacks three distinct hedges within a single clause: epistemic ('I guess'), approxlicative ('around like'), and numerical-vague ('two three hours'). This triple-hedge architecture converts what should be a simple frequency report into a heavily qualified estimate, implying the candidate has no internalized figure and is constructing one in real time. The examiner's back-channel 'Mhm' at ~15 s arrives precisely as the hedge cluster resolves, and the candidate then launches a new subordinate clause ('That uh especially when I'm working but I try not to work with') that is cut off mid-preposition at 20 s, leaving the contrastive frame ('but I try not to work with…') unresolved. The incompleteness is structural, not merely clip-truncation: the 'but' signals an anticipated qualification he never delivers.\nVisually, frames 16–20 s show the candidate maintaining the same clasped-hands, forward-facing posture M7 recorded, with no gesture accompanying the trailing-off clause. The examiner, by contrast, has stopped writing and is looking up (frames 16–20 s), indicating she is waiting for completion. The asymmetry—candidate frozen mid-thought, examiner poised to prompt—reinforces that the unfinished clause is a genuine production halt rather than a rhetorical pause.\nThe candidate's vocal rhythm across 3–20 s follows a pattern of initiation → hedge → partial commitment → retreat: 'Hmm' (initiation), 'I haven't thought about that' (retreat from expectation), laugh (reset), 'I guess… around like… two three' (hedged commitment), 'Mhm' (external validation), 'That uh… but I try not to work with—' (new hedge, abandoned). Each advance is immediately followed by a qualification or truncation, producing a sawtooth fluency profile rather than a steady build.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M9",
+        "observation_id": "active_8",
+        "modality": "audio_video",
+        "retrieval_window": [
+          180.0,
+          200.0
+        ],
+        "content": "The candidate's response to the live-music question (10–20 s) follows the same sawtooth fluency architecture M8 identified for the time-estimate: a candor-signaling opener ('Honestly, I') → immediate hedge ('don't, um') → an explanatory clause that gains specificity ('because when I listen to live music you can hear all the people') → truncation mid-complement ('singing or trying to—'). The word 'Honestly' performs expected truth-telling within the immigration-interview frame, yet the adjacent 'um' undercuts that performative confidence, implying the reasoning is being assembled in real time rather than retrieved from a pre-structured position.\nVisually, across frames 10–20 s the candidate's hands remain clasped on the table with zero gesture amplitude during both the rejection ('I don't') and the sensory-overload explanation. The examiner, who had been writing (frames 0–8 s), lifts her gaze and gestures with her pen (frames 9–10 s) to pose the live-music question, then settles into a still listening posture. No facial micro-expression change is resolvable at the 2 fps sampling rate within this window; the static two-shot framing prevents close inspection of eyelid blink rate or jaw tension.\nThe rationale offered ('you can hear all the people singing or trying to') echoes the candidate's earlier statement (0–5 s) that songs he can sing 'would distract me.' Both invoke an involuntary auditory-motor resonance: external sound triggers an internal simulation he cannot suppress. The truncation at 'trying to' leaves the comparison syntactically incomplete—he begins to specify what others are attempting (presumably 'sing' or 'perform well') but the clause is abandoned before resolution, mirroring the unresolved 'but I try not to work with—' M8 documented at the 20 s boundary of the prior segment.\nThe examiner's back-channel 'Mhm' at ~2–3 s (during 'songs that I can sing') and her explicit follow-up 'Great. And do you also like…' at 5–9 s function as turn-management devices that keep the candidate in a reactive, question-answer mode rather than allowing extended monologue. This structural constraint means every candidate utterance is a response to a prompt, making it difficult to distinguish spontaneous discomfort from performance calibrated to the interviewer's expectations of candor.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M10",
+        "observation_id": "active_9",
+        "modality": "audio_video",
+        "retrieval_window": [
+          200.0,
+          220.0
+        ],
+        "content": "Across the full 0–20 s window, the candidate's hands remain interlocked on the table surface with zero visible separation, finger articulation, or forearm lift during BOTH the negative evaluation ('and I don't like it, uh,' 4–6 s) and the positive evaluation ('I love when it's like a band that I do like,' 11–15 s). The postural configuration—elbows tucked, fingers clasped, torso slightly forward—is byte-identical across affective polarities, providing no visual differentiation between rejection and endorsement. At 2 fps sampling, no micro-adjustment (single-finger tap, thumb shift, shoulder elevation) is resolvable in either the 'I don't like' or 'I love' frames.\nThe candidate's speech architecture around both evaluations follows a parallel hedging cascade: negative path is 'I don't like it → uh → but → um → basically' (4–9 s); positive path is 'I love when it's like a band that I → do like → um → a singer' (11–15 s). In both cases, the core evaluative verb ('like' / 'love') is immediately surrounded by fillers and approximators ('uh,' 'um,' 'basically,' 'like'), indicating the preference is being linguistically constructed in real time rather than retrieved as a settled, embodied conviction. The word 'basically' (8–9 s) functions as a categorical deflator, converting what could be a personal declaration into a generalized taxonomic statement.\nThe examiner's behavioral sequence reinforces a flat-response norm: she writes continuously while the candidate speaks (frames 0–15 s), lifts her gaze and pen only at 16 s to deliver 'Great. Perfect.'—a two-word administrative acknowledgment—then immediately pivots ('Now let's move on to talk about tr-', 18–20 s) without probing the content of the music preference. This rapid closure signals that the candidate's response was sufficient for record-keeping purposes, implicitly rewarding the restrained, non-expressive delivery style and discouraging elaboration or affective display.\nThe transition from rejection to endorsement (6–11 s: 'but, um, basically, I love…') contains no audible or visible reset marker—no inhale spike, no posture shift, no change in hand clasp pressure detectable at this resolution. The pivot is purely lexical ('but') and discourse-pragmatic ('basically'), suggesting the candidate navigates between affective positions as a matter of verbal logic rather than embodied feeling. The absence of any preparatory motor action before 'I love' contrasts with the goal's hypothesis that spatial/physical referents (as in a home tour) would elicit gestural accompaniment; here, the musical preference is discussed entirely as an abstract category ('a band,' 'a singer') with no invoked sensory scene to gesture toward.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M11",
+        "observation_id": "active_10",
+        "modality": "audio_video",
+        "retrieval_window": [
+          220.0,
+          240.0
+        ],
+        "content": "The candidate's response to 'Do you like traveling?' (2–12 s) is structured as an escalating tripartite list—'knowing new places → meeting new people → making new relationships'—with an 'um' filler inserted before each new item (4 s, 8 s, 12 s). This parallel construction, combined with the absence of any specific referent (no named country, no recalled encounter), indicates the benefits of travel are being assembled as abstract categories in real time rather than narrated from episodic memory.\nAt 16–20 s the candidate shifts from declarative listing to explicitly hypothetical framing: 'I imagine that I can have a friend in another country that…' The verbs 'imagine' and 'can have' (rather than 'I met,' 'I made,' or 'I have') position the social reward of travel as a projected possibility, not a realized experience. The utterance truncates at the 20 s boundary with an open 'that…' clause, leaving the thought syntactically unresolved.\nVisually, across the entire 0–20 s travel segment the candidate's hands remain interlocked on the table surface. No outward sweep, pointing, or spatial-referent gesture accompanies the phrases 'new places' or 'another country,' despite these being inherently spatial concepts. A marginal hand adjustment is faintly visible around frame 17.2 s (coinciding with 'I imagine'), but it does not resolve into a communicative gesture before the hands re-clasp by 18.2 s.\nThe examiner's engagement during the travel answer is limited to a single backchannel 'Mhm' at approximately 12–13 s, delivered while she continues writing. She does not follow up on the incomplete 'that…' clause within this window, nor does she prompt for a specific example, effectively allowing the aspirational framing to stand unchallenged.\nVocal prosody throughout the travel segment is relatively level, with pitch rises confined to the list items ('places↗, people↗, relationships↗') and a noticeable drop in energy and pace entering the 'I imagine' clause (16–20 s), where speech rate slows and the final word 'that' is delivered with falling intonation and audible breath trailing off—consistent with an unfinished internal search for a concrete referent that does not arrive within the clip.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M12",
+        "observation_id": "active_11",
+        "modality": "audio_video",
+        "retrieval_window": [
+          240.0,
+          260.0
+        ],
+        "content": "The candidate's air-travel self-report (8–13 s) follows a three-move structure: (a) a false-start reformulation—'Not as I… not as much as I would like to'—where the initial fragment 'Not as I' is abandoned mid-phrase and replaced by the fuller clause, signalling that the frequency admission required on-the-spot lexical selection; (b) a contrastive pivot—'But I do like traveling by air'—in which the stressed auxiliary 'do' functions as an emphatic repair, upgrading a bare preference statement into a defended one; and (c) an aversion declaration—'However, I don't like turbulence because that makes me feel…'—introduced by the discourse marker 'However,' which positions the turbulence dislike as a qualifying exception to the preceding positive preference. The utterance truncates at the 20 s boundary on the verb 'feel,' leaving the emotional or physiological consequence unnamed.\nThe truncation at 'that makes me feel…' differs structurally from the earlier aspirational 'that…' cut-off noted in prior context: here the clause is causal ('because that makes me feel'), embedding an expected emotional payload that never arrives. The candidate's pace decelerates noticeably across 'because that makes me feel,' with the final word 'feel' delivered at lower amplitude and a falling pitch contour, consistent with either an involuntary withdrawal from disclosing a vulnerable sensation or a turn-yield cue awaiting examiner prompting. Whether this is a hard audio cut or a trailing silence cannot be resolved within the 0–20 s window.\nVisually, across the full 0–20 s segment the candidate remains seated with forearms resting on the table; his hands are loosely clasped or palm-down near the table edge, with no expansive gesture accompanying the turbulence aversion. His gaze alternates between the examiner and a downward angle during the 'Not as I…' reformulation, then stabilises on the examiner for 'But I do like traveling by air.' The examiner, seated opposite, writes continuously in a notebook during the candidate's responses, looking up briefly at the question 'do you often travel by air?' (≈5–7 s) and then resuming note-taking. Two desk flags (Canadian and a second organisational banner) are visible between them, reinforcing the formal assessment setting.\nThe examiner's question at 5–7 s—'Great. And do you often travel by air?'—is a closed-frequency probe delivered in a neutral, rising-intonation register. The candidate's reply does not directly answer 'often' with a quantifier; instead he substitutes a desiderative frame ('not as much as I would like to'), which deflects the factual question into a statement of unmet aspiration. This pattern—replacing a requested datum with an evaluative comment—recurs in the turbulence clause, where the expected completion ('feel scared / feel sick / feel anxious') is withheld.\nProsodically, the candidate's speech rate is moderate-to-slow throughout, with two audible inhalation pauses: one after the false start 'Not as I…' (≈9 s) and one before 'However' (≈13 s). The 'But I do like' segment carries the highest energy and clearest articulation in the clip, while the 'because that makes me feel' tail drops in both volume and pitch, producing an acoustic gradient that mirrors the shift from confident preference-stating to hesitant emotional-disclosure.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M13",
+        "observation_id": "active_12",
+        "modality": "audio_video",
+        "retrieval_window": [
+          260.0,
+          280.0
+        ],
+        "content": "The candidate's country-preference response (6–14 s) is framed entirely in conditional-aspirational language: 'I would love to visit at some point.' The modal 'would' plus the vague temporal hedge 'at some point' positions both Italy and Japan as unrealized future desires rather than recalled experiences. The two discourse markers opening the turn—'Um, actually'—signal on-the-spot formulation; 'actually' mildly corrects the examiner's hypothetical framing ('would you like… in the future?') toward asserted desire, yet the very next clause re-accepts the hypothetical frame via 'would love… at some point.' Italy receives no elaboration beyond bare naming ('one is Italy'), while Japan is immediately qualified ('and the other one is Japan'), producing an asymmetry that suggests Italy is listed for completeness rather than genuine enthusiasm.\nAt 14–20 s the candidate pivots to Japan with a sensory justification: 'especially for their cuisine because I love Asian food here in my, in my city.' The present-tense 'I love' contrasts sharply with the conditional 'I would love to visit' uttered six seconds earlier, marking a shift from aspiration to claimed present experience. However, the grounding attempt 'here in my city' is disrupted by a stuttered self-repair ('in my, in my city'), and the reasoning is circular: Japanese cuisine is loved because Asian food is loved, and Asian food is available locally. The candidate never describes a specific dish, restaurant, or sensory memory (taste, aroma, texture), keeping the 'love' at the level of category preference rather than embodied recollection.\nVisually, across the entire 6–20 s span the candidate's posture is identical to the preceding turbulence segment: forearms resting on the table, fingers loosely interlaced, torso upright with no forward lean. No eyebrow elevation, no finger-tension shift, no hand-opening gesture accompanies either 'I would love to visit' (≈9 s) or 'I love Asian food' (≈17 s). The physical stillness is uniform across both the conditional and the present-tense 'love' statements, providing zero kinematic differentiation between aspirational desire and claimed experiential conviction. The examiner continues writing in her notebook throughout, looking up only briefly at the question onset (≈3 s) before resuming note-taking, offering no visual encouragement that might prompt the candidate to elaborate sensorially.\nThe self-repair density in this 6–20 s window is notably higher than in the candidate's earlier fluent segments referenced in prior context. Within 14 seconds of speech the candidate produces: one filler 'Um' (≈6 s), one corrective 'actually' (≈7 s), one filler 'Uh' (≈10 s), and one stuttered repetition 'in my, in my city' (≈19 s)—four disfluencies in rapid succession. By contrast, the prior-observation record notes that the turbulence aversion ('I don't like turbulence') and the air-travel preference ('But I do like traveling by air') were delivered with the stressed auxiliary 'do' as a single emphatic repair and no other fillers. This pattern suggests that positive-affect, desire-stating topics ('love,' 'would like') trigger greater lexical-search uncertainty than negative-preference topics ('don't like'), consistent with the candidate having less rehearsed or less deeply felt material when expressing enthusiasm.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M14",
+        "observation_id": "active_13",
+        "modality": "audio_video",
+        "retrieval_window": [
+          280.0,
+          289.576009
+        ],
+        "content": "The food-topic response (0–3.5 s) contains exactly one initial filler ('Uh') followed by a single, grammatically intact causal sentence: 'I like trying that kind of food, so I would like to try the original one.' Unlike the 6–20 s country/cuisine window documented in M13—which produced four heterogeneous disfluencies (two fillers, one corrective 'actually,' one stuttered repair 'in my, in my city') across 14 s—the food turn shows zero mid-sentence repairs, zero repetitions, and zero hedging beyond the opening 'Uh.' The per-second filler rate is numerically identical (≈0.29/s in both windows), but the TYPE distribution shifts: the food turn eliminates all corrective and reparative disfluencies, retaining only the initiation marker. This pattern is consistent with a low-formulation-load utterance: the sentence requires only a sensory preference ('I like trying') linked by 'so' to a straightforward desire ('try the original one'), with no justification, conditional planning, or social negotiation embedded in the content.\nVisually across 0–3.5 s the candidate's posture is unchanged from the M13 window: forearms flat on the table, fingers loosely interlaced, torso upright with no forward lean, gaze directed at the examiner. No hand-opening gesture, no eyebrow elevation, and no smile accompany either 'I like trying' or 'the original one.' The kinematic profile is therefore identical whether the candidate is expressing a simple food preference or the more elaborate country/cuisine desires analyzed in M13—providing no physical differentiation between low-stakes and higher-stakes content, and no evidence of relief or comfort that would distinguish genuine ease from mechanical delivery.\nAt 3.5–4.5 s the examiner produces a brief 'Great,' looking up from her notebook for approximately one second before resuming writing. The candidate does not nod, smile, or produce any back-channel ('mm,' 'thank you') during this micro-pause; his hands remain interlaced and his gaze stays fixed on the examiner without the slight head-tilt or eye-narrowing that typically accompanies reciprocal acknowledgment.\nFrom 5–9.5 s the examiner delivers the full section-closing script: 'Thank you very much. Great, now we are done with the first part of the exam.' During this 4.5-second social-ritual utterance the examiner is predominantly looking down and writing, glancing up only briefly around 8–9 s. The candidate produces NO verbal response (no 'thank you,' no 'great,' no 'okay') and NO visible acknowledgment gesture (no nod, no hand-unclasping, no smile, no shift in gaze direction). His posture, hand position, and facial orientation remain frozen in the identical configuration held since 0 s. The absence spans the entire closing cue, making it unlikely to be a momentary lapse in attention; rather, it resembles a sustained non-response to a structured social boundary.\nThe structural simplicity of the food question (a binary sensory preference requiring no justification, no conditional planning, and no negotiation with the examiner) contrasts sharply with the country/cuisine prompt analyzed in M13, which demanded listing two nations, justifying a choice with sensory reasoning, and grounding the claim locally ('here in my city'). The candidate's cleaner delivery on the food topic is therefore confounded: reduced disfluency could reflect genuinely lower cognitive load (comfort) OR could reflect a fatigue-driven economizing strategy as the exam segment nears its end, where the candidate minimizes output because the stakes feel lower. The identical filler-rate-per-second and identical frozen posture across both windows argue against a 'comfort' interpretation—genuine ease would likely produce at least one gestural or prosodic marker of relaxation (a shoulder drop, a smile, a looser hand position), none of which appear.\nThe candidate's non-acknowledgment of the section-closing cue cannot yet be classified as a stable cross-topic trait versus an anxiety-mediated freeze at structural boundaries, because this is the first observed instance of a social-ritual boundary in the available data. A single non-response is equally consistent with (a) a culturally neutral or task-focused listening style where the candidate treats examiner pleasantries as non-content noise, or (b) a freeze response triggered specifically by the performative demand of 'thanking back' at a segment boundary, where the candidate must execute a social script rather than answer a content question. Discriminating these hypotheses requires observing the candidate's behavior at OTHER social-ritual points earlier in the recording.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M15",
+        "observation_id": "active_14",
+        "modality": "text",
+        "retrieval_window": [
+          0.0,
+          289.576009
+        ],
+        "content": "The transcript reveals a systematic syntactic asymmetry across all topics: aversions are encoded with externally-caused or patient-subject constructions ('that will take me to live with around people,' 'that makes me feel nauseous and sick sometimes,' 'you can hear all the people singing or trying to'), while preferences are encoded with active-agent and possessive constructions ('I like having my own bathroom,' 'I do love traveling,' 'I love knowing new places, meeting new people, making new relationships,' 'I do like travel by air'). The grammatical subject of aversion clauses is the stimulus (flat, turbulence, live-music crowd), positioning the self as recipient; the grammatical subject of preference clauses is always 'I' with an agentive or experiencer verb. This pattern holds across accommodation, music, and travel domains, indicating it is not confined to a single lexical set.\nThe conditional-plan sentences ('I would like to have my own place at some point,' 'I think I will be working right now more time, unless I have enough money to buy my own place') constitute a THIRD syntactic profile intermediate between the two poles: the self retains grammatical agency as subject of 'will be working' and 'buy,' but actualization is gated by an external resource condition ('unless I have enough money') and a vague temporal frame ('at some point,' 'I think'). Agency in the action is preserved, but agency in the decision-to-act is deferred to an external contingency. This parallels the aversion pattern's logic—external forces determine whether the self's state changes—without collapsing into full patient syntax. The progressive aspect 'will be working' further softens discrete volition into an ongoing, quasi-passive state.\nThe L2-transfer hypothesis (Spanish 'gustar'-type causatives: 'eso me hace sentir' → 'that makes me feel'; 'me gustaría tener' → 'I would like to have') accounts for individual constructions but cannot explain the SELECTIVE distribution: the candidate uses active/possessive English syntax freely for preferences ('I like having MY OWN bathroom,' 'I DO love') while defaulting to causative/patient syntax specifically for aversions. If this were purely L2 interference, the same construction would appear symmetrically. Instead, the asymmetry tracks semantic valence (negative → external cause; positive → self-as-agent), which is a meaningful cognitive distinction beyond grammar transfer. However, the conditional-plan sentences ('unless I have enough money') map cleanly onto Spanish 'a menos que tenga suficiente dinero,' so the deferral pattern there is at least partially attributable to L2 structure rather than a personality-level schema.\nThe neighbor aversion ('that will take me to live with around people') is the strongest single example of self-as-patient: the flat is the grammatical agent that 'takes' him into proximity with others. A native English speaker or a purely L2-influenced speaker would more naturally say 'I would have to live with people' or 'it forces me to share space.' The choice of 'take me' specifically casts the housing arrangement as an abduction or imposition on a bounded self, consistent with the introverted-autonomy reading. By contrast, the positive counterpart ('I like having my own bathroom') uses possessive 'my own' twice, asserting territorial control over a private space.\nThe live-music aversion shifts to generic 'you' ('you can hear all the people singing or trying to'), depersonalizing the sensory overload and removing the self as grammatical subject entirely. This is structurally different from the turbulence aversion ('that makes ME feel'), where the self remains as patient. The two aversion strategies—causative-with-self-as-object vs. generic-depersonalization—both withdraw the self from agentive position, but through different mechanisms, suggesting the pattern is not a single rote L2 structure but a flexible repertoire of agency-withdrawal strategies recruited according to the type of unwanted stimulus.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M16",
+        "observation_id": "active_15",
+        "modality": "audio_video",
+        "retrieval_window": [
+          20.0,
+          45.0
+        ],
+        "content": "Video frames spanning 6–10 s (the interval corresponding to the candidate's first answer, 'Sure, my full name is Fernando Alonso Lopez Velasco') show no detectable change in posture relative to the preceding silent listening phase: hands remain clasped on the table, torso stays upright, and gaze is fixed on the examiner. There is no head tilt, shoulder shift, hand release, or lean-forward that would typically accompany spontaneous self-introduction speech.\nThe transcript of the first answer is a single, grammatically complete sentence delivered without fillers ('um,' 'uh'), restarts, or hedging. Lexically it mirrors the examiner's prompt ('full name' → 'my full name is…'), suggesting a rehearsed or formulaic retrieval rather than an extemporaneous construction. However, prosodic features—speech rate, pitch contour, pause length, vocal tension—cannot be confirmed from text alone; the pending audio pass over [0, 20] s will supply the necessary waveform and spectral evidence.\nCross-referencing M1 (0–25 s audio_video) and M2 (20–30 s audio_video): both record the candidate as physically still during examiner speech. The 6–10 s window falls inside M1's stated coverage, yet M1 characterises the entire segment as 'completely silent' for the candidate, which conflicts with the transcript showing speech at 6–10 s. This discrepancy indicates M1's stillness/silence label was applied to the examiner-introduction sub-phase only and does not constitute an independent behavioural coding of the candidate's own speaking turn.\nNo visible micro-gestures (lip-smacking, brow furrow, finger tap, swallowing bob) are resolvable at 2 fps sampling across frames 6–10 s. The absence of such cues is consistent with either genuine composure or mild performance freeze; distinguishing the two requires higher-temporal-resolution video or audio prosody, neither of which adds new unread coverage beyond the already-pending [0, 20] s audio/video requests.",
+        "content_status": "structured",
+        "overlapping_media_reads": [
+          "M2"
+        ]
+      },
+      {
+        "id": "M17",
+        "observation_id": "active_16",
+        "modality": "audio_video",
+        "retrieval_window": [
+          235.0,
+          240.0
+        ],
+        "content": "M11 records that across the 0–20 s travel segment the candidate's hands remain interlocked on the table, with no outward sweep or spatial-referent gesture during the declarative list items ('new places,' 'meeting new people,' 'making new relationships') at roughly 2–12 s. A single marginal hand adjustment is noted around frame 17.2 s, coinciding with the onset of the hypothetical clause 'I imagine that I can have a friend in another country that…', but it does not resolve into a communicative gesture before the hands re-clasp by 18.2 s. Because the video is sampled at 2 fps, the 17.2 s reference corresponds to a frame boundary near 17.0 or 17.5 s, leaving ±0.25 s ambiguity about whether the micro-movement is locked to the word 'imagine' itself or to the preceding pause/breath that separates the list from the hypothetical framing.\nM11 further notes that vocal prosody drops in energy and pace entering the 'I imagine' clause (16–20 s), with speech rate slowing and the final 'that' delivered on falling intonation with trailing breath—consistent with an unfinished internal search. By contrast, the earlier list items carry pitch rises ('places↗, people↗, relationships↗') and 'um' fillers at regular intervals (4 s, 8 s, 12 s), suggesting a rehearsed or template-driven cadence. The question of whether the 17.2 s hand twitch represents affective resonance with the hypothetical content (a genuine imagining gesture) or merely a postural reset after the list-completion breath cannot be resolved from the existing 2-fps frames alone; it requires tighter audio-video synchronization around the exact syllable onset of 'I imagine' and the corresponding interlock-release micro-movement.",
+        "content_status": "structured",
+        "overlapping_media_reads": [
+          "M11"
+        ]
+      },
+      {
+        "id": "M18",
+        "observation_id": "active_17",
+        "modality": "audio_video",
+        "retrieval_window": [
+          274.0,
+          280.0
+        ],
+        "content": "The kinematic comparison between the conditional aspirational 'love' (≈9 s original / ≈−5 s clip, 'I would love to visit at some point') and the present-tense experiential 'love' (≈17 s original / ≈3 s clip, 'I love Asian food here in my city') yields zero differentiation. Across both utterances the candidate maintains an identical frozen posture: forearms flat on the table, fingers loosely interlaced, torso upright with no forward lean, gaze fixed on the examiner. No eyebrow elevation, no finger-tension shift, no hand-opening gesture, no shoulder adjustment, and no micro-nod accompanies either instance of 'love.'\nThe absence of any embodied marker at the present-tense 'I love Asian food' is particularly diagnostic because this clause carries the strongest semantic commitment in the turn—it asserts a current, lived preference grounded in local availability ('here in my city'). If the enthusiasm had even a momentary somatic component (a brief brow lift on 'love,' a slight forward lean on 'Asian food,' a finger-unclench on 'city'), it would manifest here rather than at the weaker conditional 'would love to visit.' Its total absence confirms the 'love' operates purely at the verbal-intellectual register: the candidate names a category preference without re-experiencing it.\nThe stuttered self-repair 'in my, in my city' (≈19 s original / ≈5 s clip) introduces the only prosodic disruption in the present-tense clause, yet it is a lexical-retrieval error (repeating the prepositional phrase) rather than an affective break. The pitch contour remains flat through the repair; there is no rise-and-fall that would signal genuine excitement momentarily interrupting speech planning. This distinguishes the repair from the emphatic 'do' stress observed in the turbulence-aversion segment (prior context), where a single auxiliary carried audible conviction.\nCombining the 0–6 s clip coverage with the extended [−5, 11] s audio_video window, the candidate's entire food/cuisine response spans roughly 14 seconds of speech and produces exactly one filler ('Uh' at ≈10 s original), one corrective ('actually' at ≈7 s), one stuttered repetition ('in my, in my city' at ≈19 s), and zero gestural or postural shifts. The disfluency density (4 events / 14 s ≈ 0.29/s) matches the rate in the simpler food-preference turn (M14: 1 filler / 3.5 s ≈ 0.29/s), confirming that the elevated formulation load of the country/cuisine prompt did not produce additional physical tension—only additional lexical searching. The body remains equally still under low and high cognitive load, reinforcing that the candidate's engagement strategy is uniformly verbal rather than embodied.\nThe examiner's behavior during the present-tense 'love' clause (≈17 s original / ≈3 s clip) is limited to continuous notebook writing with no upward glance, no verbal back-channel, and no facial expression change. This removes the possibility that the candidate suppressed a visible reaction due to social monitoring; there was no audience cue prompting or permitting an expressive response. The stillness is therefore self-generated, not performance-inhibited.",
+        "content_status": "structured",
+        "overlapping_media_reads": [
+          "M13"
+        ]
+      }
+    ]
+  },
+  "steps": [
+    {
+      "index": 0,
+      "action": {
+        "time": [
+          0.0,
+          20.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether this physical stillness indicates nervousness and self-control or a naturally calm and disciplined demeanor under pressure."
+      },
+      "candidate_id": "C1",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M1"
+      ],
+      "changed_ids": [
+        "M1"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 1,
+      "action": {
+        "time": [
+          40.0,
+          60.0
+        ],
+        "modality": "audio_video",
+        "goal": "Clarify whether this lack of active listening cues (nodding, verbal backchannels like 'mm-hm') reflects concentrated processing of unfamiliar instructions, social anxiety in a formal evaluative setting, or a culturally neutral listening style, by comparing his responsiveness during this passive phase to his engagement once he is required to speak."
+      },
+      "candidate_id": "C2",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M2"
+      ],
+      "changed_ids": [
+        "M2"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 2,
+      "action": {
+        "time": [
+          60.0,
+          80.0
+        ],
+        "modality": "audio_video",
+        "goal": "Observe whether the candidate's vocal delivery, facial expressiveness, and body language shift markedly once he begins speaking, to determine if the earlier stillness reflected concentrated processing of unfamiliar instructions, social anxiety in a formal evaluative setting, or a culturally neutral listening style."
+      },
+      "candidate_id": "C3",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M3"
+      ],
+      "changed_ids": [
+        "M3"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 3,
+      "action": {
+        "time": [
+          80.0,
+          100.0
+        ],
+        "modality": "audio_video",
+        "goal": "Capture the exact moment the candidate shifts from silent listening to speech, and observe whether micro-expressions (eyebrow raise, slight lean, hand unclasping) or posture changes accompany the emphatic 'I really don't like neighbors' line, distinguishing authentic conviction from performative certainty in a formal interview setting."
+      },
+      "candidate_id": "C4",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M4"
+      ],
+      "changed_ids": [
+        "M4"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 4,
+      "action": {
+        "time": [
+          100.0,
+          120.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the co-occurrence of confident spatial gesturing with verbal hedging indicates genuine, well-known familiarity with the property (the body 'knows' the space even when words lag) versus a partially constructed or secondhand narrative where the candidate is assembling details from memory or hearsay, by comparing gesture precision and timing against filler placement across multiple descriptive turns."
+      },
+      "candidate_id": "C5",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M5"
+      ],
+      "changed_ids": [
+        "M5"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 5,
+      "action": {
+        "time": [
+          120.0,
+          140.0
+        ],
+        "modality": "audio_video",
+        "goal": "Compare filler frequency, gesture presence, and vocal energy in the duration/plans response (20–40 s) against the spatial-description turns (0–20 s) to test whether the body's silence during spatial talk reflects genuine uncertainty about the layout or merely the constrained interview posture."
+      },
+      "candidate_id": "C6",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M6"
+      ],
+      "changed_ids": [
+        "M6"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 6,
+      "action": {
+        "time": [
+          140.0,
+          160.0
+        ],
+        "modality": "audio_video",
+        "goal": "Clarify whether the candidate's fillers are a habitual speech-pattern feature independent of topic difficulty (suggesting a reflective, deliberative cognitive style) or whether their frequency subtly increases under evaluative pressure; comparing exact filler count per clause across the music segment versus the neighbor/finance segments could reveal whether anxiety amplifies them or they remain constant, informing whether his verbal hesitations signal genuine uncertainty or simply a measured speaking rhythm."
+      },
+      "candidate_id": "C7",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M7"
+      ],
+      "changed_ids": [
+        "M7"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 7,
+      "action": {
+        "time": [
+          160.0,
+          180.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the combination of a metacognitive admission of uncertainty, incremental hedge-stacking, and an unfinished trailing-off reflects a genuinely deliberative cognitive style (thinking aloud under low pressure) or an anxiety-driven inability to commit to a definitive statement in an evaluative setting—distinguishable by comparing the rate of self-interruption and the completeness of his final clause against his earlier, more fluent housing-preference answer where he also used fillers but completed his thought ('I really don't like neighbors')."
+      },
+      "candidate_id": "C8",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M8"
+      ],
+      "changed_ids": [
+        "M8"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 8,
+      "action": {
+        "time": [
+          180.0,
+          200.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the hesitancy in the 0–16 s financial-contingency statement reflects a stable low-self-efficacy pattern (if 60–80 s also shows heavy hedging and flat prosody) or a context-specific anxiety about monetary disclosure (if 60–80 s shows firmer cadence, fewer fillers, and more gestural emphasis on preference statements)."
+      },
+      "candidate_id": "C9",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M9"
+      ],
+      "changed_ids": [
+        "M9"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 9,
+      "action": {
+        "time": [
+          200.0,
+          220.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the absence of gesturing during a positive-affect statement ('I love') indicates that musical preference is processed as an abstract, internal category (lacking the spatial/physical referents that prompted gestures during the home tour), or whether the evaluative interview context uniformly suppresses motor expressiveness regardless of emotional valence. Closer frame-by-frame inspection of finger tension, subtle shoulder shifts, or micro-head-nods coinciding precisely with the word 'love' versus 'I don't like it' could distinguish genuine affective engagement from a flat, socially scripted response pattern."
+      },
+      "candidate_id": "C10",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M10"
+      ],
+      "changed_ids": [
+        "M10"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 10,
+      "action": {
+        "time": [
+          220.0,
+          240.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the absence of gesturing during this socially enthusiastic answer—contrasted with the spatial gesturing permitted during the concrete home tour—indicates that the candidate's travel/relationship enthusiasm is primarily intellectual or aspirational (a desired self-image he has not yet embodied in experience) rather than a recalled, sensorially rich memory. Closer frame-by-frame inspection of micro-movements (subtle finger unclasping, eyebrow elevation, slight forward lean) precisely aligned to 'meeting new people' versus 'I imagine that I can have a friend' could distinguish genuine affective resonance from a rehearsed or idealized script, and the incomplete trailing clause could be checked against subsequent audio to see whether he ever grounds the imagination in a specific past event."
+      },
+      "candidate_id": "C11",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M11"
+      ],
+      "changed_ids": [
+        "M11"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 11,
+      "action": {
+        "time": [
+          240.0,
+          260.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the candidate's hesitancy is a stable low-self-efficacy trait (persistent heavy hedging and flat prosody across topics) or context-specific anxiety about monetary/immigration disclosure (firmer cadence, fewer fillers, and gestural emphasis when discussing personal preferences)."
+      },
+      "candidate_id": "C12",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M12"
+      ],
+      "changed_ids": [
+        "M12"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 12,
+      "action": {
+        "time": [
+          260.0,
+          280.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the co-occurrence of 'love' vocabulary with hedging language and physical stillness indicates that the candidate's travel/food enthusiasm is aspirational and intellectual (a desired self-image not yet embodied in experience) rather than a recalled, sensorially rich conviction. Closer frame-by-frame inspection of micro-movements (subtle finger tension shifts, eyebrow elevation, slight forward lean) precisely aligned to 'I love Asian food' versus 'I would love to visit' could distinguish genuine affective resonance from a socially scripted response, and comparing the self-repair frequency here against his earlier fluent housing-preference answer (where 'I really don't like neighbors' was delivered without fillers) would clarify whether positive-affect topics trigger more linguistic uncertainty than negative-preference topics."
+      },
+      "candidate_id": "C13",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M13"
+      ],
+      "changed_ids": [
+        "M13"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 13,
+      "action": {
+        "time": [
+          280.0,
+          289.576009
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the marked reduction in fillers and repairs on the food topic reflects genuine low-stakes comfort with a simple sensory preference (the question required no justification, conditional planning, or social negotiation) versus a fatigue-driven shortening as the exam segment ends, and whether the absence of acknowledgment to the section-closing cue is a stable cross-topic trait (task-focused or culturally neutral listening style) or an anxiety-mediated freeze that intensifies at structural boundaries where the candidate must 'perform' a social ritual (thanking, nodding) rather than simply answering content questions."
+      },
+      "candidate_id": "C14",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M14"
+      ],
+      "changed_ids": [
+        "M14"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 14,
+      "action": {
+        "time": [
+          0.0,
+          289.576009
+        ],
+        "modality": "text",
+        "goal": "Determine whether the systematic use of passive/externally-caused syntax for aversions versus active/possessive syntax for preferences reflects a stable cognitive schema in which unwanted stimuli are experienced as intrusions on a bounded self (supporting a high-need-for-control or introverted-autonomy reading), or whether it is a surface-level L2 grammatical pattern unrelated to personality structure. Closer inspection could compare these constructions against his conditional-plan sentences ('unless I have enough money,' 'I will be working right now more time') to see whether agency is also linguistically deferred when the topic involves future commitment, which would strengthen the control-orientation hypothesis beyond mere sensory preference."
+      },
+      "candidate_id": "C15",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M15"
+      ],
+      "changed_ids": [
+        "M15"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 15,
+      "action": {
+        "time": [
+          20.0,
+          45.0
+        ],
+        "modality": "audio_video",
+        "goal": "Assess whether the candidate's physical stillness persists during his first answer or if he exhibits natural movement and relaxed vocal delivery."
+      },
+      "candidate_id": "C16",
+      "parent_candidate_id": "C1",
+      "new_ids": [
+        "M16"
+      ],
+      "changed_ids": [
+        "M16"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 16,
+      "action": {
+        "time": [
+          235.0,
+          240.0
+        ],
+        "modality": "audio_video",
+        "goal": "Isolate whether any sub-second motor event aligns precisely with the hypothetical 'I imagine' phrase versus the earlier declarative list items, to distinguish affective resonance from rehearsed delivery."
+      },
+      "candidate_id": "C29",
+      "parent_candidate_id": "C11",
+      "new_ids": [
+        "M17"
+      ],
+      "changed_ids": [
+        "M17"
+      ],
+      "followup_status": "no_new_media_content",
+      "followup_errors": []
+    },
+    {
+      "index": 17,
+      "action": {
+        "time": [
+          274.0,
+          280.0
+        ],
+        "modality": "audio_video",
+        "goal": "Detect any kinematic signature that differentiates the present-tense experiential 'love' from the conditional aspirational 'love' produced six seconds earlier, thereby testing whether the candidate's food enthusiasm carries even a momentary embodied component or is purely verbal-intellectual."
+      },
+      "candidate_id": "C32",
+      "parent_candidate_id": "C13",
+      "new_ids": [
+        "M18"
+      ],
+      "changed_ids": [
+        "M18"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    }
+  ],
+  "semantic_review": "unreviewed",
+  "teacher_approved": false
+}

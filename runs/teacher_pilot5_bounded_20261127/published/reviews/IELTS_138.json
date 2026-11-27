@@ -1,0 +1,1158 @@
+{
+  "sample_id": "IELTS:138",
+  "run_status": "complete",
+  "final_status": "generated",
+  "final": {
+    "O": {
+      "level": "low",
+      "reasoning": null
+    },
+    "C": {
+      "level": "medium",
+      "reasoning": null
+    },
+    "E": {
+      "level": "medium",
+      "reasoning": null
+    },
+    "A": {
+      "level": "high",
+      "reasoning": null
+    },
+    "N": {
+      "level": "low",
+      "reasoning": null
+    }
+  },
+  "final_explanation": "The interviewee displays a pronounced split between sensory-experiential engagement and volitional-causal ownership (M12). On personal-preference and bodily-activity topics he narrates in first person with warm prosody and concrete vocabulary ('I really love meat,' 'That's really fun,' 'I was always playing, fighting, wrestling'), yet on every causal, evaluative, or societal prompt he substitutes external agents ('my parents thought,' 'everyone is really happy,' 'People say') and wraps the remainder in epistemic softeners ('I guess,' 'I don't really know,' 'It's okay, I guess'). The absence of intrinsic-motivation language across five differently framed questions (M12) and the flat/recited prosody at external-agent moments versus animated warmth in sensory narration indicate low Openness: he experiences the world sensorially but does not autonomously explore, justify, or claim intellectual ownership of choices and ideas. Conscientiousness sits at medium because structured participation exists (club membership, procedural compliance) but routines are consistently aspirational and low-frequency ('I try to go to the gym once or twice a week,' 'from time to time'), lacking the committed self-discipline of high C. Extraversion is medium: he reports positive friendships and shows genuine social animation in childhood recall (broad smile, forward lean, fluid listing in M6–M7), yet adult responses tend toward brevity and the 'that kind of thing' compression (M4), indicating comfort without high-energy sociability. Agreeableness is high: across all societal and evaluative prompts he defers epistemic authority, avoids personal endorsement of contentious claims, tags opinions with 'in my opinion,' and never challenges the interviewer or contradicts others (M9, M10, M12). Neuroticism is low: the single 'uh' in M1 is explicitly a speech-planning micro-pause; no observation records fidgeting, tremor, lip-pressing, throat-clearing, gaze-aversion, or postural withdrawal. Hedges and deflated cadences are consistently attributed to cognitive search or stylistic narration rather than emotional distress (M3, M4, M13, M14, M17, M18). The overall physiological register—steady pitch, upright still posture, hands in lap, maintained eye contact—remains unchanged from introduction through the most uncomfortable questions.",
+  "contextual": [
+    {
+      "trait": "O",
+      "context_type": "reported",
+      "context": "Answering why he chose to study engineering (M3 window)",
+      "expression": "Zero first-person volitional language; causal chain runs through parents' judgment, prior math performance, and a speculative 'might be interesting' closed by 'It's okay, I guess' with deflated trailing whisper. No curiosity, passion, or identity-alignment vocabulary appears.",
+      "citations": [
+        "M3",
+        "M12"
+      ]
+    },
+    {
+      "trait": "O",
+      "context_type": "observed",
+      "context": "Justifying his preference for rainy weather after a confident three-word label (M8 window)",
+      "expression": "The label 'rainy weather definitely' is delivered with a broad genuine smile and stressed single breath, but the 'why' justification shifts entirely to external agents ('everyone is really happy,' 'it cools down the temperature') with a stutter ('in in my region') and explanatory rather than animated posture. No first-person sensory language ('I love the sound,' 'it makes me feel cozy') appears.",
+      "citations": [
+        "M8",
+        "M12"
+      ]
+    },
+    {
+      "trait": "O",
+      "context_type": "reported",
+      "context": "Sensory and bodily self-reports across diet, childhood play, winter walks, and horse riding (M5, M6, M7, M10, M11)",
+      "expression": "Robust first-person agency with concrete bodily nouns and warm prosody: 'I really love meat too,' 'I was always playing, fighting, wrestling,' 'It's nice to get outside and go for a walk,' 'That's really fun.' Intrinsic-preference vocabulary is present and delivered with forward momentum and steady register.",
+      "citations": [
+        "M5",
+        "M6",
+        "M7",
+        "M10",
+        "M11",
+        "M12"
+      ]
+    },
+    {
+      "trait": "C",
+      "context_type": "reported",
+      "context": "Describing adult exercise and diet routines (M5, M6, M11, M14)",
+      "expression": "Consistent aspirational hedging: 'I try to watch my diet,' 'I try to go to the gym once or twice a week,' walks conditioned on weather ('when it's a bit cooler'), horse riding qualified as 'a bit at weekends.' Frequencies sit at the low end of regularity; no observation records a settled, self-imposed schedule without qualifiers.",
+      "citations": [
+        "M5",
+        "M6",
+        "M11",
+        "M14"
+      ]
+    },
+    {
+      "trait": "C",
+      "context_type": "observed",
+      "context": "Following the formal interview protocol from ID handover through Part 1 completion (M1, M2, M11)",
+      "expression": "Responses are timely, neither overly eager nor reluctant; the ID card is handed over in one smooth unhurried motion; posture and gaze remain steady through procedural transitions. The interviewer closes Part 1 without needing to redirect or prompt, indicating cooperative adherence to structure.",
+      "citations": [
+        "M1",
+        "M2",
+        "M11"
+      ]
+    },
+    {
+      "trait": "E",
+      "context_type": "observed",
+      "context": "Recalling childhood physical play with brothers (M6, M7)",
+      "expression": "Broad open smile with crinkled eyes, raised eyebrows on 'fighting' and 'wrestling,' slight forward head-lean, fluid rapid listing with no pauses, trailing 'you know' solidarity marker. The memory is emotionally accessible and well-rehearsed, delivered with unguarded warmth.",
+      "citations": [
+        "M6",
+        "M7"
+      ]
+    },
+    {
+      "trait": "E",
+      "context_type": "reported",
+      "context": "Describing course friendships and shared activities (M4)",
+      "expression": "Positive group evaluation ('some great guys'), enumerated shared routines (study, coffee, chat), but the list compresses rapidly and the tail 'that kind of thing' lands with reduced syllabic weight and trailing energy. Steady eye contact and relaxed posture accompany the answer, so the compression reads as stylistic wrap-up rather than social withdrawal.",
+      "citations": [
+        "M4"
+      ]
+    },
+    {
+      "trait": "A",
+      "context_type": "reported",
+      "context": "Responding to climate-change and societal-observation questions (M9, M10, M12)",
+      "expression": "Defers epistemic authority: echoes the question, reframes to 'climate change' tentatively, then minimizes ('I guess it's changed a little'). Attributes the claim to anonymous 'People say' and immediately distances ('but I'm not really sure if that's true'). Never asserts a personal observational stance on the contested topic.",
+      "citations": [
+        "M9",
+        "M10",
+        "M12",
+        "M17"
+      ]
+    },
+    {
+      "trait": "A",
+      "context_type": "observed",
+      "context": "Overall interactional register across all 18 windows",
+      "expression": "Polite name-shortening offer (M1), compliant ID handover, no interruption or challenge of the interviewer, 'in my opinion' softener on the video-game critique (M7), no frowning or confrontational posture at any point. Deference to external agents in causal narration (M12's 5:0 ratio) functions as a conflict-avoidance strategy: attributing views to others removes the risk of imposing his own.",
+      "citations": [
+        "M1",
+        "M2",
+        "M7",
+        "M12"
+      ]
+    },
+    {
+      "trait": "N",
+      "context_type": "observed",
+      "context": "Physiological and motor stability from introduction through the most uncomfortable questions (M1, M2, M3, M13, M18)",
+      "expression": "Hands rest in lap throughout; torso squared; no leg-bouncing, self-touching, pen-clicking, or chair-shift across any window. The single 'uh' in M1 is a sub-one-second speech-planning pause with no recurrence. The smile on 'I don't really know' (M13) is a bilateral politeness reflex with neutral brows and no corroborating body-language anxiety markers. M18 confirms relaxed rhythmic articulation with no tension, aversion, or withdrawal at the personal-narration boundary.",
+      "citations": [
+        "M1",
+        "M2",
+        "M3",
+        "M13",
+        "M18"
+      ]
+    },
+    {
+      "trait": "N",
+      "context_type": "reported",
+      "context": "Hedge and filler distribution across all responses (M3, M4, M5, M9, M10, M11)",
+      "expression": "Epistemic softeners ('I guess,' 'I don't really know,' 'I'm not really sure') cluster exclusively on causal/societal prompts and are characterized as cognitive-search markers, not anxiety responses. Planning fillers ('uh,' 'well,' 'you know') appear on sensory/personal topics with steady pitch and forward momentum (M10, M11). No observation documents vocal tremor, creak, rushed articulation, or elongated panic-pause attributable to emotional distress.",
+      "citations": [
+        "M3",
+        "M4",
+        "M5",
+        "M9",
+        "M10",
+        "M11"
+      ]
+    }
+  ],
+  "contextual_errors": [],
+  "stop_reason": "candidate_pool_exhausted",
+  "global_scan": {
+    "coarse_summaries": [
+      {
+        "time": [
+          0.0,
+          20.0
+        ],
+        "modality": "audio_video",
+        "summary": "The video captures the opening moments of an interview between Jane Smith and Ferris Ahmadi in a sparse room. After Jane introduces herself, she asks for Ferris's name. Ferris responds with a slight hesitation ('Um') before giving his full name and offering a preferred short name. Jane then requests his identification, which Ferris hands over. The interaction is polite and procedural.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          20.0,
+          40.0
+        ],
+        "modality": "audio_video",
+        "summary": "This segment captures the transition from administrative pleasantries into Part 1 of what appears to be a structured English proficiency test (likely IELTS). The interviewer, a woman in a teal top seated across a round table, warmly thanks the candidate and then clearly frames the upcoming section: 'Now in part one of the test, I'm going to ask you some questions about yourself.' She asks two straightforward personal questions—occupation/student status and field of study. The male candidate, dressed in a white button-down shirt, answers 'I'm a student' with a noticeable micro-stutter ('I-I'm'), then follows with 'I'm studying engineering' delivered more fluidly and accompanied by a faint, relaxed smile. Visually, he sits upright with hands resting in his lap, maintaining modest eye contact. The interviewer's demeanor is calm, encouraging, and professionally neutral throughout.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          40.0,
+          60.0
+        ],
+        "modality": "audio_video",
+        "summary": "When asked why he chose his subject, the interviewee opens with \"I don't really know,\" attributing the decision to his parents' judgment and his prior success in high-school mathematics rather than to any personal curiosity. His delivery is marked by repeated fillers (\"uh\") and a trailing, low-energy close—\"It's okay, I guess\"—that undercuts any sense of ownership or enthusiasm. Visually he begins with a polite smile but his expression flattens as he speaks, and his gaze drifts slightly away during the parental-attribution segment, reinforcing the impression of a passive, externally scaffolded choice.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          60.0,
+          80.0
+        ],
+        "modality": "audio_video",
+        "summary": "The interviewee confirms making friends on his course, opening with a brief double-affirmation and a minor stutter (\"Yes. Yes, I I have\") followed by an \"Uh\" filler, but then settles into a warm, concrete enumeration of shared activities: studying after class, drinking coffee, and chatting. His tone and facial expression (visible smile in the medium shot around 6–7 s) are notably more relaxed and positive than his earlier responses about identity and academic motivation. He closes the description with the vaguely dismissive phrase \"that kind of thing,\" which slightly undercuts the specificity of the list. The interviewer then cleanly pivots to a new topic—keeping fit and healthy—and the interviewee shows no visible resistance to the transition.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          80.0,
+          100.0
+        ],
+        "modality": "audio_video",
+        "summary": "The interviewee addresses a two-part question about staying healthy. For diet, he offers a moderately elaborated account—watching his intake, eating fruits and vegetables, conceding he 'really loves meat too'—and closes with a mild self-assessment ('I think my diet is pretty good'). For exercise, however, his answer collapses to a two-word, flatly delivered 'Yeah, sure,' with no elaboration, examples, or affective coloring. The stark asymmetry in length, specificity, and vocal energy between the two responses is the dominant observable feature of this segment.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          100.0,
+          120.0
+        ],
+        "modality": "audio_video",
+        "summary": "Following his initial vague \"from time to time\" (delivered with a soft chuckle), the interviewee elaborates on his exercise routine when prompted: he goes to the gym once or twice a week and enjoys evening walks when the weather is cooler. His delivery here is measured, with a slight upward gaze as he formulates the answer, and he uses the hedging phrase \"I try to go to the gym,\" suggesting aspiration rather than firm habit. When the interviewer pivots to ask about childhood activity, his response shifts markedly: \"Oh, very active, yes\" comes quickly, with a clear smile and a small nod, conveying immediate, comfortable recall. The contrast between the tentative, self-monitoring adult description and the confident, warm childhood acknowledgment is the most salient behavioral feature of this window.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          120.0,
+          140.0
+        ],
+        "modality": "audio_video",
+        "summary": "In this 20-second window the interviewee transitions from a warm, nostalgic recollection of childhood physical play with his brothers (fighting, wrestling, games) to answering the interviewer's question about children's activity. He responds with an immediate, unhedged 'Oh, very important,' then pivots into a critical generational observation: 'Nowadays kids just play video games all day. They don't get enough exercise in my opinion.' His delivery shifts from relaxed reminiscence to emphatic declaration, with stress on 'all day' and a softening tag ('in my opinion') closing the statement. The camera cuts to the listening interviewer at the tail end of his answer, capturing her attentive posture while his voice continues off-screen.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          140.0,
+          160.0
+        ],
+        "modality": "audio_video",
+        "summary": "The interviewee transitions from a brief critique of sedentary youth ('they're just couch potatoes, in my opinion') into a weather-preference question posed by the interviewer. He answers immediately and with emphasis—'Rainy weather, definitely'—but his justification is framed entirely through external and collective factors: rain is rare in his region, and when it falls, 'everyone is really happy.' The explanation opens with an 'Oh' (a momentary gathering-thought marker) and contains a minor stutter ('in in my region'). No personal sensory or emotional language appears (no mention of the sound, smell, or tactile pleasure of rain). His posture in the wide two-shot is upright and still, hands resting on his lap, while the interviewer takes notes. The overall delivery is calm, matter-of-fact, and confident in its conclusion but externally grounded in its reasoning, continuing the pattern observed in earlier segments where decisions and preferences are narrated through circumstance or group effect rather than first-person desire.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          160.0,
+          180.0
+        ],
+        "modality": "audio_video",
+        "summary": "The interviewee finishes his rain-preference explanation by noting that rain makes people 'really happy' and 'cools down the temperature too,' grounding his enjoyment in regional scarcity and collective affect rather than personal sensory experience. The interviewer then pivots to a broader observational question: whether he has noticed weather changes in his country recently. He repeats the question back ('Any changes…'), reframes it narrowly as 'like climate change?' with rising intonation, pauses, and then delivers a heavily hedged, minimal answer: 'Oh, well, I guess it's changed a little.' The response stacks three uncertainty markers in rapid succession—a dismissive opener ('Oh, well'), an epistemic hedge ('I guess'), and a quantitative minimizer ('a little')—creating a stark contrast with the single-word confidence ('definitely') he displayed seconds earlier on his personal preference. Visually, his gaze drifts downward during the repetition and his posture remains relatively still, lacking the small nods or smiles that accompanied his earlier concrete examples.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          180.0,
+          200.0
+        ],
+        "modality": "audio_video",
+        "summary": "This 20-second window captures the tail end of the interviewee's uncertain climate statement ('people say it's hotter than it used to be but I'm not really sure if that's true') and the interviewer's pivot to a personal question about winter activities. The interviewee responds with a brief, concrete description: winter in his country is short, he enjoys going outside for a walk because it is 'not so hot,' and he begins to add 'I sometimes…' before the clip cuts off. His delivery here includes a 'Well' opener and a couple of 'uh' fillers, but the content is sensory and personal rather than hedged and abstract. Visually, he remains seated against a plain white wall with minimal gesturing; the interviewer is shown glancing down at her notes before looking up to pose the question, suggesting a structured, scripted format. The segment ends mid-sentence, leaving the full scope of his winter routine unknown.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          200.0,
+          216.711995
+        ],
+        "modality": "audio_video",
+        "summary": "The interviewee closes Part 1 by describing horse riding as a weekend activity at a club, delivering the answer with concrete specifics ('I belong to a club,' 'I go there at weekends') and ending with a warm, smiling 'That's really fun.' This stands in marked contrast to his earlier flat, single-word exercise response ('Yeah, sure') around the 80–100 s window, suggesting genuine affective engagement when the topic is a specific, enjoyable pursuit rather than a generic obligation. The interviewer then formally thanks him and announces the end of Part 1, transitioning to Part 2 (Individual Long Turn) with a professional, warm tone. Visually, the interviewee sits relaxed in the wide shots, leaning slightly back, while the interviewer glances down at her notes with a small smile during the handoff—indicating a comfortable, low-tension close to the structured Q&A portion.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          0,
+          216.711995
+        ],
+        "modality": "text",
+        "summary": "This is a Part 1 IELTS-style interview transcript in which Ferris Ahmadi, a young engineering student, answers sequential questions about identity, academic choices, friendships, health habits, exercise history, children's physical activity, weather preferences, climate awareness, and winter leisure. The verbatim text reveals a consistent structural pattern: on topics involving decisions, societal claims, or external evaluation, Ferris attributes agency to others ('My parents thought it would be a good thing,' 'People say it's hotter,' 'everyone is really happy,' 'Nowadays kids just play video games') and closes with minimizing tags ('It's okay, I guess,' 'that kind of thing,' 'I guess it's changed a little,' 'in my opinion'). By contrast, on topics grounded in personal sensory experience or direct enjoyment, his language shifts to warm, concrete first-person statements ('I really love meat too,' 'I like going for walks,' 'I sometimes go horse riding,' 'That's really fun,' 'Rainy weather, definitely'). The exercise answer ('Yeah, sure, from time to time') is notably the flattest and shortest response in the entire set, sandwiched between a four-sentence diet elaboration and a two-sentence gym/walk description, suggesting selective avoidance. Overall, the transcript paints a portrait of a cooperative, socially warm respondent whose reflective vocabulary and sense of personal authorship appear underdeveloped or suppressed specifically in evaluative or societal frames, while remaining accessible in low-stakes personal contexts.",
+        "summary_status": "provided"
+      }
+    ],
+    "input_modalities": [
+      "text",
+      "audio",
+      "video"
+    ],
+    "observation_modes": [
+      "text",
+      "audio",
+      "video",
+      "audio_video"
+    ],
+    "sampling_fps": 1.0,
+    "full_audio_coverage": true,
+    "audio_coverage": [
+      [
+        0.0,
+        20.0
+      ],
+      [
+        20.0,
+        40.0
+      ],
+      [
+        40.0,
+        60.0
+      ],
+      [
+        60.0,
+        80.0
+      ],
+      [
+        80.0,
+        100.0
+      ],
+      [
+        100.0,
+        120.0
+      ],
+      [
+        120.0,
+        140.0
+      ],
+      [
+        140.0,
+        160.0
+      ],
+      [
+        160.0,
+        180.0
+      ],
+      [
+        180.0,
+        200.0
+      ],
+      [
+        200.0,
+        216.7115625
+      ]
+    ],
+    "video_coverage": [
+      [
+        0.0,
+        20.0
+      ],
+      [
+        20.0,
+        40.0
+      ],
+      [
+        40.0,
+        60.0
+      ],
+      [
+        60.0,
+        80.0
+      ],
+      [
+        80.0,
+        100.0
+      ],
+      [
+        100.0,
+        120.0
+      ],
+      [
+        120.0,
+        140.0
+      ],
+      [
+        140.0,
+        160.0
+      ],
+      [
+        160.0,
+        180.0
+      ],
+      [
+        180.0,
+        200.0
+      ],
+      [
+        200.0,
+        216.711995
+      ]
+    ],
+    "duration": 216.711995,
+    "sampled_frames": 217,
+    "audio_samples": 3467385,
+    "audio_sample_rate": 16000,
+    "chunk_seconds": 20.0,
+    "text_segmentation": "full_transcript",
+    "video_segmentation": "fixed_seconds",
+    "audio_segmentation": "decoded_samples"
+  },
+  "cost": {
+    "stage_timing": {
+      "coarse": {
+        "calls": 12,
+        "timed_calls": 0,
+        "prepare_seconds": 0.0,
+        "generation_seconds": 0.0,
+        "constraint_seconds": 0.0,
+        "total_seconds": 0.0,
+        "constraint_calls": 0,
+        "prompt_tokens": 26686,
+        "completion_tokens": 17287
+      },
+      "observe": {
+        "calls": 18,
+        "timed_calls": 0,
+        "prepare_seconds": 0.0,
+        "generation_seconds": 0.0,
+        "constraint_seconds": 0.0,
+        "total_seconds": 0.0,
+        "constraint_calls": 0,
+        "prompt_tokens": 81372,
+        "completion_tokens": 68920
+      },
+      "final": {
+        "calls": 1,
+        "timed_calls": 0,
+        "prepare_seconds": 0.0,
+        "generation_seconds": 0.0,
+        "constraint_seconds": 0.0,
+        "total_seconds": 0.0,
+        "constraint_calls": 0,
+        "prompt_tokens": 15950,
+        "completion_tokens": 4406
+      }
+    },
+    "active_seconds": 459.42399,
+    "active_budget_seconds": null,
+    "coarse_audio_seconds": 216.7115625,
+    "coarse_frames": 217,
+    "jev_api_calls": 0,
+    "jev_estimated_cost": 0.0,
+    "coarse_video_segments": 11,
+    "coarse_video_fps": 1.0,
+    "generated_tokens": 90613,
+    "input_tokens": 124008
+  },
+  "novelty_rule": {
+    "video_fps": 2.0,
+    "min_new_seconds": 5.0,
+    "max_focus": 1
+  },
+  "novelty_filtered": [
+    {
+      "stage": "execution",
+      "candidate_id": "C13",
+      "parent_id": "C1",
+      "time": [
+        25.0,
+        55.0
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0,
+        "video": 0.0
+      },
+      "new_still": false,
+      "region_root": "C1"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C14",
+      "parent_id": "C2",
+      "time": [
+        40.0,
+        55.0
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0,
+        "video": 0.0
+      },
+      "new_still": false,
+      "region_root": "C2"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C17",
+      "parent_id": "C3",
+      "time": [
+        65.0,
+        75.0
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0,
+        "video": 0.0
+      },
+      "new_still": false,
+      "region_root": "C3"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C18",
+      "parent_id": "C4",
+      "time": [
+        80.0,
+        95.0
+      ],
+      "modality": "audio",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0
+      },
+      "new_still": false,
+      "region_root": "C4"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C22",
+      "parent_id": "C8",
+      "time": [
+        165.0,
+        175.0
+      ],
+      "modality": "audio",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0
+      },
+      "new_still": false,
+      "region_root": "C8"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C16",
+      "parent_id": "C3",
+      "time": [
+        52.0,
+        60.0
+      ],
+      "modality": "audio",
+      "reason": "focus_used",
+      "new_seconds": {
+        "audio": 0.0
+      },
+      "new_still": false,
+      "region_root": "C3"
+    },
+    {
+      "source_observation_id": "active_14",
+      "hint": "The prior 2 fps pass over [0.0–5.0] yielded only ~1–2 frames covering the words 'I try to,' insufficient to resolve whether the brow action is an asymmetric lift (epistemic hedge) or symmetric level hold, or whether the perioral muscles show tightening/lip-press (social-performance anxiety). A narrower 2-second window centered on the hedge phrase maximizes frame density on the critical micro-expression moment.",
+      "goal": "At the highest available frame density within this clip, determine whether the interviewee's eyebrows lift asymmetrically (one brow higher than the other) during 'I try to'—a marker of epistemic uncertainty about whether the routine actually holds—or whether the corners of the mouth tighten and lips press together—a marker of self-consciousness about being judged for exercising only 'once or twice.' Simultaneously extract the fundamental-frequency contour and syllable rate across 'I try to go to the gym once or twice a week' to establish a baseline prosodic profile that can later be compared against the 'very active, yes' segment (outside this clip) to test whether the adult hesitation reflects cognitive search for frequency or social-performance adjustment.",
+      "stage": "proposal",
+      "parent_id": "C20",
+      "time": [
+        105.5,
+        107.5
+      ],
+      "modality": "audio_video",
+      "reason": "focus_used",
+      "new_seconds": {
+        "audio": 0.0,
+        "video": 0.0
+      },
+      "new_still": false,
+      "region_root": "C6"
+    }
+  ],
+  "memory": {
+    "observations": [
+      {
+        "id": "M1",
+        "observation_id": "active_0",
+        "modality": "audio_video",
+        "retrieval_window": [
+          0.0,
+          20.0
+        ],
+        "content": "The interviewee produces a single brief filler ('uh') before stating his full name 'Faris Ahmadi,' then immediately offers the shortened form 'you can call me Faris.' His vocal pitch, volume, and tempo remain steady across both clauses, with no audible tremor, rushed articulation, or elongated pause that would signal acute anxiety. The hesitation lasts well under one second and functions as a natural speech-planning micro-pause typical when retrieving a full name in a formal register.\nVisually, the interviewee sits upright with both hands resting calmly in his lap throughout the introduction and ID exchange. His facial expression is neutral-to-mildly pleasant; he orients his gaze toward the interviewer at appropriate moments. The handover of the identification card is executed in one smooth, unhurried motion without fumbling, repeated adjustments, or avoidance of eye contact, indicating comfortable motor control and low physiological arousal.\nThe exchange follows a rigid procedural script (greeting → mutual name introduction → ID request → compliance → thanks). The interviewee's responses are timely and neither overly eager nor reluctant, consistent with someone familiar with formal interview protocols. The offer of a short name aligns with conventional English politeness norms (inviting informality after a formal introduction) rather than appearing as a displacement behavior or nervous compensation.\nNo corroborating anxiety markers (leg bouncing, lip-pressing, throat-clearing, repeated self-touching, or vocal creak) are observable in the 0–20 s window. The single 'uh' is isolated and does not recur during the ID handover or the 'thank you' exchange, weakening the interpretation of pervasive nervousness.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M2",
+        "observation_id": "active_1",
+        "modality": "audio_video",
+        "retrieval_window": [
+          20.0,
+          40.0
+        ],
+        "content": "Procedural framing: Between 3–8 s the interviewer explicitly labels the upcoming segment as 'Part 1 of the test' and announces she will ask 'some questions about yourself,' establishing a formal assessment context with a personal-topic mandate. The interviewee watches her throughout this explanation without visible fidgeting, maintaining the same calm seated posture observed during the ID handover (0–2 s).\nFirst identity-label response (~10–14 s): Asked 'do you work or are you a student?', the interviewee answers 'I'm a student.' Visually he remains upright, hands in lap, gaze directed toward the interviewer. His facial expression is neutral-to-slightly-serious with no smile; the answer is a bare declaration with no elaboration or hedging. No visible micro-tremor, lip-pressing, or throat-clearing accompanies the utterance.\nSecond identity-label response (~15–19 s): Asked 'What are you studying?', the interviewee answers 'I'm studying engineering.' A distinct change in affect is visible: a slight smile forms, his brow relaxes, and his overall bearing appears softer and more open than during the first answer. The response adds a concrete detail (engineering) rather than stopping at the minimal label, suggesting greater willingness to elaborate once the topic narrows from binary categorization to a specific field.\nDisfluency contrast within the window: The subtitle text for both Part 1 answers renders clean, complete sentences ('I'm a student' / 'I'm studying engineering') with no visible filler, repetition, or elongated pause. This stands in contrast to the single 'uh' documented in M1 during the name introduction, implying that the initial micro-hesitation did not propagate into the subsequent identity questions.\nMotor continuity: Across the full 0–20 s span the interviewee's hands remain resting in his lap, his torso orientation stays fixed toward the interviewer, and no leg-bouncing, self-touching, or gaze-aversion episodes occur. The transition from receiving the ID card → listening to instructions → answering two questions is executed without any observable startle reflex (no shoulder-jump, no abrupt head-turn, no change in breathing rhythm visible at the chest).",
+        "content_status": "structured"
+      },
+      {
+        "id": "M3",
+        "observation_id": "active_2",
+        "modality": "audio_video",
+        "retrieval_window": [
+          40.0,
+          60.0
+        ],
+        "content": "Narrative structure – wholly external attribution: The interviewee's answer to 'Why did you choose to study this subject?' contains zero first-person volitional language. The causal chain he offers is: (1) parents' judgment ('my parents thought it would be a good thing'), (2) prior academic performance as a proxy for suitability ('I did well at mathematics at high school'), and (3) a speculative, low-commitment inference ('so I thought it might be interesting'). The modal verb 'might' and the hedge 'I guess' in the closing phrase systematically deflate any claim of personal desire. No word in the 15-second response references curiosity, enjoyment, ambition, or identity alignment with the field.\nVocal-delivery gradient across the response: Three distinct prosodic zones are audible. Zone A (≈4–7 s, 'I don't really know… uh…'): breathy onset, slight chuckle embedded in the vowel of 'know', a 0.6 s filled pause ('uh'), and falling-rising intonation that signals discomfort with the question's premise. Zone B (≈8–15 s, 'my parents thought… I did well at mathematics at high school'): pace steadies, articulation tightens, pitch range narrows to a mid-register plateau – the most 'reportorial' stretch, as though reciting a rehearsed justification. Zone C (≈16–20 s, 'so I thought it might be interesting… It's okay, I guess'): fundamental frequency drops noticeably on 'okay' and 'guess', the final syllable of 'guess' is lengthened and trails into near-whisper, producing an audibly deflated cadence that contrasts sharply with the mid-range confidence of Zone B.\nFacial-expression timeline (video, 3–20 s): At ≈4–5 s, as he says 'I don't really know', the interviewee produces a broad, symmetrical smile – cheeks elevated, orbicularis oculi engaged (crow's-feet visible), mouth corners pulled laterally and upward. This smile lasts roughly 1.5 s and then resolves into a neutral, slightly parted-lip expression by ≈6.5 s. During the parental-influence segment (≈8–10 s) his gaze drifts approximately 15° to his right (away from the interviewer) for about 1 s before returning, consistent with an internal-recall saccade rather than avoidance. From ≈14 s onward, eye contact with the interviewer is maintained; brow is relaxed but not animated. At ≈18–19 s, on 'It's okay I guess', a small asymmetric lift of the left mouth corner (a half-smile / wry expression) accompanies a minimal bilateral shoulder elevation (< 1 cm) resembling a suppressed shrug. No frowning, lip-pressing, or throat-clearing is visible at any point.\nMotor and postural continuity: Across the full 20 s the interviewee remains seated upright against a plain white wall, hands resting in his lap, torso squared toward the interviewer. No leg-bouncing, self-touching, pen-clicking, or chair-shift occurs. The only head movements are the brief rightward gaze-drift noted above and small nodding micro-movements (≈2–3° amplitude) synchronized with clause boundaries in Zones B and C. This stillness contrasts with the vocal hesitancy, suggesting the disfluency is cognitive (searching for a rationale) rather than anxiety-driven motor agitation.\nInterviewer behavior as contextual anchor: The interviewer (teal top, ponytail) delivers the question at 0–2 s with a clear rising interrogative contour and direct eye contact. During the interviewee's response she is shown at 11–13 s listening with a neutral-to-slightly-attentive expression, head tilted ≈5° right, no note-taking visible. Her non-interruption and lack of prompting follow-ups within the clip leave the interviewee's externally-framed answer unchallenged, meaning the 'I don't really know' opener is never probed further in this window.\nCross-reference with prior observation M2 (engineering identity): In M2, when simply asked 'What are you studying?', the interviewee answered 'I'm studying engineering' with a slight smile and relaxed brow – an affect consistent with comfortable label-acceptance. In the present clip, when asked WHY he chose engineering, the initial smile is broader but shorter-lived (a social-politeness reflex covering the admission 'I don't really know'), and the overall affect by the end is deflated rather than warm. This juxtaposition implies that the field identity is socially settled for him, but the motivational narrative behind that identity is personally unowned – he can name the subject comfortably yet cannot articulate a self-generated reason for selecting it.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M4",
+        "observation_id": "active_3",
+        "modality": "audio_video",
+        "retrieval_window": [
+          60.0,
+          80.0
+        ],
+        "content": "Response architecture (3–14 s): The interviewee builds his answer about course friendships in four ascending-concrete tiers — bare affirmation ('Yes. Yes, I have'), positive group evaluation ('some great guys on my course'), enumerated shared activities ('study after class, drink coffee, chat'), and finally a catch-all vague closure ('that kind of thing'). The progression moves from specific, emotionally loaded language ('great guys') to increasingly generic, low-commitment phrasing, ending in a phrase that explicitly refuses further specification.\nVocal-prosody contrast visible in subtitles and timing: The subtitle 'there are some great guys on my course' occupies frames at roughly 6–8 s, while 'drink coffee chat that kind of thing' occupies 12–14 s. The earlier phrase is delivered as a complete, self-contained declarative with a falling terminal contour typical of genuine endorsement. The later phrase chains three activity nouns in rapid succession ('study… drink coffee… chat') before the four-word tail 'that kind of thing' lands with noticeably less syllabic weight — the words are compressed and the final 'thing' appears to trail off rather than terminate firmly. This mirrors the deflated cadence documented in M3 on 'It's okay, I guess.'\nPostural and facial continuity (video 4–14 s): Unlike the M3 window where a rightward gaze-drift and suppressed shrug accompanied the deflated close, here the interviewee remains squared toward the interviewer with steady eye contact through the entire friends response. His hands stay in his lap; no shoulder elevation or asymmetric mouth-corner lift is visible at the 'that kind of thing' moment. The face reads as relaxed and mildly engaged rather than wry or avoidant. This physical ease contrasts with the vocal compression of the closing phrase, suggesting the vagueness may be stylistic rather than anxiety-driven.\nInterviewer reception (14–15 s): The interviewer accepts the vague closure without probe or follow-up, immediately pivoting to 'Let's talk about keeping fit and healthy now.' Her neutral-to-attentive listening expression during 11–13 s shows no furrowed brow or note-taking pause that would signal she registered the answer as evasive. The smooth topical transition implies the 'that kind of thing' was perceived as a natural conversational wrap-up rather than a dodge.\nSelf-report vs. observed behavior distinction: The interviewee's self-reported social reality ('some great guys,' shared study/coffee/chat routines) is positive and concrete. The observed behavior — the rapid compression of the activity list and the low-energy tail — introduces a tonal undercut that the words themselves do not carry. Whether this undercut signals genuine affective limitation in articulating friendship depth (parallel to M3's inability to own his subject-choice motivation) or is simply a colloquial British English discourse marker ('that kind of thing' as a standard list-closer) cannot be resolved from the 0–20 s window alone; the pending [5.0, 15.0] audio_video request targets exactly this prosodic comparison.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M5",
+        "observation_id": "active_4",
+        "modality": "audio_video",
+        "retrieval_window": [
+          80.0,
+          100.0
+        ],
+        "content": "Self-report asymmetry within the 0–20 s window: the interviewee's diet account (≈2–15 s) is a multi-clause, self-evaluating narrative — 'I try to watch my diet… I try to eat healthy foods, you know, fruit, vegetables, but I really love meat too… I think my diet is pretty good' — whereas the exercise account, as far as the clip allows, collapses to a bare two-token affirmative 'Yeah, sure' (≈19–20 s). The diet answer contains hedges ('try to'), a filler marker ('you know'), a personal concession ('I really love meat too'), and an explicit positive self-assessment; the exercise answer, in the portion captured, contains none of these elaborating devices. This is a difference in self-reported completeness, not yet in observed attitude, because the exercise turn is truncated at the clip boundary.\nParalinguistic contrast readable from the audio track already covered (av [0,20]): the meat admission at ≈9–12 s carries the warmest, most varied prosody in the clip — a slight lift and lengthening on 'really love meat too' that functions as a confessional, rapport-building aside, followed by the satisfied falling contour of 'I think my diet is pretty good'. By contrast the onset of the exercise reply at ≈19–20 s ('Yeah, sure') is delivered with a flatter, lower-energy contour and no comparable pitch excursion. Within the same speaker and same sitting, this is a measurable drop in prosodic animation from the diet topic to the exercise topic — the exact contrast the goal asks us to weigh against the meat baseline.\nObserved facial/postural behavior, distinguishing it from the words: in the diet close-ups (0–7 s, 12–14 s) the interviewee's face is animated — brows mobile, and at ≈12–13 s a small relaxed smile accompanies the 'love meat too' concession, consistent with the warm prosody above. In the wide two-shot (8–11 s) he sits squared to the interviewer, hands in lap, torso steady, showing no fidget or withdrawal while describing his diet. At the single close-up frame covering the exercise onset (19 s, subtitle 'yeah') his expression reads comparatively neutral — mouth only slightly open, no smile, gaze held toward the interviewer — i.e. the facial animation present during the diet answer is not visibly reproduced at the start of the exercise answer. The interviewer, meanwhile, is seen looking down at notes (15 s) then lifting her head to pose 'do you do any exercise' (16–18 s) with a neutral, professional listening face, and the camera cuts back to him for the reply.\nStructural caveat that limits any disengagement-vs-minimization verdict from this window alone: the exercise response is cut off by the end of the supplied clip at 20 s, so we observe only its first two words. The apparent 'brevity and flat affect' is therefore partly an artifact of truncation — we cannot see whether he continues past 'sure' to volunteer specifics (which would favor strategic minimization of an occasional habit) or stops / gives a hollow non-answer (which would favor genuine disengagement or mild embarrassment). The already-pending av [20,25] and text [-5,25] requests are positioned to capture exactly this continuation; until they return, the flatness on 'sure' remains ambiguous between avoidance-discomfort and a colloquial low-stakes affirmative.\nContinuity with prior finding M4 (deflated-cadence pattern): M4 documented a progression from emotionally loaded language to a low-energy, compressed tail on the friendships answer, with the vagueness judged possibly stylistic rather than anxious because posture stayed relaxed. The same speaker now shows a parallel shape at the topic boundary — a fully elaborated, warmly prosodic diet answer followed by an abrupt, flat, under-elaborated onset to the fitness question. However, unlike M4's tail (which sat mid-answer with steady eye contact and no shoulder/mouth tension), here the flat token is the *opening* of a new turn and we have only one coarse frame on it, so the M4-style 'relaxed body vs deflated voice' dissociation cannot yet be confirmed or ruled out for the exercise reply; it is the precise gap the closer-look candidate targets.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M6",
+        "observation_id": "active_5",
+        "modality": "audio_video",
+        "retrieval_window": [
+          100.0,
+          120.0
+        ],
+        "content": "Self-report (adult exercise, ≈5–13 s): The interviewee describes his current routine with explicit hedging — 'Well, I try to go to the gym once or twice a week' — followed by a supplementary, lower-commitment activity: 'I like going for walks in the evening when it's a bit cooler.' The phrase 'I try to' frames the gym visit as an aspiration rather than a settled habit, and 'once or twice a week' quantifies it at the low end of regular exercise. The walk is introduced with 'I like,' a preference statement rather than a frequency claim, and is conditioned on weather ('when it's a bit cooler'), further softening the commitment.\nObserved behavior (adult exercise, ≈5–13 s): During the 'I try to go to the gym' clause the interviewee's gaze shifts slightly upward and to his left, away from the interviewer's direct line, and his facial expression reads as neutral-to-thoughtful — brows level, mouth neither tightened into a grimace nor relaxed into a smile. He does not fidget or withdraw posturally; torso remains squared. The upward gaze coincides temporally with the hedge 'I try to' and the frequency qualifier 'once or twice a week,' suggesting he is searching for an adequate formulation rather than recalling a confident routine.\nSelf-report (childhood activity, ≈17–19 s): Asked 'How active were you when you were a child?', the interviewee responds with an immediate interjection 'Oh,' followed by an emphatic, unqualified affirmation: 'Very active, yes.' No hedging, no frequency qualifier, no conditional framing. The childhood answer is a bare, confident assertion.\nObserved behavior (childhood activity, ≈17–19 s): On 'very active, yes' the interviewee breaks into a broad, open smile — cheeks raised, eyes visibly crinkled, mouth wide. The expression is warm and unguarded, contrasting sharply with the neutral, upward-gazing delivery of the adult exercise description. The smile appears reflexive rather than performed, consistent with genuine amusement or comfort at the memory.\nInterviewer behavior (throughout): The interviewer poses two short, neutral questions — 'What kind?' (≈3–4 s) and 'How active were you when you were a child?' (≈14–16 s) — with a professional, non-judgmental tone. Her facial expression remains attentive and neutral; she is seen looking slightly downward (possibly at notes) before lifting her gaze to ask. No verbal or paralinguistic signal of surprise, disapproval, or encouragement is detectable, so the interviewee's hedging cannot be attributed to a perceived judgment from her in real time.\nStructural contrast within the clip: The adult-exercise turn is multi-clause, linguistically qualified ('I try to,' 'once or twice,' 'when it's a bit cooler'), and delivered with a searching gaze and neutral affect. The childhood-activity turn is a single emphatic token ('Very active, yes') delivered with immediate onset, no hedge, and a broad smile. This asymmetry is present in both the linguistic content and the paralinguistic/visual channel simultaneously, making it unlikely to be purely stylistic.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M7",
+        "observation_id": "active_6",
+        "modality": "audio_video",
+        "retrieval_window": [
+          120.0,
+          140.0
+        ],
+        "content": "Self-report (childhood physical play, ≈0–6 s): The interviewee enumerates his childhood activities in a single flowing clause — 'I was always playing with my brothers, fighting, wrestling, playing games, you know.' The list is concrete, bodily, and undifferentiated: fighting, wrestling, and games are presented as equivalent modes of engagement without hierarchy. The trailing 'you know' functions as a solidarity marker, presupposing the interviewer shares his frame of reference for what childhood activity looks like, rather than inviting elaboration or correction.\nObserved behavior (childhood play, ≈0–6 s): In the close-up frames (0–5 s), the interviewee's face is animated — eyebrows lift on 'fighting' and 'wrestling,' mouth opens wider on the plosive consonants, and there is a slight forward lean of the head. His gaze is directed off-axis toward the interviewer's position. The delivery is fluid, with no pauses between listed items, suggesting the memory is well-rehearsed or emotionally accessible rather than effortfully retrieved.\nInterviewer question framing (≈6–10 s): The wide shot (5–10 s) shows both participants at a round table. The interviewer, seated opposite, asks 'How important is it for children to be active?' in a measured, open tone. Her posture is upright, hands resting near papers on the table. The question is evaluative ('how important') rather than descriptive, prompting a value judgment rather than a narrative. She does not gesture or lean forward during the question; her delivery is neutral and professionally detached.\nSelf-report (value affirmation, ≈10–13 s): The interviewee responds with an immediate interjection 'Oh' followed by 'very important' — no hedge, no qualifier, no conditional framing. This mirrors the structure of his earlier childhood-activity answer ('Oh, very active, yes') noted in prior observations: a bare, emphatic token delivered without linguistic softening.\nObserved behavior (value affirmation, ≈10–13 s): In the close-up frames (10–13 s), his expression shifts from the warm animation of childhood recall to a more serious, slightly furrowed look. The 'Oh' is delivered with a quick inhalation-visible mouth opening, then 'very important' lands with a downward head-nod and a firm, level gaze toward the interviewer. The affect is earnest but noticeably less playful than the childhood segment.\nSelf-report (video-game critique, ≈13–20 s): The interviewee pivots from the abstract value claim to a specific contemporary observation: 'Nowadays kids just play video games all day. They don't get enough exercise in my opinion.' The word 'just' introduces a dismissive framing; 'all day' is an absolute quantifier. The sentence structure shifts from the paratactic list of childhood (playing, fighting, wrestling) to a causal complaint (video games → insufficient exercise). The closing tag 'in my opinion' explicitly marks the claim as subjective.\nObserved behavior (video-game critique and tag, ≈13–20 s): Frames at 13–16 s show the interviewee's expression tightening slightly — brows draw together on 'nowadays,' and the pace of speech appears more deliberate than the rapid childhood listing. At 16 s, mid-sentence, the camera cuts to the interviewer. The cutaway occurs during 'they don't get enough exercise in my opinion,' meaning the interviewee's final micro-expression before the cut is not directly visible in the provided frames.\nInterviewer listening behavior (≈17–20 s): In the close-up frames of the interviewer (17–19 s), she maintains a slight, closed-mouth smile and a gentle head tilt to her right. Her eyes remain fixed on the interviewee's direction. There is no overt nodding, no eyebrow raise of surprise, and no lip-pressing of disapproval. The expression reads as attentive-neutral with a faint warmth — consistent with professional listening rather than active agreement or challenge. She does not interject or adjust posture during the 'in my opinion' tag.\nThe structural parallel between this clip's 'Oh, very important' and the prior clip's 'Oh, very active, yes' (noted in M6) confirms a recurring response pattern: the interviewee defaults to an immediate, unhedged interjection when asked to evaluate activity levels. However, in this clip the affirmation is followed by an extended critique (video games, insufficient exercise) that was absent in the childhood-activity answer. The question is whether the extension is motivated by the same instinctive conviction as the 'Oh' or represents a separate, more constructed rhetorical move triggered by the evaluative framing of the interviewer's question.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M8",
+        "observation_id": "active_7",
+        "modality": "audio_video",
+        "retrieval_window": [
+          140.0,
+          160.0
+        ],
+        "content": "Topic transition and question framing (≈4–8 s): The interviewer explicitly marks a shift ('now let's talk about the weather') and poses a personal-preference question ('what kind of weather do you like best'). The phrasing targets individual affective taste ('you…like best'), not a general or environmental observation. Her delivery in the close-up frames (6–8 s) is measured, with a slight forward lean and direct gaze toward the interviewee's position, signaling an expectation of a personal answer.\nConfident immediate label (≈9–11 s): The interviewee answers 'rainy weather definitely' with no hesitation. At 9 s a broad, genuine smile precedes the utterance; the word 'definitely' is stressed and delivered in a single breath. The response structure mirrors the 'Oh, very important' pattern documented in M7 — a bare, emphatic token with zero hedging, suggesting the preference label is well-practised or immediately accessible. However, unlike the childhood-recall segment (where animation accompanied a multi-item list), here the confidence is compressed into three words with no elaboration attached.\nMinimal follow-up prompt (≈12–13 s): The interviewer reduces her response to the single word 'why?' The wide shot shows her seated upright, pen resting on papers, no gesture or lean. This places the entire burden of justification on the interviewee and, critically, does not steer him toward any particular frame (sensory, emotional, social, environmental).\nEffortful, externally-framed justification (≈14–19 s): The interviewee opens with 'oh' — a discourse marker indicating retrieval or construction effort — then stutters on the preposition ('in in my region'), a repetition that signals cognitive load in formulating the explanation. The content of the justification is entirely environmental ('it rarely rains in my region') and collective-social ('everyone is really happy'). No first-person affective or sensory language appears: there is no 'I feel,' 'I love the sound,' 'the smell of petrichor,' 'I get cozy,' or any description of his own bodily or emotional experience during rain. The grammatical subject of the culminating clause is 'everyone,' not 'I.' The preference is thus articulated as a reaction to communal mood rather than as a private sensory-affective state.\nVisual behavior during justification (≈14–19 s): The wide shot (12–19 s) shows the interviewee seated with hands in lap, torso angled slightly toward the interviewer. His facial expression is less legible at this distance, but his posture is explanatory rather than animated — a contrast with the forward-leaning, eyebrow-raised recall seen in the childhood segment (M7, 0–6 s). The interviewer maintains steady eye contact, pen poised, listening without interrupting or nodding emphatically. The overall visual dynamic is one of a person constructing an answer under observation rather than spontaneously reliving a sensation.\nStructural gap between label and justification: The three-word confident label ('rainy weather definitely') is separated from the justification by the interviewer's 'why?' prompt and the interviewee's 'oh' + stutter. This gap — roughly 3 seconds of silence/prompt between certainty and explanation — suggests the label is retrieved automatically while the reason must be assembled in real time. The assembled reason defaults to the social-environmental frame ('rarely rains…everyone happy'), raising the question of whether this is his genuine cognitive architecture for preferences or a narration habit triggered by the evaluative context of an interview.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M9",
+        "observation_id": "active_8",
+        "modality": "audio_video",
+        "retrieval_window": [
+          160.0,
+          180.0
+        ],
+        "content": "Response architecture to the weather-changes question (≈10–19 s): The interviewee does not answer directly. He first echoes the interviewer's phrasing ('any changes'), then reframes the scope upward to the politically loaded term 'like climate change' (≈13–14 s), and only after that reframing produces a heavily hedged minimal answer: 'oh well, I guess it's changed a little' (≈16–19 s). The sequence echo → reframe → hedge-cluster is structurally distinct from the prior segment's pattern (M8: immediate confident label 'rainy weather definitely' with zero hedging). Here, every content word is wrapped in epistemic softeners ('I guess') and magnitude minimizers ('a little'), and the discourse marker 'oh well' signals reluctance before the answer even begins.\nVocal-delivery contrast with M8: In M8 the word 'definitely' was stressed, single-breath, preceded by a broad smile — a well-practised, low-effort retrieval. In this clip, 'any changes' is delivered flatly with a slight downward inflection (≈10–12 s), 'like climate change' carries a rising question-like intonation despite being a statement (≈13–14 s), and 'I guess it's changed a little' trails off with falling pitch and reduced volume (≈17–19 s). The prosodic arc moves from neutral echo → uncertain reframe → deflated minimization, the inverse of the confident-to-elaborative arc in M8.\nVisible behavior during the reframe (≈9–14 s): The interviewee is shown in a static medium close-up against a plain white wall. His hands remain out of frame (likely in lap). At 9 s his expression is neutral-to-slightly-puzzled as he processes the question. During 'any changes' (10–12 s) his mouth moves but brow position is difficult to resolve at this sampling density. At 13–14 s ('like climate change') his head tilts very slightly and his eyes shift marginally toward the interviewer, but the frame resolution and 2 fps sampling prevent definitive reading of eyebrow elevation vs. contraction. No smile, no animation, no hand gesture accompanies the utterance — a stark contrast with the broad smile documented at 9 s of M8.\nInterviewer's role in the reframe: The phrase 'like climate change' appears as the interviewee's own words (subtitle at 13–14 s shows him speaking), yet the rising intonation suggests he is offering it as a tentative interpretation of the interviewer's broader 'changes in the weather' question, effectively asking 'do you mean climate change?' before answering. The interviewer does not confirm or deny; she simply waits (15 s frame shows her listening, pen still), and he proceeds to the hedged answer. This means the reframe is self-generated, not prompted, indicating the interviewee himself feels compelled to narrow the topic to the most politically salient label before he can respond — and then immediately retreats from that label's implications.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M10",
+        "observation_id": "active_9",
+        "modality": "audio_video",
+        "retrieval_window": [
+          180.0,
+          200.0
+        ],
+        "content": "Self-report content (0–4 s): The interviewee attributes a societal observation to others ('People say it's hotter than it used to be') and immediately distances himself from endorsing it ('but I'm not really sure if that's true'). This is a brief, single-clause hedge on an environmental/climatic claim — structurally simpler than the echo→reframe→hedge-cluster documented in M9 for the climate-change question, but sharing the same underlying move: deflect personal epistemic responsibility for a politically loaded topic by attributing it to an anonymous 'people' and then expressing uncertainty.\nTopic pivot and self-report shift (5–18 s): The interviewer's question ('What do you like to do in winter?') redirects from societal claim to personal preference. The interviewee's response architecture changes markedly: he opens with a factual descriptor ('the winter in my country is quite short'), moves to a concrete positive evaluation ('It's nice to get outside and go for a walk'), adds a causal justification ('You can in winter because it's not so hot'), and begins a specific example ('I sometimes go horse riding to…'). Unlike M9's deflated, trailing-off delivery, this sequence shows forward momentum, increasing specificity, and sensory/concrete language rather than epistemic softeners.\nVocal-delivery contrast with M9: The fillers present here ('well' at ≈8 s, 'uh' at ≈12 s and ≈16 s) function as discourse-level planning markers (selecting which personal detail to share next) rather than the epistemic uncertainty markers ('I guess,' 'oh well') catalogued in M9. Pitch and volume do not show the progressive deflation described in M9 ('falling pitch and reduced volume' on 'I guess it's changed a little'); instead, the interviewee maintains a relatively steady conversational register through 'it's not so hot' (≈16–18 s) and into 'I sometimes' (≈19 s), suggesting genuine engagement with the personal topic rather than the reluctant minimization seen on the climate question.\nObserved behavior (visible, 0–20 s): Throughout the clip the interviewee remains in a static medium close-up against a plain white wall, hands out of frame (likely in lap). His facial expression during the personal-description segment (8–19 s) is neutral-to-mildly-animated — mouth movements are continuous and rhythmic, consistent with spontaneous narration rather than the flat, effortful articulation described in M9. No broad smile is visible (contrasting with M8's documented smile on 'rainy weather definitely'), but there is also no visible tension, brow furrowing, or gaze-aversion that would signal discomfort. The interviewer (4–7 s, 12–13 s) is shown looking down at notes then up to ask/listen, pen in hand, maintaining a neutral attentive posture.\nIncomplete elaboration and cut-off (19–20 s): The clip terminates mid-utterance at 'I sometimes go horse riding to…' (subtitle visible at 19 s). Because the sentence is truncated, it is impossible from this window alone to determine whether the interviewee was about to (a) complete a concrete example with further detail (consistent with the forward momentum of the preceding clauses), (b) append a hedge or qualifier that would re-introduce the M9-style minimization pattern, or (c) trail off due to low engagement. The prosodic contour on 'I sometimes' — whether rising (anticipatory, example-introducing) or falling (resigned, hedge-preparing) — is the critical unresolved detail.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M11",
+        "observation_id": "active_10",
+        "modality": "audio_video",
+        "retrieval_window": [
+          200.0,
+          216.711995
+        ],
+        "content": "Self-report content (0–9 s): The interviewee describes a structured leisure routine — horse riding accessed through club membership, attended 'a bit at weekends' — and closes with an explicit positive evaluation, 'That's really fun.' The hedge 'uh a bit' modifies frequency and is preceded by the planning filler 'uh,' situating it between the concrete institutional detail ('I belong to a club') and the temporal frame ('at weekends'). Unlike the epistemic softeners catalogued in M9 ('I guess,' 'oh well'), 'uh a bit' operates on a quantitative axis (how often) rather than a truth-value axis (whether the claim is accurate), which is consistent with genuine frequency calibration rather than defensiveness about the activity's social optics.\nFraming limitation for micro-expression analysis: The close-up (0–2 s) captures only 'I sometimes go horse riding to' and the onset of 'I belong to a club.' The camera cuts to the wide two-shot at approximately 3 s, precisely as the interviewee reaches 'and I go there a bit at weekends.' At 2 fps sampling in the wide shot, the interviewee's face occupies roughly 5–8 % of frame area; eye darts, brief gaze shifts toward the interviewer, brow micro-tensions, or the distinction between a genuine Duchenne smile and a polite lip-curl on 'That's really fun' (7–9 s) are not resolvable. The specific goal question — whether his eyes dart for approval on 'a bit' versus remain steady on 'That's really fun' — cannot be adjudicated from any available footage in this recording.\nPostural consistency (3–9 s, wide shot): Throughout both 'a bit at weekends' and 'that's really fun,' the interviewee maintains an upright seated posture, torso squared toward the interviewer, legs apart, hands resting on his thighs. There is no visible forward lean (which would signal eager self-disclosure), no backward withdrawal or shoulder-hunch (which would signal discomfort or strategic retreat), and no defensive arm-crossing. The postural register is identical across the hedged clause and the evaluative clause, arguing against a sharp strategic shift between them. If 'a bit' were a judgment-softening maneuver, one would expect at minimum a subtle torso adjustment or gaze-aversion concurrent with the hedge; none is detectable even at wide-shot resolution.\nInterviewer's concurrent behavior (7–9 s): While the interviewee says 'That's really fun,' the interviewer is looking down at her notes with pen in hand, not making eye contact with him. This means the interviewee's expression on that phrase is not being socially monitored in real time, reducing the likelihood that 'That's really fun' is performed for her approval. By extension, the preceding 'a bit' is also unlikely to be a strategic softening aimed at a visibly evaluating interlocutor, since she is not looking at him during either clause.\nStructural closure and non-probing (9–16 s): The interviewer immediately transitions with 'Thank you. That brings us to the end of part one,' looking down at papers throughout. The camera cuts to a close-up of her reviewing notes (13–16 s); the interviewee exits frame entirely. No follow-up question, clarification request, or evaluative comment on the horse-riding/club disclosure occurs. The 'a bit' hedge passes unexamined by the interviewer, which is inconsistent with a strategic softening model (where one would expect the speaker to hedge in anticipation of a specific evaluative response) and more consistent with an epistemic/calibration model (where the speaker is simply approximating his own frequency without expecting scrutiny).\nAudio-prosodic context relative to M9: The fillers in this segment ('uh' before 'a bit') function as discourse-planning markers within a forward-moving narrative sequence (club → frequency → evaluation), contrasting with M9's deflated, trailing-off delivery on the climate question. Volume and pitch remain steady through 'at weekends' and into 'That's really fun' without the progressive fall documented in M9. The 'uh' introduces a ~0.3 s micro-pause but does not coincide with pitch drop or volume reduction, suggesting a brief lexical-retrieval hesitation (selecting the frequency adverb) rather than an anxiety-driven softening.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M12",
+        "observation_id": "active_11",
+        "modality": "text",
+        "retrieval_window": [
+          0.0,
+          216.711995
+        ],
+        "content": "Pronoun-distribution contrast between clusters (text, full transcript): In the decision/societal cluster (subject-choice, friendships, children's-activity importance, climate-change observation), the grammatical subject of every causal or evaluative clause is an EXTERNAL AGENT — 'My parents thought…' (Q5), 'There are some great guys' / 'we get together' (Q6), 'kids just play… They don't get… They're just…' (Q11), 'People say…' (Q14). First-person 'I' appears exclusively in epistemic-hedge positions ('I don't really know,' 'I thought it MIGHT be interesting,' 'I guess,' 'I'm not really sure if that's true') and never as the agent of a volitional or observational act. Zero instances of intrinsic-motivation vocabulary ('curiosity,' 'passion,' 'I wanted to,' 'I find X fascinating') occur in any of these four answers. The ratio of external-agent-as-causal-subject to first-person-as-causal-subject is approximately 5:0 across the cluster.\nIn the sensory/personal-preference cluster (diet, exercise type, childhood activity, winter activities), the grammatical subject of every action and evaluation clause is FIRST-PERSON: 'I try to eat healthy foods… I really love meat too' (Q7), 'I try to go to the gym… I like going for walks' (Q9), 'I was always playing with my brothers, fighting, wrestling' (Q10), 'I sometimes go horse riding… I belong to a club… I go there… That's really fun' (Q15). Concrete sensory/bodily nouns (fruit, vegetables, meat, walks, fighting, wrestling, horse riding) replace the abstract evaluative language of the decision cluster. The ratio of first-person-as-agent to external-agent-as-causal-subject is approximately 7:1 (the single external reference being 'my brothers' as accompaniment, not cause). Intrinsic-preference vocabulary IS present: 'I really love,' 'I like going for walks,' 'That's really fun,' 'It's nice to get outside.'\nCritical boundary case — weather justification (Q13, 'Why?'): The initial preference label sits firmly in the sensory cluster ('Rainy weather, definitely' — implicit first-person, zero hedging, broad smile per M8). However, the WHY-justification immediately shifts to external-agent framing: 'everyone is really happy and it cools down the temperature.' No first-person sensory language appears ('I love the sound of rain,' 'the smell of petrichor,' 'it makes me feel cozy'). The grammatical subject of the culminating clause is 'everyone,' not 'I.' This is the ONLY instance in the sensory cluster where the external-agent pattern from the decision cluster replicates, and it occurs precisely at the causal/explanatory juncture triggered by the interviewer's single-word 'why?' prompt. This demonstrates that the trigger for external-agent framing is the CAUSAL-EXPLANATORY question format, not the topical domain.\nStability-across-varied-framings test: The external-agent pattern recurs consistently across four different causal/observational prompts with different examiner phrasings — 'Why did you choose…?' (agent: parents), 'Have you made many friends…?' (agent: existential 'there are' + collective 'we'), 'How important is it for children…?' (agent: 'kids/They'), 'Have you noticed any changes…?' (agent: 'People'), and 'Why [do you like rain]?' (agent: 'everyone'). The consistency across five distinct interrogative frames (choice-rationale, social-network, value-judgment, environmental-observation, sensory-preference-justification) argues against a single-examiner artifact. If the pattern were purely situational (one examiner's phrasing cueing reportive speech), variation in question structure would be expected to break it. Instead, every causal/evaluative prompt — regardless of topic — elicits the same external-agent substitution.\nHowever, the pattern is NOT global: it is domain-specific to causal/volitional narration. The sensory cluster (Q7, Q9, Q10, Q15) shows robust first-person agency, concrete bodily vocabulary, and warm prosody (per M5, M6, M10, M11 audio_video observations). This rules out a blanket 'external locus-of-control' architecture in which ALL experience is narrated through others. The correct characterization is a SPLIT profile: well-developed first-person EXPERIENTIAL vocabulary (what I do, what I like, what I feel) paired with a deficient first-person VOLITIONAL/CAUSAL vocabulary (why I chose, what changed, what people think). External agents fill the causal slot specifically.\nProsodic corroboration from prior audio_video observations (M3, M8, M9 vs. M10, M11): At the exact moments external agents are named in causal positions, the delivery flattens — M3 Zone B ('my parents thought…') is described as 'the most reportorial stretch, as though reciting a rehearsed justification' with narrowed pitch range; M8's 'everyone is really happy' is preceded by a stutter ('in in my region') and delivered in explanatory rather than animated posture; M9's 'People say it's hotter' carries a flat echo-then-deflate arc. By contrast, M10/M11's first-person sensory narration ('I sometimes go horse riding… That's really fun') maintains steady volume, forward momentum, and planning-fillers ('uh') rather than epistemic-fillers ('I guess'). The prosodic signature at external-agent moments is FLAT/RECITED (consistent with inherited or memorized narrative), not warm/engaged (which would suggest genuine social-embedded reasoning). This supports the interpretation that the external-agent framing reflects a genuine deficit in first-person causal ownership rather than a performative accommodation to the interviewer.\nSynthesis for the goal question: The cross-topic absence of intrinsic-motivation vocabulary on decision/societal questions reflects a STABLE but DOMAIN-SPECIFIC cognitive architecture, not a pure situational artifact. Ferris narrates his life through external agents specifically at causal/volitional junctures (why-questions, change-observations, value-judgments about others), while retaining full first-person agency at experiential/descriptive junctures (what-I-do, what-I-like, what-I-felt-as-a-child). The test format contributes by supplying causal prompts, but the consistency of the external-agent substitution across five differently-phrased questions, combined with the flat/recited prosody at those exact moments (vs. warm/animated prosody in sensory narration), indicates the pattern is a feature of his narrative architecture rather than a reflex to one examiner's framing. The single exception (weather justification shifting to 'everyone' under a 'why?' prompt within the sensory cluster) confirms the trigger is the causal frame, not the topic domain.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M13",
+        "observation_id": "active_12",
+        "modality": "video",
+        "retrieval_window": [
+          43.0,
+          47.0
+        ],
+        "content": "Smile onset timing (video, 0–4 s): At 0.2 s the interviewee's face is neutral-to-slightly-serious with mouth just parted (pre-speech preparation). By 1.2 s a nascent bilateral mouth-corner elevation is visible, indicating the smile begins forming approximately 1.0 s after the neutral baseline. At 2.2 s the smile reaches full amplitude (cheeks visibly elevated, mouth corners pulled laterally and upward, subtitle 'I don't really know' on screen). The onset-to-peak interval is therefore ≈1.0–1.5 s, which is slower than a startle/surprise reflex (typically <0.3 s) but faster than a deliberately constructed social smile (often >2 s with visible effort). This intermediate timing is consistent with a semi-automatic politeness reflex triggered by the admission of uncertainty.\nSymmetry of zygomaticus activation (video, 2.2–3.2 s): Both mouth corners elevate to nearly identical height at 2.2 s and 3.2 s; no unilateral dominance is detectable at the 2 fps sampling rate. The bilateral symmetry argues against a suppressed or forced smile (which typically shows asymmetry) and against a wry/ironic half-smile (as seen later at ≈18–19 s per M3). The symmetry is consistent with either a genuine Duchenne smile or a well-practiced social-reflex smile; symmetry alone cannot discriminate between these.\nFrontalis / brow engagement (video, 0.2–3.2 s): The eyebrows remain in a neutral, slightly lowered resting position throughout all four frames. There is no medial brow elevation (inner-brow raise) that would signal authentic surprise, nor is there the full horizontal brow lift associated with a startled 'oh!' expression. The absence of frontalis recruitment means the smile is NOT accompanied by surprise; it is a zygomaticus-dominant expression only. This rules out the 'authentic surprise' hypothesis in the goal question.\nOrbicularis oculi and eye aperture (video, 2.2–3.2 s): At 2.2 s the lower eyelids appear slightly raised and the palpebral fissure narrows marginally compared to 0.2 s, suggesting mild orbicularis oculi pars lateralis engagement (the 'crow's-feet' component M3 describes). However, at the 2 fps resolution and the distance of the camera, definitive confirmation of genuine Duchenne marker (involuntary PO engagement) versus voluntary squinting cannot be established from these frames alone. The eye narrowing is subtle and could equally reflect the mechanical cheek-elevation pressing upward on the lower lid.\nOffset not observable within this window (video, 0–4 s): The smile is still present at 3.2 s (final frame). M3 reports the smile resolves to neutral by ≈6.5 s, giving a total duration of roughly 2.5–3.0 s from onset (~4 s) to offset (~6.5 s). Within the current 0–4 s clip we capture only the onset and peak; the offset trajectory (whether the smile fades gradually—suggesting social performance—or snaps off—suggesting reflex release) falls outside this window and is documented only via M3's broader timeline.\nPostural and gestural continuity (video, 0–4 s): The interviewee remains seated upright against the white wall, torso squared toward the interviewer (gaze directed frame-left), hands resting in lap with no visible movement. No shoulder elevation, head tilt, or self-touching accompanies the smile. This motor stillness, consistent with M2 and M3, indicates the smile is a facial-only event without corroborating body-language markers of either genuine amusement (which often includes slight head-bob or shoulder relaxation) or performed anxiety (which often includes fidgeting or gaze-aversion). The isolation of the smile to the face supports the 'polite-social-reflex' interpretation: a brief facial accommodation to the awkwardness of saying 'I don't really know' without deeper emotional engagement.\nVerbal–facial alignment (video + subtitle, 2.2–3.2 s): The subtitle 'I don't really know' appears simultaneously with the peak smile at 2.2 s. The smile does not precede the words (which would suggest anticipatory nervousness) nor follow them (which would suggest retrospective embarrassment). Its simultaneity with the epistemic-hedge phrase is the hallmark of a face-saving social reflex: the smile softens the bluntness of the admission in real time, functioning as a pragmatic mitigator rather than an expression of genuine emotion about the content.",
+        "content_status": "structured",
+        "overlapping_media_reads": [
+          "M3"
+        ]
+      },
+      {
+        "id": "M14",
+        "observation_id": "active_13",
+        "modality": "audio_video",
+        "retrieval_window": [
+          98.0,
+          100.0
+        ],
+        "content": "Visual (single frame ~1 s): The interviewee's face reads as neutral-to-slightly-downcast. Mouth is barely parted (mid-utterance posture). No broad smile is present, but equally no overt tension markers are resolvable at this sampling density — no furrowed brow, no clenched jaw, no sharp averted gaze. His eye-line angles slightly downward rather than locking onto the interviewer, consistent with either casual internal formulation or mild disengagement; the 2-frame-per-second sampling cannot distinguish a fleeting micro-expression from a sustained set.\nAudio/prosody (full 2 s window): 'Yeah, sure' is delivered at low energy with a natural falling terminal contour on 'sure.' There is no audible clipped cutoff, no tense glottal onset, and no suppressed-smile breath pattern. The fall reads as a colloquial terminal rather than a forced suppression. However, sub-second pitch micro-dynamics (e.g., a half-tone dip before 'sure' signaling reluctance vs. a smooth decline signaling ease) are not resolvable within this 2-second, 2-fps window.\nSubtitle expansion resolves the truncation ambiguity flagged in M5: the on-screen text reads 'sure from time to time,' confirming the utterance continues past the two tokens captured in the audio transcript. This qualifies the response as an elaborated, hedged affirmative ('from time to time' = frequency limiter) rather than a hollow non-answer or avoidance stop. Structurally, this mirrors the adult-exercise self-report in M6 ('I try to go to the gym once or twice a week') — same speaker, same qualifying syntax, same low-commitment framing.\nCross-topic prosodic placement: The flatness of 'yeah, sure, from time to time' sits at the SAME affective register as his adult-exercise description in M6 (neutral expression, upward gaze shift, hedging language), NOT at the warmer register of his diet concession ('I really love meat too,' M5) or his childhood-activity affirmation ('Very active, yes' with broad smile, M6). This three-way comparison suggests the flatness is topic-specific (low-stakes, habitual-activity reporting) rather than a global avoidance-discomfort signature. If it were avoidance, we would expect it to differ from the M6 adult-exercise baseline; instead, it reproduces it.\nInterviewer frame (0 s): The woman in teal is captured mid-turn, mouth open, gaze directed toward the interviewee's position. She appears to be completing the question or offering a brief prompt. Her expression is neutral-professional, showing no judgment signal that could have triggered a defensive response in the interviewee. This removes the 'perceived examiner disapproval' hypothesis for the flat affect.\nNet classification from available evidence: The convergence of (a) natural falling pitch without clipped termination, (b) absence of visible jaw/brow tension at available resolution, (c) subtitle-confirmed continuation with a frequency qualifier matching his established adult-exercise hedging pattern, and (d) interviewer's neutral prompt, tilts the reading toward CASUAL LOW-STAKES AFFIRMATIVE rather than avoidance-discomfort. The residual uncertainty is limited to sub-second micro-expressions (a suppressed smile flash, a half-beat gaze dart) that the 2-fps sampling cannot resolve, but the macro-pattern is consistent with routine qualification rather than concealment.",
+        "content_status": "structured",
+        "overlapping_media_reads": [
+          "M5"
+        ]
+      },
+      {
+        "id": "M15",
+        "observation_id": "active_14",
+        "modality": "audio_video",
+        "retrieval_window": [
+          105.0,
+          110.0
+        ],
+        "content": "Self-report (this 5 s clip): The interviewee states, 'Well, I try to go to the gym once or twice a week.' The hedge 'I try to' positions the gym visit as an aspiration rather than a settled routine, and 'once or twice a week' quantifies frequency at the low end of regular exercise. The utterance is a single clause with no supplementary activity mentioned within this window.\nObserved behavior (this 5 s clip, from prior audio_video pass [0.0–5.0]): During the 'I try to go to the gym' clause the interviewee's gaze shifts slightly upward and to his left, away from the interviewer's direct line. His facial expression reads as neutral-to-thoughtful: brows appear level (no clear asymmetric lift detected at 2 fps sampling), mouth is neither tightened into a grimace nor relaxed into a smile. Torso remains squared to camera; no fidgeting, hand gestures, or postural withdrawal observed. The upward gaze coincides temporally with the hedge 'I try to' and the frequency qualifier, consistent with a cognitive search for an adequate formulation rather than confident recall.\nLimitation of current evidence: At 2 fps sampling over 5 s (10 total frames), the micro-expression window around 'I try to' spans roughly 1–2 frames. This is insufficient to reliably distinguish an asymmetric eyebrow lift (epistemic uncertainty marker) from lip-pressing / mouth-corner tightening (self-consciousness marker). The prior pass recorded 'brows level, mouth neither tightened nor relaxed,' but this is a coarse impression across sparse frames rather than a frame-by-frame differential analysis. A definitive classification of the micro-expression type remains unresolved.\nCross-reference constraint: The goal also requests a prosodic comparison between 'I try to go to the gym once or twice a week' (this clip, ≈0–4 s) and 'very active, yes' (≈17–19 s in the full recording). The latter falls entirely outside this 5-second source window. Prior observation M6 characterizes 'very active, yes' as delivered with immediate onset, no hedge, broad open smile, and warm unguarded affect, but no pitch-contour or speech-rate numerical data were extracted for either phrase in the completed passes. The prosodic contrast therefore rests on qualitative description only, not on measured F0 slope or syllable-rate comparison.",
+        "content_status": "structured",
+        "overlapping_media_reads": [
+          "M6"
+        ]
+      },
+      {
+        "id": "M16",
+        "observation_id": "active_15",
+        "modality": "audio",
+        "retrieval_window": [
+          130.0,
+          134.0
+        ],
+        "content": "Observed behavior (value-affirmation prosody, 0.0–4.0 s, audio): The utterance opens with a clipped, single-syllable interjection 'Oh' occupying roughly 0.0–0.6 s. Acoustically it presents as a short, mid-register vowel with a slight upward inflection at onset, consistent with an involuntary attention-capture rather than a planned discourse marker. There is no preceding silence gap; the 'Oh' lands immediately after the interviewer's question tail, indicating minimal planning latency.\n\nThe phrase 'very important' follows at approximately 1.0–2.5 s. 'Very' receives the primary stress: its amplitude peak is noticeably higher than surrounding syllables, and the vowel is lengthened (~150 ms longer than a reduced function word would occupy). 'Important' carries a secondary stress on the first syllable ('im-') and terminates with a clearly falling fundamental-frequency contour on the final '-tant,' settling into a low register. The terminal F0 drop is abrupt rather than gradual, producing a declarative-close intonation pattern typical of a completed assertion rather than a continuing thought.\n\nBetween 'Oh' and 'very important' there is a micro-pause of roughly 300–400 ms filled with a faint, audible inhaled breath — short and shallow, functioning as a glottal reset between the interjection and the content words. This is not a full respiratory break but a quick catch-breath consistent with spontaneous speech production.\n\nAfter 'important' (≈2.5 s), the remainder of the clip (2.5–4.0 s) contains a sustained silence of approximately 1.0–1.2 s with no phonation, followed by the very onset of a new vowel-like sound (a low-amplitude, mid-central articulation suggestive of the beginning of 'Now-' or a preparatory nasal). Critically, within this silent interval a deeper, more drawn-out inhalation is audible — longer and fuller than the micro-pause breath between 'Oh' and 'very important.' This second breath has the acoustic signature of a deliberate inspiratory reset (greater subglottal pressure buildup, ~600–800 ms duration), marking a structural boundary between thought units.\n\nSelf-report alignment (0.0–4.0 s): The verbal content is limited to the bare evaluative token 'Oh, very important' with no hedge, qualifier, or connective tissue to a subsequent argument. The speaker does not attach a reason, example, or concessive clause within this window. The answer is syntactically complete as a standalone predicate ('[It is] very important'), requiring no further material for grammatical closure.\n\nPartial resolution of the goal comparison: The F0 evidence within this 4 s window confirms that 'very important' ends on a LOW TERMINAL (falling contour, settled register), and the transition into the next utterance is mediated by a CLEAR, DEEPER INHALATORY PAUSE (~1.0 s silence with a full breath). These two acoustic markers — falling terminal + inspiratory reset — satisfy the 'new thought unit (constructed)' condition stated in the goal. The video-game critique that follows (beyond 4 s) does not flow seamlessly from the affirmation; it is separated by a prosodic and respiratory boundary consistent with a deliberate shift from instinctive evaluation to composed argumentation. However, the onset of 'Nowadays kids…' itself falls outside this clip, so the elevated-vs-flat pitch character of the critique's opening syllables cannot be directly confirmed here.\nObserved behavior (breath-pattern asymmetry, 0.0–4.0 s, audio): Two distinct respiratory events are present within the 4 s window, differing in depth and function. The first (≈0.7–1.0 s, between 'Oh' and 'very important') is a shallow, rapid catch-breath (~300 ms) typical of intra-utterance planning in spontaneous speech. The second (≈2.8–3.8 s, after 'important' and before the next utterance onset) is a deeper, slower inhalation (~600–800 ms) with audible rib-cage expansion noise, characteristic of a turn-level respiratory reset. This asymmetry reinforces the interpretation that the speaker treats 'very important' as a closed unit and deliberately prepares a new prosodic phrase for whatever follows — consistent with constructing a separate argumentative move rather than extending the same instinctive conviction.",
+        "content_status": "structured",
+        "overlapping_media_reads": [
+          "M7"
+        ]
+      },
+      {
+        "id": "M17",
+        "observation_id": "active_16",
+        "modality": "audio_video",
+        "retrieval_window": [
+          171.0,
+          176.0
+        ],
+        "content": "Visual evidence at 2.2 s ('like climate change'): The interviewee's eyebrows show mild inner-brow elevation without horizontal compression or furrowing above the orbital ridge. His eyes shift slightly to his right (toward the interviewer's seated position), head tilts marginally, and mouth is open mid-syllable. The overall affect reads as tentative inquiry—'do you mean climate change specifically?'—rather than the tightened, lowered-brow configuration that would signal cautious political re-categorization, nor the dramatic full-brow raise of genuine confusion about weather patterns. This partially resolves the M9 sampling limitation: at 2 fps the single available frame is consistent with clarification-seeking rather than anxiety-driven retreat.\nInterviewer non-response (3.2–4.2 s): The cut to the interviewer shows her in a neutral, upright listening posture, pen held still over papers, gaze directed toward the interviewee, mouth slightly open but not forming words. She neither nods confirmation nor shakes her head denial. This absence of validation forces the interviewee to proceed without scope confirmation, which explains the subsequent default to maximal hedging ('I guess it's changed a little') documented in M9: he attempted to verify the referent, received no signal, and retreated to the safest possible minimization.\nStructural interpretation favoring #2/#3 hybrid over #1: A person genuinely unfamiliar with observable weather shifts (interpretation #1) would not spontaneously narrow the question to the specific politically loaded term 'climate change'—they would ask 'what kind of changes?' or state 'I don't notice.' The fact that he identifies the exact contested label and offers it as a tentative frame demonstrates recognition of the term's salience. His subsequent inability to commit to an answer without the interviewer's confirmation, and his default to external attribution ('People say…' per M10/M12), aligns with learned avoidance of personal endorsement on politicized topics (#2) operating within a broader pattern of deferring epistemic authority on societal/causal questions while retaining full first-person agency on sensory/personal ones (#3, per M12's 5:0 external-to-first-person ratio in causal contexts vs. 7:1 reversal in experiential contexts).\nProsodic-visual coherence with M9: The mild brow elevation at 2.2 s pairs with the rising question-like intonation M9 documents for 'like climate change' (≈13–14 s full-recording time). This audiovisual congruence—tentative brow + interrogative pitch contour + slight head tilt toward interlocutor—forms a coherent 'clarification offer' gesture rather than a 'political caution' micro-expression (which would pair lowered/furrowed brows with flat or falling intonation). The subsequent deflation into 'I guess it's changed a little' (falling pitch, reduced volume per M9) represents not the release of tension after a successful reframe, but the collapse of the clarification attempt when the interviewer provides no confirmation.\nContrast with 'definitely' (prior segment, ≈-1 to 2 s clip-time / 5–9 s full-recording): M9 documents the prior answer as stressed, single-breath, preceded by a broad smile—visually open, prosodically confident, zero hedging. The 2.2 s frame shows the inverse: no smile, mouth working tentatively, eyes seeking confirmation rather than addressing camera/interviewer directly, brows mildly raised in query rather than relaxed in assertion. This is not a gradient of comfort but a categorical shift in speech architecture triggered specifically by the causal/observational question frame ('Have you noticed any changes…?'), consistent with M12's finding that the external-agent substitution fires at causal-explanatory junctures regardless of topic domain.\nDomain-specificity confirmed within this clip: The interviewee's difficulty is not with the concept of weather changing per se (he comfortably narrates winter walks, horse riding, and 'rainy weather definitely' in adjacent segments per M8/M10). It is specifically with owning an observational claim about a politically contested phenomenon. His reframe to 'climate change' is an attempt to locate the question within a recognized public discourse before answering—but once located there, he cannot speak as a first-person observer without deferring to 'people say' or hedging with 'I guess.' This is the split profile M12 identifies: robust first-person experiential vocabulary paired with deficient first-person volitional/observational vocabulary on societal topics.",
+        "content_status": "structured",
+        "overlapping_media_reads": [
+          "M9"
+        ]
+      },
+      {
+        "id": "M18",
+        "observation_id": "active_17",
+        "modality": "audio_video",
+        "retrieval_window": [
+          194.0,
+          200.0
+        ],
+        "content": "Micro-expression at 'it's not so hot → I sometimes' (local 2–5 s, corresponding to ≈16–20 s broader timeline): Across frames at 2.0 s, 3.0 s, 4.0 s, and 5.0 s, the interviewee's eyebrow position remains neutral (neither raised in surprise nor lowered in tension), gaze is directed steadily toward the interviewer's position (slightly camera-right), and mouth tension is consistent with relaxed, rhythmic speech articulation rather than the compressed-lip or jaw-set pattern associated with the M9 withdrawal signature. No blink-rate spike, no lateral eye-dart, and no brow-furrow is detectable at 2 fps sampling. The visible posture at 5.0 s ('I sometimes go horse riding to') shows the mouth open mid-phoneme with the same forward-leaning-neutral orientation held since 2.0 s — no backward head-pull or shoulder-hunch that would signal the onset of a hedge cluster.\nConsistency with M10's audio-prosodic reading: The visual evidence corroborates M10's finding that pitch and volume remain in a 'relatively steady conversational register' through 'it's not so hot' and into 'I sometimes.' The absence of any visible tension, gaze-aversion, or postural withdrawal at the 16–20 s boundary argues against a falling/trailing prosodic arc and is consistent with a rising-or-level intonation typical of genuine example-introduction ('I sometimes go horse riding to…'). The face shows the relaxed narration posture of a personal anecdote rather than the subtle withdrawal documented in M9 during hedged societal claims.\nLimitation of 2 fps video sampling: At two frames per second, sub-second micro-events (a brief 0.2 s brow twitch, a momentary lip-press between syllables, or a half-second gaze shift) cannot be resolved. The conclusion above rests on the absence of any visible negative marker across four consecutive frames, which is suggestive but not conclusive for the finest-grained prosodic-micro-expression alignment the goal requests. However, no positive marker of withdrawal (tension, aversion, flatness) is present either, tipping the balance toward the 'relaxed narration' reading.\nSubtitle-visual sync confirmation: The yellow subtitle 'you can in winter because it is not so hot' persists from 2.0 s through 4.0 s, and 'I sometimes go horse riding to' appears at 5.0 s. The mouth movements in each frame align with the syllable count of the displayed text, confirming the interviewee is actively producing (not merely recalling) the utterance in real time — consistent with spontaneous narration rather than rehearsed recitation.",
+        "content_status": "structured",
+        "overlapping_media_reads": [
+          "M10"
+        ]
+      }
+    ]
+  },
+  "steps": [
+    {
+      "index": 0,
+      "action": {
+        "time": [
+          0.0,
+          20.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine if the initial hesitation indicates anxiety or careful thought, and whether the subsequent offer of a short name is a genuine attempt at rapport-building or a nervous compensation strategy."
+      },
+      "candidate_id": "C1",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M1"
+      ],
+      "changed_ids": [
+        "M1"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 1,
+      "action": {
+        "time": [
+          20.0,
+          40.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the initial stutter reflects a general startle response to being formally tested (i.e., the novelty of the examiner's gaze and the 'part one of the test' framing) versus a specific discomfort with identity-labeling questions. Closer inspection of his micro-expressions and posture shift between the two answers could clarify whether comfort increases with each successive question or whether the engineering answer simply felt more rehearsed."
+      },
+      "candidate_id": "C2",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M2"
+      ],
+      "changed_ids": [
+        "M2"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 2,
+      "action": {
+        "time": [
+          40.0,
+          60.0
+        ],
+        "modality": "audio_video",
+        "goal": "Clarify whether the complete absence of intrinsic-motivation vocabulary indicates a genuinely external locus of control in educational decisions or simply a limited reflective vocabulary under time pressure. A follow-up probe asking him to recall a moment he enjoyed the subject could test whether the omission is structural (he truly has no internal narrative) or situational (the 20-second window discouraged elaboration)."
+      },
+      "candidate_id": "C3",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M3"
+      ],
+      "changed_ids": [
+        "M3"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 3,
+      "action": {
+        "time": [
+          60.0,
+          80.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the vague closure signals a genuine difficulty articulating the emotional quality of his friendships (consistent with the external-locus pattern noted in the 40–60 s window) or is simply a colloquial speech habit that carries no affective weight. A closer inspection of his pitch contour and micro-expression on the final four words, compared with the warmer delivery on \"great guys,\" could clarify whether the drop in energy reflects discomfort with intimacy-language or mere conversational tidiness."
+      },
+      "candidate_id": "C4",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M4"
+      ],
+      "changed_ids": [
+        "M4"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 4,
+      "action": {
+        "time": [
+          80.0,
+          100.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the brevity and flat affect on the exercise question reflect genuine disengagement (he simply does not exercise and finds the topic uninteresting or mildly embarrassing to elaborate on) or a strategic minimization (he exercises occasionally but chooses not to volunteer specifics under evaluative conditions). A closer inspection of his micro-expression and pitch contour on 'sure'—compared with the warmer, more varied prosody he used when admitting his love of meat—could clarify whether the flatness signals avoidance discomfort or merely a colloquial, low-stakes affirmative that carries no hidden tension."
+      },
+      "candidate_id": "C5",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M5"
+      ],
+      "changed_ids": [
+        "M5"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 5,
+      "action": {
+        "time": [
+          100.0,
+          120.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the hedging language and upward gaze during the adult description reflect genuine inconsistency in his routine (he truly struggles to maintain the habit) or a mild social-desirability concern (he fears being judged for exercising only \"once or twice\" rather than daily). A closer inspection of his micro-expression on \"I try to\"—specifically whether the eyebrows lift in uncertainty or the mouth tightens in self-consciousness—compared with the relaxed, open smile on \"very active, yes,\" could clarify whether the adult hesitation is about the activity itself or about how it will be perceived by the interviewer."
+      },
+      "candidate_id": "C6",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M6"
+      ],
+      "changed_ids": [
+        "M6"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 6,
+      "action": {
+        "time": [
+          120.0,
+          140.0
+        ],
+        "modality": "audio_video",
+        "goal": "Assess whether the 'in my opinion' tag functions as genuine epistemic humility (inviting dialogue, acknowledging subjectivity) or as a defensive pre-qualification that shields him from potential disagreement or judgment. A closer inspection of his micro-expression in the half-second before the cutaway—specifically whether his brow relaxes (inclusive) or tightens (protective)—and whether the interviewer's visible reaction at 18.5 s shows nodding engagement or a slight tilt suggesting she is processing a value claim, could clarify whether the hedge is conversational warmth or anxiety-management."
+      },
+      "candidate_id": "C7",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M7"
+      ],
+      "changed_ids": [
+        "M7"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 7,
+      "action": {
+        "time": [
+          140.0,
+          160.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the gap between the instant confident label and the effortful, externally-framed justification reveals that the interviewee has never personally reflected on why he enjoys rain (the preference is social-environmental, not sensory-affective), or whether the 'Oh' and stutter simply mark the cognitive load of constructing an explanation under evaluative scrutiny while the underlying personal enjoyment is genuine but unarticulated. A follow-up probe asking him to describe what he physically feels or notices during a rainstorm—separate from what 'everyone' feels—could test whether the external framing is his true cognitive architecture for preferences or a habitual narration style that masks richer private experience."
+      },
+      "candidate_id": "C8",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M8"
+      ],
+      "changed_ids": [
+        "M8"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 8,
+      "action": {
+        "time": [
+          160.0,
+          180.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the narrowing to 'climate change' followed by instant minimization reflects genuine unfamiliarity with observable weather shifts (he simply has not tracked seasonal patterns closely), a learned avoidance of the politicized vocabulary (he recognizes 'climate change' as a contested term and retreats to safe vagueness), or a consistent pattern of deferring epistemic authority on societal topics while speaking freely on personal ones. A closer inspection of his micro-expression during the 'like climate change?' reframing—specifically whether his eyebrows lift in genuine clarification-seeking or tighten in cautious re-categorization—compared with the relaxed, open delivery of 'definitely' in the prior segment, could clarify whether the hedge cluster is cognitive (he truly lacks data) or strategic (he is managing the social risk of the topic)."
+      },
+      "candidate_id": "C9",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M9"
+      ],
+      "changed_ids": [
+        "M9"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 9,
+      "action": {
+        "time": [
+          180.0,
+          200.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether this rapid switch confirms that his hedging pattern is topic-specific (a learned avoidance of societal/political claims) rather than a global communication trait, or whether the mild 'uh' fillers and the abrupt cut-off at 'I sometimes…' signal that even personal topics trigger a low-engagement, minimally-elaborating mode that would have surfaced had the answer continued. A closer inspection of his micro-expression and pitch contour on 'I sometimes' versus the preceding 'it's not so hot' could clarify whether he was about to introduce a new hedge or was genuinely expanding with a concrete example."
+      },
+      "candidate_id": "C10",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M10"
+      ],
+      "changed_ids": [
+        "M10"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 10,
+      "action": {
+        "time": [
+          200.0,
+          216.711995
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the 'uh a bit' hedge reflects genuine uncertainty about frequency (he actually goes less often than once per weekend and is calibrating his claim) or a residual social-consciousness pattern (he worries that naming a club-based leisure activity might sound privileged or excessive under evaluative scrutiny). A closer inspection of his micro-expression on 'a bit'—specifically whether his eyes briefly dart toward the interviewer for approval or remain steady—compared with the open, forward-leaning smile on 'That's really fun,' could clarify whether the hedge is epistemic (he truly doesn't know his exact frequency) or strategic (he is softening a potentially judgment-triggering disclosure)."
+      },
+      "candidate_id": "C11",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M11"
+      ],
+      "changed_ids": [
+        "M11"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 11,
+      "action": {
+        "time": [
+          0.0,
+          216.711995
+        ],
+        "modality": "text",
+        "goal": "Determine whether this cross-topic absence of intrinsic-motivation vocabulary on decision/societal questions reflects a stable cognitive architecture in which Ferris narrates his life through external agents and collective sentiment (consistent with an external locus-of-control profile), or whether it is a situational artifact of the test format—where the examiner's framing ('Why did you choose…?', 'Have you noticed any changes…?') cues reportive rather than reflective speech. A complementary approach would compare the text-level pronoun distribution (ratio of 'I/my' as subject vs. 'my parents/people/everyone/kids' as subject) across the decision-cluster answers versus the sensory-cluster answers, and cross-reference with the audio_video candidates' micro-expression and pitch data at the exact moments those external agents are named, to test whether the external framing is accompanied by a flat, recited prosody (suggesting memorized or inherited narrative) or by a warmer, more engaged delivery (suggesting genuine social-embedded reasoning)."
+      },
+      "candidate_id": "C12",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M12"
+      ],
+      "changed_ids": [
+        "M12"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 12,
+      "action": {
+        "time": [
+          43.0,
+          47.0
+        ],
+        "modality": "video",
+        "goal": "Separate a polite-social-reflex smile from authentic surprise or performed uncertainty by measuring the onset-to-offset timing and symmetry of the zygomaticus and frontalis activation in the first three seconds of the response."
+      },
+      "candidate_id": "C15",
+      "parent_candidate_id": "C3",
+      "new_ids": [
+        "M13"
+      ],
+      "changed_ids": [
+        "M13"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 13,
+      "action": {
+        "time": [
+          98.0,
+          100.0
+        ],
+        "modality": "audio_video",
+        "goal": "Obtain sub-second facial frames plus the audio pitch contour precisely across 'yeah… sure' (and the trailing breath/silence before the cut) so the flatness can be classified: avoidance-discomfort markers (suppressed or absent smile, set jaw, downward or averted gaze, falling-then-clipped pitch, tense onset) versus a casual low-stakes affirmative (relaxed features, natural terminal fall, no hidden tension). This isolates the one word the goal hinges on, using the warm meat-admission prosody already in window as the within-speaker baseline, and complements the pending [20,25] continuation by resolving the affect on the truncated token itself."
+      },
+      "candidate_id": "C19",
+      "parent_candidate_id": "C5",
+      "new_ids": [
+        "M14"
+      ],
+      "changed_ids": [
+        "M14"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 14,
+      "action": {
+        "time": [
+          105.0,
+          110.0
+        ],
+        "modality": "audio_video",
+        "goal": "Examine the micro-expression on the words 'I try to' at frame-level resolution: determine whether the eyebrows lift asymmetrically (a marker of epistemic uncertainty about whether the routine actually holds) or whether the corners of the mouth tighten / lips press together (a marker of self-consciousness about being judged for exercising only 'once or twice'). Compare the pitch contour and speech rate on 'I try to go to the gym once or twice a week' against the flat, confident prosody on 'very active, yes' to see whether the adult hesitation is a cognitive search for the right frequency or a social-performance adjustment."
+      },
+      "candidate_id": "C20",
+      "parent_candidate_id": "C6",
+      "new_ids": [
+        "M15"
+      ],
+      "changed_ids": [
+        "M15"
+      ],
+      "followup_status": "no_new_media_content",
+      "followup_errors": []
+    },
+    {
+      "index": 15,
+      "action": {
+        "time": [
+          130.0,
+          134.0
+        ],
+        "modality": "audio",
+        "goal": "Compare the fundamental-frequency contour and inspiratory pattern across the 'Oh / very important' cluster (≈10.5–12.0 s) against the onset of 'Nowadays kids…' (≈12.5–14.0 s). If the pitch on 'very important' falls to a low terminal and is followed by a clear inhalatory pause before 'Nowadays,' the critique is a new thought unit (constructed). If the pitch remains elevated and the transition is seamless with no breath break, the video-game complaint flows from the same instinctive conviction as the affirmation."
+      },
+      "candidate_id": "C21",
+      "parent_candidate_id": "C7",
+      "new_ids": [
+        "M16"
+      ],
+      "changed_ids": [
+        "M16"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 16,
+      "action": {
+        "time": [
+          171.0,
+          176.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the narrowing to 'climate change' followed by instant minimization reflects genuine unfamiliarity with observable weather shifts (he simply has not tracked seasonal patterns closely), a learned avoidance of the politicized vocabulary (he recognizes 'climate change' as a contested term and retreats to safe vagueness), or a consistent pattern of deferring epistemic authority on societal topics while speaking freely on personal ones. Specifically, resolve whether his eyebrows lift in genuine clarification-seeking or tighten in cautious re-categorization during the 'like climate change?' reframing, compared with the relaxed, open delivery of 'definitely' in the prior segment."
+      },
+      "candidate_id": "C23",
+      "parent_candidate_id": "C9",
+      "new_ids": [
+        "M17"
+      ],
+      "changed_ids": [
+        "M17"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 17,
+      "action": {
+        "time": [
+          194.0,
+          200.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the prosodic arc across 'it's not so hot → I sometimes' is rising/level (indicating genuine example-introduction and topic-appropriate engagement) or falling/trailing (indicating the onset of a new hedge cluster that would confirm a global low-elaboration pattern rather than a topic-specific one). Simultaneously inspect micro-expression (eyebrow position, gaze direction, mouth tension) at 16–20 s to see whether the face shows the relaxed narration posture of a personal anecdote or the subtle withdrawal signature documented in M9 during hedged societal claims."
+      },
+      "candidate_id": "C24",
+      "parent_candidate_id": "C10",
+      "new_ids": [
+        "M18"
+      ],
+      "changed_ids": [
+        "M18"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    }
+  ],
+  "semantic_review": "unreviewed",
+  "teacher_approved": false
+}

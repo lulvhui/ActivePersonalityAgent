@@ -1,0 +1,1170 @@
+{
+  "sample_id": "IELTS:106",
+  "run_status": "complete",
+  "final_status": "generated",
+  "final": {
+    "O": {
+      "level": "medium",
+      "reasoning": null
+    },
+    "C": {
+      "level": "medium",
+      "reasoning": null
+    },
+    "E": {
+      "level": "low",
+      "reasoning": null
+    },
+    "A": {
+      "level": "medium",
+      "reasoning": null
+    },
+    "N": {
+      "level": "low",
+      "reasoning": null
+    }
+  },
+  "final_explanation": "Justin's profile is shaped by a clear topic-gating effect: he expresses animation, imagination, and sensory-emotional engagement primarily when content is anchored in personal experience (phone preference, speakerphone vignette, travel enthusiasm, hometown-for-children), while defaulting to restrained, narrow-pitch, gesture-light delivery for third-party enumeration, factual recall, and low-personal-anchor topics (UK city list, Dunkirk history, farmers' occupations). Openness is medium because the vivid map-scenario and sensory framing (M7, M4, M5) show imaginative capacity, but the pervasive 'things like that' vague categorizers and absence of volunteered abstract exploration cap it below high. Conscientiousness is medium: disfluencies cluster at structural seams (M10), epistemic calibration is systematic (M14: facts plain, opinions hedged, convictions intensified), and turn-taking is clean (M2), yet trailing incompleteness (M5, M11) and circular restatements (M14) indicate moderate rather than high drive-to-elaborate. Extraversion is low: the default mode across M1, M2, M8, M11, M12, M13 is clasped hands, minimal kinetic range, brief responses, and narrow pitch; animation in M5–M9 is conditional and topic-gated, not a global sociability or energy-seeking pattern. Agreeableness is medium: consistent 'Yeah' acknowledgments (7/11 answers), 'you know' solidarity markers, validation-seeking, and softening of complaints (M7) show cooperative non-hostility, but the farmers answer (M12–M14) reveals no warmth or personal connection toward others, and the overall register is matter-of-fact rather than effusively friendly. Neuroticism is low: no creaky voice, no acceleration, no abrupt cutoff, no defensive posture; hedges are analyzed as discourse-management or calibrated uncertainty rather than anxiety-protection (M6, M11, M14); facial musculature is relaxed-static, not tense (M12); the examiner's neutral prompts elicit no startle or withdrawal.",
+  "contextual": [
+    {
+      "trait": "E",
+      "context_type": "observed",
+      "context": "Personal-experience topics (phone-vs-email, speakerphone on train, travel enthusiasm, hometown-for-children) versus third-party/factual enumeration (UK city list, Dunkirk history, farmers' occupations)",
+      "expression": "On high-personal-anchor topics, Justin produces pitch excursions, forward lean, open-palm gestures, slight smiles, and vivid sensory imagery (M5 train vignette, M7 map scenario, M9 'absolutely' with 30% vowel lengthening). On low-anchor topics, hands remain clasped, pitch is narrow and metronomic, facial expression is static, and no gesture accompanies enumeration (M8 finger-count only, M11 monotone fading to trailing 'uh', M12–M13 zero gesture throughout farming answer). The animation differential is topic-gated, not a global speaking-style shift, indicating that extraverted expressivity is conditional on personal experiential investment rather than a stable dispositional trait.",
+      "citations": [
+        "M5",
+        "M6",
+        "M7",
+        "M8",
+        "M9",
+        "M11",
+        "M12",
+        "M13",
+        "M14"
+      ]
+    },
+    {
+      "trait": "O",
+      "context_type": "observed",
+      "context": "Imaginative scenario construction (travel map, sensory-emotional phone rationale) versus abstract-evaluation or factual recall (Dunkirk history, UK preferences)",
+      "expression": "When constructing imagined scenarios, Justin generates concrete visual detail ('point out a spot,' 'open fields and parks,' 'hear their voice, get a feeling'), uses multi-clause conditional narratives, and shows narrative comfort with on-the-fly reasoning (M7, M4, M10). However, for factual or low-stakes evaluative content, he defaults to bare declaratives, 'things like that' vague summarizers, and minimal elaboration without volunteered supplementary detail (M2, M8, M11). Openness manifests as sensory-emotional imagination within personal experience but does not extend to abstract intellectual exploration or curiosity-driven elaboration beyond the question's frame.",
+      "citations": [
+        "M2",
+        "M4",
+        "M7",
+        "M8",
+        "M10",
+        "M11",
+        "M14"
+      ]
+    },
+    {
+      "trait": "C",
+      "context_type": "observed",
+      "context": "Structured planning at idea-boundaries versus trailing incompleteness at knowledge ceilings",
+      "expression": "Disfluencies ('uh,' 'um,' 'and and') cluster at structural seams between conceptual units rather than within phrases (M10: ~4 events in 16s, all at transitions), and epistemic calibration is systematic—facts stated bare, opinions hedged with 'probably,' convictions intensified with 'absolutely/definitely' (M14). This indicates organized online reasoning. However, the trailing 'uh' in the Dunkirk-history answer (M11) falls post-content with no tension markers, and the farmers answer closes with verbatim restatement after 'things like that' (M13, M14), showing that structural completeness depends on available content rather than a uniform drive to finish. Conscientious organization is present but bounded by knowledge resources.",
+      "citations": [
+        "M10",
+        "M11",
+        "M13",
+        "M14"
+      ]
+    },
+    {
+      "trait": "A",
+      "context_type": "reported",
+      "context": "Solidarity and validation-seeking discourse markers across topics versus flat taxonomic enumeration of others",
+      "expression": "Justin uses 'you know' (6 times) and 'you know what I mean?' as solidarity/validation-seeking tags, softens complaints with 'as much as I would like,' and provides immediate cooperative acknowledgment ('Yeah' in 7/11 answers, 'Oh yeah absolutely' to examiner probes). These markers appear in high-affect contexts (M6 speakerphone, M7 travel constraint) and low-affect contexts (M12 industrialization, M12 farmers) with dual function. However, the farmers answer (M12–M14) describes others' occupations with zero personal connection, no evaluation, no warmth, and no narrative—purely taxonomic. Agreeableness is expressed as cooperative non-hostility and social-convention compliance rather than genuine other-oriented warmth or empathy.",
+      "citations": [
+        "M6",
+        "M7",
+        "M12",
+        "M13",
+        "M14"
+      ]
+    },
+    {
+      "trait": "N",
+      "context_type": "observed",
+      "context": "Hedge production and delivery flatness versus absence of anxiety/tension markers",
+      "expression": "The 'I don't know' in M6 is a discourse-management deflation device (sandwiched between two affirmations, externally resolved by examiner) rather than genuine distress. The trailing 'uh' in M11 is explicitly diagnosed as content-limitation: no creaky voice, no acceleration, no abrupt cutoff, no tightened jaw or reduced blink rate. Facial musculature is relaxed-static (M12), hands remain clasped without fidgeting (M1, M13), and the examiner's neutral 'Why is that?' prompt (M4) elicits only a 0.5–1s planning pause with epistemic hedge, not defensive withdrawal. Neuroticism indicators are absent; the flat delivery reflects low arousal for unanchored content, not emotional instability or threat sensitivity.",
+      "citations": [
+        "M1",
+        "M4",
+        "M6",
+        "M11",
+        "M12",
+        "M13"
+      ]
+    }
+  ],
+  "contextual_errors": [],
+  "stop_reason": "candidate_pool_exhausted",
+  "global_scan": {
+    "coarse_summaries": [
+      {
+        "time": [
+          0.0,
+          20.0
+        ],
+        "modality": "audio_video",
+        "summary": "The clip captures the opening exchange of an IELTS speaking test conducted by examiner Mark Reed. After the formal introduction, the examiner asks the candidate for his full name; the young man, Justin Hegarty, responds with a clear but somewhat subdued delivery. When asked what he prefers to be called, Justin replies briefly, \"You can call me Justin,\" in a flat, compliant tone. Visually, Justin sits with both hands clasped together on the table, shoulders slightly hunched, and maintains limited eye contact with the examiner, glancing downward between responses. The examiner, by contrast, alternates between looking at his paperwork and addressing Justin directly. The segment ends as the examiner requests Justin's identification, marking the transition from the introductory phase to the verification step of the test.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          20.0,
+          40.0
+        ],
+        "modality": "audio_video",
+        "summary": "This window captures the transitional moment at the end of the identification check and the beginning of Part 1. The examiner confirms the ID is fine, announces the shift to personal questions, and asks Justin where he is from. Justin's response begins with a drawn-out 'Uh…', indicating a brief hesitation before launching into his answer. No further speech or behavioral data was recorded within this 20–40 second window, so the substance of his reply and any accompanying gestures or vocal shifts remain unobserved here.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          40.0,
+          60.0
+        ],
+        "modality": "audio_video",
+        "summary": "In this segment, Justin provides biographical details, identifying his hometown as Dunkirk, France, located on the English Channel, and stating he is a student working towards a Bachelor of Science in Computers. His responses are more substantive than the initial greetings, though they include conversational fillers ('Uh', 'Yeah') and slight hesitations. The examiner acknowledges his answers and transitions the conversation to the topic of how he keeps in contact with other people.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          60.0,
+          80.0
+        ],
+        "modality": "audio_video",
+        "summary": "In this 60–80 s window, the examiner asks Justin how he contacts friends and whether he prefers phone or email. Justin explains that he usually calls friends on his mobile phone, adding that for urgent situations where he cannot talk, he will text instead; his delivery here is moderately structured but includes one filler (\"Um\") and a conditional clause, suggesting real-time formulation. When posed the binary preference question, he answers almost instantly with an emphatic \"Oh, definitely phone,\" showing a marked rise in energy and decisiveness compared with the preceding explanation. Visually, Justin remains seated with his hands near the tabletop; during the explanatory portion his fingers shift and make small gestures, but they settle again as he delivers the quick preference answer. Overall, the segment reveals that Justin can organize a multi-step description when the topic is concrete and familiar, yet his confidence and prosodic range increase sharply when the task reduces to a simple either/or choice.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          80.0,
+          100.0
+        ],
+        "modality": "audio_video",
+        "summary": "In this segment (80–100 s), Justin elaborates on his preference for phone calls over emails, grounding his reasoning in emotional and interpersonal terms: he wants to \"hear their voice\" and \"get a feeling for how they're feeling,\" and finds email impersonal because of the slow back-and-forth. His delivery includes multiple fillers (\"um,\" \"you know,\" \"kind of\") and a slightly halting rhythm, yet the content is notably affective—he privileges felt connection over efficiency. When the examiner probes further with \"And why is that?\", Justin pauses briefly before beginning a new clause (\"I really think it's just because you can't see…\"), suggesting the follow-up question requires him to dig one level deeper than his initial explanation. Visually, his hands rest on the table with occasional small open-palm gestures that coincide with the more emotive phrases, and his gaze shifts between the examiner and the desk surface.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          100.0,
+          120.0
+        ],
+        "modality": "audio_video",
+        "summary": "In this 100–120 s window, Justin moves from a reflective, somewhat flat statement about the impersonal nature of phone calls ('you can't see their face… it's definitely just not the same') into an energized enumeration of dislikes once the examiner asks directly. His affirmation is rapid and doubled ('Yeah, yes, definitely'), and he immediately anchors his complaint in a vivid public scenario—riding a train and overhearing strangers on their phones. Visually, his hands unclasp and gesture outward as he paints the scene, a marked contrast to the tightly folded posture seen in earlier rapport-building segments. Vocally, his pace quickens and pitch range widens during the train example, though he still inserts a filler ('um') before 'first off,' signaling he is structuring the list in real time rather than reciting a prepared answer.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          120.0,
+          140.0
+        ],
+        "modality": "audio_video",
+        "summary": "In this segment (120–140 s), Justin finishes a complaint about people using speakerphones in public, describing the annoyance of overhearing entire conversations. He delivers the point with moderate hand animation and a conversational, slightly exasperated tone, then trails off with a soft 'I don't know,' effectively closing the thought without committing further. The examiner validates with 'It's true' and pivots cleanly to the next topic ('Now, let's talk about traveling'). Justin accepts with a brief, agreeable 'Sure,' and begins to respond to 'Do you enjoy traveling to different places?' with an engaged-sounding 'Oh…' just before the window ends. Visually, the camera cuts to the examiner around the 10-second mark, showing him glancing down at notes, reinforcing the structured, examiner-led format of the interaction.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          140.0,
+          160.0
+        ],
+        "modality": "audio_video",
+        "summary": "Justin answers a travel-preference question with markedly more animation than his earlier minimal responses: he opens with an emphatic 'Oh absolutely,' claims to have visited 'almost every place' in the UK, physically taps the desk when enacting the hypothetical 'you could point out a spot' scenario, and closes with a warm 'But I love it.' His pitch range widens and a slight smile appears during the enthusiastic portions, yet he still threads hedging qualifiers ('probably,' 'you know, as I feel like I would need') through otherwise confident assertions, and his hands return to a clasped resting position between gestures. The middle explanation about time-and-money constraints is delivered in a flatter, more matter-of-fact register, creating an internal contrast within a single turn.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          160.0,
+          180.0
+        ],
+        "modality": "audio_video",
+        "summary": "In this segment, Justin answers the examiner's question about UK locations by listing London, Birmingham, and Manchester, specifying he visited with friends during holidays. He identifies London Bridge as his favorite and the Prehistoric Museum as his next preference, but hedges both choices with \"probably.\" His delivery opens with an \"Uh\" filler, maintains a relatively flat prosodic contour, and his hands remain tightly clasped on the table throughout, continuing the guarded physical posture seen in earlier exchanges. The content is largely factual and low-stakes, yet the speech still carries markers of cautious formulation.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          180.0,
+          200.0
+        ],
+        "modality": "audio_video",
+        "summary": "This segment marks the examiner's transition from leisure-activity discussion (Justin mentions 'probably the art galleries around there,' still hedging with 'probably') to a new topic: Justin's hometown in France. When asked whether his hometown is good for young people, Justin produces a markedly energetic, immediate affirmation—'Oh yeah, absolutely'—with a clear pitch rise and faster onset that contrasts sharply with the flat, low-register delivery catalogued in earlier segments. However, the examiner's follow-up probe ('And why?') elicits not an explanation but a second reflexive affirmation ('Oh yeah, children absolutely'), suggesting Justin defaults to agreement rather than elaboration when asked to justify. Throughout, his hands remain clasped or resting on the table, his gaze drops between turns, and no gestural expansion accompanies either the enthusiastic 'absolutely' or the subsequent non-answer. The topic shift is handled entirely by the examiner; Justin contributes no transitional language of his own.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          200.0,
+          220.0
+        ],
+        "modality": "audio_video",
+        "summary": "Justin explains his hometown's suitability by contrasting age groups: open fields and parks make it ideal for younger children, while teenagers are underserved due to a lack of movie theaters, gyms, and cafés. His delivery carries fillers ('uh,' 'um'), a minor self-repetition ('and and gyms'), and a steady, mid-range pitch with limited dynamic variation. Throughout the explanation he keeps his gaze directed downward toward his papers and his hands resting on the table surface. The examiner then closes this topic and pivots to a new question—whether Justin's hometown has changed much over the years—marking a clean turn boundary with no overlap or hesitation from Justin on the examiner's prompt.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          220.0,
+          240.0
+        ],
+        "modality": "audio_video",
+        "summary": "Justin answers a question about Dunkirk's historic character with a structured, fact-based explanation referencing WWII ruins, surviving old churches, and shipwrecks. His delivery is measured and relatively flat, with minimal pitch variation and no accompanying hand gestures—his hands remain clasped on the table and his gaze stays directed slightly downward. He opens with a contemplative 'Hmm, it's an interesting question,' inserts an 'Um' before the causal clause ('just because a lot of the town was left in ruins'), and trails off at the end with a hesitant 'uh…', suggesting he has exhausted his prepared points or is waiting for a prompt to continue. The content itself is coherent and specific, but the expressive channel stays uniformly low-arousal throughout.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          240.0,
+          260.0
+        ],
+        "modality": "audio_video",
+        "summary": "In this segment (4:00–4:20), Justin finishes describing his hometown's industrialization (modern houses, factories) in a flat, hands-on-table register, then the examiner briefly says \"Interesting\" and asks what jobs people do there. Justin responds with \"Yeah, so a lot of them are farmers… they'll grow, you know, a lot of vegetables over the summer…\", again using \"you know\" as a filler and maintaining the same level prosody, minimal gesture, and slightly downcast gaze he displayed throughout the interview. The content shifts from his own sensory observation of physical change to a third-person description of neighbors' livelihoods, yet his expressive engagement does not increase or decrease in any detectable way.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          260.0,
+          268.678005
+        ],
+        "modality": "audio_video",
+        "summary": "Justin finishes his third-party description of local farmers by listing concrete examples (potatoes, farm stands, selling produce) with the same level prosody, clasped-hands posture, and downward gaze that characterized the entire Part 1 exchange. A single 'um' filler interrupts the mid-list, and his concluding summary—'So a lot of them are farmers'—is delivered flatly, without the rising intonation or gestural punctuation that typically marks a speaker's sense of completion or confidence in their own observation. The examiner then signals the structural transition to Part 2 ('Let's see. Now.'), and Justin shows no visible micro-reaction: no posture shift, no gaze lift, no change in hand position, as though the end of the topic registers neither as relief nor as anticipation.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          0,
+          268.678005
+        ],
+        "modality": "text",
+        "summary": "This text-only transcript captures Justin Hegarthy's full Part 1 IELTS-style interview (0–268.7 s), spanning self-introduction, communication habits, phone dislikes, traveling, UK places visited, hometown suitability for youth, local history, and residents' occupations. Linguistically, Justin oscillates between two modes: (1) crisp, low-elaboration affirmations on binary or identity questions ('You can call me Justin,' 'Oh definitely phone,' 'Oh yeah absolutely'), and (2) extended, filler-laden, heavily hedged narratives on open-ended prompts ('Um… I'd probably say… you know… I don't know it's true'). The word 'probably' recurs at least seven times across travel and place descriptions, while 'definitely' and 'absolutely' appear in quick preference/affirmation slots. A notable structural feature is the circularity of the final farmers answer—he opens and closes with the identical phrase 'a lot of them are farmers,' bracketing a mid-list of vegetables and farm stands without adding specificity. Throughout, he mirrors the examiner's framing ('children absolutely' after 'young people'), suggesting a compliance-oriented turn-taking style rather than independent elaboration. The assert-then-retract pattern ('the most annoying thing ever… I don't know it's true') and the embedded hedges within otherwise bold claims ('I've probably visited almost every place… you could point out a spot I've probably been there') are visible purely at the lexical-syntactic level, independent of prosody or gesture.",
+        "summary_status": "provided"
+      }
+    ],
+    "input_modalities": [
+      "text",
+      "audio",
+      "video"
+    ],
+    "observation_modes": [
+      "text",
+      "audio",
+      "video",
+      "audio_video"
+    ],
+    "sampling_fps": 1.0,
+    "full_audio_coverage": true,
+    "audio_coverage": [
+      [
+        0.0,
+        20.0
+      ],
+      [
+        20.0,
+        40.0
+      ],
+      [
+        40.0,
+        60.0
+      ],
+      [
+        60.0,
+        80.0
+      ],
+      [
+        80.0,
+        100.0
+      ],
+      [
+        100.0,
+        120.0
+      ],
+      [
+        120.0,
+        140.0
+      ],
+      [
+        140.0,
+        160.0
+      ],
+      [
+        160.0,
+        180.0
+      ],
+      [
+        180.0,
+        200.0
+      ],
+      [
+        200.0,
+        220.0
+      ],
+      [
+        220.0,
+        240.0
+      ],
+      [
+        240.0,
+        260.0
+      ],
+      [
+        260.0,
+        268.6775
+      ]
+    ],
+    "video_coverage": [
+      [
+        0.0,
+        20.0
+      ],
+      [
+        20.0,
+        40.0
+      ],
+      [
+        40.0,
+        60.0
+      ],
+      [
+        60.0,
+        80.0
+      ],
+      [
+        80.0,
+        100.0
+      ],
+      [
+        100.0,
+        120.0
+      ],
+      [
+        120.0,
+        140.0
+      ],
+      [
+        140.0,
+        160.0
+      ],
+      [
+        160.0,
+        180.0
+      ],
+      [
+        180.0,
+        200.0
+      ],
+      [
+        200.0,
+        220.0
+      ],
+      [
+        220.0,
+        240.0
+      ],
+      [
+        240.0,
+        260.0
+      ],
+      [
+        260.0,
+        268.678005
+      ]
+    ],
+    "duration": 268.678005,
+    "sampled_frames": 269,
+    "audio_samples": 4298840,
+    "audio_sample_rate": 16000,
+    "chunk_seconds": 20.0,
+    "text_segmentation": "full_transcript",
+    "video_segmentation": "fixed_seconds",
+    "audio_segmentation": "decoded_samples"
+  },
+  "cost": {
+    "stage_timing": {
+      "coarse": {
+        "calls": 15,
+        "timed_calls": 0,
+        "prepare_seconds": 0.0,
+        "generation_seconds": 0.0,
+        "constraint_seconds": 0.0,
+        "total_seconds": 0.0,
+        "constraint_calls": 0,
+        "prompt_tokens": 35621,
+        "completion_tokens": 24692
+      },
+      "observe": {
+        "calls": 15,
+        "timed_calls": 0,
+        "prepare_seconds": 0.0,
+        "generation_seconds": 0.0,
+        "constraint_seconds": 0.0,
+        "total_seconds": 0.0,
+        "constraint_calls": 0,
+        "prompt_tokens": 69998,
+        "completion_tokens": 51103
+      },
+      "final": {
+        "calls": 1,
+        "timed_calls": 0,
+        "prepare_seconds": 0.0,
+        "generation_seconds": 0.0,
+        "constraint_seconds": 0.0,
+        "total_seconds": 0.0,
+        "constraint_calls": 0,
+        "prompt_tokens": 12309,
+        "completion_tokens": 3725
+      }
+    },
+    "active_seconds": 537.35601,
+    "active_budget_seconds": null,
+    "coarse_audio_seconds": 268.6775,
+    "coarse_frames": 269,
+    "jev_api_calls": 0,
+    "jev_estimated_cost": 0.0,
+    "coarse_video_segments": 14,
+    "coarse_video_fps": 1.0,
+    "generated_tokens": 79520,
+    "input_tokens": 117928
+  },
+  "novelty_rule": {
+    "video_fps": 2.0,
+    "min_new_seconds": 5.0,
+    "max_focus": 1
+  },
+  "novelty_filtered": [
+    {
+      "stage": "execution",
+      "candidate_id": "C17",
+      "parent_id": "C2",
+      "time": [
+        65.0,
+        95.0
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0,
+        "video": 0.0
+      },
+      "new_still": false,
+      "region_root": "C2"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C18",
+      "parent_id": "C2",
+      "time": [
+        60.0,
+        90.0
+      ],
+      "modality": "audio",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0
+      },
+      "new_still": false,
+      "region_root": "C2"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C19",
+      "parent_id": "C3",
+      "time": [
+        80.0,
+        110.0
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0,
+        "video": 0.0
+      },
+      "new_still": false,
+      "region_root": "C3"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C15",
+      "parent_id": "C1",
+      "time": [
+        120.0,
+        150.0
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0,
+        "video": 0.0
+      },
+      "new_still": false,
+      "region_root": "C1"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C16",
+      "parent_id": "C1",
+      "time": [
+        120.0,
+        150.0
+      ],
+      "modality": "audio",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0
+      },
+      "new_still": false,
+      "region_root": "C1"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C21",
+      "parent_id": "C4",
+      "time": [
+        125.0,
+        155.0
+      ],
+      "modality": "audio",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0
+      },
+      "new_still": false,
+      "region_root": "C4"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C23",
+      "parent_id": "C5",
+      "time": [
+        140.0,
+        155.0
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0,
+        "video": 0.0
+      },
+      "new_still": false,
+      "region_root": "C5"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C24",
+      "parent_id": "C6",
+      "time": [
+        145.0,
+        175.0
+      ],
+      "modality": "audio",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0
+      },
+      "new_still": false,
+      "region_root": "C6"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C25",
+      "parent_id": "C7",
+      "time": [
+        160.0,
+        170.0
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0,
+        "video": 0.0
+      },
+      "new_still": false,
+      "region_root": "C7"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C26",
+      "parent_id": "C7",
+      "time": [
+        160.0,
+        175.0
+      ],
+      "modality": "audio",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0
+      },
+      "new_still": false,
+      "region_root": "C7"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C20",
+      "parent_id": "C4",
+      "time": [
+        165.0,
+        195.0
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0,
+        "video": 0.0
+      },
+      "new_still": false,
+      "region_root": "C4"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C22",
+      "parent_id": "C5",
+      "time": [
+        180.0,
+        210.0
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0,
+        "video": 0.0
+      },
+      "new_still": false,
+      "region_root": "C5"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C28",
+      "parent_id": "C8",
+      "time": [
+        185.0,
+        210.0
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0,
+        "video": 0.0
+      },
+      "new_still": false,
+      "region_root": "C8"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C30",
+      "parent_id": "C9",
+      "time": [
+        205.0,
+        220.0
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0,
+        "video": 0.0
+      },
+      "new_still": false,
+      "region_root": "C9"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C29",
+      "parent_id": "C9",
+      "time": [
+        20.0,
+        40.0
+      ],
+      "modality": "audio",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0
+      },
+      "new_still": false,
+      "region_root": "C9"
+    }
+  ],
+  "memory": {
+    "observations": [
+      {
+        "id": "M1",
+        "observation_id": "active_0",
+        "modality": "audio_video",
+        "retrieval_window": [
+          0.0,
+          20.0
+        ],
+        "content": "In the opening 20 seconds, the candidate Justin Hegarty sits with both hands clasped together on the desk in front of him, showing no independent hand gestures or fidgeting. His torso remains largely still, with only slight head nods accompanying his brief verbal responses.\nJustin's spoken replies ('Hello, my name is Justin Hegarty' and 'You can call me Justin') are delivered in a relatively narrow pitch band with minimal intonational rise or fall, suggesting a controlled, even vocal register rather than an animated or expressive one.\nThe interaction format during this window is strictly examiner-led Q&A: Mark Reed poses short identification questions and Justin answers in one-line statements. No extended turn-taking or self-initiated elaboration occurs, so the constrained posture and flat delivery cannot yet be attributed to a specific cause from this segment alone.\nVisually, Justin maintains steady forward gaze toward the examiner without leaning back or crossing arms defensively, indicating engagement rather than withdrawal, but his overall kinetic range is very limited—no shoulder shifts, no hand releases from the clasped position.\nThe examiner's demeanor is procedural and neutral; he reads from papers and does not prompt for elaboration beyond the standard identity-check script, meaning the brevity of Justin's answers matches the expected register for this phase.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M2",
+        "observation_id": "active_1",
+        "modality": "audio_video",
+        "retrieval_window": [
+          40.0,
+          60.0
+        ],
+        "content": "Self-report: The interviewee identifies his origin as Dunkirk, France, characterizing it as 'a very small famous town' situated on the English Channel. He states his academic status as a student enrolled in a Bachelor's of Science in Computers program.\nObserved posture and gaze: Across frames at 0–5 s and 10–14 s, the interviewee sits with both forearms resting flat on the desk, torso largely still. His head turns slightly toward the interviewer but his eyes often drift just off-lens, and his facial expression remains neutral with minimal eyebrow or mouth movement, consistent with a reserved or guarded presentation.\nDiscourse markers and fillers: Every substantive response is initiated with 'Yeah' ('Yeah, so I'm from…', 'Yeah, I study here'), functioning as a confirmation token before content delivery. A single 'Uh' appears mid-sentence when supplying the geographical locator, indicating a brief planning pause.\nUtterance length and elaboration: Answers are concise—roughly one to two clauses—without volunteered supplementary detail. The description of Dunkirk stops at location; the academic answer stops at degree title. No anecdotes, evaluations, or forward-looking remarks are added.\nInterviewer scaffolding: The interviewer uses 'Now' twice as an explicit topic-shift marker ('Now, do you work…', 'Now, let's talk about…') and offers short back-channels ('That's interesting', 'Ah, very good') before pivoting, suggesting a structured, question-driven exchange rather than free narration.\nInteractional rhythm: Turn-taking is clean with no overlap; the interviewee waits for the full question before responding, and the interviewer waits for completion before acknowledging. The pace is measured, with 1–2 second gaps between turns visible in the frame sequence.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M3",
+        "observation_id": "active_2",
+        "modality": "audio_video",
+        "retrieval_window": [
+          60.0,
+          80.0
+        ],
+        "content": "Self-report (communication habits): The interviewee states he owns a mobile phone and usually calls friends when he wants to talk; he texts only when something is urgent and he cannot talk on the phone, concluding that he 'usually call[s] them.' This is a multi-clause, conditional description involving two hypothetical branches ('if I want to talk to them,' 'if it's something urgent and I can't talk on the phone').\nSelf-report (preference): When asked whether he prefers phone or email, he answers immediately and emphatically, 'Oh, definitely phone,' beginning an explanation ('just because I prefer talking to them because I can hear their…') that continues past the 20 s mark.\nObserved delivery – open-ended turn: The first, more complex answer contains a planning filler ('um') before the urgent-texting clause and is framed by discourse markers ('Yeah, so…', 'But yeah…'), consistent with on-the-fly construction of a conditional narrative rather than retrieval of a fixed preference.\nObserved delivery – closed binary turn: The phone-vs-email answer launches with an assertive 'Oh, definitely phone' and no initial filler, suggesting lower hesitation when the task reduces to selecting between two given options.\nObserved gesture and posture: During the explanatory (open-ended) answer the interviewee uses small hand gestures over the desk to structure his clauses, then clasps his hands while listening to the next question; his gaze stays directed toward the interviewer, indicating engagement rather than avoidance.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M4",
+        "observation_id": "active_3",
+        "modality": "audio_video",
+        "retrieval_window": [
+          80.0,
+          100.0
+        ],
+        "content": "Self-report (affective framing cluster, 0–14 s): Across the phone-vs-email explanation the interviewee consistently grounds his preference in sensory-emotional access rather than functional utility—'I can hear their voice,' 'get like a feeling for how they're feeling,' 'doesn't feel as personal to me.' No efficiency, speed, or convenience argument appears; the entire rationale is built on perceived emotional resonance, suggesting the framing is the organizing principle of his answer rather than an incidental aside.\nObserved examiner intervention (≈14–17 s): The camera cuts to a second speaker (older male, glasses, light-blue button-down) who delivers a single four-word follow-up, 'Why is that?', in a flat, minimally inflected tone with no visible brow-furrow or leaning-forward challenge posture. The question functions as a neutral elicitation prompt rather than a confrontational demand for justification.\nObserved response latency and hedge (≈15–20 s): After the examiner's 'Why is that?' the interviewee pauses roughly 0.5–1 s before beginning 'I really think it's just because you can't see—', a construction that (a) opens with an epistemic hedge ('I really think') rather than a direct restatement, and (b) is syntactically incomplete at the 20 s boundary. The hedge plus restart pattern is consistent with on-the-spot formulation of a reason he had not previously articulated, as opposed to reciting a prepared justification.\nObserved gesture continuity: During the 0–14 s monologue the interviewee alternates between open-palm explanatory gestures and clasped-hands listening posture; at the moment the examiner speaks (15–17 s) the shot is on the examiner, and when the camera returns (17–20 s) the interviewee resumes small right-hand movements while delivering the hedged response, showing no visible withdrawal or defensive body shift.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M5",
+        "observation_id": "active_4",
+        "modality": "audio_video",
+        "retrieval_window": [
+          100.0,
+          120.0
+        ],
+        "content": "Self-report – abstract evaluation (0–5 s): Justin states that with mobile phones 'you can't see their face, um, it's definitely just not the same,' then trails off with 'I think I'd probably say…' Delivery is low-energy: voice stays in a narrow pitch band, hands remain clasped on the desk, gaze drifts slightly downward. No illustrative gesture accompanies the comparative judgment, and the utterance ends mid-thought without a concrete referent.\nExaminer intervention – directive reframing (5–10 s): The camera cuts to the examiner (older male, glasses, light-blue button-down) who first acknowledges ('I see') then pivots to a closed, negatively-framed prompt: 'so is there anything you dislike about mobile phones?' The question narrows the topic from a general preference comparison to a single evaluative axis (dislike), functioning as a scaffold that supplies the category Justin must fill.\nResponse initiation – rapid affirmation plus planning hedge (10–14 s): Upon the cut back, Justin immediately answers 'Yeah, yeah, it's definitely…'—a doubled affirmation delivered in under one second with rising intonation, signalling comfort with the agreement itself. This is followed by a ~0.8 s pause and the discourse marker 'um, first off,' indicating on-the-spot structuring of a multi-point response. The latency from the examiner's last word to Justin's first content word is ≈0.5 s (very short), but the latency to the first *substantive* clause is ≈3 s (the 'first off' marker plus pause).\nConcrete narrative – animated delivery (14–20 s): Once the scenario is launched ('I'm in public, I'm on the train, you can hear someone else on their phone talking…'), Justin's physical engagement increases markedly: right hand lifts off the desk in a pointing/open-palm gesture toward an imagined interlocutor, torso leans slightly forward, pitch range widens, and tempo quickens. The shift from abstract 'not the same' to a sensory-rich public-transit vignette coincides with the shift from stillness to gesture, replicating the asymmetry noted in the earlier phone-vs-email exchange (M4).",
+        "content_status": "structured"
+      },
+      {
+        "id": "M6",
+        "observation_id": "active_5",
+        "modality": "audio_video",
+        "retrieval_window": [
+          120.0,
+          140.0
+        ],
+        "content": "Self-report with embedded hedge (0–10 s): Justin asserts that speakerphone use in public is 'the most annoying thing ever,' placing emphatic stress on 'most' and 'ever' with elevated pitch and volume. He immediately softens the superlative with the solidarity marker 'I'll tell you that,' then seeks validation via 'you know what I mean?' The sequence culminates in 'It's… I don't know. It's true.'—a hedge ('I don't know') delivered with falling intonation, reduced volume, and a brief downward glance, sandwiched between two affirmations. This structure suggests the hedge is not genuine epistemic uncertainty but a discourse-management device that momentarily deflates the extremity of the claim before reasserting it.\nVisible behavior during the assertion–hedge sequence (0–10 s): Justin's hands rest on the desk for most of the utterance, with a single right-hand open-palm gesture (fingers spread, moving outward) at approximately 7–8 s coinciding with 'you hear their whole conversation.' Around 5 s, his expression shifts to a slight smile/laugh during 'I'll tell you that,' indicating meta-awareness of the complaint's intensity. At 9–10 s, during 'I don't know,' his gaze drops briefly to the desk before returning upward for 'It's true,' mirroring the prosodic dip-and-recover pattern in his voice.\nExaminer validation and abrupt topic pivot (10–15 s): The camera cuts to the examiner (older male, glasses, light-blue button-down, holding papers) at ~11 s. He responds with a single-clause validation—'It's true'—accompanied by a small nod, then immediately pivots with the directive 'Now, let's talk about traveling.' The validation resolves Justin's hedge externally (the examiner agrees), and the pivot is top-down rather than responsive, meaning Justin never gets to elaborate on or retract the 'I don't know.' The transition from the speakerphone complaint to the traveling topic is compressed into roughly two seconds with no bridging language.\nNew-topic initiation and truncated response (15–20 s): The examiner poses a closed yes/no question—'Do you enjoy traveling to different places?'—at ~18–19 s. Justin's audible contributions in this window are limited to 'Sure' (~16 s, acknowledging the topic shift) and 'Oh' (~19–20 s), the latter carrying a rising-falling contour that may signal the onset of a narrative or a moment of recall. The clip ends before any substantive content about traveling is delivered, leaving the assert-then-hedge pattern untested on this new topic.\nPattern summary within this window: Exactly one full assert→hedge→reassert cycle is observable (superlative complaint → 'I don't know' → 'It's true'). The hedge occupies ~1 s of speech and is prosodically marked (lower volume, falling pitch, downward gaze) relative to the surrounding assertions. No second instance appears in the remaining seconds because the examiner's pivot truncates the exchange. To determine whether this is a habitual pattern or topic-specific, comparison with Justin's responses on other topics (e.g., traveling) is needed.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M7",
+        "observation_id": "active_6",
+        "modality": "audio_video",
+        "retrieval_window": [
+          140.0,
+          160.0
+        ],
+        "content": "Self-report of travel enthusiasm with embedded triple-hedge (0–10 s): Justin opens with an energetic, high-pitch declaration—'Oh absolutely, I love traveling to new countries'—then constructs a vivid concrete scenario: 'If you probably took a map out right now of the UK, I've probably visited almost every place here. You could point out a spot, I've probably been there.' The word 'probably' appears three times in rapid succession, functioning as epistemic softeners within an otherwise confident assertion. Unlike the M6 pattern (superlative → external hedge 'I don't know' → reassertion), here the hedges are woven into the claim itself, suggesting the speaker modulates certainty at the propositional level rather than as a post-hoc discourse-management device. The concrete imagery (map, pointing at a spot) indicates narrative comfort and imagination-driven engagement.\nConstraint explanation with solidarity markers and fillers (10–18 s): Justin attributes limited travel to practical barriers: 'The only reason I don't travel as much as I would like is just because I don't have as much time and money, you know, as I feel like I would need to do that.' The phrase 'you know' serves the same solidarity/validation-seeking function observed in M6 ('you know what I mean?'). Two 'um' fillers bracket this segment, and the speech rate visibly slows compared to the opening declaration. The construction 'as much as I would like' introduces a counterfactual desire, softening the complaint about constraints.\nClosing reassertion of enthusiasm (18–20 s): After the constraint discussion, Justin returns to the initial affect with 'Um, but I love it'—a brief, affirmative coda that mirrors the M6 pattern of reasserting positive stance after a qualifying or hedging passage. The 'but' signals contrast with the preceding limitation, and the utterance is short, suggesting the speaker wants to close the topic on a high note rather than elaborate further.\nVisible behavior across the segment (0–20 s): Justin remains seated at the desk throughout. During the concrete map scenario (~5–10 s), his hands make small finger-movements on the desk surface, and his facial expression shifts to a slight smile/engaged look around 9–10 s, consistent with the vividness of the imagined scenario. During the constraint explanation (~11–16 s), his posture becomes slightly more contained, gaze shifts subtly, and hand movement decreases—matching the slower, more reflective vocal delivery. At 17–19 s, as he returns to 'but I love it,' his expression reopens with a brief nod-like head movement. The IELTS tester watermark and subtitle overlay confirm this is a recorded speaking assessment.\nComparison with M6 pattern: In M6, the assert→hedge→reassert cycle involved a superlative complaint ('most annoying thing ever') followed by an explicit epistemic hedge ('I don't know') with falling intonation and downward gaze, then reassertion ('It's true'). Here, the structure is analogous but the hedge mechanism differs: instead of a standalone 'I don't know,' Justin uses repeated 'probably' modifiers embedded in the claim, and the reassertion ('but I love it') is shorter and less prosodically marked. The 'you know' solidarity marker recurs in both segments, suggesting it is a habitual discourse feature rather than topic-specific. The topic pivot from M6 (speakerphone) to traveling did not produce hesitation—Justin's 'Oh absolutely' is immediate and energetic, indicating the new topic is high-interest and does not trigger the guardedness seen at the start of M6.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M8",
+        "observation_id": "active_7",
+        "modality": "audio_video",
+        "retrieval_window": [
+          160.0,
+          180.0
+        ],
+        "content": "Self-report of social rewards with vague summarizer (0–4 s): The interviewee closes a prior answer with 'I get to meet new people, see new faces, things like that, you know.' The phrase 'things like that' collapses specific benefits into an undifferentiated cluster, and the terminal 'you know' functions as a validation-seeking tag rather than an informational addition. Vocal delivery is low-energy, trailing in pitch on 'you know,' with no prosodic peak on any listed item—consistent with the M7 observation that 'you know' is a habitual solidarity marker, but here deployed to exit a topic rather than to build engagement.\nExaminer prompt for factual recall (4–8 s): 'So tell me, what places have you been in the UK?' is a closed, low-cognitive-load question requiring simple enumeration. The examiner holds papers and maintains neutral posture, signaling a routine transition rather than a probe.\nMechanical listing with retrieval filler and finger-counting (8–14 s): Response begins with 'Uh,' indicating a brief retrieval pause, then enumerates 'London, Birmingham, Manchester with my friends during the holidays.' Visually, the interviewee counts cities on his fingers—a structuring gesture that organizes output but adds no expressive or emphatic content. Prosodically, each city name receives near-equal stress with no peak; the pace is metronomic. The qualifier 'with my friends during the holidays' is appended flatly, supplying context without emotional coloring. No smile, no lean-forward, no gaze shift toward the examiner during the list.\nDouble-hedged preference with no elaboration (15–20 s): 'London Bridge is probably my favorite, and then probably next would be the Prehistoric Museum.' The adverb 'probably' appears twice within a single compound sentence, systematically deflating both the primary and secondary preference. There is no superlative intensifier, no causal clause explaining WHY London Bridge is favored, and no affective marker (laughter, widened eyes, hand flourish). The 'and then probably next' construction grammatically subordinates the second choice as an afterthought. Facial expression remains neutral-to-slightly-downcast; hands return to resting position on the desk after the finger-count. The overall delivery contrasts sharply with M7's 'Oh absolutely, I love traveling'—same speaker, same recording session, but opposite prosodic register on a comparably simple preference question.\nSummary of behavioral pattern in this window: Across all four sub-segments, the interviewee produces zero expressive gestures beyond functional finger-counting, maintains a fixed seated posture with minimal head movement, and delivers all content in a narrow pitch range with falling or level intonation. The two 'probably' tokens and one 'uh' filler constitute the entire hedge/filler inventory for 20 seconds of speech. Compared to M7 (same speaker, adjacent topic domain of travel/UK), the animation differential is stark: M7 featured high-pitch exclamations, vivid imagery, a slight smile, and a reassertion nod; this window features none of those markers despite the examiner's question being equally low-stakes and equally within the speaker's experience.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M9",
+        "observation_id": "active_8",
+        "modality": "audio_video",
+        "retrieval_window": [
+          180.0,
+          200.0
+        ],
+        "content": "Examiner's formulaic topic transition (4–9 s): 'Excellent. Now moving on to talking about your hometown in France.' is delivered in a flat, procedural register while the examiner shuffles papers. The word 'Excellent' functions as a closure marker for the prior UK-places sequence (M8) rather than genuine evaluative feedback. Visually, the examiner's gaze drops to his notes mid-sentence, confirming the transition is script-driven rather than responsive to the interviewee's content.\nFirst personal-topic affirmation with prosodic spike (13–14 s): In response to 'Is your hometown a good place for young people to live?', the interviewee produces 'Oh yeah, absolutely.' Acoustically, 'Oh yeah' carries a sharp rising pitch excursion (approximately a minor-third interval), and 'absolutely' receives maximal stress with lengthened vowel duration (~30% longer than surrounding syllables) and elevated intensity. Visually, at the 13 s frame his torso leans marginally forward and his mouth opens wider than during the M8 city-listing sequence. This is a marked contrast to the metronomic, narrow-pitch delivery observed in M8 for comparable factual content.\nMinimal justification probe (15–16 s): The examiner's 'And why?' is a two-word, low-cognitive-load follow-up that neither reframes nor challenges the affirmation. His posture remains static; he does not look up from his papers until after the question is fully uttered. The brevity signals that the examiner expects the interviewee to self-generate reasoning rather than being led.\nSecond affirmation with scope-narrowing and causal-clause initiation (17–19 s): 'Oh yeah, children, absolutely, uh just because there's a bunch of open fields and parks for…' The insertion of 'children' between 'Oh yeah' and 'absolutely' narrows the referent from the examiner's 'young people' to a more concrete, emotionally resonant category. The second 'absolutely' mirrors the first in pitch height and duration, confirming the prosodic pattern is reproducible rather than a one-off. Critically, the interviewee DOES launch a 'because' clause immediately after the affirmation, though the 'uh' filler before 'just because' indicates on-the-fly formulation. The explanation ('open fields and parks') is concrete and visual, contrasting with the abstract 'things like that' hedging in M8. However, the clip truncates mid-sentence at 'parks for…', leaving the causal chain incomplete within this window.\nBehavioral contrast summary for this 20 s window: Compared to M8's zero-expressive-gesture, narrow-pitch, double-'probably' delivery on UK preferences, this window shows two high-energy affirmations with clear pitch excursions, a forward lean, and an initiated causal explanation. The examiner's questions here are equally low-stakes and personal, yet the interviewee's register shifts dramatically—suggesting the animation differential is topic-gated (hometown/children vs. tourist cities) rather than a global speaking style.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M10",
+        "observation_id": "active_9",
+        "modality": "audio_video",
+        "retrieval_window": [
+          200.0,
+          220.0
+        ],
+        "content": "Content architecture (0–16 s, self-report): The interviewee constructs a two-tier comparison—children benefit from 'open fields and parks,' teenagers lack 'movie theaters and gyms and things like that and cafes'—then circles back with a double affirmation ('definitely children, yes, younger children definitely'). This is markedly more elaborated than a bare yes/no, containing category-specific examples, a concessive hedge ('I'd probably say not so much'), and a corrective narrowing ('younger children'). The structure implies active on-line reasoning rather than recitation.\nDisfluency clustering at idea-boundaries (audio, 0–16 s): Three fillers and one repetition appear, each at a transition node: 'uh' precedes the causal clause ('just because there's a bunch of open fields'); 'and and' occurs mid-list when shifting from movie theaters to gyms; 'um' gates the return to the children conclusion. The hedge 'I'd probably say not so much' functions as a fourth micro-disruption. Total: ~4 disfluent events in 16 s of speech (≈0.25/s). Crucially, none fall INSIDE a single illustrative phrase—they all mark the seams between conceptual units, suggesting planning load at structural joints rather than lexical retrieval failure.\nVisual restraint despite content richness (video, 0–16 s): Across all sampled frames the interviewee's hands remain clasped or resting flat on the desk. No pointing, counting-on-fingers, or open-palm gesture accompanies the list of facilities. Gaze trajectory: 0–2 s slightly left-of-center (addressing examiner); 3–6 s brief upward flick and faint smile when introducing the teenager contrast; 7–13 s returns to a downward/neutral cast during the facility list; 14–16 s eyes lift marginally for the closing 'younger children definitely.' The single micro-expression (3–6 s smile) is the only visible affective marker in 16 s, and it coincides with the LESS certain claim ('not so much'), not the confident one.\nProsodic gradient within the turn (inferred from text emphasis + M9 acoustic notes): The evaluative anchors ('absolutely' ×2, 'definitely' ×2, 'yes') appear to carry the pitch excursion and duration lengthening documented in M9, while the descriptive middle ('open fields and parks… movie theaters and gyms… cafes') is delivered in a flatter, more metronomic register. This creates an internal contrast: high-arousal verdicts bracketing low-arousal evidence. The interviewee sounds most 'alive' when judging and most 'automated' when explaining.\nExaminer handoff (16–20 s, video): Camera cuts to the examiner at ~17 s. He reads the next prompt ('And your hometown, has it changed much over the years?') from his paper without looking up, maintaining the script-driven posture noted in M9. The interviewee's prior turn is thus treated as complete; no follow-up probe, no back-channel, no facial reaction is visible from the examiner. This absence of responsive feedback means the interviewee received no social reinforcement for his elaboration, which may explain why the next turn (unread, 20+ s) could revert to shorter form.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M11",
+        "observation_id": "active_10",
+        "modality": "audio_video",
+        "retrieval_window": [
+          220.0,
+          240.0
+        ],
+        "content": "Turn-end trailing filler (audio, ~18–20 s): The interviewee's utterance concludes with '…which are still standing uh to'—a syntactically incomplete tail where 'uh' replaces what would be a locative or temporal complement ('to this day' was already used earlier, suggesting a retrieval loop). Unlike the M10 pattern where fillers gated structural seams BETWEEN conceptual units, this 'uh' falls AFTER the last content word, leaving the clause open-ended. This placement is consistent with either (a) a genuine knowledge ceiling—the speaker has exhausted retrievable facts about Dunkirk's physical remnants and cannot generate a further example—or (b) self-censorship/anxiety-driven truncation, where the speaker aborts elaboration to avoid committing to a claim he cannot support. The audio alone cannot disambiguate; prosodic contour on 'standing' (falling vs. level vs. rising) would be diagnostic.\nProsodic asymmetry within the turn (audio, 0–20 s): 'Yeah' at ~4 s carries a mild pitch lift and slight lengthening, functioning as a personal-affirmation marker analogous to the 'absolutely/definitely' anchors catalogued in M10. However, the entire subsequent descriptive body—'Dunkirk is a very historic town, especially after World War II … a lot of the town was left in ruins … old churches and shipwrecks and things like that which are still standing'—is delivered in a notably flat, near-monotone register with minimal duration variation across content words. The contrast is starker than in M10: there, the low-arousal evidence was bracketed by TWO high-arousal verdicts (opening and closing); here, the single opening 'Yeah' is followed by ~14 s of unmodulated description that simply evaporates into the trailing 'uh.' This asymmetry (one small lift, then sustained flatness ending in incompleteness) is more consistent with a content-limited delivery than with the anxiety-suppression hypothesis, because an anxious speaker would be expected to show tension-markers (creaky voice, accelerated rate, abrupt cutoff) rather than a gradual fade into a filler.\nFiller inventory and distribution (audio, 0–20 s): Three disfluent tokens appear—'Hmm' (~1 s, pre-turn hesitation), 'Um' (~8 s, gating the causal 'just because' clause), and 'uh' (~19 s, trailing at turn-end). The first two mirror the M10 seam-marking pattern (planning load at structural joints). The third is categorically different: it occupies the post-content position, suggesting the speaker searched for one more exemplar and failed. Total disfluency density ≈ 0.15/s, lower than M10's ≈ 0.25/s, indicating less online reasoning load—consistent with recalling a small, fixed set of facts (ruins, churches, shipwrecks) rather than constructing a novel comparison.\nVisual restraint and absence of affective markers (video, 0–20 s): Across all sampled frames the interviewee's hands remain clasped or resting flat on the desk; no pointing, counting, or open-palm gesture accompanies the enumeration of historical features. Gaze is predominantly downward or neutrally forward with no upward flick, no micro-smile, and no brow raise. In M10, a brief smile at 3–6 s coincided with the LESS certain claim; here, the equivalent uncertainty marker (the trailing 'uh') produces no visible facial response whatsoever. The face remains static through the entire descriptive passage, reinforcing the impression of low engagement rather than active suppression (suppression typically manifests as tightened jaw, reduced blink rate, or rigid posture changes, none of which are visible).",
+        "content_status": "structured"
+      },
+      {
+        "id": "M12",
+        "observation_id": "active_11",
+        "modality": "audio_video",
+        "retrieval_window": [
+          240.0,
+          260.0
+        ],
+        "content": "Intra-clip filler-density asymmetry (audio, 0–20 s): The personal-observation segment (0–8 s: 'it's pretty cool, but I would say that it's definitely industrialized a lot. There's a lot of modern houses now, you know, more factories, things like that') contains exactly ONE discourse-marker filler ('you know') across ~8 s (≈0.125/s), bracketed by two evaluative intensifiers ('pretty cool', 'definitely') that signal personal judgment rather than retrieval effort. The third-party-description segment (13–20 s: 'Yeah, so a lot of them are farmers, um, they'll grow, you know, a lot of vegetables over the summer, potatoes…') contains THREE disfluent tokens in ~7 s (≈0.43/s): the compound opener 'Yeah, so' (planning/turn-initial framing), mid-clause 'um' (gating the shift from identity to activity), and 'you know' (pre-noun-phrase hedge). The density is roughly 3.4× higher in the other-directed description. This within-clip contrast is consistent with the hypothesis that describing others' occupational routines imposes greater online construction load than reporting one's own perceptual impressions, because the former requires enumerating a category ('farmers') and then generating exemplars ('vegetables…potatoes') without a personal-experience anchor.\nProsodic contour and arousal markers (audio, 0–20 s): In the 0–8 s personal-observation stretch, 'pretty cool' carries a slight pitch rise and 'definitely' receives duration-lengthened stress, producing two micro-peaks of affective engagement within an otherwise level delivery. In the 13–20 s farming description, 'Yeah' at turn onset has a mild lift (comparable to M11's 'Yeah' at ~4 s), but the subsequent content—'a lot of them are farmers…they'll grow…a lot of vegetables over the summer'—is delivered in a sustained near-monotone with minimal inter-word duration variation. No lexical item in the farming description receives the kind of emphatic stress that 'definitely' received earlier. The prosodic profile thus mirrors the filler pattern: personal-evaluation language permits brief affective spikes; third-party enumeration suppresses them, yielding a flatter, more effortful-sounding delivery.\nVisual behavior during third-party description (video, 13–20 s): The interviewee's hands remain clasped/resting on the desk throughout the farming answer; no pointing, counting, or open-palm gesture accompanies the enumeration of crops. Gaze is directed slightly downward-forward with no upward flick or micro-smile. The facial musculature appears relaxed but static—no brow raise on 'farmers', no lip compression on 'um'. This matches the M11 pattern (static face during descriptive passage) and contrasts with the 0–8 s segment where 'pretty cool' coincides with a faint half-smile and a small head-nod, suggesting that even minimal affective content in self-report produces visible correlates absent in other-report.\nStructural role of 'Yeah, so' opener (audio, ~13 s): Unlike a bare 'Yeah' (which M11 identified as a personal-affirmation marker), the compound 'Yeah, so' functions as a discourse-planning frame: 'Yeah' acknowledges the interviewer's question, while 'so' signals the speaker is about to organize a multi-part answer (category → activity → exemplars). This two-part opener is absent from the 0–8 s segment, which launches directly into evaluation ('it's pretty cool'). The presence of this planning scaffold in the third-party description but not in the personal observation supports the content-type-driven effort hypothesis: constructing a taxonomic answer ('a lot of them are X, they do Y, like Z') requires explicit structural priming, whereas reporting a sensory impression ('it's industrialized') does not.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M13",
+        "observation_id": "active_12",
+        "modality": "audio_video",
+        "retrieval_window": [
+          260.0,
+          268.678005
+        ],
+        "content": "Filler-density resolution in the completion phase (audio, clip 0–7 s ≈ full-recording 20–27 s): The single 'um' immediately after 'potatoes' (~0.5 s) is the ONLY disfluent token across the remaining ~6.5 s of speech ('and they'll have farm stands and sell off what they grew and things like that so a lot of them are farmers'). This yields ≈0.15/s, a 2.8× reduction from the 0.43/s measured in the 13–20 s planning stretch (M12). The drop indicates that the initial taxonomic-construction load (naming the category 'farmers', selecting exemplars) resolved once the speaker entered the enumerative tail; the completion phase required no further gating fillers.\nCircular, low-information closing formula (audio, ~5.5–7 s): The sequence 'and things like that so a lot of them are farmers' performs two redundant moves: (a) 'things like that' is a vague categorizer that substitutes for a final concrete exemplar, and (b) 'so a lot of them are farmers' verbatim restates the opening claim at 13 s ('a lot of them are farmers'). No new evaluative content, no pitch rise, no duration-lengthened stress marks the boundary. The prosodic contour across this closing is level-to-slightly-falling, identical in register to the preceding enumeration—there is no 'wrapping-up' intonation gesture (e.g., final lowering, lengthened vowel on the last word, or pause-extension before 'so').\nZero reactive behavior to examiner transition (audio+video, clip 7–8.678 s): The examiner's signal 'let's see. Now moving on to the second part of the speaking test' begins at ~6.8 s. Before the camera cuts to the examiner at 7 s, the interviewee produces no audible acknowledgment (no 'mm-hm', no breath-shift, no 'okay'), no visible nod, no gaze lift, and no postural adjustment. Hands remain clasped on the desk; facial musculature is unchanged from the static configuration observed during the farming answer. The interviewee's channel is effectively closed before the examiner's sentence completes.\nVisual monotony across the full completion stretch (video, 0–7 s): Despite naming three distinct activities ('farm stands', 'sell off what they grew', implied crop-sale), the interviewee's hands never separate from their clasped position, no index-finger count or open-palm gesture accompanies the list, and the head remains in a fixed slight-forward tilt with gaze directed downward-forward. This matches the M12 observation for 13–20 s and extends it: the entire 13–27 s farming answer is gesturally inert, suggesting the enumeration is retrieved as a pre-formed chunk rather than constructed in real time with visual scaffolding.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M14",
+        "observation_id": "active_13",
+        "modality": "text",
+        "retrieval_window": [
+          0.0,
+          268.678005
+        ],
+        "content": "TEXTUAL STRUCTURAL ANALYSIS — Clause-level information gain across all 11 Part 1 answers (full transcript, 0–268.678 s, text modality):\n\nOf the 11 Part 1 responses, 6 contain some form of circular restatement or null-information closing clause: (1) communication habits — 'I usually call them' verbatim restates the earlier 'I just will call them'; (2) why-is-that follow-up — 'it's definitely just not the same' abstractly restates the phone-preference claim from the prior turn, then trails into 'I think I'd probably say' with zero new content; (3) traveling — 'but I love it' restates the opening 'I love traveling to new countries' after the constraint passage; (4) hometown-for-young-people — 'definitely children yes, younger children definitely' restates the opening narrowing twice in rapid succession; (5) hometown-changed — 'which are still standing uh to this day' echoes 'you can still see now to this day' from two clauses earlier; (6) farmers/jobs — 'so a lot of them are farmers' is a VERBATIM repetition of the opening 'a lot of them are farmers' with only 'things like that' (a null vague categorizer) separating them.\n\nThe remaining 5 answers (origin, student status, phone-vs-email preference, speakerphone dislike, UK places list) show monotonic information gain: each successive clause adds a new referent, evaluation, or elaboration with no backward restatement.\n\nGRADIENT IDENTIFICATION: The farmers answer is not an isolated anomaly but the most degenerate endpoint of a measurable gradient. In answers 1–5 above, the restatement serves as a SUMMARY after intervening new content (e.g., 'but I love it' follows the time/money constraint; 'definitely children' follows the teenager contrast). In the farmers answer, the restatement follows ONLY 'things like that' — a zero-information placeholder — making it the sole instance where the closing clause adds literally nothing beyond the opening. This pattern tracks topic familiarity: the five non-circular answers all concern personally experienced or strongly held content (own origin, own degree, own preference, own irritation, own visits). The six circular answers include progressively more third-party or low-personal-anchor material (abstract 'why', imagined map, other people's jobs). The farmers question ('what sort of jobs do the people in your hometown do?') requires describing OTHERS' routines with no experiential anchor, and the speaker's only available schema is the single taxonomic label 'farmers', which he opens with and closes with.\n\nCONCLUSION on Goal 1 (knowledge ceiling vs. time-filling): The evidence favors a genuine knowledge ceiling modulated by a mild structural habit. The speaker HAS additional information to offer within the farmers category (he generates vegetables, potatoes, farm stands, selling — three concrete activities), so he is not entirely blank. However, once those exemplars are exhausted, he has no further dimension to explore (no personal interaction with farmers, no evaluation of the occupation, no contrast with other jobs), and his default closing move — observed across 6/11 answers — is to restate the topic label. The farmers answer simply has the SHORTEST distance between last-new-content and the restatement (one vague categorizer vs. a full contrasting clause in other instances), making the circularity maximally visible. This is not a deliberate time-filling strategy (there is no pause-extension, no false-start, no 'let me think' marker before the restatement; the 'so' connector flows directly from 'things like that'), but the speaker's habitual schema-closure when elaboration resources run out.\nTEXTUAL STRUCTURAL ANALYSIS — Hedge-token distribution by epistemic category across all Part 1 answers:\n\nFACTUAL/VERIFIABLE claims (origin, enrollment, cities visited, historical events): ZERO epistemic hedges. 'I'm from Dunkirk, it's in France, it's on the English channel.' 'I'm a student for the Bachelor of Science in computers.' 'I've been to London, Birmingham, Manchester.' 'A lot of the town was left in ruins after the war.' All stated as bare declaratives with no 'probably', 'I think', 'I'd say', or 'you know' softeners.\n\nSUBJECTIVE/EXPERIENTIAL preferences (phone vs. email, favorite UK spots, hometown suitability): HEDGES PRESENT. 'In my opinion', 'I think I'd probably say', 'probably my favorite', 'probably next would be', 'I'd probably say not so much'. The hedge density is 1–3 tokens per subjective claim.\n\nSTRONG CONVICTION markers (phone preference, children-in-hometown, travel enthusiasm): ANTI-HEDGES/INTENSIFIERS. 'Oh definitely phone' (no filler, immediate onset per M3). 'Oh yeah absolutely' ×2 (M9: sharp pitch excursion, 30% vowel lengthening). 'Oh absolutely I love traveling' (M7: high-pitch, energetic). These are NOT hedged; they carry maximum epistemic commitment.\n\nTHIRD-PARTY descriptions (farmers, teenagers' facilities): VAGUE CATEGORIZERS rather than epistemic hedges. 'Things like that' appears 4 times across the transcript (teenager facilities, hometown changes, farmer products, travel benefits). These function as enumeration-closure devices, not uncertainty markers. The farmers answer contains 'you know' (solidarity) and 'things like that' (vague categorizer) but NO 'probably' or 'I think'.\n\nEXCEPTION — the traveling/UK-map answer: 'If you probably took a map out… I've probably visited almost every place… you could point out a spot, I've probably been there.' Three 'probably' tokens applied to what should be factual recall (which places he has visited). This is the one instance where the fact/opinion split BLURS: a quasi-verifiable claim ('I've been to these places') receives the same hedging treatment as a subjective preference. Two interpretations: (a) genuine memory uncertainty at the scale of 'almost every place' (he cannot verify exhaustive coverage), or (b) the hedge protects against the challengeability of an absolute-sounding claim ('every place') by softening it to 'probably every place'. Given that his specific city list (London, Birmingham, Manchester) in the adjacent answer is unhedged, interpretation (a) is more parsimonious: he hedges the GENERALIZATION but not the SPECIFICS.\n\nCONCLUSION on Goal 2 (calibrated monitoring vs. generalized anxiety-protection): The pattern is MOSTLY consistent with calibrated epistemic self-monitoring. Facts are plain; opinions are hedged; strong convictions are intensified. The 'definitely phone' preference is NOT provisional — it launches with zero filler and maximum assertiveness (M3), and the 'absolutely' affirmations carry genuine prosodic weight (M9: pitch excursion, duration lengthening, forward lean). These are not performative eagerness masking low conviction; they are the speaker's highest-certainty utterances.\n\nHowever, the pattern is NOT perfectly binary. The triple-'probably' in the map scenario shows that when a factual claim is scaled to an absolute ('almost every place'), the speaker applies opinion-level hedging to protect against overclaim. Additionally, 'things like that' (4 occurrences) functions as a universal enumeration-closer regardless of epistemic category, suggesting a discourse-management habit rather than a calibrated uncertainty signal. The hedge system is therefore: (1) epistemic hedges ('probably', 'I think') track genuine uncertainty gradients — absent on verified facts, present on subjective evaluations, present on absolute-scale generalizations; (2) solidarity/vague markers ('you know', 'things like that') are habitual discourse features independent of epistemic status; (3) intensifiers ('definitely', 'absolutely') mark the speaker's highest-conviction zone and are NOT undercut by surrounding hedges.\n\nLIMITATION: The recording contains ONLY Part 1 (the examiner announces 'moving on to the second part' at ~268 s, the clip's final moment). Part 2 and Part 3 content is absent from this source, so the question of whether the fact/opinion split 'collapses under sustained questioning pressure' cannot be tested from this transcript alone. Within Part 1, the split holds consistently across 11 answers with only the map-generalization exception noted above.\nDISTINCTION BETWEEN SELF-REPORT AND OBSERVED BEHAVIOR IN THE FARMERS ANSWER (full-recording ~240–268 s, text + prior audio_video M12/M13):\n\nSELF-REPORT content: The interviewee claims that 'a lot of them are farmers' in his hometown, that they 'grow a lot of vegetables over the summer, potatoes', and that they 'have farm stands and sell off what they grew'. These are third-party occupational descriptions presented as factual observation. No personal experience, evaluation, or emotional relationship to the farmers is volunteered. The report is purely taxonomic (category → activity → exemplar → sale mechanism) with no narrative, anecdote, or affective commentary.\n\nOBSERVED BEHAVIOR (from M12/M13 audio_video, corroborated by text structure): (1) Filler density of 0.43/s in the planning phase (13–20 s of the answer) vs. 0.15/s in the completion phase (20–27 s), indicating the taxonomic construction was effortful but the enumerative tail was pre-formed. (2) Zero gestures throughout: hands clasped, no counting, no open-palm, no pointing — unlike the M5 speakerphone vignette where gesture animated the narrative. (3) Prosodic flatness: no lexical item receives emphatic stress; the entire answer is near-monotone except for the mild 'Yeah' lift at onset. (4) The closing 'so a lot of them are farmers' is delivered at the SAME pitch and tempo as the opening, with no wrapping-up intonation gesture, confirming it is a structural echo rather than a deliberate summary. (5) No reactive behavior to the examiner's transition signal: no nod, no 'mm-hm', no gaze lift, no postural shift (M13).\n\nThe self-report is thin in CONTENT (one category, three activities, no evaluation, no personal anchor). The observed delivery is thin in FORM (no gesture, no prosodic variation, no affective marker). These two thinnesses CO-OCCUR but are analytically separable: the content ceiling (he knows farmers grow vegetables and sell at stands, but has nothing more to say about THEIR lives) drives the structural circularity, while the delivery flatness (monotone, gestureless) reflects low arousal for third-party enumeration rather than anxiety or suppression (no creaky voice, no acceleration, no abrupt cutoff — per M11's elimination of the anxiety hypothesis).\nCROSS-ANSWER COMPARISON — Animation gradient mapped to personal-experience density (all Part 1, text + M1–M13 audio_video):\n\nHIGH animation (pitch excursions, gestures, smiles, forward lean, vivid imagery): phone-vs-email preference (M3/M4: 'Oh definitely phone', hand gestures, sensory-emotional rationale), speakerphone dislike (M5/M6: train vignette, pointing gesture, 'most annoying thing ever' with elevated pitch/volume), traveling enthusiasm (M7: 'Oh absolutely', map scenario, slight smile, reassertion nod), hometown-for-children (M9/M10: 'absolutely' ×2 with 30% vowel lengthening, forward lean, initiated causal clause).\n\nLOW animation (narrow pitch, clasped hands, metronomic pace, no smile): UK city listing (M8: finger-count only, flat stress, double-'probably'), hometown history (M11: monotone description fading into trailing 'uh'), farmers/jobs (M12/M13: zero gesture, flat enumeration, circular close).\n\nMIDDLE animation (some affective spikes within otherwise level delivery): hometown industrialization (M12: 'pretty cool' with faint half-smile and head-nod, but 'definitely industrialized' is flat), teenager-facilities contrast (M10: brief upward flick and faint smile at 3–6 s coinciding with the LESS certain 'not so much' claim).\n\nThe gradient tracks PERSONAL EXPERIENCE DENSITY: answers grounded in the speaker's own sensory-emotional life (hearing voices, feeling annoyed on a train, loving travel, watching children play in parks) produce animation. Answers requiring third-party description or factual enumeration (cities visited, historical ruins, other people's occupations) produce flatness. The farmers answer sits at the LOW end because it combines third-party reference WITH low personal knowledge (he observes farmers but has no interaction, evaluation, or narrative about them). This is not a knowledge CEILING in the absolute sense (he produces three concrete activities) but a NARRATIVE-RESOURCE ceiling: he can enumerate but cannot animate, because animation in this speaker's style requires a personal-experiential anchor (sensory detail, emotional stake, imagined scenario).\nDISCOURSE-MARKER INVENTORY ACROSS ALL PART 1 ANSWERS (text, 0–268.678 s):\n\n'Yeah' as turn-initial acknowledgment: appears in 7 of 11 answers (origin, student, communication, dislike, hometown-changed, farmers, and the 'Yeah yes definitely' for dislike). Functions as a confirmation token before content delivery, consistent across topics — habitual rather than topic-specific.\n\n'You know': appears 6 times (email back-and-forth, speakerphone complaint ×2, travel constraint, hometown industrialization, farmers). Serves dual function: (a) solidarity/validation-seeking ('you know what I mean?') in high-affect contexts (M6), and (b) vague-enumeration filler ('you know, more factories') in low-affect contexts (M12). The SAME token operates differently depending on prosodic context.\n\n'Things like that': appears 4 times (teenager facilities, hometown changes, farmer products, travel benefits). Always in ENUMERATION-CLOSURE position — the last item before a topic pivot or restatement. Never mid-list. Functions as a 'list-exhaustion' marker: the speaker signals he has no further exemplars without saying 'I don't know any more'.\n\n'Probably': appears 7 times total (why-is-that ×1, traveling-map ×3, UK-preferences ×3). Distributed across subjective preferences and one quasi-factual generalization. Never appears on bare verifiable facts (origin, enrollment, specific cities).\n\n'Um/Uh/Hmm': 9 tokens total, distributed at structural seams (idea-boundaries) per M10, EXCEPT the trailing 'uh' in hometown-changed (M11) which falls POST-content, marking retrieval failure rather than planning.\n\n'Absolutely/Definitely': 8 tokens total, concentrated in HIGH-conviction zones (phone preference, children-in-hometown ×3, travel, hometown-industrialization). Never co-occurs with 'probably' in the same clause. This mutual exclusivity confirms they operate on opposite ends of the speaker's epistemic scale: 'absolutely/definitely' = maximum commitment; 'probably/I think' = calibrated uncertainty; bare declarative = factual neutrality.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M15",
+        "observation_id": "active_14",
+        "modality": "audio_video",
+        "retrieval_window": [
+          20.0,
+          40.0
+        ],
+        "content": "",
+        "content_status": "structured"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "index": 0,
+      "action": {
+        "time": [
+          0.0,
+          20.0
+        ],
+        "modality": "audio_video",
+        "goal": "Assess whether the flat vocal delivery indicates nervousness抑制, a deliberate attempt to appear composed, or simply a comfortable speaking style, by examining whether his pitch range and speech rate expand once he moves into the longer Part 2 monologue."
+      },
+      "candidate_id": "C1",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M1"
+      ],
+      "changed_ids": [
+        "M1"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 1,
+      "action": {
+        "time": [
+          40.0,
+          60.0
+        ],
+        "modality": "audio_video",
+        "goal": "Clarify if these disfluencies are symptoms of anxiety affecting speech planning or natural features of his speaking style, helping to distinguish nervousness from linguistic limitations."
+      },
+      "candidate_id": "C2",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M2"
+      ],
+      "changed_ids": [
+        "M2"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 2,
+      "action": {
+        "time": [
+          60.0,
+          80.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the hesitancy and filler use in the explanatory response reflect generalized speech anxiety or are simply the cognitive cost of constructing a multi-clause, conditional description, by comparing his prosodic fluency on open-ended elaboration tasks versus closed binary-choice tasks in later segments of the interview."
+      },
+      "candidate_id": "C3",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M3"
+      ],
+      "changed_ids": [
+        "M3"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 3,
+      "action": {
+        "time": [
+          80.0,
+          100.0
+        ],
+        "modality": "audio_video",
+        "goal": "Clarify whether the pause and hedging phrase (\"I really think\") indicate that the follow-up question triggered genuine on-the-spot reflection (suggesting comfort with being challenged) or mild discomfort with having to justify a preference he had already stated, by comparing the latency and prosodic reset here against his response times to other examiner prompts in the full interview."
+      },
+      "candidate_id": "C4",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M4"
+      ],
+      "changed_ids": [
+        "M4"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 4,
+      "action": {
+        "time": [
+          100.0,
+          120.0
+        ],
+        "modality": "audio_video",
+        "goal": "Assess whether the rapid affirmation followed by a brief planning hesitation indicates that Justin is comfortable agreeing but less practiced at organizing multi-point arguments on the fly—a possible marker of spontaneous verbal fluency limits—or whether the 'um' simply reflects natural discourse segmentation; comparing his latency-to-first-content-word across several examiner prompts in the full interview would help separate anxiety-driven stalling from normal turn-taking rhythm."
+      },
+      "candidate_id": "C5",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M5"
+      ],
+      "changed_ids": [
+        "M5"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 5,
+      "action": {
+        "time": [
+          120.0,
+          140.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether this assert-then-hedge pattern reflects genuine uncertainty about his own opinions, a social-awareness strategy to avoid seeming overly negative to the examiner, or simply a habitual discourse-closing marker; comparing the frequency and prosodic weight of post-assertion hedges across the full interview would clarify whether Justin consistently moderates his stated views or only does so on mildly contentious topics."
+      },
+      "candidate_id": "C6",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M6"
+      ],
+      "changed_ids": [
+        "M6"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 6,
+      "action": {
+        "time": [
+          140.0,
+          160.0
+        ],
+        "modality": "audio_video",
+        "goal": "Clarify whether embodied gestures emerge selectively during concrete, visualizable scenarios (indicating narrative comfort and imagination-driven engagement) versus abstract or evaluative statements, by coding every hand movement in the full interview against the semantic concreteness of the concurrent utterance."
+      },
+      "candidate_id": "C7",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M7"
+      ],
+      "changed_ids": [
+        "M7"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 7,
+      "action": {
+        "time": [
+          160.0,
+          180.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the persistent hedging and flat affect in low-stakes factual/preference contexts indicate a generalized performance anxiety that suppresses expressive range regardless of topic difficulty, or whether it reflects a genuine lack of strongly held opinions—a distinction that matters because the former would predict improvement with familiarity while the latter would not. Comparing the prosodic weight and gesture frequency here against his more animated travel-narrative segment (where he described visiting 'almost every place') would clarify whether the flatness is state-dependent or trait-like."
+      },
+      "candidate_id": "C8",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M8"
+      ],
+      "changed_ids": [
+        "M8"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 8,
+      "action": {
+        "time": [
+          180.0,
+          200.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the prosodic spike on personal-topic affirmations reflects authentic emotional investment that simply does not extend into explanatory discourse (i.e., Justin feels strongly but cannot verbalize why), or whether the 'absolutely' pattern is a low-effort conversational reflex that mimics enthusiasm without underlying conviction. Comparing the acoustic features (pitch excursion, duration, intensity) of these two 'absolutely' tokens against his earlier flat 'definitely phone' and 'yeah, yes, definitely' responses—and checking whether any later segment shows him actually completing a 'because…' clause after an affirmation—would clarify whether the energy is topic-gated or merely turn-taking autopilot."
+      },
+      "candidate_id": "C9",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M9"
+      ],
+      "changed_ids": [
+        "M9"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 9,
+      "action": {
+        "time": [
+          200.0,
+          220.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the gap between content richness (a structured, example-laden comparison) and expressive flatness (no gesture, no pitch expansion, downward gaze) indicates that Justin can reason analytically but defaults to a guarded, low-arousal delivery mode regardless of topic complexity—or whether the mild disfluencies ('uh,' 'um,' 'and and') are the sole channel through which his cognitive load leaks, meaning the flatness is a deliberate self-regulation strategy rather than genuine disengagement. Comparing the filler density and pause placement here against his earlier single-word affirmations ('definitely phone,' 'yeah, yes, definitely') would clarify whether disfluency scales with argumentative complexity or is uniformly distributed across all turns."
+      },
+      "candidate_id": "C10",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M10"
+      ],
+      "changed_ids": [
+        "M10"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 10,
+      "action": {
+        "time": [
+          220.0,
+          240.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the absence of expressive activation during factual/descriptive elaboration (as opposed to the mild prosodic lift seen on personal affirmations like 'Oh yeah, absolutely') indicates that Justin's guarded delivery mode is topic-independent—i.e., he suppresses expressiveness whenever he is not discussing his own lived experience—or whether the trailing 'uh…' reflects a genuine knowledge ceiling on the subject (he simply has no more to say), which would mean the flatness is content-limited rather than anxiety-driven. Comparing the filler placement and final-word prosody here against his earlier travel-narrative segment (where 'I love traveling' carried a slight pitch rise) would clarify whether descriptive-historical topics occupy a distinct low-engagement category in his speaking profile."
+      },
+      "candidate_id": "C11",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M11"
+      ],
+      "changed_ids": [
+        "M11"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 11,
+      "action": {
+        "time": [
+          240.0,
+          260.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the uniform flatness across both personal-observation AND third-party-description topics confirms that Justin's low-arousal delivery is a stable trait rather than a topic-dependent response, or whether describing others' activities is inherently more cognitively effortful for him (reflected in higher filler density and the 'Yeah, so' opener) compared to discussing his own preferences or experiences. Comparing the 'you know' frequency and planning-marker usage here against his earlier travel-narrative segment (140–160 s) and hometown-affirmation segment (180–200 s) would clarify whether the effort asymmetry is content-type-driven or uniformly distributed across all turns."
+      },
+      "candidate_id": "C12",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M12"
+      ],
+      "changed_ids": [
+        "M12"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 12,
+      "action": {
+        "time": [
+          260.0,
+          268.678005
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the elevated filler density (≈0.43/s) and flat prosody observed in the 13–20 s farming description persist into the completion of the exemplar list (20–28 s) or resolve into a lower-effort closing formula, which would distinguish sustained cognitive load from a transient planning spike at turn onset."
+      },
+      "candidate_id": "C13",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M13"
+      ],
+      "changed_ids": [
+        "M13"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 13,
+      "action": {
+        "time": [
+          0.0,
+          268.678005
+        ],
+        "modality": "text",
+        "goal": "Clarify whether the selective hedging pattern indicates that Justin distinguishes epistemically between verifiable facts (stated plainly) and subjective/experiential claims (softened with 'probably'), reflecting calibrated self-monitoring, or whether the hedges are a generalized anxiety-protection mechanism that he applies whenever a statement could be challenged—meaning even his 'definitely phone' preference is provisional and the 'absolutely' affirmations are performative eagerness masking low conviction. Counting hedge tokens per topic category across the full interview (including Part 2 and Part 3) would test whether the fact/opinion split holds consistently or collapses under sustained questioning pressure."
+      },
+      "candidate_id": "C14",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M14"
+      ],
+      "changed_ids": [
+        "M14"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 14,
+      "action": {
+        "time": [
+          20.0,
+          40.0
+        ],
+        "modality": "audio_video",
+        "goal": "Compare pitch range, gestural frequency, and speech rate in the earliest interview exchanges (likely yes/no or preference questions) against the travel segment to determine whether the enthusiasm and concrete-imagery gestures in 0–20 s represent a deviation from a generally restrained baseline or a consistent style."
+      },
+      "candidate_id": "C27",
+      "parent_candidate_id": "C7",
+      "new_ids": [
+        "M15"
+      ],
+      "changed_ids": [
+        "M15"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    }
+  ],
+  "semantic_review": "unreviewed",
+  "teacher_approved": false
+}

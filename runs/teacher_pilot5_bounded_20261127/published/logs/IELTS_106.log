@@ -1,0 +1,16 @@
+[Coarse] video 1/14: 0.00-20.00s, 1.0 fps
+[Coarse] video 2/14: 20.00-40.00s, 1.0 fps
+[Coarse] video 3/14: 40.00-60.00s, 1.0 fps
+[Coarse] video 4/14: 60.00-80.00s, 1.0 fps
+[Coarse] video 5/14: 80.00-100.00s, 1.0 fps
+[Coarse] video 6/14: 100.00-120.00s, 1.0 fps
+[Coarse] video 7/14: 120.00-140.00s, 1.0 fps
+[Coarse] video 8/14: 140.00-160.00s, 1.0 fps
+[Coarse] video 9/14: 160.00-180.00s, 1.0 fps
+[Coarse] video 10/14: 180.00-200.00s, 1.0 fps
+[Coarse] video 11/14: 200.00-220.00s, 1.0 fps
+[Coarse] video 12/14: 220.00-240.00s, 1.0 fps
+[Coarse] video 13/14: 240.00-260.00s, 1.0 fps
+[Coarse] video 14/14: 260.00-268.68s, 1.0 fps
+[Coarse] full audio: 4298840 samples at 16000 Hz, 14 continuous chunks
+Teacher diagnostic complete; 31 API calls; /mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_pilot5_bounded_20261127/IELTS_106

@@ -85,6 +85,8 @@ Jev 的可替换接口、概率、缓存、费用和原始响应保留。仅显�
 
 ## 验证与结果
 
+Claude 修复版 `abe7c96` 的[五样本教师 API 复测报告](runs/teacher_pilot5_bounded_20261127/published/report.json)已保存。相同完整样本均正常耗尽候选池并生成 Final，观察次数分别为 18、15、18、17、11，共 151 次 API 调用；193 有一次空字符串格式错误，经一次修正完成。[结果说明](runs/teacher_pilot5_bounded_20261127/published/README.txt)列出原始轨迹归档、可读结果和校验索引。人格语义尚未审核，未批准用于 SFT；长音频传输限制仍存在，不能因本次未触发而视作已修复。
+
 本地原生推理在每条 decision 中记录 `timing`、实际 `completion_tokens` 和 `device_map`，在 `cost.stage_timing` 汇总粗扫、Observe、修正和 Final；失败尝试也计入。`constraint_seconds` 是约束回调的墙钟耗时，包含其中的设备传输或等待，不等同于纯解析器 CPU 耗时，且已经包含在生成耗时中。配置 `profiling=true` 可额外记录同步后的首个前向（prefill）、后续前向（decode）耗时和 GPU 峰值 allocated memory；默认关闭，不在常态推理中增加 CUDA 同步。
 
 媒体切片使用版本化 `seek_v3` 缓存。主动音频复用粗扫的 `full.wav`，按同一音频流偏移换算采样位置；窗口超出音频流的部分显式记录补零数量。视频快速 seek 保留原有全局 FPS 网格及编码时间舍入，避免分数秒窗口改变帧数。`coarse_context_mode=nearby` 可只携带当前来源附近或重叠候选的 hint/goal，保留互补模态，不设置数量上限；默认仍为 `full`。两条本地对照中 nearby 降低了粗扫输入，但其中一条主动观察从 27 次增至 54 次，因此未将它作为默认提速方案。

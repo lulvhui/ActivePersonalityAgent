@@ -1,0 +1,32 @@
+[
+  {
+    "sample_id": "IELTS:138",
+    "compared_sources": 12,
+    "same_windows_modalities_and_transcripts": true,
+    "differences": []
+  },
+  {
+    "sample_id": "IELTS:106",
+    "compared_sources": 15,
+    "same_windows_modalities_and_transcripts": true,
+    "differences": []
+  },
+  {
+    "sample_id": "IELTS:193",
+    "compared_sources": 16,
+    "same_windows_modalities_and_transcripts": true,
+    "differences": []
+  },
+  {
+    "sample_id": "IELTS:183",
+    "compared_sources": 13,
+    "same_windows_modalities_and_transcripts": true,
+    "differences": []
+  },
+  {
+    "sample_id": "IELTS:176",
+    "compared_sources": 10,
+    "same_windows_modalities_and_transcripts": true,
+    "differences": []
+  }
+]

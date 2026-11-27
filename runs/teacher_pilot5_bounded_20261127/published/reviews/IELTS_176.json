@@ -1,0 +1,955 @@
+{
+  "sample_id": "IELTS:176",
+  "run_status": "complete",
+  "final_status": "generated",
+  "final": {
+    "O": {
+      "level": "low",
+      "reasoning": null
+    },
+    "C": {
+      "level": "high",
+      "reasoning": null
+    },
+    "E": {
+      "level": "low",
+      "reasoning": null
+    },
+    "A": {
+      "level": "medium",
+      "reasoning": null
+    },
+    "N": {
+      "level": "low",
+      "reasoning": null
+    }
+  },
+  "final_explanation": "Maria's openness is LOW: she reports no music-listening habit (M3), frames aesthetic preferences functionally ('boost my mood,' M4), has not explored instruments ('I haven't thought about it yet,' M5), and her creative engagement is confined to concrete sensory domains (chocolate cake, baking procedure, M7–M8). Tradition-following celebration baking (M9) reflects cultural continuity rather than novel exploration. Conscientiousness is HIGH: neat attire, zero fidgeting, upright-but-relaxed posture, and prepared seriousness in M1; stable attention and contained micro-tension in M2; efficient procedural compliance (ID handoff, calibration to examiner's protocol) in M3; organized multi-clause elaboration in M4; permission-check before elaborating under evaluative frames in M8; and sustained forward orientation with no aversion in M11. Extraversion is LOW: her default mode is reactive and maximally brief (≈4 s speaking vs examiner's 12 s, M3); she does not check the examiner's face, seek back-channel, or gesture during extended turns (M4, M6); postural stillness dominates unless a personally meaningful topic unlocks engagement (M7, M9). The exceptions are topic-specific, not a general social drive. Agreeableness is MEDIUM: she hedges ('to be honest,' 'I think'), exchanges formulaic courtesies, uses inclusive asides ('you know,' M7), checks permission before elaborating (M8), and preempts mispronunciation with justifications (M10). However, she delivers blunt negations without softening (M3), does not always defer, and maintains independent speech architecture. Neuroticism is LOW: baseline composure is strong (M1, M2, M11); disfluencies and hedging appear only under competence/evaluative framing (M5, M8) and vanish under personal framing (M7, M9), confirming they are situational rather than trait-level anxiety. No fidgeting, avoidance, defensive posture, or emotional escalation is observed across all windows.",
+  "contextual": [
+    {
+      "trait": "O",
+      "context_type": "reported",
+      "context": "Music-preference question in IELTS Part 1 (M3, 40–60 s)",
+      "expression": "Bare negation 'To be honest, I don't listen to music' with no qualifier, example, or redirect; subsequent elaboration (M4) frames classical music purely functionally (energy, mood boost) rather than aesthetically or intellectually.",
+      "citations": [
+        "M3",
+        "M4"
+      ]
+    },
+    {
+      "trait": "O",
+      "context_type": "reported",
+      "context": "Instrument-learning question (M5, 80–100 s)",
+      "expression": "'I haven't thought about it yet' with dense hedging and conditional scaffold ('if I wanted to choose… I would prefer to play piano'), indicating no active exploration of new artistic domains.",
+      "citations": [
+        "M5"
+      ]
+    },
+    {
+      "trait": "O",
+      "context_type": "observed",
+      "context": "Cake-preference and baking segments (M7, M8, M9, 120–175 s)",
+      "expression": "Engagement is concrete and sensory (chocolate cakes, restaurant ordering script, 30-minute baking procedure) and culturally traditional (celebration baking for parents' birthdays). No abstract, novel, or intellectual exploration is present; the self-initiated 'let me explain, I can bake cake too' (M7) shows limited creative drive confined to a familiar domain.",
+      "citations": [
+        "M7",
+        "M8",
+        "M9"
+      ]
+    },
+    {
+      "trait": "C",
+      "context_type": "observed",
+      "context": "Full-session baseline composure (M1, M2, 0–40 s)",
+      "expression": "Upright-but-relaxed posture, hands resting quietly, zero fidgeting or leg shaking, neat and modest attire, consistent eye contact with rhythmic nods, and contained micro-tension (brief jaw tightening at own name/ID recitation) that does not escalate. Attention is stable with minimal lateral head movement.",
+      "citations": [
+        "M1",
+        "M2"
+      ]
+    },
+    {
+      "trait": "C",
+      "context_type": "observed",
+      "context": "Procedural compliance and turn architecture (M3, M8)",
+      "expression": "Efficient ID handoff with formulaic thanks; output calibrated to examiner's protocol-bounded expectations (≈4 s total speaking in M3). Permission-check 'Do you want to know? I have to explain about it' (M8) gates elaboration behind interlocutor consent, reflecting respect for procedural boundaries.",
+      "citations": [
+        "M3",
+        "M8"
+      ]
+    },
+    {
+      "trait": "C",
+      "context_type": "observed",
+      "context": "Motor-channel discipline across evaluative segments (M6, M11)",
+      "expression": "Complete postural stillness with hands clasped in lap during mood elaboration (M6); stable forward orientation, no aversion, no fidgeting, no defensive posture throughout the 133–140 s window (M11). Disfluency is confined to the vocal channel; the motor channel shows no compensatory agitation.",
+      "citations": [
+        "M6",
+        "M11"
+      ]
+    },
+    {
+      "trait": "E",
+      "context_type": "observed",
+      "context": "Reactive, minimal-output default in formal exchange (M3, M4)",
+      "expression": "Total speaking time ≈4 s vs examiner's ≈12 s (M3); produces one long monologue without checking the examiner's face, pausing for back-channel, or truncating early (M4). No illustrative gesture accompanies affective-language clauses. Contributions are strictly reactive to examiner-controlled turn boundaries.",
+      "citations": [
+        "M3",
+        "M4"
+      ]
+    },
+    {
+      "trait": "E",
+      "context_type": "observed",
+      "context": "Postural withdrawal during emotionally loaded topic (M6)",
+      "expression": "Complete motor stillness—hands clasped, torso fixed, no gesture—during the mood-regulation elaboration, even as she attempts causal explanation. Disfluency (three 'um' fillers, one repair) is carried exclusively vocally with no compensatory physical engagement.",
+      "citations": [
+        "M6"
+      ]
+    },
+    {
+      "trait": "E",
+      "context_type": "observed",
+      "context": "Topic-specific engagement exception (M7, M9)",
+      "expression": "Under personally meaningful framing (cake preference, celebration baking), Maria occupies ≈80% speaking time, self-initiates 'let me explain, I can bake cake too,' produces open-palm gestures, leans forward, and volunteers unprompted examples ('my mom's birthday, my dad's birthday'). This confirms her engagement is content-contingent, not a general social drive.",
+      "citations": [
+        "M7",
+        "M9"
+      ]
+    },
+    {
+      "trait": "A",
+      "context_type": "reported",
+      "context": "Hedging and courtesy markers across segments (M3, M5, M6, M10)",
+      "expression": "'To be honest' pre-empts social deviation (M3); immediate 'Yeah, why not' accepts affective question without resistance (M5); 'I think' softens generic mood recommendation (M6); justify-then-request scaffold ('It's a common name in Iran… I would appreciate if you call me Maria') preempts mispronunciation (M10). These show consistent consideration for the interlocutor's experience.",
+      "citations": [
+        "M3",
+        "M5",
+        "M6",
+        "M10"
+      ]
+    },
+    {
+      "trait": "A",
+      "context_type": "observed",
+      "context": "Inclusive address and permission-checking (M7, M8)",
+      "expression": "'You know' functions as an inclusive aside inviting the examiner into her preference framework (M7); 'Do you want to know? I have to explain about it' gates elaboration behind perceived interlocutor interest (M8). However, the bare negation in M3 ('I don't listen to music') without softening smile or laugh shows she does not always prioritize harmony over candor.",
+      "citations": [
+        "M7",
+        "M8",
+        "M3"
+      ]
+    },
+    {
+      "trait": "N",
+      "context_type": "observed",
+      "context": "Baseline emotional stability across full session (M1, M2, M11)",
+      "expression": "No fidgeting, no avoidance, no defensive posture, no emotional escalation. Brief jaw tension at hearing own ID recited (M2) is contained within one micro-expression and does not propagate. Mildly engaged facial expression with neutral brows and no smile/frown escalation persists through 133–140 s (M11).",
+      "citations": [
+        "M1",
+        "M2",
+        "M11"
+      ]
+    },
+    {
+      "trait": "N",
+      "context_type": "observed",
+      "context": "Framing-specific disfluency, not trait anxiety (M5 vs M7/M9)",
+      "expression": "Dense hedging (two 'um,' restatement-repair, conditional scaffold, self-repair) appears under competence/evaluative framing (M5, M8: three fillers around ingredient listing). Under personal/affective framing, fillers drop to zero (M7: 14 s continuous speech, no 'um/uh'; M9: 'yeah exactly' + spontaneous elaboration, no filler). This within-subject contrast confirms hesitation is a pragmatic response to evaluative framing, not a stable anxiety trait.",
+      "citations": [
+        "M5",
+        "M7",
+        "M8",
+        "M9"
+      ]
+    }
+  ],
+  "contextual_errors": [],
+  "stop_reason": "candidate_pool_exhausted",
+  "global_scan": {
+    "coarse_summaries": [
+      {
+        "time": [
+          0.0,
+          20.0
+        ],
+        "modality": "audio_video",
+        "summary": "The video captures the opening segment of an IELTS speaking mock test at Ross IELTS Academy. An examiner seated at a desk with Israeli and Canadian flags introduces the test and reads out the candidate's name, Maryam Biazvand, along with her candidate number. The candidate sits opposite the examiner, listening attentively without interrupting.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          20.0,
+          40.0
+        ],
+        "modality": "audio_video",
+        "summary": "In this segment, the examiner asks the candidate for her full name. The candidate responds by introducing herself as Maryam, adds a brief cultural explanation (noting it is a common Iranian name meaning 'flower'), and then politely requests to be called 'Maria' for convenience. The examiner immediately accommodates this, repeating 'Maria.' The candidate's delivery includes a slight hesitation ('um') and a self-conscious, explanatory tone, suggesting awareness of potential mispronunciation or cultural distance. The interaction establishes an early rapport-building dynamic in which the candidate actively shapes how she is addressed.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          40.0,
+          60.0
+        ],
+        "modality": "audio_video",
+        "summary": "In this 40–60 second window, the examiner requests the candidate's identification, receives it with a brief exchange of thanks (interrupted by a single cough from the examiner around 47 s), then pivots abruptly—'Now let's move on to talk about music'—to ask about music preference. The candidate answers in one short, unelaborated sentence: 'To be honest, I don't listen to music.' Her delivery is flat and definitive, with no follow-up examples, genres, or qualifications. Visually, the ID hand-off is smooth and unhurried; both parties maintain seated, forward-facing postures with minimal gesturing. The overall interaction in this segment is transactional and low-affect on both sides.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          60.0,
+          80.0
+        ],
+        "modality": "audio_video",
+        "summary": "In the 60–80 s window, Maria shifts from the earlier one-line refusal to a fuller, conditional elaboration: she explains she lacks time for music, but hypothetically prefers classical because it 'gives me more energy and boosts my mood,' adding that she turns to it specifically when she is 'not in a good mood.' The delivery is marked by repeated self-corrections ('and but if I had the time,' 'when I'm when I'm not'), fillers ('uh,' 'um'), and a slightly faster, less controlled pace than her prior clipped answers, suggesting she is constructing a personal disclosure in real time rather than reciting. Visually her posture remains largely unchanged, but her facial engagement increases marginally as she describes the emotional benefit. The examiner's cut-off follow-up ('Are you f—') signals the next prompt is arriving before Maria finishes, reinforcing the time-pressured rhythm established earlier.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          80.0,
+          100.0
+        ],
+        "modality": "audio_video",
+        "summary": "In this segment (80–100 s), the examiner asks whether Maria is fond of learning a musical instrument. Maria's reply is heavily hedged: she opens with \"Um, no, I haven't um thought about it yet,\" then immediately contradicts herself by offering a conditional preference—\"but if I wanted to choose one of them I prefer to… I would prefer to uh play piano\"—complete with a mid-sentence self-repair and filler. Visually she stays seated, hands in lap, with only a slight head tilt toward the examiner. When the examiner follows up—\"And does music help you ease in any way?\"—Maria's delivery shifts markedly: she answers \"Yeah, why not?\" with fewer hesitations and a brighter intonation, then begins an elaboration (\"When you're in a bad…\") before the clip cuts off. The contrast between the two answers is the salient behavioral signal in this window.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          100.0,
+          120.0
+        ],
+        "modality": "audio_video",
+        "summary": "In this segment (100–120 s), Maria discusses how listening to music can enhance one's mood during periods of economic and financial difficulty. She speaks with persistent hedging (\"I think,\" \"maybe\") and fillers (\"um,\" \"uh\"), and repeats herself mid-sentence (\"you can put your time, you can spend your time\"). Unlike her earlier flat, minimal deliveries, she now uses visible hand gestures to emphasize points, and her posture appears slightly more open. The content frames mood regulation as a response to external stressors (\"especially in these days, economical problem, financial problems\") rather than naming internal emotional states directly. The examiner responds with a brief procedural \"Okay\" and immediately transitions to the next topic (\"Now let's talk about K…\"), maintaining the rapid, flat register established throughout the interview.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          120.0,
+          140.0
+        ],
+        "modality": "audio_video",
+        "summary": "In the 120–140 s window, the examiner asks a simple preference question ('Do you like eating cakes?'), and Maria responds with markedly greater fluency and spontaneity than in any prior segment. She immediately volunteers layered personal detail—going to restaurants specifically for dessert rather than the main course, her particular love of chocolate cake, and the unprompted admission 'I can bake cake too'—organizing her thoughts with the proactive phrase 'let me explain.' Her speech contains far fewer fillers, self-repairs, and hedges compared to the music (60–80 s), instrument-choice (80–100 s), and emotional-regulation (100–120 s) segments. The examiner's brief follow-up ('Okay, so do you know how to make a cake?') confirms that Maria's baking disclosure was self-initiated rather than elicited, suggesting genuine comfort or enthusiasm around this topic. Visually, Maria appears slightly more animated (small forward lean, looser hand position) than her near-motionless posture at 40–60 s, though her overall body language remains relatively contained.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          140.0,
+          160.0
+        ],
+        "modality": "audio_video",
+        "summary": "Maria transitions from expressing her enjoyment of cake to explaining the baking process. She first checks with the examiner—'Do you want to know?'—then frames her forthcoming explanation as obligatory ('I have to explain about it') before delivering a straightforward recipe: flour, sugar, and an optional additional flavor, baked for approximately 30 minutes. Her speech is relatively fluent with only light fillers ('uh,' 'um'), and she accompanies the explanation with visible open-hand gestures, leaning slightly forward. The content is practical and sequential, lacking the emotional or sensory elaboration present in her earlier cake-enjoyment turn (120–140 s).",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          160.0,
+          175.612993
+        ],
+        "modality": "audio_video",
+        "summary": "Maria finishes describing the technical baking process ('about 30 minutes in the oven… depends on the people') with a mild filler ('uh') and measured pace. The examiner then shifts to a warm, personal framing—'Is cake a part of the celebration at your home?'—and Maria's register changes immediately: she answers 'Yeah, exactly' with visible enthusiasm, then spontaneously enumerates specific family occasions ('for my mom's birthday, my dad's birthday') without any further prompt. Her hand gestures remain active and open-palmed throughout this elaboration, and her vocal energy rises compared to the preceding technical description. The examiner closes the exchange with 'Thank you very much,' ending the topic cleanly.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          0,
+          175.612993
+        ],
+        "modality": "text",
+        "summary": "This text transcript records a structured interview in which Maryam (Maria) Ghiasvand answers questions spanning her name's cultural origin, music habits, instrument preferences, mood-coping strategies, and cake/baking experiences. Across all topics she employs a consistent grammatical pattern of hypothetical framing—'if I had the time,' 'if I wanted to choose,' 'if you want to add to it'—that converts personal preference into conditional speculation. Emotional states are attributed to external circumstances ('economical problems, financial problems') rather than named as internal experiences, and hedging markers ('to be honest,' 'I think,' 'maybe') cluster densely around any self-assertion. Self-disclosure depth shifts sharply by topic: music questions produce one- or two-clause, heavily qualified answers, whereas cake questions elicit volunteered specifics (chocolate, ingredients, 30-minute bake time, parents' birthdays) and a meta-narrative frame ('let me explain, I can bake cakes too'). Her opening name exchange follows a distinctive sequence—cultural etymology first, preferred-name request second—positioning the personal appeal as secondary to informational contribution.",
+        "summary_status": "provided"
+      }
+    ],
+    "input_modalities": [
+      "text",
+      "audio",
+      "video"
+    ],
+    "observation_modes": [
+      "text",
+      "audio",
+      "video",
+      "audio_video"
+    ],
+    "sampling_fps": 1.0,
+    "full_audio_coverage": true,
+    "audio_coverage": [
+      [
+        0.0,
+        20.0
+      ],
+      [
+        20.0,
+        40.0
+      ],
+      [
+        40.0,
+        60.0
+      ],
+      [
+        60.0,
+        80.0
+      ],
+      [
+        80.0,
+        100.0
+      ],
+      [
+        100.0,
+        120.0
+      ],
+      [
+        120.0,
+        140.0
+      ],
+      [
+        140.0,
+        160.0
+      ],
+      [
+        160.0,
+        175.6125
+      ]
+    ],
+    "video_coverage": [
+      [
+        0.0,
+        20.0
+      ],
+      [
+        20.0,
+        40.0
+      ],
+      [
+        40.0,
+        60.0
+      ],
+      [
+        60.0,
+        80.0
+      ],
+      [
+        80.0,
+        100.0
+      ],
+      [
+        100.0,
+        120.0
+      ],
+      [
+        120.0,
+        140.0
+      ],
+      [
+        140.0,
+        160.0
+      ],
+      [
+        160.0,
+        175.612993
+      ]
+    ],
+    "duration": 175.612993,
+    "sampled_frames": 176,
+    "audio_samples": 2809800,
+    "audio_sample_rate": 16000,
+    "chunk_seconds": 20.0,
+    "text_segmentation": "full_transcript",
+    "video_segmentation": "fixed_seconds",
+    "audio_segmentation": "decoded_samples"
+  },
+  "cost": {
+    "stage_timing": {
+      "coarse": {
+        "calls": 10,
+        "timed_calls": 0,
+        "prepare_seconds": 0.0,
+        "generation_seconds": 0.0,
+        "constraint_seconds": 0.0,
+        "total_seconds": 0.0,
+        "constraint_calls": 0,
+        "prompt_tokens": 21252,
+        "completion_tokens": 14260
+      },
+      "observe": {
+        "calls": 11,
+        "timed_calls": 0,
+        "prepare_seconds": 0.0,
+        "generation_seconds": 0.0,
+        "constraint_seconds": 0.0,
+        "total_seconds": 0.0,
+        "constraint_calls": 0,
+        "prompt_tokens": 48408,
+        "completion_tokens": 43042
+      },
+      "final": {
+        "calls": 1,
+        "timed_calls": 0,
+        "prepare_seconds": 0.0,
+        "generation_seconds": 0.0,
+        "constraint_seconds": 0.0,
+        "total_seconds": 0.0,
+        "constraint_calls": 0,
+        "prompt_tokens": 8388,
+        "completion_tokens": 4742
+      }
+    },
+    "active_seconds": 358.225986,
+    "active_budget_seconds": null,
+    "coarse_audio_seconds": 175.6125,
+    "coarse_frames": 176,
+    "jev_api_calls": 0,
+    "jev_estimated_cost": 0.0,
+    "coarse_video_segments": 9,
+    "coarse_video_fps": 1.0,
+    "generated_tokens": 62044,
+    "input_tokens": 78048
+  },
+  "novelty_rule": {
+    "video_fps": 2.0,
+    "min_new_seconds": 5.0,
+    "max_focus": 1
+  },
+  "novelty_filtered": [
+    {
+      "stage": "execution",
+      "candidate_id": "C11",
+      "parent_id": "C1",
+      "time": [
+        25.0,
+        45.0
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0,
+        "video": 0.0
+      },
+      "new_still": false,
+      "region_root": "C1"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C12",
+      "parent_id": "C2",
+      "time": [
+        40.0,
+        52.0
+      ],
+      "modality": "audio",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0
+      },
+      "new_still": false,
+      "region_root": "C2"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C13",
+      "parent_id": "C2",
+      "time": [
+        45.0,
+        62.0
+      ],
+      "modality": "video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "video": 2.0
+      },
+      "new_still": false,
+      "region_root": "C2"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C14",
+      "parent_id": "C3",
+      "time": [
+        60.0,
+        70.0
+      ],
+      "modality": "audio",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0
+      },
+      "new_still": false,
+      "region_root": "C3"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C16",
+      "parent_id": "C3",
+      "time": [
+        65.0,
+        75.0
+      ],
+      "modality": "video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "video": 0.0
+      },
+      "new_still": false,
+      "region_root": "C3"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C18",
+      "parent_id": "C4",
+      "time": [
+        80.0,
+        95.0
+      ],
+      "modality": "audio",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0
+      },
+      "new_still": false,
+      "region_root": "C4"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C19",
+      "parent_id": "C6",
+      "time": [
+        125.0,
+        145.0
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0,
+        "video": 0.0
+      },
+      "new_still": false,
+      "region_root": "C6"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C20",
+      "parent_id": "C6",
+      "time": [
+        155.0,
+        175.0
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0,
+        "video": 0.0
+      },
+      "new_still": false,
+      "region_root": "C6"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C22",
+      "parent_id": "C8",
+      "time": [
+        160.0,
+        175.6
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0,
+        "video": 0.0
+      },
+      "new_still": false,
+      "region_root": "C8"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C15",
+      "parent_id": "C3",
+      "time": [
+        0.0,
+        35.0
+      ],
+      "modality": "text",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "text": 0.0
+      },
+      "new_still": false,
+      "region_root": "C3"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C17",
+      "parent_id": "C4",
+      "time": [
+        0.0,
+        60.0
+      ],
+      "modality": "text",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "text": 0.0
+      },
+      "new_still": false,
+      "region_root": "C4"
+    }
+  ],
+  "memory": {
+    "observations": [
+      {
+        "id": "M1",
+        "observation_id": "active_0",
+        "modality": "audio_video",
+        "retrieval_window": [
+          0.0,
+          20.0
+        ],
+        "content": "The examiner initiates the session with a highly structured, procedural introduction, clearly stating the test type (IELTS mock), the institution (Rostoyals Academy), and the candidate's specific identifiers (Name: Maryam Biosvand, ID: 0143252). Her vocal delivery is crisp, steady, and efficient, lacking warm-up small talk, which establishes a formal and potentially high-pressure tone immediately.\nDuring the 20-second introductory monologue, the candidate demonstrates significant baseline composure. She remains seated with an upright but relaxed posture, her hands resting quietly on her lap or the table. There is a notable absence of fidgeting, leg shaking, or nervous hand movements, suggesting she is comfortable with passive listening or is exercising strong self-control.\nThe candidate maintains consistent eye contact with the examiner and offers subtle, rhythmic nods at intervals (e.g., around 00:05 and 00:15), signaling active engagement and acknowledgment of the instructions without interrupting the flow. Her facial expression remains neutral and attentive, showing no signs of visible stress or confusion despite the rapid delivery of personal data.\nThe physical setting reinforces the formal atmosphere: the examiner and candidate are separated by a desk adorned with flags (including a Canadian flag), creating a barrier that emphasizes the evaluative nature of the interaction. The candidate's attire is neat and modest, further indicating a prepared and serious approach to the assessment.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M2",
+        "observation_id": "active_1",
+        "modality": "audio_video",
+        "retrieval_window": [
+          20.0,
+          40.0
+        ],
+        "content": "During the examiner's 20-second procedural monologue (0–20s), her physical behavior reveals a script-dependent delivery: she holds a pen in her right hand and intermittently glances down at papers on the desk, suggesting she is reading identifiers and institutional information rather than speaking extemporaneously. Her left hand makes small, rhythmic gestures synchronized with clause boundaries (e.g., listing name, then ID, then institution), functioning as a verbal punctuation system. This mechanical cadence contrasts with the warmer, more open hand posture she adopts when transitioning to the direct question 'Would you please tell me your full name?' around the 20-second mark, where both hands come forward and palms orient slightly upward—a shift from recitation to invitation.\nThe candidate's attentional behavior during the examiner's monologue is notably stable: her head remains oriented toward the examiner with minimal lateral movement, and her eyes track the speaker's face rather than the desk or flags. Around 10–15 seconds, when the examiner recites the candidate's own name and ID number, the candidate's blink rate appears to decrease slightly and her jaw muscles tense momentarily—a micro-expression consistent with self-monitoring (hearing one's own data read aloud in a formal register). However, she does not flinch, look away, or adjust posture, indicating that this tension is contained and does not escalate into visible discomfort.\nThe spatial arrangement and the examiner's sustained forward lean toward her notes (rather than toward the candidate) during 0–18s create an asymmetry of engagement: the examiner addresses the paper/protocol, not the person. Only in the final two seconds of the clip does she lift her gaze fully to the candidate and angle her torso forward, signaling the transition from administrative setup to interpersonal exchange. The candidate mirrors this shift by slightly raising her chin and parting her lips in anticipation of responding, suggesting she reads the examiner's gaze-lift as her cue to speak.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M3",
+        "observation_id": "active_2",
+        "modality": "audio_video",
+        "retrieval_window": [
+          40.0,
+          60.0
+        ],
+        "content": "The 0–11s segment captures a tightly choreographed procedural exchange: the examiner requests identification ('can I see your identification, please?'), the candidate responds with a brief 'Yeah, here you go' while extending her arm across the desk, and the two trade formulaic thanks ('Thank you very much' / 'You're welcome' / 'Thank you so much' / 'You're welcome'). The examiner's throat-clear at ~7s functions as a paralinguistic reset between the administrative sub-task and the upcoming interview proper. Throughout this exchange, both participants maintain seated postures with minimal torso movement; the candidate's handoff is efficient and her gaze drops to her own hands during the transfer, then returns to the examiner. The examiner leans forward to receive the ID, then leans back to examine it, creating a brief physical rhythm of approach-withdrawal that mirrors the transactional nature of the interaction.\nAt 12–17s, the examiner explicitly meta-signals the topic shift ('Now let's move on to talk about music') before posing the preference question ('What kind of music do you prefer?'). This framing positions the upcoming answer as a discrete, bounded item within a checklist rather than an invitation to elaborate. The examiner's delivery is even-paced and declarative, with no rising intonation that might encourage expansion. Visually, she holds her pen poised above her notes, suggesting readiness to record rather than to converse. The candidate sits with hands folded in her lap, head slightly tilted, listening without preemptive nodding or lip-parting that would signal prepared elaboration.\nThe candidate's response at 17–20s — 'To be honest, I don't listen to music' — is structurally minimal: a single hedge ('to be honest') followed by a flat negation with no qualifier, example, or redirect. The hedge occupies roughly the first 0.8s of her utterance, after which the remainder is delivered in a level, unhurried cadence. There is no audible self-correction, no trailing 'but sometimes…', and no upward inflection that would invite follow-up. The candidate's facial expression during this line (visible in the 17–20s frames) shows a slight narrowing of the eyes and a neutral-to-slightly-tightened mouth, consistent with either mild embarrassment at giving a socially unexpected answer or a deliberate withholding of further information. She does not smile, laugh, or gesture to soften the negation.\nThe spatial and temporal asymmetry between the two speakers is notable: the examiner controls all turn boundaries (initiating the ID request, marking the topic transition, posing the question), while the candidate's contributions are strictly reactive and maximally brief. The candidate's total speaking time across 0–20s is approximately 4 seconds ('Yeah, here you go' + 'You're welcome' × 2 + the music answer), compared to the examiner's ~12 seconds. This ratio suggests the candidate is calibrating her output to the examiner's apparent expectation of concise, protocol-bounded responses rather than engaging in the more expansive self-presentation typical of casual conversation.\nThe 'to be honest' hedge merits particular attention as a discourse marker: it simultaneously acknowledges that the forthcoming answer deviates from a presumed social norm (most people listen to music) while framing the deviation as candor rather than deficiency. However, its placement immediately before a bare negation — with no subsequent qualification or softening — gives it the quality of a pre-emptive shield rather than an authentic moment of self-reflection. The candidate does not pause before the hedge (suggesting it was planned), nor does she accelerate through it (suggesting discomfort). The timing is even, as though the phrase were a practiced opener for delivering unwelcome information.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M4",
+        "observation_id": "active_3",
+        "modality": "audio_video",
+        "retrieval_window": [
+          60.0,
+          80.0
+        ],
+        "content": "Maria delivers a continuous ~19-second elaboration structured as: time constraint ('I don't have enough time') → conditional preference ('if I had the time… I would prefer classical') → functional reason ('gives me more energy and boost my mood') → personal application ('when I'm not in a good mood, I try to listen to classical music'). This is markedly more extended than the bare negation 'To be honest, I don't listen to music' documented in the prior observation M3 for the same interview, indicating that once the examiner's follow-up frame granted permission to expand, Maria volunteered substantially more content than a minimal answer would require.\nSpeech disfluencies are sparse and localized: one filler 'uh' precedes the causal clause at ~9s ('uh because it gives me…'), and a repetition-repair 'when I'm when I'm' occurs at ~14–16s at the transition from general reasoning to the most personally revealing statement (listening when in a bad mood). There are no false starts, no mid-sentence topic pivots, and no trailing-off or volume drop. The repair specifically lands on the clause that discloses emotional vulnerability, suggesting real-time formulation of that content rather than retrieval of a rehearsed script.\nPhysically, Maria remains seated with hands folded or resting in her lap for the entire 0–19s span. She maintains consistent forward torso orientation toward the examiner. No illustrative or emphatic hand gestures accompany the emotional-language clauses ('boost my mood,' 'not in a good mood'); her hands do not lift, spread, or tap. Facial expression reads neutral-to-mildly-engaged without marked animation, brow-raising, or smile. This static bodily presentation contrasts with the affective content of her words, leaving ambiguous whether the calm delivery reflects comfortable self-disclosure or a restrained, protocol-appropriate composure.\nAt approximately 19s, the examiner interjects with a new question ('are you fond of listening classical instrument?'), treating Maria's elaboration as a completed turn. Simultaneously, Maria's right hand shifts slightly upward from her lap — the only visible motor change across the clip — which may signal readiness to respond or a subtle release of the sustained stillness. The examiner's question introduces a narrower topic (instruments vs. genre), potentially testing whether Maria's earlier elaboration was genre-specific or extended to instrumental detail.\nThe overall turn-taking architecture in this segment shows Maria producing one long, self-contained monologue without interruption, followed by the examiner resuming control with a fresh prompt. Maria does not check the examiner's face mid-speech, does not pause for back-channel feedback, and does not truncate her own turn early. This pattern is consistent with either (a) genuine internal motivation to fully explain her preference once the floor was yielded, or (b) a learned test-taking strategy of maximizing speaking time after receiving an open-ended prompt. The absence of visible engagement markers (nodding at the examiner, gesturing, leaning forward) slightly favors interpretation (b), but the spontaneous repair at the vulnerable clause mildly supports (a).",
+        "content_status": "structured"
+      },
+      {
+        "id": "M5",
+        "observation_id": "active_4",
+        "modality": "audio_video",
+        "retrieval_window": [
+          80.0,
+          100.0
+        ],
+        "content": "Within the 0–20 s clip, Maria produces two consecutive answers under markedly different discourse frames, and the disfluency profile shifts sharply between them. The first answer (≈2–14 s), prompted by 'are you fond of learning any musical instrument?', is saturated with hedging: two 'um' fillers bracket the opening negation ('Um, no, I haven't um thought about it yet'), a restatement-repair echoes the examiner's phrase ('about any musical instruments'), a conditional scaffold defers commitment ('but if I wanted to choose one of them'), and a mid-clause self-repair corrects person/tense ('I prefer to, I would prefer to') before a final 'uh' precedes the single concrete noun ('play piano'). Turn-initiation latency after the examiner's question is short (≈0.5–1 s) but the onset itself is a filler rather than content, signalling that the floor was accepted before a proposition was formulated. The second answer (≈18–20 s), prompted by 'does music help you ease in any way?', opens with a rapid, unhesitating 'Yeah, why not'—no filler, no conditional, no repair—and proceeds directly into an affective claim ('it's been going to bad [moods]') before the clip cuts. The contrast is internal to this 20-second window: competence/skill framing (learning an instrument) elicits dense disfluency and deferred self-presentation, whereas emotional-relational framing (music easing mood) elicits immediate, fluent uptake.\nPhysically, across both answers Maria remains seated with a dark headscarf, torso oriented toward the examiner, and hands largely resting in her lap. During the heavily hedged first answer (3–14 s) no illustrative or emphatic gesture accompanies the self-repairs or the piano mention; the body stays static while the verbal channel works through formulation difficulty. During the second answer (18–20 s) the same postural stillness persists, but the facial engagement appears marginally more animated as she launches into the mood explanation without pausing to search for words. The absence of gesture in both segments means the disfluency contrast is carried almost entirely by vocal-delivery features (filler count, repair frequency, onset latency) rather than by visible motor behaviour, reinforcing that the difference is cognitive-linguistic (topic framing) rather than performative (comfort with being watched).\nThe examiner's two questions in this clip instantiate the two frames the goal targets: the first ('fond of learning any musical instrument') asks Maria to position herself as a potential skill-acquirer, invoking competence and future self-presentation; the second ('does music help you ease in any way') asks her to report an internal affective state, invoking emotional regulation and relational comfort. Maria's differential fluency across these two prompts—dense hedging under the competence frame versus near-instant uptake under the affective frame—constitutes within-clip evidence that her hesitation is frame-specific rather than a global trait, though the goal's comparison against the 60–80 s emotional-regulation answer remains unresolved because that window has not yet been inspected.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M6",
+        "observation_id": "active_5",
+        "modality": "audio_video",
+        "retrieval_window": [
+          100.0,
+          120.0
+        ],
+        "content": "Maria's mood elaboration (0–16 s) systematically externalizes emotional need onto situational/economic circumstances using generic 'you' rather than first-person affect naming: 'when you have a lot of problems, especially in these days economical problem, financial problems… you can spend your time on listening to music and maybe enhance your mood.' No instance of 'I feel,' 'I am stressed,' or any direct internal-state label appears; the regulatory mechanism (music) is framed as a universal remedy for circumstantial hardship rather than a personal coping strategy.\nAlthough M5 characterizes the mood answer's onset as 'unhesitating,' the elaboration phase (≈2–16 s) reintroduces three 'um' fillers and one syntactic repair ('put your time → you can spend your time'), indicating that initial fluency dissipates once Maria transitions from bare uptake to substantive causal explanation. The hedging density in this elaboration more closely resembles the instrument-learning answer's profile than the 'Yeah, why not' opening.\nVisually, Maria maintains complete postural stillness across the entire 0–20 s window: hands remain clasped in her lap, torso fixed toward the examiner, no illustrative or emphatic gesture accompanies the music/mood explanation, and no eye-aversion or search behavior co-occurs with the 'um' fillers. Disfluency is carried exclusively in the vocal channel; the motor channel shows no compensatory elaboration attempt.\nThe examiner's 'okay and get better' (≈16–18 s) functions as a minimal backchannel acknowledgment rather than a probing follow-up, and the immediate pivot to 'now let's talk about cakes' (≈18–20 s) closes the emotional-regulation topic without inviting deeper personal disclosure, leaving Maria's external-attribution pattern untested within this segment.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M7",
+        "observation_id": "active_6",
+        "modality": "audio_video",
+        "retrieval_window": [
+          120.0,
+          140.0
+        ],
+        "content": "Vocal delivery in the cake segment (0–18 s) is markedly fluent and filler-free: Maria initiates her turn within approximately 0.3 s of the examiner's question ending ('do you like eating cakes? → yeah, why not'), produces no 'um/uh' tokens, no syntactic repairs, and no restarts across roughly 14 seconds of continuous speech. This contrasts sharply with M6's mood-segment profile (three 'um' fillers, one repair 'put your time → you can spend your time') despite both segments being open-ended preference/habit questions from the examiner. The absence of disfluency here is not attributable to brevity—Maria's elaboration spans multiple clauses and includes a self-initiated topic extension ('let me explain, I can bake cake too') that goes well beyond the examiner's original question scope.\nMaria's elaboration follows a pleasure-preference logic rather than an external-attribution pattern: she names a specific sensory object ('chocolate cakes'), describes a concrete behavioral script (restaurant ordering: dessert-only, skipping main course and starter), and then volunteers a competence claim ('I can bake cake too') unprompted. Unlike M6's mood answer, which deflected personal affect onto generic 'you' and economic circumstance, every clause here is anchored in first-person desire and agency ('I want to order,' 'I can bake'). The discourse marker 'you know' (≈7 s) functions as an inclusive aside inviting the examiner into her preference framework, not as a hedge or anxiety signal.\nVisually, Maria's motor channel is active and synchronized with her verbal elaboration: frames at ≈13–16 s show her right hand lifting off her lap in a small open-palm gesture coinciding with 'let me explain, I can bake cake too,' and her torso leans marginally forward during the restaurant-ordering narrative (≈5–10 s). This directly contradicts M6's finding of 'complete postural stillness, hands remain clasped in lap, no illustrative or emphatic gesture' during the mood segment. Eye contact with the examiner appears sustained throughout; no aversion or upward search behavior co-occurs with any clause, suggesting the fluency is not masking cognitive load.\nTurn-taking architecture reveals asymmetric engagement: the examiner's contributions are minimal and receptive ('okay' at ≈15–16 s, then a follow-up question 'so do you know how to bake a cake' at ≈18–20 s), while Maria occupies ≈80% of the speaking time in this window. Her self-extension ('let me explain') occurs without any prompt, repair initiation, or examiner nudge—she interrupts her own dessert narrative to add the baking claim, indicating internal motivational drive rather than performative compliance with the examiner's warm tone. The examiner's closing question shifts the frame from preference to competence ('do you know how'), which will test whether Maria's fluency survives the introduction of an evaluative criterion.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M8",
+        "observation_id": "active_7",
+        "modality": "audio_video",
+        "retrieval_window": [
+          140.0,
+          160.0
+        ],
+        "content": "In the baking-explanation segment (0–20 s), Maria opens with a rapid affirmative ('yeah' at ≈1 s, latency ≈0.3 s after the examiner's 'do you know how to bake a cake') but then inserts a two-clause permission-check before delivering content: 'Do you want to know? Yeah, I have to explain about it' (≈3–5 s). The phrasing 'I have to explain' frames elaboration as an obligation imposed by the interlocutor's curiosity rather than a voluntary offering, contrasting with M7's finding that in the preceding cake-enjoyment segment Maria self-initiated 'let me explain, I can bake cake too' without any permission scaffold. This suggests the permission-check is triggered specifically by the closed yes/no competence frame ('do you know how'), not by Maria's general reluctance to speak at length.\nFiller density in the baking segment is markedly higher than in the cake-enjoyment segment characterized by M7. Maria produces 'uh' at ≈15 s ('uh flavor if you want to add to it'), 'um' at ≈16–17 s (clause-final), and a trailing 'uh' at ≈19 s ('bake in the oven uh'). M7 recorded zero 'um/uh' tokens across ≈14 s of continuous cake-preference speech. The three fillers cluster around the ingredient-listing and temporal-detail clauses, indicating lexical-retrieval effort when enumerating procedural steps rather than expressing personal desire.\nContent architecture shifts from sensory-narrative to recipe-procedural: Maria lists flour → sugar → 'different flavor if you want to add to it' → 'about 30 minutes to bake in the oven.' Unlike the cake segment's concrete restaurant-ordering script and first-person desire language ('I want to order'), the baking explanation uses impersonal 'we need' and conditional 'if you want to add to it,' distancing Maria from agency over the recipe. The temporal detail ('30 minutes') is the only quantitative anchor and arrives with the trailing 'uh,' suggesting it was retrieved under mild uncertainty.\nVisually, Maria's motor channel is substantially quieter in the baking segment than in the cake segment. Across frames 0–19 s, her hands remain clasped or resting in her lap; no open-palm or illustrative gesture accompanies the ingredient list. By contrast, M7 documented a right-hand lift and forward torso lean during the cake narrative (≈13–16 s). The examiner, seated opposite, makes a small pen gesture at ≈6–7 s while Maria speaks, but Maria does not mirror or respond gesturally. Eye contact is maintained but appears slightly less sustained than in the cake segment, with brief downward glances at ≈9–12 s coinciding with the 'sugar and different' clause.\nTurn-taking architecture in the baking segment is more examiner-paced: the examiner's initial question is closed ('do you know how to bake a cake'), Maria's 'yeah' is a one-word confirmation, and the subsequent elaboration is gated by her own permission-check rather than an open invitation. Maria occupies ≈16 s of the 20 s window, but the first ≈3 s are meta-commentary ('Do you want to know / I have to explain'), leaving ≈13 s of actual recipe content. The examiner does not interject 'okay' or any back-channel during the listing, creating a longer silence that Maria fills with fillers ('uh,' 'um') rather than pausing to invite feedback.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M9",
+        "observation_id": "active_8",
+        "modality": "audio_video",
+        "retrieval_window": [
+          160.0,
+          175.612993
+        ],
+        "content": "Permission-check elimination under personal framing: At ≈4–5 s the examiner shifts from the procedural closed frame ('do you know how to bake') to an open, culturally invitational question ('and is cake a part of the celebration at your home?'). Maria's response at ≈5 s is 'yeah exactly' followed immediately by spontaneous content ('for every celebration I try to bake cake'). No meta-commentary, no 'do you want to know,' no 'I have to explain' scaffold appears. This directly contrasts M8's finding that the closed competence frame triggered a two-clause permission-check (≈3–5 s of the earlier segment) before any recipe content was delivered. The permission-check is therefore not a trait-level reluctance to self-author but a context-driven pragmatic gate activated specifically by yes/no procedural framing.\nFiller density drops to zero in the personal-framing portion: The trailing 'uh' at ≈2 s ('bake in the oven uh') belongs to the tail of the procedural explanation. From ≈5 s onward, Maria's speech is continuous and filler-free: 'yeah exactly for every celebration I try to bake cake… for my mom's birthday my dad's birthday.' M8 recorded three fillers ('uh,' 'um,' trailing 'uh') clustered around ingredient-listing and temporal-detail clauses under procedural framing. The complete absence of fillers once the question becomes personal supports the interpretation that Maria's hesitations were tied to lexical-retrieval effort under impersonal/procedural demands, not to a general speech-disfluency trait.\nAgency and first-person ownership return: Under personal framing Maria uses agentive, concrete language—'I try to bake cake,' 'my mom's birthday,' 'my dad's birthday'—claiming ownership of the practice and anchoring it in specific familial relationships. This contrasts sharply with M8's finding that the procedural baking explanation relied on impersonal 'we need' and conditional 'if you want to add to it,' distancing Maria from agency over the recipe. The shift from 'we/you' to 'I/my' tracks precisely with the examiner's reframing from technical competence to cultural identity, indicating Maria's linguistic register is responsive to interlocutor framing rather than fixed.\nVisual motor channel activates under personal framing: Across frames ≈3–8 s, Maria's hands move visibly—open-palm gestures accompany 'it depends on the people' and the transition into her celebration response. She leans slightly forward and maintains sustained eye contact with the examiner. By contrast, M8 documented Maria's hands remaining clasped or resting in her lap throughout the procedural baking explanation (≈0–19 s of that segment), with no illustrative gesture accompanying the ingredient list. The reactivation of the gestural channel under personal questioning suggests Maria's body language tracks conversational engagement level, not a global motor抑制.\nSpontaneous elaboration interrupted by examiner closure: Maria's final utterance in the clip ('for my mom's birthday my dad's birthday,' ≈12–14 s) is an unprompted addition of specific examples, indicating she was in an unscripted elaborative flow. The examiner's 'thank you very much' at ≈14–15 s closes the topic before Maria completes her list. Crucially, Maria did not require any invitation or permission to add these examples—she volunteered them after the examiner's single 'okay' back-channel at ≈8 s. This confirms that under personal framing, Maria's elaboration is genuinely self-initiated rather than obligation-triggered, reinforcing the pragmatic-adaptation reading over a trait-reluctance reading.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M10",
+        "observation_id": "active_9",
+        "modality": "text",
+        "retrieval_window": [
+          0.0,
+          175.612993
+        ],
+        "content": "Conditional-hypothetical density tracks topic-conviction, not a global identity-distancing trait. In the two music-related answers where Maria reports no lived experience ('I don't listen to music'; 'I haven't thought about it yet'), her preference statements are wrapped in explicit subjunctive scaffolds: 'if I had the time… I would prefer classical' and 'if I wanted to choose one of them… I would prefer to play piano.' Both contain the full if/would pair, a counterfactual trigger, and a hedge ('To be honest'). By contrast, in the cake-eating answer—where Maria has concrete, repeated experience—she produces zero conditionals: 'I just go for dessert, not for the main course… because I want to order dessert after that, especially chocolate cakes.' The verb forms shift from subjunctive to indicative, and the pronoun is unambiguously first-person singular with agentive 'want.' The baking-procedure answer reintroduces one conditional ('if you want to add to it') but attaches it to an impersonal 'we need' construction, again signalling low personal stake rather than a blanket grammar of self-erasure. The celebration answer ('For every celebration, I try to bake cake. For my mom's birthday, my dad's birthday.') contains no conditional, no hedge, and no permission-check—pure indicative agency. The pattern therefore resolves Goal 1 decisively toward the topic-specific reading: Maria's conditional syntax is a pragmatic marker of low conviction and absent experience, not a personality-level reluctance to claim ownership over desires. When she holds firm, uncontested views (cake, family baking), the subjunctive disappears entirely.\nThe 'justify-then-request' narrative template is confined to contexts where Maria anticipates her answer will deviate from a presumed norm or carry cross-cultural legibility risk, and does not generalize to all self-disclosures. In the name introduction, she produces a two-clause justification ('It's a common name in Iran, it's a name of the flower') before the request ('So I would appreciate if you call me Maria')—a scaffold that preempts mispronunciation or exoticism. In the music-preference answer, the justification ('because I don't have enough time') precedes the conditional preference, framing the deviation from 'normal' music-listening as circumstantial rather than personal. In the instrument answer, 'I haven't thought about it yet' is the justification before the hypothetical piano choice. However, in the cake-eating answer, Maria opens with 'Yeah, why not?' and moves directly into sensory preference ('Especially chocolate cakes') with no explanatory preamble. In the celebration answer, 'Exactly' is a bare acknowledgment followed immediately by the assertion 'I try to bake cake'—no justification, no 'because I…' clause. The template thus recurs in exactly those segments where the expected answer is 'yes, I like music / I play an instrument / my name is straightforward' and Maria's reality diverges. It is absent where her answer aligns with or exceeds the examiner's expectation. This supports the Goal 2 reading that the justify-then-request structure is a one-off pragmatic adaptation to anticipated norm-violation (cross-cultural name ambiguity, socially unexpected non-listening) rather than a stable communicative habit of wrapping all personal assertions in explanatory scaffolding.\nPronoun and person-reference distribution across segments reveals a systematic mapping between grammatical person and epistemic commitment, further isolating the conditional pattern as conviction-linked rather than identity-linked. In the mood-regulation answer, Maria externalizes affect onto generic 'you': 'When you are in a bad mood, when you have a lot of problems… you can spend your time on listening to music.' No first-person 'I feel' or 'I am stressed' appears; the regulatory mechanism is framed as a universal remedy for circumstantial hardship. The hedging verb 'I think' precedes the recommendation, softening even the generic claim. In the baking-procedure answer, the impersonal 'we need' and the conditional 'if you want to add to it' similarly dissolve personal agency into a generic recipe voice. Yet in the cake-preference answer, every clause is anchored in 'I': 'I just go for dessert… I want to order… I can bake cakes too.' In the celebration answer, possessive first-person returns: 'my mom's birthday, my dad's birthday.' The alternation between 'you/we/I-think' (low conviction, external attribution) and 'I/my' (high conviction, personal ownership) is not random but maps precisely onto whether Maria has lived, embodied experience with the topic. This rules out the hypothesis that the conditional/impersonal grammar is a stable identity-distancing strategy applied uniformly; instead, it is a calibrated register shift triggered by the gap between expected knowledge and actual experience.\nSelf-reports versus observed-behavior boundary: the textual segments constitute Maria's self-reported content (preferences, habits, explanations), while the prior audio-video observations (M1–M9) document the paralinguistic and motor correlates of those self-reports. Specifically, the text records Maria's claim 'I can bake cakes too' as a self-initiated topic extension, and M7 independently confirms that this utterance is accompanied by a right-hand open-palm gesture and forward torso lean—behavioral markers of genuine engagement absent from the mood-segment text (M6: complete postural stillness). Similarly, the text shows the permission-check 'Do you want to know? Yeah, I have to explain about it' in the baking-procedure turn, and M8/M9 confirm that this meta-commentary occupies ≈3 s before content, with no corresponding gesture, while the celebration answer ('I try to bake cake') arrives with visible hand movement and no permission scaffold. The distinction matters for Goal 1: Maria's verbal conditional syntax ('if I had the time') is paired in M4 with static hands and neutral face—consistent with low-conviction, rehearsed-feeling delivery—whereas her indicative cake syntax ('I want to order') is paired in M7 with active gesture and forward lean, consistent with high-conviction, spontaneous delivery. The grammar and the body agree: conditionals mark genuine uncertainty, indicatives mark genuine desire. There is no textual or behavioral evidence of a dissociation in which Maria uses conditional grammar while her body signals certainty (or vice versa), which would be expected if the subjunctive were a deliberate identity-distancing mask.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M11",
+        "observation_id": "active_10",
+        "modality": "video",
+        "retrieval_window": [
+          133.0,
+          140.0
+        ],
+        "content": "Across the 0–6 s window at 2 fps sampling, Maria (right, dark headscarf) maintains a stable forward orientation toward the examiner with her gaze directed at the examiner's face or papers area; no aversion, upward search, or significant head-turning is visible in any of the seven sampled frames.\nDuring Maria's continuous speech (subtitles 'especially chocolate cakes and let me explain' at 0–2 s, then 'I can bake cake too okay' at 3–5 s), her torso and shoulders remain largely still with no pronounced forward lean detectable at this frame rate; the amplitude of any postural shift is below the resolution threshold of 0.5 s inter-frame spacing.\nMaria's hands occupy a low position near her lap in frames 0.2–2.2 s; in frames 3.2–5.2 s a slight upward/outward displacement of the right hand is faintly visible, consistent with the small open-palm gesture reported in M7, but the movement spans roughly one inter-frame interval and cannot be resolved into discrete beats aligned to individual prosodic peaks.\nThe examiner (left) keeps her gaze down on papers and continues writing throughout Maria's entire turn (0–5 s), producing no visible back-channel nod or pen-lift that could serve as a temporal anchor for testing reactive vs. self-generated gesture timing; she raises her eyes only at 6.2 s to deliver the follow-up question 'so do you know how to bake a cake.'\nMaria's facial expression during 0–5 s reads as mildly engaged—lips moving in speech, brows neutral, no smile or frown escalation—and at 6.2 s she holds the same orientation while listening, with no visible micro-nod or head-tilt change between the last speech frame and the examiner's question frame.\nThe 2 fps sampling yields only ~14 frames across the 7 s window, which is insufficient to distinguish sub-second phase relationships between Maria's hand/head micro-movements and the acoustic landmarks (her own stressed syllables vs. the examiner's 'okay' back-channel noted in M7 at ≈15–16 s, which falls outside this 0–6 s clip). The mechanism question posed in the goal therefore cannot be resolved from the available visual data alone within this window.\nSetting details (Canadian flag, organization flag with blue circular logo, glass-walled conference room, grey chairs in background) confirm a formal institutional interview context; neither participant exhibits fidgeting, crossed arms, or defensive posture that would suggest discomfort with the topic.",
+        "content_status": "structured",
+        "overlapping_media_reads": [
+          "M7"
+        ]
+      }
+    ]
+  },
+  "steps": [
+    {
+      "index": 0,
+      "action": {
+        "time": [
+          0.0,
+          20.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine if the examiner's efficient, business-like delivery sets a high-pressure tone that might influence the candidate's subsequent performance style."
+      },
+      "candidate_id": "C1",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M1"
+      ],
+      "changed_ids": [
+        "M1"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 1,
+      "action": {
+        "time": [
+          20.0,
+          40.0
+        ],
+        "modality": "audio_video",
+        "goal": "Assess whether the examiner's rapid, unremarked acceptance signals a standardized protocol that discourages personalization, which may cause the candidate to suppress further self-disclosure later. Comparing the examiner's vocal energy and pacing here against her earlier recitation of ID numbers could reveal whether personal interaction is treated as an interruption to the scripted flow."
+      },
+      "candidate_id": "C2",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M2"
+      ],
+      "changed_ids": [
+        "M2"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 2,
+      "action": {
+        "time": [
+          40.0,
+          60.0
+        ],
+        "modality": "audio_video",
+        "goal": "Assess whether the candidate has internalized the examiner's transactional pacing as the expected response format, suppressing natural conversational elaboration. Comparing the candidate's speech rate, pause length, and turn-taking latency here against her earlier name-preference exchange (where she volunteered a cultural explanation) would reveal whether the shift to minimal answers is topic-driven (genuine disinterest in music) or context-driven (adopting the examiner's clipped protocol)."
+      },
+      "candidate_id": "C3",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M3"
+      ],
+      "changed_ids": [
+        "M3"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 3,
+      "action": {
+        "time": [
+          60.0,
+          80.0
+        ],
+        "modality": "audio_video",
+        "goal": "Assess whether the elaboration here is genuinely internally motivated (Maria actually wants to explain her preference) or is a compliant expansion triggered solely by the examiner's follow-up structure. If the latter, the earlier minimalism was protocol-driven rather than interest-driven; if the former, Maria selectively opens up only when the question format explicitly grants permission to go beyond a yes/no frame. Observing whether her eye contact, nodding, or hand gestures increase during the emotional-mood clause versus the time-constraint clause would help distinguish authentic engagement from performative compliance."
+      },
+      "candidate_id": "C4",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M4"
+      ],
+      "changed_ids": [
+        "M4"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 4,
+      "action": {
+        "time": [
+          80.0,
+          100.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether Maria's hesitation is topic-specific (genuine unfamiliarity with instrument-learning as a concept) or frame-specific (discomfort with achievement/competence framing versus emotional/relational framing). Comparing her filler density, self-repair frequency, and turn-initiation latency here against her earlier emotional-regulation answer (60–80 s, where she also hedged but about mood management) would reveal whether affective topics consistently produce more fluent speech than skill-oriented ones, pointing to a stable avoidance of self-presentation as competent rather than a one-off lack of thought about piano."
+      },
+      "candidate_id": "C5",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M5"
+      ],
+      "changed_ids": [
+        "M5"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 5,
+      "action": {
+        "time": [
+          100.0,
+          120.0
+        ],
+        "modality": "audio_video",
+        "goal": "Assess whether Maria consistently externalizes emotional needs onto situational/economic factors rather than naming internal states directly, which may indicate a pattern of avoiding personal vulnerability in this formal interview context. Tracking whether subsequent topics (the examiner's 'Now let's talk about K…' transition) elicit similar external-attribution framing versus direct self-reference would clarify whether this is a stable narrative strategy or topic-specific (music/mood being culturally coded as a 'practical' rather than 'emotional' subject)."
+      },
+      "candidate_id": "C6",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M6"
+      ],
+      "changed_ids": [
+        "M6"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 6,
+      "action": {
+        "time": [
+          120.0,
+          140.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether Maria's sudden fluency here reflects a stable personality trait (sensory/pleasure topics genuinely lower her evaluative anxiety, revealing a baseline of expressive confidence that other topics suppress) or a situational artifact (the examiner's casual 'Do you like…?' framing carries zero competence judgment, so Maria simply relaxes into a low-stakes register). Comparing her pause length, filler density, and turn-initiation latency in this cake segment against her 100–120 s segment—where the examiner's question was equally open-ended but the topic touched on vulnerability—would isolate whether the variable is topic valence (pleasure vs. distress) or question framing (preference vs. coping strategy). Additionally, checking whether her eye contact and nodding rhythm synchronize with her verbal elaboration here (authentic engagement) or remain as flat and delayed as in earlier segments (performative compliance triggered by the examiner's warm tone rather than internal motivation) would clarify the mechanism."
+      },
+      "candidate_id": "C7",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M7"
+      ],
+      "changed_ids": [
+        "M7"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 7,
+      "action": {
+        "time": [
+          140.0,
+          160.0
+        ],
+        "modality": "audio_video",
+        "goal": "Obtain filler density, self-repair frequency, and turn-initiation latency for Maria's 60–80 s emotional-regulation answer so that these metrics can be set against the 0–20 s instrument/competence answer. If the 60–80 s affective answer shows comparably low disfluency to the 18–20 s 'Yeah, why not' onset, the hesitation pattern is confirmed as frame-specific (competence framing triggers hedging; affective framing does not). If instead the 60–80 s answer also carries heavy fillers and repairs despite its emotional topic, the pattern points to a stable avoidance of self-presentation as competent regardless of frame, or to a general test-anxiety effect that the 18–20 s snippet alone cannot rule out."
+      },
+      "candidate_id": "C8",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M8"
+      ],
+      "changed_ids": [
+        "M8"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 8,
+      "action": {
+        "time": [
+          160.0,
+          175.612993
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether Maria's permission-checking behavior (observed at 140–160 s) is a stable self-monitoring trait or a pragmatic response to closed/technical question formats. This segment provides a natural within-topic contrast: the same subject matter elicits fully spontaneous elaboration when the examiner's framing is personal and culturally invitational rather than procedural. Comparing filler density, turn-initiation latency, and gesture amplitude across these two adjacent segments isolates whether the variable is question structure (closed yes/no vs. open personal) or Maria's internal script about when speaking at length is permissible. If the permission-check vanishes entirely under personal framing, it points to a context-driven pragmatic adaptation rather than a trait-level reluctance to self-author."
+      },
+      "candidate_id": "C9",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M9"
+      ],
+      "changed_ids": [
+        "M9"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 9,
+      "action": {
+        "time": [
+          0.0,
+          175.612993
+        ],
+        "modality": "text",
+        "goal": "Assess whether this 'justify-then-request' narrative template recurs in later self-disclosures (e.g., does Maria explain WHY she likes classical music before stating the preference, or WHY she bakes before mentioning it?) or whether it is unique to the high-stakes initial self-introduction where cultural legibility is at risk. If the pattern generalizes, it indicates a stable communicative habit of wrapping personal assertions in explanatory scaffolding to preempt judgment—a self-monitoring trait visible in text word-order and clause subordination. If it is confined to the name exchange, it is a one-off pragmatic adaptation to cross-cultural ambiguity rather than a personality-level narrative strategy."
+      },
+      "candidate_id": "C10",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M10"
+      ],
+      "changed_ids": [
+        "M10"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 10,
+      "action": {
+        "time": [
+          133.0,
+          140.0
+        ],
+        "modality": "video",
+        "goal": "At higher effective temporal resolution within this 7 s window, determine whether Maria's head nods and hand movements are phase-locked to her own prosodic peaks (authentic self-generated elaboration) or lag behind the examiner's backchannel 'okay' (reactive, examiner-triggered behavior), clarifying the mechanism behind the fluency shift."
+      },
+      "candidate_id": "C21",
+      "parent_candidate_id": "C7",
+      "new_ids": [
+        "M11"
+      ],
+      "changed_ids": [
+        "M11"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    }
+  ],
+  "semantic_review": "unreviewed",
+  "teacher_approved": false
+}
