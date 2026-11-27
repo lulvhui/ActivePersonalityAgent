@@ -213,10 +213,8 @@ class SpiralTests(unittest.TestCase):
         gated, _ = run(min_new_seconds=5.)
         free, _ = run(min_new_seconds=None)
         memory_prompt = lambda t: next(d for d in t['decisions'] if d['kind'] == 'memory')['messages'][-1]['content'][-2]['text']
-        self.assertIn('same frames and samples', memory_prompt(gated))
-        self.assertIn('Final reads all of them', memory_prompt(gated))
-        self.assertIn('at least 5', memory_prompt(gated))
-        self.assertNotIn('same frames and samples', memory_prompt(free))
+        self.assertIn('at least 5.0 s of unread_local_time', memory_prompt(gated))
+        self.assertNotIn('unread_local_time', memory_prompt(free))
 
 
 if __name__ == '__main__':

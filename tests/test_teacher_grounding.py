@@ -53,7 +53,7 @@ class ObserveClockTests(unittest.TestCase):
         payload, task = self.observe(dict(OBS, time=[10., 20.], modality='video'))
         self.assertEqual(payload['capabilities'], dict(sound=False, picture=True, video_frames_per_second=CFG['video_fps'],
                                                        transcript_only=False, measurement_tools='none'))
-        self.assertIn('no numeric acoustic or kinematic measurements', task)
+        self.assertIn('no numeric measurements of voice or movement', task)
         audio, _ = self.observe(dict(OBS, time=[10., 20.], modality='audio'))
         self.assertEqual((audio['capabilities']['sound'], audio['capabilities']['picture']), (True, False))
 
@@ -86,7 +86,7 @@ class FinalRuleTests(unittest.TestCase):
         t = ActiveAgent(reader, OfflineTraitScorer(), SyntheticMedia(), dict(CFG, selection_policy='queue', max_steps=1)).run(
             dict(id='S', dataset='SYNTHETIC', split='train', person_id='p', segments=[]))
         task = t['decisions'][-1]['messages'][-1]['content'][0]['text']
-        for phrase in ('second language', 'Behavior the setting requires', 'keep evidence that points the other way', 'return null'):
+        for phrase in ('second language', 'conduct the setting requires', 'keep opposing evidence', 'return null'):
             self.assertIn(phrase, task)
 
 

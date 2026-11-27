@@ -124,9 +124,8 @@ def add_candidate_proposals(pool, proposals, source_observation_id, parent_id=No
     return added
 
 
-OBSERVABLE_ONLY = ('Report only what can be seen or heard. Do not infer hidden motives, authenticity, deception, rehearsal or inner mechanisms, '
-    'and give no numeric acoustic or kinematic measurements (pitch, frequency, durations, frame timing); describe perceptible qualities instead, '
-    'such as a long pause or a quiet voice.')
+OBSERVABLE_ONLY = ('Describe only what is seen or heard: no hidden motives, authenticity or inner states, '
+    'and no numeric measurements of voice or movement.')
 
 
 READ_SUPPORT_RULE = ('M IDs identify reads, not independent behaviors. Assess support from distinct behaviors in context; '
