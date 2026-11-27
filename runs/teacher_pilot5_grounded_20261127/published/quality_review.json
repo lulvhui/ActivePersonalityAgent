@@ -1,0 +1,103 @@
+{
+  "source_commit": "3b8543dcf51505244761f1d38aa702c80f1d88f5",
+  "verdict": "Improved targeted read efficiency and more balanced reasoning, but two executable targeting/boundary issues remain; not approved for direct bulk SFT.",
+  "comparison": {
+    "previous_api_calls": 151,
+    "new_api_calls": 135,
+    "previous_observations": 79,
+    "new_observations": 104,
+    "previous_window_seconds": 2433.976008,
+    "new_window_seconds": 1381.572007,
+    "coarse_seconds_before": 20,
+    "coarse_seconds_after": 60,
+    "same_full_sample_manifest": true,
+    "not_single_variable_ablation": true
+  },
+  "validated": {
+    "unit_tests_passed": 171,
+    "unit_tests_skipped": 1,
+    "final_outputs": 5,
+    "complete": 4,
+    "partial": 1,
+    "api_errors": 0,
+    "output_truncations": 0,
+    "format_repairs": 0,
+    "invalid_contextual_refs": 0,
+    "all_final_texts_fit_student_context": true
+  },
+  "issues": [
+    {
+      "kind": "tail_rounding",
+      "sample": "IELTS:183",
+      "source_window": [
+        180.0,
+        224.909002
+      ],
+      "candidate_local_window": [
+        41.0,
+        45.0
+      ],
+      "overshoot_seconds": 0.090998,
+      "status": "reproduced_on_CPU",
+      "effect": "One coarse candidate rejected; trajectory marked partial while remaining observations and Final completed.",
+      "evidence_file": "tail_rounding_regression.json"
+    },
+    {
+      "kind": "text_target_location",
+      "sample": "IELTS:183",
+      "record": "M14",
+      "requested_window": [
+        65.0,
+        100.0
+      ],
+      "returned_text_segments": 0,
+      "target_ASR_retrieval_index": [
+        103.4,
+        137.1
+      ],
+      "target_segment_count": 3,
+      "timing": "unverified_asr; not verified media timestamps",
+      "cause": "Text coarse prompt strips source segment time/index information but requires the model to choose precise local_time.",
+      "effect": "Empty observation followed by additional text retrieval.",
+      "evidence_file": "text_retrieval_regression.json"
+    },
+    {
+      "kind": "crop_boundary_misinterpreted_as_trait",
+      "sample": "IELTS:106",
+      "record": "M20",
+      "window": [
+        227.0,
+        240.0
+      ],
+      "observed_statement": "The clip ends mid-utterance at 13 s; the response is not yet complete.",
+      "final_use": "M20 ends mid-utterance is used as counterevidence to C.",
+      "effect": "Artificial observation boundary influences personality conclusion."
+    },
+    {
+      "kind": "trait_inference",
+      "observed": "All five N=low and all 25 trait levels non-null. Final still relies on absent visible anxiety, restrained movement, fluency and setting-constrained behavior.",
+      "scope": "Not proof of label inaccuracy; direct reasoning review identifies weak support and incomplete abstention behavior."
+    }
+  ],
+  "improvements": [
+    "Explicit goal clock and prior-window mapping covered by CPU regression tests.",
+    "Actual media modality/FPS/no-measurement capability is exposed.",
+    "Previous native-frame-rate and facial-muscle-timing goal patterns were not found in these returned goals.",
+    "Positive self-reports receive more weight in 193; 176 no longer derives high C from appearance/posture alone.",
+    "Shorter, targeted observations reduce cumulative retrieval-window time."
+  ],
+  "next_steps": [
+    "Normalize near-tail rounding to the actual source endpoint with an audit record; retain rejection for material out-of-range requests.",
+    "Provide existing transcript retrieval indexes to coarse scan and bind text retrieval using those indexes rather than guessed timestamps; keep unverified media alignment explicit.",
+    "Clarify in Final that clip-induced incomplete speech is not evidence of poor organization or low C.",
+    "Review trait linkage and uncertainty before accepting trajectories; no automatic SFT approval."
+  ],
+  "scope": {
+    "new_api_calls_for_review": 0,
+    "full_human_media_audit": false,
+    "formal_training": false,
+    "local_3b_or_7b_inference_rerun": false,
+    "source_modified_during_test": false,
+    "teacher_approved_trajectories": 0
+  }
+}

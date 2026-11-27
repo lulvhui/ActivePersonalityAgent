@@ -1,0 +1,1032 @@
+{
+  "plan": {
+    "commit": "3b8543dcf51505244761f1d38aa702c80f1d88f5",
+    "model": "qwen3.8-omni-flash",
+    "sample_ids": [
+      "IELTS:138",
+      "IELTS:106",
+      "IELTS:193",
+      "IELTS:183",
+      "IELTS:176"
+    ],
+    "split": "train",
+    "max_steps": 64,
+    "max_new_tokens": 8192,
+    "reasoning_effort": "medium",
+    "min_new_seconds": 5,
+    "max_focus_per_region": 1,
+    "trajectories_per_sample": 1,
+    "best_of_n": false,
+    "parallel_samples": 3,
+    "jev_api_calls": 0,
+    "training": false,
+    "labels_in_api_inputs": false,
+    "coarse_chunk_seconds": 60,
+    "previous_coarse_chunk_seconds": 20,
+    "baseline": "runs/teacher_pilot5_bounded_20261127/published",
+    "comparison": "Same full samples/model/budgets; prompts, candidate schema and coarse segmentation changed together"
+  },
+  "samples": [
+    {
+      "sample_id": "IELTS:138",
+      "status": "complete",
+      "error": null,
+      "observations": 21,
+      "active_seconds": 205.0,
+      "initial_candidates": 13,
+      "pool_states": {
+        "done": 21,
+        "filtered": 2
+      },
+      "stop_reason": "candidate_pool_exhausted",
+      "final_status": "generated",
+      "final_levels": {
+        "O": "low",
+        "C": "medium",
+        "E": "medium",
+        "A": "medium",
+        "N": "low"
+      },
+      "final_trait_coverage": 1.0,
+      "memory_records": 21,
+      "readable_records": 21,
+      "nonempty_finding_records": 21,
+      "finding_strings": 92,
+      "finding_count_is_not_independent_personality_evidence": true,
+      "continuous_step_indices": true,
+      "no_exact_repeated_actions": true,
+      "invalid_contextual_refs": [],
+      "contextual_errors": [],
+      "invalid_followup_steps": [],
+      "empty_coarse_sources": [],
+      "rejected_coarse_candidates": [],
+      "novelty_filtered": [
+        {
+          "source_observation_id": "active_13",
+          "hint": "The interviewer's reaction shot (woman in teal, ~1.0–3.5 s) and the interviewee's return-frame expression (~4.0–5.5 s) were described only in broad terms; a dedicated video closer look can resolve whether the interviewer nods, shifts posture, or changes gaze angle while the interviewee speaks off-screen, and whether the interviewee's facial muscles (brow, jaw, lip tension) show any micro-shift at the moment the shot cuts back to him.",
+          "goal": "Determine whether the interviewer's visible engagement during the off-screen speech and the interviewee's facial re-set upon the return cut provide additional turn-management or affective context that the audio-only description cannot capture, specifically whether the parental-clause completion is delivered with the same ease as the self-report clause or whether a subtle tension change marks the shift from quoting others to asserting his own record.",
+          "stage": "proposal",
+          "parent_id": "C14",
+          "time": [
+            50.0,
+            56.0
+          ],
+          "modality": "video",
+          "reason": "no_unread_content_outside_region",
+          "new_seconds": {
+            "video": 0.0
+          },
+          "new_still": false,
+          "region_root": "C1"
+        },
+        {
+          "stage": "execution",
+          "candidate_id": "C15",
+          "parent_id": "C2",
+          "time": [
+            50.0,
+            56.0
+          ],
+          "modality": "audio_video",
+          "reason": "no_unread_content_outside_region",
+          "new_seconds": {
+            "audio": 0.0,
+            "video": 0.0
+          },
+          "new_still": false,
+          "region_root": "C2"
+        },
+        {
+          "source_observation_id": "active_16",
+          "hint": "Isolate the breathy chuckle following 'potatoes' to characterize whether it resembles a suppressed laugh (short, single-pulse, low amplitude) or a fuller amused exhalation (longer, multi-pulse), which bears on distinguishing self-awareness of bluntness from genuine amusement at the image.",
+          "goal": "Determine whether the chuckle after 'couch potatoes' signals self-awareness of the colloquialism's bluntness or genuine amusement at the image, and whether the preceding 'in my opinion' hedge softens the judgment or merely marks it as personal.",
+          "stage": "proposal",
+          "parent_id": "C18",
+          "time": [
+            141.0,
+            143.0
+          ],
+          "modality": "audio",
+          "reason": "focus_used",
+          "new_seconds": {
+            "audio": 0.0
+          },
+          "new_still": false,
+          "region_root": "C6"
+        },
+        {
+          "stage": "execution",
+          "candidate_id": "C21",
+          "parent_id": "C9",
+          "time": [
+            184.0,
+            189.0
+          ],
+          "modality": "audio_video",
+          "reason": "no_unread_content_outside_region",
+          "new_seconds": {
+            "audio": 0.0,
+            "video": 0.0
+          },
+          "new_still": false,
+          "region_root": "C9"
+        }
+      ],
+      "api_calls": 27,
+      "api_errors": [],
+      "usage_complete": true,
+      "validation_repairs": 0,
+      "candidate_parameter_repairs": 0,
+      "repair_errors": [],
+      "prompt_tokens": 74755,
+      "completion_tokens": 56877,
+      "prior_first_attempt": {
+        "status": "complete",
+        "active_observations": 18,
+        "active_seconds": 459.42399,
+        "api_calls": 31,
+        "stop_reason": "candidate_pool_exhausted",
+        "error": null
+      },
+      "semantic_review": "not_approved",
+      "student_context_check": "not_performed"
+    },
+    {
+      "sample_id": "IELTS:106",
+      "status": "complete",
+      "error": null,
+      "observations": 20,
+      "active_seconds": 198.67800499999998,
+      "initial_candidates": 14,
+      "pool_states": {
+        "done": 20
+      },
+      "stop_reason": "candidate_pool_exhausted",
+      "final_status": "generated",
+      "final_levels": {
+        "O": "medium",
+        "C": "medium",
+        "E": "medium",
+        "A": "medium",
+        "N": "low"
+      },
+      "final_trait_coverage": 1.0,
+      "memory_records": 20,
+      "readable_records": 20,
+      "nonempty_finding_records": 20,
+      "finding_strings": 100,
+      "finding_count_is_not_independent_personality_evidence": true,
+      "continuous_step_indices": true,
+      "no_exact_repeated_actions": true,
+      "invalid_contextual_refs": [],
+      "contextual_errors": [],
+      "invalid_followup_steps": [],
+      "empty_coarse_sources": [],
+      "rejected_coarse_candidates": [],
+      "novelty_filtered": [
+        {
+          "source_observation_id": "active_8",
+          "hint": "Interviewee's posture and gaze immediately before the examiner's 'Hmm, excellent' acknowledgment, to establish a baseline against which any change during the 1–2 s pause can be judged as a reset or continuity.",
+          "goal": "Determine whether the interviewee's hand position, torso orientation, or gaze direction differs at −3.0 s compared with 0.0–1.0 s, thereby clarifying whether the static posture observed during the pause represents a maintained state or a post-shift reset.",
+          "stage": "proposal",
+          "parent_id": "C9",
+          "time": [
+            180.0,
+            183.0
+          ],
+          "modality": "audio_video",
+          "reason": "no_unread_content_outside_region",
+          "new_seconds": {
+            "audio": 3.0,
+            "video": 3.0
+          },
+          "new_still": false,
+          "region_root": "C9"
+        },
+        {
+          "source_observation_id": "active_12",
+          "hint": "Confirm whether the settling hand posture observed at 12 s holds steady through the clip boundary or whether any residual micro-gesture (finger tap, hand repositioning) occurs in the final ~1.7 s after 'farmers'.",
+          "goal": "Verify that the closing posture is fully settled and not truncated mid-motion, strengthening the finding that the final clause is delivered with a settling rather than mid-gesture posture.",
+          "stage": "proposal",
+          "parent_id": "C13",
+          "time": [
+            267.0,
+            268.678005
+          ],
+          "modality": "audio_video",
+          "reason": "no_unread_content_outside_region",
+          "new_seconds": {
+            "audio": 1.678005,
+            "video": 2.0
+          },
+          "new_still": false,
+          "region_root": "C13"
+        }
+      ],
+      "api_calls": 27,
+      "api_errors": [],
+      "usage_complete": true,
+      "validation_repairs": 0,
+      "candidate_parameter_repairs": 0,
+      "repair_errors": [],
+      "prompt_tokens": 79451,
+      "completion_tokens": 65121,
+      "prior_first_attempt": {
+        "status": "complete",
+        "active_observations": 15,
+        "active_seconds": 537.35601,
+        "api_calls": 31,
+        "stop_reason": "candidate_pool_exhausted",
+        "error": null
+      },
+      "semantic_review": "not_approved",
+      "student_context_check": "not_performed"
+    },
+    {
+      "sample_id": "IELTS:193",
+      "status": "complete",
+      "error": null,
+      "observations": 20,
+      "active_seconds": 263.076,
+      "initial_candidates": 15,
+      "pool_states": {
+        "done": 20,
+        "filtered": 3
+      },
+      "stop_reason": "candidate_pool_exhausted",
+      "final_status": "generated",
+      "final_levels": {
+        "O": "medium",
+        "C": "medium",
+        "E": "low",
+        "A": "medium",
+        "N": "low"
+      },
+      "final_trait_coverage": 1.0,
+      "memory_records": 20,
+      "readable_records": 20,
+      "nonempty_finding_records": 20,
+      "finding_strings": 101,
+      "finding_count_is_not_independent_personality_evidence": true,
+      "continuous_step_indices": true,
+      "no_exact_repeated_actions": true,
+      "invalid_contextual_refs": [],
+      "contextual_errors": [],
+      "invalid_followup_steps": [],
+      "empty_coarse_sources": [
+        {
+          "step": 5,
+          "time": [
+            0,
+            289.576009
+          ],
+          "modality": "text",
+          "summary": "The interviewee, Fernando Alonso Lopez Velasco (goes by 'Fer'), participates in a structured English-speaking examination administered by examiner Mahnoush Shafi. Across roughly four and a half minutes of recorded speech, he addresses three topic clusters—accommodation, music, and travel—in response to paired questions (general preference followed by a follow-up detail).\n\nContent-wise, he states a preference for houses over flats (citing dislike of neighbors, desire for spaciousness, and a private bathroom), notes he has lived in his grandparents' large house for about five years, and hedges his long-term plans with a conditional tied to finances. On music, he declares a strong fondness, offers the metaphor that music 'cures your soul,' estimates two to three hours of daily listening, rejects live-performance settings because of audience noise and encores, but carves out an exception for artists he already likes. On travel, he expresses enthusiasm for novelty (new places, people, relationships), admits he does not travel as much as he wishes, likes flying but dislikes turbulence, and names Italy and Japan as desired destinations, elaborating only on Japan's cuisine.\n\nIn terms of communication style visible in the transcript, several patterns recur: (1) frequent use of 'like' as a hedge, approximation marker, or filler ('like for five years,' 'like a big yard,' 'around like two, three hours,' 'when it's like a band'); (2) discourse-level openers that signal candidness ('To be honest,' 'Honestly I don't'); (3) self-repairs and restarts ('prefer to living in a house… than a flat'; 'I had thought about that until now,' which appears to be a negation slip for 'I hadn't thought'); (4) conditional and hedging structures that soften commitments ('I'm not really sure about it,' 'unless I have enough money,' 'at some point'); (5) lists delivered with escalating rhythm ('knowing new places, meeting new people, making new relationships'); and (6) occasional truncation where a qualifying clause is abandoned mid-thought ('but I try not to work with…'). The overall register is informal and conversational, with the interviewee shifting between blunt declarations and tentative elaborations, often within the same turn. No numeric measurements of voice or movement are inferable from the text alone."
+        }
+      ],
+      "rejected_coarse_candidates": [],
+      "novelty_filtered": [
+        {
+          "source_observation_id": "active_5",
+          "hint": "The interviewer's follow-up 'and…' at the tail of the current clip likely introduces a new question about the property; reading the next few seconds can confirm whether the spatial description prompted a specific probe (e.g., about the separate room's use) or a general transition.",
+          "goal": "Determine whether the interviewer's next question directly references the 'separate place' or 'yard' just described, which would indicate the spatial account was received as sufficiently coherent, or whether she moves to an unrelated topic, suggesting the description was treated as background context only.",
+          "stage": "proposal",
+          "parent_id": "C6",
+          "time": [
+            120.0,
+            123.0
+          ],
+          "modality": "audio_video",
+          "reason": "no_unread_content_outside_region",
+          "new_seconds": {
+            "audio": 3.0,
+            "video": 3.0
+          },
+          "new_still": false,
+          "region_root": "C6"
+        },
+        {
+          "stage": "execution",
+          "candidate_id": "C19",
+          "parent_id": "C10",
+          "time": [
+            207.0,
+            212.0
+          ],
+          "modality": "audio_video",
+          "reason": "no_unread_content_outside_region",
+          "new_seconds": {
+            "audio": 0.0,
+            "video": 0.0
+          },
+          "new_still": false,
+          "region_root": "C10"
+        },
+        {
+          "source_observation_id": "active_11",
+          "hint": "The prior segment ended mid-word ('bravo' or a transition). The 4 seconds before this clip's start may contain the tail of the previous answer or the interviewer's setup for 'Do you like traveling?', providing context for whether the travel question was a fresh topic or a follow-up.",
+          "goal": "Establish whether the travel question introduces a new domain or continues a prior thread, which affects how the three-item list is interpreted (spontaneous elaboration vs. structured answer to a multi-part prompt).",
+          "stage": "proposal",
+          "parent_id": "C12",
+          "time": [
+            216.0,
+            221.0
+          ],
+          "modality": "audio_video",
+          "reason": "no_unread_content_outside_region",
+          "new_seconds": {
+            "audio": 4.0,
+            "video": 4.0
+          },
+          "new_still": false,
+          "region_root": "C12"
+        },
+        {
+          "stage": "execution",
+          "candidate_id": "C20",
+          "parent_id": "C11",
+          "time": [
+            216.0,
+            227.0
+          ],
+          "modality": "audio_video",
+          "reason": "no_unread_content_outside_region",
+          "new_seconds": {
+            "audio": 4.0,
+            "video": 4.0
+          },
+          "new_still": false,
+          "region_root": "C11"
+        },
+        {
+          "stage": "execution",
+          "candidate_id": "C21",
+          "parent_id": "C11",
+          "time": [
+            227.0,
+            242.0
+          ],
+          "modality": "audio",
+          "reason": "no_unread_content_outside_region",
+          "new_seconds": {
+            "audio": 2.0
+          },
+          "new_still": false,
+          "region_root": "C11"
+        }
+      ],
+      "api_calls": 27,
+      "api_errors": [],
+      "usage_complete": true,
+      "validation_repairs": 0,
+      "candidate_parameter_repairs": 0,
+      "repair_errors": [],
+      "prompt_tokens": 85705,
+      "completion_tokens": 60140,
+      "prior_first_attempt": {
+        "status": "complete",
+        "active_observations": 18,
+        "active_seconds": 595.152018,
+        "api_calls": 36,
+        "stop_reason": "candidate_pool_exhausted",
+        "error": null
+      },
+      "semantic_review": "not_approved",
+      "student_context_check": "not_performed"
+    },
+    {
+      "sample_id": "IELTS:183",
+      "status": "partial",
+      "error": null,
+      "observations": 23,
+      "active_seconds": 475.818002,
+      "initial_candidates": 16,
+      "pool_states": {
+        "done": 23,
+        "filtered": 10
+      },
+      "stop_reason": "candidate_pool_exhausted",
+      "final_status": "generated",
+      "final_levels": {
+        "O": "low",
+        "C": "medium",
+        "E": "low",
+        "A": "medium",
+        "N": "low"
+      },
+      "final_trait_coverage": 1.0,
+      "memory_records": 23,
+      "readable_records": 23,
+      "nonempty_finding_records": 22,
+      "finding_strings": 93,
+      "finding_count_is_not_independent_personality_evidence": true,
+      "continuous_step_indices": true,
+      "no_exact_repeated_actions": true,
+      "invalid_contextual_refs": [],
+      "contextual_errors": [],
+      "invalid_followup_steps": [],
+      "empty_coarse_sources": [],
+      "rejected_coarse_candidates": [
+        {
+          "step": 3,
+          "rejected": [
+            {
+              "index": 3,
+              "error": "local_time must stay within -180 to 44.909 seconds from clip start (the recording)"
+            }
+          ]
+        }
+      ],
+      "novelty_filtered": [
+        {
+          "stage": "execution",
+          "candidate_id": "C18",
+          "parent_id": "C2",
+          "time": [
+            60.0,
+            65.0
+          ],
+          "modality": "audio_video",
+          "reason": "no_unread_content_outside_region",
+          "new_seconds": {
+            "audio": 0.0,
+            "video": 0.0
+          },
+          "new_still": false,
+          "region_root": "C2"
+        },
+        {
+          "stage": "execution",
+          "candidate_id": "C21",
+          "parent_id": "C5",
+          "time": [
+            120.0,
+            125.0
+          ],
+          "modality": "audio_video",
+          "reason": "no_unread_content_outside_region",
+          "new_seconds": {
+            "audio": 0.0,
+            "video": 0.0
+          },
+          "new_still": false,
+          "region_root": "C5"
+        },
+        {
+          "stage": "execution",
+          "candidate_id": "C23",
+          "parent_id": "C6",
+          "time": [
+            140.0,
+            145.0
+          ],
+          "modality": "audio_video",
+          "reason": "no_unread_content_outside_region",
+          "new_seconds": {
+            "audio": 0.0,
+            "video": 0.0
+          },
+          "new_still": false,
+          "region_root": "C6"
+        },
+        {
+          "stage": "execution",
+          "candidate_id": "C25",
+          "parent_id": "C8",
+          "time": [
+            180.0,
+            185.0
+          ],
+          "modality": "audio_video",
+          "reason": "no_unread_content_outside_region",
+          "new_seconds": {
+            "audio": 0.0,
+            "video": 0.0
+          },
+          "new_still": false,
+          "region_root": "C8"
+        },
+        {
+          "stage": "execution",
+          "candidate_id": "C26",
+          "parent_id": "C8",
+          "time": [
+            180.0,
+            190.0
+          ],
+          "modality": "audio",
+          "reason": "no_unread_content_outside_region",
+          "new_seconds": {
+            "audio": 1.0
+          },
+          "new_still": false,
+          "region_root": "C8"
+        },
+        {
+          "stage": "execution",
+          "candidate_id": "C19",
+          "parent_id": "C4",
+          "time": [
+            77.0,
+            100.0
+          ],
+          "modality": "text",
+          "reason": "no_unread_content_outside_region",
+          "new_seconds": {
+            "text": 0.0
+          },
+          "new_still": false,
+          "region_root": "C4"
+        },
+        {
+          "stage": "execution",
+          "candidate_id": "C22",
+          "parent_id": "C5",
+          "time": [
+            101.0,
+            114.0
+          ],
+          "modality": "audio_video",
+          "reason": "no_unread_content_outside_region",
+          "new_seconds": {
+            "audio": 2.0,
+            "video": 2.0
+          },
+          "new_still": false,
+          "region_root": "C5"
+        },
+        {
+          "stage": "execution",
+          "candidate_id": "C29",
+          "parent_id": "C14",
+          "time": [
+            101.0,
+            114.0
+          ],
+          "modality": "audio",
+          "reason": "no_unread_content_outside_region",
+          "new_seconds": {
+            "audio": 2.0
+          },
+          "new_still": false,
+          "region_root": "C14"
+        },
+        {
+          "source_observation_id": "active_18",
+          "hint": "The interviewee's sentence 'somewhere between difficult and—' is truncated at the 5.0 s boundary; the completing term (likely 'easy' or a further qualifier) and any final hand re-clasping gesture will appear in the immediately following 1-second window.",
+          "goal": "Capture the completion of the comparative phrase ('difficult and ___') and determine whether the interviewee's hands finally return to the clasped resting position, completing the gesture-contraction arc observed in the prior 5 seconds.",
+          "stage": "proposal",
+          "parent_id": "C24",
+          "time": [
+            163.0,
+            164.0
+          ],
+          "modality": "audio_video",
+          "reason": "no_unread_content_outside_region",
+          "new_seconds": {
+            "audio": 1.0,
+            "video": 1.0
+          },
+          "new_still": false,
+          "region_root": "C7"
+        },
+        {
+          "stage": "execution",
+          "candidate_id": "C31",
+          "parent_id": "C16",
+          "time": [
+            180.0,
+            224.909002
+          ],
+          "modality": "text",
+          "reason": "no_unread_content_outside_region",
+          "new_seconds": {
+            "text": 0.0
+          },
+          "new_still": false,
+          "region_root": "C16"
+        },
+        {
+          "stage": "execution",
+          "candidate_id": "C32",
+          "parent_id": "C20",
+          "time": [
+            101.0,
+            110.0
+          ],
+          "modality": "text",
+          "reason": "no_unread_content_outside_region",
+          "new_seconds": {
+            "text": 0.0
+          },
+          "new_still": false,
+          "region_root": "C4"
+        }
+      ],
+      "api_calls": 29,
+      "api_errors": [],
+      "usage_complete": true,
+      "validation_repairs": 0,
+      "candidate_parameter_repairs": 0,
+      "repair_errors": [],
+      "prompt_tokens": 91821,
+      "completion_tokens": 69852,
+      "prior_first_attempt": {
+        "status": "complete",
+        "active_observations": 17,
+        "active_seconds": 483.818004,
+        "api_calls": 31,
+        "stop_reason": "candidate_pool_exhausted",
+        "error": null
+      },
+      "semantic_review": "not_approved",
+      "student_context_check": "not_performed"
+    },
+    {
+      "sample_id": "IELTS:176",
+      "status": "complete",
+      "error": null,
+      "observations": 20,
+      "active_seconds": 239.0,
+      "initial_candidates": 13,
+      "pool_states": {
+        "done": 20,
+        "filtered": 3
+      },
+      "stop_reason": "candidate_pool_exhausted",
+      "final_status": "generated",
+      "final_levels": {
+        "O": "medium",
+        "C": "medium",
+        "E": "medium",
+        "A": "high",
+        "N": "low"
+      },
+      "final_trait_coverage": 1.0,
+      "memory_records": 20,
+      "readable_records": 20,
+      "nonempty_finding_records": 20,
+      "finding_strings": 91,
+      "finding_count_is_not_independent_personality_evidence": true,
+      "continuous_step_indices": true,
+      "no_exact_repeated_actions": true,
+      "invalid_contextual_refs": [],
+      "contextual_errors": [],
+      "invalid_followup_steps": [],
+      "empty_coarse_sources": [],
+      "rejected_coarse_candidates": [],
+      "novelty_filtered": [
+        {
+          "stage": "execution",
+          "candidate_id": "C19",
+          "parent_id": "C8",
+          "time": [
+            145.0,
+            150.0
+          ],
+          "modality": "audio_video",
+          "reason": "no_unread_content_outside_region",
+          "new_seconds": {
+            "audio": 0.0,
+            "video": 0.0
+          },
+          "new_still": false,
+          "region_root": "C8"
+        },
+        {
+          "source_observation_id": "active_15",
+          "hint": "The interviewee's 'Thank you very much' is confirmed concurrent with the document extension in this clip; the examiner's 'You're welcome' (2.0–2.5 s) and the throat-clearing (3.0–3.5 s) identified in audio-only M15 fall immediately after this window and lack visual speaker attribution.",
+          "goal": "Visually confirm which participant's mouth moves during 'You're welcome' and identify the source of the throat-clearing, closing the speaker-attribution gap that M15 could only resolve by voice-matching against M14.",
+          "stage": "proposal",
+          "parent_id": "C16",
+          "time": [
+            48.0,
+            53.0
+          ],
+          "modality": "audio_video",
+          "reason": "no_unread_content_outside_region",
+          "new_seconds": {
+            "audio": 3.0,
+            "video": 2.0
+          },
+          "new_still": false,
+          "region_root": "C2"
+        },
+        {
+          "stage": "execution",
+          "candidate_id": "C23",
+          "parent_id": "C15",
+          "time": [
+            50.0,
+            55.0
+          ],
+          "modality": "audio",
+          "reason": "no_unread_content_outside_region",
+          "new_seconds": {
+            "audio": 0.0
+          },
+          "new_still": false,
+          "region_root": "C2"
+        },
+        {
+          "source_observation_id": "active_19",
+          "hint": "The intonation contour (falling-closing vs. rising-open) of 'it depends on the people' is indeterminate from M9's gesture-and-structure description and M13's flat text rendering. A closer audio listen within the original region [-5.0, 5.0] can attend specifically to the pitch trajectory on the final words 'the people' and confirm whether the clause closes or remains open.",
+          "goal": "Resolve Goal 1: determine whether 'it depends on the people' ends with a falling intonation (thought-closing) or a rising/level intonation (open-ended), by attending to the pitch contour on the final syllables within this 3-second window.",
+          "stage": "proposal",
+          "parent_id": "C21",
+          "time": [
+            162.0,
+            165.0
+          ],
+          "modality": "audio",
+          "reason": "focus_used",
+          "new_seconds": {
+            "audio": 0.0
+          },
+          "new_still": false,
+          "region_root": "C13"
+        },
+        {
+          "stage": "execution",
+          "candidate_id": "C22",
+          "parent_id": "C13",
+          "time": [
+            160.0,
+            165.0
+          ],
+          "modality": "video",
+          "reason": "focus_used",
+          "new_seconds": {
+            "video": 0.0
+          },
+          "new_still": false,
+          "region_root": "C13"
+        }
+      ],
+      "api_calls": 25,
+      "api_errors": [],
+      "usage_complete": true,
+      "validation_repairs": 0,
+      "candidate_parameter_repairs": 0,
+      "repair_errors": [],
+      "prompt_tokens": 78850,
+      "completion_tokens": 74977,
+      "prior_first_attempt": {
+        "status": "complete",
+        "active_observations": 11,
+        "active_seconds": 358.225986,
+        "api_calls": 22,
+        "stop_reason": "candidate_pool_exhausted",
+        "error": null
+      },
+      "semantic_review": "not_approved",
+      "student_context_check": "not_performed"
+    }
+  ],
+  "student_context": {
+    "model": "/mnt/r6_hdd4t/lhlu/models/Qwen2.5-Omni-3B",
+    "configured_context": 32768,
+    "results": [
+      {
+        "sample_id": "IELTS:138",
+        "prompt_text_tokens": 9301,
+        "target_tokens": 1788,
+        "combined_text_tokens": 11089,
+        "exceeds_configured_context": false
+      },
+      {
+        "sample_id": "IELTS:106",
+        "prompt_text_tokens": 8506,
+        "target_tokens": 1843,
+        "combined_text_tokens": 10349,
+        "exceeds_configured_context": false
+      },
+      {
+        "sample_id": "IELTS:193",
+        "prompt_text_tokens": 9040,
+        "target_tokens": 2110,
+        "combined_text_tokens": 11150,
+        "exceeds_configured_context": false
+      },
+      {
+        "sample_id": "IELTS:183",
+        "prompt_text_tokens": 9747,
+        "target_tokens": 1870,
+        "combined_text_tokens": 11617,
+        "exceeds_configured_context": false
+      },
+      {
+        "sample_id": "IELTS:176",
+        "prompt_text_tokens": 9366,
+        "target_tokens": 1415,
+        "combined_text_tokens": 10781,
+        "exceeds_configured_context": false
+      }
+    ],
+    "training": false,
+    "scope": "Completed text-only Final inputs and targets; no multimodal expansion or optimizer update tested"
+  },
+  "input_parity": {
+    "same_full_sample_manifest": true,
+    "manifest_sha256": "15ed894055ad4f49e09dc7d967dc47b18423b085305fd30b247c1ddb52ab8a57",
+    "coarse_chunk_seconds_before": 20,
+    "coarse_chunk_seconds_after": 60,
+    "not_a_single_variable_prompt_ablation": true
+  },
+  "unit_tests": {
+    "total": 172,
+    "passed": 171,
+    "skipped": 1
+  },
+  "batch_processes": [
+    {
+      "sample_id": "IELTS:138",
+      "exit_code": 0,
+      "elapsed_seconds": 860.0999925136566
+    },
+    {
+      "sample_id": "IELTS:193",
+      "exit_code": 0,
+      "elapsed_seconds": 913.4584157466888
+    },
+    {
+      "sample_id": "IELTS:106",
+      "exit_code": 0,
+      "elapsed_seconds": 996.0670001506805
+    },
+    {
+      "sample_id": "IELTS:183",
+      "exit_code": 0,
+      "elapsed_seconds": 961.8562695980072
+    },
+    {
+      "sample_id": "IELTS:176",
+      "exit_code": 0,
+      "elapsed_seconds": 1006.6245212554932
+    }
+  ],
+  "completed_samples": 4,
+  "total_observations": 104,
+  "nonempty_observation_records": 103,
+  "total_validation_repairs": 0,
+  "api_calls_total": 135,
+  "known_prompt_tokens": 410582,
+  "known_completion_tokens": 326967,
+  "teacher_approved_trajectories": 0,
+  "formal_training": false,
+  "billing": "Not verified; timed-out calls may have unknown usage",
+  "previous_report": "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_pilot5_bounded_20261127/published/report.json",
+  "quality_review": {
+    "source_commit": "3b8543dcf51505244761f1d38aa702c80f1d88f5",
+    "verdict": "Improved targeted read efficiency and more balanced reasoning, but two executable targeting/boundary issues remain; not approved for direct bulk SFT.",
+    "comparison": {
+      "previous_api_calls": 151,
+      "new_api_calls": 135,
+      "previous_observations": 79,
+      "new_observations": 104,
+      "previous_window_seconds": 2433.976008,
+      "new_window_seconds": 1381.572007,
+      "coarse_seconds_before": 20,
+      "coarse_seconds_after": 60,
+      "same_full_sample_manifest": true,
+      "not_single_variable_ablation": true
+    },
+    "validated": {
+      "unit_tests_passed": 171,
+      "unit_tests_skipped": 1,
+      "final_outputs": 5,
+      "complete": 4,
+      "partial": 1,
+      "api_errors": 0,
+      "output_truncations": 0,
+      "format_repairs": 0,
+      "invalid_contextual_refs": 0,
+      "all_final_texts_fit_student_context": true
+    },
+    "issues": [
+      {
+        "kind": "tail_rounding",
+        "sample": "IELTS:183",
+        "source_window": [
+          180.0,
+          224.909002
+        ],
+        "candidate_local_window": [
+          41.0,
+          45.0
+        ],
+        "overshoot_seconds": 0.090998,
+        "status": "reproduced_on_CPU",
+        "effect": "One coarse candidate rejected; trajectory marked partial while remaining observations and Final completed.",
+        "evidence_file": "tail_rounding_regression.json"
+      },
+      {
+        "kind": "text_target_location",
+        "sample": "IELTS:183",
+        "record": "M14",
+        "requested_window": [
+          65.0,
+          100.0
+        ],
+        "returned_text_segments": 0,
+        "target_ASR_retrieval_index": [
+          103.4,
+          137.1
+        ],
+        "target_segment_count": 3,
+        "timing": "unverified_asr; not verified media timestamps",
+        "cause": "Text coarse prompt strips source segment time/index information but requires the model to choose precise local_time.",
+        "effect": "Empty observation followed by additional text retrieval.",
+        "evidence_file": "text_retrieval_regression.json"
+      },
+      {
+        "kind": "crop_boundary_misinterpreted_as_trait",
+        "sample": "IELTS:106",
+        "record": "M20",
+        "window": [
+          227.0,
+          240.0
+        ],
+        "observed_statement": "The clip ends mid-utterance at 13 s; the response is not yet complete.",
+        "final_use": "M20 ends mid-utterance is used as counterevidence to C.",
+        "effect": "Artificial observation boundary influences personality conclusion."
+      },
+      {
+        "kind": "trait_inference",
+        "observed": "All five N=low and all 25 trait levels non-null. Final still relies on absent visible anxiety, restrained movement, fluency and setting-constrained behavior.",
+        "scope": "Not proof of label inaccuracy; direct reasoning review identifies weak support and incomplete abstention behavior."
+      }
+    ],
+    "improvements": [
+      "Explicit goal clock and prior-window mapping covered by CPU regression tests.",
+      "Actual media modality/FPS/no-measurement capability is exposed.",
+      "Previous native-frame-rate and facial-muscle-timing goal patterns were not found in these returned goals.",
+      "Positive self-reports receive more weight in 193; 176 no longer derives high C from appearance/posture alone.",
+      "Shorter, targeted observations reduce cumulative retrieval-window time."
+    ],
+    "next_steps": [
+      "Normalize near-tail rounding to the actual source endpoint with an audit record; retain rejection for material out-of-range requests.",
+      "Provide existing transcript retrieval indexes to coarse scan and bind text retrieval using those indexes rather than guessed timestamps; keep unverified media alignment explicit.",
+      "Clarify in Final that clip-induced incomplete speech is not evidence of poor organization or low C.",
+      "Review trait linkage and uncertainty before accepting trajectories; no automatic SFT approval."
+    ],
+    "scope": {
+      "new_api_calls_for_review": 0,
+      "full_human_media_audit": false,
+      "formal_training": false,
+      "local_3b_or_7b_inference_rerun": false,
+      "source_modified_during_test": false,
+      "teacher_approved_trajectories": 0
+    }
+  },
+  "tail_rounding_regression": [
+    {
+      "local_time": [
+        41,
+        45.0
+      ],
+      "accepted": false,
+      "errors": [
+        {
+          "index": 0,
+          "error": "local_time must stay within -180 to 44.909 seconds from clip start (the recording)"
+        }
+      ]
+    },
+    {
+      "local_time": [
+        41,
+        44.909002
+      ],
+      "accepted": true,
+      "errors": []
+    }
+  ],
+  "text_retrieval_regression": [
+    {
+      "retrieval_window": [
+        65.0,
+        100.0
+      ],
+      "segments": 0,
+      "texts": [],
+      "timing": "unverified_asr; retrieval index only, not verified media alignment"
+    },
+    {
+      "retrieval_window": [
+        103.4,
+        137.1
+      ],
+      "segments": 3,
+      "texts": [
+        "Well, there are a few things that really help me to focus and concentrate on different things, and especially studying. The first thing is probably drinking a bottle of water and trying to relax. I try to take a chill pill before getting started.",
+        "Yeah, it's one of those most effective and efficient ways that someone can take into practice to help and improve their concentration.",
+        "It's rather medium, somewhere between difficult and easy."
+      ],
+      "timing": "unverified_asr; retrieval index only, not verified media alignment"
+    }
+  ],
+  "finished_samples": 5,
+  "final_outputs": 5,
+  "partial_samples": 1
+}

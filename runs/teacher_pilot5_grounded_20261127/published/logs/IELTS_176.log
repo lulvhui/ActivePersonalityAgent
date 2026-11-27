@@ -1,0 +1,5 @@
+[Coarse] video 1/3: 0.00-60.00s, 1.0 fps
+[Coarse] video 2/3: 60.00-120.00s, 1.0 fps
+[Coarse] video 3/3: 120.00-175.61s, 1.0 fps
+[Coarse] full audio: 2809800 samples at 16000 Hz, 3 continuous chunks
+Teacher diagnostic complete; 25 API calls; /mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_pilot5_grounded_20261127/IELTS_176

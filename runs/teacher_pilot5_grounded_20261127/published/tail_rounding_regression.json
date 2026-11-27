@@ -1,0 +1,23 @@
+[
+  {
+    "local_time": [
+      41,
+      45.0
+    ],
+    "accepted": false,
+    "errors": [
+      {
+        "index": 0,
+        "error": "local_time must stay within -180 to 44.909 seconds from clip start (the recording)"
+      }
+    ]
+  },
+  {
+    "local_time": [
+      41,
+      44.909002
+    ],
+    "accepted": true,
+    "errors": []
+  }
+]

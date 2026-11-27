@@ -1,0 +1,24 @@
+[
+  {
+    "retrieval_window": [
+      65.0,
+      100.0
+    ],
+    "segments": 0,
+    "texts": [],
+    "timing": "unverified_asr; retrieval index only, not verified media alignment"
+  },
+  {
+    "retrieval_window": [
+      103.4,
+      137.1
+    ],
+    "segments": 3,
+    "texts": [
+      "Well, there are a few things that really help me to focus and concentrate on different things, and especially studying. The first thing is probably drinking a bottle of water and trying to relax. I try to take a chill pill before getting started.",
+      "Yeah, it's one of those most effective and efficient ways that someone can take into practice to help and improve their concentration.",
+      "It's rather medium, somewhere between difficult and easy."
+    ],
+    "timing": "unverified_asr; retrieval index only, not verified media alignment"
+  }
+]

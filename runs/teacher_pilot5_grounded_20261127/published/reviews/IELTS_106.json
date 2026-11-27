@@ -1,0 +1,1037 @@
+{
+  "sample_id": "IELTS:106",
+  "run_status": "complete",
+  "final_status": "generated",
+  "final": {
+    "O": {
+      "level": "medium",
+      "reasoning": null
+    },
+    "C": {
+      "level": "medium",
+      "reasoning": null
+    },
+    "E": {
+      "level": "medium",
+      "reasoning": null
+    },
+    "A": {
+      "level": "medium",
+      "reasoning": null
+    },
+    "N": {
+      "level": "low",
+      "reasoning": null
+    }
+  },
+  "final_explanation": "Justin shows genuine but bounded curiosity: M7 and M14 reveal authentic enthusiasm for travel and meeting people (brighter cadence, fast-paced delivery, 'almost every place here'), and M20 shows willing, linear sharing of local history—but much of this is examiner-prompted in an IELTS setting, so the depth is moderate rather than extraordinary. Conscientiousness is supported by structured, sequential responses (M12 discrete listing pulses, M13/M17 ordered farm description, M20 linear wartime-to-landmarks arc 'without digression'), yet offset by frequent trailing fillers ('things like that'), incomplete clauses (M4 trails off, M20 ends mid-utterance), and reliance on vague closers, yielding a medium rating. Extraversion draws on verbal social warmth (M3 phone preference to 'hear their voice,' M14 'meet new people, see new faces,' M8 'with my friends') and occasional animation (M7 energetic pace, M6 brief laugh), but the default physical mode is contained—hands clasped, downward gaze, minimal gesturing across M2, M4, M9, M11, M15, M18, M19—so the net is medium rather than high. Agreeableness is reflected in immediate cooperative affirmations (M10 'absolutely,' M16 'Oh yeah, absolutely'), empathic framing (M3 valuing others' feelings), and irritation expressed through humor and a smile rather than hostility (M5–M6); however, the IELTS conduct setting elicits compliance, and no exceptionally selfless or conflict-avoidant behavior is observed, supporting medium. Neuroticism is low: the one frustration episode (M5–M6 speakerphone irritation) is delivered with a laugh and mild tone, M14's constraint ('time and money') is instantly reframed with 'but I love it,' and fillers/hesitations (M4 'I I,' M11 'Hmm,' M20 trailing 'uh') reflect normal speech planning rather than anxiety or emotional instability. No evidence of rumination, defensiveness, or mood volatility appears across the twenty observations.",
+  "contextual": [
+    {
+      "trait": "O",
+      "context_type": "observed",
+      "context": "Travel topic, examiner-prompted discussion of UK familiarity",
+      "expression": "Fast-paced, energetic delivery; claims to have visited 'almost every place' in the UK; brief pointing gesture on 'you could point out a spot'; eye contact forward toward examiner with one short downward glance",
+      "citations": [
+        "M7"
+      ]
+    },
+    {
+      "trait": "O",
+      "context_type": "reported",
+      "context": "Explaining why he does not travel more; pivot to enthusiasm",
+      "expression": "States 'I love it, I get to meet new people, see new faces' with noticeably brighter, faster cadence after a constraint clause; single 'um' serves as pivot rather than hesitation",
+      "citations": [
+        "M14"
+      ]
+    },
+    {
+      "trait": "O",
+      "context_type": "reported",
+      "context": "Hometown history question; WW2 impact on Dunkirk",
+      "expression": "Volunteers detailed historical narrative (ruins, old churches, shipwrecks) in a linear, undigressed arc; mild pitch rise on stressed nouns; no prompting beyond initial question",
+      "citations": [
+        "M20"
+      ]
+    },
+    {
+      "trait": "C",
+      "context_type": "observed",
+      "context": "Describing industrialization changes in hometown",
+      "expression": "Right hand makes small discrete outward pulses aligned with each listed noun ('houses,' 'factories'); left hand stationary; clear turn-completion boundary at 8 s with both hands settling flat",
+      "citations": [
+        "M12"
+      ]
+    },
+    {
+      "trait": "C",
+      "context_type": "observed",
+      "context": "Farmers' summer activities description",
+      "expression": "Broad forward-chopping gesture spans the entire multi-clause list (vegetables → potatoes → farm stands) without pausing at either 'um' filler; gesture flows continuously, indicating planned sequential delivery",
+      "citations": [
+        "M17",
+        "M13"
+      ]
+    },
+    {
+      "trait": "C",
+      "context_type": "reported",
+      "context": "Disliking mobile phones; constructing a concrete example",
+      "expression": "Builds a specific scenario ('I'm in public, I'm on the train… you can hear someone else on their phone') rather than speaking in abstractions; measured narrative register throughout",
+      "citations": [
+        "M5",
+        "M6"
+      ]
+    },
+    {
+      "trait": "E",
+      "context_type": "reported",
+      "context": "Communication-preference question (phone vs. email/text)",
+      "expression": "Prefers phone because he can 'hear their voice' and 'get a feeling for how they're feeling'; open-palm gestures accompany evaluative phrases; brief smile at 5–7 s",
+      "citations": [
+        "M3"
+      ]
+    },
+    {
+      "trait": "E",
+      "context_type": "observed",
+      "context": "Default physical posture across multiple non-travel segments",
+      "expression": "Hands clasped/interlocked on desk, gaze predominantly downward or slightly forward, minimal gesturing, no sustained eye-contact shift toward examiner; static through pauses (M9) and topic transitions (M18, M19)",
+      "citations": [
+        "M2",
+        "M4",
+        "M9",
+        "M11",
+        "M15",
+        "M18",
+        "M19"
+      ]
+    },
+    {
+      "trait": "E",
+      "context_type": "observed",
+      "context": "Irritation anecdote about speakerphone users",
+      "expression": "Brief smile/laugh while finishing 'I'll tell you that'; vocal pace accelerates through 'you hear their whole conversation / you know what I mean'; outward right-hand sweep on 'you hear their whole conversation'",
+      "citations": [
+        "M6",
+        "M5"
+      ]
+    },
+    {
+      "trait": "A",
+      "context_type": "reported",
+      "context": "Empathic rationale for preferring phone communication",
+      "expression": "Explicitly values sensing the other person's emotional state ('get like a feeling for how they're feeling'); frames communication quality in terms of the interlocutor's experience, not his own convenience",
+      "citations": [
+        "M3"
+      ]
+    },
+    {
+      "trait": "A",
+      "context_type": "observed",
+      "context": "Expressing irritation at public speakerphone use",
+      "expression": "Frustration ('most annoying thing ever') is delivered with a smile/laugh and the aside 'I'll tell you that'; no raised volume, no sharpness, no accusatory pointing; irritation is generalized to a behavior, not directed at a person",
+      "citations": [
+        "M6",
+        "M5"
+      ]
+    },
+    {
+      "trait": "A",
+      "context_type": "reported",
+      "context": "Immediate responses to examiner questions about hometown suitability and change",
+      "expression": "'Oh yeah, absolutely' (M10) and 'Oh yeah, absolutely' (M16) show instant, unhesitating cooperative affirmation; no hedging, counter-questioning, or reluctance before engaging",
+      "citations": [
+        "M10",
+        "M16"
+      ]
+    },
+    {
+      "trait": "N",
+      "context_type": "observed",
+      "context": "Single frustration episode (speakerphone in public)",
+      "expression": "Irritation is mild, humorous, and quickly resolved with a smile; no sustained negative affect, no rumination, no escalation in volume or pitch; the episode occupies one short anecdote within a broader calm session",
+      "citations": [
+        "M6",
+        "M5"
+      ]
+    },
+    {
+      "trait": "N",
+      "context_type": "reported",
+      "context": "Acknowledging travel constraints (time and money)",
+      "expression": "Constraint stated in a measured, matter-of-fact register, then immediately pivoted with 'but I love it' in a brighter, faster cadence; no lingering on the negative, no self-pity or complaint beyond the single clause",
+      "citations": [
+        "M14"
+      ]
+    }
+  ],
+  "contextual_errors": [],
+  "stop_reason": "candidate_pool_exhausted",
+  "global_scan": {
+    "coarse_summaries": [
+      {
+        "time": [
+          0.0,
+          60.0
+        ],
+        "modality": "audio_video",
+        "summary": "The video captures the opening of an IELTS Speaking Test (Part 1) between examiner Mark Reed and candidate Justin Hegarty. The examiner introduces the test and himself, then asks Justin for his full name and preferred form of address. Justin responds clearly, identifying himself and agreeing to be called 'Justin.' When asked to present identification, Justin says 'Yeah,' leans forward, and rustles through papers or a bag to retrieve his ID, handing it across the desk. The examiner confirms it is fine and transitions into Part 1, asking Justin where he is from. Justin explains he comes from a small famous town called Dunkirk in France, situated on the English Channel, using a slight filler ('uh') before elaborating. The examiner then asks whether he works or is a student; Justin states he is a student pursuing a bachelor's of science in computers. Throughout, Justin sits relatively still with hands clasped on the desk, wearing a grey sweatshirt, while the examiner in a light shirt and glasses reads from papers and looks up to pose questions. The examiner begins to introduce the next topic about keeping in contact as the clip ends.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          60.0,
+          120.0
+        ],
+        "modality": "audio_video",
+        "summary": "The interviewee (a young man in a grey sweatshirt) discusses his communication habits with an examiner (a man in a light blue shirt and glasses). He explains that he primarily calls friends on his mobile phone, resorting to texting only for urgent matters when a call isn't possible. When asked whether he prefers phone or email, he firmly chooses phone, citing the ability to hear the other person's voice and gauge their emotional state, which he feels makes communication \"better.\" He contrasts this with email, noting the back-and-forth delay and the lack of personal connection because you cannot see the recipient's face. The examiner then asks about dislikes regarding mobile phones; the interviewee begins describing an annoyance of overhearing other people's phone conversations while in public, specifically on a train, before the clip ends mid-thought. Throughout, the interviewee uses open-hand gestures, occasional filler words (\"um,\" \"like,\" \"you know\"), and maintains mostly downward or sideward eye contact, while the examiner listens with papers in hand and interjects brief follow-up questions.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          120.0,
+          180.0
+        ],
+        "modality": "audio_video",
+        "summary": "The interviewee first vents frustration about people using speakerphones in public, emphasizing he hears their entire conversation. The examiner briefly agrees and pivots to travel. The interviewee then speaks enthusiastically about loving travel to new countries, claiming he has visited nearly every location in the UK, before softening his tone to explain that limited time and money restrict how often he travels. He lists London, Birmingham, and Manchester as places visited with friends during holidays, naming London Bridge as his favorite and the Prehistoric Museum as a close second. Throughout, he uses frequent hand gestures—open palms, pointing, finger-counting—and varies his vocal energy between animated excitement and measured explanation, with filler words like 'um' marking transitions.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          180.0,
+          240.0
+        ],
+        "modality": "audio_video",
+        "summary": "The interviewee wraps up a comment about art galleries, then the examiner pivots to hometown questions about France (Dunkirk). The interviewee answers confidently that the town suits young children because of open fields and parks, but qualifies that teenagers lack facilities such as movie theaters, gyms, and cafés. His hands remain clasped on the desk through most of this answer, with small finger movements when listing amenities. When the examiner asks whether the hometown has changed over the years, the interviewee produces a drawn-out 'Hmm' pause before launching into a more measured, slower-paced description of Dunkirk's wartime history—ruins, old churches, shipwrecks still standing. Throughout, the examiner reads from papers, occasionally glancing up, and the interviewee's gaze stays mostly downward or slightly off-camera rather than directly at the examiner.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          240.0,
+          268.678005
+        ],
+        "modality": "audio_video",
+        "summary": "The interviewee, a young man with curly hair in a grey sweatshirt seated at a cluttered desk, describes his hometown as having become 'definitely industrialized a lot,' citing modern houses and factories. The examiner, an older man in glasses and a light shirt, then asks what jobs people do there. The interviewee responds that many are farmers who grow vegetables and potatoes over the summer, sell at farm stands, and uses frequent 'um' and 'you know' fillers while making small hand gestures. The examiner closes the segment by transitioning to the second part of the speaking test.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          0,
+          268.678005
+        ],
+        "modality": "text",
+        "summary": "Justin Hegarthy, a French student from Dunkirk studying a BSc in Computer Science in the UK, participates in what appears to be a structured speaking assessment (examiner prompts, topic transitions, ID check). Across roughly four and a half minutes he covers: his origin and studies; phone-versus-email communication preferences (citing voice, facial cues, and personal feel); a vivid irritation with speakerphone use on trains; enthusiastic travel habits and specific UK visits (London, Birmingham, Manchester, London Bridge, Prehistoric Museum, Art Galleries); his hometown's suitability for children versus teenagers; Dunkirk's WW2 heritage alongside recent industrialization; and local farming livelihoods. His register is consistently casual and conversational, peppered with fillers ('um,' 'uh,' 'you know,' 'yeah'), repetition for emphasis ('definitely,' 'absolutely,' 'a lot'), and trailing hedges ('I don't know,' 'things like that'). Sentence structure occasionally tangles mid-thought before he re-aligns. Energy rises noticeably during the travel and complaint segments (faster pace, wider gestures per existing candidates) and dips into measured, reflective delivery when discussing Dunkirk's history or the 'interesting question' prompt. He frequently clasps his hands on the desk, lets his gaze drift downward during explanation, and re-engages the examiner with brief eye lifts at topic boundaries.",
+        "summary_status": "provided"
+      }
+    ],
+    "input_modalities": [
+      "text",
+      "audio",
+      "video"
+    ],
+    "observation_modes": [
+      "text",
+      "audio",
+      "video",
+      "audio_video"
+    ],
+    "sampling_fps": 1.0,
+    "full_audio_coverage": true,
+    "audio_coverage": [
+      [
+        0.0,
+        60.0
+      ],
+      [
+        60.0,
+        120.0
+      ],
+      [
+        120.0,
+        180.0
+      ],
+      [
+        180.0,
+        240.0
+      ],
+      [
+        240.0,
+        268.6775
+      ]
+    ],
+    "video_coverage": [
+      [
+        0.0,
+        60.0
+      ],
+      [
+        60.0,
+        120.0
+      ],
+      [
+        120.0,
+        180.0
+      ],
+      [
+        180.0,
+        240.0
+      ],
+      [
+        240.0,
+        268.678005
+      ]
+    ],
+    "duration": 268.678005,
+    "sampled_frames": 269,
+    "audio_samples": 4298840,
+    "audio_sample_rate": 16000,
+    "chunk_seconds": 60.0,
+    "text_segmentation": "full_transcript",
+    "video_segmentation": "fixed_seconds",
+    "audio_segmentation": "decoded_samples"
+  },
+  "cost": {
+    "stage_timing": {
+      "coarse": {
+        "calls": 6,
+        "timed_calls": 0,
+        "prepare_seconds": 0.0,
+        "generation_seconds": 0.0,
+        "constraint_seconds": 0.0,
+        "total_seconds": 0.0,
+        "constraint_calls": 0,
+        "prompt_tokens": 19053,
+        "completion_tokens": 8917
+      },
+      "observe": {
+        "calls": 20,
+        "timed_calls": 0,
+        "prepare_seconds": 0.0,
+        "generation_seconds": 0.0,
+        "constraint_seconds": 0.0,
+        "total_seconds": 0.0,
+        "constraint_calls": 0,
+        "prompt_tokens": 51899,
+        "completion_tokens": 51967
+      },
+      "final": {
+        "calls": 1,
+        "timed_calls": 0,
+        "prepare_seconds": 0.0,
+        "generation_seconds": 0.0,
+        "constraint_seconds": 0.0,
+        "total_seconds": 0.0,
+        "constraint_calls": 0,
+        "prompt_tokens": 8499,
+        "completion_tokens": 4237
+      }
+    },
+    "active_seconds": 198.67800499999998,
+    "active_budget_seconds": null,
+    "coarse_audio_seconds": 268.6775,
+    "coarse_frames": 269,
+    "jev_api_calls": 0,
+    "jev_estimated_cost": 0.0,
+    "coarse_video_segments": 5,
+    "coarse_video_fps": 1.0,
+    "generated_tokens": 65121,
+    "input_tokens": 79451
+  },
+  "novelty_rule": {
+    "video_fps": 2.0,
+    "min_new_seconds": 5.0,
+    "max_focus": 1
+  },
+  "novelty_filtered": [
+    {
+      "source_observation_id": "active_8",
+      "hint": "Interviewee's posture and gaze immediately before the examiner's 'Hmm, excellent' acknowledgment, to establish a baseline against which any change during the 1–2 s pause can be judged as a reset or continuity.",
+      "goal": "Determine whether the interviewee's hand position, torso orientation, or gaze direction differs at −3.0 s compared with 0.0–1.0 s, thereby clarifying whether the static posture observed during the pause represents a maintained state or a post-shift reset.",
+      "stage": "proposal",
+      "parent_id": "C9",
+      "time": [
+        180.0,
+        183.0
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 3.0,
+        "video": 3.0
+      },
+      "new_still": false,
+      "region_root": "C9"
+    },
+    {
+      "source_observation_id": "active_12",
+      "hint": "Confirm whether the settling hand posture observed at 12 s holds steady through the clip boundary or whether any residual micro-gesture (finger tap, hand repositioning) occurs in the final ~1.7 s after 'farmers'.",
+      "goal": "Verify that the closing posture is fully settled and not truncated mid-motion, strengthening the finding that the final clause is delivered with a settling rather than mid-gesture posture.",
+      "stage": "proposal",
+      "parent_id": "C13",
+      "time": [
+        267.0,
+        268.678005
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 1.678005,
+        "video": 2.0
+      },
+      "new_still": false,
+      "region_root": "C13"
+    }
+  ],
+  "memory": {
+    "observations": [
+      {
+        "id": "M1",
+        "observation_id": "active_0",
+        "modality": "audio_video",
+        "retrieval_window": [
+          21.0,
+          29.0
+        ],
+        "content": "The examiner asks Justin for his identification while looking down at his papers.\nJustin responds with a brief 'Yeah' and is seen leaning forward to rummage through a bag or pocket to retrieve his ID.\nThe retrieval process involves visible movement and implied rustling lasting approximately two seconds before Justin holds up the identification card.\nThe camera cuts back to the examiner, who takes the ID card, examines it briefly, and then thanks Justin before transitioning to the first part of the test.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M2",
+        "observation_id": "active_1",
+        "modality": "audio_video",
+        "retrieval_window": [
+          39.0,
+          47.0
+        ],
+        "content": "Justin (the interviewee, young man with curly brown hair in a grey sweatshirt) self-reports his origin: he states he is from 'a very small famous town called Dunkirk,' located 'in France' and 'on the English Channel.' These are his own words about his background.\nObserved vocal delivery: Justin begins with a filler 'Uh, yeah, so…' and inserts a second 'Uh' before the geographic detail about France and the English Channel. His cadence through the sentence is steady and slightly quick, with no marked pause or pitch shift at the point where he adds the Channel detail; the rhythm remains uniform from 'Dunkirk' through 'English Channel.'\nObserved posture and gaze: Throughout the utterance (roughly 0–7 s), Justin keeps both hands clasped together resting on the desk surface in front of scattered papers. His eyes remain directed mostly downward toward the papers, with only brief, small upward glances; no sustained eye-contact shift is visible when he reaches the phrase 'it's on the English Channel.'\nObserved head movement: Minor nodding accompanies his speech; the head tilts slightly forward and side-to-side in small arcs but does not turn toward the interviewer at any point during the answer.\nAt approximately 7 s the camera cuts to the interviewer (older man, glasses, light-blue shirt) who is looking down at a sheet of paper and says, 'That's interesting,' in a low, even tone. No further exchange follows within this clip.\nSetting details visible throughout: a stack of white papers or folded material sits behind Justin to his left; a tall black filing cabinet stands to his right; an 'IELTS Tester' watermark and a circular 'IELTS SPEAKING TEST' badge appear in the lower corners of the frame.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M3",
+        "observation_id": "active_2",
+        "modality": "audio_video",
+        "retrieval_window": [
+          78.0,
+          88.0
+        ],
+        "content": "Self-report: The interviewee states he prefers phone communication over email or text, explaining that he can 'hear their voice' and 'get like a feeling for how they're feeling,' concluding that 'communication is better.'\nObserved speech delivery: The interviewee uses fillers ('um,' 'like') and informal constructions ('kind of get like a feeling'), speaking at a moderate conversational pace with slight acceleration toward the final clause 'communication is better.'\nObserved gesture sequence: At the start (≈0–2 s) both hands are clasped on the desk; around 3–5 s the right hand lifts with an open palm while he references hearing the other person's voice; hands return to the desk briefly (≈6–7 s); at ≈8 s both hands rise again with open palms as he delivers the evaluative phrase 'communication is better'; by 9 s hands settle back onto the desk.\nObserved posture and gaze: The interviewee sits upright in a red chair at a dark desk, facing slightly off-camera toward the presumed interviewer; he offers a brief smile around 5–7 s and maintains steady eye-line direction throughout.\nObserved environment: Behind the interviewee a tall stack of white papers or mail rests on the desk to his left, a black multi-drawer filing cabinet stands to his right, and the edge of a whiteboard is visible in the upper-left corner; a 'IELTS SPEAKING TEST' logo overlay appears bottom-right and 'ieltstester.com' top-left.\nSelf-report vs. behavior separation: The preference claim and rationale are verbal self-reports; the hand-opening gestures, smile, and posture shifts are directly observed non-verbal behaviors that co-occur with specific spoken phrases but are not themselves stated by the speaker.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M4",
+        "observation_id": "active_3",
+        "modality": "audio_video",
+        "retrieval_window": [
+          97.0,
+          105.0
+        ],
+        "content": "The interviewee opens his response with a brief self-repetition 'I I' before launching into his explanation, indicating a momentary hesitation of roughly half a second.\nThroughout the spoken segment (approximately 1.2 s–7.2 s), the interviewee keeps both hands clasped together on the desk surface without notable gesturing.\nThe interviewee's gaze stays directed forward or slightly downward for most of the explanation; it does not visibly shift back toward the examiner's position at any clear point within the clip.\nBetween 'you can't see their face' and 'it's definitely just not the same,' the interviewee inserts the filler 'um,' marking a short pause in the flow of speech.\nThe phrase 'it's definitely just not the same' is delivered with audible stress on 'definitely' and 'not,' and the intonation falls at the end of 'same,' giving the statement a conclusive, final quality.\nAfter saying 'I think I'd probably say,' the interviewee trails off without completing the clause before the clip ends, leaving the thought unfinished.\nThe examiner, visible only in the opening frame (0.2 s), is looking down at papers in his hands and does not speak within this window.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M5",
+        "observation_id": "active_4",
+        "modality": "audio_video",
+        "retrieval_window": [
+          110.0,
+          120.0
+        ],
+        "content": "The interviewee, a young man with curly brown hair wearing a grey sweatshirt, is seated at a desk in an office-like room with stacked papers and a dark filing cabinet visible behind him; the IELTS Speaking Test logo appears in the lower-right corner throughout.\nHe answers a prompt about disliking mobile phones with 'Yeah, yes definitely,' then begins his example: 'Um, first off, I'm in public, I'm on the train.'\nApproximately 4–5 seconds into the clip, as he says 'I'm in public, I'm on the train,' his right hand lifts from its clasped position on the desk and makes a small outward sweep to his right, then returns.\nFrom roughly 6 to 9 seconds he leans slightly forward while narrating 'You can hear someone else on their phone talking,' maintaining eye contact toward the camera/interviewer direction.\nThe vocal delivery across the full 10-second window remains measured and narrative in register; the word 'talking' lands at the clip's boundary (~9–10 s) without a marked rise in volume or sharpness within this segment.\nSubtitles extending past the clip ('with their speaker-phone on in public it's the most annoying thing ever I'll tell you that') indicate the irritation language begins immediately after this window closes.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M6",
+        "observation_id": "active_5",
+        "modality": "audio_video",
+        "retrieval_window": [
+          120.0,
+          130.0
+        ],
+        "content": "Within the 0–10 s window, the interviewee says 'It's the most annoying thing ever' (approximately 3–5 s) while keeping both hands clasped together on the desk; no hand-spread or wide-open gesture accompanies that phrase. The outward right-hand sweep visible in frames 7–8 s aligns instead with 'you hear their whole conversation,' not with 'most annoying thing ever.'\nAt roughly 5 s the interviewee breaks into a brief smile/laugh while finishing 'I'll tell you that,' then resumes a neutral speaking expression as he moves into 'You know, you hear their whole conversation.'\nThe subtitle at frame 9 s reads '…it's I don't know it's true,' placing the onset of 'I don't know' at the very tail of this clip. The audio transcript, however, cuts off at 'It's…', so the full phrase and any accompanying shoulder drop or head shake cannot be confirmed within 0–10 s. At frame 9 s the interviewee's right hand is returning toward center and his posture remains upright; no definitive shrug or head-shake is yet visible.\nVocal pace does accelerate through 'you hear their whole conversation / you know what I mean' (≈6–9 s), consistent with the hint's description, before trailing into the incomplete 'It's…' at the clip boundary.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M7",
+        "observation_id": "active_6",
+        "modality": "audio_video",
+        "retrieval_window": [
+          140.0,
+          150.0
+        ],
+        "content": "The interviewee (young man, curly hair, grey sweatshirt) speaks continuously across the full 10-second clip, describing his love of travel and familiarity with UK geography. His delivery is energetic and noticeably fast-paced, with minimal pauses except a brief 'um' filler near the end.\nDuring the phrase 'took a map out right now of the UK' (approximately 3–5 s), his hands remain largely resting on the desk with fingers loosely interlaced; no distinct pointing gesture toward the examiner's side of the desk is visible at that moment.\nDuring 'I've probably visited almost every place here' (approximately 5–7 s), there is a subtle outward shift of both hands on the desk surface, but it does not rise to a clearly defined open-palm-upward gesture; the movement is small and contained.\nDuring 'you could point out a spot I've probably been there' (approximately 7–9 s), the interviewee makes a brief, more distinct pointing-like motion with his right hand toward the examiner's direction, coinciding with the word 'point.'\nEye contact is directed generally forward (toward the examiner) for most of the clip, with a short downward glance toward the desk around 5–6 s before returning to the forward gaze.\nThe visual setting remains constant: stacks of papers behind him to the left, a dark filing cabinet to the right, a whiteboard/screen partially visible upper-left, and an IELTS Speaking Test logo lower-right. No other persons enter the frame.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M8",
+        "observation_id": "active_7",
+        "modality": "audio_video",
+        "retrieval_window": [
+          167.0,
+          180.0
+        ],
+        "content": "The interviewee (young man with curly brown hair, grey sweatshirt) sits at a dark table facing slightly left toward an off-screen examiner. At 0.0 s the examiner is briefly visible holding a stack of papers, confirming the IELTS speaking-test setting.\nFrom approximately 1.0 s to 6.0 s, while saying 'I've been to London, Birmingham, Manchester with my friends during the holidays,' the interviewee holds his right hand in front of his chest with the thumb extended upward and the remaining fingers curled inward. The hand position remains largely static across these frames; no distinct sequential finger-lifting for each of the three city names is resolvable at the available frame rate. The gesture reads as one sustained counting/listing posture rather than three separate finger taps.\nFrom approximately 7.0 s to 12.0 s, as the interviewee says 'London Bridge is probably my favorite and then probably next would be the Prehistoric Museum,' both hands come together in a clasped/interlocked position near the table surface. A slight forward head tilt and a mild closed-mouth smile are visible around 9.0–11.0 s. The tilt and smile appear as one continuous expressive shift accompanying the two landmark names rather than two separate, punctuated gestures.\nVocal delivery throughout is conversational with filler 'uh' at the start of each sentence, moderate pace, and a slight rise in pitch on 'favorite' and 'Prehistoric Museum,' consistent with positive evaluation of the named places.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M9",
+        "observation_id": "active_8",
+        "modality": "audio_video",
+        "retrieval_window": [
+          183.0,
+          190.0
+        ],
+        "content": "At approximately 0.0 s the examiner utters the acknowledgment 'Hmm, excellent.' A pause of roughly 1–2 seconds follows before the topic-transition sentence 'Now, moving on to talking about your hometown in France' begins at approximately 2.0 s. During this gap the interviewee (curly-haired young man in a grey sweatshirt) is visible in the frames at 0.0 s and 1.0 s: he remains seated upright at the dark table with both hands clasped/interlocked on the surface and his gaze directed slightly leftward and downward toward the off-screen examiner. Across those two frames no distinct posture shift, hand repositioning, or gaze reset is observable; the interviewee's body language reads as continuous and static through the pause. From 2.0 s onward the camera cuts to the examiner, who holds and shifts a stack of papers while delivering the transition sentence, so the interviewee is no longer in frame for the remainder of the gap.\nThe examiner's vocal delivery during 'Hmm, excellent' carries a low, contemplative hum on 'Hmm' followed by a clipped, mildly rising 'excellent,' consistent with a brief evaluative acknowledgment before moving on. The transition sentence is delivered in a flat, procedural register at moderate pace, with no overlap from the interviewee.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M10",
+        "observation_id": "active_9",
+        "modality": "audio_video",
+        "retrieval_window": [
+          197.0,
+          207.0
+        ],
+        "content": "The interviewee (young man with curly hair, grey sweatshirt, seated at a desk with stacked papers) states that children have access to 'a bunch of open fields and parks for them to play in,' then contrasts this with teenagers, saying 'I'd probably say not so much just because there's not as much facilities.'\nThe filler 'uh' is inserted immediately after the emphatic 'absolutely' and before the qualifying explanation beginning 'just because there's a bunch of open fields…'; during this insertion, both hands remain resting on the desk/papers with no visible outward sweep yet.\nSpeech delivery shifts from a confident, slightly faster cadence on 'Oh yeah, children, absolutely' to a more measured, explanatory pace through 'uh just because there's a bunch of open fields and parks for them to play in,' indicating the filler marks a transition from assertion to justification.\nAround 5–6 seconds, as the interviewee pivots to the teenager comparison, a brief smile/grin appears on his face while his right hand makes a small outward gesture over the papers; the left hand stays planted on the desk surface.\nThe overall visual posture remains seated and forward-facing throughout the 10-second window; no large body movements occur, and the hand activity is limited to small desk-level gestures coinciding with topic transitions rather than with the 'uh' filler itself.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M11",
+        "observation_id": "active_10",
+        "modality": "audio_video",
+        "retrieval_window": [
+          216.0,
+          227.0
+        ],
+        "content": "The examiner (man with glasses, grey button-up shirt, holding papers) is visible from 0:00 to 0:04 and asks, 'your hometown, has it changed much over the years?' He gestures lightly with the papers while speaking.\nThe interviewee (young man with curly brown hair, grey sweatshirt) appears from 0:05 onward. His hands remain clasped together on the table throughout the entire response window (0:05–0:10); no unclasping, finger-shifting, or repositioning is observed during the pause or while speaking.\nThe interviewee produces a drawn-out 'Hmm' (approximately 0:05–0:06) with eyes directed slightly downward and forward, before articulating any words. This filler occupies roughly one second between the end of the examiner's question and the first substantive phrase.\nThe interviewee self-reports: 'It's an interesting question. Yeah, Dunkirk is a very historic town.' The vocal delivery on 'interesting question' drops to a lower, more measured register compared to the breathy 'Hmm' that precedes it, suggesting a shift from non-committal filler to deliberate framing.\nThe on-screen subtitle extends the interviewee's statement to 'especially after world war 2,' but that trailing phrase falls at or just beyond the 11-second clip boundary and is not fully audible within this segment.\nNo visible smile, nod, or head-shake accompanies the interviewee's response; facial expression stays neutral-to-contemplative throughout 0:05–0:10.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M12",
+        "observation_id": "active_11",
+        "modality": "audio_video",
+        "retrieval_window": [
+          240.0,
+          249.0
+        ],
+        "content": "The interviewee (young man, curly hair, grey sweatshirt, seated at a dark desk in an office with filing cabinets and stacked papers behind him) speaks continuously from roughly 0 s to 8 s, describing a place as 'definitely industrialized a lot' with 'modern houses' and 'more factories.'\nDuring the listing of items (approximately 4–7 s), his right hand makes small, discrete outward pulses near the desk surface that loosely align with each noun ('houses,' 'factories'), rather than forming one continuous sweeping arc; the left hand remains largely stationary on the desk edge.\nVocally, the phrase 'definitely industrialized a lot' is delivered with clear stress on 'definitely' and 'a lot,' carrying elevated energy; by contrast, the closing 'things like that' drops in pitch and intensity, trailing off as a low-effort filler.\n'You know' functions as a brief discourse marker inserted between 'modern houses now' and 'more factories,' accompanied by a small head tilt toward the interviewer but no significant hand movement.\nAt approximately 8 s, both hands settle flat on the desk, gaze shifts forward (away from interviewer), and speech stops, marking a clear turn-completion boundary.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M13",
+        "observation_id": "active_12",
+        "modality": "audio_video",
+        "retrieval_window": [
+          254.0,
+          267.0
+        ],
+        "content": "The interviewee (young man, curly hair, gray sweatshirt) describes farmers growing vegetables over the summer, having potatoes, and running farm stands to sell produce. His speech contains two audible 'um' fillers: the first around 2–3 s and the second around 6–7 s.\nDuring the first 'um' (~2–3 s), both hands are clasped and resting on the desk surface; there is no active gesture in progress, so the filler does not interrupt or coincide with hand movement.\nDuring the second 'um' (~6–7 s), the right hand is initiating a small forward/chopping gesture (visible from ~6 s onward through ~10 s). The hand motion does not pause at the filler; it continues fluidly through the 'um' and into the clause about farm stands, indicating the gesture spans the filler rather than being suspended by it.\nThe final repetition 'so a lot, a lot of them are farmers' (~11–12 s) is delivered as the right hand lowers back toward the desk. By the 12 s frame, both hands are returning to a resting/clasped position on the table, consistent with a settling posture rather than a mid-gesture cutoff.\nGaze alternates between the off-screen examiner (to the interviewee's left) and brief downward glances toward the desk during the vegetable/farm-stand description; no sustained eye-contact break accompanies either 'um'.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M14",
+        "observation_id": "active_13",
+        "modality": "audio_video",
+        "retrieval_window": [
+          152.0,
+          165.0
+        ],
+        "content": "The interviewee (young man, curly brown hair, grey sweatshirt) speaks from 0–11 s about travel constraints and enthusiasm. The transcript/subtitle sequence is: 'the only reason I don't travel as much as I would like is just because I don't have as much time and money you know as I feel like I would need to do that um but I love it I get to meet new people see new faces things like that you know.'\nVocal-delivery transition: The explanatory clause ('I don't have as much time and money… I would need to do that') is delivered in a measured, matter-of-fact register. A single 'um' filler occurs immediately before 'but I love it' (approximately 4–5 s on the clip clock). The shift into 'but I love it, I get to meet new people, see new faces' carries a noticeably brighter, faster cadence compared with the preceding constraint statement. The 'um' functions as a brief pivot point rather than part of a multi-pause gradual build; there is no second 'um' or extended silence between the constraint clause and the enthusiastic declaration.\nHand/gesture behavior during 'meet new people / see new faces' (≈6–9 s): At the available 2 fps, the interviewee's hands rest near the desk surface through most of this span. Around frame 8 (≈8 s) his right hand extends leftward toward the stack of papers beside him, then returns. During the words 'people' and 'faces' (frames 9–10, ≈9–10 s), both hands are visible in a low, contained position near the tabletop with only a slight outward shift. At this frame rate it is not possible to resolve whether the small movement constitutes one continuous sweep or two discrete motions aligned分别 to 'people' and 'faces'; the gesture reads as a single modest outward adjustment rather than two clearly separated beats.\nAt ≈11–12 s the interviewee finishes 'things like that, you know' and his hands settle back into a clasped/resting posture on the desk. Eye contact remains generally forward toward the examiner throughout, with a brief downward glance toward the papers around 8 s.\nAt 12 s the camera cuts to the examiner (older man, wire-rimmed glasses, light-grey collared shirt) seated across the desk holding a stack of papers. He asks, 'So tell me what places have you been in the UK?' The IELTS Speaking Test logo is visible lower-right in all frames; the setting (paper stacks, dark filing cabinet, partial whiteboard) is unchanged.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M15",
+        "observation_id": "active_14",
+        "modality": "audio_video",
+        "retrieval_window": [
+          130.0,
+          135.0
+        ],
+        "content": "At 0 s the interviewee (young man, curly hair, grey sweatshirt) is visible mid-utterance saying 'I don't know,' immediately followed by 'It's true' (audio confirms the sequence). His head is tilted slightly downward and to his right; his shoulders remain level with no pronounced drop, and no head-shake motion is discernible in the single available frame. His hands rest on the table surface with fingers loosely together—no open-palm spread or wide gesture accompanies the phrase.\nThe camera cuts to the interviewer (man with glasses, light-blue shirt) at approximately 1 s, who looks down at a folder/papers for the remainder of the clip (frames 1–4 s). This limits further visual observation of the interviewee's body language during and after 'I don't know.'\nThe gesture pattern observed here (hands resting on table, no spreading) is consistent with the prior finding that no hand-spread accompanied 'most annoying thing ever' in the preceding clip. No new gesture type is introduced at this boundary.\nThe subtitle visible at 0 s reads 'you know what I mean it's I don't know it's true,' confirming that the full phrase 'I don't know it's true' is contained within this 5-second window, resolving the truncation noted at the tail of the previous clip.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M16",
+        "observation_id": "active_15",
+        "modality": "audio_video",
+        "retrieval_window": [
+          190.0,
+          197.0
+        ],
+        "content": "At the opening of the excerpt, the examiner—a man wearing glasses and a light button-down shirt, seated at a desk and holding a stack of papers—asks, \"Is your hometown a good place for young people to live?\" During this prompt, he is the visible participant: he looks down toward the papers and then raises his head toward the interviewee's side of the table. His hands remain on the papers, and no note-taking, nodding, or large gesture is visible. The interviewee is not shown until the answer turn begins.\nThe interviewee—a young man with curly hair in a grey sweatshirt, seated at a desk with stacks of papers and a filing cabinet behind him—answers, \"Oh yeah, absolutely.\" This is his self-report in response to the examiner's hometown question. In the visible frames during this turn, he remains seated and oriented toward the examiner, with his mouth moving as he speaks and his hands together on the desk surface. No broad arm movement or posture shift is visible.\nNear the end of the excerpt, the examiner follows up with \"And why?\" while still holding the papers and looking toward the interviewee. The clip is organized as three sequential speaking turns: examiner prompt, interviewee short answer, examiner follow-up. No audible overlap is present in this excerpt. On-screen subtitles display the same exchange across the frames.\nIn the audio, the interviewee's answer is a short contiguous turn containing the word \"absolutely\" and no audible filler within this excerpt. The examiner's two utterances are question-form prompts. These are observed speech events and visible actions, not inferences about internal states.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M17",
+        "observation_id": "active_16",
+        "modality": "audio_video",
+        "retrieval_window": [
+          249.0,
+          268.678005
+        ],
+        "content": "The interviewer (older man, wire-rimmed glasses, light blue-grey button-down shirt, seated at a dark conference table holding a stack of papers) poses the hometown-jobs question from approximately 0 s to 4 s, gaze directed toward the off-screen interviewee, head slightly tilted. His delivery is even-paced with a rising intonation on 'do?' signaling an open question.\nThe interviewee (young man, curly brown hair, grey crew-neck sweatshirt) responds from roughly 5 s to 12 s, describing farmers who grow vegetables over the summer, raise potatoes, and operate farm stands. His right hand executes a broad forward-chopping gesture spanning the entire multi-clause list (vegetables → potatoes → farm stands), unlike the discrete per-noun pulses recorded during the earlier industrialization listing (M12). The gesture does not pause at either 'um' filler; it flows continuously through them.\nVocal emphasis in the farmer response differs from the industrialization response: the interviewee uses immediate lexical repetition ('so a lot, a lot of them are farmers') for stress, whereas the prior segment relied on a single intensified adverb ('definitely'). The closing phrase 'and things like that' again drops in pitch and energy, mirroring the low-effort trailing pattern noted in M12.\nAt approximately 12–13 s the interviewee's right hand lowers and both hands return to a clasped/resting position on the desk; gaze shifts briefly downward then forward. Speech ceases. No further interviewee utterance occurs within this clip, so the gesture-rhythm question from the goal cannot be tested against a second consecutive speech turn here.\nFrom roughly 17 s to 19.7 s the interviewer looks down at his papers, then raises his eyes toward the interviewee and states, 'Let's see. Now moving on to the second part of the speaking test.' The topic transition is entirely interviewer-initiated; the interviewee remains silent with hands resting, offering no vocal or gestural response to the shift within this clip's duration.",
+        "content_status": "structured",
+        "overlapping_media_reads": [
+          "M13"
+        ]
+      },
+      {
+        "id": "M18",
+        "observation_id": "active_17",
+        "modality": "audio_video",
+        "retrieval_window": [
+          135.0,
+          140.0
+        ],
+        "content": "At 0 s the interviewer (man with glasses, light-blue button-down shirt, seated at a desk with a folder/papers) speaks the topic-initiation line: 'Now, let's talk about traveling.' His gaze is directed downward toward the papers in front of him. The subtitle bar simultaneously displays the full exchange: 'now let's talk about traveling. Sure. Do you enjoy traveling to different places? Oh,'\nThe interviewee (young man, curly hair, grey sweatshirt) responds off-camera with a brief affirmative: 'Sure.' (heard in audio at approximately 1 s). No visual of the interviewee accompanies this utterance because the camera remains on the interviewer.\nAt approximately 2 s the camera cuts to the interviewee for roughly one second. He is looking downward at papers spread on the desk in front of him; his posture is slightly hunched forward, hands resting near the documents. No head nod, shoulder shift, or gestural movement is discernible in this single-frame glimpse. The background shows stacked papers to his left, a dark filing cabinet to his right, and a partial whiteboard/screen upper-left.\nBy approximately 3 s the camera returns to the interviewer, who continues: 'Do you enjoy traveling to different places?' He maintains his downward gaze toward the folder. The interviewee's response begins ('Oh,') as indicated by the trailing subtitle text, but the clip ends before the answer develops.\nThe goal proposed on the [-5.0, 0.0] window (checking whether the camera returns to the interviewee in the 5–10 s window and whether post-utterance shoulder/head movement follows 'It's true') is resolved by prior observation M7, which confirms the interviewee is visible and speaking continuously throughout 5–15 s with no pronounced shoulder drop or head-shake beyond the subtle hand movements already catalogued. No further read is required for that goal.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M19",
+        "observation_id": "active_18",
+        "modality": "audio_video",
+        "retrieval_window": [
+          207.0,
+          216.0
+        ],
+        "content": "The interviewee (young man with curly brown hair, grey sweatshirt, seated at desk with stacked papers) enumerates recreational facilities—'movie theaters and gyms and things like that and cafes'—in a continuous, moderately paced listing cadence, with both hands resting on the desk/papers and no outward gestures during the enumeration.\nA brief filler 'um' is inserted between the facility list and the pivot phrase 'but definitely children'; during this filler the interviewee's gaze drops slightly toward the papers before lifting again.\nThe interviewee then repeats with firmer emphasis: 'yes, younger children, definitely,' delivered at a slightly slower, more conclusive pace than the preceding list; his head tilts marginally forward during this stress, and his hands remain planted on the desk surface throughout.\nAt approximately 7 seconds into the clip, on-screen subtitles introduce the examiner's next question—'Is your hometown has it changed much over the years?'—marking a clear topic transition away from the facilities discussion; the interviewee's mouth closes and his posture settles as the question lands.\nNo smile, nod, or hand gesture accompanies the topic transition; the interviewee's facial expression shifts from the engaged listing mode to a neutral, attentive look directed slightly off-camera toward the examiner.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M20",
+        "observation_id": "active_19",
+        "modality": "audio_video",
+        "retrieval_window": [
+          227.0,
+          240.0
+        ],
+        "content": "The interviewee (young man, curly brown hair, grey sweatshirt, seated at a dark desk) speaks continuously from 0 s to approximately 12 s, extending the historic-town framing begun in the prior segment. He self-reports: 'especially after world war two, um, just because a lot of the town was left in ruins after the war, and you can still see now to this day old churches and shipwrecks and things like that which are still standing, uh.' No examiner voice or presence is detected anywhere in this window.\nVocal pacing remains broadly even through the causal explanation ('just because a lot of the town was left in ruins'), with a mild rise in energy and pitch on the stressed nouns 'ruins,' 'old churches,' and 'shipwrecks.' Two fillers bracket the elaboration: a short 'um' at roughly 1–2 s after 'world war two,' and a trailing 'uh' at approximately 12 s as the sentence loses syntactic completion. Neither filler is accompanied by a long silence; the speech flow is continuous.\nHand behavior: from 0 s to about 2.5 s both hands stay clasped together on the desk surface. Around 3 s the hands briefly separate—the right hand lifts a few centimeters and makes a small open-palm pulse before returning to the clasped position by 4–5 s. From 5 s to 10 s the hands remain interlocked and stationary. At approximately 11 s the right hand unclasps again and executes a single small downward tap or point on the desk, coinciding with the phrase 'shipwrecks and things like that,' then settles back beside the left hand by 12 s.\nGaze and head orientation: the interviewee's eyes are directed slightly downward and forward during the opening 'um' (0–2 s), shift to a more level forward gaze through the middle of the explanation (4–9 s), and remain forward-facing through the final listing. No sustained eye-roll, upward glance, or head-shake is observed. Facial expression stays neutral-to-engaged; no smile or brow-furrow is visible.\nThe on-screen subtitles track the speech accurately across three lines: line 1 (0–1 s) 'hmm it's an interesting question yeah Dunkirk is a very historic town especially after world war 2'; line 2 (1–6 s) 'um just because a lot of the town was left in ruins after the war and you can still see'; line 3 (7–12 s) 'now to this day old churches and shipwrecks and things like that which are still standing uh to.' The trailing 'to' at the 12 s mark is the beginning of a phrase that continues into the next segment.\nNo topic shift, self-correction, or examiner prompt interrupts the interviewee's monologue. The answer develops linearly from wartime destruction to surviving physical landmarks without digression. The clip ends mid-utterance at 13 s, with the interviewee's hands resting flat on the desk and his gaze still forward, indicating the response is not yet complete.",
+        "content_status": "structured"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "index": 0,
+      "action": {
+        "time": [
+          21.0,
+          29.0
+        ],
+        "modality": "audio_video",
+        "goal": "Observe the exact sequence of Justin's body movement, the duration of the rustling, and how the examiner's gaze and posture shift while waiting."
+      },
+      "candidate_id": "C1",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M1"
+      ],
+      "changed_ids": [
+        "M1"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 1,
+      "action": {
+        "time": [
+          39.0,
+          47.0
+        ],
+        "modality": "audio_video",
+        "goal": "Check whether Justin's vocal pace, pitch, and eye contact change mid-sentence as he adds the detail about the English Channel, and note any small head movements."
+      },
+      "candidate_id": "C2",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M2"
+      ],
+      "changed_ids": [
+        "M2"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 2,
+      "action": {
+        "time": [
+          78.0,
+          88.0
+        ],
+        "modality": "audio_video",
+        "goal": "Observe the precise synchronization between the two-handed gesture and the phrase 'hear their voice,' and whether the vocal emphasis on 'better' coincides with a nod or shift in posture."
+      },
+      "candidate_id": "C3",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M3"
+      ],
+      "changed_ids": [
+        "M3"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 3,
+      "action": {
+        "time": [
+          97.0,
+          105.0
+        ],
+        "modality": "audio_video",
+        "goal": "Note the length of the initial hesitation ('I I'), whether eye contact returns to the examiner at any point during the explanation, and how the sentence 'it's definitely just not the same' is delivered in terms of volume and finality."
+      },
+      "candidate_id": "C4",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M4"
+      ],
+      "changed_ids": [
+        "M4"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 4,
+      "action": {
+        "time": [
+          110.0,
+          120.0
+        ],
+        "modality": "audio_video",
+        "goal": "Check whether the hand sweep aligns with 'in public' or 'on the train,' and capture the vocal tone shift (irritation vs. neutral narration) as he reaches the word 'talking' at the clip's end."
+      },
+      "candidate_id": "C5",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M5"
+      ],
+      "changed_ids": [
+        "M5"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 5,
+      "action": {
+        "time": [
+          120.0,
+          130.0
+        ],
+        "modality": "audio_video",
+        "goal": "Confirm whether the hand-spread gesture synchronizes precisely with 'most annoying thing ever' and whether the trailing 'I don't know' coincides with a visible shoulder drop or head shake."
+      },
+      "candidate_id": "C6",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M6"
+      ],
+      "changed_ids": [
+        "M6"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 6,
+      "action": {
+        "time": [
+          140.0,
+          150.0
+        ],
+        "modality": "audio_video",
+        "goal": "Check whether the pointing gesture aligns with 'map out' and whether the open-palm gesture matches 'every place here,' and note if eye contact shifts between examiner and desk during this burst."
+      },
+      "candidate_id": "C7",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M7"
+      ],
+      "changed_ids": [
+        "M7"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 7,
+      "action": {
+        "time": [
+          167.0,
+          180.0
+        ],
+        "modality": "audio_video",
+        "goal": "Verify the finger-counting sequence matches the three city names in order, and determine whether the head tilt and smile at 'London Bridge' and 'Prehistoric Museum' are distinct or part of one continuous gesture."
+      },
+      "candidate_id": "C8",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M8"
+      ],
+      "changed_ids": [
+        "M8"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 8,
+      "action": {
+        "time": [
+          183.0,
+          190.0
+        ],
+        "modality": "audio_video",
+        "goal": "Measure the exact pause length between the examiner's acknowledgment and the topic-transition sentence, and note whether the interviewee's posture or gaze resets during that gap."
+      },
+      "candidate_id": "C9",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M9"
+      ],
+      "changed_ids": [
+        "M9"
+      ],
+      "followup_status": "no_new_media_content",
+      "followup_errors": []
+    },
+    {
+      "index": 9,
+      "action": {
+        "time": [
+          197.0,
+          207.0
+        ],
+        "modality": "audio_video",
+        "goal": "Confirm whether the filler 'uh' coincides with a visible micro-pause in hand movement, and track how speech rate changes between the confident 'absolutely' and the qualifying explanation that follows."
+      },
+      "candidate_id": "C10",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M10"
+      ],
+      "changed_ids": [
+        "M10"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 10,
+      "action": {
+        "time": [
+          216.0,
+          227.0
+        ],
+        "modality": "audio_video",
+        "goal": "Time the hesitation from the end of the examiner's question to the first word of the answer, observe whether the interviewee's hands unclasp or shift during the pause, and note the vocal pitch drop on 'interesting question' relative to the preceding confident answers."
+      },
+      "candidate_id": "C11",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M11"
+      ],
+      "changed_ids": [
+        "M11"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 11,
+      "action": {
+        "time": [
+          240.0,
+          249.0
+        ],
+        "modality": "audio_video",
+        "goal": "Observe whether the hand gestures synchronize with each listed item (houses, factories) or form one continuous sweep, and note the vocal emphasis pattern on 'definitely industrialized a lot' versus the trailing 'things like that.'"
+      },
+      "candidate_id": "C12",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M12"
+      ],
+      "changed_ids": [
+        "M12"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 12,
+      "action": {
+        "time": [
+          254.0,
+          267.0
+        ],
+        "modality": "audio_video",
+        "goal": "Track the exact placement of each 'um' relative to the hand movement—does the gesture pause during the filler or continue through it—and determine whether the final 'a lot of them are farmers' is delivered with a settling posture or remains mid-gesture."
+      },
+      "candidate_id": "C13",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M13"
+      ],
+      "changed_ids": [
+        "M13"
+      ],
+      "followup_status": "no_new_media_content",
+      "followup_errors": []
+    },
+    {
+      "index": 13,
+      "action": {
+        "time": [
+          152.0,
+          165.0
+        ],
+        "modality": "audio_video",
+        "goal": "Confirm whether the vocal energy and pace jump cleanly at 'but I love it' or build gradually through the preceding 'um' pauses, and observe whether the hand gesture on 'see new faces' is a single sweep or two distinct motions aligned to 'people' and 'faces.'"
+      },
+      "candidate_id": "C14",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M14"
+      ],
+      "changed_ids": [
+        "M14"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 14,
+      "action": {
+        "time": [
+          130.0,
+          135.0
+        ],
+        "modality": "audio_video",
+        "goal": "Confirm whether the trailing 'I don't know' coincides with a visible shoulder drop or head shake, and verify that no hand-spread gesture was attached to 'most annoying thing ever' by checking that the gesture pattern remains consistent across the boundary."
+      },
+      "candidate_id": "C15",
+      "parent_candidate_id": "C6",
+      "new_ids": [
+        "M15"
+      ],
+      "changed_ids": [
+        "M15"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 15,
+      "action": {
+        "time": [
+          190.0,
+          197.0
+        ],
+        "modality": "audio_video",
+        "goal": "Record the interviewee's vocal pitch contour, speech rate, and hand/finger position during the 'younger children' answer so that the drop in pitch and prolonged pause observed at 0:05–0:08 can be judged relative to a baseline of confident delivery."
+      },
+      "candidate_id": "C16",
+      "parent_candidate_id": "C10",
+      "new_ids": [
+        "M16"
+      ],
+      "changed_ids": [
+        "M16"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 16,
+      "action": {
+        "time": [
+          249.0,
+          268.678005
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the hand-gesture rhythm observed during the listing (small pulses per item) persists, changes, or ceases in any subsequent speech by the interviewee, and whether vocal emphasis patterns shift when new topics are introduced."
+      },
+      "candidate_id": "C17",
+      "parent_candidate_id": "C12",
+      "new_ids": [
+        "M17"
+      ],
+      "changed_ids": [
+        "M17"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 17,
+      "action": {
+        "time": [
+          135.0,
+          140.0
+        ],
+        "modality": "audio_video",
+        "goal": "Check whether the camera returns to the interviewee in the 5–10 s window and, if so, whether any post-utterance shoulder adjustment or head nod/shake occurs that was not captured in the single frame at 0 s."
+      },
+      "candidate_id": "C18",
+      "parent_candidate_id": "C15",
+      "new_ids": [
+        "M18"
+      ],
+      "changed_ids": [
+        "M18"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 18,
+      "action": {
+        "time": [
+          207.0,
+          216.0
+        ],
+        "modality": "audio_video",
+        "goal": "Capture the next unread audio-video window to hear how the interviewee continues the explanation prompted by \"And why?\" and to see whether his hands, gaze, or posture change as he elaborates, including any pauses or filler sounds and the examiner's visible listening behavior."
+      },
+      "candidate_id": "C19",
+      "parent_candidate_id": "C16",
+      "new_ids": [
+        "M19"
+      ],
+      "changed_ids": [
+        "M19"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 19,
+      "action": {
+        "time": [
+          227.0,
+          240.0
+        ],
+        "modality": "audio_video",
+        "goal": "Observe the continuation of the hometown response after the initial historic-town framing, noting any shift in vocal pacing, hand movement, or eye contact as the interviewee develops the answer, and capturing any examiner follow-up or visible listening behavior."
+      },
+      "candidate_id": "C20",
+      "parent_candidate_id": "C19",
+      "new_ids": [
+        "M20"
+      ],
+      "changed_ids": [
+        "M20"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    }
+  ],
+  "coarse_rejections": [],
+  "semantic_review": "unreviewed",
+  "teacher_approved": false
+}

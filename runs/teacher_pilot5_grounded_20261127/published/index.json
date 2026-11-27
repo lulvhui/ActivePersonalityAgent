@@ -1,0 +1,906 @@
+{
+  "source_commit": "3b8543dcf51505244761f1d38aa702c80f1d88f5",
+  "branch": "feature/bounded-refinement",
+  "model": "qwen3.8-omni-flash",
+  "packages": [
+    {
+      "name": "IELTS_138",
+      "path": "archives/IELTS_138.tar.xz",
+      "bytes": 73896,
+      "sha256": "13975e2f514f513ffacf775836565278a47ef6c9b2dc02347a9668a7cd58c0b7",
+      "files": [
+        {
+          "path": "IELTS_138/api_calls.json",
+          "bytes": 18037,
+          "sha256": "d5e270c29d99ccc40e8dcd74448f43941d1e8fd9f352f09fa0fc70c0b40d272f"
+        },
+        {
+          "path": "IELTS_138/config.json",
+          "bytes": 1136,
+          "sha256": "6b1604fbe585230f147985fdcfe0866718bf62fb944532d92a3cb661596733e6"
+        },
+        {
+          "path": "IELTS_138/generations/candidate_scan_0_1795760866001975915.json",
+          "bytes": 7653,
+          "sha256": "3a53ad234788a71875843ee0a9362d6d27a5ee50feef93651baa6fc64261468f"
+        },
+        {
+          "path": "IELTS_138/generations/candidate_scan_1_1795760888062026102.json",
+          "bytes": 10695,
+          "sha256": "ae1c87c549d90d072730b71d1c1682c0fe87fc700061d1ea07e811f85702f315"
+        },
+        {
+          "path": "IELTS_138/generations/candidate_scan_2_1795760912445484924.json",
+          "bytes": 11058,
+          "sha256": "98a92af211c86f5226bf8fbb1fdcb9a57ed12c4eec2094bc64af3d96aa161595"
+        },
+        {
+          "path": "IELTS_138/generations/candidate_scan_3_1795760934482985577.json",
+          "bytes": 10660,
+          "sha256": "73e3febb39e30105d4b35aad4ccdd5ae4260738a87e95da9a4ac11bead71113c"
+        },
+        {
+          "path": "IELTS_138/generations/candidate_scan_4_1795760962180800344.json",
+          "bytes": 10796,
+          "sha256": "1e6bb8a9f4f5a6a486ec9a136b43509eb4015e04987f53f2f3f0b37d3c30129e"
+        },
+        {
+          "path": "IELTS_138/generations/final_21_1795761702011267410.json",
+          "bytes": 27172,
+          "sha256": "7cf7a50727c7216eef9c15fafef4d4a759c60b5253c10937741f4aba9055c793"
+        },
+        {
+          "path": "IELTS_138/generations/memory_0_1795760979793493075.json",
+          "bytes": 7751,
+          "sha256": "6c586d97252713cbe1e5700a2d6d61a8961a468a589287012ea460ee51be1a92"
+        },
+        {
+          "path": "IELTS_138/generations/memory_10_1795761259676370732.json",
+          "bytes": 10848,
+          "sha256": "ea0a8df4f19a1d70ec18374911b405fe62545e09988f46b80f31b7176c754f60"
+        },
+        {
+          "path": "IELTS_138/generations/memory_11_1795761292494557804.json",
+          "bytes": 12278,
+          "sha256": "c681f5f9e2d892cb689e4184f1c100fc9b14c3c2f7f689cdc59235bbe4262385"
+        },
+        {
+          "path": "IELTS_138/generations/memory_12_1795761347400532442.json",
+          "bytes": 19372,
+          "sha256": "89bbb171b67af11e1722b82afce7e6f402d9e4aaf9ce8ffc84c948e9a9c26e95"
+        },
+        {
+          "path": "IELTS_138/generations/memory_13_1795761412817079282.json",
+          "bytes": 21026,
+          "sha256": "1b9ce70a650832fba0efa95386b3375480eeebc7df26996fe30e7859056bfddd"
+        },
+        {
+          "path": "IELTS_138/generations/memory_14_1795761444161546481.json",
+          "bytes": 11592,
+          "sha256": "fdaaacdf610c3009293d8ccc09e8db41e5a3d68e07dea866697b987a64339707"
+        },
+        {
+          "path": "IELTS_138/generations/memory_15_1795761501817241748.json",
+          "bytes": 19281,
+          "sha256": "6bc9cfeadbbb3c25e02d7a3a1e65d8a225e1fd30418740df0daafc13a78b4d32"
+        },
+        {
+          "path": "IELTS_138/generations/memory_16_1795761538942966654.json",
+          "bytes": 13833,
+          "sha256": "eb22eb190e43e2b61288bb6a1f6476350844f1726ca3b795a0343aa3814c19db"
+        },
+        {
+          "path": "IELTS_138/generations/memory_17_1795761568412872497.json",
+          "bytes": 11627,
+          "sha256": "d9485634831349e4058c69e59a96cd00b08594056bad8df4cc06a4bf2c38e829"
+        },
+        {
+          "path": "IELTS_138/generations/memory_18_1795761591083903708.json",
+          "bytes": 9659,
+          "sha256": "58e113485ee2de67f84b02a1e4bd9a8d31363c099d034379ae503e947829ac6c"
+        },
+        {
+          "path": "IELTS_138/generations/memory_19_1795761614695401952.json",
+          "bytes": 10167,
+          "sha256": "0328da40676d080245643509d59e379ff52d380970fec755b15fd475d58a0053"
+        },
+        {
+          "path": "IELTS_138/generations/memory_1_1795761001704715370.json",
+          "bytes": 9243,
+          "sha256": "fa52e468da21a042e6f7c1d709f2234689ed3bd5613de2f0da64663d48c3653b"
+        },
+        {
+          "path": "IELTS_138/generations/memory_20_1795761641462037265.json",
+          "bytes": 10359,
+          "sha256": "881aef0546c266000f9ec7b4b16625c42e79cc5b1ee4b9e7576b06d9b6d4d612"
+        },
+        {
+          "path": "IELTS_138/generations/memory_2_1795761024821262130.json",
+          "bytes": 9715,
+          "sha256": "f0082977b05075123fd8ef1ca44191e7d942e9341b331bbd7ba977c4cd73c464"
+        },
+        {
+          "path": "IELTS_138/generations/memory_3_1795761063355732051.json",
+          "bytes": 14807,
+          "sha256": "b7cfdb60805bbe153aae738a9677f9a15f2441d7d945f0b686b3501a4c87f1d6"
+        },
+        {
+          "path": "IELTS_138/generations/memory_4_1795761091732450522.json",
+          "bytes": 11178,
+          "sha256": "37fa9a48c0597b0ef22570d4d2e7e70419ef27e9238e6adbdf5b6eb31a80260e"
+        },
+        {
+          "path": "IELTS_138/generations/memory_5_1795761119408277310.json",
+          "bytes": 11065,
+          "sha256": "373340cb9e3a2ce9cbc45a3f912cf697b5a3134a4f0754ff2fad97d44aa8e67d"
+        },
+        {
+          "path": "IELTS_138/generations/memory_6_1795761154797879798.json",
+          "bytes": 12500,
+          "sha256": "3a0d92a72b40ba43408c5e4ec8a83c715c7e04cfce86e5942e6b26c1379ec589"
+        },
+        {
+          "path": "IELTS_138/generations/memory_7_1795761175553820222.json",
+          "bytes": 10264,
+          "sha256": "9b9a4966466cd8f25ef9ff7d925689a3d42ad99e24eb2a05d32c2f146c1192e1"
+        },
+        {
+          "path": "IELTS_138/generations/memory_8_1795761199537276679.json",
+          "bytes": 11183,
+          "sha256": "08f26e6cb54c7727192b209a11b6d0ead9a0796df0abbf2571dcf18f28435d20"
+        },
+        {
+          "path": "IELTS_138/generations/memory_9_1795761231628330194.json",
+          "bytes": 10998,
+          "sha256": "bbff395b6b5bd134347b3969322a501a5f6938362001ffe09569d94480c8becc"
+        },
+        {
+          "path": "IELTS_138/rejected.json",
+          "bytes": 2,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "path": "IELTS_138/source_hashes.json",
+          "bytes": 1486,
+          "sha256": "fca957e6d65ba4295322ae25ec3a45eeb97427349fcb7e1a9680a1a407d27c0e"
+        },
+        {
+          "path": "IELTS_138/summary.json",
+          "bytes": 1143,
+          "sha256": "7dc6ccd28aaa5ff2f0c25e43c1e14f7dac59b5f0166911b65bdf32b920740c55"
+        },
+        {
+          "path": "IELTS_138/trajectories.json",
+          "bytes": 1320383,
+          "sha256": "18fabc369741f4311fd7c04c9df203c50ce6861a57f2a7cf4c491736b0b8d4a6"
+        },
+        {
+          "path": "IELTS_138/manifest.jsonl",
+          "bytes": 3450,
+          "sha256": "22f9de8eb87f53c61676b42e57ec7139581d4ad8ae4c0a7efe4170664dbaa00e"
+        }
+      ]
+    },
+    {
+      "name": "IELTS_106",
+      "path": "archives/IELTS_106.tar.xz",
+      "bytes": 81480,
+      "sha256": "8c484e8b6b292890c47487347fa567b1c3eb64ebe9d2ca85e6b99696734bcdbc",
+      "files": [
+        {
+          "path": "IELTS_106/api_calls.json",
+          "bytes": 18219,
+          "sha256": "e1113529aff7725235fa54e81a650252d2453f44a57493d8a88da8ee4868a76a"
+        },
+        {
+          "path": "IELTS_106/config.json",
+          "bytes": 1136,
+          "sha256": "4f16750811fc07f47febdf2b57b264db697ac12759ec418d6ea6fd6c96cc5e2e"
+        },
+        {
+          "path": "IELTS_106/generations/candidate_scan_0_1795760871264863205.json",
+          "bytes": 7846,
+          "sha256": "8b6c72c90bf7eb516c466ac536b7fdb6fbd39a1a59796e586a46f3c2f4364b38"
+        },
+        {
+          "path": "IELTS_106/generations/candidate_scan_1_1795760897441885006.json",
+          "bytes": 11683,
+          "sha256": "2dc3f0fce1df040e0d1866a76c8c8b09abd5fa322b0ff6d37c6f1d6c72e7b8f6"
+        },
+        {
+          "path": "IELTS_106/generations/candidate_scan_2_1795760915212778339.json",
+          "bytes": 9292,
+          "sha256": "a94a1d5703b52c31909b77c1b9a1e515c2d32f907bd4e2652449acce36f1add0"
+        },
+        {
+          "path": "IELTS_106/generations/candidate_scan_3_1795760938873533382.json",
+          "bytes": 10413,
+          "sha256": "9236d2e0f2f2b7c5d262c3c3da1905fd5d53be891a15e2510c2400422839848e"
+        },
+        {
+          "path": "IELTS_106/generations/candidate_scan_4_1795760952854682204.json",
+          "bytes": 7152,
+          "sha256": "367211c5f677ddc695de83fa690bad9e89fc2b7af3a265bc34e8b72cb147b0be"
+        },
+        {
+          "path": "IELTS_106/generations/candidate_scan_5_1795760989678037969.json",
+          "bytes": 13468,
+          "sha256": "1672224aa647450216aabc40d514bde68556545baf97e8a1202f0a2ccd25ad71"
+        },
+        {
+          "path": "IELTS_106/generations/final_20_1795761837969066793.json",
+          "bytes": 27656,
+          "sha256": "af60262c22bab44998df90373b0f08a40a705813577b7658d101bc2b6d79e568"
+        },
+        {
+          "path": "IELTS_106/generations/memory_0_1795761009033844822.json",
+          "bytes": 7620,
+          "sha256": "ceb92c5d1ec25f63a918a245dcb59e3d1694193de195b4a547e28fc367a80d0b"
+        },
+        {
+          "path": "IELTS_106/generations/memory_10_1795761301839788191.json",
+          "bytes": 11624,
+          "sha256": "ccc3fb2d0a783955dbcc6b0eac5e6e064cdf99a2a59ef92b3cbf5ba1eda16af1"
+        },
+        {
+          "path": "IELTS_106/generations/memory_11_1795761325101047513.json",
+          "bytes": 9861,
+          "sha256": "38d32e1655b4b745d59e487141c25eb4720e52e67f2c1eb82421ca1a6fea2030"
+        },
+        {
+          "path": "IELTS_106/generations/memory_12_1795761367140130284.json",
+          "bytes": 13468,
+          "sha256": "74b3394a44834e4576e51938cdb1d85338f8dd606b605dc267106af215befde4"
+        },
+        {
+          "path": "IELTS_106/generations/memory_13_1795761423448212163.json",
+          "bytes": 18674,
+          "sha256": "6a81b0f0d4d1ee8850db79a1b1c8e859640cc4f4fe084dc59c1fc5a0bbd71ae7"
+        },
+        {
+          "path": "IELTS_106/generations/memory_14_1795761471194121905.json",
+          "bytes": 16946,
+          "sha256": "b6bcb9518fa593b20f23756c3c26b76ca0a0abfc1f99a70dc45b259fea8bef04"
+        },
+        {
+          "path": "IELTS_106/generations/memory_15_1795761632635715054.json",
+          "bytes": 49274,
+          "sha256": "f5a30b9e1787a71fbd95e518712f57d8f87463e8f062b3989bef81672019f0ef"
+        },
+        {
+          "path": "IELTS_106/generations/memory_16_1795761667964680076.json",
+          "bytes": 13082,
+          "sha256": "973793f9eaf446e1b6e0eb95ff324eadb6faefcddab89d9752ab3f3e9904c3f5"
+        },
+        {
+          "path": "IELTS_106/generations/memory_17_1795761698230846143.json",
+          "bytes": 11446,
+          "sha256": "8121f0c709219e02ace0332af3f1133afe436a284f652971363de6bfd95b4be2"
+        },
+        {
+          "path": "IELTS_106/generations/memory_18_1795761738190279973.json",
+          "bytes": 15184,
+          "sha256": "50c8dc3aa9200ea77392890d099fabfb4068a0ab3a6d9d38d6ff395bfd95d9b3"
+        },
+        {
+          "path": "IELTS_106/generations/memory_19_1795761777043495164.json",
+          "bytes": 15081,
+          "sha256": "c796a36385f1837f1e171b636a6901855a81c58e0db8c30f5a4c5e176bc3d846"
+        },
+        {
+          "path": "IELTS_106/generations/memory_1_1795761029259628947.json",
+          "bytes": 8670,
+          "sha256": "09a3d438ea0222eea51e65628eb86065bb2c08329fd8bb0a74ae18e8d8b8f497"
+        },
+        {
+          "path": "IELTS_106/generations/memory_2_1795761050055593472.json",
+          "bytes": 8454,
+          "sha256": "3388805c5fca3131b870f0bc60b97c155697f698e0a95f51f94b01b1b2d9942b"
+        },
+        {
+          "path": "IELTS_106/generations/memory_3_1795761070654602163.json",
+          "bytes": 8557,
+          "sha256": "f6678fa390bd0292d0f99ab8230c98432a008687a92f01063ecce635cfb97a73"
+        },
+        {
+          "path": "IELTS_106/generations/memory_4_1795761095419641086.json",
+          "bytes": 9692,
+          "sha256": "47f026ec19a4110b42b36a4beb4f55171383e7032d988077fb7787b07fab8693"
+        },
+        {
+          "path": "IELTS_106/generations/memory_5_1795761141693037438.json",
+          "bytes": 15224,
+          "sha256": "278414371257d92b7d5216d54aebefd437b3cd6a899fdd245dadc032251312bd"
+        },
+        {
+          "path": "IELTS_106/generations/memory_6_1795761163389463887.json",
+          "bytes": 9168,
+          "sha256": "a99844dee321330d61cf421ad0c432d1c045fe116ef8198116497bfffd5eae90"
+        },
+        {
+          "path": "IELTS_106/generations/memory_7_1795761189454452198.json",
+          "bytes": 10084,
+          "sha256": "639aa2469275c3ea7380d0e9c3d17763f395415aee6e89c7a9d4324474010f31"
+        },
+        {
+          "path": "IELTS_106/generations/memory_8_1795761236441085787.json",
+          "bytes": 15592,
+          "sha256": "322cb9ecbb27efe92baf2238bf37483609d4ae73adf731018fe1e825e62bb26a"
+        },
+        {
+          "path": "IELTS_106/generations/memory_9_1795761272567343013.json",
+          "bytes": 13476,
+          "sha256": "75d18e9179a7163e5ec54afabbc23e3823f10c65307e36c9588b7084ea26c708"
+        },
+        {
+          "path": "IELTS_106/rejected.json",
+          "bytes": 2,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "path": "IELTS_106/source_hashes.json",
+          "bytes": 1486,
+          "sha256": "fca957e6d65ba4295322ae25ec3a45eeb97427349fcb7e1a9680a1a407d27c0e"
+        },
+        {
+          "path": "IELTS_106/summary.json",
+          "bytes": 1155,
+          "sha256": "5bc74f6f9ace4e0d263de1227ac9680a93c545b440481acb1433d7d785bb5777"
+        },
+        {
+          "path": "IELTS_106/trajectories.json",
+          "bytes": 1107328,
+          "sha256": "6cedb1f6c6ce9347ae9488d9b7aa7df62495b016b8aecbdc3820a88e7709b53e"
+        },
+        {
+          "path": "IELTS_106/manifest.jsonl",
+          "bytes": 5329,
+          "sha256": "ef2562eda70be6190f3d71df43c0e99bfe06309a3eb75946427048f94c97d553"
+        }
+      ]
+    },
+    {
+      "name": "IELTS_193",
+      "path": "archives/IELTS_193.tar.xz",
+      "bytes": 77616,
+      "sha256": "48e450be17e8701c374ae045b8b0263453f19444a30af65142911abb5ab2c593",
+      "files": [
+        {
+          "path": "IELTS_193/api_calls.json",
+          "bytes": 18140,
+          "sha256": "14bc318957a76c02d8348c8caba9a5577ff7d95fd28a7050bf70c02ac3c932dd"
+        },
+        {
+          "path": "IELTS_193/config.json",
+          "bytes": 1136,
+          "sha256": "c16d33c43a9dd589a1c0c9f5016be542fb62a36805f597250d9cd3fea59c66c8"
+        },
+        {
+          "path": "IELTS_193/generations/candidate_scan_0_1795760872778587123.json",
+          "bytes": 8269,
+          "sha256": "839db26061887a302043c2787b597209da6d812ab42b0305617de17b23c28df0"
+        },
+        {
+          "path": "IELTS_193/generations/candidate_scan_1_1795760891568352624.json",
+          "bytes": 9267,
+          "sha256": "7bbaffe4dc7f90418522ebfd43d9246ba7843444486d2f7af4b2cdd54b69c8bd"
+        },
+        {
+          "path": "IELTS_193/generations/candidate_scan_2_1795760913494099498.json",
+          "bytes": 11501,
+          "sha256": "9e93d7b4f651ba25aeeff4a6d8e4917c75fc5595b90dadbe5adde0d7a2a7d540"
+        },
+        {
+          "path": "IELTS_193/generations/candidate_scan_3_1795760936195277927.json",
+          "bytes": 10416,
+          "sha256": "f79a92b16b68d97dfea4577e8e9edb1021054b1b0ab6d9dbbc49be12707ae36d"
+        },
+        {
+          "path": "IELTS_193/generations/candidate_scan_4_1795760952916970936.json",
+          "bytes": 8737,
+          "sha256": "20b71050ae732644b2bdc7d9085f93f6f0289cf4caef5f81680317c9389bda2e"
+        },
+        {
+          "path": "IELTS_193/generations/candidate_scan_5_1795760984964962320.json",
+          "bytes": 13331,
+          "sha256": "916f64edd7ee7c94cf77e711145e4969d0920729e0d00fe773f30434b54a3445"
+        },
+        {
+          "path": "IELTS_193/generations/final_20_1795761755371570758.json",
+          "bytes": 35408,
+          "sha256": "0ec352b0574657d7f56fbed61d98a3f5d4f0f6393d93aab822c977eb4257e50a"
+        },
+        {
+          "path": "IELTS_193/generations/memory_0_1795760995560450853.json",
+          "bytes": 4647,
+          "sha256": "a416943b46cd30b238e56c999032ee529c647b178188d8a544f56b0f4f80954b"
+        },
+        {
+          "path": "IELTS_193/generations/memory_10_1795761353549144312.json",
+          "bytes": 16424,
+          "sha256": "89d3136b95618b01acc5ae98c7fd2dfabae232923a89544bfb240f920e0afcd3"
+        },
+        {
+          "path": "IELTS_193/generations/memory_11_1795761400201785748.json",
+          "bytes": 16564,
+          "sha256": "e6b3d3e493ee2d5538cc02d60200bca8cd497fcbf1808c97991683c6cad86644"
+        },
+        {
+          "path": "IELTS_193/generations/memory_12_1795761420111897076.json",
+          "bytes": 8348,
+          "sha256": "ff04bfdbce8d2c267c9de87a19fe7485f7b8ea29066ea8c6be07df4245a61d29"
+        },
+        {
+          "path": "IELTS_193/generations/memory_13_1795761441419169235.json",
+          "bytes": 9268,
+          "sha256": "c1e21cc69f0bb38e8dfb4c0a94f0f39d952b1d7aad0fc940db0914617e056924"
+        },
+        {
+          "path": "IELTS_193/generations/memory_14_1795761465212979681.json",
+          "bytes": 8923,
+          "sha256": "1709fc307c37579bcab798a30fd16138b83c7a2323850b564def3ac60afeb189"
+        },
+        {
+          "path": "IELTS_193/generations/memory_15_1795761511911118729.json",
+          "bytes": 17107,
+          "sha256": "b7a675da0d57cda4f4c7863d3c000946ff1758b5130f8fb160baa944fd3da726"
+        },
+        {
+          "path": "IELTS_193/generations/memory_16_1795761569588856275.json",
+          "bytes": 18571,
+          "sha256": "dfc96ed6646c9c0fe9b2b5b6ea25cecd91b2ba312d68b1524c8eb537d1a4cbe1"
+        },
+        {
+          "path": "IELTS_193/generations/memory_17_1795761612301549628.json",
+          "bytes": 14930,
+          "sha256": "8de227a8340702ed92d55abf41c61a62e96242c0d4f887e7c2ae6c538589cab1"
+        },
+        {
+          "path": "IELTS_193/generations/memory_18_1795761633468928268.json",
+          "bytes": 9073,
+          "sha256": "f708e91332d373463f17544168e6138ed705b48a248d5d7c70cd6d256462b888"
+        },
+        {
+          "path": "IELTS_193/generations/memory_19_1795761676170865679.json",
+          "bytes": 15139,
+          "sha256": "5fef4bba6604b2c468704ec0593cc82f63845cc46d442bc8537334ec074676dc"
+        },
+        {
+          "path": "IELTS_193/generations/memory_1_1795761019402140901.json",
+          "bytes": 9699,
+          "sha256": "0693fd443fe27ec20df433fd7b88bfde19b1f7a3b1aa3f56f472c54c597a2673"
+        },
+        {
+          "path": "IELTS_193/generations/memory_2_1795761040057733522.json",
+          "bytes": 8789,
+          "sha256": "cfc41e146783784160a0f8b0e6c19020f61b6f80a4921018841527f6fe22125c"
+        },
+        {
+          "path": "IELTS_193/generations/memory_3_1795761071895555460.json",
+          "bytes": 12367,
+          "sha256": "455e653a5e514a1a454cc4e37ee18ab61ae163c28ff40fca74ee5b594e813fb2"
+        },
+        {
+          "path": "IELTS_193/generations/memory_4_1795761109050628121.json",
+          "bytes": 13091,
+          "sha256": "9e7099ca4a4846b4af1530e9015d8a486ebc5327c4b516b290559defc697fafc"
+        },
+        {
+          "path": "IELTS_193/generations/memory_5_1795761168973514511.json",
+          "bytes": 19854,
+          "sha256": "c8a40b95757aee9ca5ce29ab7aa9f455f40418e131510dde39e065b859726dc4"
+        },
+        {
+          "path": "IELTS_193/generations/memory_6_1795761210144124268.json",
+          "bytes": 16021,
+          "sha256": "e3cc1ecf6497472596f9e6a12acdab570149f2cbc706a68522101b2a394951ff"
+        },
+        {
+          "path": "IELTS_193/generations/memory_7_1795761237290684081.json",
+          "bytes": 11021,
+          "sha256": "b725ef4efc25b5661d6090effff2096c04be10a0016575b99bd6fdfbf2d5f511"
+        },
+        {
+          "path": "IELTS_193/generations/memory_8_1795761275144489167.json",
+          "bytes": 12953,
+          "sha256": "0c5936277327336dc92773ff134dfd377c09e0955c254bfbeea7ad533dd88dd0"
+        },
+        {
+          "path": "IELTS_193/generations/memory_9_1795761308548473258.json",
+          "bytes": 12377,
+          "sha256": "6d106f597bada78434a5ba0416e4ea6af4eb34fbf6e79b948c587e59643483ec"
+        },
+        {
+          "path": "IELTS_193/rejected.json",
+          "bytes": 2,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "path": "IELTS_193/source_hashes.json",
+          "bytes": 1486,
+          "sha256": "fca957e6d65ba4295322ae25ec3a45eeb97427349fcb7e1a9680a1a407d27c0e"
+        },
+        {
+          "path": "IELTS_193/summary.json",
+          "bytes": 1144,
+          "sha256": "52b1655c141438aa2f74fb495aac9ded4c94394ebbd279dd347c13e52132c3d5"
+        },
+        {
+          "path": "IELTS_193/trajectories.json",
+          "bytes": 1195412,
+          "sha256": "2f5d15d0b27947edb40fb4e053adbebae36dc2d6dd4ce24e66bdb88a921286af"
+        },
+        {
+          "path": "IELTS_193/manifest.jsonl",
+          "bytes": 4027,
+          "sha256": "331aab251f2b0397db886153fa86a737802e254e883e6de73c85de6509a60127"
+        }
+      ]
+    },
+    {
+      "name": "IELTS_183",
+      "path": "archives/IELTS_183.tar.xz",
+      "bytes": 84828,
+      "sha256": "c65dad1b7c221dac6e64ccacdf64fd0b541f1c735fc3c79347e967c6b45c1554",
+      "files": [
+        {
+          "path": "IELTS_183/api_calls.json",
+          "bytes": 19058,
+          "sha256": "10edb9a48065792698370d4043cc3d67a83f6f47243a7b67f4ad812b9fa5d1d2"
+        },
+        {
+          "path": "IELTS_183/config.json",
+          "bytes": 1136,
+          "sha256": "398b954cb85ba7bda4a3c2d7d01aa3731cea1b604308b2b9f8a3f0b2a8b42663"
+        },
+        {
+          "path": "IELTS_183/generations/candidate_scan_0_1795761723070047810.json",
+          "bytes": 7389,
+          "sha256": "df047b5883be96f004549d11b976540e125b98cbca93d5c999b4e1a6f3b00b0c"
+        },
+        {
+          "path": "IELTS_183/generations/candidate_scan_1_1795761741849833071.json",
+          "bytes": 9335,
+          "sha256": "c9f6f04b78299fcb975da964a834c10f08e82fd323feae4f80296e9925dc9012"
+        },
+        {
+          "path": "IELTS_183/generations/candidate_scan_2_1795761758853826047.json",
+          "bytes": 8875,
+          "sha256": "811b1bdb20b3c833cc93d01d5ef0157d7072a1a2846715f7ace5485ccdd87053"
+        },
+        {
+          "path": "IELTS_183/generations/candidate_scan_3_1795761776300792446.json",
+          "bytes": 9661,
+          "sha256": "5321ecc0205b244b014230a6793997c21da9b3c432bb25c6fc92e6d0ab055bb7"
+        },
+        {
+          "path": "IELTS_183/generations/candidate_scan_4_1795761805611666021.json",
+          "bytes": 15172,
+          "sha256": "82e75815d81a4b9f162a1f59654fada1d8e05a46e747741e6adeb33bc81e2d7a"
+        },
+        {
+          "path": "IELTS_183/generations/final_23_1795762663864558421.json",
+          "bytes": 30200,
+          "sha256": "92075dac95c8bdd423dff943acf6f356c548676b7356c8991dbed8c9cd47594e"
+        },
+        {
+          "path": "IELTS_183/generations/memory_0_1795761832283092422.json",
+          "bytes": 11122,
+          "sha256": "310082638b5eee688f8c26adf772981f05d6adf3897369f6a8dff5c7f71854d8"
+        },
+        {
+          "path": "IELTS_183/generations/memory_10_1795762115612884684.json",
+          "bytes": 12034,
+          "sha256": "5ecb12240bbc1be855a17475f37b5d55973b2566556464ff1ad4f66930474533"
+        },
+        {
+          "path": "IELTS_183/generations/memory_11_1795762158794679249.json",
+          "bytes": 17269,
+          "sha256": "2427838ecebc10abe00c69cb049c1422328b496cb4bf4c58f31ce0685f119621"
+        },
+        {
+          "path": "IELTS_183/generations/memory_12_1795762204487991311.json",
+          "bytes": 19656,
+          "sha256": "8dc8f023387542b3b8bbd82db26c704316f46372c62b82311503cf4c3764447a"
+        },
+        {
+          "path": "IELTS_183/generations/memory_13_1795762227435581901.json",
+          "bytes": 9999,
+          "sha256": "bd243d9e2dc81345219ebe225797495eedf1fa58edfc8d5966645d6860bcea21"
+        },
+        {
+          "path": "IELTS_183/generations/memory_14_1795762257350204160.json",
+          "bytes": 13067,
+          "sha256": "93fdc856945720b2bc4c607f4c8db7d193beac7c62f618d27daa1da0717162d7"
+        },
+        {
+          "path": "IELTS_183/generations/memory_15_1795762297693688571.json",
+          "bytes": 17115,
+          "sha256": "86d6b8b28f317e964b4f19851b7cc91f3f5ec6a47ad227068a0f350e2701e329"
+        },
+        {
+          "path": "IELTS_183/generations/memory_16_1795762334062903307.json",
+          "bytes": 15311,
+          "sha256": "b5dd28ecaddd19f484129a86c2fae358c4c394d8b64506832961f7be0fd04a43"
+        },
+        {
+          "path": "IELTS_183/generations/memory_17_1795762398681101171.json",
+          "bytes": 22660,
+          "sha256": "449cb98e8a28351e05e8721f1f5db95963f643df4446ba679518ec5d3c09bf11"
+        },
+        {
+          "path": "IELTS_183/generations/memory_18_1795762453656575646.json",
+          "bytes": 20826,
+          "sha256": "520338d2c37662642c31be4de22bfde0cb68d8aa103ad0f004e9c33d49525d32"
+        },
+        {
+          "path": "IELTS_183/generations/memory_19_1795762495184715875.json",
+          "bytes": 15121,
+          "sha256": "82bdda23657703e99329092635b2718873cc11a4d75c30c91c69c85336db8a5a"
+        },
+        {
+          "path": "IELTS_183/generations/memory_1_1795761853143998348.json",
+          "bytes": 9213,
+          "sha256": "b30502026c38925e3d254b90466dbef55670ce36c9b28e21f85430af8f13bd4b"
+        },
+        {
+          "path": "IELTS_183/generations/memory_20_1795762525178114363.json",
+          "bytes": 13132,
+          "sha256": "9a23e2f9965c040e6d107f2e0d229b868159fcf66b04e33e41f6bf4cb4f824a2"
+        },
+        {
+          "path": "IELTS_183/generations/memory_21_1795762557391202347.json",
+          "bytes": 13351,
+          "sha256": "850fc35a5497413f0159a5fa956bcfe95574693a0866eb8091e0136c56eceaf5"
+        },
+        {
+          "path": "IELTS_183/generations/memory_22_1795762599131127340.json",
+          "bytes": 15114,
+          "sha256": "774f619a821a104c6e9f1e0993cbf37c460032b0fc7e55a762ed8e60dfc3c0e4"
+        },
+        {
+          "path": "IELTS_183/generations/memory_2_1795761884770259027.json",
+          "bytes": 11948,
+          "sha256": "147405b99d412d00d378225f7314edc087d330f05dc6e01b157594bcdebbeb0f"
+        },
+        {
+          "path": "IELTS_183/generations/memory_3_1795761907393962732.json",
+          "bytes": 9651,
+          "sha256": "686b49cb83618f35e07a7e94b323459efe85fa2654acc8d919bc0f9215662681"
+        },
+        {
+          "path": "IELTS_183/generations/memory_4_1795761921826710791.json",
+          "bytes": 7404,
+          "sha256": "7b58404f426b9faa0387d0828c40cf8a0f67415e2b273289432a50137d117316"
+        },
+        {
+          "path": "IELTS_183/generations/memory_5_1795761949118272645.json",
+          "bytes": 11572,
+          "sha256": "9847ceea24945db66557e657c1b7af3e54891e2d0adfd5817417d1a581267616"
+        },
+        {
+          "path": "IELTS_183/generations/memory_6_1795762002803202056.json",
+          "bytes": 20947,
+          "sha256": "be48627730bc0da30287a786624538b158f28809efdbfd27d69ad09e434f481b"
+        },
+        {
+          "path": "IELTS_183/generations/memory_7_1795762024142618176.json",
+          "bytes": 10087,
+          "sha256": "c0d39ae530ac43dfeb0143cd2df6cf50c4b6e47028ba13e2978c225538c6cd6e"
+        },
+        {
+          "path": "IELTS_183/generations/memory_8_1795762061677778470.json",
+          "bytes": 14275,
+          "sha256": "4fcc966996f3db0f0e313264c570f26b2bcdc9da04157b23a876ab4e76a661e1"
+        },
+        {
+          "path": "IELTS_183/generations/memory_9_1795762086340929311.json",
+          "bytes": 9956,
+          "sha256": "ef06be19cabb1d04685e286447122f67b0b823c86d11b0708db08c2fc9906cd4"
+        },
+        {
+          "path": "IELTS_183/rejected.json",
+          "bytes": 2,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "path": "IELTS_183/source_hashes.json",
+          "bytes": 1486,
+          "sha256": "fca957e6d65ba4295322ae25ec3a45eeb97427349fcb7e1a9680a1a407d27c0e"
+        },
+        {
+          "path": "IELTS_183/summary.json",
+          "bytes": 1147,
+          "sha256": "e37e0eca06f8138c989b39b4523c53690fbcd565ad79af966571f5a59b595299"
+        },
+        {
+          "path": "IELTS_183/trajectories.json",
+          "bytes": 1635631,
+          "sha256": "843125c72f920b45bd9d2d57dab7f8c31a695cc923a7ff2d06fca3eb1b328af6"
+        },
+        {
+          "path": "IELTS_183/manifest.jsonl",
+          "bytes": 3162,
+          "sha256": "c37d9578952127fc5fcf5f2e7690c92071f93ae67e45df6dcf913ea9e8530818"
+        }
+      ]
+    },
+    {
+      "name": "IELTS_176",
+      "path": "archives/IELTS_176.tar.xz",
+      "bytes": 85088,
+      "sha256": "d11415a36ab8f92b4c780a6a2addd499d4a25f29570c555817134baf9ec99332",
+      "files": [
+        {
+          "path": "IELTS_176/api_calls.json",
+          "bytes": 16448,
+          "sha256": "e6fe52014fb826ca3dea1d2ee74a7cbaf529a4173a1a6423c4258e243f328bf5"
+        },
+        {
+          "path": "IELTS_176/config.json",
+          "bytes": 1136,
+          "sha256": "f6b241fd2a206f4e21f7e4b57d702b5dec12f07a56b53dbdf9642e6a08b4f9bd"
+        },
+        {
+          "path": "IELTS_176/generations/candidate_scan_0_1795761778403839351.json",
+          "bytes": 9484,
+          "sha256": "d62c6ca93deda84c71ec586fcf160b7c0de257667249424f107258e309a35fcc"
+        },
+        {
+          "path": "IELTS_176/generations/candidate_scan_1_1795761810435167818.json",
+          "bytes": 11911,
+          "sha256": "e96e7b277b48bf33e14f763ae398bfe5f710f2506d03e886197a1c0b786f35c0"
+        },
+        {
+          "path": "IELTS_176/generations/candidate_scan_2_1795761827362006439.json",
+          "bytes": 8533,
+          "sha256": "874dc4460291ac5ffd6d4ead04b4a61600acccf1e6f4a2e2c73a2e8e0fd72f82"
+        },
+        {
+          "path": "IELTS_176/generations/candidate_scan_3_1795761853368589922.json",
+          "bytes": 12760,
+          "sha256": "0408dd1bd2f746eb79694ab85b7bb561d803cf1a226299e6f02a7538f5813d62"
+        },
+        {
+          "path": "IELTS_176/generations/final_20_1795762761995485133.json",
+          "bytes": 25321,
+          "sha256": "4ffd148593611108c4c8990de0367b610c3a8f7eefaa409debb9d8616fab8f80"
+        },
+        {
+          "path": "IELTS_176/generations/memory_0_1795761924917182508.json",
+          "bytes": 25005,
+          "sha256": "d81e8ae77f438eff9cd54b41fe3988576d5c566d7f4222e7e0fe229fa3e3a3ce"
+        },
+        {
+          "path": "IELTS_176/generations/memory_10_1795762250218302591.json",
+          "bytes": 15284,
+          "sha256": "7d23d9c2ff91d1129447affc0c2a60d3f96720fb069b03483ef3ca7f46b61ae3"
+        },
+        {
+          "path": "IELTS_176/generations/memory_11_1795762302269762990.json",
+          "bytes": 21383,
+          "sha256": "7ef3f517f8deedcfe114171c0eeb6faec247b7bfb904423f254a5c9e90d6ea7c"
+        },
+        {
+          "path": "IELTS_176/generations/memory_12_1795762373059526670.json",
+          "bytes": 24504,
+          "sha256": "21f0011bfb5ee91c23e2f5da944102395e91e22284f45b2093cc1a6e708f7d2f"
+        },
+        {
+          "path": "IELTS_176/generations/memory_13_1795762403220332462.json",
+          "bytes": 10933,
+          "sha256": "91ec6e7cbdbb49b746a55a91745e66d5b8ac66f2cf63be49254fc00a2e23ca31"
+        },
+        {
+          "path": "IELTS_176/generations/memory_14_1795762444910540281.json",
+          "bytes": 17362,
+          "sha256": "c7988f95d57fea3cef3729ee2242eae142dc84781e49808385c7efa2d291401e"
+        },
+        {
+          "path": "IELTS_176/generations/memory_15_1795762513178752334.json",
+          "bytes": 22226,
+          "sha256": "e7cd5ce2d67d3d56f70109efa2d9dd2ec5a0b1b4f6b4c872ea158ae798b8878d"
+        },
+        {
+          "path": "IELTS_176/generations/memory_16_1795762533559438818.json",
+          "bytes": 9983,
+          "sha256": "5a9dace705bd091da6b15b494ad4b279fc2aad79d92455f2c312a9751df31bea"
+        },
+        {
+          "path": "IELTS_176/generations/memory_17_1795762579153381743.json",
+          "bytes": 17099,
+          "sha256": "c280dbbaed771af248066e0cc865862f36ec88c6891d8bf211c9f8a93623f253"
+        },
+        {
+          "path": "IELTS_176/generations/memory_18_1795762639898244599.json",
+          "bytes": 21349,
+          "sha256": "ba1c0655063a8e7b73fe05481b227754d8874ce1276841f9cf83bd90738e7314"
+        },
+        {
+          "path": "IELTS_176/generations/memory_19_1795762712273527325.json",
+          "bytes": 24986,
+          "sha256": "3fe9d63c88d3b621dfb8b3e2d1c16c732c5b793ae65ba824f3efc4184f2ad81f"
+        },
+        {
+          "path": "IELTS_176/generations/memory_1_1795761956119552087.json",
+          "bytes": 12757,
+          "sha256": "b1415e379cefda55a16c448c8fb617d9fbf2d8c667c387a0f2078aafd0bfb323"
+        },
+        {
+          "path": "IELTS_176/generations/memory_2_1795761965378385177.json",
+          "bytes": 4502,
+          "sha256": "59a15f6278919d15a03e6381a974c4c90fe58a5fdaa18e150ce86228eb46d1ba"
+        },
+        {
+          "path": "IELTS_176/generations/memory_3_1795761985418022959.json",
+          "bytes": 7507,
+          "sha256": "ffeb1d1c2d2a1ea359f0df56d2f743f61e992fb5a85c462be6cd18990365919e"
+        },
+        {
+          "path": "IELTS_176/generations/memory_4_1795762009093955790.json",
+          "bytes": 9856,
+          "sha256": "df0a0bbdff921132dff7623e7395f4ee6e46fca8aaa462cd65ac67045141e3ab"
+        },
+        {
+          "path": "IELTS_176/generations/memory_5_1795762051057491593.json",
+          "bytes": 15828,
+          "sha256": "786a0297f0abc1a917d999706bd117501e93de7ee59b954f879d34f4a534e71c"
+        },
+        {
+          "path": "IELTS_176/generations/memory_6_1795762106670337880.json",
+          "bytes": 19555,
+          "sha256": "d3efa214ba89604c02ebbed53369c0b44ea2cf392a6e6e0a597fdb989d56e2e5"
+        },
+        {
+          "path": "IELTS_176/generations/memory_7_1795762130705737627.json",
+          "bytes": 11641,
+          "sha256": "93424f45ee2fc0051ba645f71803a6b6132d217b81b8b6f294331c5ded5ca610"
+        },
+        {
+          "path": "IELTS_176/generations/memory_8_1795762177461329845.json",
+          "bytes": 17152,
+          "sha256": "416f35a227e8e32de7b5647b984315436601bd05c1902ae98b9787a9a9065a1c"
+        },
+        {
+          "path": "IELTS_176/generations/memory_9_1795762212930502293.json",
+          "bytes": 14953,
+          "sha256": "37bfe06b1bf958f83e86552f3de047d260278d8207fe12f204910a6606600e96"
+        },
+        {
+          "path": "IELTS_176/rejected.json",
+          "bytes": 2,
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "path": "IELTS_176/source_hashes.json",
+          "bytes": 1486,
+          "sha256": "fca957e6d65ba4295322ae25ec3a45eeb97427349fcb7e1a9680a1a407d27c0e"
+        },
+        {
+          "path": "IELTS_176/summary.json",
+          "bytes": 1143,
+          "sha256": "e44ba9358835eb53fde8485ea4850aec280dbc907507dcff77f1a184bc2152f8"
+        },
+        {
+          "path": "IELTS_176/trajectories.json",
+          "bytes": 1272768,
+          "sha256": "b917ddc07853546ce95f19a2d497287f86f01a9a73efee30388d732478dee04e"
+        },
+        {
+          "path": "IELTS_176/manifest.jsonl",
+          "bytes": 2537,
+          "sha256": "07956d377a9e72730a4fb37a8a94221a9194be08926995cb9962059640fed11f"
+        }
+      ]
+    }
+  ],
+  "all_archived_files_verified": true,
+  "credential_scan_passed": true,
+  "excluded": [
+    "credentials",
+    "original media",
+    "cached clips",
+    "master input manifest with training labels"
+  ],
+  "restore": "tar -xJf archives/IELTS_138.tar.xz"
+}

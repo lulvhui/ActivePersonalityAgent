@@ -1,0 +1,1264 @@
+{
+  "sample_id": "IELTS:183",
+  "run_status": "partial",
+  "final_status": "generated",
+  "final": {
+    "O": {
+      "level": "low",
+      "reasoning": null
+    },
+    "C": {
+      "level": "medium",
+      "reasoning": null
+    },
+    "E": {
+      "level": "low",
+      "reasoning": null
+    },
+    "A": {
+      "level": "medium",
+      "reasoning": null
+    },
+    "N": {
+      "level": "low",
+      "reasoning": null
+    }
+  },
+  "final_explanation": "Openness is assessed as low: the candidate consistently avoids specificity (repeated 'stuff' tokens, unnamed occupations, no toponyms), disengages from aesthetic/abstract domains ('I have never thought about it' regarding fashion), and defaults to practical-concrete content over imaginative exploration. While L2 vocabulary limits partly explain vagueness, the content-level choices (not thinking about fashion, preferring water/routine over creative focus strategies) reflect genuine low curiosity for abstract or novel ideas. Conscientiousness is medium: the candidate is attentive, cooperative, and maintains structured posture throughout, but follow-through is incomplete (begins an ordinal list 'The first thing…' and never reaches 'the second thing'), and self-assessments are hedged rather than precise. Setting-required compliance is baseline; the positive evidence is sustained attentiveness and orderly turn-taking, while the negative evidence is abandoned elaboration and vague categorization. Extraversion is low: delivery is flat and matter-of-fact ('Not really much' in a monotone), gesturing is minimal and confined to the table area even during explanations, and the candidate never volunteers beyond the prompted question. Although a formal test with a stranger constrains expressiveness, the observed qualities—reduced vocal energy, contained physicality, absence of spontaneous expansion—go beyond mere compliance. Agreeableness is medium: the candidate is uniformly cooperative ('Yeah, of course. Here you are'), uses rapport markers ('you know'), and references a 'special friend' warmly, but shows no distinctive generosity, empathy, or enthusiasm beyond what the assessment setting demands; no hostility or competitiveness is present either. Neuroticism is low: the candidate remains calm and composed throughout; hesitations ('uh,' 'um,' 'I mean') are consistent with L2 planning effort rather than anxiety; the 'chill pill' and 'try to relax' mentions are stated as practical strategies without distress; the 'tricky question' acknowledgment is delivered evenly; no fidgeting, avoidance, or emotional volatility is observed.",
+  "contextual": [
+    {
+      "trait": "O",
+      "context_type": "reported",
+      "context": "Fashion-importance question (M8, ~164–180 s)",
+      "expression": "Candidate states 'Not really much. Actually I have never thought about it. It's a tricky question for me,' delivered in a flat tone with no attempt to explore the topic imaginatively; only a brief social-appearance example follows.",
+      "citations": [
+        "M8",
+        "M16"
+      ]
+    },
+    {
+      "trait": "O",
+      "context_type": "observed",
+      "context": "Hometown occupation and visitor-activity responses (M3–M4, M12–M13)",
+      "expression": "Repeated use of the catch-all 'stuff' ('traditional stuff,' 'historical materials and stuff'), 'thousands of thing' without enumeration, 'so many places' without naming, and zero proper nouns or specific trades across both answers; broad symmetrical hand gestures accompany the vagueness rather than precision.",
+      "citations": [
+        "M3",
+        "M4",
+        "M12",
+        "M13"
+      ]
+    },
+    {
+      "trait": "O",
+      "context_type": "reported",
+      "context": "Concentration-aid listing (M6, M15)",
+      "expression": "Three practical strategies named (bottle of water, trying to relax, 'chill pill'); no creative, sensory, or intellectual approaches mentioned, reflecting a concrete-practical orientation over exploratory thinking.",
+      "citations": [
+        "M6",
+        "M15"
+      ]
+    },
+    {
+      "trait": "C",
+      "context_type": "observed",
+      "context": "Ordinal enumeration left incomplete (M6 onset, confirmed by M21 full-text scan)",
+      "expression": "Candidate introduces 'The first thing is probably drinking a bottle of water…' but across the entire remaining recording never produces 'the second thing' or any equivalent continuation marker; the list structure is abandoned without resolution.",
+      "citations": [
+        "M6",
+        "M21"
+      ]
+    },
+    {
+      "trait": "C",
+      "context_type": "observed",
+      "context": "Identification and procedural compliance (M1–M2)",
+      "expression": "Candidate remains completely still and silent through the 23-second scripted introduction, then promptly hands over ID ('Yeah, of course. Here you are') and resumes a clasped-hands listening posture; cooperation is consistent but purely reactive to examiner prompts.",
+      "citations": [
+        "M1",
+        "M2"
+      ]
+    },
+    {
+      "trait": "C",
+      "context_type": "reported",
+      "context": "Self-assessment of concentration difficulty (M19)",
+      "expression": "Hedged midpoint answer 'It's rather medium, somewhere between difficult and—' with trailing-off intonation; avoids committing to a clear self-evaluation, suggesting moderate rather than high conscientious self-monitoring.",
+      "citations": [
+        "M19"
+      ]
+    },
+    {
+      "trait": "E",
+      "context_type": "observed",
+      "context": "Flat delivery and minimal physical engagement across multiple segments",
+      "expression": "Voice is even-paced and low-energy; hands remain clasped or resting on the table for the majority of the recording (M1, M2, M5, M8, M20); when gestures do appear (M4, M6, M7, M9, M11, M18) they are moderate-amplitude and quickly return to rest; no spontaneous expansion beyond the prompted question.",
+      "citations": [
+        "M1",
+        "M2",
+        "M4",
+        "M5",
+        "M6",
+        "M7",
+        "M8",
+        "M9",
+        "M11",
+        "M18",
+        "M20"
+      ]
+    },
+    {
+      "trait": "E",
+      "context_type": "reported",
+      "context": "Fashion-importance opening (M8)",
+      "expression": "'Not really much' delivered in a flat, matter-of-fact tone with no rising intonation, no smile, and no attempt to build rapport or energize the exchange; the two-second pause before speaking further signals low approach motivation.",
+      "citations": [
+        "M8"
+      ]
+    },
+    {
+      "trait": "A",
+      "context_type": "observed",
+      "context": "Cooperative identification exchange (M2)",
+      "expression": "Immediate compliance ('Yeah, of course. Here you are'), calm tone, steady eye contact, and a reciprocal 'Great' after receiving the document back; no resistance or irritation despite the procedural intrusion.",
+      "citations": [
+        "M2"
+      ]
+    },
+    {
+      "trait": "A",
+      "context_type": "reported",
+      "context": "Rapport markers and personal reference (M4, M9, M13)",
+      "expression": "'You know' appended twice as a co-presence check (M4, M13); 'special friend' used warmly in the fashion example (M9); these indicate mild interpersonal softening but remain within the bounds of polite test conduct rather than demonstrating distinctive generosity or empathy.",
+      "citations": [
+        "M4",
+        "M9",
+        "M13"
+      ]
+    },
+    {
+      "trait": "N",
+      "context_type": "observed",
+      "context": "Hesitation profile across all speaking turns (M3, M4, M6, M8, M10, M11)",
+      "expression": "Fillers ('uh,' 'um,' 'well,' 'I mean,' 'Hmm') and self-corrections ('focus and con- and concentrate,' 'what kind of, what kind of') occur at a rate consistent with L2 lexical retrieval planning; no accompanying physiological anxiety signs (no shaking, no rapid breathing, no gaze aversion, no posture collapse); delivery remains even-paced and volume-stable throughout.",
+      "citations": [
+        "M3",
+        "M4",
+        "M6",
+        "M8",
+        "M10",
+        "M11"
+      ]
+    },
+    {
+      "trait": "N",
+      "context_type": "reported",
+      "context": "Stress-management self-report (M6, M15)",
+      "expression": "'Trying to relax' and 'take a chill pill before getting started' are stated as routine practical strategies in a calm, matter-of-fact tone; no urgency, worry, or emotional loading is detectable in the delivery, suggesting low trait anxiety rather than heightened neurotic reactivity.",
+      "citations": [
+        "M6",
+        "M15"
+      ]
+    }
+  ],
+  "contextual_errors": [],
+  "stop_reason": "candidate_pool_exhausted",
+  "global_scan": {
+    "coarse_summaries": [
+      {
+        "time": [
+          0.0,
+          60.0
+        ],
+        "modality": "audio_video",
+        "summary": "The source is a recorded IELTS speaking mock test staged in a bright, glass-walled office with two small desk flags (Iran and Canada) between the participants and a scrolling promotional banner along the bottom advertising IELTS courses and the website www.rosaits.com. A female examiner seated on the left and a male candidate in a red shirt seated on the right face each other across a white table. The examiner opens in a measured, formal tone, stating that the speaking test is starting, naming the institution (Rosaiols Academy), and reading out the candidate's full name and number (Mohammad Mahdi Bahiraei, 0143251) and her own name and examiner number (Mehrnoush Shafiee, 443533). She greets him, asks his full name, then what she may call him; he answers clearly and offers the short form 'Mohammad.' She requests identification; he replies affirmatively and slides a document across the table with a hand gesture, which she thanks him for. She then announces the start of the first part, explains she will ask personal questions, and begins with the hometown topic, asking what a visitor can do there. Throughout, both speakers remain seated, use polite turn-taking, and the candidate's responses are brief and cooperative; the examiner's delivery is steady and procedural, with small hand movements when handling papers and the ID.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          60.0,
+          120.0
+        ],
+        "modality": "audio_video",
+        "summary": "In this segment (60–120 s of the full recording), the male interviewee in a red shirt describes his hometown as a historical town where visitors can go sightseeing and enjoy spending time. He speaks with frequent fillers ('uh', 'you know') and circular phrasing, repeating the idea of 'taking/spending his time there.' When asked about common occupations, he struggles to find precise vocabulary, referring vaguely to 'making some… traditional stuff' and the city being 'famous for historical materials and stuff,' accompanied by open-palm hand gestures. The female interviewer in black, seated across a glass table with Israeli and Canadian flags behind her, listens attentively, occasionally writing notes, and poses short follow-up questions. She then asks whether the town is good for a child growing up; the interviewee affirms it is 'natural and good.' Finally, she transitions the topic to concentration, asking what activities help him focus. Throughout, the interviewee's delivery is halting and repetitive, while the interviewer maintains a steady, structured pace.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          120.0,
+          180.0
+        ],
+        "modality": "audio_video",
+        "summary": "In this segment (source seconds 120–180), the interviewee discusses strategies that help him concentrate while studying: drinking water, relaxing, taking a 'chill pill,' and maintaining a routine. He describes concentration as 'rather medium, somewhere between difficult and easy.' The interviewer then pivots to fashion, asking whether it matters to him. He answers that he has never really thought about it and calls it a 'tricky question,' trailing off mid-sentence. Throughout, the interviewee gestures with open hands while speaking, uses fillers ('um,' 'and') and minor self-corrections ('the first time, the first thing'), and maintains eye contact with the interviewer. The interviewer listens attentively, occasionally writing notes, and delivers questions in a clear, measured tone. A scrolling promotional banner runs along the bottom of the frame.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          180.0,
+          224.909002
+        ],
+        "modality": "audio_video",
+        "summary": "In this segment (180–225 s), the interviewee discusses his relationship with fashion and clothing. He explains that he cares about his appearance primarily when meeting a 'special friend,' uses audible fillers ('hmm,' 'um,' 'well') and self-corrections throughout, and ultimately states that he simply tries to 'look fine in public' regardless of garment type. The interviewer prompts with two follow-up questions and then closes the topic with a polite sign-off. Visually, the interviewee remains seated across the desk, gesturing with both hands during longer answers, while the interviewer writes notes and maintains a forward-leaning posture. A scrolling promotional banner runs along the bottom of the frame throughout.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          0,
+          224.909002
+        ],
+        "modality": "text",
+        "summary": "The interviewee, Mohammad Mahdi Bahiraei, participates in a structured oral examination (examiner: Mehrnush Hafi) covering three topic clusters: his historical hometown, personal concentration strategies, and fashion/clothing preferences. His communication style is marked by lexical repetition (e.g., 'taking his time there and spending his time there'; 'the first thing'), heavy reliance on vague placeholders ('stuff,' 'traditional stuff,' 'historical materials and stuff'), and frequent hedging or minimisation ('I guess,' 'probably,' 'rather medium,' 'not really much'). When discussing hometown and concentration, he produces extended but structurally repetitive answers; on fashion topics, his responses shorten noticeably and include explicit disengagement markers ('never thought about it,' 'tricky question'). A recurring pattern is agreement-then-minimisation ('yeah, it's important. But I really don't think about it that much'). The final clothing answer reframes the question away from preference toward a public-image concern ('look fine in public'). No visual or audio channel is available in this source; all observations derive from the transcribed text alone.",
+        "summary_status": "provided"
+      }
+    ],
+    "input_modalities": [
+      "text",
+      "audio",
+      "video"
+    ],
+    "observation_modes": [
+      "text",
+      "audio",
+      "video",
+      "audio_video"
+    ],
+    "sampling_fps": 1.0,
+    "full_audio_coverage": true,
+    "audio_coverage": [
+      [
+        0.0,
+        60.0
+      ],
+      [
+        60.0,
+        120.0
+      ],
+      [
+        120.0,
+        180.0
+      ],
+      [
+        180.0,
+        224.9085
+      ]
+    ],
+    "video_coverage": [
+      [
+        0.0,
+        60.0
+      ],
+      [
+        60.0,
+        120.0
+      ],
+      [
+        120.0,
+        180.0
+      ],
+      [
+        180.0,
+        224.909002
+      ]
+    ],
+    "duration": 224.909002,
+    "sampled_frames": 225,
+    "audio_samples": 3598536,
+    "audio_sample_rate": 16000,
+    "chunk_seconds": 60.0,
+    "text_segmentation": "full_transcript",
+    "video_segmentation": "fixed_seconds",
+    "audio_segmentation": "decoded_samples"
+  },
+  "cost": {
+    "stage_timing": {
+      "coarse": {
+        "calls": 5,
+        "timed_calls": 0,
+        "prepare_seconds": 0.0,
+        "generation_seconds": 0.0,
+        "constraint_seconds": 0.0,
+        "total_seconds": 0.0,
+        "constraint_calls": 0,
+        "prompt_tokens": 14294,
+        "completion_tokens": 6427
+      },
+      "observe": {
+        "calls": 23,
+        "timed_calls": 0,
+        "prepare_seconds": 0.0,
+        "generation_seconds": 0.0,
+        "constraint_seconds": 0.0,
+        "total_seconds": 0.0,
+        "constraint_calls": 0,
+        "prompt_tokens": 67789,
+        "completion_tokens": 58749
+      },
+      "final": {
+        "calls": 1,
+        "timed_calls": 0,
+        "prepare_seconds": 0.0,
+        "generation_seconds": 0.0,
+        "constraint_seconds": 0.0,
+        "total_seconds": 0.0,
+        "constraint_calls": 0,
+        "prompt_tokens": 9738,
+        "completion_tokens": 4676
+      }
+    },
+    "active_seconds": 475.818002,
+    "active_budget_seconds": null,
+    "coarse_audio_seconds": 224.9085,
+    "coarse_frames": 225,
+    "jev_api_calls": 0,
+    "jev_estimated_cost": 0.0,
+    "coarse_video_segments": 4,
+    "coarse_video_fps": 1.0,
+    "generated_tokens": 69852,
+    "input_tokens": 91821
+  },
+  "novelty_rule": {
+    "video_fps": 2.0,
+    "min_new_seconds": 5.0,
+    "max_focus": 1
+  },
+  "novelty_filtered": [
+    {
+      "stage": "execution",
+      "candidate_id": "C18",
+      "parent_id": "C2",
+      "time": [
+        60.0,
+        65.0
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0,
+        "video": 0.0
+      },
+      "new_still": false,
+      "region_root": "C2"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C21",
+      "parent_id": "C5",
+      "time": [
+        120.0,
+        125.0
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0,
+        "video": 0.0
+      },
+      "new_still": false,
+      "region_root": "C5"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C23",
+      "parent_id": "C6",
+      "time": [
+        140.0,
+        145.0
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0,
+        "video": 0.0
+      },
+      "new_still": false,
+      "region_root": "C6"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C25",
+      "parent_id": "C8",
+      "time": [
+        180.0,
+        185.0
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0,
+        "video": 0.0
+      },
+      "new_still": false,
+      "region_root": "C8"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C26",
+      "parent_id": "C8",
+      "time": [
+        180.0,
+        190.0
+      ],
+      "modality": "audio",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 1.0
+      },
+      "new_still": false,
+      "region_root": "C8"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C19",
+      "parent_id": "C4",
+      "time": [
+        77.0,
+        100.0
+      ],
+      "modality": "text",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "text": 0.0
+      },
+      "new_still": false,
+      "region_root": "C4"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C22",
+      "parent_id": "C5",
+      "time": [
+        101.0,
+        114.0
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 2.0,
+        "video": 2.0
+      },
+      "new_still": false,
+      "region_root": "C5"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C29",
+      "parent_id": "C14",
+      "time": [
+        101.0,
+        114.0
+      ],
+      "modality": "audio",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 2.0
+      },
+      "new_still": false,
+      "region_root": "C14"
+    },
+    {
+      "source_observation_id": "active_18",
+      "hint": "The interviewee's sentence 'somewhere between difficult and—' is truncated at the 5.0 s boundary; the completing term (likely 'easy' or a further qualifier) and any final hand re-clasping gesture will appear in the immediately following 1-second window.",
+      "goal": "Capture the completion of the comparative phrase ('difficult and ___') and determine whether the interviewee's hands finally return to the clasped resting position, completing the gesture-contraction arc observed in the prior 5 seconds.",
+      "stage": "proposal",
+      "parent_id": "C24",
+      "time": [
+        163.0,
+        164.0
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 1.0,
+        "video": 1.0
+      },
+      "new_still": false,
+      "region_root": "C7"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C31",
+      "parent_id": "C16",
+      "time": [
+        180.0,
+        224.909002
+      ],
+      "modality": "text",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "text": 0.0
+      },
+      "new_still": false,
+      "region_root": "C16"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C32",
+      "parent_id": "C20",
+      "time": [
+        101.0,
+        110.0
+      ],
+      "modality": "text",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "text": 0.0
+      },
+      "new_still": false,
+      "region_root": "C4"
+    }
+  ],
+  "memory": {
+    "observations": [
+      {
+        "id": "M1",
+        "observation_id": "active_0",
+        "modality": "audio_video",
+        "retrieval_window": [
+          0.0,
+          23.0
+        ],
+        "content": "The female examiner seated on the left delivers a scripted introduction in a steady, formal cadence, moving through identification details in a fixed sequence: opening greeting ('Great, so we can now get started'), declaration that the speaking test begins ('From here starts the speaking test'), naming of the assessment framework (International English Language Testing System speaking mock test), institutional location (Roshdi IELTS Academy), candidate full name and number (Mohammad Mahdi Bahiraei, 0143251), and finally her own name and examiner number (Mehrnoush Shafiei, 44353).\nThe male candidate in the red shirt seated on the right remains completely silent and physically still throughout the entire 23-second introduction, maintaining an attentive forward-facing posture with hands resting on the table.\nOn-screen subtitles appear progressively at the bottom of the frame, transcribing the examiner's speech and additionally displaying promotional text ('You can enroll in our amazing English courses visiting our website www.roshdielts.com') that extends beyond the core identification script.\nThe physical setting is a bright, modern conference room with floor-to-ceiling windows revealing a cityscape; two small desk flags (one Canadian, one blue with an institutional logo) stand between the examiner and candidate on a glass-topped table.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M2",
+        "observation_id": "active_1",
+        "modality": "audio_video",
+        "retrieval_window": [
+          36.0,
+          60.0
+        ],
+        "content": "The candidate (man in red, seated right) verbally confirms compliance with the identification request, saying 'Yeah, of course. Here you are,' while physically extending his right arm across the table to hand a document to the examiner.\nThe examiner (woman in black, seated left) receives the document, glances at it briefly, then returns it to the candidate with a short verbal acknowledgment ('Thank you very much'). The candidate takes it back and says 'Great.'\nAfter the exchange, the candidate settles into a listening posture with both hands clasped on the table, maintaining eye contact toward the examiner as she shuffles her papers and begins the procedural introduction.\nThe examiner transitions from administrative checks into the exam format, stating 'So, we can now get started with the first part of the exam' and 'In the first part, I will ask you some personal questions,' while gesturing lightly with the papers in front of her.\nThe examiner then poses the first personal question directed at the candidate: 'First, I'd like to ask about your hometown. What can a visitor do in your hometown?' The candidate remains seated, hands clasped, attentive, with no verbal response yet captured within this clip.\nThroughout the exchange and transition, the candidate's speech is brief, cooperative, and delivered in a calm tone; his body language (forward lean, clasped hands, steady gaze) signals readiness to engage with the examiner's instructions.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M3",
+        "observation_id": "active_2",
+        "modality": "audio_video",
+        "retrieval_window": [
+          60.0,
+          77.0
+        ],
+        "content": "The candidate (man in red, seated right) delivers a continuous monologue describing activities available to visitors in his hometown. His speech contains two audible hesitation fillers ('uh'): the first occurs early in the utterance (approximately 2–3 s, between 'thousands of things' and 'that a visitor can do'), and the second appears around 5–6 s (before 'as I live in a historical town'). These fillers are brief and do not disrupt the overall flow.\nLexical repetition is evident in the closing portion of the clip (approximately 13–17 s): the candidate phrases the idea as 'taking his time there and spending his time…', recycling the structure 'his time there' in quick succession. The repetition appears to be a self-correction or elaboration rather than a distinct new point, and the sentence is cut off before completion at the clip boundary.\nVisually, the candidate's hands remain predominantly clasped or resting flat on the table throughout the 17-second window. Small finger adjustments and a slight separation of the hands occur around 2–4 s, roughly coinciding with the first 'uh' filler and the transition from the opening clause to the 'historical town' explanation. Between 8–10 s, a minor hand shift is visible as he moves from 'go sightseeing' into 'there are so many places.' From approximately 12 s onward, his hands settle into a still, interlaced position while he delivers the repetitive closing phrase, with no pronounced gesture marking the second 'his time there.'\nThe candidate maintains forward-facing orientation toward the examiner (woman in black, seated left) throughout, with steady eye contact and no significant head movement. His vocal delivery is even-paced and conversational; the fillers and repetition are the primary markers of planning effort, and they align with only subtle, low-amplitude hand adjustments rather than large illustrative gestures.\nNo other speaker contributes during this window. The examiner remains in a listening posture with papers in front of her, occasionally glancing down, but does not interrupt or prompt.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M4",
+        "observation_id": "active_3",
+        "modality": "audio_video",
+        "retrieval_window": [
+          82.0,
+          101.0
+        ],
+        "content": "The interviewee (man in red shirt) speaks about his city's main occupation, using the phrase 'how can I say it' as an explicit word-search marker before settling on the vague term 'traditional stuff.'\nHe repeats the filler 'you know' twice in quick succession ('traditional stuff, you know, and you know, and our city is famous for...'), indicating continued difficulty formulating precise descriptions.\nHis second vague descriptor is 'historical materials and stuff,' again relying on the catch-all 'stuff' rather than naming specific crafts or industries.\nVisually, throughout the 0–19 s window the interviewee keeps both hands on the table with open palms, spreading them outward and bringing them back together in broad, symmetrical gestures that coincide with his pauses and filler phrases.\nThe interviewer (woman in black) remains still, hands resting near papers on the table, maintaining eye contact without interrupting, allowing the interviewee's self-corrections to play out.\nTwo flags (Québec and Canada) stand on the table between the speakers, situating the exchange in a bilingual/provincial context that may relate to the 'traditional' and 'historical' references the interviewee struggles to articulate.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M5",
+        "observation_id": "active_4",
+        "modality": "audio_video",
+        "retrieval_window": [
+          114.0,
+          120.0
+        ],
+        "content": "The interviewer (woman in black, seated left) speaks the question 'I want to talk about concentration. What activities help you to concentrate?' in a clear, measured tone while holding papers and making small hand gestures.\nThe interviewee (man in red shirt, seated right) listens with both hands clasped together on the glass table, body angled slightly toward the interviewer, gaze directed at her throughout the question.\nThe setting is a modern conference room with floor-to-ceiling glass windows showing a city skyline; Quebec and Canadian flags stand on the table between the two participants.\nA scrolling text banner at the bottom of the frame displays 'www.reisels.com' and references to feedback on the website.\nNo response from the interviewee is audible or visible within this 6-second window; he remains in a still, attentive posture as the interviewer finishes her question.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M6",
+        "observation_id": "active_5",
+        "modality": "audio_video",
+        "retrieval_window": [
+          120.0,
+          140.0
+        ],
+        "content": "The interviewee (man in red shirt, seated right) delivers a self-report listing three concentration aids: drinking a bottle of water, trying to relax, and taking a 'chill pill' before getting started. His speech begins with a filler ('Um, well') and includes two audible self-corrections: 'focus and con- and concentrate' (approximately 4–6 s) and 'The first time- the first thing' (approximately 9–11 s).\nDuring the opening sentence (0–8 s), the interviewee's hands remain clasped together on the glass table, fingers interlaced, with minimal movement. His gaze is directed toward the interviewer.\nBeginning around 10 s, coinciding with the phrase 'The first time- the first thing is probably drinking a bottle of water,' the interviewee unclasps his hands and raises both palms upward in an open, explanatory gesture. This two-handed gesturing continues through 'and trying to relax' (≈13–15 s) and 'I try to take a chill pill before getting started' (≈16–18 s), with the hands moving in small rhythmic pulses that align with each listed item.\nAt approximately 18–19 s, as he says 'And yeah,' the interviewee brings his hands back together and re-clasps them on the table, returning to the initial still posture.\nThe interviewer (woman in black, seated left) remains in a listening posture throughout the 20-second window: she holds papers in her lap, nods subtly, and keeps her gaze on the interviewee. She does not speak or interrupt.\nThe setting is unchanged from the prior observation: modern conference room, floor-to-ceiling windows with city skyline, Quebec and Canadian flags on the table between participants, and a scrolling text banner at the bottom referencing 'www.reisels.com' and feedback on the website.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M7",
+        "observation_id": "active_6",
+        "modality": "audio_video",
+        "retrieval_window": [
+          140.0,
+          158.0
+        ],
+        "content": "The interviewer (woman in black, seated left) asks at 0–3.5 s: 'And do you think having a routine helps you to concentrate better?' She holds papers in her lap, maintains direct eye contact with the interviewee, and her posture is upright and attentive. No hand gestures accompany the question.\n\nThe interviewee (man in red shirt, seated right) responds from approximately 3.8–15.0 s: 'Yeah, yeah. It's one of those most effective and efficient ways that someone can take into practice and can put into practice to help improve their concentration.' His delivery is markedly more fluent than the preceding listing segment (M6): no 'um' fillers, no mid-word self-corrections, and no restarts. The only redundancy is the near-synonymous pairing 'take into practice and can put into practice,' delivered smoothly without hesitation.\n\nVisually, during the first two seconds of his answer (≈4–6 s), the interviewee's hands remain clasped on the glass table, fingers interlaced, mirroring the still posture he held at the start of the previous segment. Beginning around 7–8 s, as he reaches 'most effective and efficient ways,' he unclasps his hands and raises both palms outward in a broad, sweeping gesture—arms extending wider from the torso than the small rhythmic pulses observed during the three-item list in M6. This open-palm, wider-amplitude gesturing continues through 'that someone can take into practice' (≈9–12 s). By 13–15 s, coinciding with 'to help improve their concentration,' his hands lower back toward the table and re-clasp, returning to the resting position.\n\nAt 15.2–17.5 s, the interviewer asks the follow-up: 'Is it easy or difficult for you to concentrate?' She leans fractionally forward, eyebrows slightly raised, gaze fixed on the interviewee. Her hands remain on the papers in her lap.\n\nThe interviewee begins to formulate a response around 17.5 s—his mouth opens and his head tilts slightly—but the clip ends at 18.0 s before any words are audible. The hedging language anticipated by the goal (e.g., 'rather medium') falls entirely outside this 18-second window.\n\nSetting remains constant: modern conference room, floor-to-ceiling windows showing a city skyline, Quebec and Canadian flags on the table between participants, scrolling banner at the bottom referencing 'www.reisels.com.'",
+        "content_status": "structured"
+      },
+      {
+        "id": "M8",
+        "observation_id": "active_7",
+        "modality": "audio_video",
+        "retrieval_window": [
+          164.0,
+          180.0
+        ],
+        "content": "The interviewer (woman in black, seated left) closes the prior segment with 'Okay, thank you very much,' then explicitly announces a topic shift: 'Now let's talk about fashion,' followed by the direct question 'Is fashion important to you?' Her posture remains upright with papers in front of her; she looks toward the interviewee while speaking.\nThe interviewee (man in red, seated right) begins his reply after a short pause of roughly two seconds following the question. His first words are 'Not really much,' delivered in a flat, matter-of-fact tone.\nHe continues with a self-report: 'Actually I have never thought about it,' then adds 'It's a tricky question for me.' His hands stay clasped together on the table surface throughout; his gaze remains directed at the interviewer without significant head movement.\nHis final utterance starts with 'But sometimes I really—' and is truncated at the clip boundary near the 16-second mark, leaving the sentence grammatically incomplete with no audible resolution.\nNo visible gesture change, posture shift, or hand movement accompanies the topic-switch question or the interviewee's responses; his physical presentation is static across the entire 16-second window.\nThe setting includes a Quebec flag and a Canadian flag on the table between the two speakers, consistent with a formal speaking-test environment; a lower-third banner cycles promotional text for 'ielts.com' and 'Send your writing to be corrected.'",
+        "content_status": "structured"
+      },
+      {
+        "id": "M9",
+        "observation_id": "active_8",
+        "modality": "audio_video",
+        "retrieval_window": [
+          180.0,
+          189.0
+        ],
+        "content": "The interviewee (man in red shirt, seated right) completes the sentence fragment from the prior segment, saying 'really care about it,' then produces a brief filler vocalization 'Hmm' before launching into an illustrative example: 'for example when I want to hang out with this special friend, I really care about how I'm going to look like.' The full utterance spans approximately the 0-to-8-second window of this clip.\nVisually, the interviewee's hands transition from a clasped resting position on the table (seen at the very start of the clip) to small, open-palm circular gestures that begin around the 2-second mark, coinciding with or immediately following the 'Hmm' filler and the onset of the 'for example' clause. The gestures continue through the 'special friend' reference and the closing phrase 'how I'm going to look like,' then the hands return toward a resting position near the 8-second mark.\nThe 'special friend' phrase (audible around 3–4 seconds) is delivered within the same continuous sentence flow as the surrounding words; no abrupt pause or marked break in rhythm separates it from 'hang out with' preceding it or 'I really care' following it. The overall pace of the illustrative clause is steady and conversational, without a discernible acceleration or deceleration specifically at the 'special friend' words.\nThe interviewer (woman in black, seated left) maintains a listening posture throughout: pen in hand over papers on the table, gaze directed toward the interviewee, no visible note-taking motion or verbal interjection during this 9-second window.\nThe lower-third banner cycles promotional text ('Send your writing to be corrected. Visit ielts.com') across the bottom of the frame for the duration of the clip. The Quebec and Canadian flags remain stationary on the table between the two speakers. No camera angle change or cut occurs within this 9-second segment.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M10",
+        "observation_id": "active_9",
+        "modality": "audio_video",
+        "retrieval_window": [
+          195.0,
+          205.0
+        ],
+        "content": "The male interviewee (red long-sleeve shirt, seated right of frame) opens his response with the vocal hesitation marker 'Hmm,' then says 'well yeah, it's important,' establishing nominal agreement before pivoting.\nWithin the same breath group he shifts to minimisation: 'but I really don't think about it that much,' downgrading the initial concession.\nA second hesitation marker, 'I mean…,' is produced with a brief trailing pause (roughly one second of silence) before he restarts the thought: 'I try to spend a little bit of my time about it.'\nVisually, the interviewee's hands rest near the table surface throughout the 10-second clip; at the 'I mean' restart (approximately 5–6 s in) no increase in hand-gesture amplitude is observable relative to the opening seconds—posture and hand placement remain essentially unchanged.\nThe female interviewer (black top, seated left) writes notes on a sheet of paper for the duration of the clip, glancing up briefly toward the end.\nTwo desk flags—the Quebec flag and the Canadian flag—stand between the participants on the glass-topped table; the background shows a floor-to-ceiling window overlooking a city skyline, consistent with a formal interview setting.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M11",
+        "observation_id": "active_10",
+        "modality": "audio_video",
+        "retrieval_window": [
+          210.0,
+          220.0
+        ],
+        "content": "The interviewee (man in red shirt, seated right) delivers a statement about clothing: 'Um, well, I try to look fine in public, so it doesn't really matter for me what kind of, what kind of clothes I'm going to wear.' The phrase 'what kind of' is repeated with a brief comma-pause between the two instances, indicating a self-correction or reformulation.\nVisible hand behavior: during approximately seconds 6–8 of the clip, the interviewee's hands spread outward from the table in an open-palm gesture. In the preceding seconds (0–5) and the final second (9), his hands rest on or near the table surface. The outward spread therefore falls in the latter half of the utterance, temporally closer to the 'what kind of, what kind of' repetition than to the word 'public,' which occurs earlier in the sentence.\nThe interviewer (woman in black, seated left) remains in a listening posture throughout the 10-second window, hands on the table holding papers, with no visible interruption or follow-up question during this segment.\nSetting details: a glass-walled office with city skyline visible behind; two small flags (Canada and Quebec) stand on the table between the participants; a lower-third banner reads 'You can enroll in our amazing speaking course visiting our website www.roosidsider.com' and a 'Your Canadian' logo appears top-right.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M12",
+        "observation_id": "active_11",
+        "modality": "text",
+        "retrieval_window": [
+          15.0,
+          40.0
+        ],
+        "content": "The candidate (Mohammad Mahdi Bahiraei, male, red shirt, seated right) responds to the examiner's question 'What can a visitor do in your hometown?' with a single extended turn. He self-reports on behalf of his community using first-person plural framing ('my hometown,' 'our city') and presents generalizations rather than personal anecdotes.\nSyntactic structure of the repeated clause: In 'a visitor can enjoy taking his time there and spending his time there,' the modal verb 'can' governs the matrix verb 'enjoy,' which in turn heads two coordinated gerund phrases joined by 'and.' The first gerund phrase is [taking + his time + there]; the second is [spending + his time + there]. Both share identical internal slot structure: [V-ing] + [3sg possessive determiner] + [noun 'time'] + [locative adverb 'there']. The coordination is at the gerund-phrase level, not at the clause level, so 'enjoy' scopes over both.\nThe second instance does not add information beyond the first. 'Spending' substitutes for 'taking' as a near-synonym within the identical frame [V-ing + his time + there]; no new locative, temporal, qualitative, or activity-specific element is introduced. The pair functions as a doublet rather than an elaboration chain.\nThe opening quantifier 'thousands of thing' (containing a number-agreement error: singular 'thing' after 'thousands') promises broad enumeration. It is followed by exactly one concrete activity ('go sightseeing') and then the vague locative 'so many places,' which loops back into the repeated time-spending doublet without specifying what those places contain or what a visitor would do there beyond the generic 'enjoy taking/spending his time.'\nIn the second segment (response to 'What are the common occupations of people there?'), the candidate self-reports with explicit hedging ('I guess'), collapses the examiner's plural question ('occupations') into a singular answer ('the main occupation'), and uses the vague noun 'stuff' twice ('traditional stuff' and 'historical materials and stuff'). The discourse marker 'you know' is appended to the first 'stuff' instance, functioning as a co-presence check rather than adding propositional content.\nBoth segments are delivered as continuous turns with no interruption from the examiner captured in the transcript. The candidate's self-reports remain at the level of undifferentiated category labels ('historical town,' 'traditional stuff,' 'historical materials') without naming specific sites, products, trades, or individuals.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M13",
+        "observation_id": "active_12",
+        "modality": "text",
+        "retrieval_window": [
+          40.0,
+          55.0
+        ],
+        "content": "The candidate (male, red shirt, seated right) delivers a single continuous turn in response to the examiner's question 'What are the common occupations of people there?' The turn consists of two sentences: 'Well, I guess the main occupation of our city is making some traditional stuff, you know. And our city is famous for historical materials and stuff.' Both sentences are self-reports framed in first-person plural ('our city'), presenting generalized community claims rather than personal anecdotes.\nThe vague noun 'stuff' occurs exactly twice within this answer. In the first instance ('making some traditional stuff'), 'stuff' is the head of a noun phrase modified by the adjective 'traditional' and the quantifier 'some.' The adjective 'traditional' syntactically selects for a specific nominal complement (e.g., traditional pottery, traditional weaving, traditional textiles), yet here it attaches to the semantically underspecified 'stuff,' leaving the referent class open. In the second instance ('historical materials and stuff'), 'stuff' is conjoined via 'and' with the slightly more delimited but still generic NP 'historical materials,' producing a binomial in which the second conjunct is less specified than the first.\nThe hedge 'I guess' precedes the entire predication about occupation in the first sentence, and the discourse marker 'you know' immediately follows the first 'stuff' token, functioning as a turn-internal tag that checks co-presence rather than introducing new propositional content. Neither marker supplies a specific noun in place of 'stuff.'\nAcross the full occupation answer, no proper noun appears: the settlement is referred to only as 'our city' and 'the main occupation of our city,' with no toponym given. No specific trade name, craft designation, material term, product name, or industry classification is supplied in either sentence. The lexical items 'traditional' and 'historical' are adjectives modifying either 'stuff' or the equally generic 'materials'; neither is paired with a concrete noun.\nThe second segment of the clip (candidate's response to 'Is it a good place for a child growing up there?') contains no instance of 'stuff' and introduces no proper noun or technical term. The candidate self-reports using the vague evaluative phrases 'natural and good place for a child to spend his childhood there' and 'a good place,' with the hedge 'I guess' and the filler 'yeah' appearing twice. No named institution, park, facility, or geographic feature is referenced.\nBoth segments are delivered as uninterrupted continuous turns; no examiner interjection, repair prompt, or clarification request is captured in the transcript between or within the candidate's sentences. The candidate does not self-correct, reformulate, or substitute a more specific term for 'stuff' at any point in the recorded text.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M14",
+        "observation_id": "active_13",
+        "modality": "text",
+        "retrieval_window": [
+          65.0,
+          100.0
+        ],
+        "content": "",
+        "content_status": "structured"
+      },
+      {
+        "id": "M15",
+        "observation_id": "active_14",
+        "modality": "text",
+        "retrieval_window": [
+          110.0,
+          140.0
+        ],
+        "content": "The readable text in this clip contains three self-reported answers, all addressing concentration-related questions posed by the interviewer. The interviewee (male voice) reports: (1) drinking a bottle of water, trying to relax, and taking a 'chill pill' as aids to focus and study; (2) that routine is 'one of those most effective and efficient ways that someone can take into practice to help and improve their concentration'; (3) that concentrating is 'rather medium, somewhere between difficult and easy.' No segment in the readable transcript addresses a fashion-importance question, contains the disengagement phrases cited in the goal hint ('Not really much. Actually I have never thought about it. It's a tricky question for me.'), or includes the conditional example referencing a 'special friend.' The goal's requested measurement of disengagement-to-substance ratio and evaluation of descriptive detail in the 'special friend' example cannot be performed from the text currently available in this clip.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M16",
+        "observation_id": "active_15",
+        "modality": "text",
+        "retrieval_window": [
+          160.0,
+          180.0
+        ],
+        "content": "In the two text segments provided for this clip (both marked unverified_asr), the interviewee (man in red shirt) answers two fashion-related questions. To 'Is fashion important to you?' he says: 'Not really much. Actually I have never thought about it. It's a tricky question for me. But sometimes I really care about it. For example, when I want to hang out with a special friend, I really care about how I am going to look like.' To 'Do you think it's important to be updating your clothes and hair as fashion trends change?' he says: 'Well yeah, it's important. But I really don't think about it that much. I mean, I try to spend a little bit of my time about it.'\nAcross both segments, the interviewee's clothing/fashion vocabulary remains entirely abstract and social-contextual: he references 'how I am going to look like' (appearance in a social setting) and 'spend a little bit of my time about it' (effort allocation). No concrete noun denoting a specific garment type (shirt, jacket, trousers), fabric (cotton, silk, denim), colour (black, navy), or item (tie, belt, shoes) appears in either answer.\nThe specific question 'what kind of clothes' and the closing answer referenced in the goal hint ('look fine in public' / 'it doesn't really matter for me what kind of clothes I'm going to wear') are not present in the text segments supplied for this clip. The target answer therefore falls outside the currently readable text window.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M17",
+        "observation_id": "active_16",
+        "modality": "text",
+        "retrieval_window": [
+          15.0,
+          23.0
+        ],
+        "content": "The sole text content available in this clip is the candidate Mohammad Mahdi Bahiraei's (male, red shirt, seated right) continuous monologue responding to the examiner's question 'What can a visitor do in your hometown?' He self-reports on behalf of his community using first-person plural framing ('my hometown,' 'our city' implied contextually) and presents generalizations rather than personal anecdotes. The turn contains the number-agreement construction 'thousands of thing,' the coordinated gerund doublet 'enjoy taking his time there and spending his time there' where the second instance substitutes 'spending' for 'taking' without adding new locative, temporal, or activity-specific information, and the vague locative 'so many places' that loops back into the doublet without specifying contents or activities. The segment is marked unverified_asr with no precise media position.\nNo text transcript of the examiner Mehrnoush Shafiei's scripted opening—covering the candidate identification line (Mohammad Mahdi Bahiraei, 0143251), the examiner identification line (Mehrnoush Shafiei, 44353), the academy name (Roshdi IELTS Academy), or the enrollment URL (www.roshdielts.com)—is present in the available text segments for this clip. The goal of confirming the precise textual rendering of those on-screen identification details and the closing promotional sentence cannot be fulfilled from the text modality content supplied here; that subtitle information was previously captured in the structured audio_video observation M1 (local_time [-15.0, 8.0]).",
+        "content_status": "structured"
+      },
+      {
+        "id": "M18",
+        "observation_id": "active_17",
+        "modality": "audio_video",
+        "retrieval_window": [
+          101.0,
+          112.0
+        ],
+        "content": "The interviewer (woman in black, left seat) shifts the topic entirely by asking 'Is it a good place for a child growing up there?' — this represents a clear departure from the preceding 'historical materials and stuff' discussion, meaning the interviewee did NOT resolve that vague descriptor with a concrete example before the conversation moved on.\nThe interviewee (man in red, right seat) responds with another general characterization: 'Well yeah, I guess it's natural and good place for a child to spend his childhood there. And yeah…' — he uses the hedge 'I guess' and the catch-all adjective 'natural' rather than naming specific parks, schools, or community features, and his utterance trails off with 'And yeah…' without completing a thought.\nVisually, at approximately 5–6 seconds the interviewee spreads both hands outward from the table in a broad, open-palm gesture, then brings them back together by 7–8 seconds. This matches the wide, symmetrical hand pattern documented in the earlier window (M4) rather than showing any tightening or precision-oriented finger movements.\nThe interviewer holds a pen in her right hand and rests her left hand near papers on the table; she maintains a still, attentive posture while posing the question, then listens without interrupting during the interviewee's response.\nThe scrolling banner at the bottom of the frame reads 'Send your English to be corrected, told by a professional feedback…' (partially visible as it scrolls), and the IELTS logo appears in the upper-right corner, confirming the context of a language-proficiency assessment interview.\nThe Quebec flag (blue fleurs-de-lis) and Canadian flag (red maple leaf) remain standing on the table between the two speakers throughout the 0–11 s window, unchanged from the prior segment.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M19",
+        "observation_id": "active_18",
+        "modality": "audio_video",
+        "retrieval_window": [
+          158.0,
+          163.0
+        ],
+        "content": "At local 0.0–5.0 s (recording 158–163 s), the interviewee (man in red shirt, seated right) delivers the hedging qualifier in response to the concentration-difficulty question. Audio transcript: 'It's rather medium, somewhere between difficult and—' The sentence is truncated at the clip boundary; the comparative term following 'and' is not audible within this window.\n\nVisually, the interviewee's hands remain apart and active throughout the five seconds: the right hand extends forward with an open palm at 0.2–2.2 s, and both hands are visible in mid-gesture positions at 3.2–4.2 s. The gesture amplitude is moderate—noticeably narrower than the broad open-palm sweeping arms observed during the routine-answer segment (M7, ≈7–12 s), yet the hands do NOT return to the fully clasped/interlaced resting position on the table within this window. The contraction relative to M7 is partial: elbows stay closer to the torso and palm rotation is reduced, but the hands remain separated and in motion.\n\nThe interviewer (woman in black, seated left) maintains her upright posture with papers in her lap, gaze directed at the interviewee, and does not gesture or speak during this window.\n\nSetting unchanged: glass conference table, Quebec and Canadian flags centered between participants, floor-to-ceiling windows with city skyline, scrolling lower-third banner.\nThe interviewee's vocal delivery in this window carries a slight upward inflection on 'rather medium' and a trailing-off quality on 'somewhere between difficult and—', consistent with an incomplete comparative construction. No filler words ('um,' 'uh') or self-corrections are audible; the hedge is delivered in a single continuous phrase before the clip cuts.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M20",
+        "observation_id": "active_19",
+        "modality": "audio_video",
+        "retrieval_window": [
+          220.0,
+          224.909
+        ],
+        "content": "The interviewer (woman in black, seated left) speaks clearly: 'Okay, thank you very much. Now we can move on.' Her delivery is calm and transitional, with a slight upward inflection on 'Okay' and a downward cadence on 'move on,' signaling closure of the prior exchange.\nThe interviewee (man in red, seated right) remains seated with both hands resting on or near the table surface. No outward hand spread, open-palm gesture, or any other active gesturing is visible during this 4.9-second window. His posture is static and attentive, facing the interviewer.\nNo residual speech, vocalization, or gesture continuation from the interviewee is present in this clip. The interviewer's transition statement ('Now we can move on') confirms that the interviewee's clothing-related utterance has fully concluded prior to this window.\nThe setting remains unchanged: glass-walled office with city skyline visible through windows; Canadian and Quebec flags on the table between participants; lower-third banner reading 'You can enroll in our amazing speaking course visiting our website www.roosidsider.com'; 'Your Canadian' logo top-right.\nThe interviewer holds papers in her left hand on the table and makes a small shuffling/adjusting motion with her right hand near the documents as she speaks, consistent with preparing to transition to the next topic.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M21",
+        "observation_id": "active_20",
+        "modality": "text",
+        "retrieval_window": [
+          100.0,
+          224.909002
+        ],
+        "content": "The full readable text of the source recording (all six ASR segments spanning local [0.0, 124.909]) was examined for any continuation of the ordinal list introduced by 'The first thing is probably drinking a bottle of water and trying to relax.' No instance of 'the second thing,' 'next,' 'another thing,' 'also,' or any equivalent enumeration marker appears in any subsequent segment. The discourse transitions directly from the three-item concentration-aids answer (segment 1, ending with 'I try to take a chill pill before getting started') to a new interviewer question about routine (segment 2: 'Yeah, it's one of those most effective and efficient ways…'), then to a difficulty-rating answer (segment 3: 'It's rather medium, somewhere between difficult and easy'), then to an entirely unrelated fashion topic (segments 4–6). The ordinal framing remains structurally unresolved through the end of the recording; the speaker never returns to enumerate a 'second thing' or complete the list begun with 'a few things that really help me to focus and concentrate.'\nThe register shift noted in the goal hint is confirmed in the text: after the enumerated concentration aids, the interviewee's subsequent answers adopt evaluative and concessive phrasing ('most effective and efficient ways,' 'rather medium, somewhere between difficult and easy,' 'Not really much,' 'it's important. But I really don't think about it that much') rather than the additive listing structure ('The first thing…') that opened the concentration response. No segment in the fashion block (segments 4–6) contains any back-reference to the concentration list or any ordinal continuation marker.\nThe text segments marked unverified_asr carry no precise media timestamps, but their sequential ordering in the transcript (concentration Q&A → fashion Q&A → clothing-preference Q&A) is consistent with the audio-video observations (M6–M11) that document the same topical progression across local windows [20.0, 40.0], [40.0, 58.0], [64.0, 80.0], [80.0, 89.0], [95.0, 105.0], and [110.0, 120.0]. The absence of a 'second thing' resolution is therefore corroborated across both modalities for the full duration of the source recording.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M22",
+        "observation_id": "active_21",
+        "modality": "text",
+        "retrieval_window": [
+          0.0,
+          15.0
+        ],
+        "content": "The candidate Mohammad Mahdi Bahiraei (male, red shirt, seated right) responds to the examiner's identification prompt with the full-name statement 'My name is Mohammad Mahdi Bahiraei.' The examiner's name is rendered as 'Mehrnush Hafi' in the ASR transcript, which differs from the 'Mehrnoush Shafiei' captured in the structured audio_video observation M1. This discrepancy is a transcription-level variation; no further speaker-identification action is visible or audible in the text segments.\nThe candidate then answers the follow-up question 'What can I call you?' with the self-directed offer 'You can just address me Mohammad,' supplying a shortened first-name form as his preferred mode of address. This is a single short turn with no additional elaboration, hedge, or qualifier.\nThe third available segment—the response to 'What can a visitor do in your hometown?' beginning 'Well, there are thousands of thing…'—is already fully decomposed in prior structured observations M12 and M17 (gerund doublet, number-agreement error, vague locative loop). No new lexical or syntactic content appears in this clip's text segments beyond what M12/M17 recorded.\nThe fashion-importance answer specified in the current goal—described as three disengagement statements followed by a 'special friend' conditional example containing possible concrete clothing descriptors—is absent from all three text segments available in this clip. The segments cover only name identification, preferred address, and hometown-visitor activity. The hint directs attention to an earlier unread text region for this content.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M23",
+        "observation_id": "active_22",
+        "modality": "text",
+        "retrieval_window": [
+          55.0,
+          65.0
+        ],
+        "content": "The candidate (male, red shirt, seated right) delivers a single continuous turn responding to the examiner's question 'Is it a good place for a child growing up there?' The turn reads: 'Well yeah, I guess it's natural and good place for a child to spend his childhood there. And yeah, it's a good place.' The segment is marked unverified_asr, so no precise media position within this clip's 10-second playback window can be assigned. The content duplicates the description already recorded in prior observation M13 (local_time [-15.0, 0.0]), including the hedges 'I guess' and 'yeah' (occurring twice), the vague evaluative phrase 'natural and good place,' and the absence of any named institution, park, facility, or geographic feature. No examiner interjection, repair prompt, or follow-up is present in the transcript between or within the candidate's sentences.\n\nThe goal for this clip targets the candidate's full answer to a fashion-importance question (three disengagement statements plus a 'special friend' conditional example) at proposed_on_local [-55.0, -40.0]. The hint explicitly states that this answer is not present in the readable segments of this clip. Confirmed: the only text segment in this clip is the child-place response described above. No fashion-related vocabulary, no disengagement language, and no 'special friend' reference appear anywhere in the clip's readable content.",
+        "content_status": "structured"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "index": 0,
+      "action": {
+        "time": [
+          0.0,
+          23.0
+        ],
+        "modality": "audio_video",
+        "goal": "Confirm the exact wording and order of the introductory identification details and the examiner's vocal pacing during the setup."
+      },
+      "candidate_id": "C1",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M1"
+      ],
+      "changed_ids": [
+        "M1"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 1,
+      "action": {
+        "time": [
+          36.0,
+          60.0
+        ],
+        "modality": "audio_video",
+        "goal": "Observe the physical exchange of the document and how the examiner shifts from administrative checks into the first personal question."
+      },
+      "candidate_id": "C2",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M2"
+      ],
+      "changed_ids": [
+        "M2"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 2,
+      "action": {
+        "time": [
+          60.0,
+          77.0
+        ],
+        "modality": "audio_video",
+        "goal": "Assess the degree of lexical repetition and hesitation markers, and note how his gesturing aligns with speech pauses."
+      },
+      "candidate_id": "C3",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M3"
+      ],
+      "changed_ids": [
+        "M3"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 3,
+      "action": {
+        "time": [
+          82.0,
+          101.0
+        ],
+        "modality": "audio_video",
+        "goal": "Identify specific word-finding difficulties and whether body language compensates for imprecise verbal descriptions."
+      },
+      "candidate_id": "C4",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M4"
+      ],
+      "changed_ids": [
+        "M4"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 4,
+      "action": {
+        "time": [
+          114.0,
+          120.0
+        ],
+        "modality": "audio_video",
+        "goal": "Observe how the interviewer's transition cue is delivered and how the interviewee's posture and attention change at the topic shift."
+      },
+      "candidate_id": "C5",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M5"
+      ],
+      "changed_ids": [
+        "M5"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 5,
+      "action": {
+        "time": [
+          120.0,
+          140.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the verbal repetition and hand movements reflect genuine recall effort or a rehearsed structure, and note the exact timing of each gesture relative to the spoken item."
+      },
+      "candidate_id": "C6",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M6"
+      ],
+      "changed_ids": [
+        "M6"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 6,
+      "action": {
+        "time": [
+          140.0,
+          158.0
+        ],
+        "modality": "audio_video",
+        "goal": "Assess whether the shift from hesitant listing to confident elaboration correlates with a change in gesture amplitude, and capture the precise hedging language around the difficulty rating."
+      },
+      "candidate_id": "C7",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M7"
+      ],
+      "changed_ids": [
+        "M7"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 7,
+      "action": {
+        "time": [
+          164.0,
+          180.0
+        ],
+        "modality": "audio_video",
+        "goal": "Observe the non-verbal reaction to the abrupt topic change (posture, gaze, hand position) and record the exact truncation point of his final incomplete sentence."
+      },
+      "candidate_id": "C8",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M8"
+      ],
+      "changed_ids": [
+        "M8"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 8,
+      "action": {
+        "time": [
+          180.0,
+          189.0
+        ],
+        "modality": "audio_video",
+        "goal": "Capture the exact phrasing, the timing of the 'hmm' relative to the hand gesture, and whether the 'special friend' reference is delivered with a change in pitch or pace."
+      },
+      "candidate_id": "C9",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M9"
+      ],
+      "changed_ids": [
+        "M9"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 9,
+      "action": {
+        "time": [
+          195.0,
+          205.0
+        ],
+        "modality": "audio_video",
+        "goal": "Note the number and placement of hesitation markers, the shift from agreement ('yeah it's important') to minimisation ('don't think about it that much'), and whether the hand gesture changes amplitude at the 'I mean' restart."
+      },
+      "candidate_id": "C10",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M10"
+      ],
+      "changed_ids": [
+        "M10"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 10,
+      "action": {
+        "time": [
+          210.0,
+          220.0
+        ],
+        "modality": "audio_video",
+        "goal": "Confirm the exact repetition structure, measure the pause between the two 'what kind of' instances, and observe whether the outward hand spread coincides with 'public' or with the second 'what kind of.'"
+      },
+      "candidate_id": "C11",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M11"
+      ],
+      "changed_ids": [
+        "M11"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 11,
+      "action": {
+        "time": [
+          15.0,
+          40.0
+        ],
+        "modality": "text",
+        "goal": "Map the exact syntactic structure of the repeated clause and determine whether the second instance adds information or merely restates the first, to gauge the depth of the respondent's elaboration versus filler repetition."
+      },
+      "candidate_id": "C12",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M12"
+      ],
+      "changed_ids": [
+        "M12"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 12,
+      "action": {
+        "time": [
+          40.0,
+          55.0
+        ],
+        "modality": "text",
+        "goal": "Identify whether 'stuff' functions as a word-retrieval placeholder or as a deliberate colloquial register choice, and note the absence of any proper noun or technical term in the entire answer."
+      },
+      "candidate_id": "C13",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M13"
+      ],
+      "changed_ids": [
+        "M13"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 13,
+      "action": {
+        "time": [
+          65.0,
+          100.0
+        ],
+        "modality": "text",
+        "goal": "Trace the transition from the hesitant, list-formatted answer to the confident evaluative sentence, and determine whether the ordinal promise ('first thing') is ever resolved, marking a structural incompleteness in the respondent's discourse plan."
+      },
+      "candidate_id": "C14",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M14"
+      ],
+      "changed_ids": [
+        "M14"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 14,
+      "action": {
+        "time": [
+          110.0,
+          140.0
+        ],
+        "modality": "text",
+        "goal": "Measure the ratio of disengagement language to substantive content in this answer, and note whether the 'special friend' example introduces any new descriptive detail about clothing choices or remains abstract."
+      },
+      "candidate_id": "C15",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M15"
+      ],
+      "changed_ids": [
+        "M15"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 15,
+      "action": {
+        "time": [
+          160.0,
+          180.0
+        ],
+        "modality": "text",
+        "goal": "Determine whether the respondent treats 'what kind of clothes' as unanswerable by design (reframing to a social-context criterion) or by lack of vocabulary, and check whether any concrete noun (fabric, colour, item) appears anywhere in the answer."
+      },
+      "candidate_id": "C16",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M16"
+      ],
+      "changed_ids": [
+        "M16"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 16,
+      "action": {
+        "time": [
+          15.0,
+          23.0
+        ],
+        "modality": "text",
+        "goal": "Confirm the precise textual rendering of the identification details (names, numbers, academy name) and the enrollment URL as they appear in the on-screen transcript during the final portion of the examiner's scripted opening."
+      },
+      "candidate_id": "C17",
+      "parent_candidate_id": "C1",
+      "new_ids": [
+        "M17"
+      ],
+      "changed_ids": [
+        "M17"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 17,
+      "action": {
+        "time": [
+          101.0,
+          112.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the interviewee resolves the vague 'historical materials and stuff' with a concrete example in the next seconds, and whether his hand gestures tighten or remain broad as he attempts precision."
+      },
+      "candidate_id": "C20",
+      "parent_candidate_id": "C4",
+      "new_ids": [
+        "M18"
+      ],
+      "changed_ids": [
+        "M18"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 18,
+      "action": {
+        "time": [
+          158.0,
+          163.0
+        ],
+        "modality": "audio_video",
+        "goal": "Capture the exact hedging language the interviewee uses to rate his concentration difficulty, and observe whether his gesture amplitude contracts (hands returning to clasped/resting position) compared to the broad sweeping gestures of the routine answer."
+      },
+      "candidate_id": "C24",
+      "parent_candidate_id": "C7",
+      "new_ids": [
+        "M19"
+      ],
+      "changed_ids": [
+        "M19"
+      ],
+      "followup_status": "no_new_media_content",
+      "followup_errors": []
+    },
+    {
+      "index": 19,
+      "action": {
+        "time": [
+          220.0,
+          224.909
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether any residual speech or gesture continuation after 10 s confirms that the outward hand spread is synchronized with the second 'what kind of' rather than with 'public,' and measure the exact inter-word pause between the two repetitions."
+      },
+      "candidate_id": "C27",
+      "parent_candidate_id": "C11",
+      "new_ids": [
+        "M20"
+      ],
+      "changed_ids": [
+        "M20"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 20,
+      "action": {
+        "time": [
+          100.0,
+          224.909002
+        ],
+        "modality": "text",
+        "goal": "Determine whether any subsequent text resolves the unfulfilled ordinal promise (a 'second thing,' 'next,' or equivalent list continuation) or whether the discourse plan remains structurally incomplete through the end of the source recording."
+      },
+      "candidate_id": "C28",
+      "parent_candidate_id": "C14",
+      "new_ids": [
+        "M21"
+      ],
+      "changed_ids": [
+        "M21"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 21,
+      "action": {
+        "time": [
+          0.0,
+          15.0
+        ],
+        "modality": "text",
+        "goal": "Locate and transcribe the interviewee's full answer to the fashion-importance question so that the ratio of disengagement language to substantive content can be counted and the 'special friend' example can be checked for any concrete clothing descriptors versus remaining abstract."
+      },
+      "candidate_id": "C30",
+      "parent_candidate_id": "C15",
+      "new_ids": [
+        "M22"
+      ],
+      "changed_ids": [
+        "M22"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 22,
+      "action": {
+        "time": [
+          55.0,
+          65.0
+        ],
+        "modality": "text",
+        "goal": "Transcribe the candidate's full answer to the fashion-importance question so that the ratio of disengagement language to substantive content can be counted and the 'special friend' example can be checked for any concrete clothing descriptors versus remaining abstract."
+      },
+      "candidate_id": "C33",
+      "parent_candidate_id": "C30",
+      "new_ids": [
+        "M23"
+      ],
+      "changed_ids": [
+        "M23"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    }
+  ],
+  "coarse_rejections": [
+    {
+      "step": 3,
+      "rejected_candidates": [
+        {
+          "index": 3,
+          "error": "local_time must stay within -180 to 44.909 seconds from clip start (the recording)"
+        }
+      ]
+    }
+  ],
+  "semantic_review": "unreviewed",
+  "teacher_approved": false
+}

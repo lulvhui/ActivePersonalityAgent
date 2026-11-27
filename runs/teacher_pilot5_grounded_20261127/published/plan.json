@@ -1,0 +1,27 @@
+{
+  "commit": "3b8543dcf51505244761f1d38aa702c80f1d88f5",
+  "model": "qwen3.8-omni-flash",
+  "sample_ids": [
+    "IELTS:138",
+    "IELTS:106",
+    "IELTS:193",
+    "IELTS:183",
+    "IELTS:176"
+  ],
+  "split": "train",
+  "max_steps": 64,
+  "max_new_tokens": 8192,
+  "reasoning_effort": "medium",
+  "min_new_seconds": 5,
+  "max_focus_per_region": 1,
+  "trajectories_per_sample": 1,
+  "best_of_n": false,
+  "parallel_samples": 3,
+  "jev_api_calls": 0,
+  "training": false,
+  "labels_in_api_inputs": false,
+  "coarse_chunk_seconds": 60,
+  "previous_coarse_chunk_seconds": 20,
+  "baseline": "runs/teacher_pilot5_bounded_20261127/published",
+  "comparison": "Same full samples/model/budgets; prompts, candidate schema and coarse segmentation changed together"
+}

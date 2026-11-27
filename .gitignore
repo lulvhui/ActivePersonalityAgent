@@ -11,6 +11,9 @@ __pycache__/
 !/runs/teacher_pilot5_bounded_20261127/
 /runs/teacher_pilot5_bounded_20261127/*
 !/runs/teacher_pilot5_bounded_20261127/published/
+!/runs/teacher_pilot5_grounded_20261127/
+/runs/teacher_pilot5_grounded_20261127/*
+!/runs/teacher_pilot5_grounded_20261127/published/
 cache/
 .env
 .env.*

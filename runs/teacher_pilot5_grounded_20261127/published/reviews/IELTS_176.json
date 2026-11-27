@@ -1,0 +1,1042 @@
+{
+  "sample_id": "IELTS:176",
+  "run_status": "complete",
+  "final_status": "generated",
+  "final": {
+    "O": {
+      "level": "medium",
+      "reasoning": null
+    },
+    "C": {
+      "level": "medium",
+      "reasoning": null
+    },
+    "E": {
+      "level": "medium",
+      "reasoning": null
+    },
+    "A": {
+      "level": "high",
+      "reasoning": null
+    },
+    "N": {
+      "level": "low",
+      "reasoning": null
+    }
+  },
+  "final_explanation": "Openness is medium: she expresses refined aesthetic preferences (classical music, piano, chocolate cakes, baking creativity) and cultural awareness (name-as-flower reference), yet does not actively pursue these interests, citing lack of time and never having considered instruments. Conscientiousness is medium: structured recipe delivery, consistent celebration-baking tradition, and thorough procedural compliance are evident, but the formal interview setting and L2 context inflate apparent organization; her hands-in-lap restraint and completion of interrupted thoughts support moderate rather than high C. Extraversion is medium: she volunteers information beyond questions, leans forward eagerly ('Do you want to know?'), smiles slightly, and maintains eye contact, yet physical expressiveness stays restrained (small gestures, seated posture) and the interview format plus second-language setting suppress broader sociability. Agreeableness is high: repeated gratitude during a routine ID check ('Thank you very much,' 'Thank you so much'), gentle name-preference request, accommodating 'Yeah, why not?' openers, warm family references (mom's/dad's birthdays), and cooperative engagement exceed what procedural politeness alone would produce. Neuroticism is low: she acknowledges mood fluctuations and financial stressors but frames them practically with solution-oriented coping (listen to music to enhance mood); fillers and self-corrections are better attributed to L2 processing than anxiety; physical composure (steady gaze, upright posture, no agitation) remains stable throughout.",
+  "contextual": [
+    {
+      "trait": "A",
+      "context_type": "observed",
+      "context": "Procedural ID exchange at interview start (M2, M14, M15, M16)",
+      "expression": "She hands over her document promptly saying 'Yeah, here you go,' then produces two separate gratitude phrases ('Thank you very much' at ~0.8 s and 'Thank you so much' at ~5.0 s) during a routine check that required only one acknowledgment. The repetition and warmth exceed transactional necessity.",
+      "citations": [
+        "M2",
+        "M14",
+        "M15",
+        "M16"
+      ]
+    },
+    {
+      "trait": "A",
+      "context_type": "reported",
+      "context": "Self-introduction and name-preference request (M1)",
+      "expression": "She explains her name's cultural meaning ('the name of the flower' in Iran) and softly frames her preference: 'I would appreciate if you call me Maria,' rather than issuing a directive. The hedged, appreciative phrasing signals consideration for the listener.",
+      "citations": [
+        "M1"
+      ]
+    },
+    {
+      "trait": "A",
+      "context_type": "observed",
+      "context": "Family celebration baking discussion (M10)",
+      "expression": "When describing cake traditions she slows her cadence and raises pitch slightly on 'my mom's birthday' and 'my dad's birthday,' giving each parent individual vocal weight. The warmer prosody on family names contrasts with the flatter delivery of the general statement 'for every celebration I try to bake cake.'",
+      "citations": [
+        "M10"
+      ]
+    },
+    {
+      "trait": "E",
+      "context_type": "observed",
+      "context": "Volunteering baking knowledge beyond the yes/no question (M8, M9)",
+      "expression": "After confirming she can bake, she leans forward, raises both hands in an open-palm gesture, and says 'Do you want to know? Yeah, I have to explain about it,' then delivers a full recipe arc unprompted. The forward lean and hand activation mark a shift from passive answering to eager narration.",
+      "citations": [
+        "M8",
+        "M9"
+      ]
+    },
+    {
+      "trait": "E",
+      "context_type": "reported",
+      "context": "Repeated 'Yeah, why not?' openers across topics (M6, M7, M12)",
+      "expression": "She uses the same affirmative, non-resistant opener for music-coping and cake-preference questions, framing each answer as welcoming rather than guarded. The identical phrasing across domains suggests a default stance of openness to engagement.",
+      "citations": [
+        "M6",
+        "M7",
+        "M12"
+      ]
+    },
+    {
+      "trait": "O",
+      "context_type": "reported",
+      "context": "Conditional aesthetic preferences under time constraint (M4, M5)",
+      "expression": "She states she does not listen to music for lack of time but would prefer classical ('it gives me more energy and boost my mood'); for instruments she has 'not thought about it yet' but would choose piano. The preferences are refined and culturally coded yet remain hypothetical, indicating latent openness not actively pursued.",
+      "citations": [
+        "M4",
+        "M5"
+      ]
+    },
+    {
+      "trait": "O",
+      "context_type": "reported",
+      "context": "Cultural-aesthetic name explanation (M1)",
+      "expression": "She connects her given name to a flower and notes its prevalence in Iran, showing an aesthetic-cultural association with identity. This is a small but deliberate act of sharing symbolic meaning rather than merely stating a label.",
+      "citations": [
+        "M1"
+      ]
+    },
+    {
+      "trait": "C",
+      "context_type": "observed",
+      "context": "Structured recipe explanation with escalating detail (M9, M13, M20)",
+      "expression": "Her baking description follows a clear arc—dry ingredients → optional flavor → oven time (30 min) → human-variable qualifier ('it depends on the people')—with each clause separated by a filler acting as a boundary marker. The bilateral hand-open gesture on 'people' maps abstract variability spatially, showing deliberate structuring of the explanation.",
+      "citations": [
+        "M9",
+        "M13",
+        "M20"
+      ]
+    },
+    {
+      "trait": "C",
+      "context_type": "reported",
+      "context": "Consistent celebration-baking tradition (M10)",
+      "expression": "'For every celebration I try to bake cake' indicates a recurring personal ritual applied uniformly across occasions (mom's birthday, dad's birthday), reflecting follow-through and reliability in family obligations rather than spontaneous choice.",
+      "citations": [
+        "M10"
+      ]
+    },
+    {
+      "trait": "N",
+      "context_type": "reported",
+      "context": "Acknowledgment of mood variability and economic stress (M4, M6)",
+      "expression": "She notes 'when I'm not in a good mood I try to listen to classical music' and names 'economical problems, financial problems' as current stressors. However, both are framed solution-oriented (music enhances mood, get better) and delivered in a steady, matter-of-fact register without vocal tremor, agitation, or rumination, indicating awareness of stress without heightened emotional reactivity.",
+      "citations": [
+        "M4",
+        "M6"
+      ]
+    },
+    {
+      "trait": "N",
+      "context_type": "observed",
+      "context": "L2 disfluencies during extended responses (M5, M6, M7, M9)",
+      "expression": "Multiple 'um' fillers, 'I I' repetitions, and self-corrections ('I prefer to— I would prefer to play piano'; 'put your time / spend your time') occur across several answers. In a second-language interview these are consistent with online formulation demands rather than anxiety-driven instability; her posture, gaze, and vocal steadiness remain composed throughout.",
+      "citations": [
+        "M5",
+        "M6",
+        "M7",
+        "M9"
+      ]
+    }
+  ],
+  "contextual_errors": [],
+  "stop_reason": "candidate_pool_exhausted",
+  "global_scan": {
+    "coarse_summaries": [
+      {
+        "time": [
+          0.0,
+          60.0
+        ],
+        "modality": "audio_video",
+        "summary": "The recording is an IELTS speaking mock test conducted at Ross IELTS Academy, with an examiner seated on the left and the candidate on the right across a table bearing Israeli and Canadian flags, a wall logo behind them, and a scrolling promotional banner along the bottom of the frame. The candidate, identified in the introduction as Maryam Biosvand, speaks in a calm, conversational tone. After the examiner greets her and asks for her full name, she responds by giving her name and then asking to be addressed as \"Maria,\" explaining aloud that it is a common name in Iran and the name of a flower, delivered with small hand movements and a slight forward lean. When asked for identification, she says \"yeah, here you go\" and reaches across the table to pass a document, which the examiner takes and thanks her for; the candidate replies \"you're welcome.\" A brief throat-clear from the examiner follows. The examiner then shifts the topic to music and asks what kind of music she prefers. The candidate begins her answer in the same steady voice, stating that, to be honest, she does not listen to music, as the clip ends. Throughout, her visible behavior is composed: she sits upright in a dark head covering and patterned-sleeve garment, gestures modestly while speaking, and coordinates the hand-over of the ID with her verbal response.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          60.0,
+          120.0
+        ],
+        "modality": "audio_video",
+        "summary": "The interviewee explains that she lacks time for music but prefers classical genres when she listens, citing increased energy and mood improvement, especially when feeling down. Regarding instruments, she states she hasn't thought about learning one but would choose the piano. She affirms that music helps ease stress, specifically mentioning economic and financial problems, and suggests that dedicating time to listening can enhance one's mood and aid recovery. Her delivery includes noticeable hesitations and fillers like 'um' and 'uh'.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          120.0,
+          175.612993
+        ],
+        "modality": "audio_video",
+        "summary": "The interviewee enthusiastically discusses her love of cakes, particularly chocolate cakes, explaining that she visits restaurants primarily for dessert. She then transitions to describing her own baking ability, listing ingredients (flour, sugar, optional flavors) and noting a 30-minute baking time. When asked about cakes in celebrations, she confirms she bakes for every family occasion, specifically mentioning her mother's and father's birthdays. Her delivery is animated with frequent hand gestures, filler words ('uh,' 'um,' 'you know'), and a warm, conversational tone. Visually, she sits upright, leans slightly forward during explanations, and uses open-palm gestures while enumerating steps. The examiner on the left takes notes and prompts with brief questions.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          0,
+          175.612993
+        ],
+        "modality": "text",
+        "summary": "The interviewee, Maryam Ghiasvand (who asks to be called Maria), walks through a structured conversation covering her name's origin in Persian (a flower name common in Iran), music preferences, and baking. She states she does not currently listen to music due to lack of time but would prefer classical music for energy and mood regulation, especially during periods of financial or economic stress. She has not considered learning an instrument but would choose piano. The second half shifts to food: she describes a restaurant habit of ordering only dessert (especially chocolate cakes), volunteers that she can bake cakes, lists ingredients and a rough 30-minute oven time, and ties cake-baking to family celebrations such as her parents' birthdays.\n\nIn terms of communication style, she frequently opens answers with a short affirmative ('Yeah, why not?') before elaborating, producing a pattern of quick agreement followed by longer, sometimes meandering explanation. She uses conditional and hypothetical framing ('if I had the time,' 'if I wanted to choose one') to discuss things she does not actually do. Self-corrections appear mid-sentence ('I prefer to… I would prefer to'), and she inserts filler markers ('um,' 'to be honest') at points of hesitation. She volunteers information beyond the question asked—offering to explain baking, adding the restaurant-dessert anecdote unprompted—and closes several answers with a softening qualifier ('it depends on the people'). Her register stays conversational and warm throughout, with no marked code-switching or formal register shifts.",
+        "summary_status": "provided"
+      }
+    ],
+    "input_modalities": [
+      "text",
+      "audio",
+      "video"
+    ],
+    "observation_modes": [
+      "text",
+      "audio",
+      "video",
+      "audio_video"
+    ],
+    "sampling_fps": 1.0,
+    "full_audio_coverage": true,
+    "audio_coverage": [
+      [
+        0.0,
+        60.0
+      ],
+      [
+        60.0,
+        120.0
+      ],
+      [
+        120.0,
+        175.6125
+      ]
+    ],
+    "video_coverage": [
+      [
+        0.0,
+        60.0
+      ],
+      [
+        60.0,
+        120.0
+      ],
+      [
+        120.0,
+        175.612993
+      ]
+    ],
+    "duration": 175.612993,
+    "sampled_frames": 176,
+    "audio_samples": 2809800,
+    "audio_sample_rate": 16000,
+    "chunk_seconds": 60.0,
+    "text_segmentation": "full_transcript",
+    "video_segmentation": "fixed_seconds",
+    "audio_segmentation": "decoded_samples"
+  },
+  "cost": {
+    "stage_timing": {
+      "coarse": {
+        "calls": 4,
+        "timed_calls": 0,
+        "prepare_seconds": 0.0,
+        "generation_seconds": 0.0,
+        "constraint_seconds": 0.0,
+        "total_seconds": 0.0,
+        "constraint_calls": 0,
+        "prompt_tokens": 10780,
+        "completion_tokens": 6329
+      },
+      "observe": {
+        "calls": 20,
+        "timed_calls": 0,
+        "prepare_seconds": 0.0,
+        "generation_seconds": 0.0,
+        "constraint_seconds": 0.0,
+        "total_seconds": 0.0,
+        "constraint_calls": 0,
+        "prompt_tokens": 58715,
+        "completion_tokens": 65151
+      },
+      "final": {
+        "calls": 1,
+        "timed_calls": 0,
+        "prepare_seconds": 0.0,
+        "generation_seconds": 0.0,
+        "constraint_seconds": 0.0,
+        "total_seconds": 0.0,
+        "constraint_calls": 0,
+        "prompt_tokens": 9355,
+        "completion_tokens": 3497
+      }
+    },
+    "active_seconds": 239.0,
+    "active_budget_seconds": null,
+    "coarse_audio_seconds": 175.6125,
+    "coarse_frames": 176,
+    "jev_api_calls": 0,
+    "jev_estimated_cost": 0.0,
+    "coarse_video_segments": 3,
+    "coarse_video_fps": 1.0,
+    "generated_tokens": 74977,
+    "input_tokens": 78850
+  },
+  "novelty_rule": {
+    "video_fps": 2.0,
+    "min_new_seconds": 5.0,
+    "max_focus": 1
+  },
+  "novelty_filtered": [
+    {
+      "stage": "execution",
+      "candidate_id": "C19",
+      "parent_id": "C8",
+      "time": [
+        145.0,
+        150.0
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0,
+        "video": 0.0
+      },
+      "new_still": false,
+      "region_root": "C8"
+    },
+    {
+      "source_observation_id": "active_15",
+      "hint": "The interviewee's 'Thank you very much' is confirmed concurrent with the document extension in this clip; the examiner's 'You're welcome' (2.0–2.5 s) and the throat-clearing (3.0–3.5 s) identified in audio-only M15 fall immediately after this window and lack visual speaker attribution.",
+      "goal": "Visually confirm which participant's mouth moves during 'You're welcome' and identify the source of the throat-clearing, closing the speaker-attribution gap that M15 could only resolve by voice-matching against M14.",
+      "stage": "proposal",
+      "parent_id": "C16",
+      "time": [
+        48.0,
+        53.0
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 3.0,
+        "video": 2.0
+      },
+      "new_still": false,
+      "region_root": "C2"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C23",
+      "parent_id": "C15",
+      "time": [
+        50.0,
+        55.0
+      ],
+      "modality": "audio",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0
+      },
+      "new_still": false,
+      "region_root": "C2"
+    },
+    {
+      "source_observation_id": "active_19",
+      "hint": "The intonation contour (falling-closing vs. rising-open) of 'it depends on the people' is indeterminate from M9's gesture-and-structure description and M13's flat text rendering. A closer audio listen within the original region [-5.0, 5.0] can attend specifically to the pitch trajectory on the final words 'the people' and confirm whether the clause closes or remains open.",
+      "goal": "Resolve Goal 1: determine whether 'it depends on the people' ends with a falling intonation (thought-closing) or a rising/level intonation (open-ended), by attending to the pitch contour on the final syllables within this 3-second window.",
+      "stage": "proposal",
+      "parent_id": "C21",
+      "time": [
+        162.0,
+        165.0
+      ],
+      "modality": "audio",
+      "reason": "focus_used",
+      "new_seconds": {
+        "audio": 0.0
+      },
+      "new_still": false,
+      "region_root": "C13"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C22",
+      "parent_id": "C13",
+      "time": [
+        160.0,
+        165.0
+      ],
+      "modality": "video",
+      "reason": "focus_used",
+      "new_seconds": {
+        "video": 0.0
+      },
+      "new_still": false,
+      "region_root": "C13"
+    }
+  ],
+  "memory": {
+    "observations": [
+      {
+        "id": "M1",
+        "observation_id": "active_0",
+        "modality": "audio_video",
+        "retrieval_window": [
+          28.0,
+          40.0
+        ],
+        "content": "The audible introduction is given by the woman seated on the right, who functions as the interviewee in the exchange: she says, \"nice to meet you. My name is Maryam Biosmand,\" then explains, \"you know, it's a common name in Iran. It's the name of the flower,\" and adds, \"So I would appreciate if you call me Maria.\"\nThis portion is a self-report from the interviewee: she supplies her full name, describes the name as common in Iran, describes it as the name of a flower, and states a preference for being called \"Maria.\"\nThe interviewee's delivery includes a brief filled pause, \"Um,\" before the explanation about Iran and the flower, and the clip ends with the name \"Maria\" repeated and a short \"Yeah.\"\nVisually, the interviewee remains seated at the table facing the interviewer on the left, with her hands together in her lap; the sampled frames do not show a large hand gesture, although her mouth is open in several frames.\nThe interviewer on the left sits with papers and a pen, looking toward the interviewee during the exchange.\nThe scene includes a Quebec flag and a Canadian flag on the table, and a scrolling promotional caption at the bottom reads, \"Send your writing to be corrected today by professional teachers. Check our website www.reisls.com,\" which is separate from the spoken name introduction.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M2",
+        "observation_id": "active_1",
+        "modality": "video",
+        "retrieval_window": [
+          43.0,
+          51.0
+        ],
+        "content": "The interviewee (seated on the right, wearing a dark hooded garment with colorful sleeve accents) initiates the document exchange: starting around 1.2 s she leans forward and extends her right arm across the table, holding a small white card or identification document.\nBy approximately 3.2 s the examiner (seated on the left, in a black top with a ponytail) reaches out and takes the document from the interviewee's hand; their fingers make contact over the card at the midpoint of the table.\nFrom roughly 4.2 s to 6.2 s the examiner withdraws the document, holds it in both hands, and looks down at it while the interviewee retracts her arm and settles back into her seat with hands near her lap.\nAt approximately 7.2 s the examiner extends her arm back across the table, returning the document to the interviewee, who reaches forward to receive it.\nThroughout the exchange both participants maintain direct eye contact; no distinct nod, smile, or other overt acknowledgment gesture is clearly visible in the sampled frames.\nNo audio is available in this clip, so any spoken acknowledgment (e.g., 'thank you,' 'here you go') cannot be confirmed from the visual record alone.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M3",
+        "observation_id": "active_2",
+        "modality": "audio_video",
+        "retrieval_window": [
+          56.0,
+          60.0
+        ],
+        "content": "The candidate responds to the interviewer's question about music preference by stating, \"To be honest, I don't listen to music.\" She maintains an upright seated posture and keeps her gaze directed toward the interviewer throughout the response.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M4",
+        "observation_id": "active_3",
+        "modality": "audio_video",
+        "retrieval_window": [
+          60.0,
+          79.0
+        ],
+        "content": "The interviewee (woman in black headscarf and dark jacket with colorful patches) states she does not have enough time to listen to music, but if she did, she would prefer classical music.\nShe describes the benefit of classical music using the phrasing: 'it gives me more energy and boost my mood.'\nShe adds a conditional self-report: 'when I'm not in a good mood I try to listen to classical music,' with a noticeable repetition/stumble ('when I'm when I'm not in a good mood').\nVisually, the interviewee remains seated facing the interviewer throughout, with minimal body movement; her hands rest in her lap.\nThe interviewer (woman with ponytail in black top) listens attentively and takes notes on paper during the response.\nThe speech is continuous from approximately 0 s to 19 s with no significant pauses beyond the natural stumble around 14–16 s.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M5",
+        "observation_id": "active_4",
+        "modality": "audio_video",
+        "retrieval_window": [
+          83.0,
+          95.0
+        ],
+        "content": "The interviewee (woman in black headscarf and dark jacket with colorful patches) responds to a question about musical instruments. She begins with a direct denial: 'No, I haven't thought about it yet, about any musical instruments,' delivered after an initial 'um' hesitation audible at the start of her turn.\nShe then shifts to a conditional framing: 'but if I wanted to choose one of them,' maintaining steady eye contact toward the interviewer while her hands remain resting in her lap.\nA clear self-correction occurs in her sentence structure: she starts with 'I prefer to—' then restarts and completes the thought as 'I would prefer to play piano.' The restart is visible in the subtitle progression (frames at ~9–11 s show 'I prefer to I would prefer to play piano') and audible as a brief pause mid-phrase.\nThroughout the 0–12 s window the interviewee remains seated upright, facing the interviewer across the table; no hand gestures accompany the self-correction. The interviewer (woman with ponytail, black top) continues writing notes on paper without interrupting.\nTwo flags (one Canadian, one blue with an organizational logo) sit on the table between the speakers; a wall-mounted logo and glass partition are visible in the background. Subtitles track the interviewee's words line-by-line at the bottom of the frame.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M6",
+        "observation_id": "active_5",
+        "modality": "audio_video",
+        "retrieval_window": [
+          98.0,
+          118.0
+        ],
+        "content": "The interviewee (woman in black headscarf and dark jacket with colorful patches) speaks continuously from 0 s to approximately 18 s, responding affirmatively ('Yeah, why not?') to a prompt about whether music helps. She frames music as a coping mechanism: 'When you're in a bad mood, when you have a lot of problems, especially in these days economical problems, financial problems, I think you can um put your time, you can spend your time um on listening to music and um maybe enhance your mood.'\n\nRepetitive/self-correcting phrasing is audible and visible in the subtitle progression: she first says 'put your time' then immediately restarts with 'you can spend your time,' producing a doubled construction around the 9–12 s mark. Three distinct 'um' fillers punctuate the utterance (after 'can,' after 'time,' and after 'and'), indicating hesitations mid-sentence.\n\nShe explicitly names two categories of stress—'economical problems' and 'financial problems'—as the contextual backdrop for her recommendation, tying them to 'these days' (present-tense framing).\n\nAt roughly 18–19 s the interviewer (woman with ponytail, black top, seated left) interjects 'Okay' while still holding her pen over the notepad. The interviewee immediately appends 'and get better' as a short closing phrase, completing her thought without further elaboration.\n\nVisually, the interviewee remains seated upright facing the interviewer across the grey table; her hands stay largely in her lap with only small finger movements during the 'spend your time' restart. The interviewer writes notes throughout and does not gesture. Two desk flags (Canadian red-and-white; blue organizational flag) and a wall-mounted logo remain static in the background. Yellow-highlighted subtitles track each clause at the bottom of frame.\nThe goal element—noting the mention of 'economical problem, financial problems' and the repetitive phrasing regarding spending time on music—is fully addressed in the above observation: both the economic/financial stressors and the 'put your time / spend your time' restart are identified with their approximate positions (5–7 s and 9–12 s respectively).",
+        "content_status": "structured"
+      },
+      {
+        "id": "M7",
+        "observation_id": "active_6",
+        "modality": "audio_video",
+        "retrieval_window": [
+          120.0,
+          135.0
+        ],
+        "content": "The interviewee (woman in black headscarf and dark jacket with colorful patches, seated right across the grey table) answers the interviewer's prompt 'Do you like eating cakes?' with 'Yeah, why not, especially chocolate cakes' (approx. 1–4 s). Her delivery is affirmative and lightly emphatic on 'especially chocolate cakes,' with a slight forward lean visible in the frames.\nBeginning around 5 s, she narrates her restaurant dessert habit: 'And uh when I go to a restaurant, I I just for desserts, you know, not for the main course and a starter because I want to order dessert after that, especially chocolate cakes.' The filler 'uh' opens the clause; the doubled 'I I' marks a brief self-correction before 'just for desserts.' The discourse marker 'you know' falls around 8–9 s, coinciding with a small hand movement near chest/lap level visible in the 8 s frame.\nAt roughly 9–10 s she clarifies scope: 'not for the main course and a starter' (subtitle renders 'makers' due to ASR error). Her posture remains seated and oriented toward the interviewer; no large gestures accompany this clause.\nAround 11–12 s she supplies reasoning: 'because I want to order dessert after that.' The interviewer (left, ponytail, black top) stays static with pen over notepad, not interjecting.\nAt 13–14 s she reiterates 'especially chocolate cakes' and transitions into 'and let me explain,' at which point her hands rise slightly in a small circular/open-palm gesture near chest level (visible in the 13–14 s frames). The sentence trails into 'And uh…' suggesting continuation beyond the clip boundary.\nNo discrete laughter burst is transcribed in the subtitle track; however, the hint references 'a small laugh' aligned with 'just for dessert, you know.' In the audio_video reading of 0–15 s, any such brief vocal quality shift (a soft chuckle or breathy onset) would fall in the 7–9 s window around 'you know' but is not separately annotated in the visible subtitles. The gesture at that moment is a small hand movement rather than a broad sweep.\nThroughout 0–15 s the background remains constant: two desk flags (Canadian red-and-white; blue organizational flag), wall-mounted logo, and the 'To book an online mock test…' ticker at the bottom. Yellow-highlighted subtitles track each clause sequentially.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M8",
+        "observation_id": "active_7",
+        "modality": "audio_video",
+        "retrieval_window": [
+          135.0,
+          145.0
+        ],
+        "content": "Turn-taking sequence (0–9 s): The interviewee (right, black headscarf, dark jacket with colorful patches) completes her prior thought with 'especially chocolate cakes and let me explain' (0–1 s), then immediately adds 'I can bake cake too, okay' (1–3 s). The interviewer (left, ponytail, black top, pen over notepad) interjects at approximately 3–4 s with the question 'So do you know how to bake a cake?' The interviewee answers 'Yeah' at roughly 5–6 s, then at 7–8 s turns the floor back with 'Do you want to know? Yeah,' and at 8–9 s volunteers 'I have to explain about it.' The exchange shows a clear three-turn structure: interviewee statement → interviewer question → interviewee response-plus-offer-to-elaborate.\nFacial expression and vocal tone during 'I can bake cake too' (1–3 s): In the frames at 1 s and 2 s the interviewee's mouth corners lift into a slight, closed-lip smile while she delivers the line. Her gaze remains directed toward the interviewer. The vocal delivery carries a light, self-assured emphasis on 'too,' distinguishing this from the earlier, more narrative tone used for the chocolate-cake preference.\nBrief pause and processing gap (≈4–5 s): After the interviewer's question lands at ~4 s, there is a short silence of roughly one second before the interviewee's 'Yeah' at ~5–6 s. During this gap the interviewee's head tilts marginally and her eyes stay on the interviewer; no hand movement is visible in the 4 s or 5 s frames. The pause functions as a comprehension beat rather than hesitation—her subsequent 'Yeah' is immediate and unqualified.\nPosture shift and gesture at the offer to explain (7–9 s): Beginning around 7 s the interviewee leans her upper body forward over the table. By 8–9 s, as she says 'I have to explain about it,' both hands rise to chest/lap level in an open-palm, small circular gesture (visible in the 9 s frame). This forward lean and hand activation mark a transition from passive answering to active narration, aligning with her verbal cue 'let me explain' / 'I have to explain about it.' The interviewer remains static, pen poised, not interrupting the gesture.\nSubtitle and ticker continuity: Yellow-highlighted subtitles track each clause in sequence ('I can bake cake too okay' → 'so do you know how to bake a cake' → 'yeah' → 'do you want to know yeah' → 'I have to explain about it'). The bottom ticker ('To book an online mock test… www.raiselabs.com') and the two desk flags (Canadian red-and-white; blue organizational flag) remain unchanged throughout the 10 s window, confirming a single continuous shot with no cut.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M9",
+        "observation_id": "active_8",
+        "modality": "audio_video",
+        "retrieval_window": [
+          145.0,
+          165.0
+        ],
+        "content": "Ingredient enumeration with clause-boundary fillers (≈1–12 s): The interviewee lists baking components in sequence — 'so we need some flour' (subtitle visible 1–3 s), 'sugar and different' (4–7 s), then 'uh flavor if you want to add to it um' (10–12 s). Each noun phrase is separated by a brief vocal pause and a filler ('um,' 'uh,' 'so'), indicating real-time formulation rather than recitation. Her lips move continuously but the cadence breaks at every item boundary.\nBaking-time statement with trailing hesitation (≈13–16 s): She delivers 'it takes about 30 minutes to bake in the oven uh' (subtitle 13–16 s). The trailing 'uh' after 'oven' functions as a pivot into the next clause. Visually, her head stays oriented toward the interviewer; no large gesture accompanies this segment, keeping the focus on the numerical detail.\nClosing qualifier with bilateral hand gesture (≈17–19 s): The phrase 'and it depends on the people' (subtitle 17–19 s) is spoken while both hands rise from lap level and open outward in a small, symmetrical gesture (clearly visible in the 18 s and 19 s frames). The outward opening aligns with the word 'people,' mapping variability onto a spatial spread.\nOverall structural mapping: The explanation follows a recipe arc — dry ingredients → optional flavor → oven time → human variability — delivered in four clauses separated by fillers. The physical gestures escalate from minimal (head-only during ingredient list) to moderate (hand rise during the closing qualifier), mirroring the shift from concrete items to an abstract, person-dependent variable.\nInterviewer passivity throughout (0–19 s): The interviewer (left, ponytail, black top) keeps her pen resting over the notepad, occasionally glancing down at her notes (frames ≈7–9 s). She does not speak, nod visibly, or gesture during the interviewee's 19-second monologue, maintaining a listening posture that lets the enumeration proceed uninterrupted.\nSubtitle and set continuity: Yellow-highlighted captions track each clause in order without gaps or overlaps. The two desk flags (Canadian red-and-white; blue organizational banner), the Raiselabs logo on the back wall, and the bottom ticker remain static across all frames, confirming a single unbroken shot for the 0–20 s window.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M10",
+        "observation_id": "active_9",
+        "modality": "audio_video",
+        "retrieval_window": [
+          165.0,
+          175.0
+        ],
+        "content": "Question delivery (0–3 s): The interviewer (left, ponytail, black top) poses 'and how is cake a part of the Celebration at your home' in a level, inquisitive register. Her mouth moves continuously; she holds eye contact with the interviewee and keeps her pen resting on the notepad without writing. The interviewee (right, dark hijab, gray jacket) faces her, listening with a neutral expression, hands in lap.\nImmediate affirmation with slight nod (≈4 s): The interviewee responds 'Yeah, exactly' with a quick, clipped delivery. In the 4.2 s frame her chin dips briefly — a small downward nod coinciding with the word 'exactly' — signaling agreement before she elaborates. Her mouth opens wider than during the listening phase, and her gaze remains fixed on the interviewer.\nGeneral statement with restrained hand movement (5–7 s): She continues 'for every Celebration I try to bake cake okay.' The pace is steady, slightly slower than the affirmation. In the 5.2–7.2 s frames her right hand lifts a few centimeters from her lap and makes a small open-palm gesture on 'bake cake,' then settles. The interviewer interjects a brief 'Okay' (audible ≈7 s) as a back-channel acknowledgment; visually the interviewer nods once and keeps her pen stationary.\nSpecific family listing with warmer cadence (8–9 s): The interviewee enumerates 'for my mom's birthday my dad's birthday.' The pitch contour rises slightly on 'mom's' and 'dad's,' and the tempo slows compared to the preceding general clause, giving each name individual weight. Her head tilts marginally to the right on 'mom's birthday' and returns to center on 'dad's birthday.' Both hands remain low; no large gesture accompanies this segment. The subtitle tracks each phrase in yellow highlight without gap.\nSegment boundary (10 s): The clip ends mid-thought during the birthday enumeration. No closing remark, thank-you, or final gesture from either speaker is visible or audible within this 10-second window. The interviewee's mouth is still open in the 9.2 s frame, indicating the sentence continues beyond the cut.\nSet and framing continuity: The two desk flags (Canadian red-and-white; blue organizational banner), the Raiselabs logo on the back wall, and the bottom website ticker remain static and unchanged across all frames from 0.2 s to 9.2 s, confirming a single unbroken medium two-shot with no camera movement or edit within the clip.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M11",
+        "observation_id": "active_10",
+        "modality": "text",
+        "retrieval_window": [
+          43.0,
+          56.0
+        ],
+        "content": "The text transcript in this clip contains two exchanges: the interviewee (Maryam Ghiasvand / Maria) introduces herself by stating her full name, noting it is common in Iran and is the name of a flower, and requesting to be called \"Maria\"; and she responds to an identification request with \"Yeah, here you go.\" Both are self-reported statements by the interviewee. These contents are already documented in prior observations M1 (name introduction, audio_video, −15.0 to −3.0) and M2 (document exchange, video, 0.0 to 8.0).\nThe music-related speech referenced in the goal—the flat denial \"I don't listen to music because I don't have enough time\" followed by the conditional \"But if I had the time…\"—does not appear in the text segments supplied for this clip. The only text available here covers the name introduction and the ID handoff.\nThe goal asks whether the denial and the hypothetical are delivered as one continuous breath or separated by a pause, and whether the word \"But\" carries a tonal lift. These are prosodic and respiratory features that are not represented in a text-only transcript; no punctuation, breath marker, or intonation annotation is present in the supplied segments. Accordingly, no finding on breath continuity, pause placement, or tonal contour can be stated from this modality.\nPrior observation M4 (audio_video, 17.0–36.0) already records that the interviewee's speech through the music discussion is continuous from approximately 0 s to 19 s with no significant pauses beyond a natural repetition stumble around 14–16 s, and the known request covering 17.0–18.0 in audio_video is marked done. The transition point where the \"But\" pivot occurs therefore falls within already-observed audio-video coverage.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M12",
+        "observation_id": "active_11",
+        "modality": "text",
+        "retrieval_window": [
+          118.0,
+          135.0
+        ],
+        "content": "In the provided text segments, the interviewee's 'Yeah, why not?' opener appears verbatim and identically in both the music-coping answer and the cake-preference answer. No textual marker (e.g., exclamation, elongation, added word) distinguishes one instance from the other at the word level.\nThe music answer follows a single-threaded explanatory arc after the opener: conditional framing ('When you are in a bad mood') → enumeration of stressors ('economical problems, financial problems') → proposed action ('spend your time on listening to music') → stated outcome ('enhance your mood and get better'). Total post-opener length is approximately 45 words, with no unprompted digression beyond the question's scope.\nThe cake answer builds in escalating layers after the opener: immediate specification ('Especially chocolate cakes') → unprompted scenario introduction ('when I go to a restaurant') → behavioral scope-limitation ('I just go for dessert, not for the main course and a starter') → causal reasoning ('because I want to order dessert after that') → reiteration for emphasis ('especially chocolate cakes') → meta-discourse ('And let me explain') → additional volunteered capability ('I can bake cakes too'). Post-opener length is approximately 50 words, and the narrative extends well beyond the binary yes/no the question invites.\nThe hint references a third 'Yeah, why not?' instance tied to an instruments question, but no such segment appears in the text material supplied for this clip. Only two instances (music, cake) are available for textual comparison.\nTextual evidence alone cannot resolve whether the repeated opener varies in energy, pitch, or tempo across instances; the transcript renders all three-word openers identically regardless of prosodic delivery.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M13",
+        "observation_id": "active_12",
+        "modality": "text",
+        "retrieval_window": [
+          155.0,
+          165.0
+        ],
+        "content": "The ASR transcript renders the interviewee's recipe response as a clean, fully punctuated paragraph: 'Yeah. We need some flour, sugar, and different flavors if you want to add to it. It takes about 30 minutes to bake in the oven, and it depends on the people.' No hesitation markers ('uh,' 'um') appear in the text, in contrast to the audio-video record (M9) which documented fillers at each clause boundary. The textual channel normalizes disfluencies away.\nThe four-unit recipe arc is preserved in the text: affirmation ('Yeah') → dry/optional ingredients (flour, sugar, flavors) → oven procedure (30 minutes) → human-dependent qualifier ('it depends on the people'). The qualifier is joined by the conjunction 'and,' making it grammatically coordinate with the baking instruction rather than subordinate or parenthetical.\nThe closing clause 'and it depends on the people' carries no typographic signal of uncertainty, trailing-off, or open-endedness in the text: no ellipsis, em-dash, question mark, or hedging adverb is present. As rendered, it reads as a simple declarative addition to the recipe instructions.\nThe interviewer's question 'Do you know how to bake a cake?' establishes a yes/no frame, yet the interviewee's text response extends well beyond binary confirmation into a full procedural narrative spanning ingredients, method, duration, and a person-variable qualifier.\nTiming is flagged unverified_asr: the transcript content is available but cannot be precisely aligned to media timestamps from this text-only modality. No local_time placement can be asserted for any clause within the 10-second clip window.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M14",
+        "observation_id": "active_13",
+        "modality": "audio_video",
+        "retrieval_window": [
+          40.0,
+          45.0
+        ],
+        "content": "In the 0.0–5.0 s window (audio_video), the interviewer (seated left, black top, ponytail) responds verbally to the name introduction with \"Okay, sure,\" then immediately follows with \"And uh, can I see your identification please?\" Her delivery includes a filled pause (\"uh\") before the request. The interviewee (seated right, dark hooded garment) replies \"Yeah, here you go\" while leaning forward and extending her right arm across the table, handing a small white card/document. The interviewer receives it and says \"Thank you.\" Visually, at approximately 2.0 s the interviewer begins reaching forward; by 3.0–4.0 s the document transfer is in progress with both parties' hands near the center of the table. The Quebec and Canadian flags remain on the table between them. This audio content (interviewer's spoken response and acknowledgment) supplements the purely visual record in M2 and the text summary in M11, confirming the exact wording and turn-taking structure of the ID request exchange.",
+        "content_status": "structured",
+        "overlapping_media_reads": [
+          "M2"
+        ]
+      },
+      {
+        "id": "M15",
+        "observation_id": "active_14",
+        "modality": "audio",
+        "retrieval_window": [
+          44.0,
+          50.0
+        ],
+        "content": "The interviewee (Maryam/Maria, seated right, dark hooded garment) utters \"Thank you very much\" at approximately 0.8–2.0 s. This overlaps with the visual onset of the document handover recorded in M2 (extension begins ~1.2 s), confirming a verbal acknowledgment concurrent with the physical transfer of the identification card.\nThe interviewer (seated left, black top, ponytail) responds \"You're welcome\" at approximately 2.0–2.5 s, timed to the moment the document is mid-transfer between the two participants (M2 shows finger contact over the card at ~3.2 s). This is a procedural acknowledgment from the receiving party during the exchange.\nA brief throat-clearing or cough sound occurs at approximately 3.0–3.5 s, during the interval in which the examiner withdraws and examines the document (M2: 4.2–6.2 s holding phase). No lexical content accompanies this non-verbal vocalization.\nThe interviewee says \"Thank you so much\" at approximately 5.0–6.0 s, while the examiner is still holding and looking down at the document (M2 examination window 4.2–6.2 s). This is a second verbal acknowledgment from the interviewee during the examination phase of the exchange, before the document is returned at ~7.2 s.\nTaken together, these four vocal events confirm that both participants produce brief verbal acknowledgments (thanks, you're-welcome) that are temporally concurrent with the physical document exchange spanning 1–7 s. The goal is answered affirmatively: procedural language accompanies every stage of the handover, receipt, and examination.\nSpeaker attribution in this audio-only clip relies on voice matching against M14 (audio_video, −4.0–1.0), where the interviewer's and interviewee's voices were first distinguished. The higher-pitched, warmer timbre of \"Thank you very much\" and \"Thank you so much\" matches the interviewee's register in M14; the flatter, slightly lower \"You're welcome\" matches the interviewer's register.\nThis audio window (0.0–6.0 s) fulfills the previously pending known request for audio coverage at [0.0, 6.0], now marked done.",
+        "content_status": "structured",
+        "overlapping_media_reads": [
+          "M2",
+          "M14"
+        ]
+      },
+      {
+        "id": "M16",
+        "observation_id": "active_15",
+        "modality": "audio_video",
+        "retrieval_window": [
+          46.0,
+          48.0
+        ],
+        "content": "In the 0.0–2.0 s window (audio_video), the interviewee (seated right, dark hooded garment with colorful sleeve accents) is visually in the early phase of extending her right arm across the table, holding a small white identification card toward the examiner (seated left, black top, ponytail), who is simultaneously reaching forward with her right hand. The Quebec and Canadian flags remain upright on the table between them. On-screen branding text reads 'To begin an online…' alongside the assistio.com logo.\nAudio in this window captures the onset of the interviewee's 'Thank you very much' (beginning ≈0.8 s per M15), overlapping with the visual initiation of the arm extension. No other speech is audible before 2.0 s. The examiner's verbal response ('You're welcome') and the throat-clearing noted in M15 fall at 2.0–3.5 s, i.e., just beyond this clip's temporal boundary, so their visual speaker-attribution cannot be resolved from these two frames alone.\nThis clip confirms and does not contradict prior observations M2 (video, −3.0–5.0) and M15 (audio, −2.0–4.0): the document handover is underway, the interviewee speaks a gratitude phrase concurrent with the physical extension, and no nod, smile, or overt non-verbal acknowledgment is visible in the sampled frames at 0.0 s or 1.0 s.",
+        "content_status": "structured",
+        "overlapping_media_reads": [
+          "M2",
+          "M15"
+        ]
+      },
+      {
+        "id": "M17",
+        "observation_id": "active_16",
+        "modality": "text",
+        "retrieval_window": [
+          98.0,
+          118.0
+        ],
+        "content": "The text transcript for the music-coping response (question: 'Does music help you ease in any way?') renders the interviewee's answer as: 'Yeah, why not? When you are in a bad mood, when you have a lot of problems, especially in these days, economical problems, financial problems, I think you can spend your time on listening to music and maybe enhance your mood and get better.' The timing is marked unverified_asr.\nThe written transcript contains only the final phrasing 'I think you can spend your time'; the 'put your time / spend your time' restart noted in the audio_video observation (M6, frames ~9–12 s) does not appear in the text. The text therefore presents the clause as a single uninterrupted construction, offering no lexical evidence of a self-correction or doubled formulation at the word level.\nThe two named problem categories appear in the text as 'economical problems, financial problems,' joined by a comma within the same parenthetical clause following 'especially in these days.' Both terms are present verbatim in the written form, confirming the audio_video identification of the pair.\nThe closing phrase 'and get better' is included in the text transcript, consistent with the audio_video observation that the interviewee appended it after the interviewer's 'Okay' interjection. The full arc in text runs: opener → conditional mood framing → stressor enumeration → proposed action → stated outcome, with no intermediate restart or repetition visible in the written record.\nThe opener 'Yeah, why not?' is identical in wording to the cake-preference opener documented in M12, with no textual differentiator (exclamation, elongation, added word) distinguishing the two instances in the transcript.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M18",
+        "observation_id": "active_17",
+        "modality": "text",
+        "retrieval_window": [
+          120.0,
+          135.0
+        ],
+        "content": "The text transcript for the restaurant dessert-habit passage (segment: 'Yeah, why not? Especially chocolate cakes. And when I go to a restaurant, I just go for dessert, not for the main course and a starter, because I want to order dessert after that, especially chocolate cakes. And let me explain, I can bake cakes too.') contains no paralinguistic annotation of any kind — no '[laughs]', '[chuckle]', '[breath]', or equivalent bracketed marker appears anywhere in the rendered text. The entire answer is presented as continuous declarative prose.\nThe text layer renders the key clause as 'I just go for dessert, not for the main course and a starter.' This differs from the audio_video reading recorded in M7, which transcribed the spoken version as 'I I just for desserts, you know, not for the main course and a starter.' Specifically, the doubled pronoun ('I I') and the discourse marker ('you know') that M7 identified at approximately 7–9 s in the spoken stream are absent from the text rendering, which instead inserts the verb 'go' and omits the tag phrase entirely.\nThe text presents the full answer as a single unbroken block with no internal pauses, fillers ('uh', 'um'), repetitions, or self-corrections visible at the word level. The narrative arc runs linearly: opener → specification → scenario → scope-limitation → causal reasoning → reiteration → meta-discourse ('And let me explain') → volunteered capability ('I can bake cakes too'), totaling approximately 50 post-opener words in one continuous stretch.\nThe timing for this segment is marked 'unverified_asr,' meaning the text cannot be pinned to precise media timestamps. The phrase 'just for desserts, you know' referenced in the goal hint does not appear verbatim in the text; the closest text rendering is 'I just go for dessert.' No laughter or chuckle is indicated in any layer of the available transcript for this window.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M19",
+        "observation_id": "active_18",
+        "modality": "audio",
+        "retrieval_window": [
+          40.0,
+          56.0
+        ],
+        "content": "Fulfilling the pending audio request [10.0, 15.0]: The interviewer (seated left, black top, ponytail) closes the procedural ID exchange and pivots to the substantive interview by stating, 'Now let's move on to talk about music. What kind of music do you—'. Her delivery shifts from the clipped, transactional register used during the document handover to a more open, topic-introducing cadence. The sentence is truncated at the clip boundary (~15.5 s), so the full question ('do you like?') is not captured within this 16-second window. No response from the interviewee is audible before the clip ends. This transition marks the boundary between the administrative segment (M14, M15, M16) and the music-preference segment (M3, beginning at 16.0 s).\nRegarding the goal comparing the instruments-question 'Yeah, why not?' opener against the music-coping and cake openers: the instruments instance is not present in this clip. The text transcript (M11, local_time 3.0–16.0) confirms that only two exchanges appear in this clip's text segments—the name introduction and the ID handoff ('Yeah, here you go'). The audio coverage (M14 at 0–5, M15 at 4–10, and the now-fulfilled 10–15 window) documents the ID exchange acknowledgments and the interviewer's transition to the music topic. No mention of musical instruments, no 'Yeah, why not?' response, and no instruments-related question occur anywhere in the 0–16 s span. The goal's proposed_on_local [78.0, 95.0] places the instruments discussion on a different clip; the hint's suggestion that it 'likely falls in this unread audio window' is not supported by the text or audio evidence available here. The comparison of prosodic delivery across the three 'Yeah, why not?' instances cannot be performed from this clip.",
+        "content_status": "structured",
+        "overlapping_media_reads": [
+          "M2",
+          "M14",
+          "M15",
+          "M16"
+        ]
+      },
+      {
+        "id": "M20",
+        "observation_id": "active_19",
+        "modality": "audio",
+        "retrieval_window": [
+          160.0,
+          165.0
+        ],
+        "content": "The interviewee's hesitation marker immediately preceding the qualifier 'and it depends on the people' is the trailing 'uh' after 'oven' (M9, ≈13–16 s of its clip). M9 describes this 'uh' as functioning 'as a pivot into the next clause,' separating the baking-time statement from the person-dependent qualifier. No other disfluency (repetition, restart, filled pause) occurs between 'oven uh' and 'and it depends on the people.'\nDuring the qualifier 'and it depends on the people,' the interviewee performs a bilateral hand gesture: both hands rise from lap level and open outward in a small, symmetrical spread, with the outward opening aligning on the word 'people' (M9, ≈17–19 s). This is the largest gesture in the recipe-arc sequence, escalating from head-only orientation during the ingredient list.\nThe text channel (M13) renders the full clause as 'and it depends on the people' — a coordinate declarative joined by 'and,' with no ellipsis, em-dash, question mark, or hedging adverb. Typographically it presents as a flat addition to the baking instruction, carrying no visible signal of open-endedness or trailing uncertainty.\nThe specific intonation contour of 'it depends on the people' — whether the final syllables fall (closing the thought) or rise/remain level (leaving it open) — is not explicitly stated in any existing observation. M9 captures the gesture and structural role (final element of the recipe arc) but does not annotate pitch direction. The audio pass for local [0.0, 5.0] is marked done without a separate intonation annotation in the prior-observation record.\nThe interviewer remains passive during this qualifier: pen resting on notepad, no back-channel vocalization, no visible nod or gesture (M9, interviewer passivity 0–19 s). The interviewee's monologue proceeds uninterrupted through the phrase.",
+        "content_status": "structured",
+        "overlapping_media_reads": [
+          "M9"
+        ]
+      }
+    ]
+  },
+  "steps": [
+    {
+      "index": 0,
+      "action": {
+        "time": [
+          28.0,
+          40.0
+        ],
+        "modality": "audio_video",
+        "goal": "Capture the exact phrasing of the name explanation and the accompanying facial expression and gesture timing."
+      },
+      "candidate_id": "C1",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M1"
+      ],
+      "changed_ids": [
+        "M1"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 1,
+      "action": {
+        "time": [
+          43.0,
+          51.0
+        ],
+        "modality": "video",
+        "goal": "Confirm the mechanics of the document exchange and any visible acknowledgment between the two participants."
+      },
+      "candidate_id": "C2",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M2"
+      ],
+      "changed_ids": [
+        "M2"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 2,
+      "action": {
+        "time": [
+          56.0,
+          60.0
+        ],
+        "modality": "audio_video",
+        "goal": "Record the onset of her answer and her posture and gaze as she begins the topic."
+      },
+      "candidate_id": "C3",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M3"
+      ],
+      "changed_ids": [
+        "M3"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 3,
+      "action": {
+        "time": [
+          60.0,
+          79.0
+        ],
+        "modality": "audio_video",
+        "goal": "Capture the specific phrasing used to describe the benefits of classical music on her energy and mood."
+      },
+      "candidate_id": "C4",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M4"
+      ],
+      "changed_ids": [
+        "M4"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 4,
+      "action": {
+        "time": [
+          83.0,
+          95.0
+        ],
+        "modality": "audio_video",
+        "goal": "Observe the hesitation and the self-correction in her sentence structure ('I prefer to... I would prefer to')."
+      },
+      "candidate_id": "C5",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M5"
+      ],
+      "changed_ids": [
+        "M5"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 5,
+      "action": {
+        "time": [
+          98.0,
+          118.0
+        ],
+        "modality": "audio_video",
+        "goal": "Note the mention of 'economical problem, financial problems' and the repetitive phrasing regarding spending time on music."
+      },
+      "candidate_id": "C6",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M6"
+      ],
+      "changed_ids": [
+        "M6"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 6,
+      "action": {
+        "time": [
+          120.0,
+          135.0
+        ],
+        "modality": "audio_video",
+        "goal": "Capture the exact phrasing, laughter placement, and gesture synchronization when she explains her restaurant dessert habit."
+      },
+      "candidate_id": "C7",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M7"
+      ],
+      "changed_ids": [
+        "M7"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 7,
+      "action": {
+        "time": [
+          135.0,
+          145.0
+        ],
+        "modality": "audio_video",
+        "goal": "Record the turn-taking dynamics, her facial expression shift, and the brief pause before she volunteers to explain the process."
+      },
+      "candidate_id": "C8",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M8"
+      ],
+      "changed_ids": [
+        "M8"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 8,
+      "action": {
+        "time": [
+          145.0,
+          165.0
+        ],
+        "modality": "audio_video",
+        "goal": "Observe the enumeration gestures, the hesitation markers, and how she physically maps the baking steps in sequence."
+      },
+      "candidate_id": "C9",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M9"
+      ],
+      "changed_ids": [
+        "M9"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 9,
+      "action": {
+        "time": [
+          165.0,
+          175.0
+        ],
+        "modality": "audio_video",
+        "goal": "Note the emotional shift in her voice and the concluding interaction, including any final gesture or eye contact before the segment ends."
+      },
+      "candidate_id": "C10",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M10"
+      ],
+      "changed_ids": [
+        "M10"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 10,
+      "action": {
+        "time": [
+          43.0,
+          56.0
+        ],
+        "modality": "text",
+        "goal": "Show whether the denial and the hypothetical are delivered as one continuous breath or separated by a pause, and whether the 'But' carries a tonal lift signaling a topic change."
+      },
+      "candidate_id": "C11",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M11"
+      ],
+      "changed_ids": [
+        "M11"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 11,
+      "action": {
+        "time": [
+          118.0,
+          135.0
+        ],
+        "modality": "text",
+        "goal": "Capture whether the repeated 'Yeah, why not?' opener is delivered identically each time or varies in energy, and how the volunteer narrative builds in length and specificity compared to the direct answer."
+      },
+      "candidate_id": "C12",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M12"
+      ],
+      "changed_ids": [
+        "M12"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 12,
+      "action": {
+        "time": [
+          155.0,
+          165.0
+        ],
+        "modality": "text",
+        "goal": "Verify that the on-screen caption boundaries align with the speaker's clause-level hesitations and the transition into the bilateral hand gesture, ensuring the textual record does not collapse the four-clause recipe arc into fewer segments."
+      },
+      "candidate_id": "C13",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M13"
+      ],
+      "changed_ids": [
+        "M13"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 13,
+      "action": {
+        "time": [
+          40.0,
+          45.0
+        ],
+        "modality": "audio_video",
+        "goal": "Read the next five seconds to capture any continuation of the name exchange, interviewer response, facial movement, or hand gesture that accompanies the request to be called Maria."
+      },
+      "candidate_id": "C14",
+      "parent_candidate_id": "C1",
+      "new_ids": [
+        "M14"
+      ],
+      "changed_ids": [
+        "M14"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 14,
+      "action": {
+        "time": [
+          44.0,
+          50.0
+        ],
+        "modality": "audio",
+        "goal": "Determine whether either participant utters a brief acknowledgment (thanks, confirmation, instruction) concurrent with the physical document exchange observed at 1–7 s."
+      },
+      "candidate_id": "C15",
+      "parent_candidate_id": "C2",
+      "new_ids": [
+        "M15"
+      ],
+      "changed_ids": [
+        "M15"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 15,
+      "action": {
+        "time": [
+          46.0,
+          48.0
+        ],
+        "modality": "audio_video",
+        "goal": "Confirm that the interviewer (left) speaks \"You're welcome\" and identify the source of the throat-clearing, closing the pending audio_video request at [2.0, 4.0]."
+      },
+      "candidate_id": "C16",
+      "parent_candidate_id": "C2",
+      "new_ids": [
+        "M16"
+      ],
+      "changed_ids": [
+        "M16"
+      ],
+      "followup_status": "no_new_media_content",
+      "followup_errors": []
+    },
+    {
+      "index": 16,
+      "action": {
+        "time": [
+          98.0,
+          118.0
+        ],
+        "modality": "text",
+        "goal": "Confirm the precise lexical sequence and timing of the repetitive phrasing and the two named problem categories as rendered in on-screen text, complementing the audio_video observation already marked done."
+      },
+      "candidate_id": "C17",
+      "parent_candidate_id": "C6",
+      "new_ids": [
+        "M17"
+      ],
+      "changed_ids": [
+        "M17"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 17,
+      "action": {
+        "time": [
+          120.0,
+          135.0
+        ],
+        "modality": "text",
+        "goal": "Capture the exact phrasing, laughter placement, and gesture synchronization when she explains her restaurant dessert habit."
+      },
+      "candidate_id": "C18",
+      "parent_candidate_id": "C7",
+      "new_ids": [
+        "M18"
+      ],
+      "changed_ids": [
+        "M18"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 18,
+      "action": {
+        "time": [
+          40.0,
+          56.0
+        ],
+        "modality": "audio",
+        "goal": "Locate the instruments-question 'Yeah, why not?' opener and compare its prosodic delivery (energy, tempo, intonation contour) against the music-coping opener (~-20 to 0 s, M6) and the cake opener (~2-4 s, M7) to determine whether the three-word phrase is repeated identically or shifts in vocal energy across contexts."
+      },
+      "candidate_id": "C20",
+      "parent_candidate_id": "C12",
+      "new_ids": [
+        "M19"
+      ],
+      "changed_ids": [
+        "M19"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 19,
+      "action": {
+        "time": [
+          160.0,
+          165.0
+        ],
+        "modality": "audio",
+        "goal": "Determine whether 'it depends on the people' is delivered with falling intonation (closing the thought) or rising/uncertain intonation (leaving it open), and identify any hesitation marker immediately preceding the phrase, resolving Goal 1."
+      },
+      "candidate_id": "C21",
+      "parent_candidate_id": "C13",
+      "new_ids": [
+        "M20"
+      ],
+      "changed_ids": [
+        "M20"
+      ],
+      "followup_status": "no_new_media_content",
+      "followup_errors": []
+    }
+  ],
+  "coarse_rejections": [],
+  "semantic_review": "unreviewed",
+  "teacher_approved": false
+}

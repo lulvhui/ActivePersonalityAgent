@@ -1,0 +1,1127 @@
+{
+  "sample_id": "IELTS:193",
+  "run_status": "complete",
+  "final_status": "generated",
+  "final": {
+    "O": {
+      "level": "medium",
+      "reasoning": null
+    },
+    "C": {
+      "level": "medium",
+      "reasoning": null
+    },
+    "E": {
+      "level": "low",
+      "reasoning": null
+    },
+    "A": {
+      "level": "medium",
+      "reasoning": null
+    },
+    "N": {
+      "level": "low",
+      "reasoning": null
+    }
+  },
+  "final_explanation": "Across 20 observations of a formal IELTS speaking exam conducted in English as a second language, Fernando ('Fer') displays a personality profile shaped by genuine voluntary content choices layered atop setting-constrained behavior. For Openness, the spontaneous metaphor 'music basically cures your soul' (M8) and the elaborate imagination of a cross-cultural friend inviting him for summer (M12→M19) reflect curiosity and abstract thinking beyond the minimum the exam requires; however, his stated preferences for solitary routines, familiar space, and dislike of neighbors (M4, M8, M16) temper this with a pull toward the known, yielding a medium rating. Conscientiousness shows in linear, non-backtracking descriptions (M6), a logically sequenced uncertainty→desire→plan→condition structure (M7), and sustained attentive posture with appropriate nods (M3, M15); yet the pervasive fillers, hedges, and self-repairs across nearly every segment (M4, M8, M9, M11, M12, M14, M20)—even discounting L2 formulation load—indicate planning effort rather than polished organization, keeping C at medium. Extraversion is the trait most clearly weighted toward the introverted end: he voluntarily emphasizes solitary music listening (M8), dislike of neighbors and shared living (M4), rejection of live-music audiences (M10), and a preference for his own bathroom and spacious private areas (M16); his physical presence is consistently restrained—hands clasped, minimal gesturing, quiet flat tone—across nearly all windows. The one strong social signal ('I love meeting new people, making new relationships,' M12) is framed as aspirational travel fantasy rather than enacted behavior, and the nickname offer (M1) and occasional chuckles (M9, M13) add warmth but not sociability in the extraversion sense. Thus E is low. Agreeableness registers medium: the natural nickname offering (M1), the softening of a blanket dislike into specific exceptions (M11), the imagined friendly invitation (M19), and the direct-but-not-hostile 'Honestly I don't' (M10) show genuine cooperative warmth; however, much of the compliance (procedural handover M2, attentive listening M3, section-boundary nod M15) is setting-mandated, and there is no evidence of strong self-sacrifice, deep empathy, or conflict avoidance beyond the norm, so A stays medium rather than high. Neuroticism is low: across housing, music, finance, and travel topics, delivery remains calm, unhurried, and emotionally stable; uncertainties are practical ('I'm not really sure about it,' M7) rather than anxious; light self-deprecating chuckles (M9, M13) signal ease; no fidgeting, voice tremor, rushed speech, or distress leakage appears in any window. The L2 exam setting could suppress neurotic expression, but the consistency of composure across diverse topics and the absence of even minor anxiety markers (no repeated false starts, no prolonged silences, no postural tension) support a genuinely low N rather than merely a suppressed one.",
+  "contextual": [
+    {
+      "trait": "O",
+      "context_type": "reported",
+      "context": "Music-topic response: spontaneous metaphor and concrete habit anchoring",
+      "expression": "Voluntarily reaches for the abstract metaphor 'music basically cures your soul' rather than a literal description, then grounds it in routine (after work, before sleep, catchy tunes), showing a blend of creative abstraction and sensory openness.",
+      "citations": [
+        "M8"
+      ]
+    },
+    {
+      "trait": "O",
+      "context_type": "reported",
+      "context": "Travel-topic imagination: projecting a future cross-cultural friendship",
+      "expression": "Elaborates beyond the question into a vivid scenario of a friend in another country saying 'come on and spend your summer here,' resolving a trailing clause into a completed imaginative proposition without prompting.",
+      "citations": [
+        "M12",
+        "M19"
+      ]
+    },
+    {
+      "trait": "O",
+      "context_type": "reported",
+      "context": "Housing preference: stated dislike of shared living and neighbors",
+      "expression": "Opens with 'I really don't like neighbors' and frames flat living as undesirable due to proximity to others, revealing a pull toward familiar, bounded personal space that moderates openness to novel social environments.",
+      "citations": [
+        "M4"
+      ]
+    },
+    {
+      "trait": "C",
+      "context_type": "observed",
+      "context": "House-description segment: linear spatial narration",
+      "expression": "Describes the property path (back → yard → separate room) in a single forward-moving sequence with no self-correction, repetition, or backtracking, indicating organized mental mapping even while using approximation markers ('like').",
+      "citations": [
+        "M6"
+      ]
+    },
+    {
+      "trait": "C",
+      "context_type": "reported",
+      "context": "Property/finance question: structured uncertainty→desire→plan→condition",
+      "expression": "Sequences four logical stages in one 16-second turn without digression, closing the conditional 'unless I have enough money' with a declarative falling intonation, showing deliberate argumentative scaffolding.",
+      "citations": [
+        "M7"
+      ]
+    },
+    {
+      "trait": "C",
+      "context_type": "observed",
+      "context": "Listening and procedural segments: sustained attentive posture",
+      "expression": "Maintains hands clasped, torso upright, gaze on examiner across the transition into Part 1 (M3) and the section-close (M15), producing a single timely nod at the boundary—orderly compliance that exceeds the minimum the setting demands.",
+      "citations": [
+        "M3",
+        "M15"
+      ]
+    },
+    {
+      "trait": "C",
+      "context_type": "reported",
+      "context": "Pervasive formulation effort across topics",
+      "expression": "Fillers ('um,' 'uh,' 'mmm'), hedges ('I think,' 'I guess'), approximators ('like'), and self-repairs ('in my in my city') recur in nearly every substantive turn (M4, M8, M9, M11, M12, M14, M20), indicating on-the-spot construction rather than pre-organized delivery, even after discounting L2 load.",
+      "citations": [
+        "M4",
+        "M8",
+        "M9",
+        "M11",
+        "M12",
+        "M14",
+        "M20"
+      ]
+    },
+    {
+      "trait": "E",
+      "context_type": "reported",
+      "context": "Solitary music-listening habit",
+      "expression": "Specifies listening 'after work and before I go to sleep' to 'catchy tunes'—a private, routine-bound activity with no social component mentioned, reinforcing a preference for solitary engagement.",
+      "citations": [
+        "M8"
+      ]
+    },
+    {
+      "trait": "E",
+      "context_type": "reported",
+      "context": "Rejection of live-music social environment",
+      "expression": "States 'Honestly I don't' like live music because of audible audience singing and encores, delivering the rejection in a flat, unhurried tone without social softening, indicating discomfort with group musical participation.",
+      "citations": [
+        "M10"
+      ]
+    },
+    {
+      "trait": "E",
+      "context_type": "observed",
+      "context": "Physical restraint across nearly all segments",
+      "expression": "Hands remain clasped on the table through the majority of turns; the few open-palm gestures (M4 ~9s, M6 ~8-11s, M10 ~7-9s, M12 ~17-18s) are small, brief, and tied to specific descriptive moments rather than sustained expressive animation, reflecting low outward energy.",
+      "citations": [
+        "M4",
+        "M6",
+        "M10",
+        "M12"
+      ]
+    },
+    {
+      "trait": "E",
+      "context_type": "reported",
+      "context": "Aspirational social interest in travel",
+      "expression": "Enumerates 'knowing new places, meeting new people, making new relationships' with emphatic 'I love' verbs, but the entire list is framed within a hypothetical travel scenario and punctuated by three fillers, suggesting the social enthusiasm is aspirational rather than enacted in daily life.",
+      "citations": [
+        "M12"
+      ]
+    },
+    {
+      "trait": "A",
+      "context_type": "reported",
+      "context": "Introduction: voluntary nickname offering",
+      "expression": "When asked what to call him, naturally offers 'Fer' with a slight smile and relaxed posture, a small warm gesture that goes beyond the formal full-name requirement of the exam.",
+      "citations": [
+        "M1"
+      ]
+    },
+    {
+      "trait": "A",
+      "context_type": "reported",
+      "context": "Live-music dislike: softening via exceptions",
+      "expression": "Immediately after the blunt 'Honestly I don't,' pivots with 'basically I love when it's like a band I do like a singer,' using emphatic verbs to carve out positive exceptions and avoid leaving a purely negative impression.",
+      "citations": [
+        "M10",
+        "M11"
+      ]
+    },
+    {
+      "trait": "A",
+      "context_type": "reported",
+      "context": "Travel imagination: friendly invitation scenario",
+      "expression": "Constructs a hypothetical where a foreign friend casually says 'come on and spend your summer here,' framing cross-cultural connection in warm, informal, welcoming terms rather than transactional ones.",
+      "citations": [
+        "M19"
+      ]
+    },
+    {
+      "trait": "N",
+      "context_type": "observed",
+      "context": "Consistent calm delivery across all topic segments",
+      "expression": "Voice remains steady, unhurried, and flat-to-mildly-varied across housing, music, finance, and travel topics; no tremor, acceleration, volume spike, or prolonged silence indicative of anxiety appears in any of the 20 windows.",
+      "citations": [
+        "M4",
+        "M7",
+        "M8",
+        "M10",
+        "M12",
+        "M13"
+      ]
+    },
+    {
+      "trait": "N",
+      "context_type": "reported",
+      "context": "Practical uncertainty handled without distress",
+      "expression": "Prefaces the property-planning answer with 'I'm not really sure about it' and uses 'I think' and 'at some point,' but the delivery is matter-of-fact with a declarative close on the conditional, showing cognitive uncertainty without emotional agitation.",
+      "citations": [
+        "M7"
+      ]
+    },
+    {
+      "trait": "N",
+      "context_type": "observed",
+      "context": "Light self-deprecating humor",
+      "expression": "Produces a brief chuckle after acknowledging he doesn't travel as much as he'd like (M13) and another during the music-hours estimate (M9), using humor to soften minor self-awareness gaps without any trace of shame or distress.",
+      "citations": [
+        "M9",
+        "M13"
+      ]
+    }
+  ],
+  "contextual_errors": [],
+  "stop_reason": "candidate_pool_exhausted",
+  "global_scan": {
+    "coarse_summaries": [
+      {
+        "time": [
+          0.0,
+          60.0
+        ],
+        "modality": "audio_video",
+        "summary": "The video captures the opening segment of an IELTS speaking test at Ross IELTS Academy. The candidate, Fernando Alonso Lopez Velasco (candidate #0143278), is seated across from examiner Magna Shafi (#443533) at a white table with a Canadian flag and an Israeli flag placed between them. The candidate responds to introductory questions in a calm, measured tone with a Spanish-influenced accent. He provides his full name clearly, offers the nickname 'Fer,' and cooperatively hands over his identification when requested. His speech is brief but articulate, delivered at a moderate pace without hesitation. Visually, he sits with hands resting on the table, maintains steady eye contact with the examiner, and leans slightly forward during the ID exchange. Promotional text overlays scroll along the bottom of the frame advertising Ross IELTS Academy's speaking courses and website (www.rssielts.com). The examiner then transitions into Part 1, beginning with personal questions about accommodation.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          60.0,
+          120.0
+        ],
+        "modality": "audio_video",
+        "summary": "In this segment, the male interviewee (seated left, striped shirt, glasses) responds to the female examiner's (seated right, black top, ponytail) question about preferring a house or a flat. He states he prefers a house, explaining he does not like neighbors, values spacious places, and likes having his own bathroom. He notes his current house is pretty big and that he has always liked houses. When asked how long he has lived there, he replies five years, identifying it as his grandparents' house. He describes it as big and spacious with a large yard and a separate area from his bedroom accessed by crossing the yard. Throughout, his speech includes frequent hesitation fillers ('um,' 'uh') and self-corrections, but his ideas remain connected. Visually, he gestures with open palms when emphasizing points, maintains eye contact with the examiner, and occasionally glances down. The examiner nods, takes notes, and interjects brief acknowledgments ('Mhm,' 'Okay, great'). The setting is a plain white-walled room with Canadian and another flag on the table between them.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          120.0,
+          180.0
+        ],
+        "modality": "audio_video",
+        "summary": "In this segment (120–180 s), the interviewee wraps up a housing topic by expressing uncertainty about buying his own place, noting he would need to work more unless he has sufficient funds. The examiner then smoothly transitions to a new topic—music—and asks whether he enjoys listening. The interviewee responds enthusiastically, calling music something that 'cures your soul,' and specifies he listens after work and before sleep, preferring catchy tunes. When asked how many hours daily he spends with music, he pauses, laughs at himself for never having considered it, then estimates two to three hours, adding that he listens especially while working but tries not to work with it (sentence trails off). Throughout, his speech is marked by frequent fillers ('um,' 'uh'), self-repairs, and a generally warm, conversational tone. Visually, he remains seated facing the examiner, hands resting on the table, with occasional small nods and a brief smile during the self-deprecating laugh about never having counted his listening hours.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          180.0,
+          240.0
+        ],
+        "modality": "audio_video",
+        "summary": "In this 60-second window the interviewee finishes a thought about preferring recorded music over live performances, explaining that hearing other audience members sing or attempt to sing, plus encore sections, distracts him. He then qualifies his stance by noting he does enjoy live settings when the act is a band or singer he already likes. The examiner transitions the topic to travel, and the interviewee responds with an enthusiastic list—knowing new places, meeting new people, making new relationships—before beginning a hypothetical about befriending someone in another country, which is cut off at the segment boundary. Throughout, his speech carries frequent fillers ('um,' 'like,' 'basically') and self-repairs, while his hands remain clasped or make small open-palm gestures on the table. The examiner nods, writes notes, and uses brief affirmations ('Great,' 'Perfect') to pace the conversation. Visually both participants stay seated across a white table flanked by small Canadian and Israeli flags, with scrolling promotional text along the bottom of the frame.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          240.0,
+          289.576009
+        ],
+        "modality": "audio_video",
+        "summary": "In this segment, the interviewee continues answering Part 1 questions about travel preferences. He first references a friend's invitation to spend summer abroad, then responds to a question about air travel by laughing and admitting he doesn't fly as often as he'd like, though he enjoys it; he quickly pivots to expressing dislike of turbulence, linking it to feeling nauseous. When asked about future travel destinations, he names Italy and Japan in a structured two-part answer, elaborating on Japan specifically for its cuisine and drawing a connection to Asian food he already enjoys locally. The examiner then closes Part 1 with a thank-you and a procedural statement that the first part of the exam is complete. Visually, both participants remain seated across the table with national flags between them; the interviewee uses small hand gestures while listing countries, and the examiner nods and writes notes. Text overlays at the bottom promote the coaching service's website and mock-test booking.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          0,
+          289.576009
+        ],
+        "modality": "text",
+        "summary": "The interviewee, Fernando Alonso Lopez Velasco (goes by 'Fer'), participates in a structured English-speaking examination administered by examiner Mahnoush Shafi. Across roughly four and a half minutes of recorded speech, he addresses three topic clusters—accommodation, music, and travel—in response to paired questions (general preference followed by a follow-up detail).\n\nContent-wise, he states a preference for houses over flats (citing dislike of neighbors, desire for spaciousness, and a private bathroom), notes he has lived in his grandparents' large house for about five years, and hedges his long-term plans with a conditional tied to finances. On music, he declares a strong fondness, offers the metaphor that music 'cures your soul,' estimates two to three hours of daily listening, rejects live-performance settings because of audience noise and encores, but carves out an exception for artists he already likes. On travel, he expresses enthusiasm for novelty (new places, people, relationships), admits he does not travel as much as he wishes, likes flying but dislikes turbulence, and names Italy and Japan as desired destinations, elaborating only on Japan's cuisine.\n\nIn terms of communication style visible in the transcript, several patterns recur: (1) frequent use of 'like' as a hedge, approximation marker, or filler ('like for five years,' 'like a big yard,' 'around like two, three hours,' 'when it's like a band'); (2) discourse-level openers that signal candidness ('To be honest,' 'Honestly I don't'); (3) self-repairs and restarts ('prefer to living in a house… than a flat'; 'I had thought about that until now,' which appears to be a negation slip for 'I hadn't thought'); (4) conditional and hedging structures that soften commitments ('I'm not really sure about it,' 'unless I have enough money,' 'at some point'); (5) lists delivered with escalating rhythm ('knowing new places, meeting new people, making new relationships'); and (6) occasional truncation where a qualifying clause is abandoned mid-thought ('but I try not to work with…'). The overall register is informal and conversational, with the interviewee shifting between blunt declarations and tentative elaborations, often within the same turn. No numeric measurements of voice or movement are inferable from the text alone.",
+        "summary_status": "provided"
+      }
+    ],
+    "input_modalities": [
+      "text",
+      "audio",
+      "video"
+    ],
+    "observation_modes": [
+      "text",
+      "audio",
+      "video",
+      "audio_video"
+    ],
+    "sampling_fps": 1.0,
+    "full_audio_coverage": true,
+    "audio_coverage": [
+      [
+        0.0,
+        60.0
+      ],
+      [
+        60.0,
+        120.0
+      ],
+      [
+        120.0,
+        180.0
+      ],
+      [
+        180.0,
+        240.0
+      ],
+      [
+        240.0,
+        289.5754375
+      ]
+    ],
+    "video_coverage": [
+      [
+        0.0,
+        60.0
+      ],
+      [
+        60.0,
+        120.0
+      ],
+      [
+        120.0,
+        180.0
+      ],
+      [
+        180.0,
+        240.0
+      ],
+      [
+        240.0,
+        289.576009
+      ]
+    ],
+    "duration": 289.576009,
+    "sampled_frames": 290,
+    "audio_samples": 4633207,
+    "audio_sample_rate": 16000,
+    "chunk_seconds": 60.0,
+    "text_segmentation": "full_transcript",
+    "video_segmentation": "fixed_seconds",
+    "audio_segmentation": "decoded_samples"
+  },
+  "cost": {
+    "stage_timing": {
+      "coarse": {
+        "calls": 6,
+        "timed_calls": 0,
+        "prepare_seconds": 0.0,
+        "generation_seconds": 0.0,
+        "constraint_seconds": 0.0,
+        "total_seconds": 0.0,
+        "constraint_calls": 0,
+        "prompt_tokens": 20356,
+        "completion_tokens": 8405
+      },
+      "observe": {
+        "calls": 20,
+        "timed_calls": 0,
+        "prepare_seconds": 0.0,
+        "generation_seconds": 0.0,
+        "constraint_seconds": 0.0,
+        "total_seconds": 0.0,
+        "constraint_calls": 0,
+        "prompt_tokens": 56309,
+        "completion_tokens": 46533
+      },
+      "final": {
+        "calls": 1,
+        "timed_calls": 0,
+        "prepare_seconds": 0.0,
+        "generation_seconds": 0.0,
+        "constraint_seconds": 0.0,
+        "total_seconds": 0.0,
+        "constraint_calls": 0,
+        "prompt_tokens": 9040,
+        "completion_tokens": 5202
+      }
+    },
+    "active_seconds": 263.076,
+    "active_budget_seconds": null,
+    "coarse_audio_seconds": 289.5754375,
+    "coarse_frames": 290,
+    "jev_api_calls": 0,
+    "jev_estimated_cost": 0.0,
+    "coarse_video_segments": 5,
+    "coarse_video_fps": 1.0,
+    "generated_tokens": 60140,
+    "input_tokens": 85705
+  },
+  "novelty_rule": {
+    "video_fps": 2.0,
+    "min_new_seconds": 5.0,
+    "max_focus": 1
+  },
+  "novelty_filtered": [
+    {
+      "source_observation_id": "active_5",
+      "hint": "The interviewer's follow-up 'and…' at the tail of the current clip likely introduces a new question about the property; reading the next few seconds can confirm whether the spatial description prompted a specific probe (e.g., about the separate room's use) or a general transition.",
+      "goal": "Determine whether the interviewer's next question directly references the 'separate place' or 'yard' just described, which would indicate the spatial account was received as sufficiently coherent, or whether she moves to an unrelated topic, suggesting the description was treated as background context only.",
+      "stage": "proposal",
+      "parent_id": "C6",
+      "time": [
+        120.0,
+        123.0
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 3.0,
+        "video": 3.0
+      },
+      "new_still": false,
+      "region_root": "C6"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C19",
+      "parent_id": "C10",
+      "time": [
+        207.0,
+        212.0
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0,
+        "video": 0.0
+      },
+      "new_still": false,
+      "region_root": "C10"
+    },
+    {
+      "source_observation_id": "active_11",
+      "hint": "The prior segment ended mid-word ('bravo' or a transition). The 4 seconds before this clip's start may contain the tail of the previous answer or the interviewer's setup for 'Do you like traveling?', providing context for whether the travel question was a fresh topic or a follow-up.",
+      "goal": "Establish whether the travel question introduces a new domain or continues a prior thread, which affects how the three-item list is interpreted (spontaneous elaboration vs. structured answer to a multi-part prompt).",
+      "stage": "proposal",
+      "parent_id": "C12",
+      "time": [
+        216.0,
+        221.0
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 4.0,
+        "video": 4.0
+      },
+      "new_still": false,
+      "region_root": "C12"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C20",
+      "parent_id": "C11",
+      "time": [
+        216.0,
+        227.0
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 4.0,
+        "video": 4.0
+      },
+      "new_still": false,
+      "region_root": "C11"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C21",
+      "parent_id": "C11",
+      "time": [
+        227.0,
+        242.0
+      ],
+      "modality": "audio",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 2.0
+      },
+      "new_still": false,
+      "region_root": "C11"
+    }
+  ],
+  "memory": {
+    "observations": [
+      {
+        "id": "M1",
+        "observation_id": "active_0",
+        "modality": "audio_video",
+        "retrieval_window": [
+          27.0,
+          33.0
+        ],
+        "content": "The interviewee clearly enunciates his full name, 'Fernando Alonso Lopez Velasco,' with a steady pace and good vocal clarity.\nWhen the interviewer asks what she can call him, the interviewee naturally offers the nickname 'Fer'.\nVisually, the interviewee maintains a relaxed posture and exhibits a slight smile during the introduction and nickname exchange, indicating comfort.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M2",
+        "observation_id": "active_1",
+        "modality": "video",
+        "retrieval_window": [
+          37.0,
+          45.0
+        ],
+        "content": "The interviewee (man in striped shirt and glasses, seated left) initiates the procedural handover by extending his right arm across the table toward the examiner at approximately 2 seconds into the clip. The examiner (woman in black top, seated right) reaches out to receive the item.\nDuring the examination phase (roughly 3–5 seconds), the interviewee retracts his arm and returns to a neutral seated posture with both hands clasped on the table surface. His gaze remains directed toward the examiner while she looks down at the card in her hands.\nAt approximately 6 seconds, the examiner extends her hand back across the table to return the item. The interviewee reaches forward again and receives it at around 7 seconds, after which both settle back into their respective positions (he with hands on table, she with pen and notebook).\nThroughout the entire exchange (0–8 seconds), the interviewee's facial expression remains neutral and composed; no smiling, frowning, or significant brow movement is visible. His torso stays upright with no noticeable lean forward or backward beyond the arm extension required for the handover.\nThe Canadian flag and Pine Club flag remain stationary on the table between the two participants throughout the clip, serving as fixed spatial reference points for the interaction.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M3",
+        "observation_id": "active_2",
+        "modality": "audio_video",
+        "retrieval_window": [
+          46.0,
+          60.0
+        ],
+        "content": "The examiner (woman in black top, seated right) delivers a continuous spoken transition from administrative setup into Part 1 of the exam, stating: 'Very well. So we can now get started with the first part of the exam. In the first part, I will ask you some personal questions. First let's talk about your accommodation. Do you like a house…' Her speech is clear, moderately paced, and accompanied by small hand gestures over her notebook.\nThe candidate (man in striped shirt and glasses, seated left) remains silent throughout the 0–14 s window. He keeps both hands clasped together on the white table surface, torso upright, and gaze directed toward the examiner. No leaning forward, shifting, or fidgeting is visible.\nAt approximately 2–3 s, when the examiner says 'first part of the exam,' the candidate gives a single slight downward nod, then returns to a steady forward gaze. No further head movement is observed for the remainder of the segment.\nThe examiner alternates between looking down at her open notebook (around 4–5 s and 9–10 s) and looking up at the candidate while speaking. The candidate's posture and hand position do not change during these shifts.\nThe Canadian flag and Pine Club flag remain stationary on the table between the two participants. The scrolling banner at the bottom reads 'To book an online mock test of speaking visit our website www.ielts.com.'\nThe segment ends mid-question ('Do you like a house…'), indicating the candidate's substantive response has not yet begun within this 14-second window. The transition from procedural formality to the first personal-topic question is completed by the examiner; the candidate is in a listening-ready state awaiting his turn to speak.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M4",
+        "observation_id": "active_3",
+        "modality": "audio_video",
+        "retrieval_window": [
+          62.0,
+          75.0
+        ],
+        "content": "The candidate (man in striped shirt and glasses, seated left) begins his response at 0 s with 'Um, to be honest, I prefer to living in a house, uh, than a flat, as in a flat that will take me to live with around people, like I really don't like neighbors. Um…' Three hesitation fillers ('Um' at ~0 s, 'uh' at ~4 s, 'Um' at ~12 s) and one grammatical self-repair ('prefer to living in a house… than a flat') are audible within the 13-second window.\nAt approximately 9 s, the candidate lifts his right hand from the clasped-on-table position into a brief open-palm gesture directed slightly outward, then returns both hands to the clasped position by 10 s. This is the only visible hand movement in the segment; otherwise his posture remains upright with gaze fixed on the examiner.\nThe examiner (woman in black top, seated right) writes continuously in her notebook from 0 s through ~9 s, pauses writing and looks up at the candidate around 10–11 s, then resumes looking down. She produces a soft back-channel 'Mhm' at ~11 s.\nThe phrases 'spacious places' and 'own bathroom,' referenced in the pending goal, do not occur anywhere within this 0–13 s audio-video window. The candidate's content here is limited to the house-versus-flat preference and the stated dislike of neighbors.\nThe Canadian flag and Pine Club flag remain stationary on the table between the two participants throughout. The scrolling banner at the bottom reads 'You can enroll in amazing speaking course visiting our website www.ielts.com.'",
+        "content_status": "structured"
+      },
+      {
+        "id": "M5",
+        "observation_id": "active_4",
+        "modality": "audio_video",
+        "retrieval_window": [
+          90.0,
+          102.0
+        ],
+        "content": "The examiner asks 'how long have you lived there in your house?' and the interviewee replies 'I've been living there like for five years so far.'\nThe phrase 'so far' carries a slight level-to-rising inflection rather than a definitive falling cadence, framing the stated duration as still in progress.\nAn audible 'um' filler follows 'so far' before the interviewee continues 'as I said, it's my grandparents' house'; the pause lasts well under one second and functions as a brief planning beat between clauses.\nDuring the 'um' pause the interviewee's gaze shifts momentarily upward and slightly to the side, then returns toward the examiner; the movement is small and quick, consistent with formulating the next sentence rather than prolonged retrieval difficulty.\nThe interviewee self-reports the residence as his grandparents' house and prefaces the statement with 'as I said,' treating the ownership detail as information he considers previously communicated.\nThe examiner is visibly writing in a notebook throughout the interviewee's response, with her pen moving across the page during the 'um' pause.\nNo extended silence, repeated false starts, or self-correction occurs in the interviewee's answer; the delivery is continuous apart from the single 'um' filler.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M6",
+        "observation_id": "active_5",
+        "modality": "audio_video",
+        "retrieval_window": [
+          104.0,
+          118.0
+        ],
+        "content": "The interviewee describes the property in spatial terms: 'It's pretty big, spacious at the back. It has like a big yard. Um, it also has like a separate place from my bedroom which is like crossing the yard.' The filler word 'like' occurs three times, functioning as an approximation marker rather than a simile, and the overall description traces a path from the back of the house through the yard to a separate room.\nAn audible 'Um' pause follows 'big yard' before the interviewee resumes with 'it also has like a separate place,' marking a brief planning gap between the first and second spatial elements.\nAround the 8-to-11-second mark, the interviewee's right hand lifts from the table and executes a lateral sweeping gesture—moving outward and across—while articulating 'which is like crossing the yard.' The gesture traces a horizontal path consistent with the verbal description of traversing the yard to reach the separate place.\nThe hand gesture supplements the verbal account at the point where lexical precision is weakest: the phrase 'like crossing the yard' lacks a specific preposition or directional cue, and the sweeping motion supplies the spatial trajectory that words approximate.\nThe interviewer, seated opposite, is visibly writing in a notebook with a pen throughout the interviewee's description; at approximately the 12-to-13-second mark she looks up and responds 'Okay, great, and…', signaling acceptance of the spatial account and transition to the next question.\nNo self-correction, repetition of earlier clauses, or explicit rephrasing occurs within the interviewee's description; the three 'like' markers are distributed across successive clauses rather than clustered, and the narrative progresses linearly from house size to yard to separate room without backtracking.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M7",
+        "observation_id": "active_6",
+        "modality": "audio_video",
+        "retrieval_window": [
+          120.0,
+          136.0
+        ],
+        "content": "The interviewee's 16-second utterance contains three explicit qualification/uncertainty markers distributed across the speech: the opening phrase 'I'm not really sure about it,' the mid-utterance hedge 'I think,' and two 'um' fillers (one after the opening clause, one after 'more time'). All three markers cluster around content about acquiring a personal dwelling and adjusting work hours.\nThe conditional clause 'unless I have enough money to buy my own place' forms the closing segment of the utterance. The prosodic delivery of this clause carries a downward inflection at the final word 'place,' consistent with a declarative close rather than an open-ended rising question contour. The word 'unless' itself is produced without a preceding pause, linking it tightly to the prior 'working more time' clause.\nVisually, the interviewee (striped shirt, glasses) remains seated with both hands resting on the table surface, torso oriented toward the examiner throughout. The examiner (black top) is writing in a notebook with a pen for the majority of the segment; she lifts her gaze briefly around the 12–13-second mark, then returns to writing.\nDuring the opening uncertain phrase ('I'm not really sure about it, um'), the interviewee's gaze dips slightly downward before re-engaging the examiner's face as he transitions into 'I would like to have my own place at some point.' By the time he reaches the 'unless' conditional, his gaze is directed steadily at the examiner.\nThe temporal framing 'at some point' and 'right now more time' juxtapose an indefinite future desire with an immediate behavioral plan, both introduced with hedging language ('I'm not really sure,' 'I think'). No self-correction or repetition of earlier clauses occurs within the segment; the utterance proceeds linearly from uncertainty → desire → plan → condition.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M8",
+        "observation_id": "active_7",
+        "modality": "audio_video",
+        "retrieval_window": [
+          143.0,
+          158.0
+        ],
+        "content": "The interviewee (male, striped shirt, glasses, seated left) opens with a vocalized pause 'Mmm' before stating 'I do love listening to music,' then continues with 'Um, I think music, uh, basically cures your soul.' The two fillers ('um,' 'uh') fall within a single syntactic frame and do not break the sentence structure; they function as brief planning pauses between clauses.\nThe metaphor 'cures your soul' is immediately followed by the examiner's back-channel 'Mhm' (female, black top, seated right, nodding around the 8-second mark), after which the interviewee resumes with 'Um, I love listening to music after work and before I go to sleep, especially to catchy tunes.' The abstract claim is thus bracketed by concrete behavioral examples (post-work, pre-sleep, catchy tunes), giving the metaphor a contextual anchor in routine listening habits.\nVisually across the 0–15 s frames, the interviewee's hands remain clasped together on the table for the duration of his turn; no distinct open-palm or expansive hand gesture is identifiable at the 2 fps sampling rate during the 'cures your soul' phrase. Minor head tilts and slight forward lean are visible but the upper-body posture is largely static.\nThe examiner holds a pen over a notebook and nods once during the 'Mhm' response, then returns to a still listening posture. She does not interject or redirect during the interviewee's extended turn.\nThe second 'Um' (before 'I love listening to music after work…') operates as a discourse-transition marker separating the evaluative/metaphorical statement from the enumerative follow-up, rather than as a hesitation within a single thought.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M9",
+        "observation_id": "active_8",
+        "modality": "audio_video",
+        "retrieval_window": [
+          163.0,
+          175.0
+        ],
+        "content": "The interviewee opens with a drawn-out vocalized hesitation ('Mmm'), then states 'I have thought about that until now,' immediately followed by an audible chuckle before continuing into his estimate.\nHis spoken estimate is 'I guess that I listen to around like two, three hours of music a day'; the filler 'like' sits between 'around' and the numerals, and the hedging phrase 'I guess that I listen to' precedes the quantitative claim.\nThroughout the full 12-second segment the interviewee remains seated with both hands clasped together on the table, torso oriented toward the interviewer; no hand gesture, lean, or postural shift coincides with the chuckle or the numerical estimate.\nThe interviewer, seated opposite, lowers her gaze and writes in a notebook at roughly the 4-to-5-second mark while the interviewee is mid-sentence.\nNo truncated qualifying clause (e.g., 'but I try not to work with…') is audible within this segment; the interviewee's utterance ends cleanly on 'music a day' at approximately the 11-to-12-second mark.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M10",
+        "observation_id": "active_9",
+        "modality": "audio_video",
+        "retrieval_window": [
+          190.0,
+          207.0
+        ],
+        "content": "The interviewee (man in striped shirt, glasses, seated left of table) opens with the direct statement 'Honestly I don't,' delivered in a flat, unhurried tone with no visible hesitation at that moment.\nImmediately after the direct statement, the interviewee inserts 'um' and his speech rate drops noticeably; he then constructs an explanation involving live-music audiences, using the filler 'like' mid-sentence ('trying to like') and 'uh' before the closing 'but.'\nVisually, the interviewee's hands remain clasped together on the table surface through the initial 'Honestly I don't' and the 'um.' Around the 7-to-9-second mark, as he describes hearing people singing, he unclasps and opens both palms slightly in a small outward gesture, then re-clasps them by roughly 11 seconds.\nThe interviewee's brow tightens subtly during the phrase 'you can hear all the people singing or trying to like,' and his gaze stays directed toward the interviewer (woman in black, seated right) rather than dropping; he does not look away or touch his face.\nThe interviewer (woman, right side) holds a pen over a notepad, glances down briefly around 13–14 seconds, then looks back up; she does not speak during this segment.\nSelf-report content: the interviewee states he does not like live music because of audible audience singing and encores, ending with 'I don't like it, uh, but'—the trailing 'but' signals an unfinished contrast he does not complete within this clip.\nThe pattern of a blunt opening followed by slowed, filler-laden elaboration is consistent with formulation effort (structuring a reason) rather than a visible escalation of distress; the hand unclasping coincides with the descriptive middle of the explanation, not with the evaluative phrase 'I don't like it,' which is delivered with hands already re-clasped.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M11",
+        "observation_id": "active_10",
+        "modality": "audio_video",
+        "retrieval_window": [
+          207.0,
+          216.0
+        ],
+        "content": "The interviewee (man, striped shirt, glasses, seated left) continues directly from the trailing 'but' of the prior segment with: 'um basically I love when it's like a band I do like um a singer.' The pivot marker 'basically' immediately follows the unfinished contrast, signaling a shift from rejection to a named preference.\nSelf-report content: he identifies two preferred scenarios—a band he likes and a singer—framed as exceptions to his earlier blanket dislike of live music. The constructions 'I love' and 'I do like' employ do-support and the strong verb 'love,' which are emphatic rather than tentative lexical choices.\nThe word 'like' appears in two distinct roles within this utterance: (1) 'it's like a band'—functioning as an approximator or category softener (similar to / such as), and (2) 'I do like'—functioning as a full preference verb. The first instance carries a hedging quality; the second does not.\nFillers 'um' bracket the utterance (before 'basically' and before 'a singer'), indicating ongoing formulation effort even while asserting a positive preference. Speech rate remains moderate; no acceleration or sharp tonal spike is audible in the delivery of 'I love' or 'I do like.'\nVisually across the 2 fps frames: the interviewee remains seated with forearms/hands resting on or near the table surface, torso oriented toward the interviewer. No clear nod, palm-opening gesture, or postural loosening is distinguishable in the sampled frames. The interviewer (woman, black top, right) writes in her notebook through approximately 6 seconds, then lifts her gaze toward the interviewee around the 7-second mark without speaking.\nThe pattern—emphatic verbs ('love,' 'do like') embedded within filler-laden, moderately paced speech—is consistent with a genuine but effortfully articulated preference rather than a perfunctory social softening; however, the single approximator 'like' in 'it's like a band' introduces a mild categorical vagueness that prevents the statement from being fully specific.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M12",
+        "observation_id": "active_11",
+        "modality": "audio_video",
+        "retrieval_window": [
+          220.0,
+          240.0
+        ],
+        "content": "Interviewer (woman, black top, right side) opens with 'Bravo' at ~0s, then asks 'Do you like traveling?' at ~1s while looking at the interviewee. She holds a pen over a notebook on the table.\nInterviewee (man, striped shirt, glasses, left side) responds at ~3s: 'I do love traveling.' He then enumerates three items with fillers bracketing each: 'Um, I love knowing new places, meeting new people, um, making new relationships.' The fillers 'um' appear before the first item (~4s) and before the third item (~10s), interrupting the list's flow. Speech rate across the three items is steady-to-halting rather than accelerating; no rising-pitch cascade is audible.\nAt ~12s the interviewer produces a backchannel 'Mhm' while writing in her notebook (pen strokes visible in frames ~9–13s). She does not look up during this mark.\nThe interviewee resumes at ~13s: 'Um, that's like just, uh, I imagine that I can have a friend in another country that…' Two additional fillers ('um' at ~13s, 'uh' at ~15s) precede the image of cross-country friendship. The clause trails off mid-sentence at the 20s clip boundary with no audible pause, breath-reset, or downward intonation that would signal a deliberate stop.\nVisually, the interviewee's hands rest clasped on the table through the list portion (~5–12s). Around 17–18s, during the 'I imagine' clause, he unclasps and opens both palms upward in a small expansive gesture, then returns them toward the table. The interviewer lifts her gaze from the notebook toward him around 14–15s but does not speak again.\nBoth remain seated at a white table bearing a Canadian flag and an Israeli flag on small stands. The interviewee's torso stays oriented toward the interviewer throughout; no leaning-back or posture withdrawal is visible in the sampled frames.\nRegarding the goal's question of spontaneity vs. rehearsal: the three-item list is punctuated by three fillers ('um,' 'um,' 'uh') and the approximator 'like' in 'that's like just,' which are markers of online formulation rather than a smooth memorized enumeration. The open-palm gesture arrives after the list, during the imaginative extension, not synchronized with the list items themselves. The truncation at 20s coincides exactly with the clip boundary and lacks any prosodic closure, indicating the sentence was cut by the recording window rather than paused for a prompt.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M13",
+        "observation_id": "active_12",
+        "modality": "audio_video",
+        "retrieval_window": [
+          249.0,
+          257.0
+        ],
+        "content": "The male interviewee (striped shirt, glasses, seated left) reports not traveling as much as he would like, then states he does enjoy air travel, and begins a contrasting clause with 'However, I don't…' before the clip ends mid-sentence.\nAn audible brief chuckle follows the phrase 'not as much as I would like to' (approximately 2–3 s); it is short, does not interrupt the sentence flow, and is immediately followed by the positive qualifier 'but I do like traveling by air.'\nAfter the chuckle, the interviewee's vocal delivery shifts from a lightly amused register to a flatter, more declarative tone as he introduces 'However, I don't…'; the transition is noticeable but not jarring—there is no long pause or sharp break between the two clauses.\nVisually, the interviewee's hands remain clasped together on the white table throughout the 8-second window; no gesturing accompanies the laugh or the tonal shift.\nThe female interviewer (black top, seated right) holds a pen over a notepad, maintains forward-facing attention toward the interviewee, and briefly glances down at her notes around 5–6 s without interrupting him.\nTwo small flags (Canadian and an organizational flag) stand on the table between the speakers; a wall-mounted logo is visible behind the interviewer.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M14",
+        "observation_id": "active_13",
+        "modality": "audio_video",
+        "retrieval_window": [
+          266.0,
+          277.0
+        ],
+        "content": "The male interviewee (striped shirt, glasses) verbally enumerates two desired travel destinations—Italy and Japan—using the framing 'one is Italy, and the other one is Japan,' preceded by hesitation fillers 'Um' and 'Uh' that mark on-the-spot formulation.\nImmediately after naming both countries, he pivots to elaborating exclusively on Japan, linking it to cuisine ('Japan especially for their cuisine because I love…'), with no parallel elaboration offered for Italy within this window.\nHis right hand performs a small, brief listing gesture synchronized with the words 'one' and 'the other one,' appearing to visually mark the two items as he names them.\nThe Japan elaboration is truncated mid-sentence at the clip's end ('because I love…'), leaving the thought incomplete within this 11-second window.\nThe female interviewer remains seated across the table, pen poised over a notepad, listening without interrupting; Canadian and Israeli desk flags stand between the two participants.\nVocal delivery includes audible breath intake before 'actually' and a slight pitch rise on 'two countries,' consistent with introducing a structured list rather than a single answer.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M15",
+        "observation_id": "active_14",
+        "modality": "audio_video",
+        "retrieval_window": [
+          284.0,
+          289.5
+        ],
+        "content": "The examiner (woman seated on the right) delivers the closing line 'Great. Thank you very much, great. Now we are done with the first part of the exam' while looking down at her open notebook and holding a pen, writing or underlining as she speaks.\nThe interviewee (man seated on the left) keeps both hands folded on the table throughout the segment and does not produce any speech; he faces the examiner with a still posture.\nAt approximately the 3-to-4-second mark the examiner raises her gaze from the notebook and looks toward the interviewee, pausing her pen movement.\nAt approximately the 4-to-5-second mark the interviewee gives a single, slight downward nod of the head while his hands remain folded; no words accompany the gesture.\nThe exchange contains no verbal confirmation from the candidate; the section-boundary acknowledgment is carried entirely by the examiner's spoken closing sentence and the interviewee's non-verbal nod.\nBoth desk flags (Canadian national flag and the organizational/Rossi ITLS flag) stand stationary between the two participants for the full duration of the clip.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M16",
+        "observation_id": "active_15",
+        "modality": "audio_video",
+        "retrieval_window": [
+          75.0,
+          90.0
+        ],
+        "content": "The candidate (man in striped shirt, glasses, seated left) continues his housing-preference elaboration in this 0–15 s window. His spoken content is: 'Um, I like spacious places, so that's why houses have. Um, I like having my own bathroom. And the house I'm living in right now it's pretty big, so… I always like houses.'\n\nRegarding the pending goal's first sub-question (hand gestures coinciding with 'spacious places' and 'own bathroom'): During 'spacious places' (approximately 1–2 s) and 'own bathroom' (approximately 6–7 s), the candidate's hands remain clasped together on the table with no visible open-palm, pointing, or spreading motion. The video frames at 1.2 s, 2.2 s, 6.2 s, and 7.2 s all show the same resting clasped-hand posture. Therefore, no hand gesture coincides with either of those two phrases.\n\nThe only visible hand movement in this window occurs at approximately 13–14 s, where the candidate's right hand lifts slightly from the clasped position as he delivers the closing statement 'I always like houses.' This is a small, brief motion rather than an emphatic open-palm or spreading gesture, and it aligns with the final summarizing clause rather than with the concrete spatial details ('spacious places,' 'own bathroom').\n\nRegarding the pending goal's second sub-question (filler density): Two 'Um' fillers are audible in this 15-second window—one at the very start (~0 s) and one after 'houses have' (~4–5 s). This contrasts with three fillers ('Um,' 'uh,' 'Um') packed into the preceding 13-second window (M4). The rate drops from roughly one filler per 4.3 s to one per 7.5 s, confirming that filler density decreases as the candidate moves from initial formulation (house-vs-flat preference, dislike of neighbors) into concrete elaboration (specific features: spaciousness, private bathroom, current house size).\n\nThe examiner (woman in black top, seated right) writes continuously in her notebook from 0 s through approximately 9 s. Around 10–11 s she pauses writing and looks up toward the candidate, then resumes looking down and writing by 12 s. No verbal back-channel is distinctly audible in this window beyond what was captured in M4.\n\nThe Canadian flag and Pine Club flag remain stationary on the table between the two participants throughout. The scrolling banner at the bottom continues to display 'You can enroll in amazing speaking course visiting our website www.ielts.com.'\nThe candidate's self-report in this window identifies three concrete housing preferences: (1) spacious places as a reason for preferring houses, (2) having his own bathroom, and (3) the house he currently lives in being 'pretty big.' He closes with the general statement 'I always like houses,' framing the preference as longstanding rather than situational. The trailing 'so…' before the final clause functions as a brief connective pause rather than a full filler.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M17",
+        "observation_id": "active_16",
+        "modality": "audio",
+        "retrieval_window": [
+          136.0,
+          180.0
+        ],
+        "content": "Across the interviewee's speech in the music-topic segment (approximately 7–44 s on this clip), the following markers are identified by type: fillers — 'Mmm' at ~7 s and ~27 s, 'Um' at ~10 s, ~16 s, and ~40 s, 'uh' at ~12 s and ~40 s (7 filler tokens total); hedges — 'I think' at ~11 s, 'I guess that' at ~32 s, 'around like' at ~35 s (3 hedge phrases); explicit uncertainty — 'I have thought about that until now' at ~28–30 s (1 instance). Total marker count: 11 over roughly 37 seconds of interviewee speech, yielding a density of approximately 0.30 markers per second.\nComparing with the financial/property segment documented in prior observation M7 (0–16 s on the proposing clip): that segment contained 3 markers (not-really-sure, I-think, um×2) over ~16 s, a density of approximately 0.19 markers per second. The music-topic density (0.30/s) is slightly higher, indicating that the clustering of fillers, hedges, and uncertainty language is not confined to financial or property content but appears at equal or greater frequency in a casual, non-sensitive topic, supporting a habitual rather than topic-specific pattern.\nNo conditional constructions ('unless,' 'if,' 'provided that') occur anywhere in the interviewee's speech between 7 and 44 s on this clip. The nearest contrastive structure is 'but I try not to work with…' beginning at ~41 s, which is a concessive/contrastive clause rather than a conditional, and the utterance is truncated mid-phrase at the 44-second clip boundary, so no terminal intonation contour can be assessed for it. Consequently, no rising-or-falling comparison with the 'unless … place' declarative close noted in M7 is possible from this segment.\nThe examiner's questions in this clip ('Do you like listening to music?' at ~4–7 s; 'And how much time do you spend listening to music every day?' at ~23–27 s) are delivered in a neutral, rising-question intonation typical of English yes/no and wh-questions, and each is followed by the interviewee's characteristic vocalized pause ('Mmm') before he begins his response, suggesting the hesitation marker functions as a turn-planning device rather than topic-triggered uncertainty.\nAt approximately 40–44 s the interviewee produces 'That, uh, especially when I'm working, but I try not to work with—' and the clip ends mid-word. The filler 'uh' here again precedes an elaboration, consistent with the pattern observed at 10 s ('Um, I think music, uh, basically…') and 16 s ('Um, I love listening…'). The truncation prevents determination of whether the sentence would have closed with a conditional or simply a completed contrastive thought.",
+        "content_status": "structured",
+        "overlapping_media_reads": [
+          "M8",
+          "M9"
+        ]
+      },
+      {
+        "id": "M18",
+        "observation_id": "active_17",
+        "modality": "audio_video",
+        "retrieval_window": [
+          175.0,
+          180.0
+        ],
+        "content": "In the 0–5 s window (recording 175–180 s), the interviewer utters a brief acknowledgment ('Uh-huh') at the very start, after which the interviewee (man in striped shirt, glasses, seated left) produces the clause: 'That, uh, especially when I'm working, but I try not to work with—'. The filler 'uh' precedes 'especially'; the structure is concessive/contrastive ('but I try not to work with…'), and the utterance is truncated mid-word at the 5-second clip boundary, so no terminal intonation or completion is available.\nAcross all five sampled video frames (0.2 s, 1.2 s, 2.2 s, 3.2 s, 4.2 s), the interviewee remains seated with both hands clasped together on the white table, torso oriented toward the interviewer. No change in hand position, forward/backward lean, or gaze direction is visible during the truncated clause. He does not raise a hand, shift his weight, or alter his eye-line in a way that would signal active preparation to elaborate before the cut-off.\nThe interviewer (woman in black, seated right) is writing in a notebook throughout the window, gaze directed downward at the page, not toward the interviewee. Two desk flags (Canadian and Maccabi) sit between them on the table.\nGoal resolution: the qualifying/truncated clause ('but I try not to work with—') IS present in this window, confirming it begins shortly after the prior segment's end. However, the interviewee's observable posture (clasped hands, stable lean, fixed gaze toward interviewer) shows no preparatory shift; the truncation appears to be an external edit rather than a moment where he was visibly gearing up to continue with a new gesture or lean.",
+        "content_status": "structured",
+        "overlapping_media_reads": [
+          "M17"
+        ]
+      },
+      {
+        "id": "M19",
+        "observation_id": "active_18",
+        "modality": "audio",
+        "retrieval_window": [
+          240.0,
+          246.0
+        ],
+        "content": "Interviewee (male voice, continuing from the prior clip's 'I imagine that I can have a friend in another country that…') delivers: 'And at some point he this friend can just say come on and spend your summer here.' The utterance resolves the trailing 'that…' into a completed proposition: the hypothetical friend issues an invitation ('come on and spend your summer here'), spoken as reported speech. No interviewer voice, backchannel, or overlap is audible anywhere in the 6-second window.\nA self-correction occurs mid-clause: the interviewee begins with 'he' then immediately replaces it with 'this friend,' a marker of online formulation rather than rehearsed delivery. The overall pace is conversational and unforced; there is no elongated pause, breath-reset, or downward terminal intonation before 'And at some point,' indicating the sentence flows continuously from the prior clip's cutoff at the 20-second boundary.\nThe resolution of the M12 goal is confirmed: the earlier truncation at the clip boundary was editorial (recording-window cut), not conversational. The thought completes naturally across the boundary with no interruption, no interviewer prompt, and no deliberate stop signaled by prosody. The interviewee's narrative moves from imagining the friendship to specifying the friend's action (inviting him for a summer visit).",
+        "content_status": "structured"
+      },
+      {
+        "id": "M20",
+        "observation_id": "active_19",
+        "modality": "audio_video",
+        "retrieval_window": [
+          277.0,
+          289.576
+        ],
+        "content": "The male interviewee (striped shirt, glasses, seated left) completes his Japan/Asian-cuisine elaboration between 0 s and roughly 6 s, stating that he loves Asian food in his city, enjoys trying that kind of food, and would like to try the original version. His delivery includes a self-repair ('in my in my city') and a filler ('uh'), consistent with spontaneous speech rather than rehearsed formulation.\nItaly is never referenced again in this window; the two-country list introduced in the prior segment resolves entirely into one-sided elaboration on Japanese/Asian cuisine, with no parallel development for the Italian destination. The asymmetry therefore remains one-sided rather than balancing out.\nThe interviewee's right hand produces small, open-palm conversational gestures during the completion of his thought (approximately 0–5 s), but these do not replicate the discrete pointing/counting 'listing' gesture observed during the enumeration of 'one… the other one.' The listing gesture does not recur to reinforce structural clarity, suggesting it was incidental to the act of naming two items rather than a sustained organizational device.\nBy approximately 6 s the interviewee's hands settle into a folded, resting position on the table, and he ceases speaking. The female examiner (seated right) lifts her gaze from her notebook around the same moment, pen still in hand, and utters a brief 'Great' that bridges into the section-closing statement captured in the following window.\nNo verbal or gestural acknowledgment of the omitted Italy topic occurs from either participant; the examiner proceeds directly to closing the first part of the exam without prompting the interviewee to address the second country.\nThe exchange in this 0–7 s window confirms that the interviewee's formulation capacity prioritized one destination over the other without self-correction or invitation to balance, and that the visual listing cue was a one-time marker tied to enumeration rather than a recurring structural aid.",
+        "content_status": "structured",
+        "overlapping_media_reads": [
+          "M15"
+        ]
+      }
+    ]
+  },
+  "steps": [
+    {
+      "index": 0,
+      "action": {
+        "time": [
+          27.0,
+          33.0
+        ],
+        "modality": "audio_video",
+        "goal": "Closer read of vocal clarity, pacing, and the naturalness of the nickname offer to assess comfort level at the start of the test."
+      },
+      "candidate_id": "C1",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M1"
+      ],
+      "changed_ids": [
+        "M1"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 1,
+      "action": {
+        "time": [
+          37.0,
+          45.0
+        ],
+        "modality": "video",
+        "goal": "Observe the physical coordination, timing of the handover, and any non-verbal cues (eye contact, nodding) during this procedural interaction."
+      },
+      "candidate_id": "C2",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M2"
+      ],
+      "changed_ids": [
+        "M2"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 2,
+      "action": {
+        "time": [
+          46.0,
+          60.0
+        ],
+        "modality": "audio_video",
+        "goal": "Assess the candidate's listening behavior, readiness posture, and the transition from administrative formality to the speaking assessment proper."
+      },
+      "candidate_id": "C3",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M3"
+      ],
+      "changed_ids": [
+        "M3"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 3,
+      "action": {
+        "time": [
+          62.0,
+          75.0
+        ],
+        "modality": "audio_video",
+        "goal": "Assess whether the hesitation markers reflect genuine formulation effort or a pattern of filler dependence, and observe whether hand gestures align with the emphasis on 'spacious places' and 'own bathroom.'"
+      },
+      "candidate_id": "C4",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M4"
+      ],
+      "changed_ids": [
+        "M4"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 4,
+      "action": {
+        "time": [
+          90.0,
+          102.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine if the brief pause and upward eye movement indicate memory retrieval difficulty or simply a natural planning beat, and check whether the 'so far' qualifier is delivered with falling or rising intonation."
+      },
+      "candidate_id": "C5",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M5"
+      ],
+      "changed_ids": [
+        "M5"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 5,
+      "action": {
+        "time": [
+          104.0,
+          118.0
+        ],
+        "modality": "audio_video",
+        "goal": "Evaluate whether the spatial description is coherent despite the repetitive 'like' constructions, and observe if the hand gesture effectively supplements the verbal explanation or replaces missing lexical precision."
+      },
+      "candidate_id": "C6",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M6"
+      ],
+      "changed_ids": [
+        "M6"
+      ],
+      "followup_status": "no_new_media_content",
+      "followup_errors": []
+    },
+    {
+      "index": 6,
+      "action": {
+        "time": [
+          120.0,
+          136.0
+        ],
+        "modality": "audio_video",
+        "goal": "Assess whether the hesitations reflect genuine uncertainty about financial planning or a habitual speech pattern, and observe whether the conditional framing ('unless…') is delivered with rising or falling intonation to gauge commitment level."
+      },
+      "candidate_id": "C7",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M7"
+      ],
+      "changed_ids": [
+        "M7"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 7,
+      "action": {
+        "time": [
+          143.0,
+          158.0
+        ],
+        "modality": "audio_video",
+        "goal": "Evaluate the coherence of the metaphor ('cures your soul') in context, check whether the two fillers disrupt the flow or serve as natural planning beats, and observe whether the hand gesture reinforces the emotional claim or is merely incidental."
+      },
+      "candidate_id": "C8",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M8"
+      ],
+      "changed_ids": [
+        "M8"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 8,
+      "action": {
+        "time": [
+          163.0,
+          175.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the laugh signals genuine surprise at never having tracked the habit or a social lubricant, assess whether 'around like two, three hours' conveys a rough estimate or imprecision, and note the body posture during the truncated final clause to see if he was preparing to elaborate further."
+      },
+      "candidate_id": "C9",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M9"
+      ],
+      "changed_ids": [
+        "M9"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 9,
+      "action": {
+        "time": [
+          190.0,
+          207.0
+        ],
+        "modality": "audio_video",
+        "goal": "Assess whether the initial directness gives way to genuine discomfort or merely to formulation effort, and whether the hand-tightening coincides with the negative evaluation of live-music environments."
+      },
+      "candidate_id": "C10",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M10"
+      ],
+      "changed_ids": [
+        "M10"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 10,
+      "action": {
+        "time": [
+          207.0,
+          216.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the tonal shift and relaxed posture signal authentic preference or a socially expected softening after the earlier rejection, and check whether 'like' functions as a hedge or as a genuine lexical choice."
+      },
+      "candidate_id": "C11",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M11"
+      ],
+      "changed_ids": [
+        "M11"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 11,
+      "action": {
+        "time": [
+          220.0,
+          240.0
+        ],
+        "modality": "audio_video",
+        "goal": "Evaluate whether the accelerating pace and gestural openness reflect spontaneous enthusiasm or a rehearsed enumeration, and observe whether the truncated ending leaves the thought incomplete or was intentionally paused for the next prompt."
+      },
+      "candidate_id": "C12",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M12"
+      ],
+      "changed_ids": [
+        "M12"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 12,
+      "action": {
+        "time": [
+          249.0,
+          257.0
+        ],
+        "modality": "audio_video",
+        "goal": "Assess whether the laugh functions as a self-deprecating softener before the negative statement about turbulence, and whether the tonal shift from amused to matter-of-fact is smooth or abrupt."
+      },
+      "candidate_id": "C13",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M13"
+      ],
+      "changed_ids": [
+        "M13"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 13,
+      "action": {
+        "time": [
+          266.0,
+          277.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the asymmetry (naming two but elaborating on one) reflects a natural prioritization or a formulation limitation, and whether the hand gesture aids clarity or is incidental."
+      },
+      "candidate_id": "C14",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M14"
+      ],
+      "changed_ids": [
+        "M14"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 14,
+      "action": {
+        "time": [
+          284.0,
+          289.5
+        ],
+        "modality": "audio_video",
+        "goal": "Observe the transition cueing—whether the examiner's downward gaze and the interviewee's single nod signal mutual acknowledgment of the section boundary without verbal confirmation from the candidate."
+      },
+      "candidate_id": "C15",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M15"
+      ],
+      "changed_ids": [
+        "M15"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 15,
+      "action": {
+        "time": [
+          75.0,
+          90.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether hand gestures (open-palm, pointing, or spreading motions) coincide with the phrases 'spacious places' and 'own bathroom,' and assess whether the density of 'um/uh' fillers decreases as the candidate transitions from initial formulation into concrete elaboration of his housing preference."
+      },
+      "candidate_id": "C16",
+      "parent_candidate_id": "C4",
+      "new_ids": [
+        "M16"
+      ],
+      "changed_ids": [
+        "M16"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 16,
+      "action": {
+        "time": [
+          136.0,
+          180.0
+        ],
+        "modality": "audio",
+        "goal": "Count occurrences of fillers ('um,' 'uh'), hedges ('I think,' 'maybe,' 'sort of'), and explicit uncertainty statements in the interviewee's speech between 16 and 60 seconds. If these markers appear at similar density in non-financial topics, the pattern is habitual rather than tied to the property/money discussion. Also note whether any subsequent conditional constructions ('unless,' 'if,' 'provided that') carry rising or falling terminal intonation, to compare with the 'unless' clause observed at 0–16 s."
+      },
+      "candidate_id": "C17",
+      "parent_candidate_id": "C7",
+      "new_ids": [
+        "M17"
+      ],
+      "changed_ids": [
+        "M17"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 17,
+      "action": {
+        "time": [
+          175.0,
+          180.0
+        ],
+        "modality": "audio_video",
+        "goal": "Check whether a qualifying clause begins just after 12 s and, if so, record any change in the interviewee's hand position, lean, or gaze that would indicate he was preparing to elaborate before being cut off."
+      },
+      "candidate_id": "C18",
+      "parent_candidate_id": "C9",
+      "new_ids": [
+        "M18"
+      ],
+      "changed_ids": [
+        "M18"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 18,
+      "action": {
+        "time": [
+          240.0,
+          246.0
+        ],
+        "modality": "audio",
+        "goal": "Determine whether the trailing 'that…' resolves into a completed proposition or is overtaken by a new turn, clarifying whether the clip-end cutoff masked an intentional pause or an unfinished idea."
+      },
+      "candidate_id": "C22",
+      "parent_candidate_id": "C12",
+      "new_ids": [
+        "M19"
+      ],
+      "changed_ids": [
+        "M19"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 19,
+      "action": {
+        "time": [
+          277.0,
+          289.576
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the two-country asymmetry resolves into balanced elaboration (natural prioritization) or remains one-sided (formulation limitation), and whether the listing gesture reappears to aid structural clarity or does not recur, suggesting it was incidental."
+      },
+      "candidate_id": "C23",
+      "parent_candidate_id": "C14",
+      "new_ids": [
+        "M20"
+      ],
+      "changed_ids": [
+        "M20"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    }
+  ],
+  "coarse_rejections": [],
+  "semantic_review": "unreviewed",
+  "teacher_approved": false
+}

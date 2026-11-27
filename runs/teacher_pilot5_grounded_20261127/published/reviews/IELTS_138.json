@@ -1,0 +1,1073 @@
+{
+  "sample_id": "IELTS:138",
+  "run_status": "complete",
+  "final_status": "generated",
+  "final": {
+    "O": {
+      "level": "low",
+      "reasoning": null
+    },
+    "C": {
+      "level": "medium",
+      "reasoning": null
+    },
+    "E": {
+      "level": "medium",
+      "reasoning": null
+    },
+    "A": {
+      "level": "medium",
+      "reasoning": null
+    },
+    "N": {
+      "level": "low",
+      "reasoning": null
+    }
+  },
+  "final_explanation": "Openness is rated low because the interviewee consistently gravitates toward concrete, sensory, and practical topics (rain, walks, food, physical activity) and shows marked difficulty with abstract reasoning: the climate-change exchange (M7–M9) triggers a pause-reformulation pattern, heavy hedging ('I guess it's changed a little,' 'I'm not really sure if that's true'), and flat prosody, whereas directly experienced phenomena (rainy weather, M13/M20) elicit single unbroken declaratives with no hedges. This contrast indicates limited comfort with ideational abstraction rather than a temporary lapse. Conscientiousness is medium: he reports structured routines (gym once or twice weekly, M15; club membership with weekend visits, M10; trying to watch diet, M3) and notes past academic success (M14), yet the descriptions remain vague ('from time to time,' M4; 'pretty good,' M3) and the initial study motivation is attributed to parents rather than self-directed planning (M1, M14). Extraversion is medium: in socially comfortable domains he displays genuine warmth and animation—unhedged positive evaluation of friends with a forward nod (M12, M16), an exclamatory broad-toothed smile for childhood activity (M5), playful chuckling and head-shake on 'couch potatoes' (M6, M17), and a tonal lift on 'really love meat' with bilateral hand gestures (M3). However, abstract or unfamiliar topics (climate change, winter specifics) produce flat, minimal-movement delivery (M8, M9, M21), so the energy is topic-contingent rather than pervasive. Agreeableness is medium: he systematically softens assertions with hedges ('in my opinion,' M6; 'I guess,' M8; 'people say,' M9), credits external sources before stating his own view (M14), and uses inclusion tags ('you know,' M18), indicating a non-confrontational, harmony-preserving communication style. The mild colloquial judgment 'couch potatoes' (M6, M17) and the dismissive 'it's okay I guess' about his field of study (M2) show he is not excessively accommodating. Neuroticism is low: although verbal uncertainty appears ('I don't really know,' M1; 'not really sure,' M9), the accompanying physical behavior is calm—neutral expression, no brow furrowing, no tension, steady volume, squared shoulders—and the positive-affect moments (M4, M5, M10) lack the volatility pattern characteristic of elevated N. The interview setting and second-language context constrain expressiveness, but the absence of distress markers even during hedged responses supports a stable, low-anxiety profile.",
+  "contextual": [
+    {
+      "trait": "O",
+      "context_type": "observed",
+      "context": "Climate-change question (abstract, policy-level topic)",
+      "expression": "Two-stage pause-and-reformulation ('any changes … like climate change?'), then heavy hedging ('I guess it's changed a little'; 'people say it's hotter … but I'm not really sure'), flat even prosody, minimal head movement, no gestures, neutral face throughout.",
+      "citations": [
+        "M7",
+        "M8",
+        "M9"
+      ]
+    },
+    {
+      "trait": "O",
+      "context_type": "reported",
+      "context": "Weather-preference question (concrete, sensory topic)",
+      "expression": "Single unbroken compound sentence with zero fillers, hedges, or restarts; categorical declaration 'Rainy weather, definitely' followed by a causal chain stated as settled local fact.",
+      "citations": [
+        "M13",
+        "M20"
+      ]
+    },
+    {
+      "trait": "C",
+      "context_type": "reported",
+      "context": "Diet and physical-activity routines",
+      "expression": "States he 'tries to watch' diet, eats fruit/vegetables, goes to gym 'once or twice a week,' belongs to a horse-riding club visited on weekends; self-assessments remain approximate ('pretty good,' 'from time to time').",
+      "citations": [
+        "M3",
+        "M15",
+        "M10",
+        "M4"
+      ]
+    },
+    {
+      "trait": "C",
+      "context_type": "reported",
+      "context": "Academic history and study motivation",
+      "expression": "Initial motivation attributed to parents ('My parents thought it would be a good thing'); own achievement stated plainly ('I did well at mathematics'); subsequent evaluation hedged ('it might be interesting … it's okay I guess').",
+      "citations": [
+        "M1",
+        "M14",
+        "M2"
+      ]
+    },
+    {
+      "trait": "E",
+      "context_type": "observed",
+      "context": "Discussion of course friends and shared activities",
+      "expression": "Unhedged doubled affirmative ('Yes. Yes, I have'), positive noun phrase 'some great guys,' even listing cadence with no fillers, slight forward nod, relaxed smile, sustained eye contact toward interviewer.",
+      "citations": [
+        "M12",
+        "M16"
+      ]
+    },
+    {
+      "trait": "E",
+      "context_type": "observed",
+      "context": "Childhood-activity recall and opinion on kids' sedentary habits",
+      "expression": "Exclamatory 'Oh, very active, yes' with broad toothy smile and forward lean (M5); 'couch potatoes' delivered with a small smile, breathy chuckle, and lateral head-shake (M6, M17); playful, socially expressive tone.",
+      "citations": [
+        "M5",
+        "M6",
+        "M17"
+      ]
+    },
+    {
+      "trait": "E",
+      "context_type": "observed",
+      "context": "Winter-activity answer and climate-change follow-up (flat-delivery topics)",
+      "expression": "Flat even prosody, no pitch or energy shift, shoulders squared and still, no hand gestures, gaze fixed slightly off-axis; utterance reaches natural completion without animation.",
+      "citations": [
+        "M21",
+        "M9"
+      ]
+    },
+    {
+      "trait": "A",
+      "context_type": "observed",
+      "context": "Opinion on children's exercise habits",
+      "expression": "Assertive opening ('Oh, very important') tempered by hedge 'in my opinion' with downward inflection; colloquial label 'couch potatoes' softened by smile, chuckle, and head-shake, rendering the critique playful rather than hostile.",
+      "citations": [
+        "M6",
+        "M17"
+      ]
+    },
+    {
+      "trait": "A",
+      "context_type": "reported",
+      "context": "Epistemic attribution in climate-change response",
+      "expression": "Distances own stance by attributing the claim to unnamed others ('people say it's hotter than it used to be') before adding personal uncertainty ('I'm not really sure if that's true'), avoiding direct assertion or confrontation.",
+      "citations": [
+        "M9",
+        "M8"
+      ]
+    },
+    {
+      "trait": "N",
+      "context_type": "observed",
+      "context": "Expression of uncertainty across multiple topics",
+      "expression": "Verbal hedges ('I don't really know,' 'I guess,' 'not really sure') accompanied by calm physiology: no brow furrowing, no tension, no vocal tremor, volume and pace remain steady; slight smile fade and downward gaze in M1 read as momentary processing rather than distress.",
+      "citations": [
+        "M1",
+        "M8",
+        "M9"
+      ]
+    },
+    {
+      "trait": "N",
+      "context_type": "observed",
+      "context": "Positive-affect moments (diet, friends, childhood, horse riding)",
+      "expression": "Genuine smiles, tonal lifts, forward leans, and chuckles appear without subsequent crash into flatness or withdrawal; affect remains stable and warm across these segments, inconsistent with high emotional volatility.",
+      "citations": [
+        "M3",
+        "M5",
+        "M10",
+        "M16"
+      ]
+    }
+  ],
+  "contextual_errors": [],
+  "stop_reason": "candidate_pool_exhausted",
+  "global_scan": {
+    "coarse_summaries": [
+      {
+        "time": [
+          0.0,
+          60.0
+        ],
+        "modality": "audio_video",
+        "summary": "The interviewee, Ferris Ahmadi, participates in what appears to be a speaking test (Part 1). He introduces himself clearly, hands over identification when asked, and confirms he is a student studying engineering. When prompted to explain why he chose that subject, his delivery shifts noticeably: he begins with 'I don't really know,' uses filler sounds ('uh'), pauses between clauses, and attributes the decision to his parents' suggestion and his prior success in mathematics. He closes the answer with 'It's okay, I guess,' trailing off rather than asserting enthusiasm. Visually, he remains seated upright throughout, occasionally smiling during greetings but showing a more neutral or slightly downward gaze during the explanation of his subject choice. His speech rate slows and becomes more halting compared to the crisp, confident introductions earlier in the session.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          60.0,
+          120.0
+        ],
+        "modality": "audio_video",
+        "summary": "The interviewee, a young man in a white shirt seated across from a female interviewer in a teal top, discusses his social life on a course, his diet, exercise habits, and childhood activity level. He speaks in a calm, cooperative manner with occasional fillers ('uh,' 'you know') and brief pauses. His tone is generally positive and relaxed; he smiles when describing friendships and when recalling being active as a child. When discussing diet, he lists fruits and vegetables but adds with slight emphasis that he 'really loves meat too,' then self-assesses his diet as 'pretty good.' On exercise, he responds 'Yeah, sure, from time to time' with a small laugh, then elaborates on gym visits once or twice weekly and evening walks. His body language remains open and engaged throughout, with occasional nods and brief eye contact shifts toward the interviewer. The interviewer guides the conversation with clear topic transitions, and the interviewee follows without resistance, offering concise but complete answers.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          120.0,
+          180.0
+        ],
+        "modality": "audio_video",
+        "summary": "The interviewee, a young man in a white shirt seated across a round table from a female interviewer in a teal top, discusses childhood activity, the importance of exercise for children, and weather preferences. He speaks with occasional fillers ('uh', 'oh') and a generally relaxed, conversational cadence. When describing his own childhood (playing, fighting, wrestling with brothers), he uses a listing rhythm with slight hesitations. His response about children's activity moves from emphatic ('very important') to mildly critical, culminating in a small chuckle after calling sedentary kids 'couch potatoes.' On weather, he answers quickly and confidently ('Rainy weather, definitely') with a visible smile, then elaborates in a steady explanatory tone. When asked about recent weather changes, he first repeats and reframes the question ('Any changes… like climate change?'), showing a brief processing pause, before offering a hedged, trailing conclusion ('I guess it's changed a little') with lowered energy. The interviewer guides topic transitions clearly and maintains eye contact and note-taking throughout.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          180.0,
+          216.711995
+        ],
+        "modality": "audio_video",
+        "summary": "The interviewee opens by hedging about whether it is hotter than it used to be, saying he is 'not really sure if that's true,' delivered in a flat, tentative tone with minimal gesture. When the interviewer asks what he likes to do in winter, his delivery becomes noticeably more fluid and engaged: he explains that winter in his country is short, describes enjoying walks outside because it is not so hot, then adds that he sometimes goes horse riding through a club he belongs to on weekends, concluding with 'that's really fun' accompanied by a slight forward lean and a small smile. The interviewer then thanks him and announces the end of Part One, smiling as the scene transitions to a title card for Part 2 (Individual Long Turn). Throughout, the camera alternates between close-ups of the interviewee against a plain white wall and wider two-shots showing both participants at a round table.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          0,
+          216.711995
+        ],
+        "modality": "text",
+        "summary": "Ferris Ahmadi, an engineering student, answers a series of interview questions spanning studies, friendships, health habits, childhood activity, weather preferences, and winter routines. His delivery alternates between two broad registers: a hedged, low-energy mode when addressing topics he treats with reservation (choosing his major, climate change, exercise frequency), marked by fillers ('uh,' 'well,' 'you know'), trailing pitch, and qualifying phrases ('I guess,' 'I don't really know,' 'I'm not really sure'); and a warmer, faster, more animated mode when recalling concrete personal experiences (friends on his course, childhood play with brothers, rainy days in his region, horse-riding weekends). He uses colloquial shorthand ('couch potatoes,' 'great guys') and occasionally self-corrects mid-sentence (pivoting from healthy foods to loving meat). Pauses cluster before conjunctions or evaluative statements, and his final answers on uncertain topics tend to drop in volume and pitch rather than resolve firmly. The interview closes with a formal sign-off from the interviewer and a visible cut to a title card.",
+        "summary_status": "provided"
+      }
+    ],
+    "input_modalities": [
+      "text",
+      "audio",
+      "video"
+    ],
+    "observation_modes": [
+      "text",
+      "audio",
+      "video",
+      "audio_video"
+    ],
+    "sampling_fps": 1.0,
+    "full_audio_coverage": true,
+    "audio_coverage": [
+      [
+        0.0,
+        60.0
+      ],
+      [
+        60.0,
+        120.0
+      ],
+      [
+        120.0,
+        180.0
+      ],
+      [
+        180.0,
+        216.7115625
+      ]
+    ],
+    "video_coverage": [
+      [
+        0.0,
+        60.0
+      ],
+      [
+        60.0,
+        120.0
+      ],
+      [
+        120.0,
+        180.0
+      ],
+      [
+        180.0,
+        216.711995
+      ]
+    ],
+    "duration": 216.711995,
+    "sampled_frames": 217,
+    "audio_samples": 3467385,
+    "audio_sample_rate": 16000,
+    "chunk_seconds": 60.0,
+    "text_segmentation": "full_transcript",
+    "video_segmentation": "fixed_seconds",
+    "audio_segmentation": "decoded_samples"
+  },
+  "cost": {
+    "stage_timing": {
+      "coarse": {
+        "calls": 5,
+        "timed_calls": 0,
+        "prepare_seconds": 0.0,
+        "generation_seconds": 0.0,
+        "constraint_seconds": 0.0,
+        "total_seconds": 0.0,
+        "constraint_calls": 0,
+        "prompt_tokens": 14831,
+        "completion_tokens": 7105
+      },
+      "observe": {
+        "calls": 21,
+        "timed_calls": 0,
+        "prepare_seconds": 0.0,
+        "generation_seconds": 0.0,
+        "constraint_seconds": 0.0,
+        "total_seconds": 0.0,
+        "constraint_calls": 0,
+        "prompt_tokens": 50623,
+        "completion_tokens": 45482
+      },
+      "final": {
+        "calls": 1,
+        "timed_calls": 0,
+        "prepare_seconds": 0.0,
+        "generation_seconds": 0.0,
+        "constraint_seconds": 0.0,
+        "total_seconds": 0.0,
+        "constraint_calls": 0,
+        "prompt_tokens": 9301,
+        "completion_tokens": 4290
+      }
+    },
+    "active_seconds": 205.0,
+    "active_budget_seconds": null,
+    "coarse_audio_seconds": 216.7115625,
+    "coarse_frames": 217,
+    "jev_api_calls": 0,
+    "jev_estimated_cost": 0.0,
+    "coarse_video_segments": 4,
+    "coarse_video_fps": 1.0,
+    "generated_tokens": 56877,
+    "input_tokens": 74755
+  },
+  "novelty_rule": {
+    "video_fps": 2.0,
+    "min_new_seconds": 5.0,
+    "max_focus": 1
+  },
+  "novelty_filtered": [
+    {
+      "source_observation_id": "active_13",
+      "hint": "The interviewer's reaction shot (woman in teal, ~1.0–3.5 s) and the interviewee's return-frame expression (~4.0–5.5 s) were described only in broad terms; a dedicated video closer look can resolve whether the interviewer nods, shifts posture, or changes gaze angle while the interviewee speaks off-screen, and whether the interviewee's facial muscles (brow, jaw, lip tension) show any micro-shift at the moment the shot cuts back to him.",
+      "goal": "Determine whether the interviewer's visible engagement during the off-screen speech and the interviewee's facial re-set upon the return cut provide additional turn-management or affective context that the audio-only description cannot capture, specifically whether the parental-clause completion is delivered with the same ease as the self-report clause or whether a subtle tension change marks the shift from quoting others to asserting his own record.",
+      "stage": "proposal",
+      "parent_id": "C14",
+      "time": [
+        50.0,
+        56.0
+      ],
+      "modality": "video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "video": 0.0
+      },
+      "new_still": false,
+      "region_root": "C1"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C15",
+      "parent_id": "C2",
+      "time": [
+        50.0,
+        56.0
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0,
+        "video": 0.0
+      },
+      "new_still": false,
+      "region_root": "C2"
+    },
+    {
+      "source_observation_id": "active_16",
+      "hint": "Isolate the breathy chuckle following 'potatoes' to characterize whether it resembles a suppressed laugh (short, single-pulse, low amplitude) or a fuller amused exhalation (longer, multi-pulse), which bears on distinguishing self-awareness of bluntness from genuine amusement at the image.",
+      "goal": "Determine whether the chuckle after 'couch potatoes' signals self-awareness of the colloquialism's bluntness or genuine amusement at the image, and whether the preceding 'in my opinion' hedge softens the judgment or merely marks it as personal.",
+      "stage": "proposal",
+      "parent_id": "C18",
+      "time": [
+        141.0,
+        143.0
+      ],
+      "modality": "audio",
+      "reason": "focus_used",
+      "new_seconds": {
+        "audio": 0.0
+      },
+      "new_still": false,
+      "region_root": "C6"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C21",
+      "parent_id": "C9",
+      "time": [
+        184.0,
+        189.0
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 0.0,
+        "video": 0.0
+      },
+      "new_still": false,
+      "region_root": "C9"
+    }
+  ],
+  "memory": {
+    "observations": [
+      {
+        "id": "M1",
+        "observation_id": "active_0",
+        "modality": "audio_video",
+        "retrieval_window": [
+          44.0,
+          50.0
+        ],
+        "content": "The interviewee (young man in a white button-down shirt, seated against a plain white wall) self-reports uncertainty with the phrase 'I don't really know,' delivered with a slight smile and gaze directed a few degrees to his right (away from the interviewer).\nBetween 'I don't really know' and the next clause, an audible filler 'uh' occurs at approximately 3.0 s, preceded by a short pause of roughly one second; during this gap his smile fades and his eyes shift downward briefly.\nAt approximately 4.0 s the interviewee begins a new self-report—'My parents thought it would be a…'—with his gaze re-oriented more toward the camera/interviewer and his expression becoming more neutral and focused, suggesting a transition from personal uncertainty to relaying another party's perspective.\nThe sentence is cut off mid-word ('a…') at the 6.0 s boundary, leaving the parental opinion incomplete within this clip.\nNo hand gestures are visible; the interviewee's arms remain below frame throughout, so all turn-taking cues are carried by facial orientation, gaze direction, and vocal pacing.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M2",
+        "observation_id": "active_1",
+        "modality": "audio_video",
+        "retrieval_window": [
+          56.0,
+          60.0
+        ],
+        "content": "The interviewee, a young man in a white button-up shirt seated against a plain white wall, delivers two consecutive phrases: 'so I thought it might be interesting' (approximately 0–2 s) and 'it's okay I guess' (approximately 2–4 s).\nDuring the first phrase, the interviewee's facial expression includes a slight smile, his eyebrows lift modestly, and his posture is relatively upright, giving the delivery a mildly animated quality.\nDuring the second phrase, the vocal delivery drops noticeably in both pitch and volume, with the words 'I guess' trailing off rather than landing on a firm cadence.\nAccompanying the second phrase, a subtle shoulder shift or slight lateral head tilt is visible in the video frames, coinciding with the quieter vocal tone.\nThe overall arc across the four-second clip moves from a moderately engaged, faintly smiling presentation to a lower-energy, quieter conclusion, with the transition occurring at the boundary between the two sentences.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M3",
+        "observation_id": "active_2",
+        "modality": "audio_video",
+        "retrieval_window": [
+          82.0,
+          95.0
+        ],
+        "content": "The interviewee (man in white button-up shirt) delivers a continuous self-report about his dietary habits across the 13-second clip, stating he tries to watch his diet, eat healthy foods such as fruit and vegetables, but also loves meat, and concludes that his diet is pretty good.\nFrom 0.2s to 5.2s, the camera holds a medium close-up of the interviewee against a plain white wall; he looks slightly off-axis toward the interviewer's position while speaking the opening lines about watching his diet and eating healthy foods.\nAt approximately 6.2s the shot widens to a two-shot revealing the interviewer (woman in a teal top, hair in a bun) seated across a round black-topped table from the interviewee; a small side table with binders and a potted plant is visible to the left. During this wide shot (6.2s–8.2s) the interviewee gestures with both hands in front of his torso while the subtitle reads 'fruit vegetables but I really love meat too.'\nThe camera returns to the medium close-up of the interviewee at roughly 9.2s; his facial expression appears animated, with a slight smile, as the same subtitle line continues. The audio delivery of 'but I really love meat too' carries a noticeable tonal lift on 'really love' compared with the flatter listing cadence of 'fruit, vegetables.'\nFrom 11.2s to 12.2s, still in close-up, the interviewee delivers the self-assessment 'I think my diet is pretty good' with a small upward inflection at the end of the sentence; his gaze remains directed toward the interviewer's off-screen position, and his head tilts very slightly.\nNo other speaker produces audible speech in this clip; the interviewer is visible only in the wide shot and does not speak or gesture noticeably during her brief appearance.\nThe interviewee's self-reported content (diet choices, love of meat, overall assessment) is presented as first-person statements; the observed behaviors include hand gestures during the wide shot, a tonal shift on 'really love,' an upward inflection on the final sentence, and sustained off-axis gaze toward the interviewer.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M4",
+        "observation_id": "active_3",
+        "modality": "audio_video",
+        "retrieval_window": [
+          99.0,
+          103.0
+        ],
+        "content": "The interviewee (man in white button-up shirt, seated against a plain white wall) responds with 'Yeah, sure, from time to time' between 0.2s and 2.2s. His delivery includes a visible smile and an audible small laugh layered over the phrase 'from time to time,' and his torso remains largely still with only a subtle shoulder shift. His gaze stays directed slightly off-axis toward the interviewer's position throughout the response.\nAt approximately 3.2s the shot cuts to the interviewer (woman in a teal top, hair pulled back in a bun), who is captured mid-speech with her mouth open, asking 'What kind?' Her gaze is directed toward the interviewee's off-screen position. The follow-up question arrives roughly one second after the interviewee's vague answer concludes, indicating the interviewer treats the initial response as insufficient and presses for specificity.\nWithin this 4-second window the interviewee produces no elaboration; the clip ends at the onset of the interviewer's prompt. The observable sequence is: interviewee's smiling, laughing admission of infrequent activity → immediate interviewer challenge → no further interviewee response captured in this segment.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M5",
+        "observation_id": "active_4",
+        "modality": "audio_video",
+        "retrieval_window": [
+          116.0,
+          120.0
+        ],
+        "content": "The interviewer, a woman in a teal top with brown hair tied back, asks the question 'how active were you when you were a child' while facing right toward the interviewee.\nThe interviewee, a man in a white button-up shirt, responds with an exclamatory 'Oh' immediately followed by 'very active, yes.'\nThroughout his response (approximately 1.0 s to 4.0 s), the interviewee holds a broad smile with visible upper teeth and his eyes narrow slightly at the corners.\nHis torso leans marginally forward toward the interviewer during the answer, and his head tilts a few degrees to his right.\nThe word 'Oh' is delivered as a short, separate utterance with a rising intonation before a brief pause, after which 'very active, yes' follows in a single breath group at a steady pace.\nNo hand gestures are visible in frame; his arms remain below the shot boundary.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M6",
+        "observation_id": "active_5",
+        "modality": "audio_video",
+        "retrieval_window": [
+          131.0,
+          143.0
+        ],
+        "content": "The male interviewee in a white button-up shirt opens with an emphatic 'Oh, very important,' delivered with raised pitch and a forward lean, establishing a serious framing before shifting into a descriptive complaint about children's sedentary habits.\nBetween roughly 3 and 6 seconds, the male interviewee states 'nowadays kids just play video games all day' in a steady, matter-of-fact cadence, with minimal head movement and direct gaze toward the interviewer.\nAt approximately 6 to 9 seconds the shot cuts to a female listener in a teal top who nods lightly while the male's voice continues off-screen delivering 'they don't get enough exercise in my opinion,' the hedge 'in my opinion' spoken with a slight downward inflection that tempers the preceding assertion.\nThe camera returns to the male interviewee around 10 seconds as he concludes 'they're just couch potatoes'; his mouth curves into a brief smile and a short, breathy vocalization resembling a small chuckle follows the final word, accompanied by a subtle lateral head shake.\nThe overall arc of the male interviewee's delivery moves from emphatic seriousness at the opening phrase to a lighter, almost self-mocking tone at the closing colloquialism, with the chuckle and head shake occurring in the last second of the clip.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M7",
+        "observation_id": "active_6",
+        "modality": "audio_video",
+        "retrieval_window": [
+          169.0,
+          174.0
+        ],
+        "content": "The interviewee (young man in a white button-up shirt, seated against a plain white wall) speaks the phrase 'any changes' at approximately 1–2 seconds, then pauses briefly before adding 'like climate change?' around 4 seconds, as confirmed by both the audio track and the sequential yellow subtitles.\nThroughout the 5-second window, the interviewee's gaze remains directed slightly to his left (toward the presumed position of the interviewer); his head shows minimal lateral movement, with only a subtle forward tilt coinciding with the second clause 'like climate change?'.\nThe vocal delivery of 'any changes' is flat and declarative in tone, while 'like climate change?' carries a rising terminal intonation, producing an audible question contour on the final two words.\nThe interviewee does not gesture with his hands during this segment; his posture stays fixed in the chair, shoulders squared, with only mouth and slight brow movement accompanying speech.\nThe temporal gap between 'any changes' and 'like climate change?' (roughly 1.5–2 seconds of silence) functions as a reformulation: the speaker restates the interviewer's wording and then narrows it to a specific example, rather than launching directly into an answer.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M8",
+        "observation_id": "active_7",
+        "modality": "audio_video",
+        "retrieval_window": [
+          175.0,
+          180.0
+        ],
+        "content": "The clip opens with the interviewer (woman in a teal wrap-top, seated at a table with open papers and a pen) looking to her right toward the interviewee. She utters 'oh well' (confirmed by yellow subtitle at ~1.2 s), delivered in a soft, conversational tone that functions as a backchannel acknowledgment rather than a question.\nThe shot cuts to the interviewee (young man in a white button-up shirt, seated against a plain white wall). He speaks the phrase 'I guess it's changed a little' (subtitle visible at ~3.2 s). The words 'I guess' are produced with a slight upward inflection, marking them as a hedge; the remainder of the sentence descends in pitch and volume, with 'a little' delivered more quietly and with less articulatory energy than the opening words.\nDuring his utterance the interviewee's gaze is directed slightly to his left (toward the interviewer's presumed position). His head shows minimal lateral movement; shoulders remain squared and still in the chair. No hand gestures are visible in frame.\nAt approximately 4.2 s, after the final word, the interviewee's eyes shift marginally downward and his mouth closes, producing a brief pause before any further speech. The overall body posture does not change—no leaning forward or backward is observed.\nSelf-report content: The interviewee states that something 'has changed a little,' framing the degree of change as minor via the hedge 'I guess' and the quantifier 'a little.' This is the entirety of his verbal response in this window; no elaboration, example, or correction follows within the 5-second clip.\nObserved behavior vs. self-report separation: The linguistic hedging ('I guess') and the attenuated vocal delivery on 'a little' are observable acoustic features. The reduced movement and slight downward gaze at sentence-end are observable kinematic features. Whether these jointly signal uncertainty, minimization, disengagement, or a natural turn-closing rhythm cannot be determined from this single 5-second window alone; the pattern is consistent with multiple interpretations.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M9",
+        "observation_id": "active_8",
+        "modality": "audio_video",
+        "retrieval_window": [
+          180.0,
+          184.0
+        ],
+        "content": "The interviewee (young man in a white button-up shirt, seated against a plain white wall) delivers the full utterance 'people say it's hotter than it used to be but I'm not really sure if that's true' across the 4-second window. Yellow subtitles track the speech in two segments: the first clause appears at approximately 0.2–2.2 s and the second at approximately 2.2–3.2 s.\n\nSelf-report content: The interviewee attributes the temperature claim to others ('people say') and then explicitly marks his own epistemic stance as uncertain ('I'm not really sure if that's true'). No elaboration, example, or correction follows within this window.\n\nObserved vocal delivery: The cadence is flat and even throughout, with a slight elongation on the phrase 'not really sure.' There is no rising intonation that would signal a question, nor a strong falling contour that would signal conviction. Volume remains consistent; no emphasis is placed on 'hotter' or 'true.'\n\nObserved physical behavior: The interviewee's head shows minimal lateral or vertical movement across all four sampled frames. His gaze is directed slightly to his left (toward the interviewer's presumed off-camera position) and does not shift noticeably. His facial expression remains neutral—no brow furrowing, no smile, no lip-pressing. Shoulders stay squared and still in the chair. No hand gestures enter the frame at any point. The torso does not lean forward or backward.\n\nSeparation note: The linguistic attribution ('people say') and the hedge ('not really sure') are observable features of the transcript. The flat prosody, minimal head movement, neutral expression, and absence of gesturing are observable acoustic and kinematic features. Whether these jointly indicate genuine uncertainty, a habitual hedging pattern, or simple conversational restraint cannot be resolved from this single 4-second window alone; the pattern is consistent with the hedging and stillness documented in the immediately preceding exchange (M8).",
+        "content_status": "structured"
+      },
+      {
+        "id": "M10",
+        "observation_id": "active_9",
+        "modality": "audio_video",
+        "retrieval_window": [
+          199.0,
+          208.0
+        ],
+        "content": "The interviewee (young man in a white button-down shirt) narrates a leisure routine: he states he sometimes goes horse riding, belongs to a club, and visits it on weekends, closing with the evaluative remark 'That's really fun.'\nHis speech contains a single brief filler 'uh' inserted between 'I go there' and 'a bit at weekends'; apart from that micro-pause, the sentence flows continuously without restarts or elongated silences.\nAt approximately 8 seconds, on the phrase 'That's really fun,' his mouth corners lift into a slight smile and his vocal tone warms and brightens relative to the flatter, matter-of-fact delivery used for the club-membership and weekend-frequency statements just before.\nThe camera cuts from a medium close-up of the interviewee alone (0–3 s) to a wider two-shot (3–9 s) that reveals the interviewer—a woman in a teal top—seated across a round table with papers and a pen, confirming a structured interview setting.\nThroughout the 9-second span the interviewee remains seated upright with both hands resting in his lap; no hand gestures accompany the horse-riding description, and his gaze stays directed toward the interviewer, including during the 'uh' filler moment.\nThe overall pacing is moderate and even; the only noticeable prosodic shift is the upward inflection and slight increase in energy on the final clause 'that's really fun,' which stands apart from the otherwise level, descriptive tone of the preceding sentences.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M11",
+        "observation_id": "active_10",
+        "modality": "audio_video",
+        "retrieval_window": [
+          209.0,
+          216.0
+        ],
+        "content": "The interviewer (woman in teal top) delivers the closing line 'Thank you. That brings us to the end of part one' in a clear, formal register with steady pacing and no fillers or hesitations.\nDuring the two-shot (0–3 s), the interviewer looks down at papers spread on the round table while speaking; the interviewee (man in white button-down shirt) sits upright with both hands resting flat on his knees, gaze directed toward the interviewer, and remains completely still throughout the utterance—no nodding, shifting, or hand movement is visible.\nAt approximately 4 s the camera cuts to a medium close-up of the interviewer alone. She smiles broadly (mouth open, cheeks raised) while looking down at her documents, holding a pen in her right hand and using both hands to shuffle and reorganize the papers on the table. The smile coincides with the physical preparation of materials rather than with any spoken words.\nAt approximately 7 s a full-screen title card appears reading 'Part 2 Individual Long Turn' accompanied by a small running-figure icon in the lower-right corner, marking a hard structural break between sections.\nThe interviewee produces no speech, vocalization, or audible breath during the entire 7-second span; his silence and fixed posture are consistent with passive reception of the transition announcement rather than an active conversational turn.\nThe interviewer's sequence—formal verbal closure, then broad smile paired with paper-shuffling, then title-card cut—reads as a rehearsed procedural transition: the smile functions as a brief social acknowledgment embedded within the mechanical act of preparing the next segment's materials, not as an independent rapport-building exchange.\nNo hand gestures, head tilts, or postural adjustments from the interviewee accompany the closing line; his stillness persists unchanged from the two-shot through the cut to the interviewer's close-up, suggesting he is waiting for the next instruction rather than resetting or disengaging.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M12",
+        "observation_id": "active_11",
+        "modality": "text",
+        "retrieval_window": [
+          60.0,
+          72.0
+        ],
+        "content": "Ferris responds to the interviewer's question ('Have you made many friends on the course?') with a direct, unhedged affirmative: 'Yes, I have.' No qualifying adverbs or epistemic markers ('I guess,' 'sort of,' 'probably') appear anywhere in the reply.\nHe characterizes his peers with the informal, positively valenced noun phrase 'some great guys on my course,' attributing the evaluation to himself rather than quoting or distancing.\nFerris then enumerates three shared activities in a single compound sentence: 'study after class and drink coffee, chat.' The verbs are bare and sequential, linked by 'and' and a comma, producing a compact list without further elaboration on any item.\nThe enumeration is closed with the colloquial summarizing tag 'that kind of thing,' which treats the preceding list as a representative sample rather than an exhaustive inventory.\nStructurally, the answer progresses from a two-word confirmation, to a seven-word descriptive clause, to a nineteen-word compound sentence ending in a four-word tag—sentence length increases across the turn while qualifying language remains absent.\nIn contrast to the adjacent answer recorded in prior observation M2 (where Ferris used the hedge 'I guess' and the phrase 'it's okay'), this response contains no mitigating or uncertain markers; the linguistic register shifts from tentative evaluation to straightforward description of social routine.\nBecause the segment is text-only with unverified ASR timing, no claims can be made here about vocal cadence, rhythmic pacing, filler density, pitch contour, or sentence-length shifts in delivery; those prosodic features fall outside the current modality.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M13",
+        "observation_id": "active_12",
+        "modality": "text",
+        "retrieval_window": [
+          150.0,
+          168.0
+        ],
+        "content": "Self-report (Ferris, interviewee): Asked \"What kind of weather do you like best?\", he answers \"Rainy weather, definitely,\" asserting a categorical preference with the intensifying adverb \"definitely\" and no qualifier. Asked \"Why?\", he explains in first person that rain is rare in his region, that its arrival makes everyone happy, and that it lowers the temperature. These are stated as settled facts about his locale and its social response, not as opinions under consideration.\nObserved linguistic structure (text transcript, timing unverified_asr): The \"why\" turn is a single syntactically unbroken compound sentence—\"Because it rarely rains in my region, so when it does everyone is really happy and it cools down the temperature too\"—chaining three propositions via causal and additive conjunctions (because / so when / and). Across both turns, no filler tokens, restart markers, or hedge expressions (\"I guess,\" \"I don't know,\" \"sort of,\" \"maybe,\" \"kind of\") appear. The initial reply terminates declaratively (\"definitely.\"), and the explanation sustains declarative syntax to its final clause without shifting into interrogative or tentative framing.\nComparative finding against prior observation M7 (audio_video, local_time [19.0, 24.0]): In the immediately following climate-change exchange, Ferris produces \"any changes,\" holds roughly 1.5–2 seconds of silence, then reformulates as \"like climate change?\" with a rising terminal intonation—an interrogative, two-stage narrowing pattern. The rainy-weather turns contrast structurally on every axis visible in the transcript and M7: no pause-reformulation sequence, no interrogative contour, no restatement-and-narrowing move, no hedge vocabulary. The topical concreteness (a directly experienced, sensorily immediate phenomenon) coincides with single-declarative delivery, whereas the abstract policy topic triggers fragmented, question-shaped output.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M14",
+        "observation_id": "active_13",
+        "modality": "audio_video",
+        "retrieval_window": [
+          50.0,
+          60.0
+        ],
+        "content": "The interviewee (young man in white button-down shirt) completes the parental-opinion clause begun in the prior segment: '…a good thing for me to study, and I did well at mathematics at high school.' The delivery across approximately 0.0–5.0 s is continuous, with no audible fillers ('uh,' 'um') interrupting the flow, in contrast to the halting 'I don't really know… uh…' opening documented in M1.\nBetween roughly 1.0 s and 3.5 s the video cuts to the interviewer—a woman in a teal top seated at a desk with papers and a small plant—while the interviewee's voice continues off-screen. During her on-screen appearance she faces slightly toward the interviewee's direction, her hands rest on the desk, and her expression is attentive and neutral; she does not speak or gesture during this interval.\nWhen the shot returns to the interviewee at approximately 4.0 s, he is mid-clause ('and I did well at mathematics at high school'). His gaze is directed forward toward the interviewer/camera axis, his brow is level, and his mouth moves in a steady, unhurried rhythm. No shoulder shrug, head-tilt, or smile is visible in this portion, marking a flatter affect compared to the slight smile noted at the very start of M1.\nThe syntactic content of the completed clause shifts from third-party attribution ('My parents thought it would be a good thing for me to study') to first-person self-assessment ('I did well at mathematics at high school'), moving the epistemic source from the parents to the interviewee himself without an audible pause or restart at the junction.\nAt approximately 5.0 s the interviewee transitions into the consequence clause 'so I thought it might be interesting,' which is the opening of the segment already detailed in M2 (6.0–10.0 s). The vocal energy and pacing at this boundary remain consistent with the preceding clause; no new filler or restart is observed at the 5.0–6.0 s seam.",
+        "content_status": "structured",
+        "overlapping_media_reads": [
+          "M2"
+        ]
+      },
+      {
+        "id": "M15",
+        "observation_id": "active_14",
+        "modality": "audio_video",
+        "retrieval_window": [
+          103.0,
+          120.0
+        ],
+        "content": "The interviewee (man in white button-up shirt) delivers a detailed self-report about his physical activity between approximately 2.2 s and 10.2 s: he states he tries to go to the gym once or twice a week and likes going for walks in the evening when it is a bit cooler. His vocal delivery during this elaboration is steady and explanatory, without the audible small laugh or broad smile that characterized his earlier 'from time to time' response captured in prior observation M4.\nThe transition from the interviewer's prompt 'What kind?' (visible at ~0.2–1.2 s) to the interviewee's answer shows no extended pause; the interviewee begins speaking almost immediately as the shot cuts to him at ~2.2 s, indicating a direct, unhesitating shift from the interviewer's challenge to his elaboration.\nDuring his gym-and-walks explanation (~2.2–10.2 s), the interviewee's facial expression remains comparatively neutral: his mouth moves with speech but no sustained smile or laugh is visible, and his gaze stays directed slightly off-axis toward the interviewer's position. His torso is largely still with no prominent hand gestures entering frame. This contrasts with the laugh-smile pattern noted in M4 for 'from time to time' and the broad toothy smile recorded in M5 for 'very active, yes.'\nThe interviewee's self-reported content (gym frequency, preference for cooler evening walks) is delivered as a single continuous turn without interruption from the interviewer, who next speaks at ~11.2 s to ask about childhood activity. The interviewee thus occupies the full ~8-second window between the two interviewer questions with his explanatory answer.",
+        "content_status": "structured",
+        "overlapping_media_reads": [
+          "M5"
+        ]
+      },
+      {
+        "id": "M16",
+        "observation_id": "active_15",
+        "modality": "audio_video",
+        "retrieval_window": [
+          60.0,
+          82.0
+        ],
+        "content": "The interviewee (young man in a white button-down shirt, seated against a plain white wall) answers the interviewer's question about making friends on the course. He opens with a doubled affirmative—'Yes. Yes, I have'—delivered in a steady, unhedged tone with a slight forward nod visible at approximately 4–5 s. He then characterises his peers as 'some great guys on my course' (roughly 5–7 s), maintaining eye contact toward the interviewer's off-screen position and a mild, relaxed smile.\n\nFrom approximately 8–13 s the interviewee enumerates shared activities in one compound sentence: 'Sometimes we get together and study after class and drink coffee, chat, that kind of thing.' The listing cadence is even and conversational; the closing tag 'that kind of thing' is delivered with a slight downward inflection and a small head-tilt, signalling that the list is illustrative rather than exhaustive. During this stretch the camera alternates between a close-up of the interviewee (10–13 s) and a reaction shot of the interviewer (7–10 s), who listens with a neutral, attentive expression and a faint smile, hands resting on the desk.\n\nAt roughly 14 s the shot widens to a two-shot showing both participants seated across a round black-topped table, with a small side-table holding binders and a potted plant visible to the left. The interviewer (woman in a teal top, hair in a bun) pivots the conversation: 'Let's talk about keeping fit and healthy now. What do you do to stay healthy?' Her delivery is clear and evenly paced, with a brief glance down at her notes before looking back up at the interviewee. The interviewee sits with hands clasped in his lap, listening.\n\nAt approximately 20 s the camera cuts back to a medium close-up of the interviewee. The subtitle 'what do you do to stay healthy' lingers briefly, then disappears. The interviewee's mouth opens and he begins to form a response, but the clip ends at 22 s before any words are audible beyond the initial onset of speech. No filler sounds, laughter, or hesitations are present in the interviewee's friend-related answer; the vocal energy remains moderate and consistent throughout the 0–14 s window, contrasting with the lower-pitch, trailing-off delivery noted in the adjacent pre-clip segment (M2).\nThe interviewer's transition from the social/friends topic to the health/fitness topic occurs cleanly at the 14-second mark in the wide two-shot, with no overlap or interruption of the interviewee's prior turn. The interviewee does not gesture or shift posture during the interviewer's question (14–20 s); he remains still, hands clasped, gaze directed toward her, indicating an attentive listening posture before his own turn begins.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M17",
+        "observation_id": "active_16",
+        "modality": "audio_video",
+        "retrieval_window": [
+          138.0,
+          143.0
+        ],
+        "content": "From 0.0 to approximately 2.0 seconds, the frame holds on the female listener in a teal top with a ponytail, angled slightly to her right. The male interviewee's voice is heard off-screen delivering 'they don't get enough exercise in my opinion,' with the subtitle displaying that exact text. The female maintains a still, attentive posture with only a faint nod visible near the end of this segment.\nAt roughly 2.0 seconds the shot cuts to the male interviewee in a white button-up shirt seated against a plain white wall. He speaks 'they're just couch potatoes' directly toward the interviewer; his mouth shapes the words and the corners lift briefly into a small smile as he reaches 'potatoes.' The subtitle updates to match the new phrase.\nImmediately after the final word (approximately 3.5–4.0 s), a short, breathy exhalation consistent with a light chuckle is audible on the soundtrack. In the same moment a subtle lateral head movement—a small shake from side to side—is visible in the frame. The male's gaze does not break from the interviewer during this vocalization.\nThe hedge 'in my opinion' is produced with a slight downward pitch drift at its tail and occurs entirely while the camera is on the female listener. The colloquial label 'couch potatoes,' the smile, the chuckle, and the head shake all fall within the male's on-screen segment after the cut, establishing a clear temporal separation between the qualifying phrase and the blunt descriptor plus its paralinguistic tag.",
+        "content_status": "structured",
+        "overlapping_media_reads": [
+          "M6"
+        ]
+      },
+      {
+        "id": "M18",
+        "observation_id": "active_17",
+        "modality": "audio",
+        "retrieval_window": [
+          120.0,
+          131.0
+        ],
+        "content": "The interviewee (male voice) delivers a self-report about childhood physical activity between approximately 0.0 s and 5.5 s: 'I was always uh playing with my brothers, uh fighting, wrestling, playing games, you know.' His speech contains two audible filler hesitations ('uh') at the start of the enumeration and before 'fighting,' giving the listing a slightly halting, recollective rhythm. The sequence 'fighting, wrestling, playing games' is spoken in a quick, evenly paced triplet, and the closing tag 'you know' is delivered with a falling intonation, functioning as a request for shared understanding rather than a question.\nThe interviewer (female voice) speaks from approximately 6.5 s to 9.5 s, posing the question: 'How important is it for children to be active?' The question is delivered in a single, measured breath group at a moderate pace with a clear rising terminal intonation on 'active,' marking it as an open-ended prompt. The phrasing is an independent formulation; it does not echo or repeat any wording from the interviewee's preceding turn.\nThere is a brief silent gap of roughly one second between the interviewee's final 'you know' and the interviewer's question onset, indicating a natural conversational turn-taking pause rather than an overlap or interruption.\nRegarding the goal's premise about 'any changes': no utterance containing the words 'any changes' occurs in this clip. The interviewee's turn opens with 'I was always…' and the interviewer's turn is the standalone question about children's activity. The goal's target content is therefore not present in this 0–11 s window.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M19",
+        "observation_id": "active_18",
+        "modality": "audio_video",
+        "retrieval_window": [
+          180.0,
+          190.0
+        ],
+        "content": "The shot cuts from the interviewee (man in white button-up shirt) to the interviewer (woman in teal wrap-top, seated at a table with open papers and a pen) at approximately 4.0 s. The interviewer initially looks down at her papers, then raises her gaze to her right toward the interviewee's position. Between roughly 5.0 s and 7.0 s she speaks the question 'what do you like to do in winter?' (yellow subtitle visible across those frames), delivered in a neutral, matter-of-fact tone with no audible hesitation markers. Her posture remains upright; one hand rests near the papers while the other holds the pen. At approximately 9.0 s the shot cuts back to the interviewee, who begins his reply: 'well the winter in my country is quite short' (subtitle visible at 9.0 s). His gaze is directed slightly to his left toward the interviewer; shoulders remain squared; no hand gestures are visible.\n\nRegarding the goal set in M8 (whether the hedging-and-trailing pattern resolves into elaboration or is followed by a topic shift): the evidence in this window is conclusive. The interviewee's uncertain, hedged statement about temperature ('I'm not really sure if that's true') is NOT followed by any self-elaboration. Instead, the interviewer introduces an entirely new topic—winter activities—approximately one second after the interviewee's last word. The interviewee's next utterance pivots to describing the length of winter in his country, confirming that the prior hedging pattern closed his turn without further development. This supports the 'topic shift by the interviewer' reading rather than 'natural closing rhythm with implied continuation.'",
+        "content_status": "structured",
+        "overlapping_media_reads": [
+          "M9"
+        ]
+      },
+      {
+        "id": "M20",
+        "observation_id": "active_19",
+        "modality": "audio",
+        "retrieval_window": [
+          150.0,
+          168.0
+        ],
+        "content": "The audio for the rainy-weather response window [0.0, 18.0] is already recorded as done (known_observation_requests, modality audio). No additional audio pass over that interval is permitted.\nFrom the text observation M13 (local_time [0.0, 18.0]): the interviewee's explanation ('Because it rarely rains in my region, so when it does everyone is really happy and it cools down the temperature too') is a single syntactically unbroken compound sentence chaining three propositions via because / so when / and, with zero filler tokens, restart markers, or hedge expressions across both the initial declaration and the follow-up explanation.\nFrom M7 (audio_video, local_time [19.0, 24.0]): in the immediately subsequent climate-change exchange, the interviewee produces 'any changes' with flat declarative tone, holds roughly 1.5–2 seconds of silence, then reformulates as 'like climate change?' carrying a rising terminal intonation—an interrogative, two-stage narrowing pattern.\nThe structural contrast documented in M13 (no pause-reformulation, no interrogative contour, no restatement-and-narrowing move, no hedge vocabulary in the rainy-weather turns versus the fragmented, question-shaped output in the climate-change turns) is established at the text level; the corresponding audio prosodic verification for [0.0, 18.0] is marked complete and does not require a further request.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M21",
+        "observation_id": "active_20",
+        "modality": "audio_video",
+        "retrieval_window": [
+          190.0,
+          199.0
+        ],
+        "content": "The interviewee (young man, white button-down shirt) answers the winter-activities question in a single continuous turn spanning roughly 0–8 s. He first states 'the winter in my country is quite short,' then names one concrete activity—'it's nice to get outside and go for a walk'—and closes with a qualifying reason: 'you can in winter because it's not so hot.' No hedging markers (e.g., 'I'm not sure,' 'maybe'), no restarts, and no trailing-off silence appear; the utterance reaches a natural syntactic and prosodic completion on 'hot.'\nVocal delivery remains flat and even throughout, with no detectable shift in energy, pitch, or pace relative to the matter-of-fact tone recorded in M8 and M9. The only minor prosodic feature is a slight downward inflection on the final word 'hot,' signaling turn completion rather than uncertainty.\nVisually, the interviewee sits upright with shoulders squared and hands out of frame; no hand gestures accompany the walking description. His gaze stays directed slightly to his left (toward the interviewer's position) for the duration of his speech.\nAt approximately 2–3 s the camera cuts briefly to the interviewer (woman in teal wrap-top, seated at the round table with papers and pen), who is looking toward the interviewee in a listening posture, then cuts back to the interviewee at ~3 s. This two-second insert confirms the interviewer is attending but does not interject.\nAfter the interviewee finishes at ~8 s, the subtitle clears and he remains seated, gaze still toward the interviewer, with no additional verbal or gestural output through the end of the 9-second window.\nIn summary, the goal set in M19 is resolved: the interviewee DOES name a concrete activity (walking outdoors), does NOT hedge again, and does NOT trail off. The flat, minimal-movement pattern observed earlier persists unchanged across this answer.\nCandidates for further reading are unnecessary: the goal's questions (concrete activity named? hedging? trailing off? vocal/gaze/gesture shift?) are all answered within this 0–9 s window, and the adjacent windows [9.0, 14.0] and [−10.0, 0.0] are already marked done.",
+        "content_status": "structured"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "index": 0,
+      "action": {
+        "time": [
+          44.0,
+          50.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the hesitation reflects genuine uncertainty in content selection or a momentary search for words, and how facial orientation and pause length interact with the spoken filler."
+      },
+      "candidate_id": "C1",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M1"
+      ],
+      "changed_ids": [
+        "M1"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 1,
+      "action": {
+        "time": [
+          56.0,
+          60.0
+        ],
+        "modality": "audio_video",
+        "goal": "Assess whether the trailing-off delivery and accompanying body language signal low engagement with the topic or simply a natural closing cadence, and compare it to the more animated greeting earlier in the clip."
+      },
+      "candidate_id": "C2",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M2"
+      ],
+      "changed_ids": [
+        "M2"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 2,
+      "action": {
+        "time": [
+          82.0,
+          95.0
+        ],
+        "modality": "audio_video",
+        "goal": "Observe whether the pause before 'but' and the emphasis on 'really love' indicate a moment of self-correction or genuine enthusiasm, and whether the final self-assessment is accompanied by a gaze shift toward the interviewer seeking validation."
+      },
+      "candidate_id": "C3",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M3"
+      ],
+      "changed_ids": [
+        "M3"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 3,
+      "action": {
+        "time": [
+          99.0,
+          103.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the laugh and 'from time to time' phrasing signal self-awareness about low exercise frequency, and how the quick follow-up question from the interviewer interacts with his body language in the two seconds before he elaborates."
+      },
+      "candidate_id": "C4",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M4"
+      ],
+      "changed_ids": [
+        "M4"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 4,
+      "action": {
+        "time": [
+          116.0,
+          120.0
+        ],
+        "modality": "audio_video",
+        "goal": "Assess whether the exclamation and smile reflect genuine fond memory recall or a performative enthusiasm, and note any change in speech rate or pitch compared to his adult-activity descriptions."
+      },
+      "candidate_id": "C5",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M5"
+      ],
+      "changed_ids": [
+        "M5"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 5,
+      "action": {
+        "time": [
+          131.0,
+          143.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the chuckle after 'couch potatoes' signals self-awareness of the colloquialism's bluntness or genuine amusement at the image, and whether the preceding 'in my opinion' hedge softens the judgment or merely marks it as personal."
+      },
+      "candidate_id": "C6",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M6"
+      ],
+      "changed_ids": [
+        "M6"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 6,
+      "action": {
+        "time": [
+          169.0,
+          174.0
+        ],
+        "modality": "audio_video",
+        "goal": "Assess whether the repetition and reformulation indicate genuine ambiguity in the question's scope (weather vs. climate) or a stalling tactic while searching for content, and how the rising pitch on 'climate change?' interacts with his gaze direction toward the interviewer."
+      },
+      "candidate_id": "C7",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M7"
+      ],
+      "changed_ids": [
+        "M7"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 7,
+      "action": {
+        "time": [
+          175.0,
+          180.0
+        ],
+        "modality": "audio_video",
+        "goal": "Evaluate whether the hedging language ('I guess') combined with the fading vocal delivery indicates uncertainty about the factual claim or a deliberate minimization, and whether the body language (reduced movement, downward look) aligns with disengagement from the topic or simply a natural closing rhythm."
+      },
+      "candidate_id": "C8",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M8"
+      ],
+      "changed_ids": [
+        "M8"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 8,
+      "action": {
+        "time": [
+          180.0,
+          184.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the flat prosody and reduced gesturing signal genuine epistemic uncertainty about the temperature claim or a habitual hedging style, and whether the visual stillness contrasts with the more animated winter-activities description that follows immediately."
+      },
+      "candidate_id": "C9",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M9"
+      ],
+      "changed_ids": [
+        "M9"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 9,
+      "action": {
+        "time": [
+          199.0,
+          208.0
+        ],
+        "modality": "audio_video",
+        "goal": "Assess whether the shift to a more animated, positive delivery around the horse-riding topic reflects genuine enthusiasm and personal investment, and how the brief filler before the club explanation interacts with the otherwise fluent description of weekend routines."
+      },
+      "candidate_id": "C10",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M10"
+      ],
+      "changed_ids": [
+        "M10"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 10,
+      "action": {
+        "time": [
+          209.0,
+          216.0
+        ],
+        "modality": "audio_video",
+        "goal": "Observe whether the interviewer's smile and paper-shuffling signal a structured transition or a moment of rapport-building, and whether the interviewee's stillness during the closing line reflects attentive listening or a brief reset before the next section."
+      },
+      "candidate_id": "C11",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M11"
+      ],
+      "changed_ids": [
+        "M11"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 11,
+      "action": {
+        "time": [
+          60.0,
+          72.0
+        ],
+        "modality": "text",
+        "goal": "Check whether the listing cadence and informal tag signal comfort with the social topic versus the evaluative uncertainty seen in adjacent answers, and note any shift in sentence length or filler density."
+      },
+      "candidate_id": "C12",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M12"
+      ],
+      "changed_ids": [
+        "M12"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 12,
+      "action": {
+        "time": [
+          150.0,
+          168.0
+        ],
+        "modality": "text",
+        "goal": "Compare the fluency and confidence markers here against the hedged, fragmented delivery in the immediately following climate-change exchange to identify what topical concreteness changes in his speech pattern."
+      },
+      "candidate_id": "C13",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M13"
+      ],
+      "changed_ids": [
+        "M13"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 13,
+      "action": {
+        "time": [
+          50.0,
+          60.0
+        ],
+        "modality": "audio_video",
+        "goal": "Observe how the interviewee completes the parental-opinion clause and whether his vocal fluency, gaze stability, and facial expression shift compared to the hesitant opening, to assess whether the initial 'I don't really know' reflected content-level uncertainty or a momentary word-search."
+      },
+      "candidate_id": "C14",
+      "parent_candidate_id": "C1",
+      "new_ids": [
+        "M14"
+      ],
+      "changed_ids": [
+        "M14"
+      ],
+      "followup_status": "no_new_media_content",
+      "followup_errors": []
+    },
+    {
+      "index": 14,
+      "action": {
+        "time": [
+          103.0,
+          120.0
+        ],
+        "modality": "audio_video",
+        "goal": "Observe whether the interviewee's posture, gaze, and gestural behavior change in the brief pause between the interviewer's 'What kind?' and his subsequent detailed answer, and whether the laugh-smile pattern from 'from time to time' persists or resolves into a more neutral explanatory demeanor."
+      },
+      "candidate_id": "C16",
+      "parent_candidate_id": "C4",
+      "new_ids": [
+        "M15"
+      ],
+      "changed_ids": [
+        "M15"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 15,
+      "action": {
+        "time": [
+          60.0,
+          82.0
+        ],
+        "modality": "audio_video",
+        "goal": "Hear and see how the interviewee describes his activity level as an adult—note whether his delivery is more measured, whether smiles or exclamatory interjections appear, and compare tempo and pitch range to the childhood answer at 0–4 s."
+      },
+      "candidate_id": "C17",
+      "parent_candidate_id": "C4",
+      "new_ids": [
+        "M16"
+      ],
+      "changed_ids": [
+        "M16"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 16,
+      "action": {
+        "time": [
+          138.0,
+          143.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the chuckle after 'couch potatoes' signals self-awareness of the colloquialism's bluntness or genuine amusement at the image, and whether the preceding 'in my opinion' hedge softens the judgment or merely marks it as personal."
+      },
+      "candidate_id": "C18",
+      "parent_candidate_id": "C6",
+      "new_ids": [
+        "M17"
+      ],
+      "changed_ids": [
+        "M17"
+      ],
+      "followup_status": "no_new_media_content",
+      "followup_errors": []
+    },
+    {
+      "index": 17,
+      "action": {
+        "time": [
+          120.0,
+          131.0
+        ],
+        "modality": "audio",
+        "goal": "Determine the exact wording of the interviewer's question preceding the interviewee's response, to establish whether 'any changes' is a direct repetition (indicating parsing/clarification) or an independent formulation (indicating content search)."
+      },
+      "candidate_id": "C19",
+      "parent_candidate_id": "C7",
+      "new_ids": [
+        "M18"
+      ],
+      "changed_ids": [
+        "M18"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 18,
+      "action": {
+        "time": [
+          180.0,
+          190.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the hedging-and-trailing pattern resolves into further explanation (supporting 'natural closing rhythm') or is followed by an extended pause / interviewer topic change (supporting 'disengagement or minimization'). Capture any vocal or postural shift in the interviewee immediately after the statement."
+      },
+      "candidate_id": "C20",
+      "parent_candidate_id": "C8",
+      "new_ids": [
+        "M19"
+      ],
+      "changed_ids": [
+        "M19"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 19,
+      "action": {
+        "time": [
+          150.0,
+          168.0
+        ],
+        "modality": "audio",
+        "goal": "Verify that the absence of hedge markers and the compound-sentence structure in the rainy-weather response are reflected in uninterrupted prosodic delivery, providing an audio-level contrast to the 1.5–2 s pause and rising interrogative contour documented at [19.0, 24.0] in the climate-change exchange."
+      },
+      "candidate_id": "C22",
+      "parent_candidate_id": "C13",
+      "new_ids": [
+        "M20"
+      ],
+      "changed_ids": [
+        "M20"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 20,
+      "action": {
+        "time": [
+          190.0,
+          199.0
+        ],
+        "modality": "audio_video",
+        "goal": "Capture the interviewee's full answer to 'what do you like to do in winter?'—specifically whether he names concrete activities, hedges again, or trails off—and note any shift in vocal energy, gaze, or gesture relative to the flat, minimal-movement pattern observed in M8 and M9."
+      },
+      "candidate_id": "C23",
+      "parent_candidate_id": "C20",
+      "new_ids": [
+        "M21"
+      ],
+      "changed_ids": [
+        "M21"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    }
+  ],
+  "coarse_rejections": [],
+  "semantic_review": "unreviewed",
+  "teacher_approved": false
+}

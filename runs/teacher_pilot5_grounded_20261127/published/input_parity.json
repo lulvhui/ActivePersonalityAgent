@@ -1,0 +1,7 @@
+{
+  "same_full_sample_manifest": true,
+  "manifest_sha256": "15ed894055ad4f49e09dc7d967dc47b18423b085305fd30b247c1ddb52ab8a57",
+  "coarse_chunk_seconds_before": 20,
+  "coarse_chunk_seconds_after": 60,
+  "not_a_single_variable_prompt_ablation": true
+}
