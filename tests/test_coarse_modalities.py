@@ -94,7 +94,10 @@ class CoarseModalityTests(unittest.TestCase):
         observe=next(messages for kind,_,messages in reader.seen if kind=='memory')
         coarse={'task':scan[-1]['content'][0]['text']}
         detail={'task':observe[-1]['content'][0]['text']}
-        self.assertIn('closer inspection',coarse['task'])
+        self.assertIn('closer read',coarse['task'])
+        self.assertIn('local_time',coarse['task'])
+        self.assertIn('Do not infer hidden motives',coarse['task'])
+        self.assertIn('Do not infer hidden motives',detail['task'])
         self.assertIn('candidates=[]',coarse['task'])
         self.assertIn('narrower window or another modality',detail['task'])
         self.assertIn('distinguishing self-reports',detail['task'])

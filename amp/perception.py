@@ -16,11 +16,11 @@ def generation_schema(kind,modalities=None,memory=None,candidates_only=False):
     def obj(fields,required=None):
         return dict(type='object',properties=fields,required=list(fields) if required is None else required,additionalProperties=False)
     text=dict(type='string',minLength=1)
+    target=obj(dict(local_time=dict(type='array',items=dict(type='number'),minItems=2,maxItems=2),
+        modality=dict(type='string',enum=list(modalities or MODALITIES)),hint=text,goal=text))
     if kind=='candidate_scan':
-        return obj(dict(summary=text,candidates=dict(type='array',items=obj(dict(hint=text,goal=text)))))
+        return obj(dict(summary=text,candidates=dict(type='array',items=target)))
     if kind=='memory':
-        target=obj(dict(local_time=dict(type='array',items=dict(type='number'),minItems=2,maxItems=2),
-            modality=dict(type='string',enum=list(modalities or MODALITIES)),hint=text,goal=text))
         fields={} if candidates_only else dict(observations=dict(type='array',items=text))
         fields['candidates']=dict(type='array',items=target)
         return obj(fields)
@@ -87,13 +87,12 @@ def admit_candidates(pool,obj,observation,observation_id,parent_id=None,origin='
     proposals=response_items(obj,'candidates');ids=[];rejected=[]
     for index,candidate in enumerate(proposals):
         try:
+            bound=bind_candidate(candidate,observation,pool.duration)
             if origin=='coarse':
-                if not isinstance(candidate,dict) or set(candidate)!={'hint','goal'}:
-                    raise ValueError('A coarse candidate requires hint and goal only; Python binds its source')
-                bound=dict(candidate,time=list(observation['time']),modality=observation['modality'])
-            else:
-                bound=bind_candidate(candidate,observation,pool.duration)
-                bound['time']=[max(0.,bound['time'][0]),min(pool.duration,bound['time'][1])]
+                start,end=observation['time']
+                if bound['time'][0]<start-1e-6 or bound['time'][1]>end+1e-6:
+                    raise ValueError(f'A coarse candidate marks a moment inside this source: local_time within 0 to {end-start:.6g}')
+            bound['time']=[max(0.,bound['time'][0]),min(pool.duration,bound['time'][1])]
             if not isinstance(bound['hint'],str) or not bound['hint'].strip() or not isinstance(bound['goal'],str) or not bound['goal'].strip():
                 raise ValueError('Candidate hint and goal must describe the clue and inspection goal')
             ids.extend(add_candidate_proposals(pool,[bound],observation_id,parent_id,origin,observation['modality']))
@@ -123,6 +122,11 @@ def add_candidate_proposals(pool, proposals, source_observation_id, parent_id=No
         if candidate_id:
             added.append(candidate_id)
     return added
+
+
+OBSERVABLE_ONLY = ('Report only what can be seen or heard. Do not infer hidden motives, authenticity, deception, rehearsal or inner mechanisms, '
+    'and give no numeric acoustic or kinematic measurements (pitch, frequency, durations, frame timing); describe perceptible qualities instead, '
+    'such as a long pause or a quiet voice.')
 
 
 READ_SUPPORT_RULE = ('M IDs identify reads, not independent behaviors. Assess support from distinct behaviors in context; '

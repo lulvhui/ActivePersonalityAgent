@@ -26,7 +26,7 @@ class Reader(OfflineBackend):
         if kind=='candidate_scan':
             payload=json.loads(messages[-1]['content'][-1]['text'])
             clues=[s['text'] for s in payload['observation']['segments'][:2]] or ['A prescribed synthetic behavior clue.']
-            obj=dict(summary='A synthetic source.',candidates=[dict(hint=clue,goal='Inspect this concrete behavior') for clue in clues])
+            obj=dict(summary='A synthetic source.',candidates=[dict(local_time=[0,payload['source_seconds']],modality=payload['observation']['modality'],hint=clue,goal='Inspect this concrete behavior') for clue in clues])
         elif kind=='action':obj=self.actions[step]
         elif kind=='final':obj={**{t:('high' if t=='E' else None) for t in TRAITS},'reasoning':'Synthetic model explanation.','contextual':[]}
         else:return super().generate(messages,kind,step)

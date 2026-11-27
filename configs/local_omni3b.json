@@ -22,7 +22,7 @@
   "seed": 42,
   "max_validation_attempts": 3,
   "coarse_video_fps": 1.0,
-  "coarse_chunk_seconds": 20.0,
+  "coarse_chunk_seconds": 60.0,
   "jev_cache": "cache/jev",
   "jev_timeout_seconds": 60,
   "jev_max_retries": 3,

@@ -5,7 +5,7 @@ from .common import TRAITS, LEVELS, digest, parse_json
 from .state import CandidatePool, memory_changes, normalize_final, save_observation, contextual_final
 from .provenance import index_transcript
 from .scoring import prediction_feedback, minimize_state
-from .perception import admit_candidates,memory_view,SOURCE_FOCUS,decode_observation,generation_schema,READ_SUPPORT_RULE
+from .perception import admit_candidates,memory_view,SOURCE_FOCUS,decode_observation,generation_schema,READ_SUPPORT_RULE,OBSERVABLE_ONLY
 
 def dist(score):
     return {t:(score['traits'][t]['probabilities'] if score['traits'][t].get('predictive',True) else [.2]*5) for t in TRAITS}
@@ -64,21 +64,29 @@ class ActiveAgent:
 
     def scan_candidates(self, pool, observation_id, observation, question, step):
         if observation.get('questions'):question='\n'.join(q['question'] for q in observation['questions'])
-        payload=dict(task=SOURCE_FOCUS[observation['modality']]+' Summarize this source. Optionally propose closer inspection of a concrete behavioral clue relevant to later personality analysis: hint states what was observed; goal states what remains unclear and how closer inspection could clarify it. Related details can share one goal. A summary with candidates=[] is sufficient when this source offers no useful follow-up. Use existing candidates as context for complementary requests.',
+        start,end=observation['time']
+        payload=dict(task=SOURCE_FOCUS[observation['modality']]+(' This is a coarse scan of a long source: summarize what the interviewee talks about and how they communicate. '
+                'Then optionally mark specific moments worth a closer read. A closer read gives up to max_video_window_seconds of '
+                f"{self.config.get('video_fps',1)} frame/s video and full audio, so mark the moment itself rather than the whole source. "
+                'Each candidate gives local_time=[start,end] on this source clock (0 to source_seconds), the modality to inspect, hint = what was noticed there, '
+                'and goal = which observable detail the closer read should establish (what was said, how it was said, visible actions). '
+                'Mark moments of personality-relevant behavior or self-description; candidates=[] is fine when nothing needs a closer read. '
+                'Use existing candidates (recording seconds) as context for complementary requests. ')+OBSERVABLE_ONLY,
             question=question,question_context=observation.get('questions',[]),
             input_modalities=['audio','video'] if observation['modality']=='audio_video' else [observation['modality']],
-            source_window=observation['time'],visual_representation=observation.get('visual_representation'),
-            existing_candidates=[dict(modality=x['action']['modality'],time=x['action']['time'],goal=x['action']['goal'],
+            source_window_recording_seconds=observation['time'],source_seconds=end-start,visual_representation=observation.get('visual_representation'),
+            max_video_window_seconds=self.config['max_clip_seconds'],
+            existing_candidates=[dict(modality=x['action']['modality'],recording_time=x['action']['time'],goal=x['action']['goal'],
                 hints=[l['hint'] for l in x['leads']]) for x in pool.snapshot()
                 if self.config.get('coarse_context_mode','full')=='full' or (
                     x['action']['time'][0]<observation['time'][1]+self.config.get('refinement_context_seconds',5.)
                     and x['action']['time'][1]>observation['time'][0]-self.config.get('refinement_context_seconds',5.))],
             allowed_modalities=pool.available_modalities,
-            source_binding='Python binds candidates to this source window and modality. Finer windows and modality changes belong to Observe.',
+            time_rule='local_time is on this source playback clock: 0 is source_window_recording_seconds[0]. Python converts it to recording seconds.',
             observation=dict(modality=observation['modality'],time=observation['time'],
                 segments=[dict(text=v['text'],question=v.get('question','')) for v in observation.get('segments',[])]))
         messages=[dict(role='system',content='Use the supplied interview source to perform the current task.',
-            output_schema=generation_schema('candidate_scan')),
+            output_schema=generation_schema('candidate_scan',modalities=pool.available_modalities)),
             message(payload,observation.get('media',[]))]
         text,decision=self.backend.generate_text(messages,'candidate_scan',step)
         ids=[];rejected=[];summary='';summary_status='invalid'
@@ -103,16 +111,23 @@ class ActiveAgent:
         duration=media_duration if media_duration is not None else end+margin
         bounds=[round(-start,6),round(duration-start,6)]
         context=[round(max(-margin,-start),6),round(min(end+margin,duration)-start,6)]
-        payload=dict(task=SOURCE_FOCUS[obs['modality']]+' Describe the actions and communication found in this source, grouping related details into coherent findings and distinguishing self-reports from observed behavior. Use the question and prior observations as context. Optional candidates investigate a specific unresolved detail: hint states the current finding; goal states what additional information the requested window and modality can provide. Choose a window with enough context to answer that question, rather than subdividing the clip for coverage. Keep findings in observations and future requests in candidates; either array may be empty.',
+        payload=dict(task=SOURCE_FOCUS[obs['modality']]+' Describe the interviewee\'s actions and communication in this source, grouping related details into coherent findings, naming who speaks or acts, and distinguishing self-reports from observed behavior. '
+                'Use the question, the goals and prior observations as context; times written in a goal or hint are on the clock of the clip that proposed it, which proposed_on_local places on this clip. '
+                'Optional candidates investigate a specific unresolved observable detail: hint states the current finding; goal states what the requested window and modality can show. '
+                'Choose a window with enough context to answer it. Keep findings in observations and future requests in candidates; either array may be empty. '+OBSERVABLE_ONLY,
             input_modalities=['audio','video'] if obs['modality']=='audio_video' else [obs['modality']],
             question=question,question_context=[dict(local_time=[max(0.,q['time'][0]-start),min(end-start,q['time'][1]-start)],question=q['question']) for q in obs.get('questions',[])],
             visual_representation=obs.get('visual_representation'),goal=followup_goal,modality=obs['modality'],clip_seconds=end-start,
+            source_window_recording_seconds=[start,end],
+            capabilities=dict(sound=obs['modality'] in ('audio','audio_video'),picture=obs['modality'] in ('video','audio_video'),
+                video_frames_per_second=self.config.get('video_fps',1) if obs['modality'] in ('video','audio_video') else None,
+                transcript_only=obs['modality']=='text',measurement_tools='none'),
             allowed_local_seconds=bounds,
             time_rule='Playback starts at 0 and ends at clip_seconds. local_time=[start,end] uses increasing seconds on this playback clock within allowed_local_seconds. covered_local_time is existing coverage on the same clock. Text marked unverified_asr has no precise media position.',
             available_modalities=available_modalities or [obs['modality']],
             max_video_window_seconds=self.config['max_clip_seconds'],
-            prior_observations=[{k:r[k] for k in ('id','modality','content','content_status')} for r in memory_view(memory)['observations']
-                if r['retrieval_window'][0]<end+margin and r['retrieval_window'][1]>start-margin],
+            prior_observations=[dict({k:r[k] for k in ('id','modality','content','content_status')},local_time=[round(r['retrieval_window'][0]-start,6),round(r['retrieval_window'][1]-start,6)])
+                for r in memory_view(memory)['observations'] if r['retrieval_window'][0]<end+margin and r['retrieval_window'][1]>start-margin],
             known_observation_requests=[dict(covered_local_time=[round(max(x['time'][0]-start,context[0]),6),round(min(x['time'][1]-start,context[1]),6)],modality=x['modality'],status=x['status'])
                 for x in candidate_state or [] if x['time'][0]<start+context[1] and x['time'][1]>start+context[0]],remaining_observations=remaining_steps,
             segments=[dict(text=s['text'],question=s.get('question',''),timing=s.get('timing','unverified_asr'),
@@ -332,7 +347,8 @@ class ActiveAgent:
             previous_memory = deepcopy(memory)
             before = score
             memory, changed_ids, decision = self.update(memory, observations, {obs_id: observations[obs_id]}, step, question,
-                followup_goal=([l['goal'] for l in selected_candidate.get('leads',[]) if l.get('goal')] or action['goal']) if mode not in ('generic','fixed_context','static') else None,available_modalities=available,
+                followup_goal=([dict(goal=l['goal'],hint=l['hint'],proposed_on_local=[round(l['source_fragment_time'][0]-action['time'][0],6),round(l['source_fragment_time'][1]-action['time'][0],6)])
+                    for l in selected_candidate.get('leads',[]) if l.get('goal') and l.get('source_fragment_time')] or action['goal']) if mode not in ('generic','fixed_context','static') else None,available_modalities=available,
                 candidate_state=[dict(time=x['action']['time'],modality=x['action']['modality'],status=x['status']) for x in pool.snapshot()],
                 remaining_steps=self.config['max_steps']-step-1 if selection_policy=='queue' else None,media_duration=duration,
                 unread={c:pool.unread_intervals(c) for c in ('text','audio','video') if c in available} if pool.novelty_rule else None)
@@ -403,7 +419,11 @@ class ActiveAgent:
         final_payload=dict(task='Observation is finished. Return one JSON object, putting O,C,E,A,N class strings or null first, then concise reasoning and contextual expressions. State each conclusion once and finish the JSON. Each contextual item has trait, context_type (reported/observed/unknown), context, expression and citations (saved M IDs). Explain supported situation differences and their relation to the overall judgment, without averaging context directions or claiming personality changed over time. Proposed candidates and goals are plans, not observed facts.',
             perception_end=dict(reason=stop_reason,observations=len(steps),pending_candidates=sum(x['status']=='pending' for x in pool.items.values())),
             question=question,traits=TRAITS,levels=LEVELS,memory=memory_view(memory,observations=observations))
-        final_payload['task']+=' '+READ_SUPPORT_RULE
+        final_payload['task']+=' '+READ_SUPPORT_RULE+(' Interviews may be spoken tests or job interviews, often in a second language: brevity, word searching, '
+            'few specifics or formulaic phrases can reflect language proficiency and the format rather than a trait. Behavior the setting requires '
+            '(waiting while the interviewer speaks, greetings, handing over documents, following instructions, sitting still) and the absence of a behavior '
+            '(few gestures, no visible anxiety) are weak evidence of a stable trait. Weigh what the person chose to say or do, keep evidence that points the other way, '
+            'and return null for a trait when the saved observations do not support a level.')
         feedback=prediction_feedback(score)
         if feedback is not None:final_payload['scoring_feedback']=feedback
         final_status='generated';final_error=None

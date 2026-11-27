@@ -245,7 +245,7 @@ def main(argv=None):
             cfg[key]=getattr(args,arg)
     if args.no_active_budget:
         cfg['max_seconds']=None
-    if cfg['coarse_video_fps'] <= 0 or not 0 < cfg['coarse_chunk_seconds'] <= 30 or (cfg['max_seconds'] is not None and cfg['max_seconds'] <= 0):
+    if cfg['coarse_video_fps'] <= 0 or not 0 < cfg['coarse_chunk_seconds'] or (cfg['max_seconds'] is not None and cfg['max_seconds'] <= 0):
         parser.error('Use positive coarse FPS, a transport chunk length in (0,30], and positive active budget or --no-active-budget')
     if cfg['max_steps'] < 1:
         parser.error('Full-flow testing requires --max-steps >= 1')

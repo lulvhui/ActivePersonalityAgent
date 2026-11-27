@@ -474,7 +474,7 @@ class OfflineBackend:
             payload=json.loads(messages[-1]["content"][-1]["text"])
             source=payload['observation']
             if source['modality']=='text' and source['segments']:
-                obj=dict(candidates=[dict(hint=source['segments'][0]['text'],goal='Read this synthetic source')])
+                obj=dict(candidates=[dict(local_time=[0,payload['source_seconds']],modality=source['modality'],hint=source['segments'][0]['text'],goal='Read this synthetic source')])
             else:obj=dict(candidates=[])
             obj['summary']='Synthetic source for control-flow testing.'
         elif kind == "memory":

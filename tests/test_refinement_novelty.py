@@ -175,7 +175,8 @@ class Narrowing(OfflineBackend):
     def generate(self, messages, kind, step):
         self.calls.append(kind)
         if kind == 'candidate_scan':
-            obj = dict(summary='A synthetic source.', candidates=[dict(hint='A clue', goal='Inspect this behavior')])
+            payload = json.loads(messages[-1]['content'][-1]['text'])
+            obj = dict(summary='A synthetic source.', candidates=[dict(local_time=[0, payload['source_seconds']], modality=payload['observation']['modality'], hint='A clue', goal='Inspect this behavior')])
         elif kind == 'final':
             obj = {**{t: None for t in TRAITS}, 'reasoning': 'Synthetic.', 'contextual': []}
         else:

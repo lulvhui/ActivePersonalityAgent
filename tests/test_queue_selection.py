@@ -48,7 +48,8 @@ class QueueSelectionTests(unittest.TestCase):
         reader=NoSelectReader();self.run_agent(reader,max_steps=1)
         scan=next(messages for kind,_,messages in reader.seen if kind=='candidate_scan')
         fields=scan[0]['output_schema']['properties']['candidates']['items']['properties']
-        self.assertEqual(set(fields),{'hint','goal'})
+        # The model marks a moment on the source clock; Python owns source IDs and recording times.
+        self.assertEqual(set(fields),{'local_time','modality','hint','goal'})
     def run_agent(self,reader,**options):
         cfg=dict(CFG,selection_policy='queue',max_steps=3);cfg.update(options)
         return ActiveAgent(reader,OfflineTraitScorer(),QueueMedia(),cfg).run(ROW)
@@ -57,7 +58,8 @@ class QueueSelectionTests(unittest.TestCase):
         class Unlocated(NoSelectReader):
             def generate(self,messages,kind,step):
                 if kind=='candidate_scan':
-                    obj=dict(summary='A real source overview',candidates=[dict(hint='A paraphrased clue',goal='Read the self-report'),dict(hint='Another clue',goal='Read the context')])
+                    payload=json.loads(messages[-1]['content'][-1]['text'])
+                    obj=dict(summary='A real source overview',candidates=[dict(local_time=[0,payload['source_seconds']],modality=payload['observation']['modality'],hint='A paraphrased clue',goal='Read the self-report'),dict(local_time=[0,payload['source_seconds']],modality=payload['observation']['modality'],hint='Another clue',goal='Read the context')])
                     return obj,dict(messages=messages,kind=kind,step=step,text=json.dumps(obj),tokens=[1],offline=True)
                 return super().generate(messages,kind,step)
         t=self.run_agent(Unlocated(),max_steps=1)
