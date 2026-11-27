@@ -104,6 +104,17 @@ class ObserveClockTests(unittest.TestCase):
         self.assertEqual(payload['goal'], [dict(goal='Read it', hint='A clue', proposed_on_local=[-20., 40.])])
 
 
+class GoalWordingTests(unittest.TestCase):
+    def test_scan_and_observe_goals_ask_what_to_see_or_hear(self):
+        from amp.smoke import SyntheticMedia
+        reader = Reader()
+        agent = ActiveAgent(reader, OfflineTraitScorer(), SyntheticMedia(), dict(CFG, selection_policy='queue', max_steps=1))
+        agent.run(dict(id='S', dataset='SYNTHETIC', split='train', person_id='p', segments=[]))
+        for kind in ('candidate_scan', 'memory'):
+            task = next(m for k, _, m in reader.seen if k == kind)[-1]['content'][-2]['text']
+            self.assertIn('see or hear, not a choice between interpretations', task)
+
+
 class FinalRuleTests(unittest.TestCase):
     def test_final_accounts_for_setting_language_and_abstention(self):
         reader = Reader()

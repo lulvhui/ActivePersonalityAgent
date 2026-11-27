@@ -67,7 +67,7 @@ class ActiveAgent:
         start,end=observation['time']
         payload=dict(task=SOURCE_FOCUS[observation['modality']]+' Coarse scan of a long source: summarize what the interviewee says and how they communicate. '
                 'Optionally mark moments for a closer read of up to max_video_window_seconds: local_time=[start,end] on this source clock, '
-                'the modality, hint = what you noticed, goal = what the closer read should show. candidates=[] is fine; existing candidates are context. '+OBSERVABLE_ONLY,
+                'the modality, hint = what you noticed, goal = what the closer read should see or hear, not a choice between interpretations. candidates=[] is fine; existing candidates are context. '+OBSERVABLE_ONLY,
             question=question,question_context=observation.get('questions',[]),
             input_modalities=['audio','video'] if observation['modality']=='audio_video' else [observation['modality']],
             source_window_recording_seconds=observation['time'],source_seconds=end-start,visual_representation=observation.get('visual_representation'),
@@ -111,7 +111,7 @@ class ActiveAgent:
         context=[round(max(-margin,-start),6),round(min(end+margin,duration)-start,6)]
         payload=dict(task=SOURCE_FOCUS[obs['modality']]+' Describe the interviewee\'s actions and communication in this source as coherent findings, naming who speaks or acts and separating self-reports from observed behavior. '
                 'Use the question, goals and prior observations as context; times in a goal are on the clip that proposed it, placed on this clip by proposed_on_local. '
-                'Optional candidates request a later read: hint = the current finding, goal = what that window and modality can show. '
+                'Optional candidates request a later read: hint = the current finding, goal = what that window and modality should let you see or hear, not a choice between interpretations. '
                 'Keep findings in observations and requests in candidates; either array may be empty. '+OBSERVABLE_ONLY,
             input_modalities=['audio','video'] if obs['modality']=='audio_video' else [obs['modality']],
             question=question,question_context=[dict(local_time=[max(0.,q['time'][0]-start),min(end-start,q['time'][1]-start)],question=q['question']) for q in obs.get('questions',[])],
