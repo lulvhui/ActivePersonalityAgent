@@ -5,7 +5,6 @@ from amp.common import TRAITS,digest,read_json
 from amp.perception import decode_observation
 from amp.state import memory_changes
 from amp.teca import memory_quality_credit
-from amp.train import filter_best
 
 CFG=read_json(Path(__file__).resolve().parents[1]/'configs/local_omni3b.json')
 
@@ -30,10 +29,6 @@ class RecordTrainingTests(unittest.TestCase):
         self.assertIsNone(result['trait_gain'])
         self.assertIsNone(result['context_gain'])
 
-    def test_supported_current_record_can_pass_teacher_filter(self):
-        t=trajectory();best,rejected=filter_best([t],{t:2 for t in TRAITS})
-        self.assertIsNotNone(best,rejected)
-
     def test_supported_record_update_gets_quality_credit(self):
         self.assertEqual(memory_quality_credit(trajectory(),0)[0],1.)
 
@@ -54,7 +49,6 @@ class RecordQualityTests(unittest.TestCase):
             elif change=='changed_source':t['observations']['active_0']['segments'][0]['text']='A changed source.'
             else:t['judge']['records']['M1']['supported']='yes'
             self.assertEqual(memory_quality_credit(t,0)[0],0.,change)
-            self.assertIsNone(filter_best([t],{k:2 for k in TRAITS})[0])
 
     def test_invalid_source_or_unsupported_record_is_negative(self):
         t=trajectory();t['judge']['records']['M1']['supported']=False
@@ -121,16 +115,17 @@ class TrainingTokenTests(unittest.TestCase):
         d=dict(kind='memory',step=0,text=text,messages=[dict(role='system',content='PROMPT_ONLY',output_schema=generation_schema('memory'))],tokens=b.processor.tokenizer.encode(text)+[2],format_mode='json_schema',python_result='PYTHON_RESULT_NOT_A_TARGET')
         return b,d
 
-    def test_sft_exports_actor_tokens_only_and_performs_a_cpu_update(self):
+    def test_sft_trains_actor_tokens_only_and_performs_a_cpu_update(self):
         import torch
-        from amp.train import export_sft,sft
-        b,d=self.backend_and_decision();t=trajectory();t.update(teacher_accepted=True,decisions=[d])
+        from amp.common import write_jsonl
+        from amp.train import sft
+        b,d=self.backend_and_decision()
         before=b.policy.bias.detach().clone()
         with tempfile.TemporaryDirectory() as folder:
-            path=Path(folder)/'sft.jsonl';self.assertEqual(export_sft([t],path),1)
-            row=json.loads(path.read_text());target=b.processor.tokenizer.decode(row['tokens'])
+            path=Path(folder)/'perception.jsonl';write_jsonl(path,[dict(d,sample_id='SYNTHETIC:record',split='train')])
+            target=b.processor.tokenizer.decode(d['tokens'])
             self.assertNotIn('PROMPT_ONLY',target);self.assertNotIn('PYTHON_RESULT',target)
-            sft(b,path,Path(folder)/'model',dict(CFG,learning_rate=.001))
+            sft(b,[path],Path(folder)/'model',dict(CFG,learning_rate=.001))
         self.assertFalse(torch.equal(before,b.policy.bias.detach()))
 
     def test_memory_quality_affects_segment_advantage_and_grpo_gradient(self):

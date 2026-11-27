@@ -51,7 +51,24 @@ def calibration(labels, predictions):
     return dict(nll=nll, brier=brier, ece=ece)
 
 
-def evaluate(trajectories, rows, bins):
+def majority_baseline(trajectories, lookup, train_rows, dataset):
+    """Predict each trait's most frequent Train level (ties: the lower level) for every evaluated sample."""
+    train = [r for r in train_rows if r['dataset'] == dataset and r['split'] == 'train' and set(r.get('labels') or {}) == set(TRAITS)]
+    if not train:
+        return None
+    result = {}
+    for trait in TRAITS:
+        counts = [sum(r['labels'][trait] == level for r in train) for level in range(len(LEVELS))]
+        mode = max(range(len(LEVELS)), key=lambda level: (counts[level], -level))
+        labels = [lookup[t['sample_id']]['labels'][trait] for t in trajectories]
+        result[trait] = dict(level=LEVELS[mode], accuracy=sum(y == mode for y in labels)/len(labels),
+                             ordinal_mae=sum(abs(y-mode) for y in labels)/len(labels))
+    return dict(train_samples=len(train), traits=result,
+                mean_accuracy=sum(v['accuracy'] for v in result.values())/len(TRAITS),
+                mean_ordinal_mae=sum(v['ordinal_mae'] for v in result.values())/len(TRAITS))
+
+
+def evaluate(trajectories, rows, bins, train_rows=None):
     lookup = {r["id"]: r for r in rows}
     grouped = defaultdict(list)
     for t in trajectories:
@@ -86,6 +103,9 @@ def evaluate(trajectories, rows, bins):
             automatic_faithfulness=sum(j["faithfulness"] for j in judged)/len(judged) if judged else None,
             automatic_citation_correctness=sum(j["citation_correctness"] for j in judged)/len(judged) if judged else None,
             judge_coverage=len(judged)/len(ts), continuous_prediction="train-bin centroid of final class")
+        report[dataset]['mean_accuracy_all'] = sum(m['accuracy_all'] for m in metrics.values())/5
+        if train_rows is not None:
+            report[dataset]['majority_baseline'] = majority_baseline(ts, lookup, train_rows, dataset)
     return report
 
 

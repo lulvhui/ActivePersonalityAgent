@@ -190,6 +190,31 @@ class ActiveAgent:
             if repair:repair.update(candidate_output_valid=False,proposal_repair=True)
             return [],errors,repair
 
+    def final_stage(self,memory,observations,question,perception_end,score,step):
+        """One Final generation over saved Memory; reused to resample Final on fixed (reviewed) Memory."""
+        final_payload=dict(task='Observation is finished. Return one JSON object, putting O,C,E,A,N class strings or null first, then concise reasoning and contextual expressions. State each conclusion once and finish the JSON. Each contextual item has trait, context_type (reported/observed/unknown), context, expression and citations (saved M IDs). Explain supported situation differences and their relation to the overall judgment, without averaging context directions or claiming personality changed over time. Proposed candidates and goals are plans, not observed facts.',
+            perception_end=perception_end,
+            question=question,traits=TRAITS,levels=LEVELS,memory=memory_view(memory,observations=observations))
+        final_payload['task']+=' '+READ_SUPPORT_RULE+(' The interview setting and a second language shape behavior: conduct the setting requires, '
+            'brevity or plain wording, and the absence of a behavior are weak trait evidence; speech cut off at the edge of a read is not behavior. '
+            'Weigh what the person chose to say or do, keep opposing evidence, and return null for a trait the observations do not support.')
+        feedback=prediction_feedback(score)
+        if feedback is not None:final_payload['scoring_feedback']=feedback
+        final_status='generated';final_error=None
+        try:
+            (final,final_explanation,raw_final),decision=self.request([dict(role='system',content='Use saved observations to perform the final personality reasoning task.',output_schema=generation_schema('final',memory=memory)),message(final_payload)],
+                'final',step,lambda obj:(normalize_final(obj),obj.get('reasoning'),obj))
+        except RequestValidationError as error:
+            final_status='unavailable';final_error=str(error)
+            raw_final={t:None for t in TRAITS};final={t:dict(level=None,reasoning=None) for t in TRAITS};final_explanation=None
+            decision=dict(error.failures[-1],failed_attempts=error.failures[:-1]) if error.failures else dict(kind='final',step=step,text='',tokens=[])
+            decision.update(generation_failed=True,final_error=final_error)
+        contextual,contextual_errors=contextual_final(raw_final,memory)
+        contextual_status='partial' if contextual_errors else 'provided' if contextual else 'empty' if 'contextual' in raw_final else 'not_provided'
+        decision.update(contextual_status=contextual_status,contextual_errors=contextual_errors)
+        return dict(final=final,final_explanation=final_explanation,raw_final=raw_final,final_status=final_status,final_error=final_error,
+                    contextual=contextual,contextual_status=contextual_status,contextual_errors=contextual_errors,decision=decision)
+
     def run(self, row):
         self.last_partial = None
         mode = self.config.get("perception", "full")
@@ -413,27 +438,11 @@ class ActiveAgent:
         for item in steps:
             later=[i for i,d in enumerate(decisions) if d['kind']=='action' and i>item['memory_decision_index']]
             item['next_action_decision_index']=later[0] if later else None
-        final_payload=dict(task='Observation is finished. Return one JSON object, putting O,C,E,A,N class strings or null first, then concise reasoning and contextual expressions. State each conclusion once and finish the JSON. Each contextual item has trait, context_type (reported/observed/unknown), context, expression and citations (saved M IDs). Explain supported situation differences and their relation to the overall judgment, without averaging context directions or claiming personality changed over time. Proposed candidates and goals are plans, not observed facts.',
-            perception_end=dict(reason=stop_reason,observations=len(steps),pending_candidates=sum(x['status']=='pending' for x in pool.items.values())),
-            question=question,traits=TRAITS,levels=LEVELS,memory=memory_view(memory,observations=observations))
-        final_payload['task']+=' '+READ_SUPPORT_RULE+(' The interview setting and a second language shape behavior: conduct the setting requires, '
-            'brevity or plain wording, and the absence of a behavior are weak trait evidence. Weigh what the person chose to say or do, '
-            'speech cut off at the edge of a read is not behavior; keep opposing evidence, and return null for a trait the observations do not support.')
-        feedback=prediction_feedback(score)
-        if feedback is not None:final_payload['scoring_feedback']=feedback
-        final_status='generated';final_error=None
-        try:
-            (final,final_explanation,raw_final),decision=self.request([dict(role='system',content='Use saved observations to perform the final personality reasoning task.',output_schema=generation_schema('final',memory=memory)),message(final_payload)],
-                'final',len(steps),lambda obj:(normalize_final(obj),obj.get('reasoning'),obj))
-        except RequestValidationError as error:
-            final_status='unavailable';final_error=str(error)
-            raw_final={t:None for t in TRAITS};final={t:dict(level=None,reasoning=None) for t in TRAITS};final_explanation=None
-            decision=dict(error.failures[-1],failed_attempts=error.failures[:-1]) if error.failures else dict(kind='final',step=len(steps),text='',tokens=[])
-            decision.update(generation_failed=True,final_error=final_error)
-        contextual,contextual_errors=contextual_final(raw_final,memory)
-        contextual_status='partial' if contextual_errors else 'provided' if contextual else 'empty' if 'contextual' in raw_final else 'not_provided'
-        decision.update(contextual_status=contextual_status,contextual_errors=contextual_errors)
-        decisions.append(decision)
+        result=self.final_stage(memory,observations,question,
+            dict(reason=stop_reason,observations=len(steps),pending_candidates=sum(x['status']=='pending' for x in pool.items.values())),score,len(steps))
+        final,final_explanation,final_status,final_error=result['final'],result['final_explanation'],result['final_status'],result['final_error']
+        contextual,contextual_status,contextual_errors=result['contextual'],result['contextual_status'],result['contextual_errors']
+        decisions.append(result['decision'])
         final_reasoning_status=('provided' if final_explanation or all(v.get('reasoning') for v in final.values()) else 'not_provided')
         final_abstentions={t:final[t]['reasoning'] for t in TRAITS if final[t]['level'] is None} if final_status!='unavailable' else {}
         return dict(sample_id=row["id"], dataset=row["dataset"], split=row["split"], person_id=row["person_id"],

@@ -489,21 +489,24 @@ class OfflineBackend:
         return decision['text'],decision
 
 
-def action_token_mask(tokenizer, decision):
-    """Only canonical action coordinates, modality and candidate ID carry entropy weight."""
-    import re
-    tokens = decision["tokens"]
+def token_offsets(tokenizer, tokens):
+    """Decoded text and each generated token's character span in it."""
     text = tokenizer.decode(tokens, skip_special_tokens=False)
     encoded = tokenizer(text, add_special_tokens=False, return_offsets_mapping=True)
     if encoded["input_ids"] == tokens:
-        offsets = encoded["offset_mapping"]
-    else:
-        # Generated BPE sequences need not equal a canonical re-encoding. Decode
-        # prefixes to align original tokens instead of substituting new tokens.
-        lengths = [0] + [len(tokenizer.decode(tokens[:i], skip_special_tokens=False)) for i in range(1, len(tokens)+1)]
-        if any(a > b for a, b in zip(lengths, lengths[1:])):
-            raise ValueError("Non-monotonic generated token offsets")
-        offsets = list(zip(lengths, lengths[1:]))
+        return text, encoded["offset_mapping"]
+    # Generated BPE sequences need not equal a canonical re-encoding. Decode
+    # prefixes to align original tokens instead of substituting new tokens.
+    lengths = [0] + [len(tokenizer.decode(tokens[:i], skip_special_tokens=False)) for i in range(1, len(tokens)+1)]
+    if any(a > b for a, b in zip(lengths, lengths[1:])):
+        raise ValueError("Non-monotonic generated token offsets")
+    return text, list(zip(lengths, lengths[1:]))
+
+
+def action_token_mask(tokenizer, decision):
+    """Only canonical action coordinates, modality and candidate ID carry entropy weight."""
+    import re
+    text, offsets = token_offsets(tokenizer, decision["tokens"])
     spans = []
     for match in re.finditer(r'"time"\s*:\s*\[([^]]+)\]', text):
         for number in re.finditer(r'-?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?', match[1]):

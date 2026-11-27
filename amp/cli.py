@@ -4,7 +4,80 @@ import json
 import random
 import shutil
 from pathlib import Path
-from .common import read_json, read_jsonl, write_json
+from .common import read_json, read_jsonl, write_json, write_jsonl
+
+
+def curate(args, cfg):
+    """Teacher curation commands; see amp/curation.py for the review contract."""
+    from . import curation
+    trajectories = read_json(args.trajectories)
+    output = Path(args.output) if getattr(args, "output", None) else None
+    if args.command == "curate-prescreen":
+        if (output/"reviews.json").exists():
+            raise ValueError("Refusing to overwrite existing review decisions; use a fresh output directory")
+        checks = None
+        if args.judge_model:
+            from .backend import QwenBackend
+            from .judge import MultimodalJudge
+            if Path(args.judge_model).resolve() == Path(cfg["model"]).resolve():
+                raise ValueError("Judge must use a checkpoint different from the student")
+            judge = MultimodalJudge(QwenBackend(args.judge_model, cfg["max_new_tokens"], 0))
+            checks = {t["sample_id"]: judge.check_records(t) for t in trajectories}
+        reviews, excluded = curation.prescreen(trajectories, checks, args.sample_rate, cfg["seed"])
+        write_json(output/"judge_checks.json", checks or {})
+        write_json(output/"excluded.json", excluded)
+        write_json(output/"reviews.json", reviews)
+        (output/"review_packet.md").write_text(curation.review_packet(trajectories, reviews), encoding="utf-8")
+        priorities = {k: sum(r["priority"] == k for r in reviews) for k in ("must", "sample", "optional")}
+        print(json.dumps(dict(items=len(reviews), excluded=len(excluded), **priorities, judge=bool(checks)), indent=2))
+        return
+    reviews = read_json(args.reviews)
+    errors, pending = curation.check_reviews(trajectories, reviews)
+    if args.command == "curate-check":
+        report = dict(errors=errors, pending=pending, agreement=curation.agreement(reviews))
+        if output:
+            write_json(output, report)
+        print(json.dumps(report, indent=2, ensure_ascii=False))
+        if errors or pending:
+            raise SystemExit(1)
+        return
+    if errors or pending:
+        raise ValueError(f"Reviews are incomplete: {len(errors)} errors, {len(pending)} required items unreviewed; run curate-check")
+    if args.command == "curate-final":
+        from .agent import ActiveAgent
+        if args.api:
+            from .backend import QwenAPIBackend
+            backend = QwenAPIBackend(args.base_url, max_tokens=cfg["max_new_tokens"], reasoning_effort=args.reasoning_effort,
+                                     allow_external=args.allow_external)
+        else:
+            from .backend import QwenBackend
+            if args.k > 1 and args.temperature <= 0:
+                raise ValueError("Resampling K>1 Finals locally needs temperature > 0")
+            backend = QwenBackend(cfg["model"], cfg["max_new_tokens"], args.temperature)
+        checks = read_json(args.judge_checks) if args.judge_checks else {}
+        agent = ActiveAgent(backend, None, None, cfg)
+        resampled = []
+        for trajectory in trajectories:
+            memory, _, dropped = curation.reviewed_memory(trajectory, reviews, checks.get(trajectory["sample_id"]))
+            item = curation.resample_final(agent, trajectory, memory, args.k)
+            item["dropped_records"] = dropped
+            resampled.append(item)
+            write_json(output/"final_candidates.json", resampled)
+        if (output/"final_reviews.json").exists():
+            raise ValueError("Refusing to overwrite existing Final choices; use a fresh output directory")
+        write_json(output/"final_reviews.json", [curation.final_review_template(r) for r in resampled])
+        (output/"final_packet.md").write_text(curation.final_packet(resampled), encoding="utf-8")
+        print(f"Resampled {args.k} Finals for {len(resampled)} samples: {output}")
+        return
+    from transformers import AutoTokenizer
+    labels = {r["id"]: r.get("labels") for r in read_jsonl(args.manifest) if r["split"] == "train"}
+    perception, final, report = curation.export_curated(trajectories, reviews, read_json(args.final_candidates), read_json(args.final_reviews),
+                                                        labels, AutoTokenizer.from_pretrained(args.tokenizer, local_files_only=True),
+                                                        args.max_final_error)
+    write_jsonl(output/"perception.jsonl", perception)
+    write_jsonl(output/"final.jsonl", final)
+    write_json(output/"export_report.json", report)
+    print(json.dumps({k: v for k, v in report.items() if k != "dropped"}, indent=2, ensure_ascii=False))
 
 
 def main():
@@ -16,7 +89,7 @@ def main():
     p = sub.add_parser("doctor")
     p = sub.add_parser("smoke", help="Synthetic control-flow fixture; no media/model/API")
     p.add_argument("--output", default="runs/smoke.json")
-    for name in ["infer", "teacher", "rl"]:
+    for name in ["infer", "rl"]:
         p = sub.add_parser(name)
         p.add_argument("--manifest", default="runs/data/train.jsonl")
         p.add_argument("--output", default=f"runs/{name}")
@@ -30,29 +103,57 @@ def main():
         p.add_argument("--scorer", choices=["offline", "jev"], default=None)
         p.add_argument("--allow-external", action="store_true", help="Confirm data-use permission and enable minimized Jev requests")
         p.add_argument("--judge-model", help="Separate Qwen2.5-Omni checkpoint; must differ from policy")
-        if name == "teacher":
-            p.add_argument("--best-of", type=int, default=4)
         if name == "rl":
             p.add_argument("--group-size", type=int, default=4)
             p.add_argument("--updates", type=int, default=1)
             p.add_argument("--variant", choices=["grpo", "taura_style", "teca"], default="teca")
     p = sub.add_parser("sft")
-    p.add_argument("--data", required=True)
+    p.add_argument("--data", required=True, nargs="+", help="Curated perception.jsonl and/or final.jsonl")
     p.add_argument("--output", default="runs/sft")
     p.add_argument("--epochs", type=int, default=1)
     p.add_argument("--adapter")
-    p = sub.add_parser("export-sft")
-    p.add_argument("--trajectories", required=True, help="JSON list of accepted teacher trajectories")
-    p.add_argument("--output", default="runs/sft.jsonl")
-    p.add_argument('--tokenizer',help='Local student tokenizer required for API teacher outputs; never trains on API token IDs')
-    p = sub.add_parser('review-teachers',help='Re-filter saved teacher candidates without model or API calls')
-    p.add_argument('--candidates',required=True,help='Saved JSON trajectory list or candidates directory')
-    p.add_argument('--manifest',default='runs/data/train.jsonl')
-    p.add_argument('--output',default='runs/reviewed_teachers')
+    p = sub.add_parser("curate-prescreen", help="Judge/rule pre-screen of teacher perception outputs and a human review template")
+    p.add_argument("--trajectories", required=True, help="Teacher trajectories.json (train split)")
+    p.add_argument("--output", required=True)
+    p.add_argument("--judge-model", help="Local Qwen2.5-Omni checkpoint that differs from the student; omit to review every record")
+    p.add_argument("--sample-rate", type=float, default=.2, help="Share of unflagged, Judge-supported items to review for Judge calibration")
+    p = sub.add_parser("curate-check", help="Validate human reviews and report Judge/rule agreement")
+    p.add_argument("--trajectories", required=True)
+    p.add_argument("--reviews", required=True)
+    p.add_argument("--output")
+    p = sub.add_parser("curate-final", help="Resample Final K times on the reviewed Memory for a label-blind human choice")
+    p.add_argument("--trajectories", required=True)
+    p.add_argument("--reviews", required=True)
+    p.add_argument("--judge-checks", help="judge_checks.json from curate-prescreen")
+    p.add_argument("--output", required=True)
+    p.add_argument("--k", type=int, default=4)
+    p.add_argument("--temperature", type=float, default=.7, help="Local model sampling temperature")
+    p.add_argument("--api", action="store_true", help="Use the hosted teacher instead of the local model")
+    p.add_argument("--base-url")
+    p.add_argument("--reasoning-effort", choices=["none", "low", "medium", "xhigh"], default="medium")
+    p.add_argument("--allow-external", action="store_true")
+    p = sub.add_parser("curate-export", help="Export reviewed perception rows and label-gated Final rows for SFT")
+    p.add_argument("--trajectories", required=True)
+    p.add_argument("--reviews", required=True)
+    p.add_argument("--final-candidates", required=True)
+    p.add_argument("--final-reviews", required=True)
+    p.add_argument("--manifest", default="runs/data/train.jsonl")
+    p.add_argument("--tokenizer", required=True, help="Local student tokenizer; API token IDs are never trained on")
+    p.add_argument("--max-final-error", type=float, default=.25, help="Mean ordinal error / 4 allowed for the chosen Final")
+    p.add_argument("--output", required=True)
+    p = sub.add_parser("rl-final", help="Stage 3: GRPO on Final only with fixed Memory and per-trait token advantages")
+    p.add_argument("--rollouts", required=True, help="Student train trajectories whose Memory stays fixed")
+    p.add_argument("--manifest", default="runs/data/train.jsonl")
+    p.add_argument("--adapter", required=True)
+    p.add_argument("--judge-model", required=True)
+    p.add_argument("--group-size", type=int, default=8)
+    p.add_argument("--updates", type=int, default=1)
+    p.add_argument("--output", default="runs/rl_final")
     p = sub.add_parser("evaluate")
     p.add_argument("--trajectories", required=True)
     p.add_argument("--manifest", required=True)
     p.add_argument("--bins", default="runs/data/label_bins.json")
+    p.add_argument("--train-manifest", help="Train manifest for the majority-level baseline")
     p.add_argument("--output", default="runs/metrics.json")
     p = sub.add_parser("validate-jev")
     p.add_argument("--trajectories", required=True)
@@ -92,43 +193,31 @@ def main():
         write_json(args.output, result)
         print(f"Synthetic smoke passed; NOT a model prediction: {args.output}")
         return
-    if args.command == "export-sft":
-        from .train import export_sft
-        tokenizer=None
-        if args.tokenizer:
-            from transformers import AutoTokenizer
-            tokenizer=AutoTokenizer.from_pretrained(args.tokenizer,local_files_only=True)
-        print(export_sft(read_json(args.trajectories), args.output,tokenizer=tokenizer))
-        return
-    if args.command == 'review-teachers':
-        from .train import filter_best
-        rows={r['id']:r for r in read_jsonl(args.manifest)}
-        source=Path(args.candidates)
-        paths=sorted(source.glob('*.json')) if source.is_dir() else [source]
-        groups={}
-        for path in paths:
-            for trajectory in read_json(path):
-                row=rows.get(trajectory['sample_id'])
-                if not row or row['split']!='train' or trajectory['split']!='train' or row['person_id']!=trajectory['person_id']:
-                    raise ValueError('Reviewed teachers must match the original train sample and person')
-                trajectory.pop('teacher_accepted',None)
-                groups.setdefault(row['id'],[]).append(trajectory)
-        accepted,rejected=[],[]
-        for sample_id,group in groups.items():
-            best,errors=filter_best(group,rows[sample_id]['labels'])
-            rejected.extend(errors)
-            if best:
-                best['teacher_accepted']=True
-                accepted.append(best)
-        write_json(Path(args.output)/'trajectories.json',accepted)
-        write_json(Path(args.output)/'rejected.json',rejected)
-        print(f'Reviewed saved candidates: {len(accepted)} accepted, {len(rejected)} rejected; no generation')
-        return
     if args.command == "evaluate":
         from .evaluate import evaluate
-        result = evaluate(read_json(args.trajectories), list(read_jsonl(args.manifest)), read_json(args.bins))
+        result = evaluate(read_json(args.trajectories), list(read_jsonl(args.manifest)), read_json(args.bins),
+                          list(read_jsonl(args.train_manifest)) if args.train_manifest else None)
         write_json(args.output, result)
         print(json.dumps(result, indent=2))
+        return
+    if args.command in ("curate-prescreen", "curate-check", "curate-final", "curate-export"):
+        curate(args, cfg)
+        return
+    if args.command == "rl-final":
+        from .agent import ActiveAgent
+        from .judge import MultimodalJudge
+        from .backend import QwenBackend
+        from .train import rl_final
+        if Path(args.judge_model).resolve() == Path(cfg["model"]).resolve():
+            raise ValueError("Judge must use a checkpoint different from the policy")
+        labels = {r["id"]: r.get("labels") for r in read_jsonl(args.manifest)}
+        items = [(t, labels.get(t["sample_id"])) for t in read_json(args.rollouts)]
+        cfg["temperature"] = 1.0  # On-policy sampling for GRPO likelihoods.
+        backend = QwenBackend(cfg["model"], cfg["max_new_tokens"], 1.0, train=True, adapter=args.adapter,
+                              generation_log_dir=cfg.get("generation_log_dir"), profiling=cfg.get('profiling', False))
+        backend.torch.manual_seed(cfg["seed"])
+        judge = MultimodalJudge(QwenBackend(args.judge_model, cfg["max_new_tokens"], 0))
+        rl_final(backend, ActiveAgent(backend, None, None, cfg), judge, items, args.output, cfg, args.adapter, args.group_size, args.updates)
         return
     if args.command == "validate-jev":
         from .evaluate import validate_jev
@@ -173,21 +262,21 @@ def main():
     from .media import MediaTools
     from .scoring import build_scorer
     from .judge import MultimodalJudge
-    from .train import filter_best, rl
+    from .train import rl
     rows = [r for r in read_jsonl(args.manifest) if (not args.dataset or r["dataset"] == args.dataset)
             and (not args.sample_id or r["id"] == args.sample_id)]
     if args.limit < 1 or not rows:
         raise ValueError("No selected samples or invalid --limit")
     rows = rows[:args.limit]
-    if args.command in ["teacher", "rl"] and any(r["split"] != "train" for r in rows):
-        raise ValueError("Teacher generation and RL require train split")
-    if args.command in ["teacher", "rl"] and not args.judge_model:
-        raise ValueError("Teacher/RL requires --judge-model for independent multimodal evidence checks")
+    if args.command == "rl" and any(r["split"] != "train" for r in rows):
+        raise ValueError("RL requires train split")
+    if args.command == "rl" and not args.judge_model:
+        raise ValueError("RL requires --judge-model for independent multimodal evidence checks")
     if args.judge_model and Path(args.judge_model).resolve() == Path(cfg["model"]).resolve():
         raise ValueError("Judge must use a checkpoint different from the policy")
     if args.command == "rl" and (not args.adapter or args.group_size < 2):
         raise ValueError("RL requires --adapter and --group-size >=2")
-    if args.command in ('teacher','rl'):
+    if args.command == 'rl':
         from .common import TRAITS
         if any(set(r.get('labels',{}))!=set(TRAITS) for r in rows):
             raise ValueError('Training requires five labels for the actual sample unit; unresolved person-level inputs cannot use answer labels')
@@ -218,30 +307,16 @@ def main():
            args.variant, args.updates)
         return
     output, errors = [], []
-    n = args.best_of if args.command == "teacher" else 1
-    if n < 1:
-        raise ValueError("best-of must be positive")
     for row in rows:
-        group = []
-        for attempt in range(n):
-            try:
-                trajectory = agent.run(row)
-                if judge:
-                    trajectory["judge"] = judge.assess(trajectory)
-                group.append(trajectory)
-            except (ValueError, KeyError, RuntimeError, json.JSONDecodeError) as error:
-                errors.append(dict(sample_id=row["id"], attempt=attempt, error=str(error),
-                                   partial=getattr(agent, "last_partial", None),
-                                   failed_generations=getattr(error, "failures", [])))
-        if args.command == "teacher":
-            write_json(Path(args.output)/f"candidates/{row['id'].replace(':','_')}.json", group)
-            best, rejected = filter_best(group, row["labels"])
-            errors.extend(rejected)
-            if best:
-                best["teacher_accepted"] = True
-                output.append(best)
-        else:
-            output.extend(group)
+        try:
+            trajectory = agent.run(row)
+            if judge:
+                trajectory["judge"] = judge.assess(trajectory)
+            output.append(trajectory)
+        except (ValueError, KeyError, RuntimeError, json.JSONDecodeError) as error:
+            errors.append(dict(sample_id=row["id"], error=str(error),
+                               partial=getattr(agent, "last_partial", None),
+                               failed_generations=getattr(error, "failures", [])))
         write_json(Path(args.output)/"trajectories.json", output)
         write_json(Path(args.output)/"rejected.json", errors)
     print(f"Saved {len(output)} trajectories, {len(errors)} rejected/error records to {args.output}")

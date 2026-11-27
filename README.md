@@ -68,12 +68,25 @@ ASR 时间仍是未验证的检索提示，不作为精确媒体对齐真值。M
 
 现有独立 Judge 按每个 M 记录检查实际来源中的发现，并评价 Final。检查结果与记录、来源指纹绑定；缺失或过期检查不能使教师轨迹通过筛选或获得正向 Memory 质量信用。真实标签仅用于离线筛选和训练奖励，不进入 Agent、Memory 或 Jev 输入。
 
-教师筛选保留完整 Train 轨迹、标签任务表现及独立来源检查门槛。SFT 只监督模型实际生成的粗扫、Observe/候选计划和 Final Token；调度器及 Python 结果不是目标 Token。默认队列流程不伪造 Action 段。
+教师数据按决策整理，感知与 Final 分开（`amp/curation.py`）：
+
+1. `curate-prescreen`：规则检查（数值测量、动机推断、缺失通道用语）和可选的本地 Judge 逐条检查。被标记或 Judge 判为不支持的条目必须人工审核，其余按 `--sample-rate` 抽查以校准 Judge；输出 `reviews.json` 与 `review_packet.md`。审核感知数据时不看标签。
+2. 人工在 `reviews.json` 中对每条填写 `action`（keep / edit / drop）、`reviewer`，修改或删除时填写 `reason_code`，修改时 `corrected_text` 保持原 JSON 结构。`curate-check` 校验审核并报告 Judge、规则与人工的一致率。
+3. `curate-final`：在审核后的 Memory 上重新生成 K 次 Final（本地或 `--api` 教师），生成 `final_packet.md` 与 `final_reviews.json`。审核者在看标签前选择证据使用最合理的一次。
+4. `curate-export`：导出 `perception.jsonl`（不使用标签）与 `final.jsonl`（所选 Final 再经标签门槛，平均序数误差不超过 `--max-final-error`）。修改过的目标用学生分词器重新编码并标记。
+
+SFT 只监督模型生成的粗扫、Observe/候选和 Final Token；调度器及 Python 结果不是目标 Token。`evaluate --train-manifest` 同时报告每个特质取 Train 众数的基线。
 
 ```bash
-python -m amp.cli export-sft --trajectories runs/teacher/trajectories.json --output runs/sft.jsonl --tokenizer /path/to/student
-python -m amp.cli sft --data runs/sft.jsonl --output runs/sft
+python -m amp.cli curate-prescreen --trajectories runs/teacher/trajectories.json --output runs/curation --judge-model /path/to/7B
+python -m amp.cli curate-check --trajectories runs/teacher/trajectories.json --reviews runs/curation/reviews.json
+python -m amp.cli curate-final --trajectories runs/teacher/trajectories.json --reviews runs/curation/reviews.json --judge-checks runs/curation/judge_checks.json --output runs/curation/final --k 4
+python -m amp.cli curate-export --trajectories runs/teacher/trajectories.json --reviews runs/curation/reviews.json --final-candidates runs/curation/final/final_candidates.json --final-reviews runs/curation/final/final_reviews.json --tokenizer /path/to/student --output runs/sft_data
+python -m amp.cli sft --data runs/sft_data/perception.jsonl runs/sft_data/final.jsonl --output runs/sft
+python -m amp.cli rl-final --rollouts runs/student_train/trajectories.json --adapter runs/sft/epoch_1 --judge-model /path/to/7B --output runs/rl_final
 ```
+
+`rl-final` 固定学生轨迹的 Memory，对同一份 Memory 采样一组 Final 做 GRPO：每个特质的等级 Token 只接收该特质的组内优势，其余 Token 接收各特质优势的均值加 Judge 忠实度项；参考策略为冻结的 SFT 适配器。
 
 TECA 的 clipped GRPO 和冻结 SFT reference 保持不变。当前 Memory 段使用轨迹优势加来源忠实性信用：支持为正，不支持/错误来源为负，未知、空观察、重复计入旧更新为零。该信用不判断人格标签方向，不估算反事实效用。
 

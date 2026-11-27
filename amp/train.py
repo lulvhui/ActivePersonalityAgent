@@ -1,62 +1,14 @@
-import json
 import random
+import re
 from pathlib import Path
-from .backend import action_token_mask
-from .common import read_jsonl, write_json, write_jsonl
-from .state import memory_records
-from .teca import advantages, clipped_grpo, final_trait_loss, reward, memory_outcomes,record_support
-from .perception import decode_observation
-from .common import parse_json
+from .backend import action_token_mask, token_offsets
+from .common import TRAITS, LEVELS, read_jsonl, write_json, parse_json, standardize
+from .teca import advantages, clipped_grpo, reward, memory_outcomes
 
 
-def filter_best(trajectories,labels,max_error=.25,min_ground=.8):
-    accepted=[];rejected=[]
-    for trajectory in trajectories:
-        why=[]
-        if trajectory.get('offline'):why.append('offline_fixture')
-        if trajectory.get('run_status')!='complete':why.append('incomplete_protocol')
-        if trajectory.get('split')!='train':why.append('not_train')
-        if final_trait_loss(labels,trajectory['final'])>max_error:why.append('label_error')
-        judge=trajectory.get('judge')
-        if not judge or judge['final']['faithfulness']<min_ground:why.append('grounding_not_verified')
-        try:
-            records=memory_records(trajectory['memory'])
-            nonempty=[r for r in records.values() if decode_observation(r['content'])['observations']]
-            if any(decode_observation(r['content'])['errors'] for r in records.values()):why.append('invalid_observation_protocol')
-            if not nonempty or any(record_support(trajectory,r)[0] is not True for r in nonempty):
-                why.append('empty_or_unsupported_observations')
-        except (ValueError,KeyError,TypeError):why.append('invalid_record_memory')
-        if why:rejected.append(dict(sample_id=trajectory['sample_id'],reasons=why))
-        else:accepted.append(trajectory)
-    best=min(accepted,key=lambda t:(final_trait_loss(labels,t['final']),-t['judge']['final']['faithfulness'],t['cost']['active_seconds'])) if accepted else None
-    return best,rejected
-
-
-def export_sft(trajectories,path,tokenizer=None):
-    rows=[]
-    for trajectory in trajectories:
-        if trajectory.get('split')!='train' or trajectory.get('offline') or not trajectory.get('teacher_accepted') or trajectory.get('run_status')!='complete':
-            raise ValueError('SFT export requires accepted complete real train trajectories')
-        memory_records(trajectory['memory'])
-        for decision in trajectory['decisions']:
-            if decision['kind'] not in ('candidate_scan','action','memory','final'):continue
-            if decision.get('generation_failed') or decision.get('truncated') or decision.get('candidate_output_valid') is False:continue
-            obj=parse_json(decision['text'])
-            if decision['kind']=='memory' and not decision.get('proposal_repair') and decode_observation(decision['text'])['errors']:
-                raise ValueError('Invalid observation target')
-            row=dict(decision,sample_id=trajectory['sample_id'],split='train')
-            if not row.get('tokens'):
-                if tokenizer is None or not tokenizer.eos_token:raise ValueError('Teacher export requires the student tokenizer and EOS')
-                row['tokens']=tokenizer.encode(decision['text']+tokenizer.eos_token,add_special_tokens=False)
-                row['tokenization']='student_tokenizer_from_teacher_output'
-            rows.append(row)
-    write_jsonl(path,rows)
-    return len(rows)
-
-
-def sft(backend, path, output, cfg, epochs=1):
+def sft(backend, paths, output, cfg, epochs=1):
     torch = backend.torch
-    rows = list(read_jsonl(path))
+    rows = [row for path in ([paths] if isinstance(paths, (str, Path)) else paths) for row in read_jsonl(path)]
     if not rows:
         raise ValueError("Empty SFT file")
     if any(r.get("split") != "train" or r.get("offline") or not r["tokens"] for r in rows):
@@ -86,6 +38,135 @@ def sft(backend, path, output, cfg, epochs=1):
     write_json(Path(output)/"training_log.json", log)
 
 
+def load_reference(backend, adapter_path):
+    """Load the SFT adapter as the frozen KL reference; the trained policy is the 'default' adapter."""
+    from peft import load_peft_weights,set_peft_model_state_dict
+    backend.policy.load_adapter(adapter_path, adapter_name="reference", is_trainable=False)
+    # Restore after PEFT's BF16 creation / FP32 cast so the reference retains
+    # the checkpoint's exact FP32 LoRA values rather than rounded values.
+    set_peft_model_state_dict(backend.policy,load_peft_weights(adapter_path,device=str(backend.policy.device)),adapter_name='reference')
+    backend.policy.set_adapter("default")
+    freeze_reference(backend)
+
+
+def freeze_reference(backend):
+    for name, param in backend.policy.named_parameters():
+        if ".reference." in name:
+            param.requires_grad_(False)
+
+
+def reference_logp(backend, decision):
+    backend.policy.set_adapter("reference")
+    with backend.torch.no_grad():
+        ref, _ = backend.token_stats(decision,need_entropy=False)
+    backend.policy.set_adapter("default")
+    freeze_reference(backend)
+    return ref.cpu().tolist()
+
+
+def trait_rewards(labels, final):
+    """Ordinal reward per trait; an abstention counts as the largest error."""
+    return {t:(-1. if final[t]['level'] is None else -abs(labels[t]-LEVELS.index(final[t]['level']))/4) for t in TRAITS}
+
+
+def group_final_advantages(rewards, faithfulness, beta):
+    """Group-standardized advantage per trait, plus a shared Judge-faithfulness term, for Finals of one Memory."""
+    trait={t:standardize([r[t] for r in rewards]) for t in TRAITS}
+    shared=[beta*v for v in standardize(faithfulness)]
+    return [dict(traits={t:trait[t][g] for t in TRAITS},shared=shared[g]) for g in range(len(rewards))]
+
+
+def trait_level_masks(tokenizer, decision):
+    """Per trait, the generated tokens that spell that trait's top-level level value in the Final JSON."""
+    text, offsets = token_offsets(tokenizer, decision['tokens'])
+    masks = {}
+    for trait in TRAITS:
+        match = re.search(r'"%s"\s*:\s*(null|"[a-z_]+")' % trait, text)
+        if match is None:
+            raise ValueError(f'Final has no top-level {trait} level')
+        start, end = match.span(1)
+        masks[trait] = [b > start and a < end for a, b in offsets]
+    return masks
+
+
+def final_token_advantages(masks, advantage, length):
+    """A trait's level tokens get only that trait's advantage (its reward depends on them alone);
+    other tokens (reasoning, contextual items, JSON syntax) get the mean trait advantage plus the shared term."""
+    values=[sum(advantage['traits'].values())/len(TRAITS)+advantage['shared']]*length
+    for trait, mask in masks.items():
+        for index, inside in enumerate(mask):
+            if inside:
+                values[index]=advantage['traits'][trait]
+    return values
+
+
+def rl_final(backend, agent, judge, items, output, cfg, adapter_path, group_size=8, updates=1):
+    """Stage 3: GRPO on Final only. Memory and observations stay fixed; each update samples a group of
+    Finals for one train rollout and assigns per-trait token advantages."""
+    if group_size < 2:
+        raise ValueError("GRPO group_size must be >=2")
+    if not adapter_path:
+        raise ValueError("Final RL requires an SFT LoRA adapter; it is also the fixed reference policy")
+    if not items:
+        raise ValueError("Final RL needs train rollouts")
+    for trajectory, labels in items:
+        if trajectory.get('split')!='train' or trajectory.get('offline'):
+            raise ValueError('Final RL uses genuine train rollouts only')
+        if set(labels or {})!=set(TRAITS):
+            raise ValueError(f"{trajectory['sample_id']}: Final RL needs five labels for the sample unit")
+    torch = backend.torch
+    load_reference(backend, adapter_path)
+    optimizer = torch.optim.AdamW([p for p in backend.policy.parameters() if p.requires_grad], lr=cfg["learning_rate"])
+    tokenizer = backend.processor.tokenizer
+    checks = {t['sample_id']:judge.check_records(t) for t,_ in items}  # once per fixed Memory
+    output, logs = Path(output), []
+    backend.policy.eval()
+    for iteration in range(updates):
+        trajectory, labels = items[iteration % len(items)]
+        pending = sum(x.get('status') == 'pending' for x in trajectory.get('pool', []))
+        perception_end = dict(reason=trajectory['stop_reason'], observations=len(trajectory['steps']), pending_candidates=pending)
+        question = next((o.get('question', '') for o in trajectory['observations'].values()), '')
+        group = [agent.final_stage(trajectory['memory'], trajectory['observations'], question, perception_end, trajectory['score'], len(trajectory['steps']))
+                 for _ in range(group_size)]
+        valid = [r['final_status']=='generated' and bool(r['decision'].get('tokens')) for r in group]
+        rewards = [trait_rewards(labels, r['final']) if ok else {t:-1. for t in TRAITS} for r, ok in zip(group, valid)]
+        faith = [judge.assess_final(dict(trajectory, final=r['final'], final_explanation=r['final_explanation'], contextual=r['contextual']),
+                                    checks[trajectory['sample_id']])['faithfulness'] if ok else 0. for r, ok in zip(group, valid)]
+        credit = group_final_advantages(rewards, faith, cfg['beta_ground'])
+        optimizer.zero_grad(set_to_none=True)
+        total_loss, used = 0., [g for g, ok in enumerate(valid) if ok]
+        with backend.prepared_group():
+            for g in used:
+                d = group[g]['decision']
+                with torch.no_grad():
+                    d['old_logp'] = backend.token_stats(d, need_entropy=False)[0].cpu().tolist()
+                d['ref_logp'] = reference_logp(backend, d)
+                d['token_advantage'] = final_token_advantages(trait_level_masks(tokenizer, d), credit[g], len(d['tokens']))
+            backend.policy.train()
+            for g in used:
+                d = group[g]['decision']
+                logp, _ = backend.token_stats(d, need_entropy=False)
+                old = torch.tensor(d['old_logp'], device=logp.device)
+                ref = torch.tensor(d['ref_logp'], device=logp.device)
+                loss = clipped_grpo(logp, old, ref, d['token_advantage'], cfg['clip_epsilon'], cfg['kl_beta'])/len(used)
+                loss.backward()
+                total_loss += float(loss.detach())
+            if used:
+                torch.nn.utils.clip_grad_norm_(backend.policy.parameters(), 1.)
+                optimizer.step()
+        backend.policy.eval()
+        write_json(output/f"final_rollouts/update_{iteration:05d}.json",
+                   [dict(sample_id=trajectory['sample_id'], final=r['final'], final_explanation=r['final_explanation'], contextual=r['contextual'],
+                         rewards=rw, faithfulness=f, advantage=c) for r, rw, f, c in zip(group, rewards, faith, credit)])
+        logs.append(dict(iteration=iteration, sample_id=trajectory['sample_id'], loss=total_loss, generated=len(used),
+                         mean_trait_reward={t:sum(r[t] for r in rewards)/len(rewards) for t in TRAITS},
+                         mean_faithfulness=sum(faith)/len(faith),
+                         levels={t:{str(level):sum(r['final'][t]['level']==level for r in group) for level in [*LEVELS,None]} for t in TRAITS}))
+        backend.policy.save_pretrained(str(output/"adapter"), selected_adapters=["default"])
+        backend.processor.save_pretrained(str(output/"adapter"))
+        write_json(output/"training_log.json", logs)
+
+
 def rl(backend, agent, judge, rows, output, cfg, adapter_path, group_size=4,
        variant="teca", updates=1):
     if group_size < 2:
@@ -95,16 +176,7 @@ def rl(backend, agent, judge, rows, output, cfg, adapter_path, group_size=4,
     if not rows or any(r["split"] != "train" for r in rows):
         raise ValueError("RL must use nonempty train split")
     torch = backend.torch
-    # The frozen reference is the SFT policy, not the original pretraining model.
-    from peft import load_peft_weights,set_peft_model_state_dict
-    backend.policy.load_adapter(adapter_path, adapter_name="reference", is_trainable=False)
-    # Restore after PEFT's BF16 creation / FP32 cast so the reference retains
-    # the checkpoint's exact FP32 LoRA values rather than rounded values.
-    set_peft_model_state_dict(backend.policy,load_peft_weights(adapter_path,device=str(backend.policy.device)),adapter_name='reference')
-    backend.policy.set_adapter("default")
-    for name, param in backend.policy.named_parameters():
-        if ".reference." in name:
-            param.requires_grad_(False)
+    load_reference(backend, adapter_path)
     optimizer = torch.optim.AdamW([p for p in backend.policy.parameters() if p.requires_grad], lr=cfg["learning_rate"])
     logs = []
     output = Path(output)
@@ -130,13 +202,7 @@ def rl(backend, agent, judge, rows, output, cfg, adapter_path, group_size=4,
                         if d["kind"] == "action":
                             mask = torch.tensor(action_token_mask(backend.processor.tokenizer, d), device=h.device)
                             d["action_entropy"] = float(h[mask].mean())
-                        backend.policy.set_adapter("reference")
-                        ref, _ = backend.token_stats(d,need_entropy=False)
-                        d["ref_logp"] = ref.cpu().tolist()
-                        backend.policy.set_adapter("default")
-                        for name, param in backend.policy.named_parameters():
-                            if ".reference." in name:
-                                param.requires_grad_(False)
+                        d["ref_logp"] = reference_logp(backend, d)
             for trajectory in trajectories:
                 trajectory['memory_outcomes']=memory_outcomes(trajectory,row['labels'],cfg)
             credit = advantages(trajectories, row["labels"], cfg, variant)

@@ -11,6 +11,11 @@ class MultimodalJudge:
         self.backend=backend
 
     def assess(self,trajectory):
+        checks=self.check_records(trajectory)
+        return dict(records=checks,final=self.assess_final(trajectory,checks),automatic_evaluation=True)
+
+    def check_records(self,trajectory):
+        """Source fidelity of every saved record, bound to record and source fingerprints."""
         checks={}
         for key,record in memory_records(trajectory['memory']).items():
             source=record_source(record,trajectory['observations'])
@@ -27,6 +32,10 @@ class MultimodalJudge:
                 if not isinstance(result.get('supported'),bool) or not isinstance(result.get('reason'),str):
                     raise ValueError('Judge must return supported:boolean and reason:string')
             checks[key]=dict(result,record_fingerprint=digest(record),source_fingerprint=digest(source))
+        return checks
+
+    def assess_final(self,trajectory,checks):
+        """Faithfulness of the Final explanation and citations given the record checks."""
         schema=dict(type='object',properties={k:dict(type='number',minimum=0,maximum=1) for k in ('faithfulness','citation_correctness')},required=['faithfulness','citation_correctness'],additionalProperties=False)
         views=memory_view(trajectory['memory'],observations=trajectory['observations'])['observations']
         payload=dict(task='Assess the final explanation and contextual expressions against the saved findings and their support checks. Return faithfulness and citation_correctness in [0,1]. '+READ_SUPPORT_RULE,
@@ -36,4 +45,4 @@ class MultimodalJudge:
         for key in ('faithfulness','citation_correctness'):
             if isinstance(final.get(key),bool) or not isinstance(final.get(key),(int,float)) or not math.isfinite(final[key]) or not 0<=final[key]<=1:
                 raise ValueError('Invalid final Judge score')
-        return dict(records=checks,final=final,automatic_evaluation=True)
+        return final

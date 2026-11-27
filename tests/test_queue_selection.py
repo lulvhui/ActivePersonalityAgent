@@ -92,15 +92,14 @@ class QueueSelectionTests(unittest.TestCase):
         self.assertEqual(t['global_scan']['input_modalities'],['text','audio','video'])
 
     def test_sft_and_outcome_records_do_not_invent_scheduler_tokens(self):
-        from amp.train import export_sft
+        from amp.curation import perception_items
         from amp.teca import advantages,memory_outcomes
-        from amp.common import TRAITS,read_jsonl
+        from amp.common import TRAITS
         t=self.run_agent(NoSelectReader(),max_steps=2)
-        t.update(offline=False,teacher_accepted=True)
-        with tempfile.TemporaryDirectory() as temp:
-            path=Path(temp)/'sft.jsonl'
-            export_sft([t],path)
-            self.assertFalse(any(r['kind']=='action' for r in read_jsonl(path)))
+        t.update(offline=False)
+        items,_=perception_items(t)
+        self.assertTrue(items)
+        self.assertFalse(any(i['decision']['kind']=='action' for i in items))
         values=advantages([t,t],{k:0 for k in TRAITS},CFG)
         self.assertEqual(len(values[0]),len(t['decisions']))
         outcomes=memory_outcomes(t,{k:0 for k in TRAITS},CFG)
