@@ -1,7 +1,6 @@
 import hashlib
 import json
 import math
-import re
 from pathlib import Path
 
 TRAITS = dict(O="Openness", C="Conscientiousness", E="Extraversion", A="Agreeableness", N="Neuroticism")

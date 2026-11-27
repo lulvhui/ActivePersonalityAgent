@@ -95,12 +95,14 @@ class ActiveAgent:
         observation.update(coarse_summary=summary,summary_status=summary_status)
         return decision
 
-    def update(self, memory, observations, new_observations, step, question="", followup_goal=None, available_modalities=None,candidate_state=None,remaining_steps=None,media_duration=None):
+    def update(self, memory, observations, new_observations, step, question="", followup_goal=None, available_modalities=None,candidate_state=None,remaining_steps=None,media_duration=None,unread=None):
         obs_id,obs=next(iter(new_observations.items()))
         if obs.get('questions'):question='\n'.join(q['question'] for q in obs['questions'])
         start,end=obs['time']
         margin=float(self.config.get('refinement_context_seconds',5))
-        bounds=[round(max(-margin,-start),6),round(min(end+margin,media_duration if media_duration is not None else end+margin)-start,6)]
+        duration=media_duration if media_duration is not None else end+margin
+        bounds=[round(-start,6),round(duration-start,6)]
+        context=[round(max(-margin,-start),6),round(min(end+margin,duration)-start,6)]
         payload=dict(task=SOURCE_FOCUS[obs['modality']]+' Describe the actions and communication found in this source, grouping related details into coherent findings and distinguishing self-reports from observed behavior. Use the question and prior observations as context. Optional candidates investigate a specific unresolved detail: hint states the current finding; goal states what additional information the requested window and modality can provide. Choose a window with enough context to answer that question, rather than subdividing the clip for coverage. Keep findings in observations and future requests in candidates; either array may be empty.',
             input_modalities=['audio','video'] if obs['modality']=='audio_video' else [obs['modality']],
             question=question,question_context=[dict(local_time=[max(0.,q['time'][0]-start),min(end-start,q['time'][1]-start)],question=q['question']) for q in obs.get('questions',[])],
@@ -111,11 +113,16 @@ class ActiveAgent:
             max_video_window_seconds=self.config['max_clip_seconds'],
             prior_observations=[{k:r[k] for k in ('id','modality','content','content_status')} for r in memory_view(memory)['observations']
                 if r['retrieval_window'][0]<end+margin and r['retrieval_window'][1]>start-margin],
-            known_observation_requests=[dict(covered_local_time=[round(max(x['time'][0]-start,bounds[0]),6),round(min(x['time'][1]-start,bounds[1]),6)],modality=x['modality'],status=x['status'])
-                for x in candidate_state or [] if x['time'][0]<start+bounds[1] and x['time'][1]>start+bounds[0]],remaining_observations=remaining_steps,
+            known_observation_requests=[dict(covered_local_time=[round(max(x['time'][0]-start,context[0]),6),round(min(x['time'][1]-start,context[1]),6)],modality=x['modality'],status=x['status'])
+                for x in candidate_state or [] if x['time'][0]<start+context[1] and x['time'][1]>start+context[0]],remaining_observations=remaining_steps,
             segments=[dict(text=s['text'],question=s.get('question',''),timing=s.get('timing','unverified_asr'),
                 **(dict(local_time=[round(v-start,6) for v in s['media_time']]) if s.get('media_time') is not None and s.get('timing')=='media_aligned' else {})) for s in obs.get('segments',[])])
         payload['task']+=' For closer inspection choose a narrower window or another modality. Known requests are already pending or saved. With zero remaining observations, candidates is empty.'
+        if unread is not None:
+            payload['unread_local_time']={c:[[round(a-start,6),round(b-start,6)] for a,b in spans] for c,spans in unread.items()}
+            payload['task']+=(f" A request may point anywhere in the recording. Re-reading content already read in the same modality returns the same frames and samples, "
+                f"so only {int(self.config.get('max_focus_per_region',1))} closer look(s) inside the original region are accepted; other requests must add at least {self.config.get('min_new_seconds')} seconds of unread_local_time in that modality (or all that remains). "
+                f"Video is sampled at {self.config.get('video_fps',1)} frame(s) per second. To compare this behavior with other situations, use the saved observations: Final reads all of them.")
         messages=[dict(role='system',content='Use the supplied interview source to perform the current task. Leave personality judgments to Final Reasoning.'),message(payload,obs.get('media',[]))]
         messages[0]['output_schema']=generation_schema('memory',modalities=available_modalities or [obs['modality']])
         failures=[]
@@ -145,24 +152,25 @@ class ActiveAgent:
         length=observation['time'][1]-observation['time'][0]
         margin=float(self.config.get('refinement_context_seconds',5))
         start=observation['time'][0]
-        bounds=[round(max(-margin,-start),6),round(min(length+margin,pool.duration-start),6)]
+        bounds=[round(-start,6),round(pool.duration-start,6)]
+        context=[round(max(-margin,-start),6),round(min(length+margin,pool.duration-start),6)]
         messages=[dict(role='system',content='Correct only the proposed observation parameters. Return {"candidates": []}, with each candidate containing local_time=[start,end] in seconds from clip start, modality, hint and goal. Preserve actual findings; do not generate new observations. An empty array is valid when no further inspection is useful.'),
             message(dict(observations=decoded['observations'],invalid_proposals=proposals,
                 clip_seconds=length,allowed_local_seconds=bounds,available_modalities=pool.available_modalities,
                 max_video_window_seconds=self.config['max_clip_seconds'],
-                known_requests=[dict(covered_local_time=[round(max(item['action']['time'][0]-start,bounds[0]),6),round(min(item['action']['time'][1]-start,bounds[1]),6)],modality=item['action']['modality'],status=item['status'])
-                    for item in pool.snapshot() if item['action']['time'][0]<start+bounds[1] and item['action']['time'][1]>start+bounds[0]],
-                time_rule='Use two local seconds within the allowed range, not a point, global seconds or percentages. Adjacent continuation inside this context margin is allowed.'))]
+                known_requests=[dict(covered_local_time=[round(max(item['action']['time'][0]-start,context[0]),6),round(min(item['action']['time'][1]-start,context[1]),6)],modality=item['action']['modality'],status=item['status'])
+                    for item in pool.snapshot() if item['action']['time'][0]<start+context[1] and item['action']['time'][1]>start+context[0]],
+                time_rule='Use two local seconds within the allowed range, not a point, global seconds or percentages.'))]
         messages[0]['output_schema']=generation_schema('memory',modalities=pool.available_modalities,candidates_only=True)
         def validate(obj):
             if not isinstance(obj,dict) or set(obj)!= {'candidates'} or not isinstance(obj['candidates'],list):
                 raise ValueError('Return only an object containing a candidates array')
-            _,invalid=admit_candidates(deepcopy(pool),obj,observation,obs_id,parent_id=parent_id,origin='observation',extension_seconds=margin)
+            _,invalid=admit_candidates(deepcopy(pool),obj,observation,obs_id,parent_id=parent_id,origin='observation')
             if invalid:raise ValueError(str(invalid))
             return obj
         try:
             obj,repair=self.request(messages,'memory',step,validate,attempts=remaining)
-            ids,invalid=admit_candidates(pool,obj,observation,obs_id,parent_id=parent_id,origin='observation',extension_seconds=margin)
+            ids,invalid=admit_candidates(pool,obj,observation,obs_id,parent_id=parent_id,origin='observation')
             repair.update(candidate_output_valid=True,proposal_repair=True,refinement_candidate_ids=ids)
             return ids,invalid,repair
         except RequestValidationError as error:
@@ -186,6 +194,7 @@ class ActiveAgent:
             available=(['text'] if transcript else [])+(['audio'] if scan['audio'] else [])+(['video'] if scan.get('video') else [])
             if 'audio' in available and 'video' in available:available.append('audio_video')
         pool = CandidatePool(duration, duration if mode=='static' else self.config["max_clip_seconds"],available)
+        pool.configure_novelty(self.config.get('video_fps',1),self.config.get('min_new_seconds'),self.config.get('max_focus_per_region',1))
         memory, observations, decisions, steps = dict(observations=[]), {}, [], []
         # Preserve chronological source order across coarse modalities.
         coarse_sources = []
@@ -311,6 +320,7 @@ class ActiveAgent:
                 if observation.get('media_id',media_id)!=media_id:
                     raise ValueError('Observation tool returned a different source media')
                 pool.finish(key)
+                pool.record_read(action)
             except Exception:
                 pool.finish(key, False)
                 raise
@@ -322,19 +332,21 @@ class ActiveAgent:
             memory, changed_ids, decision = self.update(memory, observations, {obs_id: observations[obs_id]}, step, question,
                 followup_goal=([l['goal'] for l in selected_candidate.get('leads',[]) if l.get('goal')] or action['goal']) if mode not in ('generic','fixed_context','static') else None,available_modalities=available,
                 candidate_state=[dict(time=x['action']['time'],modality=x['action']['modality'],status=x['status']) for x in pool.snapshot()],
-                remaining_steps=self.config['max_steps']-step-1 if selection_policy=='queue' else None,media_duration=duration)
+                remaining_steps=self.config['max_steps']-step-1 if selection_policy=='queue' else None,media_duration=duration,
+                unread={c:pool.unread_intervals(c) for c in ('text','audio','video') if c in available} if pool.novelty_rule else None)
             followup_ids=[];rejected=list(decision.get('candidate_parse_errors',[]))
             proposals=decision.get('followup_proposals',[])
             followups_enabled=mode not in ('static','fixed_context') and not (selection_policy=='queue' and (step+1>=self.config['max_steps'] or active_spent+cost>=budget-1e-6))
             followup_status='disabled' if mode in ('static','fixed_context') else 'disabled_budget' if not followups_enabled else 'not_proposed'
+            filtered_before=len(pool.filtered)
             if followups_enabled:
                 if proposals:
                     try:
                         followup_ids,errors=admit_candidates(pool,dict(candidates=proposals),
-                            observations[obs_id],obs_id,parent_id=candidate_id,origin='observation',extension_seconds=float(self.config.get('refinement_context_seconds',5)))
+                            observations[obs_id],obs_id,parent_id=candidate_id,origin='observation')
                         rejected.extend(errors)
                     except (ValueError,KeyError,TypeError) as error:rejected.append(dict(index=None,error=str(error)))
-                followup_status=('partial' if followup_ids else 'invalid') if rejected else 'added' if followup_ids else 'no_new_target' if proposals else 'not_proposed'
+                followup_status=('partial' if followup_ids else 'invalid') if rejected else 'added' if followup_ids else 'no_new_media_content' if len(pool.filtered)>filtered_before else 'no_new_target' if proposals else 'not_proposed'
             decision.update(refinement_candidate_ids=followup_ids,rejected_candidates=rejected,followup_status=followup_status)
             memory_decision_index=len(decisions)
             memory_decision_indices=[memory_decision_index]
@@ -414,6 +426,7 @@ class ActiveAgent:
                     initial=initial, memory=memory, observations=observations, steps=steps, final=final, final_explanation=final_explanation,contextual=contextual,contextual_status=contextual_status,contextual_errors=contextual_errors,contextual_semantic_review="unreviewed",final_reasoning_status=final_reasoning_status,final_abstentions=final_abstentions,
                     global_scan=dict(coarse_summaries=coarse_summaries,input_modalities=[m for m,present in [('text',bool(transcript)),('audio',bool(scan['audio'])),('video',bool(scan.get('video')))] if present],observation_modes=available,**{k:scan[k] for k in ("sampling_fps","full_audio_coverage","audio_coverage","video_coverage","duration","sampled_frames","audio_samples","audio_sample_rate","chunk_seconds","text_segmentation","video_segmentation","audio_segmentation") if k in scan}),
                     score=score, scoring_history=scoring_history, decisions=decisions, pool=pool.snapshot(), stopped=stopped, stop_reason=stop_reason,
+                    novelty_rule=pool.novelty_rule,novelty_filtered=pool.filtered,
                     evidence_status="recorded_unreviewed" if memory.get("observations") else "insufficient",
                     memory_protocol='observation_text',
                     cost=dict(stage_timing=stage_timing(decisions),active_seconds=active_spent, active_budget_seconds=self.config.get("max_seconds"), coarse_audio_seconds=spent, coarse_frames=scan.get("sampled_frames",0),

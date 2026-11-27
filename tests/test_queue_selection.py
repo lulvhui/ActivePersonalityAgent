@@ -139,7 +139,7 @@ class QueueSelectionTests(unittest.TestCase):
                         proposals=[dict(local_time=time,modality=modality,hint='An observed clue',goal='Clarify the response')]
                     self.text=json.dumps(dict(observations=['A source finding.'],candidates=proposals))
                 return super().generate_text(messages,kind,step)
-        t=self.run_agent(Refining(),max_steps=5)
+        t=self.run_agent(Refining(),max_steps=5,min_new_seconds=None)
         self.assertEqual([s['candidate_id'] for s in t['steps']],['C1','C2','C3','C4','C5'])
         self.assertEqual(t['stop_reason'],'candidate_pool_exhausted')
 
@@ -171,7 +171,7 @@ class QueueSelectionTests(unittest.TestCase):
         self.assertEqual([r['id'] for r in payload['prior_observations']],['M1'])
         self.assertIn('Asked a colleague',payload['prior_observations'][0]['content'])
         self.assertNotIn('UNEXECUTED_PLAN',json.dumps(payload))
-        self.assertEqual(payload['allowed_local_seconds'],[-5.,4.])
+        self.assertEqual(payload['allowed_local_seconds'],[-202.,4.])
 
     def test_unaligned_asr_and_global_history_do_not_leak_into_proposal_coordinates(self):
         source=dict(OBS,time=[0.,300.])
@@ -206,11 +206,11 @@ class QueueSelectionTests(unittest.TestCase):
         good=dict(local_time=[1,3],modality='video',hint='Visible behavior',goal='Clarify a response')
         bad=dict(local_time=[100,110],modality='audio',hint='A clue',goal='Clarify the reply')
         obs=dict(OBS,time=[200.,220.]);raw=json.dumps(dict(observations=['A finding.'],candidates=[good,bad]))
-        ids,errors=admit_candidates(pool,json.loads(raw),obs,'active_0',parent_id=parent,origin='observation',extension_seconds=5)
+        ids,errors=admit_candidates(pool,json.loads(raw),obs,'active_0',parent_id=parent,origin='observation')
         _,remaining,repair=agent.repair_candidates(pool,obs,'active_0',parent,dict(text=raw),errors,0)
         payload=json.loads(reader.repair_messages[-1]['content'][-1]['text'])
         self.assertEqual(payload['invalid_proposals'],[dict(proposal=bad,errors=[errors[0]['error']])]);self.assertEqual(remaining,[])
-        self.assertEqual(payload['allowed_local_seconds'],[-5.,25.]);self.assertEqual(payload['max_video_window_seconds'],30)
+        self.assertEqual(payload['allowed_local_seconds'],[-200.,100.]);self.assertEqual(payload['max_video_window_seconds'],30)
         self.assertEqual({r['status'] for r in payload['known_requests']},{'done','pending'})
         self.assertEqual(pool.items[ids[0]]['status'],'pending')
         self.assertTrue(repair['candidate_output_valid'])
@@ -218,7 +218,7 @@ class QueueSelectionTests(unittest.TestCase):
     def test_adjacent_media_request_uses_observed_text_source_not_future_asr(self):
         obs=dict(modality='text',time=[41.,51.],segments=index_transcript([dict(start=41,end=51,text='A concrete observed self-report.')],'synthetic',80))
         pool=CandidatePool(80,30);parent=pool.add(dict(time=obs['time'],modality='text'));pool.finish(parent)
-        ids,errors=admit_candidates(pool,dict(candidates=[dict(local_time=[10,15],modality='audio_video',hint='Clarify the continuation',goal='Hear the rest of the answer')]),obs,'active_0',parent_id=parent,origin='observation',extension_seconds=5)
+        ids,errors=admit_candidates(pool,dict(candidates=[dict(local_time=[10,15],modality='audio_video',hint='Clarify the continuation',goal='Hear the rest of the answer')]),obs,'active_0',parent_id=parent,origin='observation')
         self.assertEqual(errors,[])
         self.assertEqual(pool.items[ids[0]]['action']['time'],[51.,56.])
         self.assertEqual(pool.items[ids[0]]['leads'][0]['source_fragment_time'],[41.,51.])

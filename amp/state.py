@@ -40,11 +40,128 @@ def save_observation(memory, content, observation, observation_id):
     records.append(record)
     return result,[record['id']]
 
+# Channels a read gives the model; text is the transcript span of the window.
+CHANNELS = {'audio': ('audio',), 'video': ('video',), 'audio_video': ('audio', 'video'), 'text': ('text',)}
+
+
+def video_frames(time, fps):
+    """Frame indices on the global sampling grid; a window under two frames is one still image at its start."""
+    start, end = time
+    if (end-start)*fps < 2:
+        return {int(math.floor(start*fps+.5))}
+    return set(range(int(math.ceil(start*fps-1e-9)), int(math.ceil(end*fps-1e-9))))
+
+
+def uncovered_seconds(interval, covered):
+    start, end = interval
+    left = end-start
+    for a, b in covered:
+        left -= max(0., min(end, b)-max(start, a))
+    return max(0., left)
+
+
+def merge_intervals(intervals):
+    merged = []
+    for a, b in sorted(intervals):
+        if merged and a <= merged[-1][1]+1e-9:
+            merged[-1][1] = max(merged[-1][1], b)
+        else:
+            merged.append([a, b])
+    return merged
+
+
 class CandidatePool:
     def __init__(self, duration, max_clip, available_modalities=None):
         self.duration, self.max_clip = duration, max_clip
         self.available_modalities = list(MODALITIES if available_modalities is None else available_modalities)
         self.items = {}
+        self.novelty_rule = None
+        self.read_spans, self.read_frames = dict(audio=[], text=[]), set()
+        self.focus_used, self.filtered = {}, []
+
+    def configure_novelty(self, video_fps, min_new_seconds, max_focus):
+        """Refinements must add recording content the model has not been given.
+
+        A same-channel re-read of read content returns a subset of the same frames and
+        samples, so by the data processing inequality it adds no information about the
+        person. Admission therefore requires at least min(min_new_seconds, unread) new
+        seconds in some channel; only `max_focus` closer looks inside each original
+        region are exempt. Every admitted read either removes min_new_seconds of unread
+        content or all of it, so reads are bounded by
+        roots * (1 + max_focus) + sum over channels of ceil(unread / min_new_seconds),
+        whatever the model proposes.
+        """
+        if min_new_seconds is None:
+            self.novelty_rule = None
+            return
+        video_fps, min_new_seconds, max_focus = float(video_fps), float(min_new_seconds), int(max_focus)
+        if not math.isfinite(video_fps) or video_fps <= 0 or not math.isfinite(min_new_seconds) or min_new_seconds <= 0 or max_focus < 0:
+            raise ValueError('Novelty rule needs positive video_fps and min_new_seconds and max_focus_per_region >= 0')
+        self.novelty_rule = dict(video_fps=video_fps, min_new_seconds=min_new_seconds, max_focus=max_focus)
+
+    def record_read(self, action):
+        """Register the media content of a completed active read."""
+        for channel in CHANNELS[action['modality']]:
+            if channel in self.read_spans:
+                self.read_spans[channel] = merge_intervals(self.read_spans[channel]+[list(action['time'])])
+        if 'video' in CHANNELS[action['modality']] and self.novelty_rule:
+            self.read_frames |= video_frames(action['time'], self.novelty_rule['video_fps'])
+
+    def new_seconds(self, action):
+        """Unread seconds this action would add per channel, and unread seconds left in the recording."""
+        channels, result = CHANNELS[action['modality']], {}
+        for channel in channels:
+            if channel in self.read_spans:
+                result[channel] = (uncovered_seconds(action['time'], self.read_spans[channel]),
+                                   uncovered_seconds([0., self.duration], self.read_spans[channel]))
+        if 'video' in channels:
+            fps = self.novelty_rule['video_fps']
+            frames = video_frames(action['time'], fps)
+            result['video'] = (len(frames-self.read_frames)/fps,
+                               len(video_frames([0., self.duration], fps)-self.read_frames)/fps)
+        return result
+
+    def unread_intervals(self, modality):
+        """Unread spans of a channel in recording seconds; video spans follow frame times."""
+        if modality in self.read_spans:
+            spans, cursor = [], 0.
+            for a, b in self.read_spans[modality]:
+                if a > cursor+1e-9:
+                    spans.append([cursor, a])
+                cursor = max(cursor, b)
+            return spans+([[cursor, self.duration]] if cursor < self.duration-1e-9 else [])
+        fps = self.novelty_rule['video_fps']
+        frames = sorted(video_frames([0., self.duration], fps)-self.read_frames)
+        spans = []
+        for f in frames:
+            if spans and f == spans[-1][1]:
+                spans[-1][1] = f+1
+            else:
+                spans.append([f, f+1])
+        return [[a/fps, min(self.duration, b/fps)] for a, b in spans]
+
+    def root(self, key):
+        while self.items[key]['parent_id'] is not None:
+            key = self.items[key]['parent_id']
+        return key
+
+    def admit_refinement(self, action, parent_id, record):
+        """Return True if a refinement may enter the pool; filtered proposals are logged, not errors."""
+        if self.novelty_rule is None:
+            return True
+        new = self.new_seconds(action)
+        if any(added > 1e-9 and added >= min(self.novelty_rule['min_new_seconds'], unread)-1e-9 for added, unread in new.values()):
+            return True
+        root = self.root(parent_id)
+        left, right = self.items[root]['action']['time']
+        inside = left-1e-6 <= action['time'][0] and action['time'][1] <= right+1e-6
+        if inside and self.focus_used.get(root, 0) < self.novelty_rule['max_focus']:
+            self.focus_used[root] = self.focus_used.get(root, 0)+1
+            return True
+        self.filtered.append(dict(record, parent_id=parent_id, region_root=root, time=list(action['time']),
+                                  modality=action['modality'], new_seconds={c: round(v[0], 6) for c, v in new.items()},
+                                  reason='focus_used' if inside else 'no_unread_content_outside_region'))
+        return False
 
     def validate(self, action):
         start,end=time_pair(action['time'])
@@ -95,11 +212,6 @@ class CandidatePool:
         if key is not None and self.items[key]['status']!='pending':return None
         if key is not None:action=dict(self.items[key]['action'],goal=action['goal'])
         if key is None:key=f'C{len(self.items)+1}'
-        if key==parent_id:raise ValueError('Refinement repeats its parent observation')
-        ancestor=parent_id
-        while ancestor is not None:
-            if ancestor==key:raise ValueError('Refinement would create a candidate ancestry cycle')
-            ancestor=self.items[ancestor]['parent_id']
         if key not in self.items:
             self.items[key] = dict(id=key, action=action, priority=float(priority), status="pending",
                                    parent_id=parent_id, source_observation_id=source_observation_id, origin=origin,leads=[])
@@ -133,15 +245,12 @@ def memory_changes(before,after):
             for key in dict.fromkeys([*previous,*current]) if previous.get(key)!=current.get(key)]
 
 
-def validate_final(final, memory=None):
+def validate_final(final):
     if not isinstance(final,dict) or set(final)!=set(TRAITS):
         raise ValueError('Final must contain all five traits')
-    valid=set(memory_records(memory)) if memory is not None else set()
     for trait,item in final.items():
         if not isinstance(item,dict) or item.get('level') not in [None,*LEVELS] or not isinstance(item.get('reasoning'),str) or not item['reasoning'].strip():
             raise ValueError(f'{trait}: require a level or null and a nonempty explanation')
-        if memory is not None and not set(item.get('citations',[]))<=valid:
-            raise ValueError('Final citations must refer to saved observation records')
     return final
 
 

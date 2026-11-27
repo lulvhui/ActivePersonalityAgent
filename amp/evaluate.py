@@ -1,7 +1,6 @@
 import math
 from collections import defaultdict
-from .common import TRAITS, LEVELS, read_json, standardize
-from .teca import trait_loss
+from .common import TRAITS, LEVELS, standardize
 from .state import memory_records
 
 

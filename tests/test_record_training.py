@@ -79,12 +79,10 @@ class RecordQualityTests(unittest.TestCase):
         t=trajectory();t['memory']['observations'][0]['content']='{"observations":[],"candidates":[]}'
         self.assertEqual(memory_quality_credit(t,0)[0],0.)
 
-    def test_record_memory_does_not_fabricate_trait_or_context_gain(self):
+    def test_local_credit_is_observation_cost_only(self):
         from amp.teca import local_credit
-        values,parts=local_credit(trajectory(),{k:2 for k in TRAITS},CFG)
-        self.assertEqual(parts[0]['trait'],0.);self.assertEqual(parts[0]['context'],0.)
-        self.assertIn('not_attributable',parts[0]['trait_status'])
-        with self.assertRaises(ValueError):local_credit(trajectory(),{k:2 for k in TRAITS},CFG,enable_trait=True)
+        t=trajectory()
+        self.assertEqual(local_credit(t,CFG),[-CFG['lambda_cost']*s['cost'] for s in t['steps']])
 
     def test_existing_judge_reads_findings_and_actual_source_not_candidate_plans(self):
         from amp.judge import MultimodalJudge
@@ -151,7 +149,3 @@ class TrainingTokenTests(unittest.TestCase):
         t['decisions'][0]['proposal_repair']=True
         self.assertAlmostEqual(advantages([t,other],labels,CFG,'teca')[0][0],base)
 
-    def test_retired_tool_targets_cannot_enter_sft(self):
-        from amp.train import export_sft
-        _,d=self.backend_and_decision();t=trajectory();d['tools']=[dict(name='retired_memory_tool')];t.update(teacher_accepted=True,decisions=[d])
-        with tempfile.TemporaryDirectory() as folder,self.assertRaises(ValueError):export_sft([t],Path(folder)/'bad.jsonl')

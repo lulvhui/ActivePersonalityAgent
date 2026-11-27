@@ -35,7 +35,9 @@ Observe 记录行为和情境，并可提出多个细化请求：
 {"observations":["受访者描述的行动及其情境"],"candidates":[{"local_time":[2,8],"modality":"audio","hint":"已观察线索","goal":"需要澄清的细节"}]}
 ```
 
-`local_time` 是父片段从零播放时的秒数，不是全局时间或百分比。默认允许前后各 5 秒上下文延伸，并校验真实媒体范围、视频窗口长度和已执行任务。文本、音频、视觉是三个模态；`audio_video` 表示联合观察。
+`local_time` 是父片段从零播放时的秒数，不是全局时间或百分比；请求可以指向录像中的任何时段，并校验真实媒体范围、视频窗口长度和已执行任务。
+
+细化请求必须带来尚未读取的录像内容（`min_new_seconds`，默认 5 秒；剩余不足时读完剩余部分即可），或是在其原始粗扫区域内的一次聚焦（`max_focus_per_region`，默认 1）。同模态重读已读内容只会得到相同的帧和采样，按数据处理不等式不增加关于受访者的信息；与其他情境的比较由 Final 在全部 Memory 中完成。因此读取次数满足 `R·(1+f) + Σ⌈U_c / min_new_seconds⌉`（R 为粗扫候选数，U_c 为粗扫读取后文本、音频、视频各通道的未读秒数），与模型提出什么请求无关。Observe 输入中的 `unread_local_time` 给出各通道未读时段；被过滤的请求记录在轨迹的 `novelty_filtered`。`min_new_seconds: null` 关闭该规则。文本、音频、视觉是三个模态；`audio_video` 表示联合观察。
 
 Memory 每次保存完整模型原文和 Python 生成的 `M1/M2…` 来源记录。一条记录可以包含多个发现，不等于一条独立人格证据。读取时只取 observations，不把 candidates 中的计划当作已观察事实。当前没有原子事件归并、人格方向筛选或 Memory Tool。
 
@@ -75,7 +77,7 @@ python -m amp.cli sft --data runs/sft.jsonl --output runs/sft
 
 TECA 的 clipped GRPO 和冻结 SFT reference 保持不变。当前 Memory 段使用轨迹优势加来源忠实性信用：支持为正，不支持/错误来源为负，未知、空观察、重复计入旧更新为零。该信用不判断人格标签方向，不估算反事实效用。
 
-当前记录没有可靠的逐 Trait/逐 Context 事件归因，因此局部 Trait/Context 增益不伪造数值，`--enable-trait-reward` 会明确拒绝。当前支持轨迹监督与 Memory 忠实性；这不等于完整事件级 TECA 已验证。`U_memory` 仍未估计。
+当前记录没有可靠的逐 Trait/逐 Context 事件归因，因此局部信用只包含观察成本，不伪造 Trait/Context 增益。当前支持轨迹监督与 Memory 忠实性；这不等于完整事件级 TECA 已验证。`U_memory` 仍未估计。
 
 `baselines/omniagent_native/` 是既有对照实验的适配代码，依赖另行安装的 [OmniAgent](https://github.com/HarryHsing/OmniAgent) 和独立推理环境；部分历史启动脚本仍需按本机目录调整，不是当前主流程的启动入口。仓库不打包其权重、外部代码库或访谈数据，也不替代第三方项目的许可要求。
 

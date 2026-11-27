@@ -8,7 +8,7 @@ import re
 import time
 from abc import ABC, abstractmethod
 from pathlib import Path
-from .common import TRAITS, LEVELS, digest, probabilities, read_json, write_json
+from .common import TRAITS, LEVELS, digest, probabilities, read_json
 from .state import memory_records
 from .perception import decode_observation
 

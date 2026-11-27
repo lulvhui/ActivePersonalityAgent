@@ -32,14 +32,14 @@ class ObservationProtocolTests(unittest.TestCase):
 
     def test_text_source_does_not_overwrite_the_child_window(self):
         obs=dict(modality='text',time=[20.,40.],segments=index_transcript([dict(start=20,end=40,text='A concrete observed self-report.')],'synthetic',60))
-        bound=bind_candidate(dict(local_time=[2,8],modality='audio',hint='A behavior clue',goal='Clarify'),obs,5)
+        bound=bind_candidate(dict(local_time=[2,8],modality='audio',hint='A behavior clue',goal='Clarify'),obs,60)
         self.assertEqual(bound['time'],[22.,28.]);self.assertEqual(bound['source_fragment_time'],[20.,40.])
         self.assertEqual(bound['retrieval_timing'],'unverified_asr')
 
     def test_invalid_child_does_not_discard_a_valid_sibling(self):
         pool=CandidatePool(40,30);parent=pool.add(dict(time=[0,5],modality='audio'));pool.finish(parent)
         child=lambda time,mode:dict(local_time=time,modality=mode,hint='A source clue',goal='Clarify the behavior')
-        ids,errors=admit_candidates(pool,dict(candidates=[child([1,3],'video'),child([100,110],'audio')]),OBS,'active_0',parent_id=parent,origin='observation',extension_seconds=5)
+        ids,errors=admit_candidates(pool,dict(candidates=[child([1,3],'video'),child([100,110],'audio')]),OBS,'active_0',parent_id=parent,origin='observation')
         self.assertEqual(len(ids),1);self.assertEqual(len(errors),1)
         self.assertEqual(pool.items[ids[0]]['parent_id'],parent)
 

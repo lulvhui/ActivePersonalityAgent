@@ -12,7 +12,6 @@
   "temperature": 0.0,
   "beta_ground": 0.5,
   "lambda_cost": 0.1,
-  "eta_context": 0.3,
   "alpha": 0.5,
   "kl_beta": 0.04,
   "clip_epsilon": 0.2,
@@ -31,5 +30,7 @@
   "jev_output_price_per_million": null,
   "scorer": "offline",
   "memory_quality_beta": 0.5,
-  "selection_policy": "queue"
+  "selection_policy": "queue",
+  "min_new_seconds": 5.0,
+  "max_focus_per_region": 1
 }

@@ -124,12 +124,9 @@ def validate_result(directory, expected_ids, require_active=False):
             raise ValueError('Missing Stage 1 candidate scan or Stage 2 observation/update')
         if 'final' not in kinds and set(trajectory.get('final_abstentions',{})) != set(TRAITS):
             raise ValueError('Missing Final generation or complete evidence abstention')
-        recorded='observations' in trajectory['memory']
-        final={t:dict(item,reasoning=item.get('reasoning') or trajectory.get('final_explanation')) for t,item in trajectory['final'].items()}
-        validate_final(final,None if recorded else trajectory['memory'])
-        if recorded:
-            _,errors=contextual_final(dict(contextual=trajectory.get('contextual',[])),trajectory['memory'])
-            if errors:raise ValueError(f'Invalid contextual references: {errors}')
+        validate_final({t:dict(item,reasoning=item.get('reasoning') or trajectory.get('final_explanation')) for t,item in trajectory['final'].items()})
+        _,errors=contextual_final(dict(contextual=trajectory.get('contextual',[])),trajectory['memory'])
+        if errors:raise ValueError(f'Invalid contextual references: {errors}')
         steps = [s for s in trajectory['steps'] if s.get('action_type')!='static']
         if require_active and not steps:
             raise ValueError('--require-active needs at least one active observation')

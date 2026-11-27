@@ -66,45 +66,25 @@ def observation_view(observation):
     return view
 
 
-def media_coverage(duration,modalities,steps):
-    """Action-coordinate coverage, not transcript alignment or a personality gap."""
-    result={}
-    for modality in modalities:
-        unseen=[[0.,float(duration)]]
-        for step in steps:
-            action=step['action']
-            if action['modality']!=modality:continue
-            left,right=action['time'];remaining=[]
-            for start,end in unseen:
-                if right<=start or left>=end:remaining.append([start,end]);continue
-                if start<left:remaining.append([start,left])
-                if right<end:remaining.append([right,end])
-            unseen=remaining
-        result[modality]=unseen
-    return result
-
-
 def response_items(obj,field):
     if isinstance(obj,dict):
         if isinstance(obj.get(field),list):return obj[field]
     raise ValueError(f'Return a JSON object with a {field} array')
 
 
-def bind_candidate(candidate,observation,extension_seconds=0):
-    """Observe proposals use seconds from the parent clip, with a context margin."""
+def bind_candidate(candidate,observation,duration):
+    """Observe proposals use seconds on the current clip's playback clock and may point anywhere in the recording."""
     if not isinstance(candidate,dict) or set(candidate)!={'local_time','modality','hint','goal'}:
         raise ValueError('A follow-up requires local_time, modality, hint and goal')
-    left,right=time_pair(candidate['local_time']);start,end=observation['time']
-    if left < -extension_seconds-1e-6 or right > end-start+extension_seconds+1e-6:
-        raise ValueError(f'local_time must stay within {-extension_seconds:.6g} to {end-start+extension_seconds:.6g} seconds from clip start')
+    left,right=time_pair(candidate['local_time']);start=observation['time'][0]
+    if left < -start-1e-6 or right > duration-start+1e-6:
+        raise ValueError(f'local_time must stay within {-start:.6g} to {duration-start:.6g} seconds from clip start (the recording)')
     return dict(candidate,time=[start+left,start+right],source_fragment_time=list(observation['time']),
                 retrieval_timing=observation.get('timing','unverified_asr' if observation['modality']=='text' else 'media_relative'))
 
 
-def admit_candidates(pool,obj,observation,observation_id,parent_id=None,origin='coarse',extension_seconds=0):
+def admit_candidates(pool,obj,observation,observation_id,parent_id=None,origin='coarse'):
     proposals=response_items(obj,'candidates');ids=[];rejected=[]
-    if isinstance(obj,dict) and any(obj.get(k) for k in ('cues','evidence','traits')):
-        raise ValueError('Candidate discovery cannot write Trait Memory')
     for index,candidate in enumerate(proposals):
         try:
             if origin=='coarse':
@@ -112,47 +92,31 @@ def admit_candidates(pool,obj,observation,observation_id,parent_id=None,origin='
                     raise ValueError('A coarse candidate requires hint and goal only; Python binds its source')
                 bound=dict(candidate,time=list(observation['time']),modality=observation['modality'])
             else:
-                bound=bind_candidate(candidate,observation,extension_seconds)
+                bound=bind_candidate(candidate,observation,pool.duration)
                 bound['time']=[max(0.,bound['time'][0]),min(pool.duration,bound['time'][1])]
             if not isinstance(bound['hint'],str) or not bound['hint'].strip() or not isinstance(bound['goal'],str) or not bound['goal'].strip():
                 raise ValueError('Candidate hint and goal must describe the clue and inspection goal')
-            if origin=='observation' and parent_id is not None:
-                action=pool.validate(bound)
-                parent=pool.items[parent_id]['action']
-                if action['time']==parent['time'] and action['modality']==parent['modality'] and isinstance(bound.get('hint'),str) and bound['hint'].strip():
-                    continue  # Already observed: deduplication, not a new task or protocol failure.
-            ids.extend(add_candidate_proposals(pool,[bound],observation['time'],observation_id,parent_id,origin,observation['modality'],extension_seconds))
+            ids.extend(add_candidate_proposals(pool,[bound],observation_id,parent_id,origin,observation['modality']))
         except (ValueError,KeyError,TypeError) as error:
             rejected.append(dict(index=index,error=str(error)))
     return list(dict.fromkeys(ids)),rejected
 
 
-def add_candidate_proposals(pool, proposals, scope, source_observation_id, parent_id=None, origin="coarse", source_modality=None, extension_seconds=0):
-    """Validate model-proposed regions and bind their lineage in program state."""
-    if not isinstance(proposals, list):
-        raise ValueError("Candidate proposals must be a list")
-    start, end = map(float, scope)
+def add_candidate_proposals(pool, proposals, source_observation_id, parent_id=None, origin="coarse", source_modality=None):
+    """Validate model-proposed regions and bind their lineage in program state.
+
+    A completed read is never re-queued (CandidatePool.add); a new refinement must
+    add unread recording content or be the single focus inside its original region.
+    """
     added = []
     for candidate in proposals:
-        if not isinstance(candidate,dict):
-            raise ValueError('Each candidate must be an object')
         hint=candidate.get('hint')
         if source_modality is not None and (not isinstance(hint,str) or not hint.strip()):
             raise ValueError('Each candidate needs a hint describing information from the observed source')
         action = pool.validate(candidate)
-        left, right = action["time"]
-        if left < start-extension_seconds-1e-6 or right > end+extension_seconds+1e-6:
-            raise ValueError("Candidate must stay inside the source observation")
-        if parent_id is not None:
-            parent = pool.items[parent_id]["action"]
-            pleft, pright = parent["time"]
-            if not pleft-extension_seconds-1e-6<=left<right<=pright+extension_seconds+1e-6:
-                raise ValueError('Refinement exceeds its parent context margin')
-            narrower = pleft-1e-6 <= left and right <= pright+1e-6 and right-left < pright-pleft-1e-6
-            modality_change = action["modality"] != parent["modality"]
-            extends = left<pleft-1e-6 or right>pright+1e-6
-            if not narrower and not modality_change and not extends:
-                raise ValueError("Refinement must narrow the current candidate or change modality")
+        if origin=='observation' and pool.matching(action) is None and not pool.admit_refinement(
+                action,parent_id,dict(source_observation_id=source_observation_id,hint=hint,goal=action['goal'])):
+            continue
         candidate_id = pool.add(action, candidate.get("priority", 0), parent_id=parent_id,
                                 source_observation_id=source_observation_id, origin=origin,hint=hint,source_modality=source_modality,
                                 source_fragment={k:candidate[k] for k in ('segment_id','segment_ids','quote','source_fragment_time','retrieval_timing') if k in candidate})

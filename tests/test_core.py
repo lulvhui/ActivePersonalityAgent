@@ -5,7 +5,6 @@ from amp.common import TRAITS,LEVELS,probabilities,read_json,read_jsonl,write_js
 from amp.data import split_lookup,transcript_segments
 from amp.scoring import OfflineTraitScorer
 from amp.teca import advantages,clipped_grpo
-from amp.train import validate_gate
 from amp.evaluate import calibration,spearman,validate_jev
 from amp.smoke import smoke
 from test_record_training import trajectory as record_trajectory
@@ -52,12 +51,6 @@ class CreditTests(unittest.TestCase):
         a,b=trajectory(),trajectory()
         b['sample_id']='other'
         with self.assertRaises(ValueError): advantages([a,b],{t:4 for t in TRAITS},CFG)
-
-    def test_gate_rejects_unvalidated_or_wrong_version(self):
-        with tempfile.TemporaryDirectory() as tmp:
-            p=Path(tmp)/'gate.json'
-            write_json(p,dict(split='dev',model='jev-1.13.0',passed=True))
-            with self.assertRaises(ValueError): validate_gate(p,CFG)
 
     def test_cannot_validate_using_cached_repeats(self):
         row=dict(id='fixture',dataset='IELTS',split='dev',labels={x:4 for x in TRAITS})

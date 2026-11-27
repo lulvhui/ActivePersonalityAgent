@@ -67,7 +67,7 @@ class FullScanTests(unittest.TestCase):
         from amp.perception import add_candidate_proposals
         pool=CandidatePool(400,30)
         ids=add_candidate_proposals(pool,[dict(time=[56.24,95.88],modality='text',goal='Long-term exercise habit'),
-            dict(time=[280.36,330.9],modality='text',goal='Housework preferences')],[0,400],'global_text')
+            dict(time=[280.36,330.9],modality='text',goal='Housework preferences')],'global_text')
         self.assertEqual(len(ids),2)
         with tempfile.TemporaryDirectory() as tmp:
             tools=MediaTools(tmp,max_clip=30)

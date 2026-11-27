@@ -2,7 +2,7 @@ import json
 import random
 from pathlib import Path
 from .backend import action_token_mask
-from .common import TRAITS,read_json, read_jsonl, write_json, write_jsonl,digest
+from .common import read_jsonl, write_json, write_jsonl
 from .state import memory_records
 from .teca import advantages, clipped_grpo, final_trait_loss, reward, memory_outcomes,record_support
 from .perception import decode_observation
@@ -15,7 +15,6 @@ def filter_best(trajectories,labels,max_error=.25,min_ground=.8):
         why=[]
         if trajectory.get('offline'):why.append('offline_fixture')
         if trajectory.get('run_status')!='complete':why.append('incomplete_protocol')
-        if trajectory.get('memory_protocol')!='observation_text':why.append('retired_memory_protocol')
         if trajectory.get('split')!='train':why.append('not_train')
         if final_trait_loss(labels,trajectory['final'])>max_error:why.append('label_error')
         judge=trajectory.get('judge')
@@ -38,14 +37,10 @@ def export_sft(trajectories,path,tokenizer=None):
     for trajectory in trajectories:
         if trajectory.get('split')!='train' or trajectory.get('offline') or not trajectory.get('teacher_accepted') or trajectory.get('run_status')!='complete':
             raise ValueError('SFT export requires accepted complete real train trajectories')
-        if trajectory.get('memory_protocol')!='observation_text':
-            raise ValueError('Regenerate retired Memory/tool trajectories with the current observation protocol')
         memory_records(trajectory['memory'])
         for decision in trajectory['decisions']:
             if decision['kind'] not in ('candidate_scan','action','memory','final'):continue
             if decision.get('generation_failed') or decision.get('truncated') or decision.get('candidate_output_valid') is False:continue
-            if decision.get('tools') or decision.get('tool_calls') or decision.get('assistant'):
-                raise ValueError('Tool-call targets are retired; supervise current actor JSON only')
             obj=parse_json(decision['text'])
             if decision['kind']=='memory' and not decision.get('proposal_repair') and decode_observation(decision['text'])['errors']:
                 raise ValueError('Invalid observation target')
@@ -66,7 +61,7 @@ def sft(backend, path, output, cfg, epochs=1):
         raise ValueError("Empty SFT file")
     if any(r.get("split") != "train" or r.get("offline") or not r["tokens"] for r in rows):
         raise ValueError("SFT needs genuine train-only tokenized actor segments")
-    if any(r.get('tools') or r.get('tool_calls') or not isinstance(parse_json(r['text']),dict) for r in rows):
+    if any(not isinstance(parse_json(r['text']),dict) for r in rows):
         raise ValueError('SFT targets must use the current actor JSON protocol')
     accumulation=cfg.get('grad_accum_steps',1)
     if isinstance(accumulation,bool) or not isinstance(accumulation,int) or accumulation<1:
@@ -91,21 +86,12 @@ def sft(backend, path, output, cfg, epochs=1):
     write_json(Path(output)/"training_log.json", log)
 
 
-def validate_gate(path, cfg):
-    report = read_json(path)
-    if report.get("split") != "dev" or report.get("model") != cfg["jev_model"] or not report.get("passed"):
-        raise ValueError("Trait reward requires passing Dev calibration/stability report for the configured Jev version")
-    return report
-
-
 def rl(backend, agent, judge, rows, output, cfg, adapter_path, group_size=4,
-       variant="teca", enable_trait=False, calibration_report=None, updates=1):
+       variant="teca", updates=1):
     if group_size < 2:
         raise ValueError("GRPO group_size must be >=2")
     if not adapter_path:
         raise ValueError("RL requires an SFT LoRA adapter; it is also the fixed reference policy")
-    if enable_trait:
-        raise ValueError('Record Memory does not support verified local trait attribution; Jev remains auxiliary feedback')
     if not rows or any(r["split"] != "train" for r in rows):
         raise ValueError("RL must use nonempty train split")
     torch = backend.torch
@@ -153,7 +139,7 @@ def rl(backend, agent, judge, rows, output, cfg, adapter_path, group_size=4,
                                 param.requires_grad_(False)
             for trajectory in trajectories:
                 trajectory['memory_outcomes']=memory_outcomes(trajectory,row['labels'],cfg)
-            credit = advantages(trajectories, row["labels"], cfg, variant, enable_trait)
+            credit = advantages(trajectories, row["labels"], cfg, variant)
             optimizer.zero_grad(set_to_none=True)
             total_decisions = sum(len(t["decisions"]) for t in trajectories)
             backend.policy.train()
@@ -170,7 +156,7 @@ def rl(backend, agent, judge, rows, output, cfg, adapter_path, group_size=4,
             optimizer.step()
         backend.policy.eval()
         write_json(output/f"rollouts/update_{iteration:05d}.json", trajectories)
-        logs.append(dict(iteration=iteration, loss=total_loss, variant=variant, trait_reward=enable_trait,
+        logs.append(dict(iteration=iteration, loss=total_loss, variant=variant,
                          rewards=[reward(t, row["labels"], cfg) for t in trajectories],
                          memory_quality=[[x['F_memory'] for x in t['memory_outcomes']] for t in trajectories],
                          memory_utility='not_estimated_no_counterfactual'))

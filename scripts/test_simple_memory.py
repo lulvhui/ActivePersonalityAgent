@@ -50,7 +50,7 @@ def main():
         except ValueError:proposal=None
         children,rejected=[],[]
         if isinstance(proposal,dict) and 'candidates' in proposal:
-            try:children,rejected=admit_candidates(pool,dict(candidates=proposal['candidates']),obs,'active_0',parent_id=parent,origin='observation',extension_seconds=cfg.get('refinement_context_seconds',5))
+            try:children,rejected=admit_candidates(pool,dict(candidates=proposal['candidates']),obs,'active_0',parent_id=parent,origin='observation')
             except (ValueError,KeyError,TypeError) as error:rejected=[dict(error=str(error))]
         d.update(refinement_candidate_ids=children,rejected_candidates=rejected)
         write_json(args.output/'pool.json',pool.snapshot())

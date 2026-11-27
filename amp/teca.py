@@ -1,12 +1,8 @@
 """TECA group credit and clipped token-level policy objective."""
 import math
 from .common import TRAITS, LEVELS, standardize, digest
-from .state import memory_records,memory_changes,record_source
+from .state import memory_changes,record_source
 from .perception import decode_observation
-
-
-def trait_loss(labels, distributions):
-    return sum(-math.log(max(distributions[t][labels[t]], 1e-8)) for t in TRAITS)/5
 
 
 def final_trait_loss(labels, final):
@@ -42,13 +38,9 @@ def record_support(trajectory,record):
     return check['supported'],'independent_source_check'
 
 
-def local_credit(trajectory,labels,cfg,enable_trait=False):
-    if enable_trait:
-        raise ValueError('Record Memory has no verified trait-level attribution; local Jev gain is unsupported')
-    values=[-cfg['lambda_cost']*step['cost'] for step in trajectory['steps']]
-    parts=[dict(trait=0.,context=0.,cost=step['cost'],
-        trait_status='not_attributable_from_observation_records',context_status='not_estimated_without_context_changes') for step in trajectory['steps']]
-    return values,parts
+def local_credit(trajectory,cfg):
+    """Per-step observation cost only: observation records carry no verified trait attribution."""
+    return [-cfg['lambda_cost']*step['cost'] for step in trajectory['steps']]
 
 
 def memory_quality_credit(trajectory,step_index):
@@ -91,7 +83,7 @@ def normalize_local(values):
     return [v/(scale+1e-8) for v in values]
 
 
-def advantages(trajectories, labels, cfg, variant="teca", enable_trait=False):
+def advantages(trajectories, labels, cfg, variant="teca"):
     if len(trajectories) < 2:
         raise ValueError("GRPO needs at least two trajectories from the SAME initial sample")
     if len({t["sample_id"] for t in trajectories}) != 1:
@@ -99,7 +91,7 @@ def advantages(trajectories, labels, cfg, variant="teca", enable_trait=False):
     if variant not in ["grpo", "taura_style", "teca"]:
         raise ValueError("Unknown credit variant")
     terminal = standardize([reward(t, labels, cfg) for t in trajectories])
-    raw = [local_credit(t, labels, cfg, enable_trait=enable_trait)[0] for t in trajectories]
+    raw = [local_credit(t, cfg) for t in trajectories]
     flat = normalize_local([g for values in raw for g in values])
     cursor, result = 0, []
     for i, trajectory in enumerate(trajectories):

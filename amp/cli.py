@@ -4,7 +4,7 @@ import json
 import random
 import shutil
 from pathlib import Path
-from .common import read_json, read_jsonl, write_json, write_jsonl
+from .common import read_json, read_jsonl, write_json
 
 
 def main():
@@ -36,8 +36,6 @@ def main():
             p.add_argument("--group-size", type=int, default=4)
             p.add_argument("--updates", type=int, default=1)
             p.add_argument("--variant", choices=["grpo", "taura_style", "teca"], default="teca")
-            p.add_argument("--enable-trait-reward", action="store_true")
-            p.add_argument("--calibration-report")
     p = sub.add_parser("sft")
     p.add_argument("--data", required=True)
     p.add_argument("--output", default="runs/sft")
@@ -189,8 +187,6 @@ def main():
         raise ValueError("Judge must use a checkpoint different from the policy")
     if args.command == "rl" and (not args.adapter or args.group_size < 2):
         raise ValueError("RL requires --adapter and --group-size >=2")
-    if args.command == 'rl' and args.enable_trait_reward:
-        raise ValueError('Observation-record Memory has no verified local trait attribution; Jev is auxiliary only')
     if args.command in ('teacher','rl'):
         from .common import TRAITS
         if any(set(r.get('labels',{}))!=set(TRAITS) for r in rows):
@@ -219,7 +215,7 @@ def main():
     judge = MultimodalJudge(QwenBackend(args.judge_model, cfg["max_new_tokens"], 0)) if args.judge_model else None
     if args.command == "rl":
         rl(backend, agent, judge, rows, args.output, cfg, args.adapter, args.group_size,
-           args.variant, args.enable_trait_reward, args.calibration_report, args.updates)
+           args.variant, args.updates)
         return
     output, errors = [], []
     n = args.best_of if args.command == "teacher" else 1
