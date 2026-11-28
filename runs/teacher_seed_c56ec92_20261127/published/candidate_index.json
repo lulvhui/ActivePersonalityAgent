@@ -1,0 +1,159 @@
+{
+  "candidates": [
+    {
+      "sample_id": "IELTS:106",
+      "attempt": 1,
+      "source_directory": "IELTS_106_r1",
+      "protocol_status": "complete",
+      "offline_train_label_loss": 0.35,
+      "label_screen_pass": false,
+      "priority_for_source_review": false,
+      "source_review": "not_completed",
+      "trait_semantic_review": "not_completed",
+      "ready_for_sft": false,
+      "candidate_file": "candidates/IELTS_106_r1.json"
+    },
+    {
+      "sample_id": "IELTS:183",
+      "attempt": 1,
+      "source_directory": "IELTS_183_r1",
+      "protocol_status": "complete",
+      "offline_train_label_loss": 0.35,
+      "label_screen_pass": false,
+      "priority_for_source_review": false,
+      "source_review": "not_completed",
+      "trait_semantic_review": "not_completed",
+      "ready_for_sft": false,
+      "candidate_file": "candidates/IELTS_183_r1.json"
+    },
+    {
+      "sample_id": "IELTS:167",
+      "attempt": 1,
+      "source_directory": "IELTS_167_r1",
+      "protocol_status": "partial",
+      "offline_train_label_loss": 0.25,
+      "label_screen_pass": true,
+      "priority_for_source_review": false,
+      "source_review": "not_completed",
+      "trait_semantic_review": "not_completed",
+      "ready_for_sft": false,
+      "excluded_reason": "incomplete_protocol; preserve original raw attempt"
+    },
+    {
+      "sample_id": "IELTS:106",
+      "attempt": 2,
+      "source_directory": "IELTS_106_r2",
+      "protocol_status": "complete",
+      "offline_train_label_loss": 0.35,
+      "label_screen_pass": false,
+      "priority_for_source_review": false,
+      "source_review": "not_completed",
+      "trait_semantic_review": "not_completed",
+      "ready_for_sft": false,
+      "candidate_file": "candidates/IELTS_106_r2.json"
+    },
+    {
+      "sample_id": "IELTS:183",
+      "attempt": 2,
+      "source_directory": "IELTS_183_r2",
+      "protocol_status": "complete",
+      "offline_train_label_loss": 0.3,
+      "label_screen_pass": false,
+      "priority_for_source_review": false,
+      "source_review": "not_completed",
+      "trait_semantic_review": "not_completed",
+      "ready_for_sft": false,
+      "candidate_file": "candidates/IELTS_183_r2.json"
+    },
+    {
+      "sample_id": "IELTS:167",
+      "attempt": 2,
+      "source_directory": "IELTS_167_r2",
+      "protocol_status": "complete",
+      "offline_train_label_loss": 0.2,
+      "label_screen_pass": true,
+      "priority_for_source_review": true,
+      "source_review": "not_completed",
+      "trait_semantic_review": "not_completed",
+      "ready_for_sft": false,
+      "candidate_file": "candidates/IELTS_167_r2.json"
+    }
+  ],
+  "complete_candidate_files": 5,
+  "priority_review_candidates": [
+    "IELTS_167_r2"
+  ],
+  "approved_for_sft": 0,
+  "existing_filter_gate": [
+    {
+      "sample_id": "IELTS:106",
+      "accepted": false,
+      "reasons": [
+        {
+          "sample_id": "IELTS:106",
+          "reasons": [
+            "label_error",
+            "grounding_not_verified",
+            "empty_or_unsupported_observations"
+          ]
+        },
+        {
+          "sample_id": "IELTS:106",
+          "reasons": [
+            "label_error",
+            "grounding_not_verified",
+            "empty_or_unsupported_observations"
+          ]
+        }
+      ],
+      "note": "Missing source checks mean unverified support, not proof that every finding is false."
+    },
+    {
+      "sample_id": "IELTS:183",
+      "accepted": false,
+      "reasons": [
+        {
+          "sample_id": "IELTS:183",
+          "reasons": [
+            "label_error",
+            "grounding_not_verified",
+            "empty_or_unsupported_observations"
+          ]
+        },
+        {
+          "sample_id": "IELTS:183",
+          "reasons": [
+            "label_error",
+            "grounding_not_verified",
+            "empty_or_unsupported_observations"
+          ]
+        }
+      ],
+      "note": "Missing source checks mean unverified support, not proof that every finding is false."
+    },
+    {
+      "sample_id": "IELTS:167",
+      "accepted": false,
+      "reasons": [
+        {
+          "sample_id": "IELTS:167",
+          "reasons": [
+            "incomplete_protocol",
+            "grounding_not_verified",
+            "empty_or_unsupported_observations"
+          ]
+        },
+        {
+          "sample_id": "IELTS:167",
+          "reasons": [
+            "grounding_not_verified",
+            "empty_or_unsupported_observations"
+          ]
+        }
+      ],
+      "note": "Missing source checks mean unverified support, not proof that every finding is false."
+    }
+  ],
+  "unapproved_export_guard": "SFT export requires accepted complete real train trajectories",
+  "source_checks_not_completed": true
+}

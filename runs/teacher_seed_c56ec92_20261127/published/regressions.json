@@ -1,0 +1,81 @@
+{
+  "tail_rounding": [
+    {
+      "request": [
+        41,
+        45.0
+      ],
+      "accepted": true,
+      "pool": [
+        {
+          "id": "C1",
+          "action": {
+            "time": [
+              221.0,
+              224.909002
+            ],
+            "modality": "audio_video",
+            "goal": "See response to topic closing"
+          },
+          "priority": 0.0,
+          "status": "pending",
+          "parent_id": null,
+          "source_observation_id": "global_audio_video_3",
+          "origin": "coarse",
+          "leads": [
+            {
+              "source_observation_id": "global_audio_video_3",
+              "source_modality": "audio_video",
+              "hint": "Closing response",
+              "goal": "See response to topic closing",
+              "source_fragment_time": [
+                180.0,
+                224.909002
+              ],
+              "retrieval_timing": "media_relative",
+              "boundary_cut_seconds": 0.090998
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "request": [
+        41,
+        46.0
+      ],
+      "accepted": false,
+      "pool": [],
+      "errors": [
+        {
+          "index": 0,
+          "error": "local_time must stay within -180 to 44.909 seconds from clip start (the recording)"
+        }
+      ]
+    }
+  ],
+  "actual_prior_text_scan_segments": [
+    {
+      "text": "Well, there are a few things that really help me to focus and concentrate on different things, and especially studying. The first thing is probably drinking a bottle of water and trying to relax. I try to take a chill pill before getting started.",
+      "question": "What activities help you to concentrate?",
+      "timing": "unverified_asr",
+      "local_time": [
+        103.4,
+        116.5
+      ]
+    },
+    {
+      "text": "Yeah, it's one of those most effective and efficient ways that someone can take into practice to help and improve their concentration.",
+      "question": "Do you think having a routine helps you to concentrate better?",
+      "timing": "unverified_asr",
+      "local_time": [
+        119.8,
+        128.5
+      ]
+    }
+  ],
+  "text_time_rule": "local_time starts at 0 at source_window_recording_seconds[0]. Transcript segments give their local_time; unverified_asr times locate text retrieval only.",
+  "external_api_calls": 0,
+  "synthetic_backend_for_prompt_capture_only": true
+}

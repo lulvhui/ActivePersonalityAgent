@@ -1,0 +1,2422 @@
+{
+  "plan": {
+    "source_commit": "c56ec929f5212319e06663d7dee31bf977d48c01",
+    "sample_ids": [
+      "IELTS:106",
+      "IELTS:183",
+      "IELTS:167"
+    ],
+    "person_ids": [
+      "106",
+      "183",
+      "167"
+    ],
+    "dataset": "IELTS",
+    "split": "train",
+    "model": "qwen3.8-omni-flash",
+    "rollouts_per_person": 2,
+    "total_rollouts": 6,
+    "parallel_rollouts": 3,
+    "max_steps": 64,
+    "max_new_tokens": 8192,
+    "reasoning_effort": "medium",
+    "coarse_chunk_seconds": 60,
+    "labels_in_teacher_input": false,
+    "jev_api_calls": 0,
+    "formal_training": false,
+    "teacher_approved": false,
+    "selection": "106/183 regression cases plus one new Train person, 167, selected with seed 42 from remaining available IELTS Train persons",
+    "purpose": "Small Best-of-2 candidate pool for source/semantic review before SFT acceptance; not an accuracy benchmark"
+  },
+  "code_review": {
+    "fixed_point": "c5ad408",
+    "head": "c56ec929f5212319e06663d7dee31bf977d48c01",
+    "diff_command": "git diff c5ad408...c56ec92",
+    "commits": [
+      "e5b94af Fix tail rounding, transcript targeting and cut-off speech in Final",
+      "c56ec92 Ask scan and Observe goals for what to see or hear"
+    ],
+    "standards": {
+      "hard_violations": [],
+      "actionable_possible_smells": []
+    },
+    "spec": {
+      "findings": [],
+      "deterministic_blocker_to_bounded_pilot": false,
+      "limitations": [
+        "Prompt adherence and personality evidence quality still require source/semantic review.",
+        "No automatic SFT approval."
+      ]
+    },
+    "unit_tests": {
+      "total": 175,
+      "passed": 174,
+      "skipped": 1
+    },
+    "reviewers": "Independent fresh-context Standards and Spec agents per code-review skill",
+    "runtime_pilot_limitations": [
+      {
+        "sample": "IELTS:167",
+        "attempt": 1,
+        "classification": "stochastic_model_clock_noncompliance_not_deterministic_spec_violation",
+        "source_recording_time": [
+          120,
+          180
+        ],
+        "expected_local_range": [
+          0,
+          60
+        ],
+        "raw_local_time": [
+          [
+            128,
+            155
+          ],
+          [
+            160,
+            172
+          ],
+          [
+            172,
+            180
+          ]
+        ],
+        "effect": "Three coarse proposals rejected; trajectory marked partial; Final still produced.",
+        "recommendation": "Consider exposing allowed_local_seconds=[0,60] explicitly. Do not guess or auto-convert invalid clocks; keep validation/acceptance gates."
+      }
+    ]
+  },
+  "regressions": {
+    "tail_rounding": [
+      {
+        "request": [
+          41,
+          45.0
+        ],
+        "accepted": true,
+        "pool": [
+          {
+            "id": "C1",
+            "action": {
+              "time": [
+                221.0,
+                224.909002
+              ],
+              "modality": "audio_video",
+              "goal": "See response to topic closing"
+            },
+            "priority": 0.0,
+            "status": "pending",
+            "parent_id": null,
+            "source_observation_id": "global_audio_video_3",
+            "origin": "coarse",
+            "leads": [
+              {
+                "source_observation_id": "global_audio_video_3",
+                "source_modality": "audio_video",
+                "hint": "Closing response",
+                "goal": "See response to topic closing",
+                "source_fragment_time": [
+                  180.0,
+                  224.909002
+                ],
+                "retrieval_timing": "media_relative",
+                "boundary_cut_seconds": 0.090998
+              }
+            ]
+          }
+        ],
+        "errors": []
+      },
+      {
+        "request": [
+          41,
+          46.0
+        ],
+        "accepted": false,
+        "pool": [],
+        "errors": [
+          {
+            "index": 0,
+            "error": "local_time must stay within -180 to 44.909 seconds from clip start (the recording)"
+          }
+        ]
+      }
+    ],
+    "actual_prior_text_scan_segments": [
+      {
+        "text": "Well, there are a few things that really help me to focus and concentrate on different things, and especially studying. The first thing is probably drinking a bottle of water and trying to relax. I try to take a chill pill before getting started.",
+        "question": "What activities help you to concentrate?",
+        "timing": "unverified_asr",
+        "local_time": [
+          103.4,
+          116.5
+        ]
+      },
+      {
+        "text": "Yeah, it's one of those most effective and efficient ways that someone can take into practice to help and improve their concentration.",
+        "question": "Do you think having a routine helps you to concentrate better?",
+        "timing": "unverified_asr",
+        "local_time": [
+          119.8,
+          128.5
+        ]
+      }
+    ],
+    "text_time_rule": "local_time starts at 0 at source_window_recording_seconds[0]. Transcript segments give their local_time; unverified_asr times locate text retrieval only.",
+    "external_api_calls": 0,
+    "synthetic_backend_for_prompt_capture_only": true
+  },
+  "samples": [
+    {
+      "sample_id": "IELTS:106",
+      "attempt": 1,
+      "directory": "IELTS_106_r1",
+      "status": "complete",
+      "error": null,
+      "observations": 21,
+      "active_seconds": 224.0,
+      "memory_records": 21,
+      "nonempty_records": 21,
+      "decision_kinds": {
+        "candidate_scan": 6,
+        "memory": 21,
+        "final": 1
+      },
+      "continuous_steps": true,
+      "no_exact_repeated_action": true,
+      "text_reads_without_source_segments": [],
+      "invalid_followup_steps": [],
+      "rejected_coarse_candidates": [],
+      "normalized_boundary_requests": [],
+      "validation_repairs": 0,
+      "contextual_errors": [],
+      "final_status": "generated",
+      "final_levels": {
+        "O": "medium",
+        "C": "medium",
+        "E": "medium",
+        "A": "high",
+        "N": "low"
+      },
+      "stop_reason": "candidate_pool_exhausted",
+      "pending": 0,
+      "source_hashes_match_current": true,
+      "api_calls": 28,
+      "api_errors": [],
+      "prompt_tokens": 86833,
+      "completion_tokens": 54638,
+      "usage_complete": true,
+      "teacher_approved": false,
+      "offline_train_label_loss": 0.35,
+      "offline_label_screen_pass": false,
+      "semantic_review": "pending_source_and_trait_review"
+    },
+    {
+      "sample_id": "IELTS:183",
+      "attempt": 1,
+      "directory": "IELTS_183_r1",
+      "status": "complete",
+      "error": null,
+      "observations": 17,
+      "active_seconds": 238.909002,
+      "memory_records": 17,
+      "nonempty_records": 17,
+      "decision_kinds": {
+        "candidate_scan": 5,
+        "memory": 17,
+        "final": 1
+      },
+      "continuous_steps": true,
+      "no_exact_repeated_action": true,
+      "text_reads_without_source_segments": [],
+      "invalid_followup_steps": [],
+      "rejected_coarse_candidates": [],
+      "normalized_boundary_requests": [
+        {
+          "candidate": "C12",
+          "lead": {
+            "source_observation_id": "global_audio_video_3",
+            "source_modality": "audio_video",
+            "hint": "Examiner says 'Thank you very much. Now we can move on' while closing her notebook and shifting posture; candidate stops gesturing and returns hands to the table",
+            "goal": "Note the timing of the examiner's verbal closure relative to her physical actions (notebook closing, pen set down) and whether the candidate's stillness marks a clear turn boundary before the next topic",
+            "source_fragment_time": [
+              180.0,
+              224.909002
+            ],
+            "retrieval_timing": "media_relative",
+            "boundary_cut_seconds": 0.090998
+          }
+        }
+      ],
+      "validation_repairs": 0,
+      "contextual_errors": [],
+      "final_status": "generated",
+      "final_levels": {
+        "O": "low",
+        "C": "medium",
+        "E": "low",
+        "A": "medium",
+        "N": "low"
+      },
+      "stop_reason": "candidate_pool_exhausted",
+      "pending": 0,
+      "source_hashes_match_current": true,
+      "api_calls": 23,
+      "api_errors": [],
+      "prompt_tokens": 78965,
+      "completion_tokens": 54502,
+      "usage_complete": true,
+      "teacher_approved": false,
+      "offline_train_label_loss": 0.35,
+      "offline_label_screen_pass": false,
+      "semantic_review": "pending_source_and_trait_review"
+    },
+    {
+      "sample_id": "IELTS:167",
+      "attempt": 1,
+      "directory": "IELTS_167_r1",
+      "status": "partial",
+      "error": null,
+      "observations": 19,
+      "active_seconds": 225.39999999999998,
+      "memory_records": 19,
+      "nonempty_records": 19,
+      "decision_kinds": {
+        "candidate_scan": 5,
+        "memory": 19,
+        "final": 1
+      },
+      "continuous_steps": true,
+      "no_exact_repeated_action": true,
+      "text_reads_without_source_segments": [],
+      "invalid_followup_steps": [],
+      "rejected_coarse_candidates": [
+        {
+          "step": 2,
+          "errors": [
+            {
+              "index": 0,
+              "error": "local_time must stay within -120 to 98.477 seconds from clip start (the recording)"
+            },
+            {
+              "index": 1,
+              "error": "local_time must stay within -120 to 98.477 seconds from clip start (the recording)"
+            },
+            {
+              "index": 2,
+              "error": "local_time must stay within -120 to 98.477 seconds from clip start (the recording)"
+            }
+          ]
+        }
+      ],
+      "normalized_boundary_requests": [],
+      "validation_repairs": 0,
+      "contextual_errors": [],
+      "final_status": "generated",
+      "final_levels": {
+        "O": "high",
+        "C": "medium",
+        "E": "low",
+        "A": "medium",
+        "N": "low"
+      },
+      "stop_reason": "candidate_pool_exhausted",
+      "pending": 0,
+      "source_hashes_match_current": true,
+      "api_calls": 25,
+      "api_errors": [],
+      "prompt_tokens": 73674,
+      "completion_tokens": 52262,
+      "usage_complete": true,
+      "teacher_approved": false,
+      "offline_train_label_loss": 0.25,
+      "offline_label_screen_pass": true,
+      "semantic_review": "pending_source_and_trait_review"
+    },
+    {
+      "sample_id": "IELTS:106",
+      "attempt": 2,
+      "directory": "IELTS_106_r2",
+      "status": "complete",
+      "error": null,
+      "observations": 20,
+      "active_seconds": 167.67800499999998,
+      "memory_records": 20,
+      "nonempty_records": 20,
+      "decision_kinds": {
+        "candidate_scan": 6,
+        "memory": 20,
+        "final": 1
+      },
+      "continuous_steps": true,
+      "no_exact_repeated_action": true,
+      "text_reads_without_source_segments": [],
+      "invalid_followup_steps": [],
+      "rejected_coarse_candidates": [],
+      "normalized_boundary_requests": [
+        {
+          "candidate": "C15",
+          "lead": {
+            "source_observation_id": "global_audio_video_4",
+            "source_modality": "audio_video",
+            "hint": "Interviewer says 'I see. Now…' while looking down at papers, signaling the end of Part 1 and the start of the speaking test's second part.",
+            "goal": "Note the interviewer's body language and vocal tone during this transitional phrase—whether it carries a downward inflection of closure and how quickly he re-engages.",
+            "source_fragment_time": [
+              240.0,
+              268.678005
+            ],
+            "retrieval_timing": "media_relative",
+            "boundary_cut_seconds": 0.321995
+          }
+        }
+      ],
+      "validation_repairs": 0,
+      "contextual_errors": [],
+      "final_status": "generated",
+      "final_levels": {
+        "O": "medium",
+        "C": "medium",
+        "E": "medium",
+        "A": "high",
+        "N": "low"
+      },
+      "stop_reason": "candidate_pool_exhausted",
+      "pending": 0,
+      "source_hashes_match_current": true,
+      "api_calls": 27,
+      "api_errors": [],
+      "prompt_tokens": 76048,
+      "completion_tokens": 50827,
+      "usage_complete": true,
+      "teacher_approved": false,
+      "offline_train_label_loss": 0.35,
+      "offline_label_screen_pass": false,
+      "semantic_review": "pending_source_and_trait_review"
+    },
+    {
+      "sample_id": "IELTS:183",
+      "attempt": 2,
+      "directory": "IELTS_183_r2",
+      "status": "complete",
+      "error": null,
+      "observations": 18,
+      "active_seconds": 190.0,
+      "memory_records": 18,
+      "nonempty_records": 17,
+      "decision_kinds": {
+        "candidate_scan": 5,
+        "memory": 18,
+        "final": 1
+      },
+      "continuous_steps": true,
+      "no_exact_repeated_action": true,
+      "text_reads_without_source_segments": [],
+      "invalid_followup_steps": [],
+      "rejected_coarse_candidates": [],
+      "normalized_boundary_requests": [],
+      "validation_repairs": 0,
+      "contextual_errors": [],
+      "final_status": "generated",
+      "final_levels": {
+        "O": "low",
+        "C": "medium",
+        "E": "medium",
+        "A": "medium",
+        "N": "low"
+      },
+      "stop_reason": "candidate_pool_exhausted",
+      "pending": 0,
+      "source_hashes_match_current": true,
+      "api_calls": 24,
+      "api_errors": [],
+      "prompt_tokens": 69903,
+      "completion_tokens": 53023,
+      "usage_complete": true,
+      "teacher_approved": false,
+      "offline_train_label_loss": 0.3,
+      "offline_label_screen_pass": false,
+      "semantic_review": "pending_source_and_trait_review"
+    },
+    {
+      "sample_id": "IELTS:167",
+      "attempt": 2,
+      "directory": "IELTS_167_r2",
+      "status": "complete",
+      "error": null,
+      "observations": 12,
+      "active_seconds": 145.5,
+      "memory_records": 12,
+      "nonempty_records": 12,
+      "decision_kinds": {
+        "candidate_scan": 5,
+        "memory": 12,
+        "final": 1
+      },
+      "continuous_steps": true,
+      "no_exact_repeated_action": true,
+      "text_reads_without_source_segments": [],
+      "invalid_followup_steps": [],
+      "rejected_coarse_candidates": [],
+      "normalized_boundary_requests": [],
+      "validation_repairs": 0,
+      "contextual_errors": [],
+      "final_status": "generated",
+      "final_levels": {
+        "O": "medium",
+        "C": "medium",
+        "E": "low",
+        "A": "medium",
+        "N": "low"
+      },
+      "stop_reason": "candidate_pool_exhausted",
+      "pending": 0,
+      "source_hashes_match_current": true,
+      "api_calls": 18,
+      "api_errors": [],
+      "prompt_tokens": 54023,
+      "completion_tokens": 36733,
+      "usage_complete": true,
+      "teacher_approved": false,
+      "offline_train_label_loss": 0.2,
+      "offline_label_screen_pass": true,
+      "semantic_review": "pending_source_and_trait_review"
+    }
+  ],
+  "best_of_two_groups": [
+    {
+      "sample_id": "IELTS:106",
+      "trajectories": [
+        "IELTS_106_r1",
+        "IELTS_106_r2"
+      ],
+      "complete_candidates": 2,
+      "final_levels_by_attempt": [
+        {
+          "O": "medium",
+          "C": "medium",
+          "E": "medium",
+          "A": "high",
+          "N": "low"
+        },
+        {
+          "O": "medium",
+          "C": "medium",
+          "E": "medium",
+          "A": "high",
+          "N": "low"
+        }
+      ],
+      "selected_candidate": null,
+      "selection_status": "pending_independent_review"
+    },
+    {
+      "sample_id": "IELTS:183",
+      "trajectories": [
+        "IELTS_183_r1",
+        "IELTS_183_r2"
+      ],
+      "complete_candidates": 2,
+      "final_levels_by_attempt": [
+        {
+          "O": "low",
+          "C": "medium",
+          "E": "low",
+          "A": "medium",
+          "N": "low"
+        },
+        {
+          "O": "low",
+          "C": "medium",
+          "E": "medium",
+          "A": "medium",
+          "N": "low"
+        }
+      ],
+      "selected_candidate": null,
+      "selection_status": "pending_independent_review"
+    },
+    {
+      "sample_id": "IELTS:167",
+      "trajectories": [
+        "IELTS_167_r1",
+        "IELTS_167_r2"
+      ],
+      "complete_candidates": 1,
+      "final_levels_by_attempt": [
+        {
+          "O": "high",
+          "C": "medium",
+          "E": "low",
+          "A": "medium",
+          "N": "low"
+        },
+        {
+          "O": "medium",
+          "C": "medium",
+          "E": "low",
+          "A": "medium",
+          "N": "low"
+        }
+      ],
+      "selected_candidate": null,
+      "selection_status": "pending_independent_review"
+    }
+  ],
+  "split_audit": {
+    "dataset": "IELTS",
+    "selected_train_people": [
+      "106",
+      "167",
+      "183"
+    ],
+    "overlap": {
+      "dev": [],
+      "test": []
+    },
+    "passed": true
+  },
+  "candidate_index": {
+    "candidates": [
+      {
+        "sample_id": "IELTS:106",
+        "attempt": 1,
+        "source_directory": "IELTS_106_r1",
+        "protocol_status": "complete",
+        "offline_train_label_loss": 0.35,
+        "label_screen_pass": false,
+        "priority_for_source_review": false,
+        "source_review": "not_completed",
+        "trait_semantic_review": "not_completed",
+        "ready_for_sft": false,
+        "candidate_file": "candidates/IELTS_106_r1.json"
+      },
+      {
+        "sample_id": "IELTS:183",
+        "attempt": 1,
+        "source_directory": "IELTS_183_r1",
+        "protocol_status": "complete",
+        "offline_train_label_loss": 0.35,
+        "label_screen_pass": false,
+        "priority_for_source_review": false,
+        "source_review": "not_completed",
+        "trait_semantic_review": "not_completed",
+        "ready_for_sft": false,
+        "candidate_file": "candidates/IELTS_183_r1.json"
+      },
+      {
+        "sample_id": "IELTS:167",
+        "attempt": 1,
+        "source_directory": "IELTS_167_r1",
+        "protocol_status": "partial",
+        "offline_train_label_loss": 0.25,
+        "label_screen_pass": true,
+        "priority_for_source_review": false,
+        "source_review": "not_completed",
+        "trait_semantic_review": "not_completed",
+        "ready_for_sft": false,
+        "excluded_reason": "incomplete_protocol; preserve original raw attempt"
+      },
+      {
+        "sample_id": "IELTS:106",
+        "attempt": 2,
+        "source_directory": "IELTS_106_r2",
+        "protocol_status": "complete",
+        "offline_train_label_loss": 0.35,
+        "label_screen_pass": false,
+        "priority_for_source_review": false,
+        "source_review": "not_completed",
+        "trait_semantic_review": "not_completed",
+        "ready_for_sft": false,
+        "candidate_file": "candidates/IELTS_106_r2.json"
+      },
+      {
+        "sample_id": "IELTS:183",
+        "attempt": 2,
+        "source_directory": "IELTS_183_r2",
+        "protocol_status": "complete",
+        "offline_train_label_loss": 0.3,
+        "label_screen_pass": false,
+        "priority_for_source_review": false,
+        "source_review": "not_completed",
+        "trait_semantic_review": "not_completed",
+        "ready_for_sft": false,
+        "candidate_file": "candidates/IELTS_183_r2.json"
+      },
+      {
+        "sample_id": "IELTS:167",
+        "attempt": 2,
+        "source_directory": "IELTS_167_r2",
+        "protocol_status": "complete",
+        "offline_train_label_loss": 0.2,
+        "label_screen_pass": true,
+        "priority_for_source_review": true,
+        "source_review": "not_completed",
+        "trait_semantic_review": "not_completed",
+        "ready_for_sft": false,
+        "candidate_file": "candidates/IELTS_167_r2.json"
+      }
+    ],
+    "complete_candidate_files": 5,
+    "priority_review_candidates": [
+      "IELTS_167_r2"
+    ],
+    "approved_for_sft": 0,
+    "existing_filter_gate": [
+      {
+        "sample_id": "IELTS:106",
+        "accepted": false,
+        "reasons": [
+          {
+            "sample_id": "IELTS:106",
+            "reasons": [
+              "label_error",
+              "grounding_not_verified",
+              "empty_or_unsupported_observations"
+            ]
+          },
+          {
+            "sample_id": "IELTS:106",
+            "reasons": [
+              "label_error",
+              "grounding_not_verified",
+              "empty_or_unsupported_observations"
+            ]
+          }
+        ],
+        "note": "Missing source checks mean unverified support, not proof that every finding is false."
+      },
+      {
+        "sample_id": "IELTS:183",
+        "accepted": false,
+        "reasons": [
+          {
+            "sample_id": "IELTS:183",
+            "reasons": [
+              "label_error",
+              "grounding_not_verified",
+              "empty_or_unsupported_observations"
+            ]
+          },
+          {
+            "sample_id": "IELTS:183",
+            "reasons": [
+              "label_error",
+              "grounding_not_verified",
+              "empty_or_unsupported_observations"
+            ]
+          }
+        ],
+        "note": "Missing source checks mean unverified support, not proof that every finding is false."
+      },
+      {
+        "sample_id": "IELTS:167",
+        "accepted": false,
+        "reasons": [
+          {
+            "sample_id": "IELTS:167",
+            "reasons": [
+              "incomplete_protocol",
+              "grounding_not_verified",
+              "empty_or_unsupported_observations"
+            ]
+          },
+          {
+            "sample_id": "IELTS:167",
+            "reasons": [
+              "grounding_not_verified",
+              "empty_or_unsupported_observations"
+            ]
+          }
+        ],
+        "note": "Missing source checks mean unverified support, not proof that every finding is false."
+      }
+    ],
+    "unapproved_export_guard": "SFT export requires accepted complete real train trajectories",
+    "source_checks_not_completed": true
+  },
+  "finished_rollouts": 6,
+  "complete_rollouts": 5,
+  "api_calls_total": 145,
+  "prompt_tokens_known": 439446,
+  "completion_tokens_known": 301985,
+  "student_tokenization": {
+    "student_model": "/mnt/r6_hdd4t/lhlu/models/Qwen2.5-Omni-3B",
+    "configured_positions": 32768,
+    "results": [
+      {
+        "directory": "IELTS_106_r1",
+        "sample_id": "IELTS:106",
+        "spans": [
+          {
+            "decision_index": 0,
+            "kind": "candidate_scan",
+            "step": 0,
+            "target_tokens": 409,
+            "prompt_text_tokens": 449,
+            "combined_text_tokens": 858,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 1,
+            "kind": "candidate_scan",
+            "step": 1,
+            "target_tokens": 483,
+            "prompt_text_tokens": 747,
+            "combined_text_tokens": 1230,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 2,
+            "kind": "candidate_scan",
+            "step": 2,
+            "target_tokens": 730,
+            "prompt_text_tokens": 1101,
+            "combined_text_tokens": 1831,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 3,
+            "kind": "candidate_scan",
+            "step": 3,
+            "target_tokens": 590,
+            "prompt_text_tokens": 1632,
+            "combined_text_tokens": 2222,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 4,
+            "kind": "candidate_scan",
+            "step": 4,
+            "target_tokens": 426,
+            "prompt_text_tokens": 2043,
+            "combined_text_tokens": 2469,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 5,
+            "kind": "candidate_scan",
+            "step": 5,
+            "target_tokens": 387,
+            "prompt_text_tokens": 3667,
+            "combined_text_tokens": 4054,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 6,
+            "kind": "memory",
+            "step": 0,
+            "target_tokens": 152,
+            "prompt_text_tokens": 861,
+            "combined_text_tokens": 1013,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 7,
+            "kind": "memory",
+            "step": 1,
+            "target_tokens": 360,
+            "prompt_text_tokens": 869,
+            "combined_text_tokens": 1229,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 8,
+            "kind": "memory",
+            "step": 2,
+            "target_tokens": 732,
+            "prompt_text_tokens": 1066,
+            "combined_text_tokens": 1798,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 9,
+            "kind": "memory",
+            "step": 3,
+            "target_tokens": 443,
+            "prompt_text_tokens": 940,
+            "combined_text_tokens": 1383,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 10,
+            "kind": "memory",
+            "step": 4,
+            "target_tokens": 527,
+            "prompt_text_tokens": 1435,
+            "combined_text_tokens": 1962,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 11,
+            "kind": "memory",
+            "step": 5,
+            "target_tokens": 316,
+            "prompt_text_tokens": 988,
+            "combined_text_tokens": 1304,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 12,
+            "kind": "memory",
+            "step": 6,
+            "target_tokens": 550,
+            "prompt_text_tokens": 1335,
+            "combined_text_tokens": 1885,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 13,
+            "kind": "memory",
+            "step": 7,
+            "target_tokens": 377,
+            "prompt_text_tokens": 1062,
+            "combined_text_tokens": 1439,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 14,
+            "kind": "memory",
+            "step": 8,
+            "target_tokens": 575,
+            "prompt_text_tokens": 1435,
+            "combined_text_tokens": 2010,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 15,
+            "kind": "memory",
+            "step": 9,
+            "target_tokens": 567,
+            "prompt_text_tokens": 1612,
+            "combined_text_tokens": 2179,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 16,
+            "kind": "memory",
+            "step": 10,
+            "target_tokens": 499,
+            "prompt_text_tokens": 1566,
+            "combined_text_tokens": 2065,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 17,
+            "kind": "memory",
+            "step": 11,
+            "target_tokens": 272,
+            "prompt_text_tokens": 1055,
+            "combined_text_tokens": 1327,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 18,
+            "kind": "memory",
+            "step": 12,
+            "target_tokens": 529,
+            "prompt_text_tokens": 1109,
+            "combined_text_tokens": 1638,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 19,
+            "kind": "memory",
+            "step": 13,
+            "target_tokens": 436,
+            "prompt_text_tokens": 1616,
+            "combined_text_tokens": 2052,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 20,
+            "kind": "memory",
+            "step": 14,
+            "target_tokens": 370,
+            "prompt_text_tokens": 1113,
+            "combined_text_tokens": 1483,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 21,
+            "kind": "memory",
+            "step": 15,
+            "target_tokens": 144,
+            "prompt_text_tokens": 1126,
+            "combined_text_tokens": 1270,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 22,
+            "kind": "memory",
+            "step": 16,
+            "target_tokens": 316,
+            "prompt_text_tokens": 1755,
+            "combined_text_tokens": 2071,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 23,
+            "kind": "memory",
+            "step": 17,
+            "target_tokens": 523,
+            "prompt_text_tokens": 1603,
+            "combined_text_tokens": 2126,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 24,
+            "kind": "memory",
+            "step": 18,
+            "target_tokens": 406,
+            "prompt_text_tokens": 1928,
+            "combined_text_tokens": 2334,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 25,
+            "kind": "memory",
+            "step": 19,
+            "target_tokens": 412,
+            "prompt_text_tokens": 2033,
+            "combined_text_tokens": 2445,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 26,
+            "kind": "memory",
+            "step": 20,
+            "target_tokens": 379,
+            "prompt_text_tokens": 1688,
+            "combined_text_tokens": 2067,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 27,
+            "kind": "final",
+            "step": 21,
+            "target_tokens": 2183,
+            "prompt_text_tokens": 9438,
+            "combined_text_tokens": 11621,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          }
+        ],
+        "final_tokens": [
+          11621
+        ],
+        "all_targets_roundtrip": true,
+        "all_target_objects": true
+      },
+      {
+        "directory": "IELTS_183_r1",
+        "sample_id": "IELTS:183",
+        "spans": [
+          {
+            "decision_index": 0,
+            "kind": "candidate_scan",
+            "step": 0,
+            "target_tokens": 388,
+            "prompt_text_tokens": 449,
+            "combined_text_tokens": 837,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 1,
+            "kind": "candidate_scan",
+            "step": 1,
+            "target_tokens": 497,
+            "prompt_text_tokens": 693,
+            "combined_text_tokens": 1190,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 2,
+            "kind": "candidate_scan",
+            "step": 2,
+            "target_tokens": 592,
+            "prompt_text_tokens": 1018,
+            "combined_text_tokens": 1610,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 3,
+            "kind": "candidate_scan",
+            "step": 3,
+            "target_tokens": 552,
+            "prompt_text_tokens": 1370,
+            "combined_text_tokens": 1922,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 4,
+            "kind": "candidate_scan",
+            "step": 4,
+            "target_tokens": 447,
+            "prompt_text_tokens": 2501,
+            "combined_text_tokens": 2948,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 5,
+            "kind": "memory",
+            "step": 0,
+            "target_tokens": 356,
+            "prompt_text_tokens": 827,
+            "combined_text_tokens": 1183,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 6,
+            "kind": "memory",
+            "step": 1,
+            "target_tokens": 689,
+            "prompt_text_tokens": 1175,
+            "combined_text_tokens": 1864,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 7,
+            "kind": "memory",
+            "step": 2,
+            "target_tokens": 524,
+            "prompt_text_tokens": 1491,
+            "combined_text_tokens": 2015,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 8,
+            "kind": "memory",
+            "step": 3,
+            "target_tokens": 797,
+            "prompt_text_tokens": 1395,
+            "combined_text_tokens": 2192,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 9,
+            "kind": "memory",
+            "step": 4,
+            "target_tokens": 1389,
+            "prompt_text_tokens": 1603,
+            "combined_text_tokens": 2992,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 10,
+            "kind": "memory",
+            "step": 5,
+            "target_tokens": 917,
+            "prompt_text_tokens": 2047,
+            "combined_text_tokens": 2964,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 11,
+            "kind": "memory",
+            "step": 6,
+            "target_tokens": 296,
+            "prompt_text_tokens": 904,
+            "combined_text_tokens": 1200,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 12,
+            "kind": "memory",
+            "step": 7,
+            "target_tokens": 392,
+            "prompt_text_tokens": 906,
+            "combined_text_tokens": 1298,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 13,
+            "kind": "memory",
+            "step": 8,
+            "target_tokens": 261,
+            "prompt_text_tokens": 900,
+            "combined_text_tokens": 1161,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 14,
+            "kind": "memory",
+            "step": 9,
+            "target_tokens": 381,
+            "prompt_text_tokens": 973,
+            "combined_text_tokens": 1354,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 15,
+            "kind": "memory",
+            "step": 10,
+            "target_tokens": 499,
+            "prompt_text_tokens": 1428,
+            "combined_text_tokens": 1927,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 16,
+            "kind": "memory",
+            "step": 11,
+            "target_tokens": 355,
+            "prompt_text_tokens": 1505,
+            "combined_text_tokens": 1860,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 17,
+            "kind": "memory",
+            "step": 12,
+            "target_tokens": 488,
+            "prompt_text_tokens": 1708,
+            "combined_text_tokens": 2196,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 18,
+            "kind": "memory",
+            "step": 13,
+            "target_tokens": 493,
+            "prompt_text_tokens": 2110,
+            "combined_text_tokens": 2603,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 19,
+            "kind": "memory",
+            "step": 14,
+            "target_tokens": 474,
+            "prompt_text_tokens": 1725,
+            "combined_text_tokens": 2199,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 20,
+            "kind": "memory",
+            "step": 15,
+            "target_tokens": 573,
+            "prompt_text_tokens": 1669,
+            "combined_text_tokens": 2242,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 21,
+            "kind": "memory",
+            "step": 16,
+            "target_tokens": 493,
+            "prompt_text_tokens": 2282,
+            "combined_text_tokens": 2775,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 22,
+            "kind": "final",
+            "step": 17,
+            "target_tokens": 1598,
+            "prompt_text_tokens": 9364,
+            "combined_text_tokens": 10962,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          }
+        ],
+        "final_tokens": [
+          10962
+        ],
+        "all_targets_roundtrip": true,
+        "all_target_objects": true
+      },
+      {
+        "directory": "IELTS_167_r1",
+        "sample_id": "IELTS:167",
+        "spans": [
+          {
+            "decision_index": 0,
+            "kind": "candidate_scan",
+            "step": 0,
+            "target_tokens": 614,
+            "prompt_text_tokens": 449,
+            "combined_text_tokens": 1063,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 1,
+            "kind": "candidate_scan",
+            "step": 1,
+            "target_tokens": 662,
+            "prompt_text_tokens": 809,
+            "combined_text_tokens": 1471,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 2,
+            "kind": "candidate_scan",
+            "step": 2,
+            "target_tokens": 661,
+            "prompt_text_tokens": 1208,
+            "combined_text_tokens": 1869,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 3,
+            "kind": "candidate_scan",
+            "step": 3,
+            "target_tokens": 599,
+            "prompt_text_tokens": 1232,
+            "combined_text_tokens": 1831,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 4,
+            "kind": "candidate_scan",
+            "step": 4,
+            "target_tokens": 504,
+            "prompt_text_tokens": 2344,
+            "combined_text_tokens": 2848,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 5,
+            "kind": "memory",
+            "step": 0,
+            "target_tokens": 513,
+            "prompt_text_tokens": 859,
+            "combined_text_tokens": 1372,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 6,
+            "kind": "memory",
+            "step": 1,
+            "target_tokens": 417,
+            "prompt_text_tokens": 915,
+            "combined_text_tokens": 1332,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 7,
+            "kind": "memory",
+            "step": 2,
+            "target_tokens": 341,
+            "prompt_text_tokens": 908,
+            "combined_text_tokens": 1249,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 8,
+            "kind": "memory",
+            "step": 3,
+            "target_tokens": 417,
+            "prompt_text_tokens": 977,
+            "combined_text_tokens": 1394,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 9,
+            "kind": "memory",
+            "step": 4,
+            "target_tokens": 675,
+            "prompt_text_tokens": 1005,
+            "combined_text_tokens": 1680,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 10,
+            "kind": "memory",
+            "step": 5,
+            "target_tokens": 364,
+            "prompt_text_tokens": 987,
+            "combined_text_tokens": 1351,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 11,
+            "kind": "memory",
+            "step": 6,
+            "target_tokens": 433,
+            "prompt_text_tokens": 1096,
+            "combined_text_tokens": 1529,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 12,
+            "kind": "memory",
+            "step": 7,
+            "target_tokens": 560,
+            "prompt_text_tokens": 1478,
+            "combined_text_tokens": 2038,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 13,
+            "kind": "memory",
+            "step": 8,
+            "target_tokens": 583,
+            "prompt_text_tokens": 1726,
+            "combined_text_tokens": 2309,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 14,
+            "kind": "memory",
+            "step": 9,
+            "target_tokens": 436,
+            "prompt_text_tokens": 1188,
+            "combined_text_tokens": 1624,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 15,
+            "kind": "memory",
+            "step": 10,
+            "target_tokens": 509,
+            "prompt_text_tokens": 1854,
+            "combined_text_tokens": 2363,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 16,
+            "kind": "memory",
+            "step": 11,
+            "target_tokens": 512,
+            "prompt_text_tokens": 2002,
+            "combined_text_tokens": 2514,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 17,
+            "kind": "memory",
+            "step": 12,
+            "target_tokens": 302,
+            "prompt_text_tokens": 1736,
+            "combined_text_tokens": 2038,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 18,
+            "kind": "memory",
+            "step": 13,
+            "target_tokens": 473,
+            "prompt_text_tokens": 1869,
+            "combined_text_tokens": 2342,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 19,
+            "kind": "memory",
+            "step": 14,
+            "target_tokens": 475,
+            "prompt_text_tokens": 1426,
+            "combined_text_tokens": 1901,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 20,
+            "kind": "memory",
+            "step": 15,
+            "target_tokens": 564,
+            "prompt_text_tokens": 1814,
+            "combined_text_tokens": 2378,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 21,
+            "kind": "memory",
+            "step": 16,
+            "target_tokens": 429,
+            "prompt_text_tokens": 2761,
+            "combined_text_tokens": 3190,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 22,
+            "kind": "memory",
+            "step": 17,
+            "target_tokens": 336,
+            "prompt_text_tokens": 1752,
+            "combined_text_tokens": 2088,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 23,
+            "kind": "memory",
+            "step": 18,
+            "target_tokens": 522,
+            "prompt_text_tokens": 2290,
+            "combined_text_tokens": 2812,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 24,
+            "kind": "final",
+            "step": 19,
+            "target_tokens": 1900,
+            "prompt_text_tokens": 8864,
+            "combined_text_tokens": 10764,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          }
+        ],
+        "final_tokens": [
+          10764
+        ],
+        "all_targets_roundtrip": true,
+        "all_target_objects": true
+      },
+      {
+        "directory": "IELTS_106_r2",
+        "sample_id": "IELTS:106",
+        "spans": [
+          {
+            "decision_index": 0,
+            "kind": "candidate_scan",
+            "step": 0,
+            "target_tokens": 472,
+            "prompt_text_tokens": 449,
+            "combined_text_tokens": 921,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 1,
+            "kind": "candidate_scan",
+            "step": 1,
+            "target_tokens": 391,
+            "prompt_text_tokens": 722,
+            "combined_text_tokens": 1113,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 2,
+            "kind": "candidate_scan",
+            "step": 2,
+            "target_tokens": 598,
+            "prompt_text_tokens": 935,
+            "combined_text_tokens": 1533,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 3,
+            "kind": "candidate_scan",
+            "step": 3,
+            "target_tokens": 546,
+            "prompt_text_tokens": 1324,
+            "combined_text_tokens": 1870,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 4,
+            "kind": "candidate_scan",
+            "step": 4,
+            "target_tokens": 583,
+            "prompt_text_tokens": 1763,
+            "combined_text_tokens": 2346,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 5,
+            "kind": "candidate_scan",
+            "step": 5,
+            "target_tokens": 681,
+            "prompt_text_tokens": 3546,
+            "combined_text_tokens": 4227,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 6,
+            "kind": "memory",
+            "step": 0,
+            "target_tokens": 279,
+            "prompt_text_tokens": 831,
+            "combined_text_tokens": 1110,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 7,
+            "kind": "memory",
+            "step": 1,
+            "target_tokens": 234,
+            "prompt_text_tokens": 890,
+            "combined_text_tokens": 1124,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 8,
+            "kind": "memory",
+            "step": 2,
+            "target_tokens": 143,
+            "prompt_text_tokens": 1081,
+            "combined_text_tokens": 1224,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 9,
+            "kind": "memory",
+            "step": 3,
+            "target_tokens": 379,
+            "prompt_text_tokens": 921,
+            "combined_text_tokens": 1300,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 10,
+            "kind": "memory",
+            "step": 4,
+            "target_tokens": 322,
+            "prompt_text_tokens": 944,
+            "combined_text_tokens": 1266,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 11,
+            "kind": "memory",
+            "step": 5,
+            "target_tokens": 305,
+            "prompt_text_tokens": 1039,
+            "combined_text_tokens": 1344,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 12,
+            "kind": "memory",
+            "step": 6,
+            "target_tokens": 625,
+            "prompt_text_tokens": 1390,
+            "combined_text_tokens": 2015,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 13,
+            "kind": "memory",
+            "step": 7,
+            "target_tokens": 615,
+            "prompt_text_tokens": 1700,
+            "combined_text_tokens": 2315,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 14,
+            "kind": "memory",
+            "step": 8,
+            "target_tokens": 440,
+            "prompt_text_tokens": 1099,
+            "combined_text_tokens": 1539,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 15,
+            "kind": "memory",
+            "step": 9,
+            "target_tokens": 426,
+            "prompt_text_tokens": 1564,
+            "combined_text_tokens": 1990,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 16,
+            "kind": "memory",
+            "step": 10,
+            "target_tokens": 303,
+            "prompt_text_tokens": 1178,
+            "combined_text_tokens": 1481,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 17,
+            "kind": "memory",
+            "step": 11,
+            "target_tokens": 547,
+            "prompt_text_tokens": 1419,
+            "combined_text_tokens": 1966,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 18,
+            "kind": "memory",
+            "step": 12,
+            "target_tokens": 414,
+            "prompt_text_tokens": 1658,
+            "combined_text_tokens": 2072,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 19,
+            "kind": "memory",
+            "step": 13,
+            "target_tokens": 703,
+            "prompt_text_tokens": 1633,
+            "combined_text_tokens": 2336,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 20,
+            "kind": "memory",
+            "step": 14,
+            "target_tokens": 308,
+            "prompt_text_tokens": 1867,
+            "combined_text_tokens": 2175,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 21,
+            "kind": "memory",
+            "step": 15,
+            "target_tokens": 501,
+            "prompt_text_tokens": 1178,
+            "combined_text_tokens": 1679,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 22,
+            "kind": "memory",
+            "step": 16,
+            "target_tokens": 441,
+            "prompt_text_tokens": 1181,
+            "combined_text_tokens": 1622,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 23,
+            "kind": "memory",
+            "step": 17,
+            "target_tokens": 128,
+            "prompt_text_tokens": 1470,
+            "combined_text_tokens": 1598,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 24,
+            "kind": "memory",
+            "step": 18,
+            "target_tokens": 309,
+            "prompt_text_tokens": 1754,
+            "combined_text_tokens": 2063,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 25,
+            "kind": "memory",
+            "step": 19,
+            "target_tokens": 288,
+            "prompt_text_tokens": 1911,
+            "combined_text_tokens": 2199,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 26,
+            "kind": "final",
+            "step": 20,
+            "target_tokens": 2199,
+            "prompt_text_tokens": 8279,
+            "combined_text_tokens": 10478,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          }
+        ],
+        "final_tokens": [
+          10478
+        ],
+        "all_targets_roundtrip": true,
+        "all_target_objects": true
+      },
+      {
+        "directory": "IELTS_183_r2",
+        "sample_id": "IELTS:183",
+        "spans": [
+          {
+            "decision_index": 0,
+            "kind": "candidate_scan",
+            "step": 0,
+            "target_tokens": 340,
+            "prompt_text_tokens": 449,
+            "combined_text_tokens": 789,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 1,
+            "kind": "candidate_scan",
+            "step": 1,
+            "target_tokens": 594,
+            "prompt_text_tokens": 663,
+            "combined_text_tokens": 1257,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 2,
+            "kind": "candidate_scan",
+            "step": 2,
+            "target_tokens": 619,
+            "prompt_text_tokens": 997,
+            "combined_text_tokens": 1616,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 3,
+            "kind": "candidate_scan",
+            "step": 3,
+            "target_tokens": 810,
+            "prompt_text_tokens": 1418,
+            "combined_text_tokens": 2228,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 4,
+            "kind": "candidate_scan",
+            "step": 4,
+            "target_tokens": 586,
+            "prompt_text_tokens": 2739,
+            "combined_text_tokens": 3325,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 5,
+            "kind": "memory",
+            "step": 0,
+            "target_tokens": 341,
+            "prompt_text_tokens": 786,
+            "combined_text_tokens": 1127,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 6,
+            "kind": "memory",
+            "step": 1,
+            "target_tokens": 185,
+            "prompt_text_tokens": 810,
+            "combined_text_tokens": 995,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 7,
+            "kind": "memory",
+            "step": 2,
+            "target_tokens": 295,
+            "prompt_text_tokens": 889,
+            "combined_text_tokens": 1184,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 8,
+            "kind": "memory",
+            "step": 3,
+            "target_tokens": 207,
+            "prompt_text_tokens": 929,
+            "combined_text_tokens": 1136,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 9,
+            "kind": "memory",
+            "step": 4,
+            "target_tokens": 313,
+            "prompt_text_tokens": 952,
+            "combined_text_tokens": 1265,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 10,
+            "kind": "memory",
+            "step": 5,
+            "target_tokens": 531,
+            "prompt_text_tokens": 1572,
+            "combined_text_tokens": 2103,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 11,
+            "kind": "memory",
+            "step": 6,
+            "target_tokens": 552,
+            "prompt_text_tokens": 1313,
+            "combined_text_tokens": 1865,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 12,
+            "kind": "memory",
+            "step": 7,
+            "target_tokens": 503,
+            "prompt_text_tokens": 1516,
+            "combined_text_tokens": 2019,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 13,
+            "kind": "memory",
+            "step": 8,
+            "target_tokens": 303,
+            "prompt_text_tokens": 1127,
+            "combined_text_tokens": 1430,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 14,
+            "kind": "memory",
+            "step": 9,
+            "target_tokens": 362,
+            "prompt_text_tokens": 1394,
+            "combined_text_tokens": 1756,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 15,
+            "kind": "memory",
+            "step": 10,
+            "target_tokens": 199,
+            "prompt_text_tokens": 1111,
+            "combined_text_tokens": 1310,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 16,
+            "kind": "memory",
+            "step": 11,
+            "target_tokens": 290,
+            "prompt_text_tokens": 1153,
+            "combined_text_tokens": 1443,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 17,
+            "kind": "memory",
+            "step": 12,
+            "target_tokens": 314,
+            "prompt_text_tokens": 1462,
+            "combined_text_tokens": 1776,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 18,
+            "kind": "memory",
+            "step": 13,
+            "target_tokens": 225,
+            "prompt_text_tokens": 2140,
+            "combined_text_tokens": 2365,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 19,
+            "kind": "memory",
+            "step": 14,
+            "target_tokens": 194,
+            "prompt_text_tokens": 1584,
+            "combined_text_tokens": 1778,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 20,
+            "kind": "memory",
+            "step": 15,
+            "target_tokens": 517,
+            "prompt_text_tokens": 1847,
+            "combined_text_tokens": 2364,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 21,
+            "kind": "memory",
+            "step": 16,
+            "target_tokens": 558,
+            "prompt_text_tokens": 1655,
+            "combined_text_tokens": 2213,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 22,
+            "kind": "memory",
+            "step": 17,
+            "target_tokens": 296,
+            "prompt_text_tokens": 1554,
+            "combined_text_tokens": 1850,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 23,
+            "kind": "final",
+            "step": 18,
+            "target_tokens": 2776,
+            "prompt_text_tokens": 6898,
+            "combined_text_tokens": 9674,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          }
+        ],
+        "final_tokens": [
+          9674
+        ],
+        "all_targets_roundtrip": true,
+        "all_target_objects": true
+      },
+      {
+        "directory": "IELTS_167_r2",
+        "sample_id": "IELTS:167",
+        "spans": [
+          {
+            "decision_index": 0,
+            "kind": "candidate_scan",
+            "step": 0,
+            "target_tokens": 578,
+            "prompt_text_tokens": 449,
+            "combined_text_tokens": 1027,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 1,
+            "kind": "candidate_scan",
+            "step": 1,
+            "target_tokens": 623,
+            "prompt_text_tokens": 856,
+            "combined_text_tokens": 1479,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 2,
+            "kind": "candidate_scan",
+            "step": 2,
+            "target_tokens": 500,
+            "prompt_text_tokens": 1223,
+            "combined_text_tokens": 1723,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 3,
+            "kind": "candidate_scan",
+            "step": 3,
+            "target_tokens": 641,
+            "prompt_text_tokens": 1585,
+            "combined_text_tokens": 2226,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 4,
+            "kind": "candidate_scan",
+            "step": 4,
+            "target_tokens": 318,
+            "prompt_text_tokens": 2709,
+            "combined_text_tokens": 3027,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 5,
+            "kind": "memory",
+            "step": 0,
+            "target_tokens": 338,
+            "prompt_text_tokens": 865,
+            "combined_text_tokens": 1203,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 6,
+            "kind": "memory",
+            "step": 1,
+            "target_tokens": 358,
+            "prompt_text_tokens": 914,
+            "combined_text_tokens": 1272,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 7,
+            "kind": "memory",
+            "step": 2,
+            "target_tokens": 260,
+            "prompt_text_tokens": 918,
+            "combined_text_tokens": 1178,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 8,
+            "kind": "memory",
+            "step": 3,
+            "target_tokens": 356,
+            "prompt_text_tokens": 934,
+            "combined_text_tokens": 1290,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 9,
+            "kind": "memory",
+            "step": 4,
+            "target_tokens": 449,
+            "prompt_text_tokens": 966,
+            "combined_text_tokens": 1415,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 10,
+            "kind": "memory",
+            "step": 5,
+            "target_tokens": 565,
+            "prompt_text_tokens": 980,
+            "combined_text_tokens": 1545,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 11,
+            "kind": "memory",
+            "step": 6,
+            "target_tokens": 500,
+            "prompt_text_tokens": 1117,
+            "combined_text_tokens": 1617,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 12,
+            "kind": "memory",
+            "step": 7,
+            "target_tokens": 481,
+            "prompt_text_tokens": 1605,
+            "combined_text_tokens": 2086,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 13,
+            "kind": "memory",
+            "step": 8,
+            "target_tokens": 314,
+            "prompt_text_tokens": 1120,
+            "combined_text_tokens": 1434,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 14,
+            "kind": "memory",
+            "step": 9,
+            "target_tokens": 439,
+            "prompt_text_tokens": 1148,
+            "combined_text_tokens": 1587,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 15,
+            "kind": "memory",
+            "step": 10,
+            "target_tokens": 454,
+            "prompt_text_tokens": 1959,
+            "combined_text_tokens": 2413,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 16,
+            "kind": "memory",
+            "step": 11,
+            "target_tokens": 350,
+            "prompt_text_tokens": 1483,
+            "combined_text_tokens": 1833,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          },
+          {
+            "decision_index": 17,
+            "kind": "final",
+            "step": 12,
+            "target_tokens": 2375,
+            "prompt_text_tokens": 5784,
+            "combined_text_tokens": 8159,
+            "target_json_object": true,
+            "roundtrip": true,
+            "text_positions_exceed_limit": false
+          }
+        ],
+        "final_tokens": [
+          8159
+        ],
+        "all_targets_roundtrip": true,
+        "all_target_objects": true
+      }
+    ],
+    "supervision": "Only decision.text plus student EOS; prompt/program/tool outputs are context, not target tokens.",
+    "scope": "Text/chat-template audit with media placeholders. Expanded multimodal positions, GPU memory and optimizer update not tested.",
+    "sft_export": false,
+    "training": false,
+    "teacher_approval": false
+  },
+  "teacher_approved_trajectories": 0,
+  "sft_export": false,
+  "formal_training": false,
+  "jev_api_calls": 0,
+  "monetary_billing": "not_verified",
+  "scope": "Small Train-only Best-of-2 candidate acquisition. Source and trait-semantic review still required; no automatic teacher approval.",
+  "label_diagnostic_scope": "Original Train labels used only after generation for the existing ordinal-loss screen; never sent to the teacher and never used to judge evidence truth."
+}

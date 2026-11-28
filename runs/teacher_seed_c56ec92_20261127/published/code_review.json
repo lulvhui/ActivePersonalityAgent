@@ -1,0 +1,58 @@
+{
+  "fixed_point": "c5ad408",
+  "head": "c56ec929f5212319e06663d7dee31bf977d48c01",
+  "diff_command": "git diff c5ad408...c56ec92",
+  "commits": [
+    "e5b94af Fix tail rounding, transcript targeting and cut-off speech in Final",
+    "c56ec92 Ask scan and Observe goals for what to see or hear"
+  ],
+  "standards": {
+    "hard_violations": [],
+    "actionable_possible_smells": []
+  },
+  "spec": {
+    "findings": [],
+    "deterministic_blocker_to_bounded_pilot": false,
+    "limitations": [
+      "Prompt adherence and personality evidence quality still require source/semantic review.",
+      "No automatic SFT approval."
+    ]
+  },
+  "unit_tests": {
+    "total": 175,
+    "passed": 174,
+    "skipped": 1
+  },
+  "reviewers": "Independent fresh-context Standards and Spec agents per code-review skill",
+  "runtime_pilot_limitations": [
+    {
+      "sample": "IELTS:167",
+      "attempt": 1,
+      "classification": "stochastic_model_clock_noncompliance_not_deterministic_spec_violation",
+      "source_recording_time": [
+        120,
+        180
+      ],
+      "expected_local_range": [
+        0,
+        60
+      ],
+      "raw_local_time": [
+        [
+          128,
+          155
+        ],
+        [
+          160,
+          172
+        ],
+        [
+          172,
+          180
+        ]
+      ],
+      "effect": "Three coarse proposals rejected; trajectory marked partial; Final still produced.",
+      "recommendation": "Consider exposing allowed_local_seconds=[0,60] explicitly. Do not guess or auto-convert invalid clocks; keep validation/acceptance gates."
+    }
+  ]
+}

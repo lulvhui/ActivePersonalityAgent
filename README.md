@@ -98,7 +98,9 @@ Jev 的可替换接口、概率、缓存、费用和原始响应保留。仅显�
 
 ## 验证与结果
 
-最新 `3b8543d` 的[五样本 API 复测](runs/teacher_pilot5_grounded_20261127/published/report.json)：五条均生成 Final，4 条 complete、183 为 partial；共 135 次 API 调用、104 次观察。[质量审查](runs/teacher_pilot5_grounded_20261127/published/quality_review.json)记录尾段取整越界、文本候选定位及裁剪边界被用于人格推断的问题，尚未批准用于 SFT。[结果说明](runs/teacher_pilot5_grounded_20261127/published/README.txt)包含完整原始输出归档及校验方式。
+基于 `c56ec92` 的[小规模教师轨迹采集](runs/teacher_seed_c56ec92_20261127/published/report.json)已保存：3 位 IELTS Train 人物各生成 2 条，共 6 条（5 complete、1 partial），145 次 API 调用、107 次观察。[候选索引](runs/teacher_seed_c56ec92_20261127/published/candidate_index.json)记录旧版标签初筛及待审核状态；归档保留全部原始输出及 5 条完整候选，正式 SFT 接纳为 0。[结果说明](runs/teacher_seed_c56ec92_20261127/published/README.txt)包含恢复方法。该次测试不覆盖后续 `215bc6b` 的整理与 Final-RL 实现。
+
+`3b8543d` 的[五样本 API 复测](runs/teacher_pilot5_grounded_20261127/published/report.json)：五条均生成 Final，4 条 complete、183 为 partial；共 135 次 API 调用、104 次观察。[质量审查](runs/teacher_pilot5_grounded_20261127/published/quality_review.json)记录尾段取整越界、文本候选定位及裁剪边界被用于人格推断的问题，尚未批准用于 SFT。[结果说明](runs/teacher_pilot5_grounded_20261127/published/README.txt)包含完整原始输出归档及校验方式。
 
 Claude 修复版 `abe7c96` 的[五样本教师 API 复测报告](runs/teacher_pilot5_bounded_20261127/published/report.json)已保存。相同完整样本均正常耗尽候选池并生成 Final，观察次数分别为 18、15、18、17、11，共 151 次 API 调用；193 有一次空字符串格式错误，经一次修正完成。[结果说明](runs/teacher_pilot5_bounded_20261127/published/README.txt)列出原始轨迹归档、可读结果和校验索引。人格语义尚未审核，未批准用于 SFT；长音频传输限制仍存在，不能因本次未触发而视作已修复。
 

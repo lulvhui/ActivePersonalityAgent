@@ -1,0 +1,1057 @@
+{
+  "sample_id": "IELTS:167",
+  "run_status": "partial",
+  "final_status": "generated",
+  "final": {
+    "O": {
+      "level": "high",
+      "reasoning": null
+    },
+    "C": {
+      "level": "medium",
+      "reasoning": null
+    },
+    "E": {
+      "level": "low",
+      "reasoning": null
+    },
+    "A": {
+      "level": "medium",
+      "reasoning": null
+    },
+    "N": {
+      "level": "low",
+      "reasoning": null
+    }
+  },
+  "final_explanation": "Openness is well-supported: the interviewee voluntarily pursued Spanish and Turkish beyond his English-translation degree, calling it 'a really fun experiment' (M5); expressed genuine enjoyment of poetry and literature courses (M2); framed language learning as a gateway to 'connect with the world… learn about other cultures' (M4); and listed aesthetic, small-scale pleasures—a girl giving a flower, acts of kindness, cats—with real-time formulation (M10, M16). His creative redirect of the smile question to the interviewer's own smile (M11) goes beyond scripted answering. These choices exceed what the academic curriculum alone would produce and indicate active curiosity about cultures, arts, and unconventional perspectives. Conscientiousness sits at medium: he completed a university degree and holds a job (M1), and attempted additional language study (M5), showing baseline follow-through. However, the interview responses are meandering, with 'I don't know' asides (M16), trailing-off listings (M4), and no evidence of systematic planning, rule-following, or achievement-striving beyond the minimum the setting requires. Much disfluency is attributable to L2 production and the formal test context, so the absence of highly organized speech is weak negative evidence rather than a clear low-C signal. Extraversion is low: the interviewee explicitly self-identifies as 'more of a… introverted kind of person' who is 'not really comfortable sharing and… coming out in front of people' (M8) and 'gets really awkward… in front of a camera' (M7). Across eight-plus audio-video segments his hands stay clasped or rest near the table, gestures are small and contained, posture is static, and he rarely leans forward or uses expansive movement. The one exception—open palms and a forward lean during the language-and-culture explanation (M6)—occurs on a topic of personal passion and does not generalize to social energy. Agreeableness is medium: he compliments the interviewer's 'beautiful smile' (M11), values 'acts of kindness' (M10), frames human interaction inclusively ('that's how we connect,' M6), and uses self-deprecating rather than critical language (M7). These are consistent warm, other-oriented signals, but there is no evidence of active sacrifice, conflict mediation, or deep empathic engagement beyond polite positivity. Neuroticism is low: the self-reported awkwardness (M7) and social discomfort (M8) are real but confined to performance/visibility contexts and are delivered with a calm, matter-of-fact tone rather than distress. The breathiness and halting opening in M8 could reflect mild anxiety, yet the interview setting and second-language production account for most disfluencies (fillers, self-corrections, pauses) across all segments. No mood instability, anger, worry, or vulnerability to stress is observed. The person manages the interview adequately despite acknowledged nerves.",
+  "contextual": [
+    {
+      "trait": "O",
+      "context_type": "reported",
+      "context": "Voluntary pursuit of additional languages outside his degree",
+      "expression": "Tried to learn Spanish and Turkish; calls the attempt 'a really fun experiment' despite admitting he is 'not really fluent'",
+      "citations": [
+        "M5"
+      ]
+    },
+    {
+      "trait": "O",
+      "context_type": "reported",
+      "context": "Academic enjoyment of arts and humanities",
+      "expression": "'I really enjoyed those courses' referring to poetry and literature classes during college years",
+      "citations": [
+        "M2"
+      ]
+    },
+    {
+      "trait": "O",
+      "context_type": "reported",
+      "context": "Framing language as a cultural-connecting tool",
+      "expression": "Learning languages helps 'connect with the world… learn about other cultures… all sorts of'",
+      "citations": [
+        "M4"
+      ]
+    },
+    {
+      "trait": "O",
+      "context_type": "reported",
+      "context": "Aesthetic sensitivity in listing things that make him smile",
+      "expression": "Enumerates a little girl picking a flower for her mom, acts of kindness, cats, and people playing football—small, sensory, non-status pleasures generated in real time",
+      "citations": [
+        "M10",
+        "M16"
+      ]
+    },
+    {
+      "trait": "O",
+      "context_type": "observed",
+      "context": "Creative redirect of a standard interview question",
+      "expression": "Instead of citing an external event, identifies the interviewer's own smile as 'the last one,' turning the social frame of the interview into the answer",
+      "citations": [
+        "M11"
+      ]
+    },
+    {
+      "trait": "C",
+      "context_type": "reported",
+      "context": "Baseline life structure",
+      "expression": "Completed a university degree in English translation and currently works",
+      "citations": [
+        "M1"
+      ]
+    },
+    {
+      "trait": "C",
+      "context_type": "reported",
+      "context": "Self-initiated skill-building attempt",
+      "expression": "Tried to learn Spanish and Turkish, though he concedes he is 'not really fluent'—effort made without sustained mastery",
+      "citations": [
+        "M5"
+      ]
+    },
+    {
+      "trait": "C",
+      "context_type": "observed",
+      "context": "Spontaneous, unstructured enumeration under time pressure",
+      "expression": "Opens the smile list with 'Lots of things,' inserts 'I don't know' as a search marker, and repeats 'seeing… seeing…' before abandoning the syntactic frame—constructing the list in real time rather than recalling a prepared set",
+      "citations": [
+        "M16"
+      ]
+    },
+    {
+      "trait": "E",
+      "context_type": "reported",
+      "context": "Explicit self-label of social orientation",
+      "expression": "'I'm more of a… introverted kind of person… I am not really comfortable sharing and… and coming out in front of people'",
+      "citations": [
+        "M8"
+      ]
+    },
+    {
+      "trait": "E",
+      "context_type": "reported",
+      "context": "Discomfort with being visually observed",
+      "expression": "'I get really awkward… for posing in front of cameras, I'm not really good in front of a camera'",
+      "citations": [
+        "M7"
+      ]
+    },
+    {
+      "trait": "E",
+      "context_type": "observed",
+      "context": "Contained physical behavior across multiple interview segments",
+      "expression": "Hands clasped on the table, torso static, minimal head movement, small restrained gestures; no large arm sweeps, pointing, or expansive posture in M1, M2, M3, M4, M5, M8, M9, M12, M13, M14, M18",
+      "citations": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M8",
+        "M9",
+        "M12",
+        "M13",
+        "M14",
+        "M18"
+      ]
+    },
+    {
+      "trait": "E",
+      "context_type": "observed",
+      "context": "Exception: more open gesturing on a passion topic",
+      "expression": "During the language-and-culture explanation, hands open and raise mid-gesture, palms face upward, torso leans slightly forward—engagement peaks on a personally meaningful subject rather than reflecting general social energy",
+      "citations": [
+        "M6"
+      ]
+    },
+    {
+      "trait": "A",
+      "context_type": "reported",
+      "context": "Warm interpersonal compliment within the interview",
+      "expression": "Directs 'you had a beautiful smile and you smiled at me' to the interviewer, occupying the recipient role and inverting the expected subject position",
+      "citations": [
+        "M11"
+      ]
+    },
+    {
+      "trait": "A",
+      "context_type": "reported",
+      "context": "Valuing kindness and gentle human acts",
+      "expression": "Includes 'acts of kindness' and a child giving a flower to her mother among things that make him smile",
+      "citations": [
+        "M10",
+        "M16"
+      ]
+    },
+    {
+      "trait": "A",
+      "context_type": "reported",
+      "context": "Inclusive framing of human connection",
+      "expression": "'Of course, that's how we connect. We use language, and through language we connect with other people'",
+      "citations": [
+        "M6"
+      ]
+    },
+    {
+      "trait": "A",
+      "context_type": "reported",
+      "context": "Self-deprecating rather than critical tone",
+      "expression": "Describes himself as 'clumsy' to a photographer, attributing awkwardness to his own limitation without blaming the situation or others",
+      "citations": [
+        "M7"
+      ]
+    },
+    {
+      "trait": "N",
+      "context_type": "reported",
+      "context": "Mild social self-consciousness in performance contexts",
+      "expression": "States he gets 'really awkward' in front of cameras and is 'not really comfortable sharing and coming out in front of people'—discomfort is acknowledged but delivered in a calm, explanatory register without distress",
+      "citations": [
+        "M7",
+        "M8"
+      ]
+    },
+    {
+      "trait": "N",
+      "context_type": "observed",
+      "context": "Vocal and pacing markers during the introversion explanation",
+      "expression": "Halting opening ('Because… I think… I'm more of a…'), slight breathiness, lower-than-average pitch, and a micro-pause at the 'introvert→introverted' repair—consistent with mild formulation anxiety amplified by the L2 interview setting",
+      "citations": [
+        "M8"
+      ]
+    },
+    {
+      "trait": "N",
+      "context_type": "unknown",
+      "context": "Disambiguating L2/test-context disfluency from trait anxiety",
+      "expression": "Filled pauses, self-corrections, and trailing-off occur across nearly every segment (M1, M2, M4, M5, M6, M8, M16); the structured IELTS format and second-language production provide a sufficient alternative explanation, so these cannot be attributed to neuroticism without independent confirmation",
+      "citations": [
+        "M1",
+        "M2",
+        "M4",
+        "M5",
+        "M6",
+        "M8",
+        "M16"
+      ]
+    }
+  ],
+  "contextual_errors": [],
+  "stop_reason": "candidate_pool_exhausted",
+  "global_scan": {
+    "coarse_summaries": [
+      {
+        "time": [
+          0.0,
+          60.0
+        ],
+        "modality": "audio_video",
+        "summary": "The video captures the first part of an IELTS-style speaking test in a modern studio with blue ambient lighting and a glass partition. An older male examiner in a white shirt and tie sits across a desk from a younger male candidate in a beige shirt, with a laptop between them. The examiner introduces personal questions about studying. The candidate explains he currently works but studied English translation at university until last year. When asked about the most interesting part of his major, he speaks about poetry and literature courses he enjoyed during his university years. The examiner then asks what majors are popular in his country; the candidate responds that all kinds are studied but medical majors are very popular nowadays. Throughout, the candidate speaks with noticeable hesitations, filler words ('um,' 'uh'), and self-corrections, maintaining generally steady eye contact with the examiner while making small hand gestures. His vocal delivery is moderate in pace with pauses at transition points. The examiner listens attentively, takes notes, nods, and poses follow-up questions in a calm, measured tone. Subtitles appear at the bottom of the screen transcribing the dialogue, and promotional text for an IELTS course website scrolls along the lower edge.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          60.0,
+          120.0
+        ],
+        "modality": "audio_video",
+        "summary": "Within this window the examiner pivots the conversation from the previous topic (engineering) to languages, asking whether learning languages helps us, whether the candidate has learned or wishes to learn one, and whether knowing languages enables effective conversation. The candidate answers each prompt in turn: he affirms that languages help in many ways, citing the ability to connect with the world and to learn about other cultures; he then reports having tried to learn Spanish and some Turkish while noting he is not fluent, framing the attempt as a fun experiment; finally he begins to explain that language is how people connect and that knowing a language and its culture would significantly aid conversation, but this last answer is cut off mid-clause as the clip ends. In delivery, the candidate's speech is marked by fillers ('uh', 'like'), a mid-word self-correction ('lang- learning languages'), a repeated pronoun ('I I think'), and uneven pacing, yet he accompanies his points with small hand gestures and shifts his gaze between the examiner and downward. The examiner speaks in short prompting questions, gives a backchannel 'Mhm', and is visibly writing notes throughout, with on-screen captions and a brief like/subscribe animation appearing over the lower portion of the frame.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          120.0,
+          180.0
+        ],
+        "modality": "audio_video",
+        "summary": "In this segment the interviewer explicitly shifts the topic to smiles and asks what makes the interviewee smile. The interviewee responds by listing several scenarios—a little girl picking a flower for her mother, acts of kindness, cats, people playing football—delivered in a halting, filler-laden manner with repeated 'um' and 'like' markers, a self-correction mid-list, and a trailing 'yeah, things I like.' His hands move in small illustrative gestures as he paints each scene, and his gaze drops briefly between items. When asked when someone last smiled at him, his delivery becomes noticeably smoother and more direct; he credits the interviewer's own smile at the start of their conversation, maintaining eye contact and a slight forward lean. The interviewer then poses a new question about smiling while posing for photos, which arrives just as the clip ends, leaving the interviewee's response unheard.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          180.0,
+          218.477007
+        ],
+        "modality": "audio_video",
+        "summary": "The interviewee, seated across from an interviewer in a studio-like setting with blue lighting and a glass partition behind them, describes feeling awkward in front of cameras. His speech is halting, with audible self-corrections (\"posing\" corrected from \"imposing,\" \"introverted\" corrected from \"introvert\"), filler words, and repeated conjunctions (\"and and\"). He gestures lightly with his hands while speaking and occasionally glances downward. The interviewer, holding papers and a pen, listens, takes notes, and interjects with the prompt \"Why do you think so?\" before the interviewee elaborates on being introverted and uncomfortable sharing in front of people. The interviewer then closes the segment with \"All right, now that's the end for part one.\" On-screen subtitles track the spoken words, and a scrolling banner at the bottom advertises a website.",
+        "summary_status": "provided"
+      },
+      {
+        "time": [
+          0,
+          218.477007
+        ],
+        "modality": "text",
+        "summary": "A single interviewee answers a series of short-part questions (work/study, major interests, national trends in majors, language learning, sources of happiness, introversion) in a conversational register. Communication is characterized by frequent discourse markers ('I think', 'actually', 'of course', 'like'), at least two mid-sentence self-corrections ('imposing'→'posing'; 'introvert'→'introverted'), a repeated 'I I think' before an admission of non-fluency, and several answers that trail off or appear truncated at the clip boundary ('but it—', 'would uh significantly—'). Content-wise the speaker describes studying English translation, enjoying poetry and literature courses, notes a shift in national popularity from engineering to medicine, lists Spanish and Turkish as attempted languages, enumerates small everyday pleasures (a child picking a flower, acts of kindness, cats, football), and attributes discomfort with cameras and public sharing to introversion. Tone remains informal and mildly hesitant throughout; no segment is delivered in a flat, rehearsed cadence.",
+        "summary_status": "provided"
+      }
+    ],
+    "input_modalities": [
+      "text",
+      "audio",
+      "video"
+    ],
+    "observation_modes": [
+      "text",
+      "audio",
+      "video",
+      "audio_video"
+    ],
+    "sampling_fps": 1.0,
+    "full_audio_coverage": true,
+    "audio_coverage": [
+      [
+        0.0,
+        60.0
+      ],
+      [
+        60.0,
+        120.0
+      ],
+      [
+        120.0,
+        180.0
+      ],
+      [
+        180.0,
+        218.4765625
+      ]
+    ],
+    "video_coverage": [
+      [
+        0.0,
+        60.0
+      ],
+      [
+        60.0,
+        120.0
+      ],
+      [
+        120.0,
+        180.0
+      ],
+      [
+        180.0,
+        218.477007
+      ]
+    ],
+    "duration": 218.477007,
+    "sampled_frames": 218,
+    "audio_samples": 3495625,
+    "audio_sample_rate": 16000,
+    "chunk_seconds": 60.0,
+    "text_segmentation": "full_transcript",
+    "video_segmentation": "fixed_seconds",
+    "audio_segmentation": "decoded_samples"
+  },
+  "cost": {
+    "stage_timing": {
+      "coarse": {
+        "calls": 5,
+        "timed_calls": 0,
+        "prepare_seconds": 0.0,
+        "generation_seconds": 0.0,
+        "constraint_seconds": 0.0,
+        "total_seconds": 0.0,
+        "constraint_calls": 0,
+        "prompt_tokens": 14804,
+        "completion_tokens": 7259
+      },
+      "observe": {
+        "calls": 19,
+        "timed_calls": 0,
+        "prepare_seconds": 0.0,
+        "generation_seconds": 0.0,
+        "constraint_seconds": 0.0,
+        "total_seconds": 0.0,
+        "constraint_calls": 0,
+        "prompt_tokens": 50009,
+        "completion_tokens": 40251
+      },
+      "final": {
+        "calls": 1,
+        "timed_calls": 0,
+        "prepare_seconds": 0.0,
+        "generation_seconds": 0.0,
+        "constraint_seconds": 0.0,
+        "total_seconds": 0.0,
+        "constraint_calls": 0,
+        "prompt_tokens": 8861,
+        "completion_tokens": 4752
+      }
+    },
+    "active_seconds": 225.39999999999998,
+    "active_budget_seconds": null,
+    "coarse_audio_seconds": 218.4765625,
+    "coarse_frames": 218,
+    "jev_api_calls": 0,
+    "jev_estimated_cost": 0.0,
+    "coarse_video_segments": 4,
+    "coarse_video_fps": 1.0,
+    "generated_tokens": 52262,
+    "input_tokens": 73674
+  },
+  "novelty_rule": {
+    "video_fps": 2.0,
+    "min_new_seconds": 5.0,
+    "max_focus": 1
+  },
+  "novelty_filtered": [
+    {
+      "stage": "execution",
+      "candidate_id": "C17",
+      "parent_id": "C7",
+      "time": [
+        195.0,
+        218.477007
+      ],
+      "modality": "audio_video",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 4.477007,
+        "video": 4.5
+      },
+      "new_still": false,
+      "region_root": "C7"
+    },
+    {
+      "stage": "execution",
+      "candidate_id": "C15",
+      "parent_id": "C5",
+      "time": [
+        60.0,
+        69.0
+      ],
+      "modality": "audio",
+      "reason": "no_unread_content_outside_region",
+      "new_seconds": {
+        "audio": 4.0
+      },
+      "new_still": false,
+      "region_root": "C5"
+    }
+  ],
+  "attempt": 1,
+  "memory": {
+    "observations": [
+      {
+        "id": "M1",
+        "observation_id": "active_0",
+        "modality": "audio_video",
+        "retrieval_window": [
+          10.0,
+          25.0
+        ],
+        "content": "The interviewee (left, light t-shirt) delivers a single continuous answer spanning roughly 0–14 s: 'I currently work but uh I've been studying uh till the last year and I've studied English translation actually at university and yeah.'\nTwo filled pauses ('uh') occur: the first after 'work but' (≈2–3 s) and the second after 'studying' (≈5 s), each lasting under one second and functioning as brief hesitations rather than full restarts.\nA longer silent gap of approximately one to two seconds separates 'studying uh' from 'till the last year' (≈5–7 s), during which the interviewee's mouth closes and his clasped hands remain motionless on the table.\nThe word 'actually' (≈11–12 s) operates as an in-sentence repair/clarification appended to 'English translation,' not as a restart; the interviewee does not repeat or rephrase the preceding clause.\nThe answer terminates with the trailing filler 'and yeah' (≈13–14 s), delivered with a slight downward inflection and no further elaboration.\nThroughout the response the interviewee's posture is static: hands clasped on the table, torso upright, gaze directed toward the interviewer across the table; no notable head-turn or hand-gesture accompanies the hesitations.\nThe interviewer (right, white shirt and tie) looks down to write on a notepad during the middle portion of the answer (≈5–10 s) and lifts his gaze back toward the interviewee near the end (≈11–14 s), signaling attentive listening without interrupting.\nOn-screen subtitles track the spoken content in real time, confirming the sequence: 'Do you work or study?' → 'I currently work' → 'but I've been studying' → 'till the last year' → 'and I have studied English translation' → 'actually at university and yeah.'",
+        "content_status": "structured"
+      },
+      {
+        "id": "M2",
+        "observation_id": "active_1",
+        "modality": "audio_video",
+        "retrieval_window": [
+          32.0,
+          45.0
+        ],
+        "content": "The interviewee (left, light t-shirt) speaks continuously from 0 to 13 seconds, saying: 'Um, I think literature, we had poetry courses, we had literature courses, and I'm uh, and I really enjoyed those courses in our uh, uh, college years.' His delivery includes multiple filler words ('um,' 'uh') and a self-correction/repetition at 'and I'm uh, and I really enjoyed.'\nThe examiner (right, white shirt and tie) is writing notes on paper for approximately the first 7 seconds of the clip, head angled downward toward the notebook. Around 8–10 seconds he lifts his gaze toward the interviewee and gives a slight nod, then returns his attention to the notes by 11–13 seconds.\nThe interviewee's hands rest near the table edge and make small, restrained gestures while speaking; no large or emphatic hand movements are visible during the words 'poetry' (~3–4 s) or 'literature' (~5–6 s).\nThe interviewee's gaze is directed toward the examiner for most of the clip; brief downward glances coincide with the filler-word pauses ('uh, uh') near 11–12 seconds.\nOn-screen captions appear sequentially at the bottom of the frame, highlighting key phrases in purple/magenta: 'um I think literature,' 'we had poetry courses we had literature courses and,' 'I really enjoyed those courses in our,' 'uh college years.' A scrolling ticker at the very bottom reads 'You can check our amazing long courses visiting our website www.risstudio.com.'\nThe studio setting features blue ambient lighting, a large circular ceiling light, decorative rain-streak effects on the rear glass panels, a laptop open on the table between the two speakers, and a small potted plant to the left. Both men remain seated throughout the 13-second window.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M3",
+        "observation_id": "active_2",
+        "modality": "audio_video",
+        "retrieval_window": [
+          50.0,
+          60.0
+        ],
+        "content": "The interviewee (seated left, beige shirt) speaks continuously about popular majors, beginning with 'all kinds of majors I think' and narrowing to 'medical majors are very popular nowadays in our country.'\nThe examiner (seated right, white shirt and tie) keeps his gaze directed downward at papers on the table and writes notes throughout the entire clip without looking up or interjecting.\nThe interviewee's posture remains stable: hands clasped on the table, torso facing the examiner, minimal head movement while speaking.\nThe final on-screen subtitle reads 'but it used to be engineering,' indicating the interviewee is drawing a contrast between present-day popularity of medical majors and a former preference for engineering.\nThe audio track appears to truncate around 'but it—' while the subtitle continues to completion, suggesting the clip boundary falls in the middle of the interviewee's concluding clause.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M4",
+        "observation_id": "active_3",
+        "modality": "audio_video",
+        "retrieval_window": [
+          69.0,
+          85.0
+        ],
+        "content": "The candidate's opening self-correction 'lang- learning languages help us' is a partial repair within a single clause: he begins the word 'languages,' backtracks, and inserts 'learning' before completing the phrase, rather than restarting the sentence from the top.\nAn 'uh' filler precedes the self-correction at the very start (~0-1 s), and a second 'uh' falls between 'having' and 'being able to connect with the world' (~6-7 s), marking the two most hesitant points in the answer.\nFrom ~8 s onward the candidate settles into a more continuous listing rhythm ('connect with the world … learn about other cultures … all sorts of'), with the fillers thinning out, though 'in like having' at ~6 s still carries a discourse marker.\nIn the video frames the candidate (seated left) keeps his gaze directed toward the interviewer throughout both the hesitant opening and the listing stretch; no downward glance or notable hand repositioning is visible on his side during either phase.\nThe interviewer (seated right) looks down at papers and writes during the hesitant middle portion (~6-7 s) and continues to glance down through the listing (~8-12 s), while the candidate's posture and hand placement remain comparatively static.\nThe answer trails off with a repeated 'sorts of, sorts of…' at ~15 s, indicating the thought is still being formulated as the clip ends; no clear resolution or shift in the candidate's delivery is captured within this window.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M5",
+        "observation_id": "active_4",
+        "modality": "audio_video",
+        "retrieval_window": [
+          90.0,
+          103.0
+        ],
+        "content": "The candidate (seated left, light t-shirt) states he has tried to learn Spanish and Turkish but is 'not really fluent in those languages,' then adds 'yeah, I I think it's a really fun experiment.' The repetition 'I I' is audible between 'but yeah' and 'think.'\nThe examiner (seated right, white shirt and tie) writes on paper with a pen throughout most of the 13-second segment, briefly lifting his gaze toward the candidate around the 5-second and 12-second marks before returning to his notes.\nIn the 2 fps video frames spanning 0–13 s, the candidate's hands remain near the table surface with no large or clearly timed gesture visible at the moments the words 'Spanish,' 'Turkish,' or 'fun experiment' are spoken; body posture stays forward-facing toward the examiner.\nOn-screen subtitles track the candidate's speech in three blocks: 'and I have also tried to learn some Turkish' (≈3–6 s), 'but I'm not really fluent in those languages' (≈7–9 s), and 'but yeah I think it's a really fun experiment' (≈10–13 s).\nThe candidate's delivery includes a brief pause and the self-repair 'I I think' immediately before the phrase 'a really fun experiment,' contrasting with the more continuous flow of the earlier language-learning clause.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M6",
+        "observation_id": "active_5",
+        "modality": "audio_video",
+        "retrieval_window": [
+          108.0,
+          120.0
+        ],
+        "content": "The interviewee (seated on the left, wearing a light-colored shirt) speaks continuously from the start of the clip, saying: 'Of course, that's how we connect. We use language, uh, and through language we connect with other people. And knowing the language and actually knowing the culture of language would, uh, significantly—' The utterance is truncated mid-word; the final syllable of 'significantly' is cut off as the clip ends, and the thought is incomplete (no object or completion of the clause is delivered).\nIn the last two seconds (approximately 10–12 s), the interviewee's hands remain open and raised in a mid-gesture position, palms facing upward and outward, and his mouth is still moving as if continuing the sentence. His torso leans slightly forward toward the examiner. His facial expression shows active engagement consistent with mid-explanation rather than a concluding pause.\nThe examiner (seated on the right, in a white shirt and dark tie) keeps his gaze directed downward at papers on the table throughout the entire clip, pen in hand, actively writing or making notes. In the final seconds, the examiner does not look up, nod, interject, or otherwise signal acknowledgment that the candidate's turn has ended. There is no visible shift in the examiner's posture or attention before the clip cuts.\nBecause the candidate's speech is truncated mid-word and the examiner shows no reactive behavior (no eye contact, no verbal cue, no change in writing rhythm), the exchange has not reached a natural conversational boundary within this clip. The candidate was still in the middle of formulating his point about language and culture when the recording stopped.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M7",
+        "observation_id": "active_6",
+        "modality": "audio_video",
+        "retrieval_window": [
+          180.0,
+          195.0
+        ],
+        "content": "The interviewee (seated left, beige shirt) delivers a continuous statement about feeling awkward posing in front of cameras, saying: 'Actually I get really awkward, like for posing in front of cameras, I'm not really good in front of a camera, so I might sound a little bit clumsy to the photographer or videographer.'\nHis vocal delivery is halting, with audible pauses between phrases—particularly after 'awkward' and before 'posing'—suggesting a self-correction or repair in the word choice around the 'imposing/posing' boundary.\nVisually, the interviewee keeps his hands near the table surface, making small open-palm gestures as he speaks; around the 10–12 s mark he briefly drops his gaze downward while formulating 'clumsy to the,' then looks back up toward the interviewer to finish 'photographer or videographer.'\nThe interviewer (seated right, white shirt and dark tie) listens throughout, glancing at papers on the table and writing a note around 11–12 s, but does not interrupt the interviewee's turn.\nThe statement concludes cleanly at approximately 14 s with 'photographer or videographer'; no trailing filler such as 'and yeah' is audible within this 15-second window.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M8",
+        "observation_id": "active_7",
+        "modality": "audio_video",
+        "retrieval_window": [
+          198.0,
+          214.0
+        ],
+        "content": "Rhythm shift: The interviewer's prompt 'Why do you think so?' occupies roughly the first second and is delivered in a flat, even cadence. The interviewee's response then stretches across approximately 14 seconds, beginning slowly with elongated pauses between clauses ('Because… I think… I'm more of a…') before settling into a moderately quicker, more continuous flow through the middle ('I am not really comfortable sharing and… and coming out in front of people'). The overall tempo of the answer is slower than a typical conversational reply, with the opening third notably more halting than the closing third.\nSelf-correction type: At around the 4–6 second mark the interviewee produces 'introvert' and immediately repairs it to 'introverted' without restarting the sentence. This is a partial, in-place morphological correction rather than a full restart; the surrounding syntax ('I'm more of a ___ kind of person') remains intact. Later, around 12–13 seconds, the connector 'and' is repeated ('sharing and and coming out'), which functions as a brief filler stutter rather than a content-level repair.\nHand gestures and posture: Throughout the response the interviewee (seated left, beige shirt) keeps both forearms near the table edge. As he moves from the self-correction into listing reasons (roughly 9–15 seconds), his palms open outward and his fingers spread, producing small symmetrical gestures that coincide with the phrases 'not really comfortable sharing' and 'coming out in front of people.' The gestures remain low and contained; no large arm sweeps or pointing are visible.\nEye contact and gaze direction: In the frames spanning 2–15 seconds the interviewee's head is oriented toward the interviewer (seated right). His gaze appears directed at the interviewer for the majority of the explanation. Around the 10–12 second window, while formulating 'I am not really comfortable sharing,' his eyes dip briefly toward the table surface before returning to the interviewer for the final clause. The interviewer, meanwhile, alternates between looking at the interviewee and glancing down at papers on the table, writing a note near the 12-second mark without interrupting.\nVocal quality notes: The interviewee's voice carries a slight breathiness and a lower-than-average pitch for his age range. The partial repair 'introvert → introverted' is accompanied by a micro-pause of less than half a second. The repeated 'and and' is delivered at a marginally faster rate than the surrounding words, suggesting a momentary loss of planning fluency rather than emphasis.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M9",
+        "observation_id": "active_8",
+        "modality": "audio_video",
+        "retrieval_window": [
+          215.0,
+          218.0
+        ],
+        "content": "Audio (interviewer): The interviewer (seated right, white shirt, dark tie) delivers the line 'All right, now that's the end for part one' as a single, uninterrupted statement spanning the full 3-second clip. No residual or overlapping speech from the interviewee is audible at any point during this utterance; the interviewee's channel is silent throughout.\nVideo (interviewee posture and hands): The interviewee (seated left, beige/tan short-sleeve shirt) keeps both hands clasped together, resting flat on the dark table surface, for the entire duration of the clip. No hand release, gesture, or repositioning is visible. His torso remains upright and still, with shoulders squared toward the interviewer.\nVideo (interviewee gaze and expression): The interviewee's head is oriented toward the interviewer across all three sampled frames (0.2 s, 1.2 s, 2.2 s). His facial expression appears neutral-to-attentive, with no overt smile, frown, or eyebrow raise discernible at the available frame rate. He does not look down at the table or away from the interviewer during this window.\nVideo (interviewer gaze behavior): The interviewer begins the clip with his gaze directed downward at papers spread on the table in front of him. Through the 2.2-second frame he still appears to be looking at or just above the papers rather than making sustained eye contact with the interviewee. Any upward glance coincides with the delivery of the closing line but is brief and not a full turn toward the interviewee.\nVideo (setting and graphics): A persistent lower-third banner displays a website URL (www.rajatvidya.com) and partial text referencing 'company level backing,' which is a static graphic element rather than a real-time dialogue subtitle. The studio background shows a rain-speckled window panel with 'RAJAT VIDYA' branding and a circular overhead light fixture. A closed laptop sits on the table between the two participants.\nPending-request resolution note: The audio_video request spanning [-5.0, 3.477007] is substantially addressed by the combination of the earlier [-5.0, -1.0] window (already done) and this [0.0, 3.0] clip. The residual unread fragments [-1.0, 0.0] and [3.0, 3.477007] total roughly 1.5 seconds and fall within the original region, constituting a completed closer look. No further dedicated read is required for the three sub-goals (overlap check, interviewee final-seconds posture, interviewer eye-contact pattern).",
+        "content_status": "structured"
+      },
+      {
+        "id": "M10",
+        "observation_id": "active_9",
+        "modality": "text",
+        "retrieval_window": [
+          138.2,
+          161.4
+        ],
+        "content": "The interviewee answers the question \"What are the things that make you smile?\" with a multi-item list that opens with the broad phrase \"Lots of things,\" signaling an unstructured, extemporaneous enumeration rather than a fixed set.\nTwo instances of the filler \"like\" frame the examples (\"like seeing…\" and \"or like when…\"), marking the list as being generated in real time.\nThree concrete visual scenes are reported: a little girl picking a flower and giving it to her mom; someone performing acts of kindness; and cats. Each of the first two is introduced with the verb \"seeing,\" anchoring them as witnessed images.\nAn ellipsis appears in the transcription immediately after \"cats,\" before the conjunction \"or.\" Because the segment is tagged unverified_asr, the ellipsis cannot be confirmed as representing a spoken pause versus a transcription gap or dropped word.\nThe final example, \"when people playing football,\" shifts grammatical construction from \"seeing [specific subject] [verb]-ing\" to \"when [general group] [verb]-ing,\" moving from individually named actors to an unnamed collective and from a visual-perception frame to a temporal-event frame.\nNo audio, video, or measurement data accompany this text; all structural features above are drawn solely from the written transcript.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M11",
+        "observation_id": "active_10",
+        "modality": "text",
+        "retrieval_window": [
+          164.8,
+          178.2
+        ],
+        "content": "The interviewee answers the question 'When was the last time someone smiled at you?' by redirecting the referent inward: rather than citing an external person or event, he identifies the interviewer himself as the smiler ('you had a beautiful smile and you smiled at me'), locating the moment 'just in the beginning of our conversation.' The social frame of the interview becomes the answer.\nThe response is structured in two sentences. The first establishes the scene and the agent ('you … smiled at me'); the second delivers the evaluative conclusion ('I think that was the last one'). The conjunction between them is absent, creating a short declarative pivot from description to judgment.\nThe phrase 'I think' functions as an epistemic hedge immediately before the definitive past-tense claim 'that was the last one,' softening the assertion while still closing the list of possible smiles.\nGrammatically, the interviewee occupies the recipient role ('you smiled at me'), making himself the object of the interviewer's action. This inverts the expected subject position in an answer about 'someone smiling at you.'\nThe segment is tagged unverified_asr; no precise media timestamp accompanies the text, so its exact position within the clip's local clock cannot be fixed from this source alone.\nNo audio prosody, vocal rhythm, laughter, or interviewer reaction is present in this text-only source; the words carry no markers of tone, pace, or non-verbal response.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M12",
+        "observation_id": "active_11",
+        "modality": "audio_video",
+        "retrieval_window": [
+          25.0,
+          35.0
+        ],
+        "content": "The interviewer (right, white shirt and tie) poses a follow-up question immediately after the interviewee's prior answer ended with 'and yeah': 'And what is or what was the most interesting part of this major?' There is no extended silence or pause between the two turns; the question begins within roughly one second of the previous answer's close.\nDuring the interviewer's question (approximately 0–6 s), the interviewee (left, light t-shirt) maintains his prior posture unchanged: both hands remain clasped together on the table, torso upright, gaze directed steadily toward the interviewer across the table. No hand-release, lean-forward, or head-turn is visible in these frames.\nThe interviewer writes on a notepad with a pen throughout the question (frames at 0.2–6.2 s show his head angled downward toward the paper). Around 7–9 s, as the interviewee begins answering, the interviewer lifts his gaze from the notes toward the interviewee, signaling the transition from questioner to listener.\nThe interviewee's answer begins at approximately 7 s with the filler 'Um' followed by 'I think literature,' delivered in a measured, low-energy tone. His hands remain clasped; no gesture accompanies the opening phrase. On-screen subtitles confirm the text: 'um I think literature.'\nThe studio environment remains consistent: blue ambient lighting, circular ceiling fixture, rain-streak decorative panels behind the glass partition, an open laptop centered on the table, and a small potted plant to the left. A scrolling ticker at the bottom reads 'You can check our amazing long courses visiting our website www.risstudio.com.'",
+        "content_status": "structured",
+        "overlapping_media_reads": [
+          "M2"
+        ]
+      },
+      {
+        "id": "M13",
+        "observation_id": "active_12",
+        "modality": "audio_video",
+        "retrieval_window": [
+          60.0,
+          65.0
+        ],
+        "content": "The interviewee (left, beige shirt) completes his contrast clause within the first ~2 seconds: subtitles show 'but it used to be engineering' followed by 'I think,' confirming the full thought about former engineering popularity is delivered without truncation.\nA brief pause occurs around the 2-second mark with no on-screen subtitle, marking the natural closure of the interviewee's answer segment before the examiner takes the floor.\nAt approximately 3 seconds the examiner (right, white shirt and tie) begins speaking: the subtitle shifts to 'now let's move on to talk about languages' rendered in purple/highlighted text, identifying this as the examiner's turn and a clear topic-transition cue.\nDuring 0–2 seconds the examiner's gaze remains directed downward at papers on the table with pen in hand (writing posture); by 3–4 seconds the transition to his spoken line indicates he has lifted his attention from note-taking to address the interviewee, though the frames do not show a dramatic head-raise—rather a gradual shift in engagement.\nThe interviewee's posture is static throughout: hands clasped on the table, torso oriented toward the examiner, no visible gesture accompanying the end of his statement or the examiner's transition.\nThe turn-taking boundary is clean and unambiguous: interviewee finishes → ~1 s pause → examiner opens next topic with an explicit discourse marker ('now let's move on'), with no overlap or interruption visible in the subtitle sequence.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M14",
+        "observation_id": "active_13",
+        "modality": "audio_video",
+        "retrieval_window": [
+          85.0,
+          90.0
+        ],
+        "content": "In the 0–5 s window the interviewer (seated right, white shirt and black tie) reads the question 'And have you ever learned a new language or do you wish to?' while looking down at papers on the table; his gaze does not lift toward the candidate during the question.\nThe candidate (seated left, light-colored t-shirt) remains silent throughout the 5 s, sitting with both hands resting near the table surface and his gaze directed toward the interviewer, indicating he is listening to and processing the question rather than responding.\nOn-screen subtitles transition from the tail of the candidate's previous answer ('it helps in all sorts of way') at ≈0–1 s to the interviewer's new question ('and have you ever Learned a new language') at ≈1–3 s, with the word 'Learned' highlighted in red, marking the boundary between the two speakers' turns.\nA YouTube engagement overlay (thumbs-up icon, thumbs-down icon, red 'Subscribe' button, bell icon) fades in at approximately 3 s and remains visible through 5 s, partially obscuring the lower-center of the frame but not blocking either speaker's face or upper body.\nNo hand gesture, posture shift, or vocalization from the candidate is visible or audible during the question; his static, forward-facing seated position matches the posture recorded throughout the preceding listing segment (M4).\nThe interviewer's pen and papers remain on the table in front of him; he does not write during the 5 s but keeps his attention on the documents while speaking.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M15",
+        "observation_id": "active_14",
+        "modality": "video",
+        "retrieval_window": [
+          96.0,
+          100.0
+        ],
+        "content": "Observed behavior (video, 2 fps, local 0.0–4.0 s / recording ≈96–100 s): During the subtitle block 'but I'm not really fluent in those languages' (visible at frames 1.2 s and 2.2 s), the candidate (seated left, light t-shirt) keeps his torso angled toward the examiner (seated right, white shirt and tie). His head is turned slightly to his own right, consistent with facing the examiner. No pronounced downward gaze-aversion or look-away is discernible at this frame rate; the eyes appear directed roughly toward the examiner rather than the tabletop.\nObserved behavior: In the preceding frame (0.2 s, subtitle 'and I have also tried to learn some Turkish'), the candidate's chin is marginally lower and his gaze appears slightly more neutral/downward compared to the 1.2–2.2 s frames, suggesting a small upward reorientation of the head as he transitions into the 'not really fluent' clause. This shift is subtle and within normal conversational head movement.\nObserved behavior: By 3.2 s (subtitle 'but yeah I think it's a really fun experiment'), the candidate's mouth corners lift slightly (a faint smile), and his head orientation remains toward the examiner. Posture and hand placement (clasped/resting near the table edge) are unchanged across all four frames; no gestural emphasis accompanies the admission of non-fluency.\nSelf-report (from prior audio transcript, M5): The candidate states he has tried to learn Spanish and Turkish but is 'not really fluent in those languages,' then self-repairs with 'but yeah I I think it's a really fun experiment.' The repetition 'I I' is audible. This verbal content is not independently re-confirmed in the current video-only frames but is consistent with the on-screen subtitles visible here.\nContextual note: The examiner continues writing on paper with a pen throughout these four frames, with no visible gaze-lift toward the candidate in this 4-second window (his prior gaze-lifts at ≈5 s and ≈12 s fall outside this clip).",
+        "content_status": "structured",
+        "overlapping_media_reads": [
+          "M5"
+        ]
+      },
+      {
+        "id": "M16",
+        "observation_id": "active_15",
+        "modality": "audio",
+        "retrieval_window": [
+          138.2,
+          161.39999999999998
+        ],
+        "content": "The interviewee speaks in accented English with a measured, slightly halting rhythm throughout the 23-second response. The opening clause 'a little girl picking a flower and giving it to her mom would make me smile' is delivered at a moderate pace with a brief inhalation before 'picking,' and the word 'smile' lands with a gentle downward inflection, closing the first item cleanly.\nAfter 'acts of kindness,' the interviewee says 'cats' as a single, isolated noun with no accompanying verb or frame, followed immediately by a short audible pause of roughly one second. The ellipsis in the transcript corresponds to a genuine spoken silence rather than a dropped word; no partial syllable or swallowed consonant is detectable in that gap.\nThe pause after 'cats' is broken not by the next list item but by the self-directed aside 'I don't know,' spoken at a lower volume and slightly faster than the surrounding examples, functioning as a discourse marker that signals the speaker is searching for the next entry rather than expressing uncertainty about cats themselves.\nFollowing 'I don't know,' the interviewee repeats 'seeing… seeing…' with a clear break between the two instances—each preceded by a small breath intake. The repetition is not a stutter but a deliberate re-start, as though the speaker is reaching back into the same syntactic frame ('seeing [X]') used for the first two items before abandoning it.\nThe transition into 'like when people playing football' carries a perceptible shift: the pace quickens by a beat or two compared to the earlier hesitant 'seeing… seeing…' sequence, and the vocal energy rises slightly on 'football,' which receives the strongest stress in the entire list. The grammatical pivot from 'seeing [named subject]' to 'when [unnamed group]' is mirrored in the delivery by a loosening of the careful, item-by-item cadence into a more flowing, less segmented phrase.\nThe closing 'Yeah, things I like' is spoken with a small upward lilt on 'Yeah'—acknowledging the interviewer or the question—and a settling, almost dismissive flatness on 'things I like,' as though wrapping up the enumeration without adding further detail. A faint exhalation follows the final word before the clip ends.\nAcross the full response, the interviewee's volume remains fairly even, with no sharp dynamic peaks; the primary variation is in pacing and pausing rather than loudness. The overall impression is of someone constructing the list in real time, with the hesitations ('I don't know,' the doubled 'seeing') marking moments of active formulation rather than recall.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M17",
+        "observation_id": "active_16",
+        "modality": "audio_video",
+        "retrieval_window": [
+          161.4,
+          180.0
+        ],
+        "content": "The interviewee (left, beige shirt) delivers the redirect answer across approximately 5–13 s: 'I think just in the beginning of our conversation you had a beautiful smile and you smiled at me. I think that was the last one.' Throughout, he maintains direct gaze toward the interviewer, with small open-palm hand gestures resting near the table edge. His mouth corners are slightly raised during the final clause (visible in frames at 12–13 s), and the pace of 'I think that was the last one' is marginally quicker and more clipped than the preceding descriptive sentence, with a light downward inflection on 'one' that closes the turn.\nDuring and for roughly two to three seconds immediately after the interviewee's final clause (frames 13–15 s), the interviewer (right, white shirt, dark tie) keeps his gaze directed downward at papers on the table, pen in hand, continuing to write. No verbal acknowledgment, laugh, nod, or upward glance is visible or audible in this interval. The interviewer's posture remains unchanged—leaning slightly forward over the papers.\nApproximately three seconds after the interviewee finishes (frame 16 s), the interviewer lifts his head, makes eye contact with the interviewee, and transitions directly into the next question: 'Do you like to smile while posing for photos?' No bridging comment, reaction, or reference to the previous answer ('you smiled at me / that was the last one') precedes this new question. The shift is a clean topic change with no audible or visible acknowledgment of the redirect.\nThe interviewer's question at 0–4 s ('And when was the last time someone smiled at you?') is delivered while he is looking down at his notes, pen poised, glancing up briefly toward the interviewee at the end of the question. His tone is neutral and procedural, consistent with reading from a prepared list. The interviewee's response begins almost immediately after, with no extended pause.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M18",
+        "observation_id": "active_17",
+        "modality": "audio_video",
+        "retrieval_window": [
+          45.0,
+          50.0
+        ],
+        "content": "The interviewer (right, white shirt and tie) speaks continuously through the 0–5 s window, first closing the prior topic with 'university years' and then immediately posing the next question: 'And what kinds of majors do the people in your country study?' His gaze remains directed downward at papers on the table throughout, and he does not look up at the interviewee while formulating the question.\nThe interviewee (left, beige t-shirt) sits with hands clasped on the table edge, torso angled toward the interviewer, and maintains steady eye contact with the interviewer for the full 5 seconds. No posture shift, gesture, or gaze break is visible as the interviewer transitions between topics.\nOn-screen captions advance in three stages matching the interviewer's speech: 'university years and' (≈0–1 s), 'what kinds of majors' (≈1–3 s), 'do the people in your country study?' (≈3–5 s). A scrolling ticker at the very bottom reads 'You can check our amazing long courses visiting our website www.risstudio.com.'\nThe interviewer allows no audible beat of silence between 'university years' and 'And what kinds of majors…'; the two phrases run together as one continuous utterance, indicating an immediate pivot to the next question rather than a pause for the interviewee to elaborate further.\nThe studio environment is unchanged from prior segments: blue ambient lighting, large circular ceiling fixture, decorative rain-streak effects on rear glass panels, an open laptop centered on the table, and a small potted plant at far left. Both men remain seated throughout.",
+        "content_status": "structured"
+      },
+      {
+        "id": "M19",
+        "observation_id": "active_18",
+        "modality": "audio_video",
+        "retrieval_window": [
+          103.0,
+          108.0
+        ],
+        "content": "Turn-transition observed (video + subtitle, local 0.0–5.0 s / recording ≈103–108 s): At frame 0.2 s the on-screen subtitle still reads 'but yeah I think it's a really fun experiment,' carrying the tail of the candidate's prior statement (M5). By frame 1.2 s the subtitle switches to 'does knowing languages allow effective conversations?' and remains through frame 4.2 s. This marks a clear speaker-change: the candidate's monologue ends and a new question is introduced, consistent with the examiner posing a follow-up before the candidate's response in M6 ('Of course, that's how we connect…').\nCandidate behavior during the question (frames 1.2–4.2 s): The interviewee (seated left, light t-shirt) keeps his torso angled toward the examiner, mouth closed, and gaze directed roughly at the examiner or the table between them. No hand gesture or postural shift is visible at 2 fps during the four frames spanning the question subtitle. His posture is receptive/listening rather than speaking.\nExaminer behavior during the question (frames 1.2–4.2 s): The examiner (seated right, white shirt, dark tie) is looking downward at papers on the table in frames 1.2 s and 2.2 s, pen in hand. By frame 4.2 s his head appears to tilt slightly upward toward the candidate, suggesting he may be finishing writing the question or preparing to look up. No large gestural movement is discernible at this frame rate.\nAudio content inferred from subtitle alignment: The spoken audio in this 5-second window transitions from the candidate's closing phrase '…a really fun experiment' (≈0–1 s) to the examiner's question 'Does knowing languages allow effective conversations?' (≈1–5 s). The question is delivered as a single continuous utterance with no audible interruption or overlap from the candidate, confirming a clean turn boundary.\nContextual linkage: The question 'does knowing languages allow effective conversations?' directly builds on the candidate's preceding discussion of learning Spanish and Turkish (M5) and sets up his response in M6 about language as a means of human connection. The on-screen branding 'Rox IELTS' and website URL remain static throughout, indicating this is a structured interview/examination setting rather than a casual conversation.",
+        "content_status": "structured"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "index": 0,
+      "action": {
+        "time": [
+          10.0,
+          25.0
+        ],
+        "modality": "audio_video",
+        "goal": "Observe the exact placement and duration of pauses, whether the self-correction involves a restart or a repair, and how the candidate's posture and gaze shift during uncertain moments versus when he settles into the answer."
+      },
+      "candidate_id": "C1",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M1"
+      ],
+      "changed_ids": [
+        "M1"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 1,
+      "action": {
+        "time": [
+          32.0,
+          45.0
+        ],
+        "modality": "audio_video",
+        "goal": "Note the change in vocal rhythm and energy relative to the previous answer, track the specific hand gestures and their timing with key words like 'poetry' and 'literature,' and observe whether eye contact with the examiner is sustained or broken."
+      },
+      "candidate_id": "C2",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M2"
+      ],
+      "changed_ids": [
+        "M2"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 2,
+      "action": {
+        "time": [
+          50.0,
+          60.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the speech ends mid-word or mid-thought, observe the candidate's expression and body position in the final seconds, and check whether the examiner looks up or continues writing, to establish the natural boundary of this exchange."
+      },
+      "candidate_id": "C3",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M3"
+      ],
+      "changed_ids": [
+        "M3"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 3,
+      "action": {
+        "time": [
+          69.0,
+          85.0
+        ],
+        "modality": "audio_video",
+        "goal": "Observe where pauses fall relative to the self-correction, whether the correction is a full restart or a partial repair, and how the candidate's hand position and gaze change during the hesitant stretches versus when he settles into listing the benefits."
+      },
+      "candidate_id": "C4",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M4"
+      ],
+      "changed_ids": [
+        "M4"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 4,
+      "action": {
+        "time": [
+          90.0,
+          103.0
+        ],
+        "modality": "audio_video",
+        "goal": "Track the timing of gestures against the words 'Spanish', 'Turkish', and 'fun experiment', note the change in speech fluency compared with the previous answer, and record whether eye contact with the examiner is held or broken during the admission of non-fluency."
+      },
+      "candidate_id": "C5",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M5"
+      ],
+      "changed_ids": [
+        "M5"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 5,
+      "action": {
+        "time": [
+          108.0,
+          120.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the speech stops mid-word or mid-thought, capture the candidate's expression and body posture in the last seconds, and check the examiner's gaze and note-taking to establish the natural boundary of this exchange."
+      },
+      "candidate_id": "C6",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M6"
+      ],
+      "changed_ids": [
+        "M6"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 6,
+      "action": {
+        "time": [
+          180.0,
+          195.0
+        ],
+        "modality": "audio_video",
+        "goal": "Observe the exact timing of the self-correction, whether the pause before 'posing' involves a restart or a repair, and how the interviewee's posture and gaze shift during the halting delivery versus when he settles into the sentence."
+      },
+      "candidate_id": "C7",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M7"
+      ],
+      "changed_ids": [
+        "M7"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 7,
+      "action": {
+        "time": [
+          198.0,
+          214.0
+        ],
+        "modality": "audio_video",
+        "goal": "Track the rhythm change between the interviewer's short prompt and the interviewee's longer response, note whether the self-correction is a full restart or partial repair, and observe whether eye contact with the interviewer is sustained or broken during the explanation."
+      },
+      "candidate_id": "C8",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M8"
+      ],
+      "changed_ids": [
+        "M8"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 8,
+      "action": {
+        "time": [
+          215.0,
+          218.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine whether the interviewer's closing statement overlaps with any residual speech from the interviewee, capture the interviewee's expression and body position in the final seconds, and check whether the interviewer makes eye contact or continues looking at his papers."
+      },
+      "candidate_id": "C9",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M9"
+      ],
+      "changed_ids": [
+        "M9"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 9,
+      "action": {
+        "time": [
+          138.2,
+          161.4
+        ],
+        "modality": "text",
+        "goal": "Confirm whether the ellipsis after 'cats' corresponds to a genuine pause or a dropped word in transcription, and whether the shift from concrete images (flower, kindness) to the vaguer 'or like when people playing football' marks a change in confidence or energy in the delivery."
+      },
+      "candidate_id": "C10",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M10"
+      ],
+      "changed_ids": [
+        "M10"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 10,
+      "action": {
+        "time": [
+          164.8,
+          178.2
+        ],
+        "modality": "text",
+        "goal": "Check whether this redirection is delivered with a lighter, more playful rhythm than the surrounding answers, and whether the interviewer's reaction (verbal or non-verbal) is audible or visible immediately after the line 'I think that was the last one.'"
+      },
+      "candidate_id": "C11",
+      "parent_candidate_id": null,
+      "new_ids": [
+        "M11"
+      ],
+      "changed_ids": [
+        "M11"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 11,
+      "action": {
+        "time": [
+          25.0,
+          35.0
+        ],
+        "modality": "audio_video",
+        "goal": "Observe whether the interviewee shifts posture, releases his clasped hands, or changes gaze direction in the seconds immediately after finishing his answer, and whether the interviewer poses a follow-up or allows a pause."
+      },
+      "candidate_id": "C12",
+      "parent_candidate_id": "C1",
+      "new_ids": [
+        "M12"
+      ],
+      "changed_ids": [
+        "M12"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 12,
+      "action": {
+        "time": [
+          60.0,
+          65.0
+        ],
+        "modality": "audio_video",
+        "goal": "Confirm whether the interviewee completes his thought about engineering majors, observe the examiner's first reaction (looking up, nodding, or continuing to write), and identify the natural pause or turn-taking boundary that closes this answer segment."
+      },
+      "candidate_id": "C13",
+      "parent_candidate_id": "C3",
+      "new_ids": [
+        "M13"
+      ],
+      "changed_ids": [
+        "M13"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 13,
+      "action": {
+        "time": [
+          85.0,
+          90.0
+        ],
+        "modality": "audio_video",
+        "goal": "Observe the candidate's posture, hand position, and eye direction in the seconds just before he begins naming Spanish and Turkish, to establish whether he was already facing the examiner or adjusting position."
+      },
+      "candidate_id": "C14",
+      "parent_candidate_id": "C4",
+      "new_ids": [
+        "M14"
+      ],
+      "changed_ids": [
+        "M14"
+      ],
+      "followup_status": "added",
+      "followup_errors": []
+    },
+    {
+      "index": 14,
+      "action": {
+        "time": [
+          96.0,
+          100.0
+        ],
+        "modality": "video",
+        "goal": "Examine the candidate's facial orientation and eye direction frame-by-frame during 'but I'm not really fluent in those languages' to determine whether he maintains gaze toward the examiner or looks away/down."
+      },
+      "candidate_id": "C16",
+      "parent_candidate_id": "C5",
+      "new_ids": [
+        "M15"
+      ],
+      "changed_ids": [
+        "M15"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 15,
+      "action": {
+        "time": [
+          138.2,
+          161.39999999999998
+        ],
+        "modality": "audio",
+        "goal": "Listen across the full response to determine whether the ellipsis after \"cats\" coincides with an audible pause, a breath, or a dropped word, and whether the transition into \"or like when people playing football\" carries a detectable shift in pace, loudness, or vocal energy relative to the preceding concrete examples."
+      },
+      "candidate_id": "C18",
+      "parent_candidate_id": "C10",
+      "new_ids": [
+        "M16"
+      ],
+      "changed_ids": [
+        "M16"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 16,
+      "action": {
+        "time": [
+          161.4,
+          180.0
+        ],
+        "modality": "audio_video",
+        "goal": "An audio-video read over this window should reveal whether the delivery of 'I think that was the last one' carries a noticeably lighter or more playful prosodic contour than the preceding list items, and whether any immediate interviewer reaction—verbal (a laugh, a short acknowledgment) or visible (a smile, a nod, a glance up from notes)—follows within roughly two seconds after that line."
+      },
+      "candidate_id": "C19",
+      "parent_candidate_id": "C11",
+      "new_ids": [
+        "M17"
+      ],
+      "changed_ids": [
+        "M17"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 17,
+      "action": {
+        "time": [
+          45.0,
+          50.0
+        ],
+        "modality": "audio_video",
+        "goal": "Determine how the interviewee's turn terminates (full stop vs. trailing filler) and whether any posture or gaze change accompanies the end of the answer, plus whether the interviewer immediately moves to the next question or allows a beat of silence."
+      },
+      "candidate_id": "C20",
+      "parent_candidate_id": "C12",
+      "new_ids": [
+        "M18"
+      ],
+      "changed_ids": [
+        "M18"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    },
+    {
+      "index": 18,
+      "action": {
+        "time": [
+          103.0,
+          108.0
+        ],
+        "modality": "audio_video",
+        "goal": "Hear whether the candidate adds any further elaboration on Spanish/Turkish or pivots to a new topic, and see whether the interviewer responds verbally or with a note-taking gesture, to establish the turn-transition after the language-learning answer."
+      },
+      "candidate_id": "C21",
+      "parent_candidate_id": "C14",
+      "new_ids": [
+        "M19"
+      ],
+      "changed_ids": [
+        "M19"
+      ],
+      "followup_status": "not_proposed",
+      "followup_errors": []
+    }
+  ],
+  "coarse_rejections": [
+    {
+      "step": 2,
+      "errors": [
+        {
+          "index": 0,
+          "error": "local_time must stay within -120 to 98.477 seconds from clip start (the recording)"
+        },
+        {
+          "index": 1,
+          "error": "local_time must stay within -120 to 98.477 seconds from clip start (the recording)"
+        },
+        {
+          "index": 2,
+          "error": "local_time must stay within -120 to 98.477 seconds from clip start (the recording)"
+        }
+      ]
+    }
+  ],
+  "semantic_review": "pending",
+  "teacher_approved": false
+}

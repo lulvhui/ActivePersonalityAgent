@@ -1,0 +1,29 @@
+{
+  "source_commit": "c56ec929f5212319e06663d7dee31bf977d48c01",
+  "sample_ids": [
+    "IELTS:106",
+    "IELTS:183",
+    "IELTS:167"
+  ],
+  "person_ids": [
+    "106",
+    "183",
+    "167"
+  ],
+  "dataset": "IELTS",
+  "split": "train",
+  "model": "qwen3.8-omni-flash",
+  "rollouts_per_person": 2,
+  "total_rollouts": 6,
+  "parallel_rollouts": 3,
+  "max_steps": 64,
+  "max_new_tokens": 8192,
+  "reasoning_effort": "medium",
+  "coarse_chunk_seconds": 60,
+  "labels_in_teacher_input": false,
+  "jev_api_calls": 0,
+  "formal_training": false,
+  "teacher_approved": false,
+  "selection": "106/183 regression cases plus one new Train person, 167, selected with seed 42 from remaining available IELTS Train persons",
+  "purpose": "Small Best-of-2 candidate pool for source/semantic review before SFT acceptance; not an accuracy benchmark"
+}

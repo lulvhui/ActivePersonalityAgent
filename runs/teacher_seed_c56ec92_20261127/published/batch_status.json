@@ -1,0 +1,44 @@
+[
+  {
+    "sample_id": "IELTS:167",
+    "attempt": 1,
+    "directory": "IELTS_167_r1",
+    "exit_code": 0,
+    "elapsed_seconds": 763.7102892398834
+  },
+  {
+    "sample_id": "IELTS:183",
+    "attempt": 1,
+    "directory": "IELTS_183_r1",
+    "exit_code": 0,
+    "elapsed_seconds": 769.3547706604004
+  },
+  {
+    "sample_id": "IELTS:106",
+    "attempt": 1,
+    "directory": "IELTS_106_r1",
+    "exit_code": 0,
+    "elapsed_seconds": 806.894232749939
+  },
+  {
+    "sample_id": "IELTS:167",
+    "attempt": 2,
+    "directory": "IELTS_167_r2",
+    "exit_code": 0,
+    "elapsed_seconds": 550.9922585487366
+  },
+  {
+    "sample_id": "IELTS:183",
+    "attempt": 2,
+    "directory": "IELTS_183_r2",
+    "exit_code": 0,
+    "elapsed_seconds": 774.5159845352173
+  },
+  {
+    "sample_id": "IELTS:106",
+    "attempt": 2,
+    "directory": "IELTS_106_r2",
+    "exit_code": 0,
+    "elapsed_seconds": 780.8509049415588
+  }
+]

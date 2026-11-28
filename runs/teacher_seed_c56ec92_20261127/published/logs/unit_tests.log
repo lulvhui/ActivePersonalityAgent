@@ -1,0 +1,210 @@
+test_audio_encoding_and_size_limit_do_not_silently_trim (test_api_teacher.APITeacherTests) ... ok
+test_http_error_has_one_attempt_and_redacted_audit (test_api_teacher.APITeacherTests) ... ok
+test_invalid_and_truncated_response_is_saved_before_validation (test_api_teacher.APITeacherTests) ... ok
+test_person_questions_survive_input_sanitizing_without_labels (test_api_teacher.APITeacherTests) ... ok
+test_raw_text_reader_still_requests_json_mode_for_actor_schema (test_api_teacher.APITeacherTests) ... ok
+test_requires_permission_credentials_and_official_https_endpoint (test_api_teacher.APITeacherTests) ... ok
+test_response_usage_and_json_instruction_preserved_without_fake_token_ids (test_api_teacher.APITeacherTests) ... ok
+test_video_preserves_all_existing_frames_and_fps_without_audio (test_api_teacher.APITeacherTests) ... ok
+test_coarse_and_detailed_observation_have_distinct_tasks (test_coarse_modalities.CoarseModalityTests) ... ok
+test_each_source_summary_survives_an_empty_candidate_pool (test_coarse_modalities.CoarseModalityTests) ... ok
+test_explicit_goals_can_reference_the_actual_source_summary (test_coarse_modalities.CoarseModalityTests) ... ok
+test_fixed_video_chunks_match_audio_transport_windows (test_coarse_modalities.CoarseModalityTests) ... [Coarse] video 1/2: 0.00-20.00s, 1 fps
+[Coarse] video 2/2: 20.00-37.47s, 1 fps
+ok
+test_flat_final_reaches_trajectory_with_missing_reasoning_marked (test_coarse_modalities.CoarseModalityTests) ... ok
+test_flat_levels_and_case_are_accepted_without_invented_explanations (test_coarse_modalities.CoarseModalityTests) ... ok
+test_legal_target_does_not_require_a_goal_string (test_coarse_modalities.CoarseModalityTests) ... ok
+test_nested_legacy_results_and_optional_reasoning_are_preserved (test_coarse_modalities.CoarseModalityTests) ... ok
+test_plain_source_description_is_retained_without_json_retries (test_coarse_modalities.CoarseModalityTests) ... ok
+test_scan_distinguishes_current_inputs_from_available_action_modes (test_coarse_modalities.CoarseModalityTests) ... ok
+test_cannot_validate_using_cached_repeats (test_core.CreditTests) ... ok
+test_group_must_share_initial_sample (test_core.CreditTests) ... ok
+test_asr_timing_not_promoted_to_truth (test_core.DataAndEvidenceTests) ... ok
+test_person_overlap_rejected (test_core.DataAndEvidenceTests) ... ok
+test_raw_manifests_no_leakage_or_generated_annotations (test_core.DataAndEvidenceTests) ... ok
+test_action_entropy_excludes_goal_and_json_syntax (test_core.FlowTests) ... ok
+test_observed_interval_uses_actual_source_pts_offset (test_core.FlowTests) ... ok
+test_probability_metrics (test_core.FlowTests) ... ok
+test_static_and_fixed_variants (test_core.FlowTests) ... ok
+test_three_stages_stop_budget_no_label_leakage (test_core.FlowTests) ... ok
+test_invalid_distribution_rejected (test_core.ScorerTests) ... ok
+test_clipping_and_kl_gradient (test_core.TensorLossTests) ... ok
+test_failed_partial_final_cannot_increase_prediction_coverage (test_expanded_comparison.ExpandedComparisonTests) ... ok
+test_identical_finished_group_does_not_load_a_second_model (test_expanded_comparison.ExpandedComparisonTests) ... All frozen cases already finished; reusing identical saved outputs
+ok
+test_native_restart_never_resubmits_finished_or_failed_cases (test_expanded_comparison.ExpandedComparisonTests) ... Native completed 2/3
+Native completed 3/3
+ok
+test_selection_uses_only_dev_and_excludes_people_not_just_answers (test_expanded_comparison.ExpandedComparisonTests) ... ok
+test_actual_media_coverage_is_complete_and_frame_count_scales_with_fps (test_full_scan.FullScanTests) ... [Coarse] video 1/3: 0.00-5.00s, 0.5 fps
+[Coarse] video 2/3: 5.00-10.00s, 0.5 fps
+[Coarse] video 3/3: 10.00-12.00s, 0.5 fps
+[Coarse] full audio: 192000 samples at 16000 Hz, 3 continuous chunks
+[Coarse] video 1/3: 0.00-5.00s, 1 fps
+[Coarse] video 2/3: 5.00-10.00s, 1 fps
+[Coarse] video 3/3: 10.00-12.00s, 1 fps
+[Coarse] full audio: 192000 samples at 16000 Hz, 3 continuous chunks
+ok
+test_audio_actions_have_no_video_clip_duration_cap (test_full_scan.FullScanTests) ... ok
+test_cleanup_keeps_caches_and_successful_dataset_outputs (test_full_scan.FullScanTests) ... ok
+test_empty_stage_one_pool_means_no_minimum_observation_floor (test_full_scan.FullScanTests) ... ok
+test_long_transcript_candidates_are_not_lost_to_video_clip_cap (test_full_scan.FullScanTests) ... ok
+test_final_failure_still_returns_memory_and_explicit_unavailable_status (test_generation_completion.CompletionTests) ... ok
+test_native_finish_reason_is_logged_before_parsing (test_generation_completion.CompletionTests) ... [Qwen] memory step=0, input=1, generated=3, saved=/tmp/tmpxpk1j_9g/5_memory_0_1795770063986772769.json
+ok
+test_nonempty_question_objects_are_not_silently_treated_as_empty_findings (test_generation_completion.CompletionTests) ... ok
+test_observe_retries_only_when_no_usable_description_was_recovered (test_generation_completion.CompletionTests) ... ok
+test_repetition_penalty_log_probs_match_the_native_processor (test_generation_completion.CompletionTests) ... ok
+test_short_malformed_final_uses_one_bounded_protocol_correction (test_generation_completion.CompletionTests) ... ok
+test_step_budget_is_followed_by_a_real_final_call (test_generation_completion.CompletionTests) ... ok
+test_existing_retry_uses_model_choice_over_pending_ids (test_guided_select.GuidedSelectTests) ... ok
+test_native_generation_and_token_probabilities_share_the_constraint (test_guided_select.GuidedSelectTests) ... ok
+test_bad_probabilities_preserve_raw_response_without_valid_cache (test_jev_integration.JevIntegrationTests) ... ok
+test_concurrent_workers_share_one_cached_request (test_jev_integration.JevIntegrationTests) ... ok
+test_empty_memory_is_not_a_live_prediction (test_jev_integration.JevIntegrationTests) ... ok
+test_launcher_propagates_explicit_jev_choice (test_jev_integration.JevIntegrationTests) ... ok
+test_official_sdk_request_probability_mapping_cache_and_unknown_mask (test_jev_integration.JevIntegrationTests) ... ok
+test_official_status_retry_and_auth_failure_are_not_uniform_fallbacks (test_jev_integration.JevIntegrationTests) ... ok
+test_current_queue_and_record_memory_are_accepted_without_action_tokens (test_local_launcher.LocalLauncherTests) ... ok
+test_explicit_interpreter_bin_is_added_to_path (test_local_launcher.LocalLauncherTests) ... ok
+test_gpu_ids_are_unique_and_preflight_requires_no_jev (test_local_launcher.LocalLauncherTests) ... ok
+test_plan_uses_real_actor_local_profile_and_no_external_api (test_local_launcher.LocalLauncherTests) ... ok
+test_preflight_failure_points_to_setup_instead_of_missing_system_pip (test_local_launcher.LocalLauncherTests) ... ok
+test_recruitview_expected_ids_match_person_level_inference (test_local_launcher.LocalLauncherTests) ... ok
+test_rejected_or_duplicate_predictions_cannot_pass (test_local_launcher.LocalLauncherTests) ... ok
+test_scheduler_pins_separate_processes_to_each_gpu (test_local_launcher.LocalLauncherTests) ... ok
+test_shell_dry_run_works_from_other_directory_without_writing (test_local_launcher.LocalLauncherTests) ... ok
+test_stop_is_reported_and_active_coverage_can_be_required (test_local_launcher.LocalLauncherTests) ... ok
+test_zero_exit_with_empty_trajectory_is_worker_failure (test_local_launcher.LocalLauncherTests) ... ok
+test_input_seek_preserves_global_sampling_and_audio_offset (test_media_seek.MediaSeekTests) ... [Coarse] full audio: 144000 samples at 16000 Hz, 1 continuous chunks
+seek comparison {'window': [0.0, 2.0], 'rmse': 0.0}
+seek comparison {'window': [2.125, 4.375], 'rmse': 0.0}
+seek comparison {'window': [2.25, 4.75], 'rmse': 0.0}
+seek comparison {'window': [7.1, 8.6], 'rmse': 0.0}
+ok
+test_current_legacy_split_disagreement_is_fatal (test_memory_teacher_seed.MemoryTeacherSeedTests) ... ok
+test_drafts_are_unapproved_and_actual_prompt_has_no_legacy_answers (test_memory_teacher_seed.MemoryTeacherSeedTests) ... IELTS:1:turn_1: source_valid_draft
+RecruitView:1:turn_1: source_valid_draft
+ok
+test_mismatched_text_is_rejected_instead_of_fuzzy_matched (test_memory_teacher_seed.MemoryTeacherSeedTests) ... ok
+test_plain_text_drafts_need_no_tool_schema_and_remain_unapproved (test_memory_teacher_seed.MemoryTeacherSeedTests) ... IELTS:1:turn_1: invalid_observation_protocol
+RecruitView:1:turn_1: invalid_observation_protocol
+ok
+test_raw_source_difference_cannot_inherit_legacy_label (test_memory_teacher_seed.MemoryTeacherSeedTests) ... ok
+test_source_change_invalidates_draft_and_review_packet_binding (test_memory_teacher_seed.MemoryTeacherSeedTests) ... IELTS:1:turn_1: source_valid_draft
+RecruitView:1:turn_1: source_valid_draft
+ok
+test_source_mapping_train_boundary_and_reference_isolation (test_memory_teacher_seed.MemoryTeacherSeedTests) ... ok
+test_windowed_sdpa_matches_eager_masked_attention_and_does_not_mix_windows (test_native_audio_attention.NativeAudioAttentionTests) ... skipped 'requires the isolated native inference environment'
+test_missing_conflicting_and_abstained_predictions_are_distinct (test_native_personality_task.NativeTaskTests) ... ok
+test_no_prediction_has_no_fabricated_accuracy (test_native_personality_task.NativeTaskTests) ... ok
+test_question_does_not_expose_labels_ids_or_transcript (test_native_personality_task.NativeTaskTests) ... ok
+test_unspecified_numeric_scale_is_not_silently_mapped (test_native_personality_task.NativeTaskTests) ... ok
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+test_audio_longer_than_thirty_seconds_is_not_silently_truncated (test_native_processor.NativeProcessorTests) ... WARNING:root:System prompt modified, audio output may not work as expected. Audio output mode only works when using default system prompt 'You are Qwen, a virtual human developed by the Qwen Team, Alibaba Group, capable of perceiving auditory and visual inputs, as well as generating text and speech.'
+ok
+test_incremental_json_masks_match_full_prefix_for_real_qwen_tokens (test_native_processor.NativeProcessorTests) ... ok
+test_real_audio_video_sampling_rate_reaches_processor (test_native_processor.NativeProcessorTests) ... WARNING:root:System prompt modified, audio output may not work as expected. Audio output mode only works when using default system prompt 'You are Qwen, a virtual human developed by the Qwen Team, Alibaba Group, capable of perceiving auditory and visual inputs, as well as generating text and speech.'
+qwen-vl-utils using torchvision to read video.
+ok
+test_string_system_prompt_is_normalized_without_mutation (test_native_processor.NativeProcessorTests) ... WARNING:root:System prompt modified, audio output may not work as expected. Audio output mode only works when using default system prompt 'You are Qwen, a virtual human developed by the Qwen Team, Alibaba Group, capable of perceiving auditory and visual inputs, as well as generating text and speech.'
+ok
+test_context_citations_must_use_existing_record_ids (test_observation_protocol.ObservationProtocolTests) ... ok
+test_invalid_child_does_not_discard_a_valid_sibling (test_observation_protocol.ObservationProtocolTests) ... ok
+test_legacy_aliases_and_truncation_are_explicit_errors (test_observation_protocol.ObservationProtocolTests) ... ok
+test_memory_views_and_scorer_exclude_unobserved_plans (test_observation_protocol.ObservationProtocolTests) ... ok
+test_plan_only_output_is_not_a_personality_prediction (test_observation_protocol.ObservationProtocolTests) ... ok
+test_question_positions_and_followups_use_local_seconds (test_observation_protocol.ObservationProtocolTests) ... ok
+test_retry_corrects_output_without_interpreting_free_text (test_observation_protocol.ObservationProtocolTests) ... ok
+test_text_source_does_not_overwrite_the_child_window (test_observation_protocol.ObservationProtocolTests) ... ok
+test_action_validation_does_not_silently_cut_the_goal (test_output_contract.OutputContractTests) ... ok
+test_default_twenty_item_cap_is_actually_disabled (test_output_contract.OutputContractTests) ... ok
+test_native_generation_and_token_loss_use_the_same_schema_mask (test_output_contract.OutputContractTests) ... ok
+test_number_pairs_and_modality_enum_cannot_drift_into_wrong_types (test_output_contract.OutputContractTests) ... ok
+test_policy_sees_the_schema_before_generating (test_output_contract.OutputContractTests) ... ok
+test_qwen_merged_token_can_close_a_string_and_start_the_next_key (test_output_contract.OutputContractTests) ... ok
+test_real_null_and_only_existing_memory_citations (test_output_contract.OutputContractTests) ... ok
+test_valid_json_field_order_is_not_a_generation_requirement (test_output_contract.OutputContractTests) ... ok
+test_wrong_observation_field_is_not_an_allowed_generation (test_output_contract.OutputContractTests) ... ok
+test_chunked_statistics_match_dense_logp_entropy_and_gradients (test_performance.PerformanceTests) ... ok
+test_coarse_context_keeps_neighbors_across_modalities_without_a_count_cap (test_performance.PerformanceTests) ... ok
+test_optional_profile_cleans_up_hooks_and_stage_summary_counts_repairs (test_performance.PerformanceTests) ... ok
+test_preprocessing_cache_is_cpu_only_scoped_and_not_mutated (test_performance.PerformanceTests) ... ok
+test_rl_update_keeps_old_reference_and_current_passes_without_unused_entropy (test_performance.PerformanceTests) ... ok
+test_sft_accumulates_gradients_and_normalizes_the_short_final_group (test_performance.PerformanceTests) ... ok
+test_timing_does_not_change_generated_tokens (test_performance.PerformanceTests) ... ok
+test_all_answers_are_joined_in_stable_order_without_importing_labels (test_person_inputs.PersonInputTests) ... ok
+test_question_mapping_survives_memory_storage_and_reading (test_person_inputs.PersonInputTests) ... ok
+test_short_visual_request_uses_one_real_frame_without_fake_video (test_person_inputs.PersonInputTests) ... ok
+test_window_questions_include_both_sides_of_a_join (test_person_inputs.PersonInputTests) ... ok
+test_action_entropy_uses_canonical_actions_only (test_queue_selection.QueueSelectionTests) ... ok
+test_adjacent_media_request_uses_observed_text_source_not_future_asr (test_queue_selection.QueueSelectionTests) ... ok
+test_coarse_output_does_not_request_model_source_ids (test_queue_selection.QueueSelectionTests) ... ok
+test_coarse_pairs_only_the_same_audio_video_window (test_queue_selection.QueueSelectionTests) ... ok
+test_coarse_targets_are_read_before_pending_refinements (test_queue_selection.QueueSelectionTests) ... ok
+test_deeper_children_do_not_jump_ahead_of_older_refinements (test_queue_selection.QueueSelectionTests) ... ok
+test_existing_requests_use_local_seconds_and_only_relevant_context (test_queue_selection.QueueSelectionTests) ... ok
+test_observe_reads_related_findings_but_never_previous_plans (test_queue_selection.QueueSelectionTests) ... ok
+test_parameter_repair_only_receives_failed_proposals_and_full_constraints (test_queue_selection.QueueSelectionTests) ... ok
+test_queue_is_default_and_creates_no_policy_action_tokens (test_queue_selection.QueueSelectionTests) ... ok
+test_refinement_link_does_not_demote_an_existing_coarse_target (test_queue_selection.QueueSelectionTests) ... ok
+test_sft_and_outcome_records_do_not_invent_scheduler_tokens (test_queue_selection.QueueSelectionTests) ... ok
+test_terminal_observation_does_not_fill_unexecutable_followups (test_queue_selection.QueueSelectionTests) ... ok
+test_unaligned_asr_and_global_history_do_not_leak_into_proposal_coordinates (test_queue_selection.QueueSelectionTests) ... ok
+test_unlocated_text_clues_share_the_real_whole_source_not_guessed_times (test_queue_selection.QueueSelectionTests) ... ok
+test_verified_text_positions_remain_on_the_same_local_clock (test_queue_selection.QueueSelectionTests) ... ok
+test_empty_observation_is_not_a_positive_quality_reward (test_record_training.RecordQualityTests) ... ok
+test_existing_judge_reads_findings_and_actual_source_not_candidate_plans (test_record_training.RecordQualityTests) ... ok
+test_invalid_source_or_unsupported_record_is_negative (test_record_training.RecordQualityTests) ... ok
+test_local_credit_is_observation_cost_only (test_record_training.RecordQualityTests) ... ok
+test_missing_or_stale_judge_checks_do_not_earn_credit (test_record_training.RecordQualityTests) ... ok
+test_retired_atomic_memory_is_rejected_explicitly (test_record_training.RecordQualityTests) ... ok
+test_reused_old_record_cannot_receive_current_observation_credit (test_record_training.RecordQualityTests) ... ok
+test_true_reverse_behavior_is_not_penalized_by_personality_labels (test_record_training.RecordQualityTests) ... ok
+test_credit_report_reads_records_without_fabricating_trait_gains (test_record_training.RecordTrainingTests) ... ok
+test_retired_observation_shapes_are_not_read_as_facts (test_record_training.RecordTrainingTests) ... ok
+test_supported_current_record_can_pass_teacher_filter (test_record_training.RecordTrainingTests) ... ok
+test_supported_record_update_gets_quality_credit (test_record_training.RecordTrainingTests) ... ok
+test_memory_quality_affects_segment_advantage_and_grpo_gradient (test_record_training.TrainingTokenTests) ... ok
+test_sft_exports_actor_tokens_only_and_performs_a_cpu_update (test_record_training.TrainingTokenTests) ... ok
+test_disabled_rule_admits_everything (test_refinement_novelty.AdmissionTests) ... ok
+test_distinct_short_windows_are_distinct_raw_frames (test_refinement_novelty.AdmissionTests) ... ok
+test_invalid_configuration (test_refinement_novelty.AdmissionTests) ... ok
+test_one_focus_inside_region_then_only_unread_content (test_refinement_novelty.AdmissionTests) ... ok
+test_overlapping_pending_refinements_are_rechecked_at_execution (test_refinement_novelty.AdmissionTests) ... ok
+test_read_count_bound_holds_for_any_proposals (test_refinement_novelty.AdmissionTests) ... ok
+test_rereading_another_read_situation_is_filtered_even_with_focus_left (test_refinement_novelty.AdmissionTests) ... ok
+test_small_remainder_counts_as_new (test_refinement_novelty.AdmissionTests) ... ok
+test_transcript_rereads_are_gated_like_media (test_refinement_novelty.AdmissionTests) ... ok
+test_two_pending_focus_candidates_use_one_focus (test_refinement_novelty.AdmissionTests) ... ok
+test_frames_follow_global_grid_and_short_windows_are_one_still (test_refinement_novelty.NoveltyMathTests) ... ok
+test_new_seconds_per_channel (test_refinement_novelty.NoveltyMathTests) ... ok
+test_unread_intervals (test_refinement_novelty.NoveltyMathTests) ... ok
+test_prompt_states_the_rule_only_when_enabled (test_refinement_novelty.SpiralTests) ... ok
+test_rule_stops_the_narrowing_spiral_without_repair_calls (test_refinement_novelty.SpiralTests) ... ok
+test_candidate_windows_modalities_and_repeated_actions (test_simple_memory.SimpleMemoryTests) ... ok
+test_empty_findings_are_a_valid_observation_without_forced_retry (test_simple_memory.SimpleMemoryTests) ... ok
+test_final_view_marks_overlapping_reads_without_merging_behavior (test_simple_memory.SimpleMemoryTests) ... ok
+test_no_coarse_candidate_is_not_filled_even_with_large_budget (test_simple_memory.SimpleMemoryTests) ... ok
+test_overlap_navigation_does_not_link_other_media_or_unaligned_text (test_simple_memory.SimpleMemoryTests) ... ok
+test_queue_does_not_call_select_or_force_minimum_rounds (test_simple_memory.SimpleMemoryTests) ... ok
+test_repeated_observation_text_is_saved_without_event_inference (test_simple_memory.SimpleMemoryTests) ... ok
+test_storage_preserves_raw_output_without_semantic_operations (test_simple_memory.SimpleMemoryTests) ... ok
+test_view_keeps_every_finding_and_excludes_future_plans (test_simple_memory.SimpleMemoryTests) ... ok
+test_coarse_transcript_segments_carry_their_retrieval_times (test_teacher_grounding.BoundaryAndTranscriptTests) ... ok
+test_tail_rounding_is_cut_to_the_end_and_recorded (test_teacher_grounding.BoundaryAndTranscriptTests) ... ok
+test_coarse_candidate_marks_a_moment_inside_the_long_source (test_teacher_grounding.CoarseTargetTests) ... ok
+test_coarse_schema_requires_local_time_and_modality (test_teacher_grounding.CoarseTargetTests) ... ok
+test_default_coarse_chunk_is_longer_than_a_closer_read (test_teacher_grounding.CoarseTargetTests) ... ok
+test_final_accounts_for_setting_language_and_abstention (test_teacher_grounding.FinalRuleTests) ... ok
+test_scan_and_observe_goals_ask_what_to_see_or_hear (test_teacher_grounding.GoalWordingTests) ... ok
+test_capabilities_state_missing_channels_and_no_measurement_tools (test_teacher_grounding.ObserveClockTests) ... ok
+test_goal_times_carry_the_proposing_clip_clock (test_teacher_grounding.ObserveClockTests) ... ok
+test_prior_observations_keep_their_time_on_the_current_clock (test_teacher_grounding.ObserveClockTests) ... ok
+test_run_passes_lead_clocks_to_observe (test_teacher_grounding.ObserveClockTests) ... ok
+
+----------------------------------------------------------------------
+Ran 175 tests in 12.031s
+
+OK (skipped=1)

@@ -1,0 +1,13 @@
+{
+  "dataset": "IELTS",
+  "selected_train_people": [
+    "106",
+    "167",
+    "183"
+  ],
+  "overlap": {
+    "dev": [],
+    "test": []
+  },
+  "passed": true
+}
