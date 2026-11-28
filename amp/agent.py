@@ -70,7 +70,7 @@ class ActiveAgent:
                 'the modality, hint = what you noticed, goal = what the closer read should see or hear, not a choice between interpretations. candidates=[] is fine; existing candidates are context. '+OBSERVABLE_ONLY,
             question=question,question_context=observation.get('questions',[]),
             input_modalities=['audio','video'] if observation['modality']=='audio_video' else [observation['modality']],
-            source_window_recording_seconds=observation['time'],source_seconds=end-start,visual_representation=observation.get('visual_representation'),
+            source_window_recording_seconds=observation['time'],source_seconds=end-start,allowed_local_seconds=[0,round(end-start,6)],visual_representation=observation.get('visual_representation'),
             max_video_window_seconds=self.config['max_clip_seconds'],
             existing_candidates=[dict(modality=x['action']['modality'],recording_time=x['action']['time'],goal=x['action']['goal'],
                 hints=[l['hint'] for l in x['leads']]) for x in pool.snapshot()
@@ -78,7 +78,7 @@ class ActiveAgent:
                     x['action']['time'][0]<observation['time'][1]+self.config.get('refinement_context_seconds',5.)
                     and x['action']['time'][1]>observation['time'][0]-self.config.get('refinement_context_seconds',5.))],
             allowed_modalities=pool.available_modalities,
-            time_rule='local_time starts at 0 at source_window_recording_seconds[0]. Transcript segments give their local_time; unverified_asr times locate text retrieval only.',
+            time_rule='local_time is within allowed_local_seconds and starts at 0 at source_window_recording_seconds[0], not recording seconds. Transcript segments give their local_time; unverified_asr times locate text retrieval only.',
             observation=dict(modality=observation['modality'],time=observation['time'],
                 segments=[dict(text=v['text'],question=v.get('question',''),timing=v.get('timing','unlocalized'),
                     **({'local_time':[round(t-start,6) for t in (v.get('media_time') or v['source_time'])]} if v.get('media_time') or v.get('source_time') else {}))

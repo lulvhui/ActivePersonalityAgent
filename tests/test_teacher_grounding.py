@@ -43,6 +43,18 @@ class BoundaryAndTranscriptTests(unittest.TestCase):
         self.assertAlmostEqual(pool.items[ids[0]]['leads'][0]['boundary_cut_seconds'], .090998)
         self.assertEqual(len(errors), 1)  # a full second past the end is still rejected
 
+    def test_coarse_scan_states_its_local_range(self):
+        # IELTS:167 r1 wrote recording seconds [128,155] for the source [120,180].
+        from test_simple_memory import ROW
+        class Media:
+            def coarse(self, row, fps, chunk):
+                return dict(duration=180., audio=[dict(time=[120., 180.], modality='audio', media=[], segments=[])], transcript=[], available_modalities=ALL)
+        reader = Reader()
+        ActiveAgent(reader, OfflineTraitScorer(), Media(), dict(CFG, selection_policy='queue', max_steps=0)).run(ROW)
+        payload = json.loads(next(m for k, _, m in reader.seen if k == 'candidate_scan')[-1]['content'][-1]['text'])
+        self.assertEqual(payload['allowed_local_seconds'], [0, 60.])
+        self.assertIn('not recording seconds', payload['time_rule'])
+
     def test_coarse_transcript_segments_carry_their_retrieval_times(self):
         from amp.provenance import index_transcript
         from test_simple_memory import ROW
