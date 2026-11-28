@@ -1,0 +1,4603 @@
+{
+  "analysis_commit": "4cdc434aadee80cf62732f2c9238ac8be7b79f26",
+  "inputs": {
+    "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent/runs/data/train.jsonl": "bb044b5adff01c29901709e692bf9f0a9366612826cab12752d3c9e6e04b7cfd",
+    "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent/runs/data/dev.jsonl": "da9a4042241e0cc41f91f97fb5e617d09c537ed10aac3568795f3c204a829d0c",
+    "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent/runs/data/label_bins.json": "df773091a97d445df7bb3a8756272b7870e643398600c9ac70a311477dc0e6f1"
+  },
+  "methodology": {
+    "levels": [
+      "very_low",
+      "low",
+      "medium",
+      "high",
+      "very_high"
+    ],
+    "null_handling": "trait-wise abstention as amp.evaluate; conditional metrics exclude null, accuracy_all counts null incorrect",
+    "permutations": "1000 random shuffles; seed 20261128; +1 correction; one-sided positive and two-sided; repeated trajectories are dependent, use one-person results for inference",
+    "rank_calibration": "floor(5*(zero_based_average_rank+0.5)/n), capped at 4; ties never split; not exact equal-frequency if ties span bins; calibrated on evaluated sample, not held out",
+    "pooled_warning": "Raw values pooled across traits are not normalized and may reflect between-trait scale differences; per-trait results take precedence.",
+    "one_person_selection": "lexically latest experiment, then lexically first run; label-blind; no best-of selection",
+    "baseline": "per dataset/trait train majority; lower level wins ties; same covered pairs for comparison",
+    "scope": "Train primary; Dev supplementary; unscorable RecruitView person targets never inherit answer labels"
+  },
+  "inventory": [
+    {
+      "source": "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent/runs/teacher_pilot5_20261126/published/archives/IELTS_138.tar.xz::IELTS_138/trajectories.json",
+      "source_aliases": [
+        "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent/runs/teacher_pilot5_20261126/IELTS_138/trajectories.json",
+        "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_pilot5_20261126/published/archives/IELTS_138.tar.xz::IELTS_138/trajectories.json"
+      ],
+      "sample_id": "IELTS:138",
+      "split": "train",
+      "status": "complete",
+      "trajectory_sha256": "c42d166418c821a284e6759ca5d1b0740203d53049ce9bb84f329d5f5c4d4183",
+      "experiment": "teacher_pilot5_20261126",
+      "tested_commit": null,
+      "source_hash_matching_commits": [
+        "462e3b8658db15769534020cd146b1451729e252"
+      ],
+      "tested_commit_basis": "not recorded; matching source snapshots listed without asserting runtime HEAD",
+      "inferred_tested_code_commit": "462e3b8658db15769534020cd146b1451729e252",
+      "archived_source_hashes_sha256": "248ac8b9feae1bdbe6842160bf462aaf8bb635a06846632700e7d3255b1d970f",
+      "trajectory_id": "teacher_pilot5_20261126/IELTS_138.tar#0",
+      "evaluation_scope": "train",
+      "pairs": [
+        {
+          "sample_id": "IELTS:138",
+          "trait": "O",
+          "predicted_level": 2,
+          "label_level": 2
+        },
+        {
+          "sample_id": "IELTS:138",
+          "trait": "C",
+          "predicted_level": 2,
+          "label_level": 2
+        },
+        {
+          "sample_id": "IELTS:138",
+          "trait": "E",
+          "predicted_level": 2,
+          "label_level": 3
+        },
+        {
+          "sample_id": "IELTS:138",
+          "trait": "A",
+          "predicted_level": 2,
+          "label_level": 0
+        },
+        {
+          "sample_id": "IELTS:138",
+          "trait": "N",
+          "predicted_level": 1,
+          "label_level": 2
+        }
+      ]
+    },
+    {
+      "source": "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent/runs/teacher_pilot5_20261126/published/archives/IELTS_176_resume.tar.xz::IELTS_176_resume/trajectories.json",
+      "source_aliases": [
+        "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent/runs/teacher_pilot5_20261126/IELTS_176_resume/trajectories.json",
+        "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_pilot5_20261126/published/archives/IELTS_176_resume.tar.xz::IELTS_176_resume/trajectories.json"
+      ],
+      "sample_id": "IELTS:176",
+      "split": "train",
+      "status": "complete",
+      "trajectory_sha256": "1016d41863b81cbca7227b09066d1f8e775fee4caddebaa8597a0c133cd2d2a8",
+      "experiment": "teacher_pilot5_20261126",
+      "tested_commit": null,
+      "source_hash_matching_commits": [],
+      "tested_commit_basis": "not recorded; matching source snapshots listed without asserting runtime HEAD",
+      "inferred_tested_code_commit": null,
+      "archived_source_hashes_sha256": null,
+      "trajectory_id": "teacher_pilot5_20261126/IELTS_176_resume.tar#0",
+      "evaluation_scope": "train",
+      "pairs": [
+        {
+          "sample_id": "IELTS:176",
+          "trait": "O",
+          "predicted_level": 1,
+          "label_level": 2
+        },
+        {
+          "sample_id": "IELTS:176",
+          "trait": "C",
+          "predicted_level": 3,
+          "label_level": 4
+        },
+        {
+          "sample_id": "IELTS:176",
+          "trait": "E",
+          "predicted_level": 1,
+          "label_level": 3
+        },
+        {
+          "sample_id": "IELTS:176",
+          "trait": "A",
+          "predicted_level": 3,
+          "label_level": 3
+        },
+        {
+          "sample_id": "IELTS:176",
+          "trait": "N",
+          "predicted_level": 1,
+          "label_level": 3
+        }
+      ]
+    },
+    {
+      "source": "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent/runs/teacher_pilot5_20261126/published/archives/IELTS_183.tar.xz::IELTS_183/trajectories.json",
+      "source_aliases": [
+        "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent/runs/teacher_pilot5_20261126/IELTS_183/trajectories.json",
+        "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_pilot5_20261126/published/archives/IELTS_183.tar.xz::IELTS_183/trajectories.json"
+      ],
+      "sample_id": "IELTS:183",
+      "split": "train",
+      "status": "partial",
+      "trajectory_sha256": "21e6c2fbb3a1b17a773281c693cccd17aa9fb8d4fd398e7160db963601e20225",
+      "experiment": "teacher_pilot5_20261126",
+      "tested_commit": null,
+      "source_hash_matching_commits": [
+        "462e3b8658db15769534020cd146b1451729e252"
+      ],
+      "tested_commit_basis": "not recorded; matching source snapshots listed without asserting runtime HEAD",
+      "inferred_tested_code_commit": "462e3b8658db15769534020cd146b1451729e252",
+      "archived_source_hashes_sha256": "248ac8b9feae1bdbe6842160bf462aaf8bb635a06846632700e7d3255b1d970f",
+      "trajectory_id": "teacher_pilot5_20261126/IELTS_183.tar#0",
+      "evaluation_scope": "train",
+      "pairs": [
+        {
+          "sample_id": "IELTS:183",
+          "trait": "O",
+          "predicted_level": 1,
+          "label_level": 2
+        },
+        {
+          "sample_id": "IELTS:183",
+          "trait": "C",
+          "predicted_level": 2,
+          "label_level": 3
+        },
+        {
+          "sample_id": "IELTS:183",
+          "trait": "E",
+          "predicted_level": 1,
+          "label_level": 3
+        },
+        {
+          "sample_id": "IELTS:183",
+          "trait": "A",
+          "predicted_level": 2,
+          "label_level": 3
+        },
+        {
+          "sample_id": "IELTS:183",
+          "trait": "N",
+          "predicted_level": 0,
+          "label_level": 3
+        }
+      ]
+    },
+    {
+      "source": "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent/runs/teacher_pilot5_20261126/published/archives/IELTS_193.tar.xz::IELTS_193/trajectories.json",
+      "source_aliases": [
+        "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent/runs/teacher_pilot5_20261126/IELTS_193/trajectories.json",
+        "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_pilot5_20261126/published/archives/IELTS_193.tar.xz::IELTS_193/trajectories.json"
+      ],
+      "sample_id": "IELTS:193",
+      "split": "train",
+      "status": "partial",
+      "trajectory_sha256": "3882438f3cf5b2dfc894fb259656a41b832ad174884c4823ced537f61111216a",
+      "experiment": "teacher_pilot5_20261126",
+      "tested_commit": null,
+      "source_hash_matching_commits": [
+        "462e3b8658db15769534020cd146b1451729e252"
+      ],
+      "tested_commit_basis": "not recorded; matching source snapshots listed without asserting runtime HEAD",
+      "inferred_tested_code_commit": "462e3b8658db15769534020cd146b1451729e252",
+      "archived_source_hashes_sha256": "248ac8b9feae1bdbe6842160bf462aaf8bb635a06846632700e7d3255b1d970f",
+      "trajectory_id": "teacher_pilot5_20261126/IELTS_193.tar#0",
+      "evaluation_scope": "train",
+      "pairs": [
+        {
+          "sample_id": "IELTS:193",
+          "trait": "O",
+          "predicted_level": 2,
+          "label_level": 3
+        },
+        {
+          "sample_id": "IELTS:193",
+          "trait": "C",
+          "predicted_level": 2,
+          "label_level": 1
+        },
+        {
+          "sample_id": "IELTS:193",
+          "trait": "E",
+          "predicted_level": 1,
+          "label_level": 3
+        },
+        {
+          "sample_id": "IELTS:193",
+          "trait": "A",
+          "predicted_level": 2,
+          "label_level": 0
+        },
+        {
+          "sample_id": "IELTS:193",
+          "trait": "N",
+          "predicted_level": 1,
+          "label_level": 3
+        }
+      ]
+    },
+    {
+      "source": "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent/runs/api_flow_validation_20261124/recruitview327/trajectories.json",
+      "source_aliases": [],
+      "sample_id": "RecruitView:person:327",
+      "split": "dev",
+      "status": "partial",
+      "trajectory_sha256": "49946e9cc7b09a0d6d8a0e23de4a9c73351dd58c5704e30a0f6eb135e8163bec",
+      "experiment": "api_flow_validation_20261124",
+      "tested_commit": null,
+      "source_hash_matching_commits": [],
+      "tested_commit_basis": "not recorded; matching source snapshots listed without asserting runtime HEAD",
+      "inferred_tested_code_commit": null,
+      "archived_source_hashes_sha256": null,
+      "trajectory_id": "api_flow_validation_20261124/recruitview327#0",
+      "evaluation_scope": "unscorable_person_target",
+      "pairs": [
+        {
+          "sample_id": "RecruitView:person:327",
+          "trait": "O",
+          "predicted_level": 1,
+          "label_level": null
+        },
+        {
+          "sample_id": "RecruitView:person:327",
+          "trait": "C",
+          "predicted_level": 2,
+          "label_level": null
+        },
+        {
+          "sample_id": "RecruitView:person:327",
+          "trait": "E",
+          "predicted_level": 0,
+          "label_level": null
+        },
+        {
+          "sample_id": "RecruitView:person:327",
+          "trait": "A",
+          "predicted_level": 2,
+          "label_level": null
+        },
+        {
+          "sample_id": "RecruitView:person:327",
+          "trait": "N",
+          "predicted_level": 1,
+          "label_level": null
+        }
+      ]
+    },
+    {
+      "source": "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent/runs/api_latest_validation/IELTS_123/trajectories.json",
+      "source_aliases": [],
+      "sample_id": "IELTS:123",
+      "split": "dev",
+      "status": "complete",
+      "trajectory_sha256": "7188097b2b988177b60338ae2529d23fd085dfa171dfea4e1f80dd659012db4e",
+      "experiment": "api_latest_validation",
+      "tested_commit": null,
+      "source_hash_matching_commits": [
+        "1d4897a711bf9be2d864a90812e8552d4c2aa292"
+      ],
+      "tested_commit_basis": "not recorded; matching source snapshots listed without asserting runtime HEAD",
+      "inferred_tested_code_commit": "1d4897a711bf9be2d864a90812e8552d4c2aa292",
+      "archived_source_hashes_sha256": "c6298ead8dd23328bc2eff5b7b14a3b4ae641288bf4879975160b0fd9c8e0e1b",
+      "trajectory_id": "api_latest_validation/IELTS_123#0",
+      "evaluation_scope": "supplementary_dev",
+      "pairs": [
+        {
+          "sample_id": "IELTS:123",
+          "trait": "O",
+          "predicted_level": 1,
+          "label_level": 1
+        },
+        {
+          "sample_id": "IELTS:123",
+          "trait": "C",
+          "predicted_level": 1,
+          "label_level": 0
+        },
+        {
+          "sample_id": "IELTS:123",
+          "trait": "E",
+          "predicted_level": 1,
+          "label_level": 2
+        },
+        {
+          "sample_id": "IELTS:123",
+          "trait": "A",
+          "predicted_level": 1,
+          "label_level": 1
+        },
+        {
+          "sample_id": "IELTS:123",
+          "trait": "N",
+          "predicted_level": 0,
+          "label_level": 4
+        }
+      ]
+    },
+    {
+      "source": "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent/runs/api_latest_validation/RecruitView_person327/trajectories.json",
+      "source_aliases": [],
+      "sample_id": "RecruitView:person:327",
+      "split": "dev",
+      "status": "complete",
+      "trajectory_sha256": "c4a5b858b5d2eb5c6d9740171f76863791f16d1edc7ce4abad5db6ed86198a0a",
+      "experiment": "api_latest_validation",
+      "tested_commit": null,
+      "source_hash_matching_commits": [
+        "1d4897a711bf9be2d864a90812e8552d4c2aa292"
+      ],
+      "tested_commit_basis": "not recorded; matching source snapshots listed without asserting runtime HEAD",
+      "inferred_tested_code_commit": "1d4897a711bf9be2d864a90812e8552d4c2aa292",
+      "archived_source_hashes_sha256": "c6298ead8dd23328bc2eff5b7b14a3b4ae641288bf4879975160b0fd9c8e0e1b",
+      "trajectory_id": "api_latest_validation/RecruitView_person327#0",
+      "evaluation_scope": "unscorable_person_target",
+      "pairs": [
+        {
+          "sample_id": "RecruitView:person:327",
+          "trait": "O",
+          "predicted_level": 1,
+          "label_level": null
+        },
+        {
+          "sample_id": "RecruitView:person:327",
+          "trait": "C",
+          "predicted_level": 2,
+          "label_level": null
+        },
+        {
+          "sample_id": "RecruitView:person:327",
+          "trait": "E",
+          "predicted_level": 1,
+          "label_level": null
+        },
+        {
+          "sample_id": "RecruitView:person:327",
+          "trait": "A",
+          "predicted_level": 2,
+          "label_level": null
+        },
+        {
+          "sample_id": "RecruitView:person:327",
+          "trait": "N",
+          "predicted_level": 2,
+          "label_level": null
+        }
+      ]
+    },
+    {
+      "source": "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent/runs/memory_cleanup_validation/api_recruit1703/trajectories.json",
+      "source_aliases": [],
+      "sample_id": "RecruitView:1703",
+      "split": "dev",
+      "status": "partial",
+      "trajectory_sha256": "cfa52afa6387951625e9db56e9fc88d1d4bb1635b6d58a5a8c572d3465f9c3ff",
+      "experiment": "memory_cleanup_validation",
+      "tested_commit": null,
+      "source_hash_matching_commits": [],
+      "tested_commit_basis": "not recorded; matching source snapshots listed without asserting runtime HEAD",
+      "inferred_tested_code_commit": null,
+      "archived_source_hashes_sha256": null,
+      "trajectory_id": "memory_cleanup_validation/api_recruit1703#0",
+      "evaluation_scope": "supplementary_dev",
+      "pairs": [
+        {
+          "sample_id": "RecruitView:1703",
+          "trait": "O",
+          "predicted_level": null,
+          "label_level": 1
+        },
+        {
+          "sample_id": "RecruitView:1703",
+          "trait": "C",
+          "predicted_level": 2,
+          "label_level": 4
+        },
+        {
+          "sample_id": "RecruitView:1703",
+          "trait": "E",
+          "predicted_level": null,
+          "label_level": 2
+        },
+        {
+          "sample_id": "RecruitView:1703",
+          "trait": "A",
+          "predicted_level": null,
+          "label_level": 3
+        },
+        {
+          "sample_id": "RecruitView:1703",
+          "trait": "N",
+          "predicted_level": 1,
+          "label_level": 4
+        }
+      ]
+    },
+    {
+      "source": "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent/runs/qwen38_api_teacher/trajectories.json",
+      "source_aliases": [],
+      "sample_id": "RecruitView:1703",
+      "split": "dev",
+      "status": "partial",
+      "trajectory_sha256": "ffe242f5754b2e858cfd12f59b5efc1ef9f2572f1888727f803b10f3bad13cf6",
+      "experiment": "qwen38_api_teacher",
+      "tested_commit": null,
+      "source_hash_matching_commits": [],
+      "tested_commit_basis": "not recorded; matching source snapshots listed without asserting runtime HEAD",
+      "inferred_tested_code_commit": null,
+      "archived_source_hashes_sha256": null,
+      "trajectory_id": "qwen38_api_teacher/qwen38_api_teacher#0",
+      "evaluation_scope": "supplementary_dev",
+      "pairs": [
+        {
+          "sample_id": "RecruitView:1703",
+          "trait": "O",
+          "predicted_level": 1,
+          "label_level": 1
+        },
+        {
+          "sample_id": "RecruitView:1703",
+          "trait": "C",
+          "predicted_level": 3,
+          "label_level": 4
+        },
+        {
+          "sample_id": "RecruitView:1703",
+          "trait": "E",
+          "predicted_level": 1,
+          "label_level": 2
+        },
+        {
+          "sample_id": "RecruitView:1703",
+          "trait": "A",
+          "predicted_level": 2,
+          "label_level": 3
+        },
+        {
+          "sample_id": "RecruitView:1703",
+          "trait": "N",
+          "predicted_level": null,
+          "label_level": 4
+        }
+      ]
+    },
+    {
+      "source": "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent/runs/qwen38_api_teacher_retest/trajectories.json",
+      "source_aliases": [],
+      "sample_id": "RecruitView:1703",
+      "split": "dev",
+      "status": "complete",
+      "trajectory_sha256": "a901406b84a0c63c79a83cb042f52602f061a1f55bed9b4ff57d516040651897",
+      "experiment": "qwen38_api_teacher_retest",
+      "tested_commit": null,
+      "source_hash_matching_commits": [],
+      "tested_commit_basis": "not recorded; matching source snapshots listed without asserting runtime HEAD",
+      "inferred_tested_code_commit": null,
+      "archived_source_hashes_sha256": "53782c16c51eede8b08878796fa354e64eca7d18a7c8ac994a93e8c4b34ce7ff",
+      "trajectory_id": "qwen38_api_teacher_retest/qwen38_api_teacher_retest#0",
+      "evaluation_scope": "supplementary_dev",
+      "pairs": [
+        {
+          "sample_id": "RecruitView:1703",
+          "trait": "O",
+          "predicted_level": null,
+          "label_level": 1
+        },
+        {
+          "sample_id": "RecruitView:1703",
+          "trait": "C",
+          "predicted_level": 3,
+          "label_level": 4
+        },
+        {
+          "sample_id": "RecruitView:1703",
+          "trait": "E",
+          "predicted_level": null,
+          "label_level": 2
+        },
+        {
+          "sample_id": "RecruitView:1703",
+          "trait": "A",
+          "predicted_level": 2,
+          "label_level": 3
+        },
+        {
+          "sample_id": "RecruitView:1703",
+          "trait": "N",
+          "predicted_level": 1,
+          "label_level": 4
+        }
+      ]
+    },
+    {
+      "source": "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_pilot5_bounded_20261127/published/archives/IELTS_106.tar.xz::IELTS_106/trajectories.json",
+      "source_aliases": [
+        "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_pilot5_bounded_20261127/IELTS_106/trajectories.json"
+      ],
+      "sample_id": "IELTS:106",
+      "split": "train",
+      "status": "complete",
+      "trajectory_sha256": "8093453c4962b9a0173044a3dd23038e7f0ca5dab40c69258e0cd997c0d1bf53",
+      "experiment": "teacher_pilot5_bounded_20261127",
+      "tested_commit": "abe7c9639603ffa15d48ad966b9afe2f99ec3bd5",
+      "source_hash_matching_commits": [],
+      "tested_commit_basis": "published acquisition plan",
+      "inferred_tested_code_commit": null,
+      "archived_source_hashes_sha256": "2caa67e34e5258180a275f84dd8c4764a3a5617407649a42a711255600bd7b8a",
+      "trajectory_id": "teacher_pilot5_bounded_20261127/IELTS_106.tar#0",
+      "evaluation_scope": "train",
+      "pairs": [
+        {
+          "sample_id": "IELTS:106",
+          "trait": "O",
+          "predicted_level": 2,
+          "label_level": 4
+        },
+        {
+          "sample_id": "IELTS:106",
+          "trait": "C",
+          "predicted_level": 2,
+          "label_level": 2
+        },
+        {
+          "sample_id": "IELTS:106",
+          "trait": "E",
+          "predicted_level": 1,
+          "label_level": 3
+        },
+        {
+          "sample_id": "IELTS:106",
+          "trait": "A",
+          "predicted_level": 2,
+          "label_level": 2
+        },
+        {
+          "sample_id": "IELTS:106",
+          "trait": "N",
+          "predicted_level": 1,
+          "label_level": 4
+        }
+      ]
+    },
+    {
+      "source": "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_pilot5_bounded_20261127/published/archives/IELTS_138.tar.xz::IELTS_138/trajectories.json",
+      "source_aliases": [
+        "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_pilot5_bounded_20261127/IELTS_138/trajectories.json"
+      ],
+      "sample_id": "IELTS:138",
+      "split": "train",
+      "status": "complete",
+      "trajectory_sha256": "07fe77933bd5abe462ea75f895c4a28e560dfd3bedf4b4f61e50e3995a7072b6",
+      "experiment": "teacher_pilot5_bounded_20261127",
+      "tested_commit": "abe7c9639603ffa15d48ad966b9afe2f99ec3bd5",
+      "source_hash_matching_commits": [],
+      "tested_commit_basis": "published acquisition plan",
+      "inferred_tested_code_commit": null,
+      "archived_source_hashes_sha256": "2caa67e34e5258180a275f84dd8c4764a3a5617407649a42a711255600bd7b8a",
+      "trajectory_id": "teacher_pilot5_bounded_20261127/IELTS_138.tar#0",
+      "evaluation_scope": "train",
+      "pairs": [
+        {
+          "sample_id": "IELTS:138",
+          "trait": "O",
+          "predicted_level": 1,
+          "label_level": 2
+        },
+        {
+          "sample_id": "IELTS:138",
+          "trait": "C",
+          "predicted_level": 2,
+          "label_level": 2
+        },
+        {
+          "sample_id": "IELTS:138",
+          "trait": "E",
+          "predicted_level": 2,
+          "label_level": 3
+        },
+        {
+          "sample_id": "IELTS:138",
+          "trait": "A",
+          "predicted_level": 3,
+          "label_level": 0
+        },
+        {
+          "sample_id": "IELTS:138",
+          "trait": "N",
+          "predicted_level": 1,
+          "label_level": 2
+        }
+      ]
+    },
+    {
+      "source": "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_pilot5_bounded_20261127/published/archives/IELTS_176.tar.xz::IELTS_176/trajectories.json",
+      "source_aliases": [
+        "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_pilot5_bounded_20261127/IELTS_176/trajectories.json"
+      ],
+      "sample_id": "IELTS:176",
+      "split": "train",
+      "status": "complete",
+      "trajectory_sha256": "1b1f673609712e45e472f39703c733e0daf91275d5f474c53be894d949afd83b",
+      "experiment": "teacher_pilot5_bounded_20261127",
+      "tested_commit": "abe7c9639603ffa15d48ad966b9afe2f99ec3bd5",
+      "source_hash_matching_commits": [],
+      "tested_commit_basis": "published acquisition plan",
+      "inferred_tested_code_commit": null,
+      "archived_source_hashes_sha256": "2caa67e34e5258180a275f84dd8c4764a3a5617407649a42a711255600bd7b8a",
+      "trajectory_id": "teacher_pilot5_bounded_20261127/IELTS_176.tar#0",
+      "evaluation_scope": "train",
+      "pairs": [
+        {
+          "sample_id": "IELTS:176",
+          "trait": "O",
+          "predicted_level": 1,
+          "label_level": 2
+        },
+        {
+          "sample_id": "IELTS:176",
+          "trait": "C",
+          "predicted_level": 3,
+          "label_level": 4
+        },
+        {
+          "sample_id": "IELTS:176",
+          "trait": "E",
+          "predicted_level": 1,
+          "label_level": 3
+        },
+        {
+          "sample_id": "IELTS:176",
+          "trait": "A",
+          "predicted_level": 2,
+          "label_level": 3
+        },
+        {
+          "sample_id": "IELTS:176",
+          "trait": "N",
+          "predicted_level": 1,
+          "label_level": 3
+        }
+      ]
+    },
+    {
+      "source": "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_pilot5_bounded_20261127/published/archives/IELTS_183.tar.xz::IELTS_183/trajectories.json",
+      "source_aliases": [
+        "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_pilot5_bounded_20261127/IELTS_183/trajectories.json"
+      ],
+      "sample_id": "IELTS:183",
+      "split": "train",
+      "status": "complete",
+      "trajectory_sha256": "619148f5c9a92ced3078f6088220387ec861a9350fda166250e5bb775a10af82",
+      "experiment": "teacher_pilot5_bounded_20261127",
+      "tested_commit": "abe7c9639603ffa15d48ad966b9afe2f99ec3bd5",
+      "source_hash_matching_commits": [],
+      "tested_commit_basis": "published acquisition plan",
+      "inferred_tested_code_commit": null,
+      "archived_source_hashes_sha256": "2caa67e34e5258180a275f84dd8c4764a3a5617407649a42a711255600bd7b8a",
+      "trajectory_id": "teacher_pilot5_bounded_20261127/IELTS_183.tar#0",
+      "evaluation_scope": "train",
+      "pairs": [
+        {
+          "sample_id": "IELTS:183",
+          "trait": "O",
+          "predicted_level": 1,
+          "label_level": 2
+        },
+        {
+          "sample_id": "IELTS:183",
+          "trait": "C",
+          "predicted_level": 1,
+          "label_level": 3
+        },
+        {
+          "sample_id": "IELTS:183",
+          "trait": "E",
+          "predicted_level": 1,
+          "label_level": 3
+        },
+        {
+          "sample_id": "IELTS:183",
+          "trait": "A",
+          "predicted_level": 2,
+          "label_level": 3
+        },
+        {
+          "sample_id": "IELTS:183",
+          "trait": "N",
+          "predicted_level": 2,
+          "label_level": 3
+        }
+      ]
+    },
+    {
+      "source": "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_pilot5_bounded_20261127/published/archives/IELTS_193.tar.xz::IELTS_193/trajectories.json",
+      "source_aliases": [
+        "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_pilot5_bounded_20261127/IELTS_193/trajectories.json"
+      ],
+      "sample_id": "IELTS:193",
+      "split": "train",
+      "status": "complete",
+      "trajectory_sha256": "27494531781feb002e50f57fba56e4e2f0cf917bc1c51aa7da0ff1974e2e2d42",
+      "experiment": "teacher_pilot5_bounded_20261127",
+      "tested_commit": "abe7c9639603ffa15d48ad966b9afe2f99ec3bd5",
+      "source_hash_matching_commits": [],
+      "tested_commit_basis": "published acquisition plan",
+      "inferred_tested_code_commit": null,
+      "archived_source_hashes_sha256": "2caa67e34e5258180a275f84dd8c4764a3a5617407649a42a711255600bd7b8a",
+      "trajectory_id": "teacher_pilot5_bounded_20261127/IELTS_193.tar#0",
+      "evaluation_scope": "train",
+      "pairs": [
+        {
+          "sample_id": "IELTS:193",
+          "trait": "O",
+          "predicted_level": 1,
+          "label_level": 3
+        },
+        {
+          "sample_id": "IELTS:193",
+          "trait": "C",
+          "predicted_level": 1,
+          "label_level": 1
+        },
+        {
+          "sample_id": "IELTS:193",
+          "trait": "E",
+          "predicted_level": 0,
+          "label_level": 3
+        },
+        {
+          "sample_id": "IELTS:193",
+          "trait": "A",
+          "predicted_level": 1,
+          "label_level": 0
+        },
+        {
+          "sample_id": "IELTS:193",
+          "trait": "N",
+          "predicted_level": 1,
+          "label_level": 3
+        }
+      ]
+    },
+    {
+      "source": "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_pilot5_grounded_20261127/published/archives/IELTS_106.tar.xz::IELTS_106/trajectories.json",
+      "source_aliases": [
+        "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_pilot5_grounded_20261127/IELTS_106/trajectories.json"
+      ],
+      "sample_id": "IELTS:106",
+      "split": "train",
+      "status": "complete",
+      "trajectory_sha256": "c2e32feb4dbce1f79fe4360ea387f97f9ae7d4e859b7faf3c4e44e2d6181ee46",
+      "experiment": "teacher_pilot5_grounded_20261127",
+      "tested_commit": "3b8543dcf51505244761f1d38aa702c80f1d88f5",
+      "source_hash_matching_commits": [],
+      "tested_commit_basis": "published acquisition plan",
+      "inferred_tested_code_commit": null,
+      "archived_source_hashes_sha256": "afe0185a5fdbc00b4f4661bc5190a7a33907888c2f594b36714b17197545fd69",
+      "trajectory_id": "teacher_pilot5_grounded_20261127/IELTS_106.tar#0",
+      "evaluation_scope": "train",
+      "pairs": [
+        {
+          "sample_id": "IELTS:106",
+          "trait": "O",
+          "predicted_level": 2,
+          "label_level": 4
+        },
+        {
+          "sample_id": "IELTS:106",
+          "trait": "C",
+          "predicted_level": 2,
+          "label_level": 2
+        },
+        {
+          "sample_id": "IELTS:106",
+          "trait": "E",
+          "predicted_level": 2,
+          "label_level": 3
+        },
+        {
+          "sample_id": "IELTS:106",
+          "trait": "A",
+          "predicted_level": 2,
+          "label_level": 2
+        },
+        {
+          "sample_id": "IELTS:106",
+          "trait": "N",
+          "predicted_level": 1,
+          "label_level": 4
+        }
+      ]
+    },
+    {
+      "source": "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_pilot5_grounded_20261127/published/archives/IELTS_138.tar.xz::IELTS_138/trajectories.json",
+      "source_aliases": [
+        "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_pilot5_grounded_20261127/IELTS_138/trajectories.json"
+      ],
+      "sample_id": "IELTS:138",
+      "split": "train",
+      "status": "complete",
+      "trajectory_sha256": "029974afd71025ca7df39ec505bf1e786f6edd2bb230cf5541e81c91ee4a0704",
+      "experiment": "teacher_pilot5_grounded_20261127",
+      "tested_commit": "3b8543dcf51505244761f1d38aa702c80f1d88f5",
+      "source_hash_matching_commits": [],
+      "tested_commit_basis": "published acquisition plan",
+      "inferred_tested_code_commit": null,
+      "archived_source_hashes_sha256": "afe0185a5fdbc00b4f4661bc5190a7a33907888c2f594b36714b17197545fd69",
+      "trajectory_id": "teacher_pilot5_grounded_20261127/IELTS_138.tar#0",
+      "evaluation_scope": "train",
+      "pairs": [
+        {
+          "sample_id": "IELTS:138",
+          "trait": "O",
+          "predicted_level": 1,
+          "label_level": 2
+        },
+        {
+          "sample_id": "IELTS:138",
+          "trait": "C",
+          "predicted_level": 2,
+          "label_level": 2
+        },
+        {
+          "sample_id": "IELTS:138",
+          "trait": "E",
+          "predicted_level": 2,
+          "label_level": 3
+        },
+        {
+          "sample_id": "IELTS:138",
+          "trait": "A",
+          "predicted_level": 2,
+          "label_level": 0
+        },
+        {
+          "sample_id": "IELTS:138",
+          "trait": "N",
+          "predicted_level": 1,
+          "label_level": 2
+        }
+      ]
+    },
+    {
+      "source": "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_pilot5_grounded_20261127/published/archives/IELTS_176.tar.xz::IELTS_176/trajectories.json",
+      "source_aliases": [
+        "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_pilot5_grounded_20261127/IELTS_176/trajectories.json"
+      ],
+      "sample_id": "IELTS:176",
+      "split": "train",
+      "status": "complete",
+      "trajectory_sha256": "97df9eafcd77679263c1d514528613ef5514f2a7fee2633399feb6aec125b9ba",
+      "experiment": "teacher_pilot5_grounded_20261127",
+      "tested_commit": "3b8543dcf51505244761f1d38aa702c80f1d88f5",
+      "source_hash_matching_commits": [],
+      "tested_commit_basis": "published acquisition plan",
+      "inferred_tested_code_commit": null,
+      "archived_source_hashes_sha256": "afe0185a5fdbc00b4f4661bc5190a7a33907888c2f594b36714b17197545fd69",
+      "trajectory_id": "teacher_pilot5_grounded_20261127/IELTS_176.tar#0",
+      "evaluation_scope": "train",
+      "pairs": [
+        {
+          "sample_id": "IELTS:176",
+          "trait": "O",
+          "predicted_level": 2,
+          "label_level": 2
+        },
+        {
+          "sample_id": "IELTS:176",
+          "trait": "C",
+          "predicted_level": 2,
+          "label_level": 4
+        },
+        {
+          "sample_id": "IELTS:176",
+          "trait": "E",
+          "predicted_level": 2,
+          "label_level": 3
+        },
+        {
+          "sample_id": "IELTS:176",
+          "trait": "A",
+          "predicted_level": 3,
+          "label_level": 3
+        },
+        {
+          "sample_id": "IELTS:176",
+          "trait": "N",
+          "predicted_level": 1,
+          "label_level": 3
+        }
+      ]
+    },
+    {
+      "source": "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_pilot5_grounded_20261127/published/archives/IELTS_183.tar.xz::IELTS_183/trajectories.json",
+      "source_aliases": [
+        "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_pilot5_grounded_20261127/IELTS_183/trajectories.json"
+      ],
+      "sample_id": "IELTS:183",
+      "split": "train",
+      "status": "partial",
+      "trajectory_sha256": "3f2929976353cdc9f99253cc2f4a8d8f2f2c6775c9897595b1e72180124b78fe",
+      "experiment": "teacher_pilot5_grounded_20261127",
+      "tested_commit": "3b8543dcf51505244761f1d38aa702c80f1d88f5",
+      "source_hash_matching_commits": [],
+      "tested_commit_basis": "published acquisition plan",
+      "inferred_tested_code_commit": null,
+      "archived_source_hashes_sha256": "afe0185a5fdbc00b4f4661bc5190a7a33907888c2f594b36714b17197545fd69",
+      "trajectory_id": "teacher_pilot5_grounded_20261127/IELTS_183.tar#0",
+      "evaluation_scope": "train",
+      "pairs": [
+        {
+          "sample_id": "IELTS:183",
+          "trait": "O",
+          "predicted_level": 1,
+          "label_level": 2
+        },
+        {
+          "sample_id": "IELTS:183",
+          "trait": "C",
+          "predicted_level": 2,
+          "label_level": 3
+        },
+        {
+          "sample_id": "IELTS:183",
+          "trait": "E",
+          "predicted_level": 1,
+          "label_level": 3
+        },
+        {
+          "sample_id": "IELTS:183",
+          "trait": "A",
+          "predicted_level": 2,
+          "label_level": 3
+        },
+        {
+          "sample_id": "IELTS:183",
+          "trait": "N",
+          "predicted_level": 1,
+          "label_level": 3
+        }
+      ]
+    },
+    {
+      "source": "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_pilot5_grounded_20261127/published/archives/IELTS_193.tar.xz::IELTS_193/trajectories.json",
+      "source_aliases": [
+        "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_pilot5_grounded_20261127/IELTS_193/trajectories.json"
+      ],
+      "sample_id": "IELTS:193",
+      "split": "train",
+      "status": "complete",
+      "trajectory_sha256": "0e600d6b45023d9f791682447bdb0c9fcfb79b171b941e54e3674671495c1190",
+      "experiment": "teacher_pilot5_grounded_20261127",
+      "tested_commit": "3b8543dcf51505244761f1d38aa702c80f1d88f5",
+      "source_hash_matching_commits": [],
+      "tested_commit_basis": "published acquisition plan",
+      "inferred_tested_code_commit": null,
+      "archived_source_hashes_sha256": "afe0185a5fdbc00b4f4661bc5190a7a33907888c2f594b36714b17197545fd69",
+      "trajectory_id": "teacher_pilot5_grounded_20261127/IELTS_193.tar#0",
+      "evaluation_scope": "train",
+      "pairs": [
+        {
+          "sample_id": "IELTS:193",
+          "trait": "O",
+          "predicted_level": 2,
+          "label_level": 3
+        },
+        {
+          "sample_id": "IELTS:193",
+          "trait": "C",
+          "predicted_level": 2,
+          "label_level": 1
+        },
+        {
+          "sample_id": "IELTS:193",
+          "trait": "E",
+          "predicted_level": 1,
+          "label_level": 3
+        },
+        {
+          "sample_id": "IELTS:193",
+          "trait": "A",
+          "predicted_level": 2,
+          "label_level": 0
+        },
+        {
+          "sample_id": "IELTS:193",
+          "trait": "N",
+          "predicted_level": 1,
+          "label_level": 3
+        }
+      ]
+    },
+    {
+      "source": "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_seed_c56ec92_20261127/published/archives/IELTS_106_r1.tar.xz::IELTS_106_r1/trajectories.json",
+      "source_aliases": [
+        "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_seed_c56ec92_20261127/IELTS_106_r1/trajectories.json"
+      ],
+      "sample_id": "IELTS:106",
+      "split": "train",
+      "status": "complete",
+      "trajectory_sha256": "0f4bf2be8bf3cbcb3a5369c0ae2a3e83274ac3601305b05f8fb6a96d9a0a16b4",
+      "experiment": "teacher_seed_c56ec92_20261127",
+      "tested_commit": "c56ec929f5212319e06663d7dee31bf977d48c01",
+      "source_hash_matching_commits": [],
+      "tested_commit_basis": "published acquisition plan",
+      "inferred_tested_code_commit": null,
+      "archived_source_hashes_sha256": "a56178c15cc5a5ce4ab76f010aed841bafa8cae76b2622a89f69a26fe1ab4864",
+      "trajectory_id": "teacher_seed_c56ec92_20261127/IELTS_106_r1.tar#0",
+      "evaluation_scope": "train",
+      "pairs": [
+        {
+          "sample_id": "IELTS:106",
+          "trait": "O",
+          "predicted_level": 2,
+          "label_level": 4
+        },
+        {
+          "sample_id": "IELTS:106",
+          "trait": "C",
+          "predicted_level": 2,
+          "label_level": 2
+        },
+        {
+          "sample_id": "IELTS:106",
+          "trait": "E",
+          "predicted_level": 2,
+          "label_level": 3
+        },
+        {
+          "sample_id": "IELTS:106",
+          "trait": "A",
+          "predicted_level": 3,
+          "label_level": 2
+        },
+        {
+          "sample_id": "IELTS:106",
+          "trait": "N",
+          "predicted_level": 1,
+          "label_level": 4
+        }
+      ]
+    },
+    {
+      "source": "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_seed_c56ec92_20261127/published/archives/IELTS_106_r2.tar.xz::IELTS_106_r2/trajectories.json",
+      "source_aliases": [
+        "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_seed_c56ec92_20261127/IELTS_106_r2/trajectories.json"
+      ],
+      "sample_id": "IELTS:106",
+      "split": "train",
+      "status": "complete",
+      "trajectory_sha256": "eea6b3cc43af5fd8609b6767dc5cbdde6e175feadd12e91d95ddc54a5da58c02",
+      "experiment": "teacher_seed_c56ec92_20261127",
+      "tested_commit": "c56ec929f5212319e06663d7dee31bf977d48c01",
+      "source_hash_matching_commits": [],
+      "tested_commit_basis": "published acquisition plan",
+      "inferred_tested_code_commit": null,
+      "archived_source_hashes_sha256": "a56178c15cc5a5ce4ab76f010aed841bafa8cae76b2622a89f69a26fe1ab4864",
+      "trajectory_id": "teacher_seed_c56ec92_20261127/IELTS_106_r2.tar#0",
+      "evaluation_scope": "train",
+      "pairs": [
+        {
+          "sample_id": "IELTS:106",
+          "trait": "O",
+          "predicted_level": 2,
+          "label_level": 4
+        },
+        {
+          "sample_id": "IELTS:106",
+          "trait": "C",
+          "predicted_level": 2,
+          "label_level": 2
+        },
+        {
+          "sample_id": "IELTS:106",
+          "trait": "E",
+          "predicted_level": 2,
+          "label_level": 3
+        },
+        {
+          "sample_id": "IELTS:106",
+          "trait": "A",
+          "predicted_level": 3,
+          "label_level": 2
+        },
+        {
+          "sample_id": "IELTS:106",
+          "trait": "N",
+          "predicted_level": 1,
+          "label_level": 4
+        }
+      ]
+    },
+    {
+      "source": "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_seed_c56ec92_20261127/published/archives/IELTS_167_r1.tar.xz::IELTS_167_r1/trajectories.json",
+      "source_aliases": [
+        "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_seed_c56ec92_20261127/IELTS_167_r1/trajectories.json"
+      ],
+      "sample_id": "IELTS:167",
+      "split": "train",
+      "status": "partial",
+      "trajectory_sha256": "9ecd72e8a7cabc6b43051b62cefd325b5b640b576f7fe49a76156b7f9c7274d6",
+      "experiment": "teacher_seed_c56ec92_20261127",
+      "tested_commit": "c56ec929f5212319e06663d7dee31bf977d48c01",
+      "source_hash_matching_commits": [],
+      "tested_commit_basis": "published acquisition plan",
+      "inferred_tested_code_commit": null,
+      "archived_source_hashes_sha256": "a56178c15cc5a5ce4ab76f010aed841bafa8cae76b2622a89f69a26fe1ab4864",
+      "trajectory_id": "teacher_seed_c56ec92_20261127/IELTS_167_r1.tar#0",
+      "evaluation_scope": "train",
+      "pairs": [
+        {
+          "sample_id": "IELTS:167",
+          "trait": "O",
+          "predicted_level": 3,
+          "label_level": 2
+        },
+        {
+          "sample_id": "IELTS:167",
+          "trait": "C",
+          "predicted_level": 2,
+          "label_level": 3
+        },
+        {
+          "sample_id": "IELTS:167",
+          "trait": "E",
+          "predicted_level": 1,
+          "label_level": 0
+        },
+        {
+          "sample_id": "IELTS:167",
+          "trait": "A",
+          "predicted_level": 2,
+          "label_level": 3
+        },
+        {
+          "sample_id": "IELTS:167",
+          "trait": "N",
+          "predicted_level": 1,
+          "label_level": 2
+        }
+      ]
+    },
+    {
+      "source": "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_seed_c56ec92_20261127/published/archives/IELTS_167_r2.tar.xz::IELTS_167_r2/trajectories.json",
+      "source_aliases": [
+        "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_seed_c56ec92_20261127/IELTS_167_r2/trajectories.json"
+      ],
+      "sample_id": "IELTS:167",
+      "split": "train",
+      "status": "complete",
+      "trajectory_sha256": "0b2f4b3d55f8dbc17b3cf151613414aad13c9deb451a6bcd12e6ad6dc9707c1a",
+      "experiment": "teacher_seed_c56ec92_20261127",
+      "tested_commit": "c56ec929f5212319e06663d7dee31bf977d48c01",
+      "source_hash_matching_commits": [],
+      "tested_commit_basis": "published acquisition plan",
+      "inferred_tested_code_commit": null,
+      "archived_source_hashes_sha256": "a56178c15cc5a5ce4ab76f010aed841bafa8cae76b2622a89f69a26fe1ab4864",
+      "trajectory_id": "teacher_seed_c56ec92_20261127/IELTS_167_r2.tar#0",
+      "evaluation_scope": "train",
+      "pairs": [
+        {
+          "sample_id": "IELTS:167",
+          "trait": "O",
+          "predicted_level": 2,
+          "label_level": 2
+        },
+        {
+          "sample_id": "IELTS:167",
+          "trait": "C",
+          "predicted_level": 2,
+          "label_level": 3
+        },
+        {
+          "sample_id": "IELTS:167",
+          "trait": "E",
+          "predicted_level": 1,
+          "label_level": 0
+        },
+        {
+          "sample_id": "IELTS:167",
+          "trait": "A",
+          "predicted_level": 2,
+          "label_level": 3
+        },
+        {
+          "sample_id": "IELTS:167",
+          "trait": "N",
+          "predicted_level": 1,
+          "label_level": 2
+        }
+      ]
+    },
+    {
+      "source": "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_seed_c56ec92_20261127/published/archives/IELTS_183_r1.tar.xz::IELTS_183_r1/trajectories.json",
+      "source_aliases": [
+        "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_seed_c56ec92_20261127/IELTS_183_r1/trajectories.json"
+      ],
+      "sample_id": "IELTS:183",
+      "split": "train",
+      "status": "complete",
+      "trajectory_sha256": "913a2cb6b7d15cd99ef110ab97fb5fff229cd1655878a0e2984010edb1197693",
+      "experiment": "teacher_seed_c56ec92_20261127",
+      "tested_commit": "c56ec929f5212319e06663d7dee31bf977d48c01",
+      "source_hash_matching_commits": [],
+      "tested_commit_basis": "published acquisition plan",
+      "inferred_tested_code_commit": null,
+      "archived_source_hashes_sha256": "a56178c15cc5a5ce4ab76f010aed841bafa8cae76b2622a89f69a26fe1ab4864",
+      "trajectory_id": "teacher_seed_c56ec92_20261127/IELTS_183_r1.tar#0",
+      "evaluation_scope": "train",
+      "pairs": [
+        {
+          "sample_id": "IELTS:183",
+          "trait": "O",
+          "predicted_level": 1,
+          "label_level": 2
+        },
+        {
+          "sample_id": "IELTS:183",
+          "trait": "C",
+          "predicted_level": 2,
+          "label_level": 3
+        },
+        {
+          "sample_id": "IELTS:183",
+          "trait": "E",
+          "predicted_level": 1,
+          "label_level": 3
+        },
+        {
+          "sample_id": "IELTS:183",
+          "trait": "A",
+          "predicted_level": 2,
+          "label_level": 3
+        },
+        {
+          "sample_id": "IELTS:183",
+          "trait": "N",
+          "predicted_level": 1,
+          "label_level": 3
+        }
+      ]
+    },
+    {
+      "source": "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_seed_c56ec92_20261127/published/archives/IELTS_183_r2.tar.xz::IELTS_183_r2/trajectories.json",
+      "source_aliases": [
+        "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_seed_c56ec92_20261127/IELTS_183_r2/trajectories.json"
+      ],
+      "sample_id": "IELTS:183",
+      "split": "train",
+      "status": "complete",
+      "trajectory_sha256": "4aaadfbef10941fd72bb2400cc4e7cf9b62314cbfad464fc70388277079b1341",
+      "experiment": "teacher_seed_c56ec92_20261127",
+      "tested_commit": "c56ec929f5212319e06663d7dee31bf977d48c01",
+      "source_hash_matching_commits": [],
+      "tested_commit_basis": "published acquisition plan",
+      "inferred_tested_code_commit": null,
+      "archived_source_hashes_sha256": "a56178c15cc5a5ce4ab76f010aed841bafa8cae76b2622a89f69a26fe1ab4864",
+      "trajectory_id": "teacher_seed_c56ec92_20261127/IELTS_183_r2.tar#0",
+      "evaluation_scope": "train",
+      "pairs": [
+        {
+          "sample_id": "IELTS:183",
+          "trait": "O",
+          "predicted_level": 1,
+          "label_level": 2
+        },
+        {
+          "sample_id": "IELTS:183",
+          "trait": "C",
+          "predicted_level": 2,
+          "label_level": 3
+        },
+        {
+          "sample_id": "IELTS:183",
+          "trait": "E",
+          "predicted_level": 2,
+          "label_level": 3
+        },
+        {
+          "sample_id": "IELTS:183",
+          "trait": "A",
+          "predicted_level": 2,
+          "label_level": 3
+        },
+        {
+          "sample_id": "IELTS:183",
+          "trait": "N",
+          "predicted_level": 1,
+          "label_level": 3
+        }
+      ]
+    }
+  ],
+  "excluded": [],
+  "empty_trajectory_sources": [
+    {
+      "source": "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent/runs/teacher_pilot5_20261126/published/archives/IELTS_106.tar.xz::IELTS_106/trajectories.json",
+      "reason": "empty trajectory list; no evaluable Final"
+    },
+    {
+      "source": "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent/runs/teacher_pilot5_20261126/published/archives/IELTS_176.tar.xz::IELTS_176/trajectories.json",
+      "reason": "empty trajectory list; no evaluable Final"
+    },
+    {
+      "source": "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_pilot5_20261126/published/archives/IELTS_106.tar.xz::IELTS_106/trajectories.json",
+      "reason": "empty trajectory list; no evaluable Final"
+    },
+    {
+      "source": "/mnt/r6_hdd4t/lhlu/ActivePersonalityAgent_branch_validation/bounded_refinement_ddebacd/runs/teacher_pilot5_20261126/published/archives/IELTS_176.tar.xz::IELTS_176/trajectories.json",
+      "reason": "empty trajectory list; no evaluable Final"
+    }
+  ],
+  "discovery": {
+    "archive_trajectory_files": 28,
+    "loose_trajectory_files": 97
+  },
+  "train_all": {
+    "n_trajectories": 20,
+    "n_people": 6,
+    "traits": {
+      "O": {
+        "n_total": 20,
+        "n_covered": 20,
+        "abstentions": 0,
+        "predicted_counts": [
+          0,
+          10,
+          9,
+          1,
+          0
+        ],
+        "label_counts_all": [
+          0,
+          0,
+          13,
+          3,
+          4
+        ],
+        "label_counts_covered": [
+          0,
+          0,
+          13,
+          3,
+          4
+        ],
+        "spearman": {
+          "n": 20,
+          "rho": 0.6206645683346348,
+          "p_positive": 0.003996003996003996,
+          "p_two_sided": 0.004995004995004995,
+          "permutations": 1000
+        },
+        "original": {
+          "macro_f1": 0.05454545454545454,
+          "accuracy": 0.15,
+          "ordinal_mae": 1.1
+        },
+        "accuracy_all": 0.15,
+        "rank_calibrated": {
+          "macro_f1": 0.06666666666666667,
+          "accuracy": 0.1,
+          "ordinal_mae": 1.0
+        },
+        "calibrated_counts": [
+          0,
+          10,
+          0,
+          9,
+          1
+        ],
+        "train_majority_level": 4,
+        "majority_all": {
+          "macro_f1": 0.06666666666666667,
+          "accuracy": 0.2,
+          "ordinal_mae": 1.45
+        },
+        "majority_covered": {
+          "macro_f1": 0.06666666666666667,
+          "accuracy": 0.2,
+          "ordinal_mae": 1.45
+        }
+      },
+      "C": {
+        "n_total": 20,
+        "n_covered": 20,
+        "abstentions": 0,
+        "predicted_counts": [
+          0,
+          2,
+          16,
+          2,
+          0
+        ],
+        "label_counts_all": [
+          0,
+          3,
+          7,
+          7,
+          3
+        ],
+        "label_counts_covered": [
+          0,
+          3,
+          7,
+          7,
+          3
+        ],
+        "spearman": {
+          "n": 20,
+          "rho": 0.4472135935757313,
+          "p_positive": 0.023976023976023976,
+          "p_two_sided": 0.04795204795204795,
+          "permutations": 1000
+        },
+        "original": {
+          "macro_f1": 0.2017391304347826,
+          "accuracy": 0.4,
+          "ordinal_mae": 0.7
+        },
+        "accuracy_all": 0.4,
+        "rank_calibrated": {
+          "macro_f1": 0.2817391304347826,
+          "accuracy": 0.45,
+          "ordinal_mae": 0.7
+        },
+        "calibrated_counts": [
+          2,
+          0,
+          16,
+          0,
+          2
+        ],
+        "train_majority_level": 4,
+        "majority_all": {
+          "macro_f1": 0.05217391304347826,
+          "accuracy": 0.15,
+          "ordinal_mae": 1.5
+        },
+        "majority_covered": {
+          "macro_f1": 0.05217391304347826,
+          "accuracy": 0.15,
+          "ordinal_mae": 1.5
+        }
+      },
+      "E": {
+        "n_total": 20,
+        "n_covered": 20,
+        "abstentions": 0,
+        "predicted_counts": [
+          1,
+          11,
+          8,
+          0,
+          0
+        ],
+        "label_counts_all": [
+          2,
+          0,
+          0,
+          18,
+          0
+        ],
+        "label_counts_covered": [
+          2,
+          0,
+          0,
+          18,
+          0
+        ],
+        "spearman": {
+          "n": 20,
+          "rho": 0.34009282279109504,
+          "p_positive": 0.07792207792207792,
+          "p_two_sided": 0.14885114885114886,
+          "permutations": 1000
+        },
+        "original": {
+          "macro_f1": 0.0,
+          "accuracy": 0.0,
+          "ordinal_mae": 1.55
+        },
+        "accuracy_all": 0.0,
+        "rank_calibrated": {
+          "macro_f1": 0.0,
+          "accuracy": 0.0,
+          "ordinal_mae": 1.55
+        },
+        "calibrated_counts": [
+          1,
+          11,
+          0,
+          0,
+          8
+        ],
+        "train_majority_level": 3,
+        "majority_all": {
+          "macro_f1": 0.1894736842105263,
+          "accuracy": 0.9,
+          "ordinal_mae": 0.3
+        },
+        "majority_covered": {
+          "macro_f1": 0.1894736842105263,
+          "accuracy": 0.9,
+          "ordinal_mae": 0.3
+        }
+      },
+      "A": {
+        "n_total": 20,
+        "n_covered": 20,
+        "abstentions": 0,
+        "predicted_counts": [
+          0,
+          1,
+          14,
+          5,
+          0
+        ],
+        "label_counts_all": [
+          6,
+          0,
+          4,
+          10,
+          0
+        ],
+        "label_counts_covered": [
+          6,
+          0,
+          4,
+          10,
+          0
+        ],
+        "spearman": {
+          "n": 20,
+          "rho": 0.13834255717965088,
+          "p_positive": 0.28471528471528473,
+          "p_two_sided": 0.5434565434565435,
+          "permutations": 1000
+        },
+        "original": {
+          "macro_f1": 0.09777777777777777,
+          "accuracy": 0.2,
+          "ordinal_mae": 1.1
+        },
+        "accuracy_all": 0.2,
+        "rank_calibrated": {
+          "macro_f1": 0.10158730158730159,
+          "accuracy": 0.15,
+          "ordinal_mae": 1.3
+        },
+        "calibrated_counts": [
+          1,
+          0,
+          14,
+          0,
+          5
+        ],
+        "train_majority_level": 3,
+        "majority_all": {
+          "macro_f1": 0.13333333333333333,
+          "accuracy": 0.5,
+          "ordinal_mae": 1.1
+        },
+        "majority_covered": {
+          "macro_f1": 0.13333333333333333,
+          "accuracy": 0.5,
+          "ordinal_mae": 1.1
+        }
+      },
+      "N": {
+        "n_total": 20,
+        "n_covered": 20,
+        "abstentions": 0,
+        "predicted_counts": [
+          1,
+          18,
+          1,
+          0,
+          0
+        ],
+        "label_counts_all": [
+          0,
+          0,
+          5,
+          11,
+          4
+        ],
+        "label_counts_covered": [
+          0,
+          0,
+          5,
+          11,
+          4
+        ],
+        "spearman": {
+          "n": 20,
+          "rho": 0.0,
+          "p_positive": 0.6923076923076923,
+          "p_two_sided": 1.0,
+          "permutations": 1000
+        },
+        "original": {
+          "macro_f1": 0.0,
+          "accuracy": 0.0,
+          "ordinal_mae": 1.95
+        },
+        "accuracy_all": 0.0,
+        "rank_calibrated": {
+          "macro_f1": 0.08695652173913043,
+          "accuracy": 0.25,
+          "ordinal_mae": 1.05
+        },
+        "calibrated_counts": [
+          1,
+          0,
+          18,
+          0,
+          1
+        ],
+        "train_majority_level": 1,
+        "majority_all": {
+          "macro_f1": 0.0,
+          "accuracy": 0.0,
+          "ordinal_mae": 1.95
+        },
+        "majority_covered": {
+          "macro_f1": 0.0,
+          "accuracy": 0.0,
+          "ordinal_mae": 1.95
+        }
+      }
+    },
+    "pooled_raw_spearman": {
+      "n": 100,
+      "rho": 0.4368551070207937,
+      "p_positive": 0.000999000999000999,
+      "p_two_sided": 0.000999000999000999,
+      "permutations": 1000
+    },
+    "original": {
+      "macro_f1": 0.08526163894584947,
+      "accuracy": 0.15,
+      "ordinal_mae": 1.28
+    },
+    "rank_calibrated": {
+      "macro_f1": 0.14586103551620794,
+      "accuracy": 0.19,
+      "ordinal_mae": 1.12
+    },
+    "majority_same_covered_pairs": {
+      "macro_f1": 0.18074465741352722,
+      "accuracy": 0.35,
+      "ordinal_mae": 1.26
+    }
+  },
+  "train_one_per_person": {
+    "n_trajectories": 6,
+    "n_people": 6,
+    "traits": {
+      "O": {
+        "n_total": 6,
+        "n_covered": 6,
+        "abstentions": 0,
+        "predicted_counts": [
+          0,
+          2,
+          3,
+          1,
+          0
+        ],
+        "label_counts_all": [
+          0,
+          0,
+          4,
+          1,
+          1
+        ],
+        "label_counts_covered": [
+          0,
+          0,
+          4,
+          1,
+          1
+        ],
+        "spearman": {
+          "n": 6,
+          "rho": 0.6356417183105132,
+          "p_positive": 0.14485514485514486,
+          "p_two_sided": 0.2757242757242757,
+          "permutations": 1000
+        },
+        "original": {
+          "macro_f1": 0.05714285714285714,
+          "accuracy": 0.16666666666666666,
+          "ordinal_mae": 1.0
+        },
+        "accuracy_all": 0.16666666666666666,
+        "rank_calibrated": {
+          "macro_f1": 0.05714285714285714,
+          "accuracy": 0.16666666666666666,
+          "ordinal_mae": 1.5
+        },
+        "calibrated_counts": [
+          2,
+          0,
+          3,
+          0,
+          1
+        ],
+        "train_majority_level": 4,
+        "majority_all": {
+          "macro_f1": 0.05714285714285714,
+          "accuracy": 0.16666666666666666,
+          "ordinal_mae": 1.5
+        },
+        "majority_covered": {
+          "macro_f1": 0.05714285714285714,
+          "accuracy": 0.16666666666666666,
+          "ordinal_mae": 1.5
+        }
+      },
+      "C": {
+        "n_total": 6,
+        "n_covered": 6,
+        "abstentions": 0,
+        "predicted_counts": [
+          0,
+          0,
+          6,
+          0,
+          0
+        ],
+        "label_counts_all": [
+          0,
+          1,
+          2,
+          2,
+          1
+        ],
+        "label_counts_covered": [
+          0,
+          1,
+          2,
+          2,
+          1
+        ],
+        "spearman": {
+          "n": 6,
+          "rho": null,
+          "p_positive": null,
+          "p_two_sided": null,
+          "permutations": 1000,
+          "reason": "constant input or fewer than two observations"
+        },
+        "original": {
+          "macro_f1": 0.1,
+          "accuracy": 0.3333333333333333,
+          "ordinal_mae": 0.8333333333333334
+        },
+        "accuracy_all": 0.3333333333333333,
+        "rank_calibrated": {
+          "macro_f1": 0.1,
+          "accuracy": 0.3333333333333333,
+          "ordinal_mae": 0.8333333333333334
+        },
+        "calibrated_counts": [
+          0,
+          0,
+          6,
+          0,
+          0
+        ],
+        "train_majority_level": 4,
+        "majority_all": {
+          "macro_f1": 0.05714285714285714,
+          "accuracy": 0.16666666666666666,
+          "ordinal_mae": 1.5
+        },
+        "majority_covered": {
+          "macro_f1": 0.05714285714285714,
+          "accuracy": 0.16666666666666666,
+          "ordinal_mae": 1.5
+        }
+      },
+      "E": {
+        "n_total": 6,
+        "n_covered": 6,
+        "abstentions": 0,
+        "predicted_counts": [
+          0,
+          3,
+          3,
+          0,
+          0
+        ],
+        "label_counts_all": [
+          1,
+          0,
+          0,
+          5,
+          0
+        ],
+        "label_counts_covered": [
+          1,
+          0,
+          0,
+          5,
+          0
+        ],
+        "spearman": {
+          "n": 6,
+          "rho": 0.42163701587820385,
+          "p_positive": 0.36363636363636365,
+          "p_two_sided": 0.7102897102897103,
+          "permutations": 1000
+        },
+        "original": {
+          "macro_f1": 0.0,
+          "accuracy": 0.0,
+          "ordinal_mae": 1.3333333333333333
+        },
+        "accuracy_all": 0.0,
+        "rank_calibrated": {
+          "macro_f1": 0.15,
+          "accuracy": 0.5,
+          "ordinal_mae": 0.8333333333333334
+        },
+        "calibrated_counts": [
+          0,
+          3,
+          0,
+          3,
+          0
+        ],
+        "train_majority_level": 3,
+        "majority_all": {
+          "macro_f1": 0.18181818181818182,
+          "accuracy": 0.8333333333333334,
+          "ordinal_mae": 0.5
+        },
+        "majority_covered": {
+          "macro_f1": 0.18181818181818182,
+          "accuracy": 0.8333333333333334,
+          "ordinal_mae": 0.5
+        }
+      },
+      "A": {
+        "n_total": 6,
+        "n_covered": 6,
+        "abstentions": 0,
+        "predicted_counts": [
+          0,
+          0,
+          4,
+          2,
+          0
+        ],
+        "label_counts_all": [
+          2,
+          0,
+          1,
+          3,
+          0
+        ],
+        "label_counts_covered": [
+          2,
+          0,
+          1,
+          3,
+          0
+        ],
+        "spearman": {
+          "n": 6,
+          "rho": 0.2199706696080086,
+          "p_positive": 0.3946053946053946,
+          "p_two_sided": 0.8071928071928072,
+          "permutations": 1000
+        },
+        "original": {
+          "macro_f1": 0.08,
+          "accuracy": 0.16666666666666666,
+          "ordinal_mae": 1.1666666666666667
+        },
+        "accuracy_all": 0.16666666666666666,
+        "rank_calibrated": {
+          "macro_f1": 0.0,
+          "accuracy": 0.0,
+          "ordinal_mae": 1.5
+        },
+        "calibrated_counts": [
+          0,
+          4,
+          0,
+          0,
+          2
+        ],
+        "train_majority_level": 3,
+        "majority_all": {
+          "macro_f1": 0.13333333333333333,
+          "accuracy": 0.5,
+          "ordinal_mae": 1.1666666666666667
+        },
+        "majority_covered": {
+          "macro_f1": 0.13333333333333333,
+          "accuracy": 0.5,
+          "ordinal_mae": 1.1666666666666667
+        }
+      },
+      "N": {
+        "n_total": 6,
+        "n_covered": 6,
+        "abstentions": 0,
+        "predicted_counts": [
+          0,
+          6,
+          0,
+          0,
+          0
+        ],
+        "label_counts_all": [
+          0,
+          0,
+          2,
+          3,
+          1
+        ],
+        "label_counts_covered": [
+          0,
+          0,
+          2,
+          3,
+          1
+        ],
+        "spearman": {
+          "n": 6,
+          "rho": null,
+          "p_positive": null,
+          "p_two_sided": null,
+          "permutations": 1000,
+          "reason": "constant input or fewer than two observations"
+        },
+        "original": {
+          "macro_f1": 0.0,
+          "accuracy": 0.0,
+          "ordinal_mae": 1.8333333333333333
+        },
+        "accuracy_all": 0.0,
+        "rank_calibrated": {
+          "macro_f1": 0.1,
+          "accuracy": 0.3333333333333333,
+          "ordinal_mae": 0.8333333333333334
+        },
+        "calibrated_counts": [
+          0,
+          0,
+          6,
+          0,
+          0
+        ],
+        "train_majority_level": 1,
+        "majority_all": {
+          "macro_f1": 0.0,
+          "accuracy": 0.0,
+          "ordinal_mae": 1.8333333333333333
+        },
+        "majority_covered": {
+          "macro_f1": 0.0,
+          "accuracy": 0.0,
+          "ordinal_mae": 1.8333333333333333
+        }
+      }
+    },
+    "pooled_raw_spearman": {
+      "n": 30,
+      "rho": 0.5284813988483305,
+      "p_positive": 0.001998001998001998,
+      "p_two_sided": 0.002997002997002997,
+      "permutations": 1000
+    },
+    "original": {
+      "macro_f1": 0.07152941176470588,
+      "accuracy": 0.13333333333333333,
+      "ordinal_mae": 1.2333333333333334
+    },
+    "rank_calibrated": {
+      "macro_f1": 0.153921568627451,
+      "accuracy": 0.26666666666666666,
+      "ordinal_mae": 1.1
+    },
+    "majority_same_covered_pairs": {
+      "macro_f1": 0.1764102564102564,
+      "accuracy": 0.3333333333333333,
+      "ordinal_mae": 1.3
+    }
+  },
+  "one_per_person_ids": [
+    "teacher_seed_c56ec92_20261127/IELTS_183_r1.tar#0",
+    "teacher_seed_c56ec92_20261127/IELTS_167_r1.tar#0",
+    "teacher_seed_c56ec92_20261127/IELTS_106_r1.tar#0",
+    "teacher_pilot5_grounded_20261127/IELTS_193.tar#0",
+    "teacher_pilot5_grounded_20261127/IELTS_176.tar#0",
+    "teacher_pilot5_grounded_20261127/IELTS_138.tar#0"
+  ],
+  "consistency_all_runs": {
+    "n_trajectory_pairs": 26,
+    "traits": {
+      "O": {
+        "n_pairs": 26,
+        "agreements": 19,
+        "agreement_rate": 0.7307692307692307
+      },
+      "C": {
+        "n_pairs": 26,
+        "agreements": 18,
+        "agreement_rate": 0.6923076923076923
+      },
+      "E": {
+        "n_pairs": 26,
+        "agreements": 15,
+        "agreement_rate": 0.5769230769230769
+      },
+      "A": {
+        "n_pairs": 26,
+        "agreements": 16,
+        "agreement_rate": 0.6153846153846154
+      },
+      "N": {
+        "n_pairs": 26,
+        "agreements": 19,
+        "agreement_rate": 0.7307692307692307
+      }
+    },
+    "pooled_agreement": 0.6692307692307692
+  },
+  "consistency_same_experiment": {
+    "n_trajectory_pairs": 3,
+    "traits": {
+      "O": {
+        "n_pairs": 3,
+        "agreements": 2,
+        "agreement_rate": 0.6666666666666666
+      },
+      "C": {
+        "n_pairs": 3,
+        "agreements": 3,
+        "agreement_rate": 1.0
+      },
+      "E": {
+        "n_pairs": 3,
+        "agreements": 2,
+        "agreement_rate": 0.6666666666666666
+      },
+      "A": {
+        "n_pairs": 3,
+        "agreements": 3,
+        "agreement_rate": 1.0
+      },
+      "N": {
+        "n_pairs": 3,
+        "agreements": 3,
+        "agreement_rate": 1.0
+      }
+    },
+    "pooled_agreement": 0.8666666666666667
+  },
+  "per_experiment": {
+    "teacher_pilot5_20261126": {
+      "n_trajectories": 4,
+      "n_people": 4,
+      "traits": {
+        "O": {
+          "n_total": 4,
+          "n_covered": 4,
+          "abstentions": 0,
+          "predicted_counts": [
+            0,
+            2,
+            2,
+            0,
+            0
+          ],
+          "label_counts_all": [
+            0,
+            0,
+            3,
+            1,
+            0
+          ],
+          "label_counts_covered": [
+            0,
+            0,
+            3,
+            1,
+            0
+          ],
+          "spearman": {
+            "n": 4,
+            "rho": 0.23570225581627113,
+            "p_positive": 0.4835164835164835,
+            "p_two_sided": 1.0,
+            "permutations": 1000
+          },
+          "original": {
+            "macro_f1": 0.08,
+            "accuracy": 0.25,
+            "ordinal_mae": 0.75
+          },
+          "accuracy_all": 0.25,
+          "rank_calibrated": {
+            "macro_f1": 0.13333333333333333,
+            "accuracy": 0.25,
+            "ordinal_mae": 0.75
+          },
+          "calibrated_counts": [
+            0,
+            2,
+            0,
+            2,
+            0
+          ],
+          "train_majority_level": 4,
+          "majority_all": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 1.75
+          },
+          "majority_covered": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 1.75
+          }
+        },
+        "C": {
+          "n_total": 4,
+          "n_covered": 4,
+          "abstentions": 0,
+          "predicted_counts": [
+            0,
+            0,
+            3,
+            1,
+            0
+          ],
+          "label_counts_all": [
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "label_counts_covered": [
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "spearman": {
+            "n": 4,
+            "rho": 0.7745966533690085,
+            "p_positive": 0.23476523476523475,
+            "p_two_sided": 0.4935064935064935,
+            "permutations": 1000
+          },
+          "original": {
+            "macro_f1": 0.1,
+            "accuracy": 0.25,
+            "ordinal_mae": 0.75
+          },
+          "accuracy_all": 0.25,
+          "rank_calibrated": {
+            "macro_f1": 0.3,
+            "accuracy": 0.5,
+            "ordinal_mae": 0.75
+          },
+          "calibrated_counts": [
+            0,
+            3,
+            0,
+            0,
+            1
+          ],
+          "train_majority_level": 4,
+          "majority_all": {
+            "macro_f1": 0.08,
+            "accuracy": 0.25,
+            "ordinal_mae": 1.5
+          },
+          "majority_covered": {
+            "macro_f1": 0.08,
+            "accuracy": 0.25,
+            "ordinal_mae": 1.5
+          }
+        },
+        "E": {
+          "n_total": 4,
+          "n_covered": 4,
+          "abstentions": 0,
+          "predicted_counts": [
+            0,
+            3,
+            1,
+            0,
+            0
+          ],
+          "label_counts_all": [
+            0,
+            0,
+            0,
+            4,
+            0
+          ],
+          "label_counts_covered": [
+            0,
+            0,
+            0,
+            4,
+            0
+          ],
+          "spearman": {
+            "n": 4,
+            "rho": 0.5773502567494566,
+            "p_positive": 0.47952047952047955,
+            "p_two_sided": 1.0,
+            "permutations": 1000
+          },
+          "original": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 1.75
+          },
+          "accuracy_all": 0.0,
+          "rank_calibrated": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 1.75
+          },
+          "calibrated_counts": [
+            0,
+            3,
+            0,
+            0,
+            1
+          ],
+          "train_majority_level": 3,
+          "majority_all": {
+            "macro_f1": 0.2,
+            "accuracy": 1.0,
+            "ordinal_mae": 0.0
+          },
+          "majority_covered": {
+            "macro_f1": 0.2,
+            "accuracy": 1.0,
+            "ordinal_mae": 0.0
+          }
+        },
+        "A": {
+          "n_total": 4,
+          "n_covered": 4,
+          "abstentions": 0,
+          "predicted_counts": [
+            0,
+            0,
+            3,
+            1,
+            0
+          ],
+          "label_counts_all": [
+            2,
+            0,
+            0,
+            2,
+            0
+          ],
+          "label_counts_covered": [
+            2,
+            0,
+            0,
+            2,
+            0
+          ],
+          "spearman": {
+            "n": 4,
+            "rho": 0.5443310425344217,
+            "p_positive": 0.4835164835164835,
+            "p_two_sided": 0.7422577422577422,
+            "permutations": 1000
+          },
+          "original": {
+            "macro_f1": 0.13333333333333333,
+            "accuracy": 0.25,
+            "ordinal_mae": 1.25
+          },
+          "accuracy_all": 0.25,
+          "rank_calibrated": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 1.25
+          },
+          "calibrated_counts": [
+            0,
+            3,
+            0,
+            0,
+            1
+          ],
+          "train_majority_level": 3,
+          "majority_all": {
+            "macro_f1": 0.13333333333333333,
+            "accuracy": 0.5,
+            "ordinal_mae": 1.5
+          },
+          "majority_covered": {
+            "macro_f1": 0.13333333333333333,
+            "accuracy": 0.5,
+            "ordinal_mae": 1.5
+          }
+        },
+        "N": {
+          "n_total": 4,
+          "n_covered": 4,
+          "abstentions": 0,
+          "predicted_counts": [
+            1,
+            3,
+            0,
+            0,
+            0
+          ],
+          "label_counts_all": [
+            0,
+            0,
+            1,
+            3,
+            0
+          ],
+          "label_counts_covered": [
+            0,
+            0,
+            1,
+            3,
+            0
+          ],
+          "spearman": {
+            "n": 4,
+            "rho": -0.3333333256353299,
+            "p_positive": 0.24175824175824176,
+            "p_two_sided": 1.0,
+            "permutations": 1000
+          },
+          "original": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 2.0
+          },
+          "accuracy_all": 0.0,
+          "rank_calibrated": {
+            "macro_f1": 0.13333333333333333,
+            "accuracy": 0.5,
+            "ordinal_mae": 1.0
+          },
+          "calibrated_counts": [
+            1,
+            0,
+            0,
+            3,
+            0
+          ],
+          "train_majority_level": 1,
+          "majority_all": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 1.75
+          },
+          "majority_covered": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 1.75
+          }
+        }
+      },
+      "pooled_raw_spearman": {
+        "n": 20,
+        "rho": 0.574402272259112,
+        "p_positive": 0.007992007992007992,
+        "p_two_sided": 0.00999000999000999,
+        "permutations": 1000
+      },
+      "original": {
+        "macro_f1": 0.0879120879120879,
+        "accuracy": 0.15,
+        "ordinal_mae": 1.3
+      },
+      "rank_calibrated": {
+        "macro_f1": 0.20833333333333331,
+        "accuracy": 0.25,
+        "ordinal_mae": 1.1
+      },
+      "majority_same_covered_pairs": {
+        "macro_f1": 0.17076023391812864,
+        "accuracy": 0.35,
+        "ordinal_mae": 1.3
+      }
+    },
+    "teacher_pilot5_bounded_20261127": {
+      "n_trajectories": 5,
+      "n_people": 5,
+      "traits": {
+        "O": {
+          "n_total": 5,
+          "n_covered": 5,
+          "abstentions": 0,
+          "predicted_counts": [
+            0,
+            4,
+            1,
+            0,
+            0
+          ],
+          "label_counts_all": [
+            0,
+            0,
+            3,
+            1,
+            1
+          ],
+          "label_counts_covered": [
+            0,
+            0,
+            3,
+            1,
+            1
+          ],
+          "spearman": {
+            "n": 5,
+            "rho": 0.7254762375920916,
+            "p_positive": 0.1918081918081918,
+            "p_two_sided": 0.1918081918081918,
+            "permutations": 1000
+          },
+          "original": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 1.4
+          },
+          "accuracy_all": 0.0,
+          "rank_calibrated": {
+            "macro_f1": 0.37142857142857144,
+            "accuracy": 0.8,
+            "ordinal_mae": 0.2
+          },
+          "calibrated_counts": [
+            0,
+            0,
+            4,
+            0,
+            1
+          ],
+          "train_majority_level": 4,
+          "majority_all": {
+            "macro_f1": 0.06666666666666667,
+            "accuracy": 0.2,
+            "ordinal_mae": 1.4
+          },
+          "majority_covered": {
+            "macro_f1": 0.06666666666666667,
+            "accuracy": 0.2,
+            "ordinal_mae": 1.4
+          }
+        },
+        "C": {
+          "n_total": 5,
+          "n_covered": 5,
+          "abstentions": 0,
+          "predicted_counts": [
+            0,
+            2,
+            2,
+            1,
+            0
+          ],
+          "label_counts_all": [
+            0,
+            1,
+            2,
+            1,
+            1
+          ],
+          "label_counts_covered": [
+            0,
+            1,
+            2,
+            1,
+            1
+          ],
+          "spearman": {
+            "n": 5,
+            "rho": 0.5407380624825254,
+            "p_positive": 0.16683316683316685,
+            "p_two_sided": 0.33466533466533466,
+            "permutations": 1000
+          },
+          "original": {
+            "macro_f1": 0.3333333333333333,
+            "accuracy": 0.6,
+            "ordinal_mae": 0.6
+          },
+          "accuracy_all": 0.6,
+          "rank_calibrated": {
+            "macro_f1": 0.3333333333333333,
+            "accuracy": 0.4,
+            "ordinal_mae": 0.8
+          },
+          "calibrated_counts": [
+            0,
+            2,
+            0,
+            2,
+            1
+          ],
+          "train_majority_level": 4,
+          "majority_all": {
+            "macro_f1": 0.06666666666666667,
+            "accuracy": 0.2,
+            "ordinal_mae": 1.6
+          },
+          "majority_covered": {
+            "macro_f1": 0.06666666666666667,
+            "accuracy": 0.2,
+            "ordinal_mae": 1.6
+          }
+        },
+        "E": {
+          "n_total": 5,
+          "n_covered": 5,
+          "abstentions": 0,
+          "predicted_counts": [
+            1,
+            3,
+            1,
+            0,
+            0
+          ],
+          "label_counts_all": [
+            0,
+            0,
+            0,
+            5,
+            0
+          ],
+          "label_counts_covered": [
+            0,
+            0,
+            0,
+            5,
+            0
+          ],
+          "spearman": {
+            "n": 5,
+            "rho": 0.0,
+            "p_positive": 0.6953046953046953,
+            "p_two_sided": 1.0,
+            "permutations": 1000
+          },
+          "original": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 2.0
+          },
+          "accuracy_all": 0.0,
+          "rank_calibrated": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 1.4
+          },
+          "calibrated_counts": [
+            1,
+            0,
+            3,
+            0,
+            1
+          ],
+          "train_majority_level": 3,
+          "majority_all": {
+            "macro_f1": 0.2,
+            "accuracy": 1.0,
+            "ordinal_mae": 0.0
+          },
+          "majority_covered": {
+            "macro_f1": 0.2,
+            "accuracy": 1.0,
+            "ordinal_mae": 0.0
+          }
+        },
+        "A": {
+          "n_total": 5,
+          "n_covered": 5,
+          "abstentions": 0,
+          "predicted_counts": [
+            0,
+            1,
+            3,
+            1,
+            0
+          ],
+          "label_counts_all": [
+            2,
+            0,
+            1,
+            2,
+            0
+          ],
+          "label_counts_covered": [
+            2,
+            0,
+            1,
+            2,
+            0
+          ],
+          "spearman": {
+            "n": 5,
+            "rho": 0.22941573039251456,
+            "p_positive": 0.43756243756243757,
+            "p_two_sided": 0.8791208791208791,
+            "permutations": 1000
+          },
+          "original": {
+            "macro_f1": 0.1,
+            "accuracy": 0.2,
+            "ordinal_mae": 1.2
+          },
+          "accuracy_all": 0.2,
+          "rank_calibrated": {
+            "macro_f1": 0.2333333333333333,
+            "accuracy": 0.4,
+            "ordinal_mae": 1.2
+          },
+          "calibrated_counts": [
+            1,
+            0,
+            3,
+            0,
+            1
+          ],
+          "train_majority_level": 3,
+          "majority_all": {
+            "macro_f1": 0.11428571428571428,
+            "accuracy": 0.4,
+            "ordinal_mae": 1.4
+          },
+          "majority_covered": {
+            "macro_f1": 0.11428571428571428,
+            "accuracy": 0.4,
+            "ordinal_mae": 1.4
+          }
+        },
+        "N": {
+          "n_total": 5,
+          "n_covered": 5,
+          "abstentions": 0,
+          "predicted_counts": [
+            0,
+            4,
+            1,
+            0,
+            0
+          ],
+          "label_counts_all": [
+            0,
+            0,
+            1,
+            3,
+            1
+          ],
+          "label_counts_covered": [
+            0,
+            0,
+            1,
+            3,
+            1
+          ],
+          "spearman": {
+            "n": 5,
+            "rho": 0.0,
+            "p_positive": 0.8071928071928072,
+            "p_two_sided": 1.0,
+            "permutations": 1000
+          },
+          "original": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 1.8
+          },
+          "accuracy_all": 0.0,
+          "rank_calibrated": {
+            "macro_f1": 0.08,
+            "accuracy": 0.2,
+            "ordinal_mae": 1.0
+          },
+          "calibrated_counts": [
+            0,
+            0,
+            4,
+            0,
+            1
+          ],
+          "train_majority_level": 1,
+          "majority_all": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 2.0
+          },
+          "majority_covered": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 2.0
+          }
+        }
+      },
+      "pooled_raw_spearman": {
+        "n": 25,
+        "rho": 0.2624562242600662,
+        "p_positive": 0.08091908091908091,
+        "p_two_sided": 0.17882117882117882,
+        "permutations": 1000
+      },
+      "original": {
+        "macro_f1": 0.10666666666666666,
+        "accuracy": 0.16,
+        "ordinal_mae": 1.4
+      },
+      "rank_calibrated": {
+        "macro_f1": 0.42857142857142855,
+        "accuracy": 0.36,
+        "ordinal_mae": 0.92
+      },
+      "majority_same_covered_pairs": {
+        "macro_f1": 0.1888111888111888,
+        "accuracy": 0.36,
+        "ordinal_mae": 1.28
+      }
+    },
+    "teacher_pilot5_grounded_20261127": {
+      "n_trajectories": 5,
+      "n_people": 5,
+      "traits": {
+        "O": {
+          "n_total": 5,
+          "n_covered": 5,
+          "abstentions": 0,
+          "predicted_counts": [
+            0,
+            2,
+            3,
+            0,
+            0
+          ],
+          "label_counts_all": [
+            0,
+            0,
+            3,
+            1,
+            1
+          ],
+          "label_counts_covered": [
+            0,
+            0,
+            3,
+            1,
+            1
+          ],
+          "spearman": {
+            "n": 5,
+            "rho": 0.8885233029378508,
+            "p_positive": 0.0959040959040959,
+            "p_two_sided": 0.1958041958041958,
+            "permutations": 1000
+          },
+          "original": {
+            "macro_f1": 0.06666666666666667,
+            "accuracy": 0.2,
+            "ordinal_mae": 1.0
+          },
+          "accuracy_all": 0.2,
+          "rank_calibrated": {
+            "macro_f1": 0.1,
+            "accuracy": 0.2,
+            "ordinal_mae": 0.8
+          },
+          "calibrated_counts": [
+            0,
+            2,
+            0,
+            3,
+            0
+          ],
+          "train_majority_level": 4,
+          "majority_all": {
+            "macro_f1": 0.06666666666666667,
+            "accuracy": 0.2,
+            "ordinal_mae": 1.4
+          },
+          "majority_covered": {
+            "macro_f1": 0.06666666666666667,
+            "accuracy": 0.2,
+            "ordinal_mae": 1.4
+          }
+        },
+        "C": {
+          "n_total": 5,
+          "n_covered": 5,
+          "abstentions": 0,
+          "predicted_counts": [
+            0,
+            0,
+            5,
+            0,
+            0
+          ],
+          "label_counts_all": [
+            0,
+            1,
+            2,
+            1,
+            1
+          ],
+          "label_counts_covered": [
+            0,
+            1,
+            2,
+            1,
+            1
+          ],
+          "spearman": {
+            "n": 5,
+            "rho": null,
+            "p_positive": null,
+            "p_two_sided": null,
+            "permutations": 1000,
+            "reason": "constant input or fewer than two observations"
+          },
+          "original": {
+            "macro_f1": 0.11428571428571428,
+            "accuracy": 0.4,
+            "ordinal_mae": 0.8
+          },
+          "accuracy_all": 0.4,
+          "rank_calibrated": {
+            "macro_f1": 0.11428571428571428,
+            "accuracy": 0.4,
+            "ordinal_mae": 0.8
+          },
+          "calibrated_counts": [
+            0,
+            0,
+            5,
+            0,
+            0
+          ],
+          "train_majority_level": 4,
+          "majority_all": {
+            "macro_f1": 0.06666666666666667,
+            "accuracy": 0.2,
+            "ordinal_mae": 1.6
+          },
+          "majority_covered": {
+            "macro_f1": 0.06666666666666667,
+            "accuracy": 0.2,
+            "ordinal_mae": 1.6
+          }
+        },
+        "E": {
+          "n_total": 5,
+          "n_covered": 5,
+          "abstentions": 0,
+          "predicted_counts": [
+            0,
+            2,
+            3,
+            0,
+            0
+          ],
+          "label_counts_all": [
+            0,
+            0,
+            0,
+            5,
+            0
+          ],
+          "label_counts_covered": [
+            0,
+            0,
+            0,
+            5,
+            0
+          ],
+          "spearman": {
+            "n": 5,
+            "rho": 0.16666666394501145,
+            "p_positive": 0.7212787212787213,
+            "p_two_sided": 1.0,
+            "permutations": 1000
+          },
+          "original": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 1.4
+          },
+          "accuracy_all": 0.0,
+          "rank_calibrated": {
+            "macro_f1": 0.15,
+            "accuracy": 0.6,
+            "ordinal_mae": 0.8
+          },
+          "calibrated_counts": [
+            0,
+            2,
+            0,
+            3,
+            0
+          ],
+          "train_majority_level": 3,
+          "majority_all": {
+            "macro_f1": 0.2,
+            "accuracy": 1.0,
+            "ordinal_mae": 0.0
+          },
+          "majority_covered": {
+            "macro_f1": 0.2,
+            "accuracy": 1.0,
+            "ordinal_mae": 0.0
+          }
+        },
+        "A": {
+          "n_total": 5,
+          "n_covered": 5,
+          "abstentions": 0,
+          "predicted_counts": [
+            0,
+            0,
+            4,
+            1,
+            0
+          ],
+          "label_counts_all": [
+            2,
+            0,
+            1,
+            2,
+            0
+          ],
+          "label_counts_covered": [
+            2,
+            0,
+            1,
+            2,
+            0
+          ],
+          "spearman": {
+            "n": 5,
+            "rho": 0.5441071781940687,
+            "p_positive": 0.35664335664335667,
+            "p_two_sided": 0.5494505494505495,
+            "permutations": 1000
+          },
+          "original": {
+            "macro_f1": 0.21333333333333332,
+            "accuracy": 0.4,
+            "ordinal_mae": 1.0
+          },
+          "accuracy_all": 0.4,
+          "rank_calibrated": {
+            "macro_f1": 0.08,
+            "accuracy": 0.2,
+            "ordinal_mae": 1.2
+          },
+          "calibrated_counts": [
+            0,
+            0,
+            4,
+            0,
+            1
+          ],
+          "train_majority_level": 3,
+          "majority_all": {
+            "macro_f1": 0.11428571428571428,
+            "accuracy": 0.4,
+            "ordinal_mae": 1.4
+          },
+          "majority_covered": {
+            "macro_f1": 0.11428571428571428,
+            "accuracy": 0.4,
+            "ordinal_mae": 1.4
+          }
+        },
+        "N": {
+          "n_total": 5,
+          "n_covered": 5,
+          "abstentions": 0,
+          "predicted_counts": [
+            0,
+            5,
+            0,
+            0,
+            0
+          ],
+          "label_counts_all": [
+            0,
+            0,
+            1,
+            3,
+            1
+          ],
+          "label_counts_covered": [
+            0,
+            0,
+            1,
+            3,
+            1
+          ],
+          "spearman": {
+            "n": 5,
+            "rho": null,
+            "p_positive": null,
+            "p_two_sided": null,
+            "permutations": 1000,
+            "reason": "constant input or fewer than two observations"
+          },
+          "original": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 2.0
+          },
+          "accuracy_all": 0.0,
+          "rank_calibrated": {
+            "macro_f1": 0.06666666666666667,
+            "accuracy": 0.2,
+            "ordinal_mae": 1.0
+          },
+          "calibrated_counts": [
+            0,
+            0,
+            5,
+            0,
+            0
+          ],
+          "train_majority_level": 1,
+          "majority_all": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 2.0
+          },
+          "majority_covered": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 2.0
+          }
+        }
+      },
+      "pooled_raw_spearman": {
+        "n": 25,
+        "rho": 0.4109251496748004,
+        "p_positive": 0.027972027972027972,
+        "p_two_sided": 0.057942057942057944,
+        "permutations": 1000
+      },
+      "original": {
+        "macro_f1": 0.1034965034965035,
+        "accuracy": 0.2,
+        "ordinal_mae": 1.24
+      },
+      "rank_calibrated": {
+        "macro_f1": 0.16507936507936508,
+        "accuracy": 0.32,
+        "ordinal_mae": 0.92
+      },
+      "majority_same_covered_pairs": {
+        "macro_f1": 0.1888111888111888,
+        "accuracy": 0.36,
+        "ordinal_mae": 1.28
+      }
+    },
+    "teacher_seed_c56ec92_20261127": {
+      "n_trajectories": 6,
+      "n_people": 3,
+      "traits": {
+        "O": {
+          "n_total": 6,
+          "n_covered": 6,
+          "abstentions": 0,
+          "predicted_counts": [
+            0,
+            2,
+            3,
+            1,
+            0
+          ],
+          "label_counts_all": [
+            0,
+            0,
+            4,
+            0,
+            2
+          ],
+          "label_counts_covered": [
+            0,
+            0,
+            4,
+            0,
+            2
+          ],
+          "spearman": {
+            "n": 6,
+            "rho": 0.645497216332573,
+            "p_positive": 0.07192807192807193,
+            "p_two_sided": 0.14385614385614387,
+            "permutations": 1000
+          },
+          "original": {
+            "macro_f1": 0.05714285714285714,
+            "accuracy": 0.16666666666666666,
+            "ordinal_mae": 1.1666666666666667
+          },
+          "accuracy_all": 0.16666666666666666,
+          "rank_calibrated": {
+            "macro_f1": 0.05714285714285714,
+            "accuracy": 0.16666666666666666,
+            "ordinal_mae": 1.6666666666666667
+          },
+          "calibrated_counts": [
+            2,
+            0,
+            3,
+            0,
+            1
+          ],
+          "train_majority_level": 4,
+          "majority_all": {
+            "macro_f1": 0.1,
+            "accuracy": 0.3333333333333333,
+            "ordinal_mae": 1.3333333333333333
+          },
+          "majority_covered": {
+            "macro_f1": 0.1,
+            "accuracy": 0.3333333333333333,
+            "ordinal_mae": 1.3333333333333333
+          }
+        },
+        "C": {
+          "n_total": 6,
+          "n_covered": 6,
+          "abstentions": 0,
+          "predicted_counts": [
+            0,
+            0,
+            6,
+            0,
+            0
+          ],
+          "label_counts_all": [
+            0,
+            0,
+            2,
+            4,
+            0
+          ],
+          "label_counts_covered": [
+            0,
+            0,
+            2,
+            4,
+            0
+          ],
+          "spearman": {
+            "n": 6,
+            "rho": null,
+            "p_positive": null,
+            "p_two_sided": null,
+            "permutations": 1000,
+            "reason": "constant input or fewer than two observations"
+          },
+          "original": {
+            "macro_f1": 0.1,
+            "accuracy": 0.3333333333333333,
+            "ordinal_mae": 0.6666666666666666
+          },
+          "accuracy_all": 0.3333333333333333,
+          "rank_calibrated": {
+            "macro_f1": 0.1,
+            "accuracy": 0.3333333333333333,
+            "ordinal_mae": 0.6666666666666666
+          },
+          "calibrated_counts": [
+            0,
+            0,
+            6,
+            0,
+            0
+          ],
+          "train_majority_level": 4,
+          "majority_all": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 1.3333333333333333
+          },
+          "majority_covered": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 1.3333333333333333
+          }
+        },
+        "E": {
+          "n_total": 6,
+          "n_covered": 6,
+          "abstentions": 0,
+          "predicted_counts": [
+            0,
+            3,
+            3,
+            0,
+            0
+          ],
+          "label_counts_all": [
+            2,
+            0,
+            0,
+            4,
+            0
+          ],
+          "label_counts_covered": [
+            2,
+            0,
+            0,
+            4,
+            0
+          ],
+          "spearman": {
+            "n": 6,
+            "rho": 0.8164965704844157,
+            "p_positive": 0.11988011988011989,
+            "p_two_sided": 0.2177822177822178,
+            "permutations": 1000
+          },
+          "original": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 1.1666666666666667
+          },
+          "accuracy_all": 0.0,
+          "rank_calibrated": {
+            "macro_f1": 0.17142857142857143,
+            "accuracy": 0.5,
+            "ordinal_mae": 0.6666666666666666
+          },
+          "calibrated_counts": [
+            0,
+            3,
+            0,
+            3,
+            0
+          ],
+          "train_majority_level": 3,
+          "majority_all": {
+            "macro_f1": 0.16,
+            "accuracy": 0.6666666666666666,
+            "ordinal_mae": 1.0
+          },
+          "majority_covered": {
+            "macro_f1": 0.16,
+            "accuracy": 0.6666666666666666,
+            "ordinal_mae": 1.0
+          }
+        },
+        "A": {
+          "n_total": 6,
+          "n_covered": 6,
+          "abstentions": 0,
+          "predicted_counts": [
+            0,
+            0,
+            4,
+            2,
+            0
+          ],
+          "label_counts_all": [
+            0,
+            0,
+            2,
+            4,
+            0
+          ],
+          "label_counts_covered": [
+            0,
+            0,
+            2,
+            4,
+            0
+          ],
+          "spearman": {
+            "n": 6,
+            "rho": -0.9999999858578641,
+            "p_positive": 0.9280719280719281,
+            "p_two_sided": 0.07292707292707293,
+            "permutations": 1000
+          },
+          "original": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 1.0
+          },
+          "accuracy_all": 0.0,
+          "rank_calibrated": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 2.0
+          },
+          "calibrated_counts": [
+            0,
+            4,
+            0,
+            0,
+            2
+          ],
+          "train_majority_level": 3,
+          "majority_all": {
+            "macro_f1": 0.16,
+            "accuracy": 0.6666666666666666,
+            "ordinal_mae": 0.3333333333333333
+          },
+          "majority_covered": {
+            "macro_f1": 0.16,
+            "accuracy": 0.6666666666666666,
+            "ordinal_mae": 0.3333333333333333
+          }
+        },
+        "N": {
+          "n_total": 6,
+          "n_covered": 6,
+          "abstentions": 0,
+          "predicted_counts": [
+            0,
+            6,
+            0,
+            0,
+            0
+          ],
+          "label_counts_all": [
+            0,
+            0,
+            2,
+            2,
+            2
+          ],
+          "label_counts_covered": [
+            0,
+            0,
+            2,
+            2,
+            2
+          ],
+          "spearman": {
+            "n": 6,
+            "rho": null,
+            "p_positive": null,
+            "p_two_sided": null,
+            "permutations": 1000,
+            "reason": "constant input or fewer than two observations"
+          },
+          "original": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 2.0
+          },
+          "accuracy_all": 0.0,
+          "rank_calibrated": {
+            "macro_f1": 0.1,
+            "accuracy": 0.3333333333333333,
+            "ordinal_mae": 1.0
+          },
+          "calibrated_counts": [
+            0,
+            0,
+            6,
+            0,
+            0
+          ],
+          "train_majority_level": 1,
+          "majority_all": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 2.0
+          },
+          "majority_covered": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 2.0
+          }
+        }
+      },
+      "pooled_raw_spearman": {
+        "n": 30,
+        "rho": 0.5265029512902201,
+        "p_positive": 0.002997002997002997,
+        "p_two_sided": 0.004995004995004995,
+        "permutations": 1000
+      },
+      "original": {
+        "macro_f1": 0.046153846153846156,
+        "accuracy": 0.1,
+        "ordinal_mae": 1.2
+      },
+      "rank_calibrated": {
+        "macro_f1": 0.15058823529411763,
+        "accuracy": 0.26666666666666666,
+        "ordinal_mae": 1.2
+      },
+      "majority_same_covered_pairs": {
+        "macro_f1": 0.17307692307692307,
+        "accuracy": 0.3333333333333333,
+        "ordinal_mae": 1.2
+      }
+    }
+  },
+  "train_person_cluster_permutation": {
+    "O": {
+      "rho": 0.6206645683346348,
+      "p_positive": 0.052947052947052944,
+      "p_two_sided": 0.0999000999000999,
+      "n_people": 6,
+      "permutations": 1000,
+      "method": "shuffle entire raw-label vectors across people, retaining all repetitions and cross-trait dependence"
+    },
+    "C": {
+      "rho": 0.4472135935757313,
+      "p_positive": 0.04395604395604396,
+      "p_two_sided": 0.11488511488511488,
+      "n_people": 6,
+      "permutations": 1000,
+      "method": "shuffle entire raw-label vectors across people, retaining all repetitions and cross-trait dependence"
+    },
+    "E": {
+      "rho": 0.34009282279109504,
+      "p_positive": 0.19080919080919082,
+      "p_two_sided": 0.3676323676323676,
+      "n_people": 6,
+      "permutations": 1000,
+      "method": "shuffle entire raw-label vectors across people, retaining all repetitions and cross-trait dependence"
+    },
+    "A": {
+      "rho": 0.13834255717965088,
+      "p_positive": 0.34465534465534464,
+      "p_two_sided": 0.6973026973026973,
+      "n_people": 6,
+      "permutations": 1000,
+      "method": "shuffle entire raw-label vectors across people, retaining all repetitions and cross-trait dependence"
+    },
+    "N": {
+      "rho": 0.0,
+      "p_positive": 1.0,
+      "p_two_sided": 1.0,
+      "n_people": 6,
+      "permutations": 1000,
+      "method": "shuffle entire raw-label vectors across people, retaining all repetitions and cross-trait dependence"
+    },
+    "pooled_raw": {
+      "rho": 0.436855107020794,
+      "p_positive": 0.003996003996003996,
+      "p_two_sided": 0.003996003996003996,
+      "n_people": 6,
+      "permutations": 1000,
+      "method": "shuffle entire raw-label vectors across people, retaining all repetitions and cross-trait dependence"
+    }
+  },
+  "validation": {
+    "command": "python -m unittest discover -s tests",
+    "tested_commit": "4cdc434aadee80cf62732f2c9238ac8be7b79f26",
+    "tests_run": 195,
+    "skipped": 9,
+    "result": "OK",
+    "log_sha256": "543f5351f39179fa856bc15b6cb6035dbd7faec29ff1e60e0486ee93d8c49189",
+    "amp_code_changes": false
+  },
+  "evaluation_command_template": "python -m amp.cli evaluate --trajectories <temporary_merged.json> --manifest <main_root>/runs/data/train.jsonl --bins <main_root>/runs/data/label_bins.json --train-manifest <main_root>/runs/data/train.jsonl --output <temporary_evaluate.json>; result embedded in report; Dev uses dev.jsonl",
+  "supplementary_dev": {
+    "IELTS": {
+      "n_trajectories": 1,
+      "n_people": 1,
+      "traits": {
+        "O": {
+          "n_total": 1,
+          "n_covered": 1,
+          "abstentions": 0,
+          "predicted_counts": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "label_counts_all": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "label_counts_covered": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "spearman": {
+            "n": 1,
+            "rho": null,
+            "p_positive": null,
+            "p_two_sided": null,
+            "permutations": 1000,
+            "reason": "constant input or fewer than two observations"
+          },
+          "original": {
+            "macro_f1": 0.2,
+            "accuracy": 1.0,
+            "ordinal_mae": 0.0
+          },
+          "accuracy_all": 1.0,
+          "rank_calibrated": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 1.0
+          },
+          "calibrated_counts": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "train_majority_level": 4,
+          "majority_all": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 3.0
+          },
+          "majority_covered": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 3.0
+          }
+        },
+        "C": {
+          "n_total": 1,
+          "n_covered": 1,
+          "abstentions": 0,
+          "predicted_counts": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "label_counts_all": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "label_counts_covered": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "spearman": {
+            "n": 1,
+            "rho": null,
+            "p_positive": null,
+            "p_two_sided": null,
+            "permutations": 1000,
+            "reason": "constant input or fewer than two observations"
+          },
+          "original": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 1.0
+          },
+          "accuracy_all": 0.0,
+          "rank_calibrated": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 2.0
+          },
+          "calibrated_counts": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "train_majority_level": 4,
+          "majority_all": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 4.0
+          },
+          "majority_covered": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 4.0
+          }
+        },
+        "E": {
+          "n_total": 1,
+          "n_covered": 1,
+          "abstentions": 0,
+          "predicted_counts": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "label_counts_all": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "label_counts_covered": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "spearman": {
+            "n": 1,
+            "rho": null,
+            "p_positive": null,
+            "p_two_sided": null,
+            "permutations": 1000,
+            "reason": "constant input or fewer than two observations"
+          },
+          "original": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 1.0
+          },
+          "accuracy_all": 0.0,
+          "rank_calibrated": {
+            "macro_f1": 0.2,
+            "accuracy": 1.0,
+            "ordinal_mae": 0.0
+          },
+          "calibrated_counts": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "train_majority_level": 3,
+          "majority_all": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 1.0
+          },
+          "majority_covered": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 1.0
+          }
+        },
+        "A": {
+          "n_total": 1,
+          "n_covered": 1,
+          "abstentions": 0,
+          "predicted_counts": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "label_counts_all": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "label_counts_covered": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "spearman": {
+            "n": 1,
+            "rho": null,
+            "p_positive": null,
+            "p_two_sided": null,
+            "permutations": 1000,
+            "reason": "constant input or fewer than two observations"
+          },
+          "original": {
+            "macro_f1": 0.2,
+            "accuracy": 1.0,
+            "ordinal_mae": 0.0
+          },
+          "accuracy_all": 1.0,
+          "rank_calibrated": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 1.0
+          },
+          "calibrated_counts": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "train_majority_level": 3,
+          "majority_all": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 2.0
+          },
+          "majority_covered": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 2.0
+          }
+        },
+        "N": {
+          "n_total": 1,
+          "n_covered": 1,
+          "abstentions": 0,
+          "predicted_counts": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "label_counts_all": [
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "label_counts_covered": [
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "spearman": {
+            "n": 1,
+            "rho": null,
+            "p_positive": null,
+            "p_two_sided": null,
+            "permutations": 1000,
+            "reason": "constant input or fewer than two observations"
+          },
+          "original": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 4.0
+          },
+          "accuracy_all": 0.0,
+          "rank_calibrated": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 2.0
+          },
+          "calibrated_counts": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "train_majority_level": 1,
+          "majority_all": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 3.0
+          },
+          "majority_covered": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 3.0
+          }
+        }
+      },
+      "pooled_raw_spearman": {
+        "n": 5,
+        "rho": 0.7071067691154799,
+        "p_positive": 0.1798201798201798,
+        "p_two_sided": 0.3806193806193806,
+        "permutations": 1000
+      },
+      "original": {
+        "macro_f1": 0.13333333333333333,
+        "accuracy": 0.4,
+        "ordinal_mae": 1.2
+      },
+      "rank_calibrated": {
+        "macro_f1": 0.06666666666666667,
+        "accuracy": 0.2,
+        "ordinal_mae": 1.2
+      },
+      "majority_same_covered_pairs": {
+        "macro_f1": 0.0,
+        "accuracy": 0.0,
+        "ordinal_mae": 2.6
+      }
+    },
+    "RecruitView": {
+      "n_trajectories": 3,
+      "n_people": 1,
+      "traits": {
+        "O": {
+          "n_total": 3,
+          "n_covered": 1,
+          "abstentions": 2,
+          "predicted_counts": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "label_counts_all": [
+            0,
+            3,
+            0,
+            0,
+            0
+          ],
+          "label_counts_covered": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "spearman": {
+            "n": 1,
+            "rho": null,
+            "p_positive": null,
+            "p_two_sided": null,
+            "permutations": 1000,
+            "reason": "constant input or fewer than two observations"
+          },
+          "original": {
+            "macro_f1": 0.2,
+            "accuracy": 1.0,
+            "ordinal_mae": 0.0
+          },
+          "accuracy_all": 0.3333333333333333,
+          "rank_calibrated": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 1.0
+          },
+          "calibrated_counts": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "train_majority_level": 4,
+          "majority_all": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 3.0
+          },
+          "majority_covered": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 3.0
+          }
+        },
+        "C": {
+          "n_total": 3,
+          "n_covered": 3,
+          "abstentions": 0,
+          "predicted_counts": [
+            0,
+            0,
+            1,
+            2,
+            0
+          ],
+          "label_counts_all": [
+            0,
+            0,
+            0,
+            0,
+            3
+          ],
+          "label_counts_covered": [
+            0,
+            0,
+            0,
+            0,
+            3
+          ],
+          "spearman": {
+            "n": 3,
+            "rho": null,
+            "p_positive": null,
+            "p_two_sided": null,
+            "permutations": 1000,
+            "reason": "constant input or fewer than two observations"
+          },
+          "original": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 1.3333333333333333
+          },
+          "accuracy_all": 0.0,
+          "rank_calibrated": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 2.0
+          },
+          "calibrated_counts": [
+            1,
+            0,
+            0,
+            2,
+            0
+          ],
+          "train_majority_level": 4,
+          "majority_all": {
+            "macro_f1": 0.2,
+            "accuracy": 1.0,
+            "ordinal_mae": 0.0
+          },
+          "majority_covered": {
+            "macro_f1": 0.2,
+            "accuracy": 1.0,
+            "ordinal_mae": 0.0
+          }
+        },
+        "E": {
+          "n_total": 3,
+          "n_covered": 1,
+          "abstentions": 2,
+          "predicted_counts": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "label_counts_all": [
+            0,
+            0,
+            3,
+            0,
+            0
+          ],
+          "label_counts_covered": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "spearman": {
+            "n": 1,
+            "rho": null,
+            "p_positive": null,
+            "p_two_sided": null,
+            "permutations": 1000,
+            "reason": "constant input or fewer than two observations"
+          },
+          "original": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 1.0
+          },
+          "accuracy_all": 0.0,
+          "rank_calibrated": {
+            "macro_f1": 0.2,
+            "accuracy": 1.0,
+            "ordinal_mae": 0.0
+          },
+          "calibrated_counts": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "train_majority_level": 4,
+          "majority_all": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 2.0
+          },
+          "majority_covered": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 2.0
+          }
+        },
+        "A": {
+          "n_total": 3,
+          "n_covered": 2,
+          "abstentions": 1,
+          "predicted_counts": [
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          "label_counts_all": [
+            0,
+            0,
+            0,
+            3,
+            0
+          ],
+          "label_counts_covered": [
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "spearman": {
+            "n": 2,
+            "rho": null,
+            "p_positive": null,
+            "p_two_sided": null,
+            "permutations": 1000,
+            "reason": "constant input or fewer than two observations"
+          },
+          "original": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 1.0
+          },
+          "accuracy_all": 0.0,
+          "rank_calibrated": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 1.0
+          },
+          "calibrated_counts": [
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          "train_majority_level": 4,
+          "majority_all": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 1.0
+          },
+          "majority_covered": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 1.0
+          }
+        },
+        "N": {
+          "n_total": 3,
+          "n_covered": 2,
+          "abstentions": 1,
+          "predicted_counts": [
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          "label_counts_all": [
+            0,
+            0,
+            0,
+            0,
+            3
+          ],
+          "label_counts_covered": [
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "spearman": {
+            "n": 2,
+            "rho": null,
+            "p_positive": null,
+            "p_two_sided": null,
+            "permutations": 1000,
+            "reason": "constant input or fewer than two observations"
+          },
+          "original": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 3.0
+          },
+          "accuracy_all": 0.0,
+          "rank_calibrated": {
+            "macro_f1": 0.0,
+            "accuracy": 0.0,
+            "ordinal_mae": 2.0
+          },
+          "calibrated_counts": [
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          "train_majority_level": 4,
+          "majority_all": {
+            "macro_f1": 0.2,
+            "accuracy": 1.0,
+            "ordinal_mae": 0.0
+          },
+          "majority_covered": {
+            "macro_f1": 0.2,
+            "accuracy": 1.0,
+            "ordinal_mae": 0.0
+          }
+        }
+      },
+      "pooled_raw_spearman": {
+        "n": 9,
+        "rho": 0.6580901911887609,
+        "p_positive": 0.028971028971028972,
+        "p_two_sided": 0.06793206793206794,
+        "permutations": 1000
+      },
+      "original": {
+        "macro_f1": 0.08,
+        "accuracy": 0.1111111111111111,
+        "ordinal_mae": 1.4444444444444444
+      },
+      "rank_calibrated": {
+        "macro_f1": 0.05714285714285714,
+        "accuracy": 0.1111111111111111,
+        "ordinal_mae": 1.4444444444444444
+      },
+      "majority_same_covered_pairs": {
+        "macro_f1": 0.14285714285714285,
+        "accuracy": 0.5555555555555556,
+        "ordinal_mae": 0.7777777777777778
+      }
+    }
+  },
+  "train_all_amp_evaluate": {
+    "IELTS": {
+      "n": 20,
+      "traits": {
+        "O": {
+          "prediction_coverage": 1.0,
+          "abstentions": 0,
+          "accuracy_all": 0.15,
+          "macro_f1": 0.05454545454545454,
+          "accuracy": 0.15,
+          "ordinal_mae": 1.1,
+          "raw_mae": 6.08208527583526,
+          "spearman": 0.6206645683346348
+        },
+        "C": {
+          "prediction_coverage": 1.0,
+          "abstentions": 0,
+          "accuracy_all": 0.4,
+          "macro_f1": 0.2017391304347826,
+          "accuracy": 0.4,
+          "ordinal_mae": 0.7,
+          "raw_mae": 4.2737947089947115,
+          "spearman": 0.4472135935757313
+        },
+        "E": {
+          "prediction_coverage": 1.0,
+          "abstentions": 0,
+          "accuracy_all": 0.0,
+          "macro_f1": 0.0,
+          "accuracy": 0.0,
+          "ordinal_mae": 1.55,
+          "raw_mae": 9.014145925925936,
+          "spearman": 0.34009282279109504
+        },
+        "A": {
+          "prediction_coverage": 1.0,
+          "abstentions": 0,
+          "accuracy_all": 0.2,
+          "macro_f1": 0.09777777777777777,
+          "accuracy": 0.2,
+          "ordinal_mae": 1.1,
+          "raw_mae": 4.949007770270266,
+          "spearman": 0.13834255717965088
+        },
+        "N": {
+          "prediction_coverage": 1.0,
+          "abstentions": 0,
+          "accuracy_all": 0.0,
+          "macro_f1": 0.0,
+          "accuracy": 0.0,
+          "ordinal_mae": 1.95,
+          "raw_mae": 13.34647121212121,
+          "spearman": 0.0
+        }
+      },
+      "macro_f1": 0.07081247255160299,
+      "mean_prediction_coverage": 1.0,
+      "classification_scope": "conditional on non-abstained predictions; accuracy_all counts abstentions as incorrect",
+      "active_seconds": 377.2882011,
+      "mean_observations": 26.65,
+      "structural_citation_validity": 1.0,
+      "automatic_faithfulness": null,
+      "automatic_citation_correctness": null,
+      "judge_coverage": 0.0,
+      "continuous_prediction": "train-bin centroid of final class",
+      "mean_accuracy_all": 0.15,
+      "majority_baseline": {
+        "train_samples": 152,
+        "traits": {
+          "O": {
+            "level": "very_high",
+            "accuracy": 0.2,
+            "ordinal_mae": 1.45
+          },
+          "C": {
+            "level": "very_high",
+            "accuracy": 0.15,
+            "ordinal_mae": 1.5
+          },
+          "E": {
+            "level": "high",
+            "accuracy": 0.9,
+            "ordinal_mae": 0.3
+          },
+          "A": {
+            "level": "high",
+            "accuracy": 0.5,
+            "ordinal_mae": 1.1
+          },
+          "N": {
+            "level": "low",
+            "accuracy": 0.0,
+            "ordinal_mae": 1.95
+          }
+        },
+        "mean_accuracy": 0.35,
+        "mean_ordinal_mae": 1.26
+      }
+    }
+  },
+  "train_one_per_person_amp_evaluate": {
+    "IELTS": {
+      "n": 6,
+      "traits": {
+        "O": {
+          "prediction_coverage": 1.0,
+          "abstentions": 0,
+          "accuracy_all": 0.16666666666666666,
+          "macro_f1": 0.05714285714285714,
+          "accuracy": 0.16666666666666666,
+          "ordinal_mae": 1.0,
+          "raw_mae": 4.602085599585571,
+          "spearman": 0.6356417183105132
+        },
+        "C": {
+          "prediction_coverage": 1.0,
+          "abstentions": 0,
+          "accuracy_all": 0.3333333333333333,
+          "macro_f1": 0.1,
+          "accuracy": 0.3333333333333333,
+          "ordinal_mae": 0.8333333333333334,
+          "raw_mae": 4.958333333333335,
+          "spearman": null
+        },
+        "E": {
+          "prediction_coverage": 1.0,
+          "abstentions": 0,
+          "accuracy_all": 0.0,
+          "macro_f1": 0.0,
+          "accuracy": 0.0,
+          "ordinal_mae": 1.3333333333333333,
+          "raw_mae": 8.330075000000006,
+          "spearman": 0.42163701587820385
+        },
+        "A": {
+          "prediction_coverage": 1.0,
+          "abstentions": 0,
+          "accuracy_all": 0.16666666666666666,
+          "macro_f1": 0.08,
+          "accuracy": 0.16666666666666666,
+          "ordinal_mae": 1.1666666666666667,
+          "raw_mae": 5.286249999999996,
+          "spearman": 0.2199706696080086
+        },
+        "N": {
+          "prediction_coverage": 1.0,
+          "abstentions": 0,
+          "accuracy_all": 0.0,
+          "macro_f1": 0.0,
+          "accuracy": 0.0,
+          "ordinal_mae": 1.8333333333333333,
+          "raw_mae": 12.008166666666673,
+          "spearman": null
+        }
+      },
+      "macro_f1": 0.04742857142857143,
+      "mean_prediction_coverage": 1.0,
+      "classification_scope": "conditional on non-abstained predictions; accuracy_all counts abstentions as incorrect",
+      "active_seconds": 232.564167,
+      "mean_observations": 19.666666666666668,
+      "structural_citation_validity": 1.0,
+      "automatic_faithfulness": null,
+      "automatic_citation_correctness": null,
+      "judge_coverage": 0.0,
+      "continuous_prediction": "train-bin centroid of final class",
+      "mean_accuracy_all": 0.13333333333333333,
+      "majority_baseline": {
+        "train_samples": 152,
+        "traits": {
+          "O": {
+            "level": "very_high",
+            "accuracy": 0.16666666666666666,
+            "ordinal_mae": 1.5
+          },
+          "C": {
+            "level": "very_high",
+            "accuracy": 0.16666666666666666,
+            "ordinal_mae": 1.5
+          },
+          "E": {
+            "level": "high",
+            "accuracy": 0.8333333333333334,
+            "ordinal_mae": 0.5
+          },
+          "A": {
+            "level": "high",
+            "accuracy": 0.5,
+            "ordinal_mae": 1.1666666666666667
+          },
+          "N": {
+            "level": "low",
+            "accuracy": 0.0,
+            "ordinal_mae": 1.8333333333333333
+          }
+        },
+        "mean_accuracy": 0.33333333333333337,
+        "mean_ordinal_mae": 1.3
+      }
+    }
+  },
+  "supplementary_dev_amp_evaluate": {
+    "IELTS": {
+      "n": 1,
+      "traits": {
+        "O": {
+          "prediction_coverage": 1.0,
+          "abstentions": 0,
+          "accuracy_all": 1.0,
+          "macro_f1": 0.2,
+          "accuracy": 1.0,
+          "ordinal_mae": 0.0,
+          "raw_mae": 1.1097222222222172,
+          "spearman": null
+        },
+        "C": {
+          "prediction_coverage": 1.0,
+          "abstentions": 0,
+          "accuracy_all": 0.0,
+          "macro_f1": 0.0,
+          "accuracy": 0.0,
+          "ordinal_mae": 1.0,
+          "raw_mae": 4.328421052631569,
+          "spearman": null
+        },
+        "E": {
+          "prediction_coverage": 1.0,
+          "abstentions": 0,
+          "accuracy_all": 0.0,
+          "macro_f1": 0.0,
+          "accuracy": 0.0,
+          "ordinal_mae": 1.0,
+          "raw_mae": 3.7792000000000314,
+          "spearman": null
+        },
+        "A": {
+          "prediction_coverage": 1.0,
+          "abstentions": 0,
+          "accuracy_all": 1.0,
+          "macro_f1": 0.2,
+          "accuracy": 1.0,
+          "ordinal_mae": 0.0,
+          "raw_mae": 0.3060000000000116,
+          "spearman": null
+        },
+        "N": {
+          "prediction_coverage": 1.0,
+          "abstentions": 0,
+          "accuracy_all": 0.0,
+          "macro_f1": 0.0,
+          "accuracy": 0.0,
+          "ordinal_mae": 4.0,
+          "raw_mae": 16.87,
+          "spearman": null
+        }
+      },
+      "macro_f1": 0.08,
+      "mean_prediction_coverage": 1.0,
+      "classification_scope": "conditional on non-abstained predictions; accuracy_all counts abstentions as incorrect",
+      "active_seconds": 380.601995,
+      "mean_observations": 46.0,
+      "structural_citation_validity": 1.0,
+      "automatic_faithfulness": null,
+      "automatic_citation_correctness": null,
+      "judge_coverage": 0.0,
+      "continuous_prediction": "train-bin centroid of final class",
+      "mean_accuracy_all": 0.4,
+      "majority_baseline": {
+        "train_samples": 152,
+        "traits": {
+          "O": {
+            "level": "very_high",
+            "accuracy": 0.0,
+            "ordinal_mae": 3.0
+          },
+          "C": {
+            "level": "very_high",
+            "accuracy": 0.0,
+            "ordinal_mae": 4.0
+          },
+          "E": {
+            "level": "high",
+            "accuracy": 0.0,
+            "ordinal_mae": 1.0
+          },
+          "A": {
+            "level": "high",
+            "accuracy": 0.0,
+            "ordinal_mae": 2.0
+          },
+          "N": {
+            "level": "low",
+            "accuracy": 0.0,
+            "ordinal_mae": 3.0
+          }
+        },
+        "mean_accuracy": 0.0,
+        "mean_ordinal_mae": 2.6
+      }
+    },
+    "RecruitView": {
+      "n": 3,
+      "traits": {
+        "O": {
+          "prediction_coverage": 0.3333333333333333,
+          "abstentions": 2,
+          "accuracy_all": 0.3333333333333333,
+          "macro_f1": 0.2,
+          "accuracy": 1.0,
+          "ordinal_mae": 0.0,
+          "raw_mae": 0.11797144430224993,
+          "spearman": null
+        },
+        "C": {
+          "prediction_coverage": 1.0,
+          "abstentions": 0,
+          "accuracy_all": 0.0,
+          "macro_f1": 0.0,
+          "accuracy": 0.0,
+          "ordinal_mae": 1.3333333333333333,
+          "raw_mae": 0.4935809782012144,
+          "spearman": null
+        },
+        "E": {
+          "prediction_coverage": 0.3333333333333333,
+          "abstentions": 2,
+          "accuracy_all": 0.0,
+          "macro_f1": 0.0,
+          "accuracy": 0.0,
+          "ordinal_mae": 1.0,
+          "raw_mae": 0.5184481232174951,
+          "spearman": null
+        },
+        "A": {
+          "prediction_coverage": 0.6666666666666666,
+          "abstentions": 1,
+          "accuracy_all": 0.0,
+          "macro_f1": 0.0,
+          "accuracy": 0.0,
+          "ordinal_mae": 1.0,
+          "raw_mae": 0.48230510209783733,
+          "spearman": null
+        },
+        "N": {
+          "prediction_coverage": 0.6666666666666666,
+          "abstentions": 1,
+          "accuracy_all": 0.0,
+          "macro_f1": 0.0,
+          "accuracy": 0.0,
+          "ordinal_mae": 3.0,
+          "raw_mae": 0.7165690026814197,
+          "spearman": null
+        }
+      },
+      "macro_f1": 0.04,
+      "mean_prediction_coverage": 0.5999999999999999,
+      "classification_scope": "conditional on non-abstained predictions; accuracy_all counts abstentions as incorrect",
+      "active_seconds": 84.960844915,
+      "mean_observations": 7.0,
+      "structural_citation_validity": null,
+      "automatic_faithfulness": null,
+      "automatic_citation_correctness": null,
+      "judge_coverage": 0.0,
+      "continuous_prediction": "train-bin centroid of final class",
+      "mean_accuracy_all": 0.06666666666666667,
+      "majority_baseline": {
+        "train_samples": 1366,
+        "traits": {
+          "O": {
+            "level": "very_high",
+            "accuracy": 0.0,
+            "ordinal_mae": 3.0
+          },
+          "C": {
+            "level": "very_high",
+            "accuracy": 1.0,
+            "ordinal_mae": 0.0
+          },
+          "E": {
+            "level": "very_high",
+            "accuracy": 0.0,
+            "ordinal_mae": 2.0
+          },
+          "A": {
+            "level": "very_high",
+            "accuracy": 0.0,
+            "ordinal_mae": 1.0
+          },
+          "N": {
+            "level": "very_high",
+            "accuracy": 1.0,
+            "ordinal_mae": 0.0
+          }
+        },
+        "mean_accuracy": 0.4,
+        "mean_ordinal_mae": 1.2
+      }
+    }
+  }
+}
